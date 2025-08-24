@@ -1,0 +1,125 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated to darker theme with ocean-inspired colors */
+  --background: oklch(0.15 0.01 213.97); /* Dark background */
+  --foreground: oklch(0.95 0 0); /* Light text */
+  --card: oklch(0.18 0.015 213.97); /* Dark card background */
+  --card-foreground: oklch(0.95 0 0); /* Light card text */
+  --popover: oklch(0.15 0.01 213.97); /* Dark popover */
+  --popover-foreground: oklch(0.95 0 0); /* Light popover text */
+  --primary: oklch(0.55 0.18 220); /* Ocean blue primary */
+  --primary-foreground: oklch(1 0 0); /* White text on primary */
+  --secondary: oklch(0.45 0.15 200); /* Deep ocean blue */
+  --secondary-foreground: oklch(1 0 0); /* White text on secondary */
+  --muted: oklch(0.22 0.015 213.97); /* Muted dark background */
+  --muted-foreground: oklch(0.7 0.01 213.97); /* Muted light text */
+  --accent: oklch(0.6 0.2 180); /* Teal ocean accent */
+  --accent-foreground: oklch(0.15 0.01 213.97); /* Dark text on accent */
+  --destructive: oklch(0.577 0.245 27.325); /* Red for errors */
+  --destructive-foreground: oklch(1 0 0);
+  --border: oklch(0.25 0.015 213.97); /* Dark border */
+  --input: oklch(0.18 0.015 213.97); /* Dark input background */
+  --ring: oklch(0.55 0.18 220); /* Ocean blue focus ring */
+  --chart-1: oklch(0.55 0.18 220); /* Ocean blue */
+  --chart-2: oklch(0.6 0.2 180); /* Teal */
+  --chart-3: oklch(0.45 0.15 200); /* Deep blue */
+  --chart-4: oklch(0.69 0.18 70.08); /* Amber */
+  --chart-5: oklch(0.55 0.22 16.44); /* Rose */
+  --radius: 0.5rem;
+  --sidebar: oklch(0.12 0.01 213.97); /* Darker sidebar */
+  --sidebar-foreground: oklch(0.95 0 0); /* Light sidebar text */
+  --sidebar-primary: oklch(0.55 0.18 220); /* Ocean blue sidebar primary */
+  --sidebar-primary-foreground: oklch(1 0 0); /* White text */
+  --sidebar-accent: oklch(0.6 0.2 180); /* Teal sidebar accent */
+  --sidebar-accent-foreground: oklch(0.15 0.01 213.97); /* Dark accent text */
+  --sidebar-border: oklch(0.25 0.015 213.97); /* Dark sidebar border */
+  --sidebar-ring: oklch(0.55 0.18 220); /* Ocean blue sidebar ring */
+}
+
+.dark {
+  /* Even darker theme for dark mode */
+  --background: oklch(0.08 0.005 213.97); /* Very dark background */
+  --foreground: oklch(0.98 0 0); /* Very light text */
+  --card: oklch(0.12 0.01 213.97); /* Very dark card background */
+  --card-foreground: oklch(0.98 0 0); /* Very light card text */
+  --popover: oklch(0.08 0.005 213.97); /* Very dark popover */
+  --popover-foreground: oklch(0.98 0 0); /* Very light popover text */
+  --primary: oklch(0.6 0.2 220); /* Brighter ocean blue for dark mode */
+  --primary-foreground: oklch(0.08 0.005 213.97); /* Very dark text on primary */
+  --secondary: oklch(0.5 0.18 200); /* Brighter deep blue */
+  --secondary-foreground: oklch(1 0 0); /* White text on secondary */
+  --muted: oklch(0.15 0.01 213.97); /* Very dark muted background */
+  --muted-foreground: oklch(0.6 0.01 213.97); /* Muted light text */
+  --accent: oklch(0.65 0.22 180); /* Brighter teal accent */
+  --accent-foreground: oklch(0.08 0.005 213.97); /* Very dark text on accent */
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: oklch(0.18 0.015 213.97); /* Very dark border */
+  --input: oklch(0.12 0.01 213.97); /* Very dark input background */
+  --ring: oklch(0.6 0.2 220); /* Brighter ocean blue focus ring */
+  --chart-1: oklch(0.6 0.2 220);
+  --chart-2: oklch(0.65 0.22 180);
+  --chart-3: oklch(0.5 0.18 200);
+  --chart-4: oklch(0.69 0.18 70.08);
+  --chart-5: oklch(0.55 0.22 16.44);
+  --sidebar: oklch(0.05 0.005 213.97); /* Extremely dark sidebar */
+  --sidebar-foreground: oklch(0.98 0 0); /* Very light sidebar text */
+  --sidebar-primary: oklch(0.6 0.2 220); /* Brighter ocean blue sidebar primary */
+  --sidebar-primary-foreground: oklch(0.08 0.005 213.97); /* Very dark text */
+  --sidebar-accent: oklch(0.65 0.22 180); /* Brighter teal sidebar accent */
+  --sidebar-accent-foreground: oklch(0.08 0.005 213.97); /* Very dark accent text */
+  --sidebar-border: oklch(0.18 0.015 213.97); /* Very dark sidebar border */
+  --sidebar-ring: oklch(0.6 0.2 220); /* Brighter ocean blue sidebar ring */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
