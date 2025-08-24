@@ -3,46 +3,33 @@
 import { useState } from "react"
 import {
   Search,
-  MapPin,
-  Clock,
-  DollarSign,
-  Briefcase,
   Filter,
   SortAsc,
-  Eye,
   CheckCircle,
   Target,
-  TrendingUp,
-  Globe,
-  Zap,
-  CloudRain,
-  GraduationCap,
   Map,
+  Building2,
+  Users,
+  BriefcaseIcon,
+  GraduationCapIcon,
+  ZapIcon,
+  MountainIcon,
+  ShieldIcon,
+  CodeIcon,
+  GlobeIcon as GlobeIcon2,
+  MapPin,
+  DollarSign,
+  Briefcase,
+  CloudRain,
   ChevronDown,
   ChevronUp,
-  Shield,
-  List,
-  Building2,
-  Code,
-  Mountain,
-  Layers,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog"
-import { Separator } from "@/components/ui/separator"
 import { Progress } from "@/components/ui/progress"
-import { JobMap } from "@/components/job-map"
 import jobsData from "@/data/jobs.json"
 
 interface Job {
@@ -90,10 +77,10 @@ interface JobMatch {
 }
 
 interface JobBoardProps {
-  showMatcherOnly?: boolean
+  onPageChange: (page: string) => void // Added prop for navigation
 }
 
-export function JobBoard({ showMatcherOnly = false }: JobBoardProps) {
+export function JobBoard({ onPageChange }: JobBoardProps) {
   const [searchTerm, setSearchTerm] = useState("")
   const [jobs] = useState<Job[]>(jobsData.jobs)
   const [filteredJobs, setFilteredJobs] = useState<Job[]>(jobs)
@@ -109,9 +96,7 @@ export function JobBoard({ showMatcherOnly = false }: JobBoardProps) {
   const [isMatching, setIsMatching] = useState(false)
   const [showMatches, setShowMatches] = useState(false)
   const [expandedJobs, setExpandedJobs] = useState<Set<string>>(new Set()) // Added state for expanded job cards
-  const [layoutColumns, setLayoutColumns] = useState<number>(2) // Set default to 2 columns and remove 3-column option
-  const [viewMode, setViewMode] = useState<"list" | "map">("list")
-  const [currentPage, setCurrentPage] = useState<string>("home") // Added state for current page
+  const [columnLayout, setColumnLayout] = useState<number>(2) // Set default to 2 columns and remove 3-column option
 
   const standardIndustries = [
     "academia",
@@ -345,11 +330,6 @@ export function JobBoard({ showMatcherOnly = false }: JobBoardProps) {
     }
   }
 
-  const handleMapJobSelect = (job: Job) => {
-    setSelectedJob(job)
-    setViewMode("list") // Switch back to list view when job is selected from map
-  }
-
   const getJobMatch = (jobId: string): JobMatch | undefined => {
     return jobMatches.find((match) => match.jobId === jobId)
   }
@@ -375,276 +355,52 @@ export function JobBoard({ showMatcherOnly = false }: JobBoardProps) {
 
   const getCategoryIcon = (category: string) => {
     switch (category.toLowerCase()) {
-      case "climate":
-        return <Globe className="h-4 w-4" />
-      case "weather":
-        return <CloudRain className="h-4 w-4" />
-      case "energy":
-        return <Zap className="h-4 w-4" />
       case "academia":
-        return <GraduationCap className="h-4 w-4" />
-      case "geospatial":
-        return <Map className="h-4 w-4" />
-      case "insurance":
-        return <Shield className="h-4 w-4" />
+        return <GraduationCapIcon className="h-4 w-4" />
       case "banking":
         return <Building2 className="h-4 w-4" />
-      case "tech":
-        return <Code className="h-4 w-4" />
+      case "climate":
+        return <GlobeIcon2 className="h-4 w-4" />
+      case "energy":
+        return <ZapIcon className="h-4 w-4" />
+      case "geospatial":
+        return <Map className="h-4 w-4" />
       case "geophysics":
-        return <Mountain className="h-4 w-4" />
-      case "geology":
-        return <Layers className="h-4 w-4" />
+        return <MountainIcon className="h-4 w-4" />
+      case "insurance":
+        return <ShieldIcon className="h-4 w-4" />
+      case "tech":
+        return <CodeIcon className="h-4 w-4" />
+      case "weather":
+        return <CloudRain className="h-4 w-4" />
       default:
-        return <Briefcase className="h-4 w-4" />
+        return <BriefcaseIcon className="h-4 w-4" />
     }
   }
 
   const getCategoryDisplayName = (category: string) => {
     switch (category.toLowerCase()) {
-      case "climate":
-        return "Climate Science"
-      case "weather":
-        return "Weather & Meteorology"
-      case "energy":
-        return "Energy & Renewables"
       case "academia":
         return "Academia & Research"
-      case "geospatial":
-        return "Geospatial & GIS"
-      case "insurance":
-        return "Insurance & Reinsurance"
       case "banking":
         return "Banking & Finance"
-      case "tech":
-        return "Tech (Data Science & ML)"
+      case "climate":
+        return "Climate Science"
+      case "energy":
+        return "Energy & Renewables"
+      case "geospatial":
+        return "Geospatial & GIS"
       case "geophysics":
         return "Geophysics & Geology"
-      case "geology":
-        return "Geophysics & Geology"
+      case "insurance":
+        return "Insurance & Reinsurance"
+      case "tech":
+        return "Tech (Data Science & ML)"
+      case "weather":
+        return "Weather & Meteorology"
       default:
         return category.charAt(0).toUpperCase() + category.slice(1)
     }
-  }
-
-  if (showMatcherOnly) {
-    return (
-      <div className="container mx-auto px-4 py-8">
-        <div className="text-center mb-8">
-          <h2 className="text-2xl font-bold text-foreground mb-4">CV Matcher Results</h2>
-          <p className="text-muted-foreground">
-            This page shows your AI-matched jobs. Upload a CV on the CV Matcher page to see personalized results.
-          </p>
-        </div>
-        {cvData && jobMatches.length > 0 ? (
-          <div className="space-y-6">
-            {jobMatches.map((match) => {
-              const job = match.job
-              return (
-                <Card key={job.id} className="hover:shadow-lg transition-shadow">
-                  <CardHeader>
-                    <div className="flex justify-between items-start">
-                      <div>
-                        <CardTitle className="text-xl mb-2 flex items-center gap-2">
-                          {job.title}
-                          {match && (
-                            <Badge variant={getMatchBadgeVariant(match.matchScore)} className="ml-2">
-                              {match.matchScore}% match
-                            </Badge>
-                          )}
-                        </CardTitle>
-                        <CardDescription className="text-base font-medium text-foreground">
-                          {job.company}
-                        </CardDescription>
-                      </div>
-                      <Badge variant={job.remote ? "default" : "secondary"}>{job.remote ? "Remote" : "On-site"}</Badge>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    {match && (
-                      <div className="mb-4 p-3 bg-muted/50 rounded-lg">
-                        <div className="flex items-center gap-2 mb-2">
-                          <TrendingUp className="h-4 w-4 text-primary" />
-                          <span className="text-sm font-medium">Match Analysis</span>
-                        </div>
-                        <div className="grid grid-cols-3 gap-4 mb-2">
-                          <div>
-                            <div className="text-xs text-muted-foreground">Skills</div>
-                            <div className="flex items-center gap-1">
-                              <Progress value={match.skillsMatch} className="h-2 flex-1" />
-                              <span className="text-xs font-medium">{match.skillsMatch}%</span>
-                            </div>
-                          </div>
-                          <div>
-                            <div className="text-xs text-muted-foreground">Experience</div>
-                            <div className="flex items-center gap-1">
-                              <Progress value={match.experienceMatch} className="h-2 flex-1" />
-                              <span className="text-xs font-medium">{match.experienceMatch}%</span>
-                            </div>
-                          </div>
-                          <div>
-                            <div className="text-xs text-muted-foreground">Role Fit</div>
-                            <div className="flex items-center gap-1">
-                              <Progress value={match.titleMatch} className="h-2 flex-1" />
-                              <span className="text-xs font-medium">{match.titleMatch}%</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="text-xs text-muted-foreground">
-                          {match.matchReasons.slice(0, 2).join(" • ")}
-                        </div>
-                      </div>
-                    )}
-
-                    <div className="flex flex-wrap gap-4 mb-4 text-sm text-muted-foreground">
-                      <div className="flex items-center gap-1">
-                        <MapPin className="h-4 w-4" />
-                        {job.location}
-                      </div>
-                      <div className="flex items-center gap-1">
-                        <Clock className="h-4 w-4" />
-                        {job.type}
-                      </div>
-                      <div className="flex items-center gap-1">
-                        <DollarSign className="h-4 w-4" />
-                        {job.salary}
-                      </div>
-                    </div>
-
-                    <p className="text-muted-foreground mb-4 line-clamp-2">{job.description}</p>
-
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      {job.skills.slice(0, 6).map((skill) => (
-                        <Badge key={skill} variant="outline" className="text-xs">
-                          {skill}
-                        </Badge>
-                      ))}
-                      {job.skills.length > 6 && (
-                        <Badge variant="outline" className="text-xs">
-                          +{job.skills.length - 6} more
-                        </Badge>
-                      )}
-                    </div>
-
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm text-muted-foreground">
-                        Posted {new Date(job.posted).toLocaleDateString()}
-                      </span>
-                      <div className="flex gap-2">
-                        <Dialog>
-                          <DialogTrigger asChild>
-                            <Button variant="outline" size="sm" onClick={() => setSelectedJob(job)}>
-                              <Eye className="mr-2 h-4 w-4" />
-                              View Details
-                            </Button>
-                          </DialogTrigger>
-                          <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
-                            <DialogHeader>
-                              <DialogTitle className="text-2xl flex items-center gap-2">
-                                {job.title}
-                                {match && (
-                                  <Badge variant={getMatchBadgeVariant(match.matchScore)}>
-                                    {match.matchScore}% match
-                                  </Badge>
-                                )}
-                              </DialogTitle>
-                              <DialogDescription className="text-lg font-medium text-foreground">
-                                {job.company} • {job.location}
-                              </DialogDescription>
-                            </DialogHeader>
-
-                            <div className="space-y-6">
-                              {match && (
-                                <div className="p-4 bg-muted/50 rounded-lg">
-                                  <h3 className="font-semibold mb-3 flex items-center gap-2">
-                                    <Target className="h-4 w-4" />
-                                    Match Analysis
-                                  </h3>
-                                  <div className="grid grid-cols-3 gap-4 mb-3">
-                                    <div>
-                                      <div className="text-sm font-medium mb-1">Skills Match</div>
-                                      <Progress value={match.skillsMatch} className="h-2" />
-                                      <div className="text-xs text-muted-foreground mt-1">{match.skillsMatch}%</div>
-                                    </div>
-                                    <div>
-                                      <div className="text-sm font-medium mb-1">Experience Match</div>
-                                      <Progress value={match.experienceMatch} className="h-2" />
-                                      <div className="text-xs text-muted-foreground mt-1">{match.experienceMatch}%</div>
-                                    </div>
-                                    <div>
-                                      <div className="text-sm font-medium mb-1">Role Fit</div>
-                                      <Progress value={match.titleMatch} className="h-2" />
-                                      <div className="text-xs text-muted-foreground mt-1">{match.titleMatch}%</div>
-                                    </div>
-                                  </div>
-                                  <div>
-                                    <div className="text-sm font-medium mb-1">Why this matches:</div>
-                                    <ul className="text-sm text-muted-foreground space-y-1">
-                                      {match.matchReasons.map((reason, index) => (
-                                        <li key={index}>• {reason}</li>
-                                      ))}
-                                    </ul>
-                                  </div>
-                                </div>
-                              )}
-
-                              <Separator />
-
-                              <div>
-                                <h3 className="font-semibold mb-2">Job Description</h3>
-                                <p className="text-muted-foreground">{job.description}</p>
-                              </div>
-
-                              <div>
-                                <h3 className="font-semibold mb-2">Requirements</h3>
-                                <ul className="list-disc list-inside space-y-1 text-muted-foreground">
-                                  {job.requirements.map((req, index) => (
-                                    <li key={index}>{req}</li>
-                                  ))}
-                                </ul>
-                              </div>
-
-                              <div>
-                                <h3 className="font-semibold mb-2">Required Skills</h3>
-                                <div className="flex flex-wrap gap-2">
-                                  {job.skills.map((skill) => (
-                                    <Badge key={skill} variant="outline">
-                                      {skill}
-                                    </Badge>
-                                  ))}
-                                </div>
-                              </div>
-
-                              <div className="flex justify-between items-center pt-4">
-                                <span className="text-sm text-muted-foreground">
-                                  Posted {new Date(job.posted).toLocaleDateString()}
-                                </span>
-                                <Button size="lg">Apply Now</Button>
-                              </div>
-                            </div>
-                          </DialogContent>
-                        </Dialog>
-                        <Button>Apply Now</Button>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              )
-            })}
-          </div>
-        ) : (
-          <Card>
-            <CardContent className="p-8 text-center">
-              <Target className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
-              <h3 className="text-lg font-semibold mb-2">No CV uploaded yet</h3>
-              <p className="text-muted-foreground mb-4">
-                Go to the CV Matcher page to upload your CV and get AI-powered job matches.
-              </p>
-            </CardContent>
-          </Card>
-        )}
-      </div>
-    )
   }
 
   return (
@@ -666,7 +422,7 @@ export function JobBoard({ showMatcherOnly = false }: JobBoardProps) {
           </p>
           <div className="flex justify-center">
             <button
-              onClick={() => setCurrentPage("job-notifications")}
+              onClick={() => onPageChange?.("job-notifications")} // Use proper navigation instead of local state
               className="bg-white/20 hover:bg-white/30 text-white px-6 py-2 rounded-lg transition-colors duration-200 backdrop-blur-sm border border-white/20"
             >
               🌧️ Get Job Notifications
@@ -785,46 +541,26 @@ export function JobBoard({ showMatcherOnly = false }: JobBoardProps) {
               </Select>
 
               <div className="flex items-center gap-2 ml-4">
-                <span className="text-sm font-medium">View:</span>
+                <span className="text-sm font-medium">Layout:</span>
                 <div className="flex border rounded-lg overflow-hidden">
                   <Button
-                    variant={viewMode === "list" ? "default" : "ghost"}
+                    variant={columnLayout === 1 ? "default" : "ghost"}
                     size="sm"
-                    onClick={() => setViewMode("list")}
+                    onClick={() => setColumnLayout(1)}
                     className="rounded-none border-0"
                   >
-                    <List className="h-4 w-4 mr-1" />
-                    List
+                    <Users className="h-4 w-4 mr-1" />1 Column
                   </Button>
                   <Button
-                    variant={viewMode === "map" ? "default" : "ghost"}
+                    variant={columnLayout === 2 ? "default" : "ghost"}
                     size="sm"
-                    onClick={() => setViewMode("map")}
+                    onClick={() => setColumnLayout(2)}
                     className="rounded-none border-0"
                   >
-                    <Map className="h-4 w-4 mr-1" />
-                    Map
+                    <Users className="h-4 w-4 mr-1" />2 Columns
                   </Button>
                 </div>
               </div>
-
-              {viewMode === "list" && (
-                <div className="flex items-center gap-2 ml-4">
-                  <span className="text-sm font-medium">Layout:</span>
-                  <Select
-                    value={layoutColumns.toString()}
-                    onValueChange={(value) => setLayoutColumns(Number.parseInt(value))}
-                  >
-                    <SelectTrigger className="w-[120px]">
-                      <SelectValue />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="1">1 Column</SelectItem>
-                      <SelectItem value="2">2 Columns</SelectItem>
-                    </SelectContent>
-                  </Select>
-                </div>
-              )}
             </div>
           </div>
         </div>
@@ -891,206 +627,141 @@ export function JobBoard({ showMatcherOnly = false }: JobBoardProps) {
           </Card>
         )}
 
-        {viewMode === "map" ? (
-          <div className="h-[600px] rounded-lg overflow-hidden border">
-            <JobMap
-              jobs={filteredJobs}
-              selectedCategories={getSelectedCategories()}
-              selectedCountries={getSelectedCountries()}
-              onJobSelect={handleMapJobSelect}
-            />
-          </div>
-        ) : (
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-            <div className="lg:col-span-2">
-              <div className="space-y-6">
-                <h2 className="text-2xl font-semibold mb-6">
-                  {searchTerm ? `Search Results (${filteredJobs.length})` : "Latest Jobs"}
-                </h2>
+        <div className={`grid gap-4 ${columnLayout === 1 ? "grid-cols-1" : "grid-cols-1 md:grid-cols-2"}`}>
+          {filteredJobs.map((job) => {
+            const jobMatch = getJobMatch(job.id)
+            const isExpanded = expandedJobs.has(job.id)
 
-                {filteredJobs.length === 0 ? (
-                  <Card>
-                    <CardContent className="p-8 text-center">
-                      <div className="text-muted-foreground">No jobs found matching your search criteria.</div>
-                    </CardContent>
-                  </Card>
-                ) : (
-                  <div className={`grid gap-4 ${layoutColumns === 1 ? "grid-cols-1" : "grid-cols-1 lg:grid-cols-2"}`}>
-                    {filteredJobs.map((job) => {
-                      const match = getJobMatch(job.id)
-                      const isExpanded = expandedJobs.has(job.id)
-                      return (
-                        <Card
-                          key={job.id}
-                          className="hover:shadow-lg transition-all duration-200 border-l-4 border-l-primary/30"
-                        >
-                          <CardContent className="p-4">
-                            <div className="flex justify-between items-start mb-3">
-                              <div className="flex-1">
-                                <div className="flex items-center gap-2 mb-1">
-                                  <h3 className="font-semibold text-foreground text-lg">{job.title}</h3>
-                                  {match && (
-                                    <Badge variant={getMatchBadgeVariant(match.matchScore)} className="text-xs">
-                                      {match.matchScore}%
-                                    </Badge>
-                                  )}
-                                </div>
-                                <p className="font-medium text-primary mb-2 text-base">{job.company}</p>
-                                <div className="flex flex-wrap gap-3 text-muted-foreground text-sm">
-                                  <div className="flex items-center gap-1">
-                                    <MapPin className="h-3 w-3" />
-                                    {job.location}
-                                  </div>
-                                  <div className="flex items-center gap-1">
-                                    <DollarSign className="h-3 w-3" />
-                                    {job.salary}
-                                  </div>
-                                  <div className="flex items-center gap-1">
-                                    <Clock className="h-3 w-3" />
-                                    {job.type}
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="flex flex-col gap-1 items-end">
-                                {(Array.isArray(job.categories) ? job.categories : [job.category])
-                                  .filter(Boolean)
-                                  .map((category, index) => (
-                                    <Badge key={index} variant="outline" className="flex items-center gap-1 text-xs">
-                                      {getCategoryIcon(category)}
-                                      {getCategoryDisplayName(category)}
-                                    </Badge>
-                                  ))}
-                                <Badge variant={job.remote ? "default" : "secondary"} className="text-xs">
-                                  {job.remote ? "Remote" : "On-site"}
-                                </Badge>
-                              </div>
-                            </div>
-
-                            <div className="flex justify-between items-center">
-                              <div className="flex gap-2">
-                                {job.contact && (
-                                  <Button variant="outline" size="sm" asChild>
-                                    <a href={`mailto:${job.contact}`}>Contact</a>
-                                  </Button>
-                                )}
-                                <Button variant="outline" size="sm" onClick={() => toggleJobExpansion(job.id)}>
-                                  {isExpanded ? (
-                                    <>
-                                      <ChevronUp className="mr-1 h-3 w-3" />
-                                      Hide
-                                    </>
-                                  ) : (
-                                    <>
-                                      <ChevronDown className="mr-1 h-3 w-3" />
-                                      Details
-                                    </>
-                                  )}
-                                </Button>
-                              </div>
-                              {job.applicationLink ? (
-                                <Button size="sm" asChild>
-                                  <a href={job.applicationLink} target="_blank" rel="noopener noreferrer">
-                                    Apply
-                                  </a>
-                                </Button>
-                              ) : (
-                                <Button size="sm">Apply</Button>
-                              )}
-                            </div>
-
-                            {isExpanded && (
-                              <div className="mt-4 pt-4 border-t border-border space-y-3">
-                                {match && (
-                                  <div className="p-4 bg-muted/50 rounded-lg">
-                                    <div className="flex items-center gap-2 mb-3">
-                                      <TrendingUp className="h-4 w-4 text-primary" />
-                                      <span className="text-sm font-medium">Match Analysis</span>
-                                    </div>
-                                    <div className="grid grid-cols-3 gap-4 mb-3">
-                                      <div>
-                                        <div className="text-xs text-muted-foreground mb-1">Skills</div>
-                                        <div className="flex items-center gap-1">
-                                          <Progress value={match.skillsMatch} className="h-2 flex-1" />
-                                          <span className="text-xs font-medium">{match.skillsMatch}%</span>
-                                        </div>
-                                      </div>
-                                      <div>
-                                        <div className="text-xs text-muted-foreground mb-1">Experience</div>
-                                        <div className="flex items-center gap-1">
-                                          <Progress value={match.experienceMatch} className="h-2 flex-1" />
-                                          <span className="text-xs font-medium">{match.experienceMatch}%</span>
-                                        </div>
-                                      </div>
-                                      <div>
-                                        <div className="text-xs text-muted-foreground mb-1">Role Fit</div>
-                                        <div className="flex items-center gap-1">
-                                          <Progress value={match.titleMatch} className="h-2 flex-1" />
-                                          <span className="text-xs font-medium">{match.titleMatch}%</span>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div className="text-xs text-muted-foreground">
-                                      {match.matchReasons.slice(0, 2).join(" • ")}
-                                    </div>
-                                  </div>
-                                )}
-
-                                <div>
-                                  <h4 className="font-semibold mb-2">Job Description</h4>
-                                  <p className="text-muted-foreground text-sm">{job.description}</p>
-                                </div>
-
-                                <div>
-                                  <h4 className="font-semibold mb-2">Requirements</h4>
-                                  <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
-                                    {job.requirements.map((req, index) => (
-                                      <li key={index}>{req}</li>
-                                    ))}
-                                  </ul>
-                                </div>
-
-                                <div>
-                                  <h4 className="font-semibold mb-2">Required Skills</h4>
-                                  <div className="flex flex-wrap gap-2">
-                                    {job.skills.map((skill) => (
-                                      <Badge key={skill} variant="outline" className="text-xs">
-                                        {skill}
-                                      </Badge>
-                                    ))}
-                                  </div>
-                                </div>
-
-                                <div className="flex justify-between items-center pt-2 text-sm text-muted-foreground">
-                                  <span>Posted {new Date(job.posted).toLocaleDateString()}</span>
-                                  <div className="flex gap-2">
-                                    {job.contact && (
-                                      <Button variant="outline" size="sm" asChild>
-                                        <a href={`mailto:${job.contact}`}>Contact</a>
-                                      </Button>
-                                    )}
-                                    {job.applicationLink ? (
-                                      <Button size="sm" asChild>
-                                        <a href={job.applicationLink} target="_blank" rel="noopener noreferrer">
-                                          Apply
-                                        </a>
-                                      </Button>
-                                    ) : (
-                                      <Button size="sm">Apply</Button>
-                                    )}
-                                  </div>
-                                </div>
-                              </div>
-                            )}
-                          </CardContent>
-                        </Card>
-                      )
-                    })}
+            return (
+              <Card key={job.id} className="hover:shadow-md transition-shadow">
+                <CardHeader className="pb-3">
+                  <div className="flex items-start justify-between">
+                    <div className="flex-1">
+                      <CardTitle className="text-lg mb-1">{job.title}</CardTitle>
+                      <CardDescription className="flex items-center gap-2">
+                        <Building2 className="h-4 w-4" />
+                        {job.company}
+                      </CardDescription>
+                    </div>
+                    {jobMatch && (
+                      <Badge variant={getMatchBadgeVariant(jobMatch.matchScore)} className="ml-2">
+                        {jobMatch.matchScore}% match
+                      </Badge>
+                    )}
                   </div>
-                )}
-              </div>
-            </div>
-          </div>
-        )}
+                </CardHeader>
+                <CardContent className="space-y-3">
+                  <div className="flex flex-wrap gap-2 text-sm text-muted-foreground">
+                    <div className="flex items-center gap-1">
+                      <MapPin className="h-3 w-3" />
+                      {job.location}
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <DollarSign className="h-3 w-3" />
+                      {job.salary}
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <Briefcase className="h-3 w-3" />
+                      {job.type}
+                    </div>
+                    {job.remote && (
+                      <Badge variant="secondary" className="text-xs">
+                        Remote
+                      </Badge>
+                    )}
+                  </div>
+
+                  <div className="flex flex-wrap gap-1">
+                    {Array.isArray(job.categories)
+                      ? job.categories.map((category) => (
+                          <Badge key={category} variant="outline" className="text-xs">
+                            {getCategoryDisplayName(category)}
+                          </Badge>
+                        ))
+                      : job.category && (
+                          <Badge variant="outline" className="text-xs">
+                            {getCategoryDisplayName(job.category)}
+                          </Badge>
+                        )}
+                  </div>
+
+                  {jobMatch && (
+                    <div className="space-y-2">
+                      <div className="flex justify-between text-xs">
+                        <span>Skills Match</span>
+                        <span className={getMatchColor(jobMatch.skillsMatch)}>{jobMatch.skillsMatch}%</span>
+                      </div>
+                      <Progress value={jobMatch.skillsMatch} className="h-1" />
+                      <div className="text-xs text-muted-foreground">
+                        {jobMatch.matchReasons.slice(0, 2).join(", ")}
+                      </div>
+                    </div>
+                  )}
+
+                  {isExpanded && (
+                    <div className="space-y-3 pt-3 border-t">
+                      <div>
+                        <h4 className="font-medium text-sm mb-2">Description</h4>
+                        <p className="text-sm text-muted-foreground">{job.description}</p>
+                      </div>
+                      <div>
+                        <h4 className="font-medium text-sm mb-2">Requirements</h4>
+                        <ul className="text-sm text-muted-foreground space-y-1">
+                          {job.requirements.map((req, index) => (
+                            <li key={index} className="flex items-start gap-2">
+                              <span className="text-primary mt-1">•</span>
+                              {req}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                      <div>
+                        <h4 className="font-medium text-sm mb-2">Skills</h4>
+                        <div className="flex flex-wrap gap-1">
+                          {job.skills.map((skill) => (
+                            <Badge key={skill} variant="secondary" className="text-xs">
+                              {skill}
+                            </Badge>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  <div className="flex items-center justify-between pt-2">
+                    <div className="flex items-center gap-2">
+                      {job.contact && (
+                        <Button variant="outline" size="sm" asChild>
+                          <a href={`mailto:${job.contact}`}>Contact</a>
+                        </Button>
+                      )}
+                      {job.applicationLink && (
+                        <Button variant="outline" size="sm" asChild>
+                          <a href={job.applicationLink} target="_blank" rel="noopener noreferrer">
+                            Apply
+                          </a>
+                        </Button>
+                      )}
+                    </div>
+                    <Button variant="ghost" size="sm" onClick={() => toggleJobExpansion(job.id)}>
+                      {isExpanded ? (
+                        <>
+                          <ChevronUp className="h-4 w-4 mr-1" />
+                          Less
+                        </>
+                      ) : (
+                        <>
+                          <ChevronDown className="h-4 w-4 mr-1" />
+                          Details
+                        </>
+                      )}
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            )
+          })}
+        </div>
       </div>
     </div>
   )

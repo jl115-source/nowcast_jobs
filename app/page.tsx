@@ -18,7 +18,7 @@ export default function Home() {
   const renderPage = () => {
     switch (currentPage) {
       case "job-board":
-        return <JobBoard />
+        return <JobBoard onPageChange={setCurrentPage} /> // Pass navigation function to JobBoard
       case "job-notifications":
         return <JobNotificationsPage />
       case "cv-matcher":

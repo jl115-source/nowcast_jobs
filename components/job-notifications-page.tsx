@@ -33,15 +33,15 @@ export function JobNotificationsPage() {
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle")
 
   const categories = [
-    { id: "climate", label: "Climate Science", color: "bg-green-100 text-green-800", icon: Globe },
-    { id: "tech", label: "Tech (Data Science & ML)", color: "bg-blue-100 text-blue-800", icon: Code },
-    { id: "energy", label: "Energy & Renewables", color: "bg-yellow-100 text-yellow-800", icon: Zap },
-    { id: "weather", label: "Weather & Meteorology", color: "bg-sky-100 text-sky-800", icon: CloudRain },
     { id: "academia", label: "Academia & Research", color: "bg-purple-100 text-purple-800", icon: GraduationCap },
+    { id: "banking", label: "Banking & Finance", color: "bg-emerald-100 text-emerald-800", icon: Building2 },
+    { id: "climate", label: "Climate Science", color: "bg-green-100 text-green-800", icon: Globe },
+    { id: "energy", label: "Energy & Renewables", color: "bg-yellow-100 text-yellow-800", icon: Zap },
     { id: "geospatial", label: "Geospatial & GIS", color: "bg-indigo-100 text-indigo-800", icon: Map },
     { id: "geophysics", label: "Geophysics & Geology", color: "bg-stone-100 text-stone-800", icon: Mountain },
     { id: "insurance", label: "Insurance & Reinsurance", color: "bg-orange-100 text-orange-800", icon: Shield },
-    { id: "banking", label: "Banking & Finance", color: "bg-emerald-100 text-emerald-800", icon: Building2 },
+    { id: "tech", label: "Tech (Data Science & ML)", color: "bg-blue-100 text-blue-800", icon: Code },
+    { id: "weather", label: "Weather & Meteorology", color: "bg-sky-100 text-sky-800", icon: CloudRain },
   ]
 
   const toggleCategory = (categoryId: string) => {
