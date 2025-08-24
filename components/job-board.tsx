@@ -780,8 +780,8 @@ export function JobBoard({ showMatcherOnly = false }: JobBoardProps) {
           </Card>
         )}
 
-        <div className="grid grid-cols-1 lg:grid-cols-1 gap-8">
-          <div className="lg:col-span-1">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <div className="lg:col-span-2">
             <div className="space-y-6">
               <h2 className="text-2xl font-semibold mb-6">
                 {searchTerm ? `Search Results (${filteredJobs.length})` : "Latest Jobs"}
@@ -803,39 +803,39 @@ export function JobBoard({ showMatcherOnly = false }: JobBoardProps) {
                         key={job.id}
                         className="hover:shadow-lg transition-all duration-200 border-l-4 border-l-primary/30"
                       >
-                        <CardContent className="p-6">
-                          <div className="flex justify-between items-start mb-4">
+                        <CardContent className="p-4">
+                          <div className="flex justify-between items-start mb-3">
                             <div className="flex-1">
-                              <div className="flex items-center gap-3 mb-2">
-                                <h3 className="text-xl font-semibold text-foreground">{job.title}</h3>
+                              <div className="flex items-center gap-2 mb-1">
+                                <h3 className="text-lg font-semibold text-foreground">{job.title}</h3>
                                 {match && (
-                                  <Badge variant={getMatchBadgeVariant(match.matchScore)}>
-                                    {match.matchScore}% match
+                                  <Badge variant={getMatchBadgeVariant(match.matchScore)} className="text-xs">
+                                    {match.matchScore}%
                                   </Badge>
                                 )}
                               </div>
-                              <p className="text-lg font-medium text-primary mb-2">{job.company}</p>
-                              <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
+                              <p className="text-base font-medium text-primary mb-2">{job.company}</p>
+                              <div className="flex flex-wrap gap-3 text-sm text-muted-foreground">
                                 <div className="flex items-center gap-1">
-                                  <MapPin className="h-4 w-4" />
+                                  <MapPin className="h-3 w-3" />
                                   {job.location}
                                 </div>
                                 <div className="flex items-center gap-1">
-                                  <DollarSign className="h-4 w-4" />
+                                  <DollarSign className="h-3 w-3" />
                                   {job.salary}
                                 </div>
                                 <div className="flex items-center gap-1">
-                                  <Clock className="h-4 w-4" />
+                                  <Clock className="h-3 w-3" />
                                   {job.type}
                                 </div>
                               </div>
                             </div>
-                            <div className="flex gap-2 items-start">
-                              <Badge variant="outline" className="flex items-center gap-1">
+                            <div className="flex flex-col gap-1 items-end">
+                              <Badge variant="outline" className="flex items-center gap-1 text-xs">
                                 {getCategoryIcon(job.category)}
                                 {getCategoryDisplayName(job.category)}
                               </Badge>
-                              <Badge variant={job.remote ? "default" : "secondary"}>
+                              <Badge variant={job.remote ? "default" : "secondary"} className="text-xs">
                                 {job.remote ? "Remote" : "On-site"}
                               </Badge>
                             </div>
@@ -851,13 +851,13 @@ export function JobBoard({ showMatcherOnly = false }: JobBoardProps) {
                               <Button variant="outline" size="sm" onClick={() => toggleJobExpansion(job.id)}>
                                 {isExpanded ? (
                                   <>
-                                    <ChevronUp className="mr-2 h-4 w-4" />
-                                    Hide Details
+                                    <ChevronUp className="mr-1 h-3 w-3" />
+                                    Hide
                                   </>
                                 ) : (
                                   <>
-                                    <ChevronDown className="mr-2 h-4 w-4" />
-                                    View Details
+                                    <ChevronDown className="mr-1 h-3 w-3" />
+                                    Details
                                   </>
                                 )}
                               </Button>
@@ -865,16 +865,16 @@ export function JobBoard({ showMatcherOnly = false }: JobBoardProps) {
                             {job.applicationLink ? (
                               <Button size="sm" asChild>
                                 <a href={job.applicationLink} target="_blank" rel="noopener noreferrer">
-                                  Apply Now
+                                  Apply
                                 </a>
                               </Button>
                             ) : (
-                              <Button size="sm">Apply Now</Button>
+                              <Button size="sm">Apply</Button>
                             )}
                           </div>
 
                           {isExpanded && (
-                            <div className="mt-6 pt-6 border-t border-border space-y-4">
+                            <div className="mt-4 pt-4 border-t border-border space-y-3">
                               {match && (
                                 <div className="p-4 bg-muted/50 rounded-lg">
                                   <div className="flex items-center gap-2 mb-3">
@@ -946,11 +946,11 @@ export function JobBoard({ showMatcherOnly = false }: JobBoardProps) {
                                   {job.applicationLink ? (
                                     <Button size="sm" asChild>
                                       <a href={job.applicationLink} target="_blank" rel="noopener noreferrer">
-                                        Apply Now
+                                        Apply
                                       </a>
                                     </Button>
                                   ) : (
-                                    <Button size="sm">Apply Now</Button>
+                                    <Button size="sm">Apply</Button>
                                   )}
                                 </div>
                               </div>

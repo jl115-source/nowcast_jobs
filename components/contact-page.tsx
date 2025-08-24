@@ -11,7 +11,7 @@ export function ContactPage() {
       <div className="text-center mb-8">
         <h1 className="text-3xl font-bold text-foreground mb-4">Contact Us</h1>
         <p className="text-muted-foreground text-lg">
-          Get in touch with our team for questions about job postings, partnerships, or platform support.
+          Questions about job postings, partnerships, or platform support.
         </p>
       </div>
 
@@ -19,10 +19,7 @@ export function ContactPage() {
         {/* Contact Information */}
         <Card>
           <CardHeader>
-            <CardTitle>Get in Touch</CardTitle>
-            <CardDescription>
-              We're here to help connect talent with opportunities in climate and energy sectors.
-            </CardDescription>
+            <CardTitle>Contact Information</CardTitle>
           </CardHeader>
           <CardContent className="space-y-6">
             <div className="flex items-center space-x-3">
@@ -87,20 +84,6 @@ export function ContactPage() {
                 Send Message
               </Button>
             </form>
-          </CardContent>
-        </Card>
-      </div>
-
-      {/* Additional Information */}
-      <div className="mt-12 text-center">
-        <Card>
-          <CardContent className="pt-6">
-            <h3 className="text-lg font-semibold mb-4">For Employers</h3>
-            <p className="text-muted-foreground mb-4">
-              Interested in posting jobs or partnering with us? We offer specialized recruitment services for climate,
-              weather, energy, academia, and geospatial organizations.
-            </p>
-            <Button variant="outline">Learn About Employer Services</Button>
           </CardContent>
         </Card>
       </div>

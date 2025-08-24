@@ -28,7 +28,6 @@ export function SidebarNavigation({ currentPage, onPageChange }: SidebarNavigati
   const pages = [
     { id: "conferences", label: "Conferences & Events", icon: Calendar },
     { id: "mentor-matching", label: "Mentor Matching", icon: Users },
-    { id: "contact", label: "Contact", icon: Phone },
   ]
 
   const jobPages = [
@@ -176,6 +175,21 @@ export function SidebarNavigation({ currentPage, onPageChange }: SidebarNavigati
                 })}
               </div>
             )}
+          </div>
+
+          <div className="pt-4 border-t border-sidebar-border/50">
+            <Button
+              variant={currentPage === "contact" ? "default" : "ghost"}
+              className={`w-full justify-start gap-3 ${
+                currentPage === "contact"
+                  ? "bg-sidebar-primary text-sidebar-primary-foreground"
+                  : "text-sidebar-foreground hover:bg-sidebar-accent/10"
+              } ${isMinimized ? "px-2" : "px-3"}`}
+              onClick={() => onPageChange("contact")}
+            >
+              <Phone className="h-4 w-4 flex-shrink-0" />
+              {!isMinimized && <span>Contact</span>}
+            </Button>
           </div>
         </div>
       </nav>
