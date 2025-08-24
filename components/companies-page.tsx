@@ -228,8 +228,7 @@ export function CompaniesPage() {
         <div className="absolute inset-0 bg-primary/40"></div>
         <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
           <div className="text-center w-full">
-            <h1 className="text-4xl font-bold text-white mb-2">Leading Companies in Climate & Energy</h1>
-            <p className="text-white/90 text-lg">Discover innovative organizations shaping the future of our planet</p>
+            <h1 className="text-4xl font-bold text-white mb-2">Discover top companies in your field</h1>
           </div>
         </div>
       </div>

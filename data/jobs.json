@@ -7,7 +7,7 @@
       "location": "Boulder, CO",
       "type": "Full-time",
       "salary": "$95,000 - $130,000",
-      "category": "climate",
+      "categories": ["climate", "tech"],
       "description": "Join our team to analyze global climate data and develop predictive models for climate change impacts. You'll work with satellite data, weather station records, and advanced statistical methods to understand climate patterns and trends.",
       "requirements": [
         "PhD in Climate Science, Atmospheric Physics, or related field",
@@ -44,7 +44,7 @@
       "location": "Austin, TX",
       "type": "Full-time",
       "salary": "$85,000 - $115,000",
-      "category": "energy",
+      "categories": ["energy"],
       "description": "Design and optimize renewable energy systems including solar, wind, and battery storage. You'll work on grid integration, energy forecasting, and system performance optimization for utility-scale projects.",
       "requirements": [
         "MS in Electrical Engineering, Renewable Energy, or related field",
@@ -81,7 +81,7 @@
       "location": "Norman, OK",
       "type": "Full-time",
       "salary": "$75,000 - $105,000",
-      "category": "weather",
+      "categories": ["weather", "academia"],
       "description": "Conduct research on severe weather phenomena, atmospheric dynamics, and weather prediction. You'll analyze observational data, run numerical weather models, and publish findings in peer-reviewed journals.",
       "requirements": [
         "PhD in Atmospheric Science, Meteorology, or related field",
@@ -118,7 +118,7 @@
       "location": "Portland, OR",
       "type": "Full-time",
       "salary": "$65,000 - $85,000",
-      "category": "geospatial",
+      "categories": ["geospatial"],
       "description": "Use GIS and remote sensing technologies to monitor environmental changes, analyze spatial patterns, and support conservation efforts. You'll work with satellite imagery, drone data, and field measurements.",
       "requirements": [
         "MS in Geography, Environmental Science, or GIS",
@@ -155,7 +155,7 @@
       "location": "Cambridge, MA",
       "type": "Contract",
       "salary": "$55,000 - $65,000",
-      "category": "academia",
+      "categories": ["academia", "climate"],
       "description": "Conduct cutting-edge research on regional climate modeling and climate change impacts. You'll develop and validate high-resolution climate models, analyze model output, and collaborate with international research teams.",
       "requirements": [
         "PhD in Climate Science, Atmospheric Science, or related field",
@@ -192,7 +192,7 @@
       "location": "Denver, CO",
       "type": "Full-time",
       "salary": "$70,000 - $95,000",
-      "category": "energy",
+      "categories": ["energy", "tech"],
       "description": "Analyze energy consumption patterns, grid performance, and renewable energy integration. You'll work with smart meter data, weather data, and energy market information to optimize grid operations.",
       "requirements": [
         "BS/MS in Engineering, Data Science, or related field",
@@ -229,7 +229,7 @@
       "location": "San Diego, CA",
       "type": "Full-time",
       "salary": "$80,000 - $110,000",
-      "category": "climate",
+      "categories": ["climate", "geophysics"],
       "description": "Study ocean-climate interactions, sea level rise, and marine ecosystem responses to climate change. You'll analyze oceanographic data, deploy instruments, and contribute to climate impact assessments.",
       "requirements": [
         "PhD in Oceanography, Marine Science, or related field",
@@ -266,7 +266,7 @@
       "location": "Miami, FL",
       "type": "Full-time",
       "salary": "$60,000 - $80,000",
-      "category": "weather",
+      "categories": ["weather"],
       "description": "Provide weather forecasts and warnings for the southeastern United States. You'll analyze weather data, run forecast models, and communicate weather hazards to the public and emergency management officials.",
       "requirements": [
         "BS in Meteorology or Atmospheric Science",
@@ -303,7 +303,7 @@
       "location": "New York, NY",
       "type": "Full-time",
       "salary": "$90,000 - $125,000",
-      "category": "insurance",
+      "categories": ["insurance", "climate"],
       "description": "Assess climate-related risks for insurance and reinsurance portfolios. You'll analyze catastrophe models, evaluate exposure to natural disasters, and develop risk management strategies for extreme weather events.",
       "requirements": [
         "MS in Atmospheric Science, Risk Management, or related field",
@@ -340,7 +340,7 @@
       "location": "London, UK",
       "type": "Full-time",
       "salary": "£75,000 - £95,000",
-      "category": "insurance",
+      "categories": ["insurance", "tech"],
       "description": "Develop and validate catastrophe models for natural disasters including hurricanes, earthquakes, and floods. You'll work with historical data, climate projections, and advanced statistical methods to quantify insurance risks.",
       "requirements": [
         "PhD in Mathematics, Statistics, or Atmospheric Science",
@@ -368,6 +368,154 @@
       "coordinates": {
         "lat": 51.5074,
         "lng": -0.1278
+      }
+    },
+    {
+      "id": "11",
+      "title": "Quantitative Risk Analyst",
+      "company": "Global Investment Bank",
+      "location": "London, UK",
+      "type": "Full-time",
+      "salary": "£85,000 - £120,000",
+      "categories": ["banking", "tech"],
+      "description": "Develop and implement quantitative models for climate-related financial risk assessment. You'll work with derivatives pricing, portfolio optimization, and regulatory capital calculations for climate stress testing.",
+      "requirements": [
+        "PhD in Mathematics, Physics, or Quantitative Finance",
+        "5+ years experience in quantitative finance or risk management",
+        "Proficiency in Python, R, C++, and SQL",
+        "Knowledge of derivatives pricing and risk models",
+        "Experience with climate scenario analysis and stress testing"
+      ],
+      "skills": [
+        "Python",
+        "R",
+        "C++",
+        "SQL",
+        "Quantitative Finance",
+        "Risk Management",
+        "Derivatives",
+        "Climate Risk",
+        "Stress Testing",
+        "Portfolio Optimization"
+      ],
+      "posted": "2024-01-20",
+      "remote": true,
+      "contact": "quant-careers@globalbank.com",
+      "applicationLink": "https://globalbank.com/careers/quant-risk-analyst",
+      "coordinates": {
+        "lat": 51.5074,
+        "lng": -0.1278
+      }
+    },
+    {
+      "id": "12",
+      "title": "Machine Learning Engineer - Climate Tech",
+      "company": "AI Climate Solutions",
+      "location": "San Francisco, CA",
+      "type": "Full-time",
+      "salary": "$140,000 - $180,000",
+      "categories": ["tech", "climate"],
+      "description": "Build and deploy machine learning models for climate prediction, carbon footprint analysis, and renewable energy optimization. You'll work with large-scale climate datasets and cutting-edge ML techniques.",
+      "requirements": [
+        "MS/PhD in Computer Science, Data Science, or related field",
+        "4+ years experience in machine learning and deep learning",
+        "Expertise in TensorFlow, PyTorch, and cloud platforms",
+        "Experience with time series forecasting and geospatial data",
+        "Knowledge of climate science and environmental applications"
+      ],
+      "skills": [
+        "Python",
+        "TensorFlow",
+        "PyTorch",
+        "Machine Learning",
+        "Deep Learning",
+        "Time Series",
+        "Cloud Computing",
+        "Climate Data",
+        "MLOps",
+        "Geospatial Analysis"
+      ],
+      "posted": "2024-01-19",
+      "remote": true,
+      "contact": "ml-jobs@aiclimate.com",
+      "applicationLink": "https://aiclimate.com/careers/ml-engineer",
+      "coordinates": {
+        "lat": 37.7749,
+        "lng": -122.4194
+      }
+    },
+    {
+      "id": "13",
+      "title": "Exploration Geophysicist",
+      "company": "Earth Resources Corp",
+      "location": "Houston, TX",
+      "type": "Full-time",
+      "salary": "$95,000 - $130,000",
+      "categories": ["geophysics", "energy"],
+      "description": "Lead geophysical surveys for renewable energy site assessment and subsurface characterization. You'll use seismic, gravity, and electromagnetic methods to evaluate geothermal and carbon storage potential.",
+      "requirements": [
+        "MS in Geophysics, Geology, or Earth Sciences",
+        "5+ years experience in exploration geophysics",
+        "Proficiency with seismic processing software and interpretation",
+        "Knowledge of geothermal systems and carbon sequestration",
+        "Experience with field data acquisition and QC"
+      ],
+      "skills": [
+        "Seismic Processing",
+        "Geophysical Interpretation",
+        "Gravity Surveys",
+        "Electromagnetic Methods",
+        "Geothermal",
+        "Carbon Storage",
+        "Field Work",
+        "Data QC",
+        "Subsurface Modeling",
+        "Reservoir Characterization"
+      ],
+      "posted": "2024-01-17",
+      "remote": false,
+      "contact": "geophysics@earthresources.com",
+      "applicationLink": "https://earthresources.com/jobs/exploration-geophysicist",
+      "coordinates": {
+        "lat": 29.7604,
+        "lng": -95.3698
+      }
+    },
+    {
+      "id": "14",
+      "title": "Environmental Geologist",
+      "company": "GeoEnvironmental Consultants",
+      "location": "Denver, CO",
+      "type": "Full-time",
+      "salary": "$70,000 - $95,000",
+      "categories": ["geology", "geospatial"],
+      "description": "Conduct environmental site assessments, groundwater monitoring, and contamination remediation projects. You'll use geological principles to assess environmental risks and design cleanup strategies.",
+      "requirements": [
+        "BS/MS in Geology, Environmental Science, or related field",
+        "3+ years experience in environmental consulting",
+        "Professional Geologist (PG) license preferred",
+        "Knowledge of environmental regulations and remediation techniques",
+        "Experience with groundwater modeling and site characterization"
+      ],
+      "skills": [
+        "Environmental Geology",
+        "Groundwater Modeling",
+        "Site Assessment",
+        "Contamination Remediation",
+        "Environmental Regulations",
+        "Hydrogeology",
+        "Soil Sampling",
+        "GIS",
+        "Report Writing",
+        "Field Investigation"
+      ],
+      "posted": "2024-01-14",
+      "remote": false,
+      "contact": "careers@geoenvironmental.com",
+      "applicationLink": "https://geoenvironmental.com/careers/environmental-geologist",
+      "coordinates": {
+        "lat": 39.7392,
+        "lng": -104.9903
       }
     }
   ]

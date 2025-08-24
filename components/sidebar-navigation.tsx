@@ -9,7 +9,6 @@ import {
   Zap,
   Phone,
   Calendar,
-  Sparkles,
   Users,
   ChevronDown,
   ChevronUp,
@@ -24,24 +23,18 @@ interface SidebarNavigationProps {
 
 export function SidebarNavigation({ currentPage, onPageChange }: SidebarNavigationProps) {
   const [isMinimized, setIsMinimized] = useState(false)
-  const [isCvDropdownOpen, setIsCvDropdownOpen] = useState(false)
-  const [isJobDropdownOpen, setIsJobDropdownOpen] = useState(false)
+  const [isJobDropdownOpen, setIsJobDropdownOpen] = useState(true) // Set Jobs dropdown to be open by default
 
   const pages = [
     { id: "conferences", label: "Conferences & Events", icon: Calendar },
-    { id: "companies", label: "Companies", icon: Building2 }, // Added companies page
-    { id: "off-market", label: "Off-market Jobs", icon: EyeOff },
+    { id: "companies", label: "Companies", icon: Building2 },
     { id: "mentor-matching", label: "Mentor Matching", icon: Users },
   ]
 
   const jobPages = [
     { id: "job-board", label: "Job Board", icon: Briefcase },
     { id: "job-notifications", label: "Job Notifications", icon: Zap },
-  ]
-
-  const cvPages = [
-    { id: "cv-matcher", label: "Job Match Maker", icon: Zap },
-    { id: "cv-improver", label: "CV Improver", icon: Sparkles },
+    { id: "off-market", label: "Off-Market Jobs", icon: EyeOff }, // Capitalized "Market" in Off-Market Jobs
   ]
 
   return (
@@ -137,49 +130,6 @@ export function SidebarNavigation({ currentPage, onPageChange }: SidebarNavigati
               </Button>
             )
           })}
-
-          <div className="pt-2">
-            <Button
-              variant="ghost"
-              className={`w-full justify-between gap-3 text-sidebar-foreground hover:bg-sidebar-accent/10 ${
-                isMinimized ? "px-2" : "px-3"
-              }`}
-              onClick={() => !isMinimized && setIsCvDropdownOpen(!isCvDropdownOpen)}
-            >
-              <div className="flex items-center gap-3">
-                <Sparkles className="h-4 w-4 flex-shrink-0" />
-                {!isMinimized && <span>CV Tools</span>}
-              </div>
-              {!isMinimized &&
-                (isCvDropdownOpen ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />)}
-            </Button>
-
-            {/* CV Dropdown Items */}
-            {!isMinimized && isCvDropdownOpen && (
-              <div className="ml-4 mt-1 space-y-1">
-                {cvPages.map((page) => {
-                  const Icon = page.icon
-                  const isActive = currentPage === page.id
-
-                  return (
-                    <Button
-                      key={page.id}
-                      variant={isActive ? "default" : "ghost"}
-                      className={`w-full justify-start gap-3 text-sm ${
-                        isActive
-                          ? "bg-sidebar-primary text-sidebar-primary-foreground"
-                          : "text-sidebar-foreground hover:bg-sidebar-accent/10"
-                      }`}
-                      onClick={() => onPageChange(page.id)}
-                    >
-                      <Icon className="h-3 w-3 flex-shrink-0" />
-                      <span>{page.label}</span>
-                    </Button>
-                  )
-                })}
-              </div>
-            )}
-          </div>
 
           <div className="pt-4 border-t border-sidebar-border/50">
             <Button

@@ -22,6 +22,10 @@ import {
   ChevronUp,
   Shield,
   List,
+  Building2,
+  Code,
+  Mountain,
+  Layers,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -48,7 +52,7 @@ interface Job {
   location: string
   type: string
   salary: string
-  category: string
+  categories: string[] | string
   description: string
   requirements: string[]
   skills: string[]
@@ -107,26 +111,38 @@ export function JobBoard({ showMatcherOnly = false }: JobBoardProps) {
   const [expandedJobs, setExpandedJobs] = useState<Set<string>>(new Set()) // Added state for expanded job cards
   const [layoutColumns, setLayoutColumns] = useState<number>(2) // Set default to 2 columns and remove 3-column option
   const [viewMode, setViewMode] = useState<"list" | "map">("list")
+  const [currentPage, setCurrentPage] = useState<string>("home") // Added state for current page
+
+  const standardIndustries = [
+    "academia",
+    "banking",
+    "climate",
+    "energy",
+    "geospatial",
+    "geophysics",
+    "insurance",
+    "tech",
+    "weather",
+  ]
 
   const applyFiltersAndSort = (
-    term: string,
+    search: string,
     location: string,
-    country: string, // Added country parameter
+    country: string,
     type: string,
     category: string,
     remote: string,
     sort: string,
-    matches?: JobMatch[],
+    mapFilteredJobs?: Job[],
   ) => {
-    let filtered = showMatches && matches ? matches.map((m) => m.job) : jobs
+    let filtered = mapFilteredJobs || jobs
 
-    if (term.trim()) {
+    if (search) {
       filtered = filtered.filter(
         (job) =>
-          job.title.toLowerCase().includes(term.toLowerCase()) ||
-          job.company.toLowerCase().includes(term.toLowerCase()) ||
-          job.skills.some((skill) => skill.toLowerCase().includes(term.toLowerCase())) ||
-          job.description.toLowerCase().includes(term.toLowerCase()),
+          job.title.toLowerCase().includes(search.toLowerCase()) ||
+          job.company.toLowerCase().includes(search.toLowerCase()) ||
+          job.skills.some((skill) => skill.toLowerCase().includes(search.toLowerCase())),
       )
     }
 
@@ -135,10 +151,7 @@ export function JobBoard({ showMatcherOnly = false }: JobBoardProps) {
     }
 
     if (country !== "all") {
-      filtered = filtered.filter((job) => {
-        const jobCountry = job.location.split(",").pop()?.trim().toLowerCase()
-        return jobCountry?.includes(country.toLowerCase())
-      })
+      filtered = filtered.filter((job) => job.location.toLowerCase().includes(country.toLowerCase()))
     }
 
     if (type !== "all") {
@@ -146,15 +159,22 @@ export function JobBoard({ showMatcherOnly = false }: JobBoardProps) {
     }
 
     if (category !== "all") {
-      filtered = filtered.filter((job) => job.category.toLowerCase() === category.toLowerCase())
+      filtered = filtered.filter((job) =>
+        Array.isArray(job.categories)
+          ? job.categories.some((cat) => cat.toLowerCase() === category.toLowerCase())
+          : job.category?.toLowerCase() === category.toLowerCase(),
+      )
     }
 
     if (remote !== "all") {
-      const isRemote = remote === "remote"
-      filtered = filtered.filter((job) => job.remote === isRemote)
+      if (remote === "remote") {
+        filtered = filtered.filter((job) => job.remote === true)
+      } else if (remote === "onsite") {
+        filtered = filtered.filter((job) => job.remote === false)
+      }
     }
 
-    if (!showMatches || !matches) {
+    if (!showMatches || !mapFilteredJobs) {
       switch (sort) {
         case "newest":
           filtered.sort((a, b) => new Date(b.posted).getTime() - new Date(a.posted).getTime())
@@ -349,7 +369,9 @@ export function JobBoard({ showMatcherOnly = false }: JobBoardProps) {
   const uniqueLocations = Array.from(new Set(jobs.map((job) => job.location.split(",")[0].trim())))
   const uniqueCountries = Array.from(new Set(jobs.map((job) => job.location.split(",").pop()?.trim()).filter(Boolean)))
   const uniqueTypes = Array.from(new Set(jobs.map((job) => job.type)))
-  const uniqueCategories = Array.from(new Set(jobs.map((job) => job.category)))
+  const uniqueCategories = Array.from(
+    new Set(jobs.flatMap((job) => (Array.isArray(job.categories) ? job.categories : [job.category])).filter(Boolean)),
+  )
 
   const getCategoryIcon = (category: string) => {
     switch (category.toLowerCase()) {
@@ -365,6 +387,14 @@ export function JobBoard({ showMatcherOnly = false }: JobBoardProps) {
         return <Map className="h-4 w-4" />
       case "insurance":
         return <Shield className="h-4 w-4" />
+      case "banking":
+        return <Building2 className="h-4 w-4" />
+      case "tech":
+        return <Code className="h-4 w-4" />
+      case "geophysics":
+        return <Mountain className="h-4 w-4" />
+      case "geology":
+        return <Layers className="h-4 w-4" />
       default:
         return <Briefcase className="h-4 w-4" />
     }
@@ -384,6 +414,14 @@ export function JobBoard({ showMatcherOnly = false }: JobBoardProps) {
         return "Geospatial & GIS"
       case "insurance":
         return "Insurance & Reinsurance"
+      case "banking":
+        return "Banking & Finance"
+      case "tech":
+        return "Tech (Data Science & ML)"
+      case "geophysics":
+        return "Geophysics & Geology"
+      case "geology":
+        return "Geophysics & Geology"
       default:
         return category.charAt(0).toUpperCase() + category.slice(1)
     }
@@ -622,9 +660,18 @@ export function JobBoard({ showMatcherOnly = false }: JobBoardProps) {
       >
         <div className="absolute inset-0 bg-primary/40"></div>
         <div className="relative z-10 text-center text-white">
-          <h1 className="text-4xl font-bold opacity-90">
-            Specialized opportunities in climate, weather, energy & more
-          </h1>
+          <h1 className="text-4xl font-bold mb-4">🌧️ Jobs for your niche</h1>
+          <p className="text-xl mb-6 opacity-90">
+            Specialist jobs in weather, climate, energy, commodities, geophysics and geospatial fields
+          </p>
+          <div className="flex justify-center">
+            <button
+              onClick={() => setCurrentPage("job-notifications")}
+              className="bg-white/20 hover:bg-white/30 text-white px-6 py-2 rounded-lg transition-colors duration-200 backdrop-blur-sm border border-white/20"
+            >
+              🌧️ Get Job Notifications
+            </button>
+          </div>
         </div>
       </div>
 
@@ -658,11 +705,11 @@ export function JobBoard({ showMatcherOnly = false }: JobBoardProps) {
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="all">All Industries</SelectItem>
-                {uniqueCategories.map((category) => (
-                  <SelectItem key={category} value={category.toLowerCase()}>
+                {standardIndustries.map((industry) => (
+                  <SelectItem key={industry} value={industry.toLowerCase()}>
                     <div className="flex items-center gap-2">
-                      {getCategoryIcon(category)}
-                      {getCategoryDisplayName(category)}
+                      {getCategoryIcon(industry)}
+                      {getCategoryDisplayName(industry)}
                     </div>
                   </SelectItem>
                 ))}
@@ -905,10 +952,14 @@ export function JobBoard({ showMatcherOnly = false }: JobBoardProps) {
                                 </div>
                               </div>
                               <div className="flex flex-col gap-1 items-end">
-                                <Badge variant="outline" className="flex items-center gap-1 text-xs">
-                                  {getCategoryIcon(job.category)}
-                                  {getCategoryDisplayName(job.category)}
-                                </Badge>
+                                {(Array.isArray(job.categories) ? job.categories : [job.category])
+                                  .filter(Boolean)
+                                  .map((category, index) => (
+                                    <Badge key={index} variant="outline" className="flex items-center gap-1 text-xs">
+                                      {getCategoryIcon(category)}
+                                      {getCategoryDisplayName(category)}
+                                    </Badge>
+                                  ))}
                                 <Badge variant={job.remote ? "default" : "secondary"} className="text-xs">
                                   {job.remote ? "Remote" : "On-site"}
                                 </Badge>

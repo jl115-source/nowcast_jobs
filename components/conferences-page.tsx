@@ -1,7 +1,24 @@
 "use client"
 
 import { useState } from "react"
-import { Calendar, MapPin, Globe, ExternalLink, Users, Tag, Filter, SortAsc, Shield } from "lucide-react"
+import {
+  Calendar,
+  MapPin,
+  Globe,
+  ExternalLink,
+  Users,
+  Tag,
+  Filter,
+  SortAsc,
+  Code,
+  Zap,
+  CloudRain,
+  GraduationCap,
+  Map,
+  Mountain,
+  Shield,
+  Building2,
+} from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -13,7 +30,7 @@ interface Conference {
   id: string
   title: string
   description: string
-  category: string
+  categories: string[]
   location: string
   country: string
   startDate: string
@@ -34,6 +51,18 @@ export function ConferencesPage() {
   const [typeFilter, setTypeFilter] = useState<string>("all")
   const [sortBy, setSortBy] = useState<string>("date")
 
+  const standardIndustries = [
+    "climate",
+    "tech",
+    "energy",
+    "weather",
+    "academia",
+    "geospatial",
+    "geophysics",
+    "insurance",
+    "banking",
+  ]
+
   const applyFiltersAndSort = (term: string, category: string, country: string, type: string, sort: string) => {
     let filtered = conferences
 
@@ -47,7 +76,7 @@ export function ConferencesPage() {
     }
 
     if (category !== "all") {
-      filtered = filtered.filter((conf) => conf.category.toLowerCase() === category.toLowerCase())
+      filtered = filtered.filter((conf) => conf.categories.some((cat) => cat.toLowerCase() === category.toLowerCase()))
     }
 
     if (country !== "all") {
@@ -106,6 +135,56 @@ export function ConferencesPage() {
     })
   }
 
+  const getCategoryIcon = (category: string) => {
+    switch (category.toLowerCase()) {
+      case "climate":
+        return <Globe className="h-3 w-3" />
+      case "weather":
+        return <CloudRain className="h-3 w-3" />
+      case "energy":
+        return <Zap className="h-3 w-3" />
+      case "academia":
+        return <GraduationCap className="h-3 w-3" />
+      case "geospatial":
+        return <Map className="h-3 w-3" />
+      case "insurance":
+        return <Shield className="h-3 w-3" />
+      case "banking":
+        return <Building2 className="h-3 w-3" />
+      case "tech":
+        return <Code className="h-3 w-3" />
+      case "geophysics":
+        return <Mountain className="h-3 w-3" />
+      default:
+        return <Tag className="h-3 w-3" />
+    }
+  }
+
+  const getCategoryDisplayName = (category: string) => {
+    switch (category.toLowerCase()) {
+      case "climate":
+        return "Climate Science"
+      case "weather":
+        return "Weather & Meteorology"
+      case "energy":
+        return "Energy & Renewables"
+      case "academia":
+        return "Academia & Research"
+      case "geospatial":
+        return "Geospatial & GIS"
+      case "insurance":
+        return "Insurance & Reinsurance"
+      case "banking":
+        return "Banking & Finance"
+      case "tech":
+        return "Tech (Data Science & ML)"
+      case "geophysics":
+        return "Geophysics & Geology"
+      default:
+        return category.charAt(0).toUpperCase() + category.slice(1)
+    }
+  }
+
   const getCategoryColor = (category: string) => {
     switch (category.toLowerCase()) {
       case "climate":
@@ -120,12 +199,18 @@ export function ConferencesPage() {
         return "bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-200"
       case "insurance":
         return "bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-200"
+      case "banking":
+        return "bg-emerald-100 text-emerald-800 dark:bg-emerald-900 dark:text-emerald-200"
+      case "tech":
+        return "bg-cyan-100 text-cyan-800 dark:bg-cyan-900 dark:text-cyan-200"
+      case "geophysics":
+        return "bg-stone-100 text-stone-800 dark:bg-stone-900 dark:text-stone-200"
       default:
         return "bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200"
     }
   }
 
-  const uniqueCategories = Array.from(new Set(conferences.map((conf) => conf.category)))
+  const uniqueCategories = Array.from(new Set(conferences.flatMap((conf) => conf.categories)))
   const uniqueCountries = Array.from(new Set(conferences.map((conf) => conf.country)))
   const uniqueTypes = Array.from(new Set(conferences.map((conf) => conf.type)))
 
@@ -182,11 +267,11 @@ export function ConferencesPage() {
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="all">All Categories</SelectItem>
-                {uniqueCategories.map((category) => (
-                  <SelectItem key={category} value={category.toLowerCase()}>
+                {standardIndustries.map((industry) => (
+                  <SelectItem key={industry} value={industry.toLowerCase()}>
                     <div className="flex items-center gap-2">
-                      {category.toLowerCase() === "insurance" && <Shield className="h-4 w-4" />}
-                      {category.charAt(0).toUpperCase() + category.slice(1)}
+                      {getCategoryIcon(industry)}
+                      {getCategoryDisplayName(industry)}
                     </div>
                   </SelectItem>
                 ))}
@@ -259,9 +344,16 @@ export function ConferencesPage() {
                     <div className="flex-1">
                       <CardTitle className="text-xl mb-2 flex items-center gap-3">
                         {conference.title}
-                        <Badge className={getCategoryColor(conference.category)}>
-                          {conference.category.charAt(0).toUpperCase() + conference.category.slice(1)}
-                        </Badge>
+                        <div className="flex flex-wrap gap-1">
+                          {conference.categories.map((category, index) => (
+                            <Badge key={index} className={getCategoryColor(category)} variant="secondary">
+                              <div className="flex items-center gap-1">
+                                {getCategoryIcon(category)}
+                                {getCategoryDisplayName(category)}
+                              </div>
+                            </Badge>
+                          ))}
+                        </div>
                       </CardTitle>
                       <CardDescription className="text-base">{conference.description}</CardDescription>
                     </div>

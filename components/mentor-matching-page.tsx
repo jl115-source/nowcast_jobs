@@ -40,8 +40,9 @@ export function MentorMatchingPage() {
             </div>
             <h1 className="text-5xl font-bold">Mentor Matching</h1>
           </div>
-          <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
-            Connect with experienced professionals in climate, weather, energy, academia, and geospatial fields
+          <p className="text-xl mb-8 max-w-3xl mx-auto opacity-90">
+            Whether you're seeking guidance or sharing expertise, mentorship can be a transformative experience that
+            shapes careers and advances the fields of climate, weather, energy, and geospatial science
           </p>
         </div>
       </div>
@@ -95,11 +96,14 @@ export function MentorMatchingPage() {
                     </SelectTrigger>
                     <SelectContent>
                       <SelectItem value="climate">Climate Science</SelectItem>
-                      <SelectItem value="weather">Weather & Meteorology</SelectItem>
+                      <SelectItem value="tech">Tech (Data Science & ML)</SelectItem>
                       <SelectItem value="energy">Energy & Renewables</SelectItem>
+                      <SelectItem value="weather">Weather & Meteorology</SelectItem>
                       <SelectItem value="academia">Academia & Research</SelectItem>
                       <SelectItem value="geospatial">Geospatial & GIS</SelectItem>
+                      <SelectItem value="geophysics">Geophysics & Geology</SelectItem>
                       <SelectItem value="insurance">Insurance & Reinsurance</SelectItem>
+                      <SelectItem value="banking">Banking & Finance</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>

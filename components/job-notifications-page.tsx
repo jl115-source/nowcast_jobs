@@ -9,7 +9,21 @@ import { Label } from "@/components/ui/label"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Bell, Mail, CheckCircle, AlertCircle } from "lucide-react"
+import {
+  Bell,
+  Mail,
+  CheckCircle,
+  AlertCircle,
+  Globe,
+  Code,
+  Zap,
+  CloudRain,
+  GraduationCap,
+  Map,
+  Mountain,
+  Shield,
+  Building2,
+} from "lucide-react"
 
 export function JobNotificationsPage() {
   const [email, setEmail] = useState("")
@@ -19,12 +33,15 @@ export function JobNotificationsPage() {
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle")
 
   const categories = [
-    { id: "climate", label: "Climate", color: "bg-green-100 text-green-800" },
-    { id: "weather", label: "Weather", color: "bg-blue-100 text-blue-800" },
-    { id: "energy", label: "Energy", color: "bg-yellow-100 text-yellow-800" },
-    { id: "academia", label: "Academia", color: "bg-purple-100 text-purple-800" },
-    { id: "geospatial", label: "Geospatial", color: "bg-indigo-100 text-indigo-800" },
-    { id: "insurance", label: "Insurance/Reinsurance", color: "bg-orange-100 text-orange-800" },
+    { id: "climate", label: "Climate Science", color: "bg-green-100 text-green-800", icon: Globe },
+    { id: "tech", label: "Tech (Data Science & ML)", color: "bg-blue-100 text-blue-800", icon: Code },
+    { id: "energy", label: "Energy & Renewables", color: "bg-yellow-100 text-yellow-800", icon: Zap },
+    { id: "weather", label: "Weather & Meteorology", color: "bg-sky-100 text-sky-800", icon: CloudRain },
+    { id: "academia", label: "Academia & Research", color: "bg-purple-100 text-purple-800", icon: GraduationCap },
+    { id: "geospatial", label: "Geospatial & GIS", color: "bg-indigo-100 text-indigo-800", icon: Map },
+    { id: "geophysics", label: "Geophysics & Geology", color: "bg-stone-100 text-stone-800", icon: Mountain },
+    { id: "insurance", label: "Insurance & Reinsurance", color: "bg-orange-100 text-orange-800", icon: Shield },
+    { id: "banking", label: "Banking & Finance", color: "bg-emerald-100 text-emerald-800", icon: Building2 },
   ]
 
   const toggleCategory = (categoryId: string) => {
@@ -99,7 +116,7 @@ export function JobNotificationsPage() {
                 based on your selected categories.
               </CardDescription>
               <p className="text-sm text-muted-foreground mt-2">
-                your email is only used for job notifications and can be unsubscribed at any time.
+                Your email is only used for job notifications and can be unsubscribed at any time.
               </p>
             </CardHeader>
             <CardContent>
@@ -132,28 +149,32 @@ export function JobNotificationsPage() {
 
                 <div className="space-y-3">
                   <Label>Select Industries</Label>
-                  <div className="grid grid-cols-2 gap-2">
-                    {categories.map((category) => (
-                      <button
-                        key={category.id}
-                        type="button"
-                        onClick={() => toggleCategory(category.id)}
-                        className={`p-3 rounded-lg border-2 transition-all ${
-                          selectedCategories.includes(category.id)
-                            ? "border-primary bg-primary/10"
-                            : "border-border hover:border-primary/50"
-                        }`}
-                      >
-                        <Badge
-                          variant="secondary"
-                          className={`${category.color} ${
-                            selectedCategories.includes(category.id) ? "ring-2 ring-primary" : ""
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    {categories.map((category) => {
+                      const IconComponent = category.icon
+                      return (
+                        <button
+                          key={category.id}
+                          type="button"
+                          onClick={() => toggleCategory(category.id)}
+                          className={`p-3 rounded-lg border-2 transition-all flex items-center gap-2 ${
+                            selectedCategories.includes(category.id)
+                              ? "border-primary bg-primary/10"
+                              : "border-border hover:border-primary/50"
                           }`}
                         >
-                          {category.label}
-                        </Badge>
-                      </button>
-                    ))}
+                          <IconComponent className="h-4 w-4" />
+                          <Badge
+                            variant="secondary"
+                            className={`${category.color} ${
+                              selectedCategories.includes(category.id) ? "ring-2 ring-primary" : ""
+                            }`}
+                          >
+                            {category.label}
+                          </Badge>
+                        </button>
+                      )
+                    })}
                   </div>
                   {selectedCategories.length === 0 && (
                     <p className="text-sm text-muted-foreground">Please select at least one industry</p>
@@ -182,16 +203,6 @@ export function JobNotificationsPage() {
                   </div>
                 )}
               </form>
-            </CardContent>
-          </Card>
-
-          {/* Privacy Notice */}
-          <Card className="mt-6">
-            <CardContent className="pt-6">
-              <div className="text-center text-sm text-muted-foreground">
-                <p className="mb-2">🔒 we do not keep your data :)</p>
-                <p>your email is only used for job notifications and can be unsubscribed at any time.</p>
-              </div>
             </CardContent>
           </Card>
         </div>
