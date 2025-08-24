@@ -13,6 +13,7 @@ import {
   Users,
   ChevronDown,
   ChevronUp,
+  EyeOff,
 } from "lucide-react"
 
 interface SidebarNavigationProps {
@@ -27,6 +28,7 @@ export function SidebarNavigation({ currentPage, onPageChange }: SidebarNavigati
 
   const pages = [
     { id: "conferences", label: "Conferences & Events", icon: Calendar },
+    { id: "off-market", label: "Off-market Jobs", icon: EyeOff },
     { id: "mentor-matching", label: "Mentor Matching", icon: Users },
   ]
 

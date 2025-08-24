@@ -1,5 +1,9 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+/* Adding Mapbox CSS imports for map functionality */
+/* Removed mapbox-gl CSS imports that were causing loading errors */
+/* @import "mapbox-gl/dist/mapbox-gl.css"; */
+/* @import "@mapbox/mapbox-gl-draw/dist/mapbox-gl-draw.css"; */
 
 @custom-variant dark (&:is(.dark *));
 

@@ -7,7 +7,8 @@ import { CVMatcherPage } from "@/components/cv-matcher-page"
 import { ConferencesPage } from "@/components/conferences-page"
 import { CVImproverPage } from "@/components/cv-improver-page"
 import { MentorMatchingPage } from "@/components/mentor-matching-page"
-import { JobNotificationsPage } from "@/components/job-notifications-page" // Added job notifications page import
+import { JobNotificationsPage } from "@/components/job-notifications-page"
+import { OffMarketJobsPage } from "@/components/off-market-jobs-page" // Added off-market jobs page import
 import { SidebarNavigation } from "@/components/sidebar-navigation"
 
 export default function Home() {
@@ -17,7 +18,7 @@ export default function Home() {
     switch (currentPage) {
       case "job-board":
         return <JobBoard />
-      case "job-notifications": // Added job notifications page routing
+      case "job-notifications":
         return <JobNotificationsPage />
       case "cv-matcher":
         return <CVMatcherPage />
@@ -27,6 +28,8 @@ export default function Home() {
         return <CVImproverPage />
       case "mentor-matching":
         return <MentorMatchingPage />
+      case "off-market": // Added off-market jobs page routing
+        return <OffMarketJobsPage />
       case "contact":
         return <ContactPage />
       default:

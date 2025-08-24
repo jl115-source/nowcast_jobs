@@ -31,7 +31,11 @@
       "posted": "2024-01-15",
       "remote": true,
       "contact": "careers@climateanalytics.org",
-      "applicationLink": "https://climateanalytics.org/careers/climate-data-scientist"
+      "applicationLink": "https://climateanalytics.org/careers/climate-data-scientist",
+      "coordinates": {
+        "lat": 40.015,
+        "lng": -105.2705
+      }
     },
     {
       "id": "2",
@@ -64,7 +68,11 @@
       "posted": "2024-01-12",
       "remote": false,
       "contact": "hr@solarwindtech.com",
-      "applicationLink": "https://solarwindtech.com/jobs/renewable-energy-engineer"
+      "applicationLink": "https://solarwindtech.com/jobs/renewable-energy-engineer",
+      "coordinates": {
+        "lat": 30.2672,
+        "lng": -97.7431
+      }
     },
     {
       "id": "3",
@@ -97,7 +105,11 @@
       "posted": "2024-01-10",
       "remote": true,
       "contact": "jobs@nwrc.gov",
-      "applicationLink": "https://nwrc.gov/careers/atmospheric-scientist"
+      "applicationLink": "https://nwrc.gov/careers/atmospheric-scientist",
+      "coordinates": {
+        "lat": 35.2226,
+        "lng": -97.4395
+      }
     },
     {
       "id": "4",
@@ -130,7 +142,11 @@
       "posted": "2024-01-08",
       "remote": true,
       "contact": "careers@ecospatial.com",
-      "applicationLink": "https://ecospatial.com/join-us/gis-analyst"
+      "applicationLink": "https://ecospatial.com/join-us/gis-analyst",
+      "coordinates": {
+        "lat": 45.5152,
+        "lng": -122.6784
+      }
     },
     {
       "id": "5",
@@ -163,7 +179,11 @@
       "posted": "2024-01-05",
       "remote": false,
       "contact": "postdoc@university.edu",
-      "applicationLink": "https://university.edu/climate-lab/postdoc-fellowship"
+      "applicationLink": "https://university.edu/climate-lab/postdoc-fellowship",
+      "coordinates": {
+        "lat": 42.3601,
+        "lng": -71.0589
+      }
     },
     {
       "id": "6",
@@ -196,7 +216,11 @@
       "posted": "2024-01-03",
       "remote": true,
       "contact": "talent@gridanalytics.com",
-      "applicationLink": "https://gridanalytics.com/careers/energy-data-analyst"
+      "applicationLink": "https://gridanalytics.com/careers/energy-data-analyst",
+      "coordinates": {
+        "lat": 39.7392,
+        "lng": -104.9903
+      }
     },
     {
       "id": "7",
@@ -229,7 +253,11 @@
       "posted": "2024-01-01",
       "remote": false,
       "contact": "research@marineклимate.org",
-      "applicationLink": "https://marineclimate.org/positions/oceanographer"
+      "applicationLink": "https://marineclimate.org/positions/oceanographer",
+      "coordinates": {
+        "lat": 32.7157,
+        "lng": -117.1611
+      }
     },
     {
       "id": "8",
@@ -262,7 +290,11 @@
       "posted": "2023-12-28",
       "remote": false,
       "contact": "forecasting@regionalweather.gov",
-      "applicationLink": "https://regionalweather.gov/jobs/meteorologist"
+      "applicationLink": "https://regionalweather.gov/jobs/meteorologist",
+      "coordinates": {
+        "lat": 25.7617,
+        "lng": -80.1918
+      }
     },
     {
       "id": "9",
@@ -295,7 +327,11 @@
       "posted": "2024-01-18",
       "remote": true,
       "contact": "careers@globalreinsurance.com",
-      "applicationLink": "https://globalreinsurance.com/careers/climate-risk-analyst"
+      "applicationLink": "https://globalreinsurance.com/careers/climate-risk-analyst",
+      "coordinates": {
+        "lat": 40.7128,
+        "lng": -74.006
+      }
     },
     {
       "id": "10",
@@ -328,7 +364,11 @@
       "posted": "2024-01-16",
       "remote": false,
       "contact": "jobs@insurtech-analytics.co.uk",
-      "applicationLink": "https://insurtech-analytics.co.uk/jobs/catastrophe-modeler"
+      "applicationLink": "https://insurtech-analytics.co.uk/jobs/catastrophe-modeler",
+      "coordinates": {
+        "lat": 51.5074,
+        "lng": -0.1278
+      }
     }
   ]
 }
