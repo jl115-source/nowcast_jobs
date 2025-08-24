@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
-import { Mail, Phone, MapPin } from "lucide-react"
 
 export function ContactPage() {
   return (
@@ -15,41 +14,7 @@ export function ContactPage() {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-8">
-        {/* Contact Information */}
-        <Card>
-          <CardHeader>
-            <CardTitle>Contact Information</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-6">
-            <div className="flex items-center space-x-3">
-              <Mail className="h-5 w-5 text-primary" />
-              <div>
-                <p className="font-medium">Email</p>
-                <p className="text-muted-foreground">contact@climatejobs.org</p>
-              </div>
-            </div>
-            <div className="flex items-center space-x-3">
-              <Phone className="h-5 w-5 text-primary" />
-              <div>
-                <p className="font-medium">Phone</p>
-                <p className="text-muted-foreground">+1 (555) 123-4567</p>
-              </div>
-            </div>
-            <div className="flex items-center space-x-3">
-              <MapPin className="h-5 w-5 text-primary" />
-              <div>
-                <p className="font-medium">Address</p>
-                <p className="text-muted-foreground">
-                  123 Climate Way
-                  <br />
-                  Boulder, CO 80301
-                </p>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-
+      <div className="max-w-2xl mx-auto">
         {/* Contact Form */}
         <Card>
           <CardHeader>

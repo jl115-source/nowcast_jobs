@@ -99,6 +99,7 @@ export function JobBoard({ showMatcherOnly = false }: JobBoardProps) {
   const [isMatching, setIsMatching] = useState(false)
   const [showMatches, setShowMatches] = useState(false)
   const [expandedJobs, setExpandedJobs] = useState<Set<string>>(new Set()) // Added state for expanded job cards
+  const [layoutColumns, setLayoutColumns] = useState<number>(2) // Set default to 2 columns and remove 3-column option
 
   const applyFiltersAndSort = (
     term: string,
@@ -601,7 +602,6 @@ export function JobBoard({ showMatcherOnly = false }: JobBoardProps) {
       >
         <div className="absolute inset-0 bg-primary/40"></div>
         <div className="relative z-10 text-center text-white">
-          <h1 className="text-4xl font-bold mb-2">Find Your Dream Job</h1>
           <p className="text-xl opacity-90">Specialized opportunities in climate, weather, energy & more</p>
         </div>
       </div>
@@ -714,6 +714,22 @@ export function JobBoard({ showMatcherOnly = false }: JobBoardProps) {
                   <SelectItem value="title">Job Title</SelectItem>
                 </SelectContent>
               </Select>
+
+              <div className="flex items-center gap-2 ml-4">
+                <span className="text-sm font-medium">Layout:</span>
+                <Select
+                  value={layoutColumns.toString()}
+                  onValueChange={(value) => setLayoutColumns(Number.parseInt(value))}
+                >
+                  <SelectTrigger className="w-[120px]">
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="1">1 Column</SelectItem>
+                    <SelectItem value="2">2 Columns</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
             </div>
           </div>
         </div>
@@ -794,7 +810,7 @@ export function JobBoard({ showMatcherOnly = false }: JobBoardProps) {
                   </CardContent>
                 </Card>
               ) : (
-                <div className="grid gap-4">
+                <div className={`grid gap-4 ${layoutColumns === 1 ? "grid-cols-1" : "grid-cols-1 lg:grid-cols-2"}`}>
                   {filteredJobs.map((job) => {
                     const match = getJobMatch(job.id)
                     const isExpanded = expandedJobs.has(job.id)
@@ -807,15 +823,15 @@ export function JobBoard({ showMatcherOnly = false }: JobBoardProps) {
                           <div className="flex justify-between items-start mb-3">
                             <div className="flex-1">
                               <div className="flex items-center gap-2 mb-1">
-                                <h3 className="text-lg font-semibold text-foreground">{job.title}</h3>
+                                <h3 className="font-semibold text-foreground text-lg">{job.title}</h3>
                                 {match && (
                                   <Badge variant={getMatchBadgeVariant(match.matchScore)} className="text-xs">
                                     {match.matchScore}%
                                   </Badge>
                                 )}
                               </div>
-                              <p className="text-base font-medium text-primary mb-2">{job.company}</p>
-                              <div className="flex flex-wrap gap-3 text-sm text-muted-foreground">
+                              <p className="font-medium text-primary mb-2 text-base">{job.company}</p>
+                              <div className="flex flex-wrap gap-3 text-muted-foreground text-sm">
                                 <div className="flex items-center gap-1">
                                   <MapPin className="h-3 w-3" />
                                   {job.location}
