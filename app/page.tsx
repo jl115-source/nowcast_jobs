@@ -8,7 +8,8 @@ import { ConferencesPage } from "@/components/conferences-page"
 import { CVImproverPage } from "@/components/cv-improver-page"
 import { MentorMatchingPage } from "@/components/mentor-matching-page"
 import { JobNotificationsPage } from "@/components/job-notifications-page"
-import { OffMarketJobsPage } from "@/components/off-market-jobs-page" // Added off-market jobs page import
+import { OffMarketJobsPage } from "@/components/off-market-jobs-page"
+import { CompaniesPage } from "@/components/companies-page" // Added companies page import
 import { SidebarNavigation } from "@/components/sidebar-navigation"
 
 export default function Home() {
@@ -24,11 +25,13 @@ export default function Home() {
         return <CVMatcherPage />
       case "conferences":
         return <ConferencesPage />
+      case "companies": // Added companies page routing
+        return <CompaniesPage />
       case "cv-improver":
         return <CVImproverPage />
       case "mentor-matching":
         return <MentorMatchingPage />
-      case "off-market": // Added off-market jobs page routing
+      case "off-market":
         return <OffMarketJobsPage />
       case "contact":
         return <ContactPage />

@@ -14,6 +14,7 @@ import {
   ChevronDown,
   ChevronUp,
   EyeOff,
+  Building2,
 } from "lucide-react"
 
 interface SidebarNavigationProps {
@@ -28,6 +29,7 @@ export function SidebarNavigation({ currentPage, onPageChange }: SidebarNavigati
 
   const pages = [
     { id: "conferences", label: "Conferences & Events", icon: Calendar },
+    { id: "companies", label: "Companies", icon: Building2 }, // Added companies page
     { id: "off-market", label: "Off-market Jobs", icon: EyeOff },
     { id: "mentor-matching", label: "Mentor Matching", icon: Users },
   ]
