@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import {
   Search,
   Filter,
@@ -285,49 +285,44 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
     )
   }
 
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search)
+    const jobId = urlParams.get("job")
+
+    if (jobId) {
+      setExpandedJobs(new Set([jobId]))
+
+      setTimeout(() => {
+        const jobElement = document.getElementById(`job-${jobId}`)
+        if (jobElement) {
+          jobElement.scrollIntoView({ behavior: "smooth", block: "center" })
+        }
+      }, 100)
+    }
+  }, [])
+
   const toggleJobExpansion = (jobId: string) => {
     const newExpanded = new Set(expandedJobs)
     if (newExpanded.has(jobId)) {
       newExpanded.delete(jobId)
+      const url = new URL(window.location.href)
+      url.searchParams.delete("job")
+      window.history.replaceState({}, "", url.toString())
     } else {
       newExpanded.add(jobId)
+      const url = new URL(window.location.href)
+      url.searchParams.set("job", jobId)
+      window.history.replaceState({}, "", url.toString())
     }
     setExpandedJobs(newExpanded)
   }
 
-  const handleCVUploadComplete = async (uploadedCvData: CVData) => {
-    setCvData(uploadedCvData)
-    setIsMatching(true)
-
-    try {
-      const response = await fetch("/api/match-jobs", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ cvData: uploadedCvData }),
-      })
-
-      if (response.ok) {
-        const { matches } = await response.json()
-        setJobMatches(matches)
-        setShowMatches(true)
-        applyFiltersAndSort(
-          searchTerm,
-          locationFilter,
-          countryFilter,
-          typeFilter,
-          categoryFilter,
-          remoteFilter,
-          sortBy,
-          matches,
-        ) // Updated function call with category parameter
-      }
-    } catch (error) {
-      console.error("Job matching failed:", error)
-    } finally {
-      setIsMatching(false)
-    }
+  const copyJobLink = (jobId: string) => {
+    const url = new URL(window.location.href)
+    url.searchParams.set("job", jobId)
+    navigator.clipboard.writeText(url.toString()).then(() => {
+      console.log("Job link copied to clipboard")
+    })
   }
 
   const getJobMatch = (jobId: string): JobMatch | undefined => {
@@ -405,7 +400,6 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
       <div
         className="relative h-64 bg-gradient-to-r from-primary/20 to-accent/20 flex items-center justify-center"
         style={{
@@ -422,7 +416,7 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
           </p>
           <div className="flex justify-center">
             <button
-              onClick={() => onPageChange?.("job-notifications")} // Use proper navigation instead of local state
+              onClick={() => onPageChange?.("job-notifications")}
               className="bg-white/20 hover:bg-white/30 text-white px-6 py-2 rounded-lg transition-colors duration-200 backdrop-blur-sm border border-white/20"
             >
               🌧️ Get Job Notifications
@@ -431,9 +425,7 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
         </div>
       </div>
 
-      {/* Content */}
       <div className="container mx-auto px-4 py-8">
-        {/* Search and Filters */}
         <div className="bg-card rounded-lg shadow-sm border p-6 mb-8">
           <div className="flex flex-col lg:flex-row gap-4 mb-6">
             <div className="flex-1">
@@ -594,7 +586,7 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
                         remoteFilter,
                         sortBy,
                         jobMatches,
-                      ) // Updated function call
+                      )
                     }}
                   >
                     <Target className="mr-2 h-4 w-4" />
@@ -612,7 +604,7 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
                         categoryFilter,
                         remoteFilter,
                         sortBy,
-                      ) // Updated function call
+                      )
                     }}
                   >
                     Show All Jobs
@@ -633,7 +625,7 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
             const isExpanded = expandedJobs.has(job.id)
 
             return (
-              <Card key={job.id} className="hover:shadow-md transition-shadow">
+              <Card key={job.id} id={`job-${job.id}`} className="hover:shadow-md transition-shadow">
                 <CardHeader className="pb-3">
                   <div className="flex items-start justify-between">
                     <div className="flex-1">
@@ -742,6 +734,9 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
                           </a>
                         </Button>
                       )}
+                      <Button variant="outline" size="sm" onClick={() => copyJobLink(job.id)}>
+                        Share
+                      </Button>
                     </div>
                     <Button variant="ghost" size="sm" onClick={() => toggleJobExpansion(job.id)}>
                       {isExpanded ? (
