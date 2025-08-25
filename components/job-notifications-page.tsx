@@ -1,7 +1,7 @@
 "use client"
 
 import type React from "react"
-import { GraduationCap } from "lucide-react"
+import { Mail } from "lucide-react"
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
@@ -11,8 +11,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import {
-  Bell,
-  Mail,
+  GraduationCap,
   CheckCircle,
   AlertCircle,
   Globe,
@@ -110,7 +109,7 @@ export function JobNotificationsPage() {
       >
         <div className="absolute inset-0 bg-primary/40"></div>
         <div className="relative z-10 text-center text-white">
-          <Bell className="h-16 w-16 mx-auto mb-4" />
+          <Mail className="h-16 w-16 mx-auto mb-4" />
           <h1 className="text-4xl font-bold mb-2">Job Notifications</h1>
           <p className="text-xl opacity-90">Stay updated with the latest opportunities</p>
         </div>

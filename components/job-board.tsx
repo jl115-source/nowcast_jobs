@@ -340,7 +340,7 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
             onClick={() => onPageChange?.("job-notifications")}
             className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors duration-200 shadow-lg"
           >
-            🌧️ Get Job Notifications
+            📧 Get Job Notifications
           </button>
         </div>
       </div>
