@@ -1,6 +1,7 @@
 "use client"
 
 import type React from "react"
+import { GraduationCap } from "lucide-react"
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
@@ -18,7 +19,6 @@ import {
   Code,
   Zap,
   CloudRain,
-  GraduationCap,
   Map,
   Mountain,
   Shield,
@@ -58,12 +58,26 @@ export function JobNotificationsPage() {
     setSubmitStatus("idle")
 
     try {
+      const categoryMap: { [key: string]: string } = {
+        academia: "Academia & Research",
+        banking: "Banking & Finance",
+        climate: "Climate Science",
+        energy: "Energy & Renewables",
+        geospatial: "Geospatial & GIS",
+        geophysics: "Geophysics & Geology",
+        insurance: "Insurance & Reinsurance",
+        tech: "Tech (Data Science & ML)",
+        weather: "Weather & Meteorology",
+      }
+
+      const fullCategoryNames = selectedCategories.map((id) => categoryMap[id])
+
       const response = await fetch("/api/newsletter-subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           email,
-          categories: selectedCategories,
+          categories: fullCategoryNames,
           frequency,
         }),
       })
