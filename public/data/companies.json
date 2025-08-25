@@ -1,0 +1,604 @@
+{
+  "companies": [
+    {
+      "id": 1,
+      "name": "Climate Analytics",
+      "location": "Berlin, Germany",
+      "employees": "50-100",
+      "description": "Leading climate science and policy institute providing cutting-edge analysis on climate change impacts and solutions.",
+      "website": "https://climateanalytics.org",
+      "categories": ["Climate Science"],
+      "isHiring": true
+    },
+    {
+      "id": 2,
+      "name": "Ørsted",
+      "location": "Copenhagen, Denmark",
+      "employees": "5000+",
+      "description": "Global leader in offshore wind energy development and renewable energy solutions.",
+      "website": "https://orsted.com",
+      "categories": ["Energy & Renewables"],
+      "isHiring": true
+    },
+    {
+      "id": 3,
+      "name": "Swiss Re",
+      "location": "Zurich, Switzerland",
+      "employees": "10000+",
+      "description": "One of the world's leading providers of reinsurance, insurance and other forms of insurance-based risk transfer.",
+      "website": "https://swissre.com",
+      "categories": ["Insurance & Reinsurance"],
+      "isHiring": false
+    },
+    {
+      "id": 4,
+      "name": "ECMWF",
+      "location": "Reading, UK",
+      "employees": "300-500",
+      "description": "European Centre for Medium-Range Weather Forecasts, providing global numerical weather prediction services.",
+      "website": "https://ecmwf.int",
+      "categories": ["Weather & Meteorology"],
+      "isHiring": true
+    },
+    {
+      "id": 5,
+      "name": "Schlumberger",
+      "location": "Houston, USA",
+      "employees": "50000+",
+      "description": "Leading provider of technology for reservoir characterization, drilling, production, and processing.",
+      "website": "https://slb.com",
+      "categories": ["Geophysics & Geology", "Energy & Renewables"],
+      "isHiring": false
+    },
+    {
+      "id": 6,
+      "name": "Esri",
+      "location": "Redlands, USA",
+      "employees": "5000+",
+      "description": "Global leader in geographic information system (GIS) software, web GIS and geodatabase management.",
+      "website": "https://esri.com",
+      "categories": ["Geospatial & GIS", "Tech (Data Science & ML)"],
+      "isHiring": true
+    },
+    {
+      "id": 7,
+      "name": "MIT Climate Portal",
+      "location": "Cambridge, USA",
+      "employees": "100-200",
+      "description": "MIT's hub for climate change science, engineering, and policy research and education.",
+      "website": "https://climate.mit.edu",
+      "categories": ["Academia & Research", "Climate Science"],
+      "isHiring": false
+    },
+    {
+      "id": 8,
+      "name": "Goldman Sachs",
+      "location": "New York, USA",
+      "employees": "40000+",
+      "description": "Leading global investment banking, securities and investment management firm.",
+      "website": "https://goldmansachs.com",
+      "categories": ["Banking & Finance"],
+      "isHiring": true
+    },
+    {
+      "id": 9,
+      "name": "National Weather Service",
+      "location": "Silver Spring, USA",
+      "employees": "5000+",
+      "description": "United States federal agency providing weather forecasts, warnings, and meteorological services.",
+      "website": "https://weather.gov",
+      "categories": ["Weather & Meteorology"],
+      "isHiring": false
+    },
+    {
+      "id": 10,
+      "name": "Aon",
+      "location": "London, UK",
+      "employees": "50000+",
+      "description": "Global professional services firm providing risk, retirement and health consulting.",
+      "website": "https://aon.com",
+      "categories": ["Insurance & Reinsurance"],
+      "isHiring": true
+    },
+    {
+      "id": 11,
+      "name": "Shell",
+      "location": "The Hague, Netherlands",
+      "employees": "80000+",
+      "description": "Global energy company focused on oil, gas, and renewable energy solutions.",
+      "website": "https://shell.com",
+      "categories": ["Energy & Renewables", "Geophysics & Geology"],
+      "isHiring": false
+    },
+    {
+      "id": 12,
+      "name": "Google Earth Engine",
+      "location": "Mountain View, USA",
+      "employees": "1000+",
+      "description": "Planetary-scale platform for Earth science data and analysis using Google's computing infrastructure.",
+      "website": "https://earthengine.google.com",
+      "categories": ["Tech (Data Science & ML)", "Geospatial & GIS"],
+      "isHiring": true
+    },
+    {
+      "id": 13,
+      "name": "Oxford University",
+      "location": "Oxford, UK",
+      "employees": "10000+",
+      "description": "World-renowned university with leading research programs in climate science and environmental studies.",
+      "website": "https://ox.ac.uk",
+      "categories": ["Academia & Research"],
+      "isHiring": false
+    },
+    {
+      "id": 14,
+      "name": "JPMorgan Chase",
+      "location": "New York, USA",
+      "employees": "250000+",
+      "description": "Leading global financial services firm with significant investments in climate finance.",
+      "website": "https://jpmorganchase.com",
+      "categories": ["Banking & Finance"],
+      "isHiring": true
+    },
+    {
+      "id": 15,
+      "name": "Vestas",
+      "location": "Aarhus, Denmark",
+      "employees": "25000+",
+      "description": "Global leader in sustainable energy solutions, specializing in wind turbine design and manufacturing.",
+      "website": "https://vestas.com",
+      "categories": ["Energy & Renewables"],
+      "isHiring": false
+    },
+    {
+      "id": 16,
+      "name": "Munich Re",
+      "location": "Munich, Germany",
+      "employees": "40000+",
+      "description": "One of the world's leading reinsurers with expertise in natural catastrophe risk assessment.",
+      "website": "https://munichre.com",
+      "categories": ["Insurance & Reinsurance"],
+      "isHiring": true
+    },
+    {
+      "id": 17,
+      "name": "NOAA",
+      "location": "Silver Spring, USA",
+      "employees": "12000+",
+      "description": "National Oceanic and Atmospheric Administration providing weather, climate, and ocean services.",
+      "website": "https://noaa.gov",
+      "categories": ["Weather & Meteorology", "Climate Science"],
+      "isHiring": false
+    },
+    {
+      "id": 18,
+      "name": "Baker Hughes",
+      "location": "Houston, USA",
+      "employees": "50000+",
+      "description": "Energy technology company providing solutions for energy and industrial customers worldwide.",
+      "website": "https://bakerhughes.com",
+      "categories": ["Geophysics & Geology", "Energy & Renewables"],
+      "isHiring": true
+    },
+    {
+      "id": 19,
+      "name": "Planet Labs",
+      "location": "San Francisco, USA",
+      "employees": "500-1000",
+      "description": "Earth imaging company providing daily satellite data and insights about our changing planet.",
+      "website": "https://planet.com",
+      "categories": ["Geospatial & GIS", "Tech (Data Science & ML)"],
+      "isHiring": false
+    },
+    {
+      "id": 20,
+      "name": "Cambridge University",
+      "location": "Cambridge, UK",
+      "employees": "8000+",
+      "description": "Leading research university with world-class programs in climate science and environmental research.",
+      "website": "https://cam.ac.uk",
+      "categories": ["Academia & Research", "Climate Science"],
+      "isHiring": true
+    },
+    {
+      "id": 21,
+      "name": "BlackRock",
+      "location": "New York, USA",
+      "employees": "16000+",
+      "description": "World's largest asset manager with significant focus on sustainable investing and climate risk.",
+      "website": "https://blackrock.com",
+      "categories": ["Banking & Finance"],
+      "isHiring": false
+    },
+    {
+      "id": 22,
+      "name": "The Weather Company",
+      "location": "Atlanta, USA",
+      "employees": "2000+",
+      "description": "Leading provider of weather forecasting services and meteorological data solutions.",
+      "website": "https://weather.com",
+      "categories": ["Weather & Meteorology", "Tech (Data Science & ML)"],
+      "isHiring": true
+    },
+    {
+      "id": 23,
+      "name": "Halliburton",
+      "location": "Houston, USA",
+      "employees": "40000+",
+      "description": "Global provider of products and services to the energy industry, including geophysical services.",
+      "website": "https://halliburton.com",
+      "categories": ["Geophysics & Geology"],
+      "isHiring": false
+    },
+    {
+      "id": 24,
+      "name": "Maxar Technologies",
+      "location": "Westminster, USA",
+      "employees": "4000+",
+      "description": "Space technology company providing Earth intelligence and space infrastructure solutions.",
+      "website": "https://maxar.com",
+      "categories": ["Geospatial & GIS"],
+      "isHiring": true
+    },
+    {
+      "id": 25,
+      "name": "Tesla Energy",
+      "location": "Austin, USA",
+      "employees": "10000+",
+      "description": "Leading electric vehicle and clean energy company developing sustainable energy solutions.",
+      "website": "https://tesla.com",
+      "categories": ["Energy & Renewables"],
+      "isHiring": false
+    },
+    {
+      "id": 26,
+      "name": "Berkshire Hathaway",
+      "location": "Omaha, USA",
+      "employees": "380000+",
+      "description": "Multinational conglomerate holding company with significant insurance and energy investments.",
+      "website": "https://berkshirehathaway.com",
+      "categories": ["Insurance & Reinsurance", "Banking & Finance"],
+      "isHiring": true
+    },
+    {
+      "id": 27,
+      "name": "AccuWeather",
+      "location": "State College, USA",
+      "employees": "500+",
+      "description": "Global leader in weather forecasting services and meteorological solutions.",
+      "website": "https://accuweather.com",
+      "categories": ["Weather & Meteorology"],
+      "isHiring": false
+    },
+    {
+      "id": 28,
+      "name": "ExxonMobil",
+      "location": "Irving, USA",
+      "employees": "60000+",
+      "description": "Global energy company with extensive geophysical research and exploration capabilities.",
+      "website": "https://exxonmobil.com",
+      "categories": ["Geophysics & Geology", "Energy & Renewables"],
+      "isHiring": true
+    },
+    {
+      "id": 29,
+      "name": "Microsoft AI for Earth",
+      "location": "Redmond, USA",
+      "employees": "2000+",
+      "description": "Microsoft's initiative using AI and cloud computing to address environmental challenges.",
+      "website": "https://microsoft.com",
+      "categories": ["Tech (Data Science & ML)", "Climate Science"],
+      "isHiring": false
+    },
+    {
+      "id": 30,
+      "name": "Stanford University",
+      "location": "Stanford, USA",
+      "employees": "12000+",
+      "description": "Leading research university with cutting-edge programs in climate science and environmental engineering.",
+      "website": "https://stanford.edu",
+      "categories": ["Academia & Research"],
+      "isHiring": true
+    },
+    {
+      "id": 31,
+      "name": "Morgan Stanley",
+      "location": "New York, USA",
+      "employees": "75000+",
+      "description": "Global financial services firm with significant sustainable finance and climate risk expertise.",
+      "website": "https://morganstanley.com",
+      "categories": ["Banking & Finance"],
+      "isHiring": false
+    },
+    {
+      "id": 32,
+      "name": "Siemens Energy",
+      "location": "Munich, Germany",
+      "employees": "90000+",
+      "description": "Global energy technology company focusing on renewable energy and grid solutions.",
+      "website": "https://siemens-energy.com",
+      "categories": ["Energy & Renewables"],
+      "isHiring": true
+    },
+    {
+      "id": 33,
+      "name": "Lloyd's of London",
+      "location": "London, UK",
+      "employees": "5000+",
+      "description": "World's leading insurance and reinsurance marketplace specializing in complex risks.",
+      "website": "https://lloyds.com",
+      "categories": ["Insurance & Reinsurance"],
+      "isHiring": false
+    },
+    {
+      "id": 34,
+      "name": "Met Office",
+      "location": "Exeter, UK",
+      "employees": "2000+",
+      "description": "UK's national weather service providing meteorological services and climate science research.",
+      "website": "https://metoffice.gov.uk",
+      "categories": ["Weather & Meteorology", "Climate Science"],
+      "isHiring": true
+    },
+    {
+      "id": 35,
+      "name": "ConocoPhillips",
+      "location": "Houston, USA",
+      "employees": "10000+",
+      "description": "Independent exploration and production company with advanced geophysical capabilities.",
+      "website": "https://conocophillips.com",
+      "categories": ["Geophysics & Geology"],
+      "isHiring": false
+    },
+    {
+      "id": 36,
+      "name": "DigitalGlobe",
+      "location": "Westminster, USA",
+      "employees": "1000+",
+      "description": "Leading provider of commercial high-resolution Earth observation and advanced geospatial solutions.",
+      "website": "https://digitalglobe.com",
+      "categories": ["Geospatial & GIS"],
+      "isHiring": true
+    },
+    {
+      "id": 37,
+      "name": "Harvard University",
+      "location": "Cambridge, USA",
+      "employees": "17000+",
+      "description": "Prestigious research university with world-renowned environmental and climate research programs.",
+      "website": "https://harvard.edu",
+      "categories": ["Academia & Research"],
+      "isHiring": false
+    },
+    {
+      "id": 38,
+      "name": "Citi",
+      "location": "New York, USA",
+      "employees": "200000+",
+      "description": "Global bank with significant investments in sustainable finance and climate risk management.",
+      "website": "https://citi.com",
+      "categories": ["Banking & Finance"],
+      "isHiring": true
+    },
+    {
+      "id": 39,
+      "name": "NextEra Energy",
+      "location": "Juno Beach, USA",
+      "employees": "15000+",
+      "description": "Leading clean energy company and the world's largest generator of renewable energy from wind and sun.",
+      "website": "https://nexteraenergy.com",
+      "categories": ["Energy & Renewables"],
+      "isHiring": false
+    },
+    {
+      "id": 40,
+      "name": "Allianz",
+      "location": "Munich, Germany",
+      "employees": "150000+",
+      "description": "Global financial services company with extensive insurance and asset management operations.",
+      "website": "https://allianz.com",
+      "categories": ["Insurance & Reinsurance"],
+      "isHiring": true
+    },
+    {
+      "id": 41,
+      "name": "Weather Underground",
+      "location": "San Francisco, USA",
+      "employees": "200+",
+      "description": "Popular weather service providing hyperlocal weather forecasts and crowd-sourced weather data.",
+      "website": "https://wunderground.com",
+      "categories": ["Weather & Meteorology", "Tech (Data Science & ML)"],
+      "isHiring": false
+    },
+    {
+      "id": 42,
+      "name": "Chevron",
+      "location": "San Ramon, USA",
+      "employees": "45000+",
+      "description": "Integrated energy company with extensive geophysical exploration and production capabilities.",
+      "website": "https://chevron.com",
+      "categories": ["Geophysics & Geology", "Energy & Renewables"],
+      "isHiring": true
+    },
+    {
+      "id": 43,
+      "name": "Trimble",
+      "location": "Sunnyvale, USA",
+      "employees": "11000+",
+      "description": "Technology company providing advanced positioning solutions and geospatial technologies.",
+      "website": "https://trimble.com",
+      "categories": ["Geospatial & GIS"],
+      "isHiring": false
+    },
+    {
+      "id": 44,
+      "name": "Yale University",
+      "location": "New Haven, USA",
+      "employees": "15000+",
+      "description": "Ivy League research university with leading programs in environmental studies and climate science.",
+      "website": "https://yale.edu",
+      "categories": ["Academia & Research", "Climate Science"],
+      "isHiring": true
+    },
+    {
+      "id": 45,
+      "name": "Bank of America",
+      "location": "Charlotte, USA",
+      "employees": "200000+",
+      "description": "Major American multinational investment bank with significant sustainable finance initiatives.",
+      "website": "https://bankofamerica.com",
+      "categories": ["Banking & Finance"],
+      "isHiring": false
+    },
+    {
+      "id": 46,
+      "name": "General Electric Renewable Energy",
+      "location": "Paris, France",
+      "employees": "40000+",
+      "description": "Leading renewable energy technology company providing wind, hydro, and grid solutions.",
+      "website": "https://ge.com",
+      "categories": ["Energy & Renewables"],
+      "isHiring": true
+    },
+    {
+      "id": 47,
+      "name": "Zurich Insurance",
+      "location": "Zurich, Switzerland",
+      "employees": "55000+",
+      "description": "Global insurance company with expertise in climate risk assessment and natural catastrophe modeling.",
+      "website": "https://zurich.com",
+      "categories": ["Insurance & Reinsurance"],
+      "isHiring": false
+    },
+    {
+      "id": 48,
+      "name": "IBM Weather",
+      "location": "Armonk, USA",
+      "employees": "3000+",
+      "description": "IBM's weather division providing advanced weather analytics and forecasting solutions.",
+      "website": "https://ibm.com",
+      "categories": ["Weather & Meteorology", "Tech (Data Science & ML)"],
+      "isHiring": true
+    },
+    {
+      "id": 49,
+      "name": "BP",
+      "location": "London, UK",
+      "employees": "70000+",
+      "description": "Global energy company transitioning to renewable energy with extensive geophysical expertise.",
+      "website": "https://bp.com",
+      "categories": ["Geophysics & Geology", "Energy & Renewables"],
+      "isHiring": false
+    },
+    {
+      "id": 50,
+      "name": "Hexagon Geospatial",
+      "location": "Madison, USA",
+      "employees": "2000+",
+      "description": "Leading provider of geospatial software and solutions for mapping and spatial analysis.",
+      "website": "https://hexagon.com",
+      "categories": ["Geospatial & GIS"],
+      "isHiring": true
+    },
+    {
+      "id": 51,
+      "name": "Princeton University",
+      "location": "Princeton, USA",
+      "employees": "8000+",
+      "description": "Elite research university with renowned programs in atmospheric and oceanic sciences.",
+      "website": "https://princeton.edu",
+      "categories": ["Academia & Research"],
+      "isHiring": false
+    },
+    {
+      "id": 52,
+      "name": "Wells Fargo",
+      "location": "San Francisco, USA",
+      "employees": "250000+",
+      "description": "Major American bank with growing focus on sustainable finance and environmental risk management.",
+      "website": "https://wellsfargo.com",
+      "categories": ["Banking & Finance"],
+      "isHiring": true
+    },
+    {
+      "id": 53,
+      "name": "Equinor",
+      "location": "Stavanger, Norway",
+      "employees": "20000+",
+      "description": "Norwegian energy company leading the transition to renewable energy and offshore wind.",
+      "website": "https://equinor.com",
+      "categories": ["Energy & Renewables"],
+      "isHiring": false
+    },
+    {
+      "id": 54,
+      "name": "AXA",
+      "location": "Paris, France",
+      "employees": "120000+",
+      "description": "Global insurance and asset management company with significant climate risk expertise.",
+      "website": "https://axa.com",
+      "categories": ["Insurance & Reinsurance"],
+      "isHiring": true
+    },
+    {
+      "id": 55,
+      "name": "Meteomatics",
+      "location": "St. Gallen, Switzerland",
+      "employees": "100+",
+      "description": "Weather technology company providing high-resolution weather data and forecasting services.",
+      "website": "https://meteomatics.com",
+      "categories": ["Weather & Meteorology"],
+      "isHiring": false
+    },
+    {
+      "id": 56,
+      "name": "TotalEnergies",
+      "location": "Courbevoie, France",
+      "employees": "100000+",
+      "description": "Multi-energy company with extensive geophysical research and renewable energy development.",
+      "website": "https://totalenergies.com",
+      "categories": ["Geophysics & Geology", "Energy & Renewables"],
+      "isHiring": true
+    },
+    {
+      "id": 57,
+      "name": "Bentley Systems",
+      "location": "Exton, USA",
+      "employees": "4000+",
+      "description": "Infrastructure engineering software company providing geospatial and modeling solutions.",
+      "website": "https://bentley.com",
+      "categories": ["Geospatial & GIS", "Tech (Data Science & ML)"],
+      "isHiring": false
+    },
+    {
+      "id": 58,
+      "name": "Columbia University",
+      "location": "New York, USA",
+      "employees": "18000+",
+      "description": "Leading research university with world-class Earth and environmental sciences programs.",
+      "website": "https://columbia.edu",
+      "categories": ["Academia & Research", "Climate Science"],
+      "isHiring": true
+    },
+    {
+      "id": 59,
+      "name": "HSBC",
+      "location": "London, UK",
+      "employees": "220000+",
+      "description": "Global banking and financial services company with significant sustainable finance initiatives.",
+      "website": "https://hsbc.com",
+      "categories": ["Banking & Finance"],
+      "isHiring": false
+    },
+    {
+      "id": 60,
+      "name": "Engie",
+      "location": "Courbevoie, France",
+      "employees": "170000+",
+      "description": "Global energy company focused on renewable energy and energy transition solutions.",
+      "website": "https://engie.com",
+      "categories": ["Energy & Renewables"],
+      "isHiring": true
+    }
+  ]
+}

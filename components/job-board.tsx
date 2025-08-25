@@ -332,10 +332,8 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
       >
         <div className="absolute inset-0 bg-primary/40"></div>
         <div className="relative z-10 text-center text-white">
-          <h1 className="text-4xl font-bold mb-4">🌧️ Jobs for your niche</h1>
-          <p className="text-xl mb-6 opacity-90">
-            Specialist jobs in weather, climate, energy, commodities, insurance, banking and geoscience fields
-          </p>
+          <h1 className="text-4xl font-bold mb-4">🌧️ Specialist Science Jobs</h1>
+          <p className="text-xl mb-6 opacity-90">Niche Jobs In Weather, Climate, Energy, Commodities And Geosciences</p>
         </div>
         <div className="absolute bottom-4 left-4">
           <button

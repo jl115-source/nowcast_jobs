@@ -5,8 +5,6 @@ import {
   Calendar,
   MapPin,
   Globe,
-  ExternalLink,
-  Users,
   Tag,
   Filter,
   SortAsc,
@@ -387,19 +385,6 @@ export function ConferencesPage() {
                     ))}
                   </div>
 
-                  {conference.linkedJobs.length > 0 && (
-                    <div className="mb-4 p-3 bg-muted/50 rounded-lg">
-                      <div className="flex items-center gap-2 mb-2">
-                        <Users className="h-4 w-4 text-primary" />
-                        <span className="text-sm font-medium">Related Job Opportunities</span>
-                      </div>
-                      <div className="text-sm text-muted-foreground">
-                        {conference.linkedJobs.length} job{conference.linkedJobs.length > 1 ? "s" : ""} available from
-                        companies attending this event
-                      </div>
-                    </div>
-                  )}
-
                   <div className="flex justify-between items-center">
                     <div className="text-sm text-muted-foreground">
                       {new Date(conference.startDate) > new Date() ? "Upcoming" : "Past"} • {conference.country}
@@ -411,12 +396,6 @@ export function ConferencesPage() {
                           Visit Website
                         </a>
                       </Button>
-                      {conference.linkedJobs.length > 0 && (
-                        <Button size="sm">
-                          <ExternalLink className="mr-2 h-4 w-4" />
-                          View Jobs
-                        </Button>
-                      )}
                     </div>
                   </div>
                 </CardContent>

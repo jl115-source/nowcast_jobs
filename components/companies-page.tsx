@@ -1,279 +1,165 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Building2, MapPin, Users, ExternalLink, Search } from "lucide-react"
+import { Building2, MapPin, Users, ExternalLink, Search, ChevronLeft, ChevronRight } from "lucide-react"
 
-const companiesData = {
-  academia: [
-    {
-      name: "Climate Research Institute",
-      location: "Cambridge, MA",
-      coordinates: { x: 390, y: 150 },
-      employees: "100-200",
-      description: "University climate research",
-      website: "https://climateresearch.edu",
-      jobs: 6,
-      categories: ["academia", "climate"],
-    },
-    {
-      name: "Environmental Studies Center",
-      location: "Berkeley, CA",
-      coordinates: { x: 100, y: 190 },
-      employees: "50-100",
-      description: "Environmental science research",
-      website: "https://envstudies.edu",
-      jobs: 4,
-      categories: ["academia", "climate"],
-    },
-  ],
-  banking: [
-    {
-      name: "Green Finance Corp",
-      location: "New York, NY",
-      coordinates: { x: 380, y: 170 },
-      employees: "1000+",
-      description: "Sustainable finance and green bonds",
-      website: "https://greenfinance.com",
-      jobs: 20,
-      categories: ["banking", "climate"],
-    },
-    {
-      name: "Climate Investment Bank",
-      location: "London, UK",
-      coordinates: { x: 450, y: 120 },
-      employees: "500-1000",
-      description: "Climate-focused investment banking",
-      website: "https://climateinvestment.com",
-      jobs: 15,
-      categories: ["banking", "energy"],
-    },
-  ],
-  climate: [
-    {
-      name: "Climate Solutions Inc",
-      location: "San Francisco, CA",
-      coordinates: { x: 120, y: 180 },
-      employees: "500-1000",
-      description: "Leading climate technology solutions",
-      website: "https://climatesolutions.com",
-      jobs: 12,
-      categories: ["climate", "tech"],
-    },
-    {
-      name: "Carbon Capture Co",
-      location: "Austin, TX",
-      coordinates: { x: 280, y: 220 },
-      employees: "100-500",
-      description: "Direct air capture technology",
-      website: "https://carboncapture.com",
-      jobs: 8,
-      categories: ["climate", "energy"],
-    },
-    {
-      name: "Green Future Labs",
-      location: "Boston, MA",
-      coordinates: { x: 380, y: 160 },
-      employees: "50-100",
-      description: "Climate research and development",
-      website: "https://greenfuture.com",
-      jobs: 5,
-      categories: ["climate", "academia"],
-    },
-  ],
-  energy: [
-    {
-      name: "Renewable Power Corp",
-      location: "Phoenix, AZ",
-      coordinates: { x: 180, y: 240 },
-      employees: "1000+",
-      description: "Solar and wind energy solutions",
-      website: "https://renewablepower.com",
-      jobs: 25,
-      categories: ["energy", "climate"],
-    },
-    {
-      name: "Grid Innovations",
-      location: "Seattle, WA",
-      coordinates: { x: 80, y: 120 },
-      employees: "500-1000",
-      description: "Smart grid technology",
-      website: "https://gridinnovations.com",
-      jobs: 18,
-      categories: ["energy", "tech"],
-    },
-    {
-      name: "Energy Storage Solutions",
-      location: "Atlanta, GA",
-      coordinates: { x: 340, y: 240 },
-      employees: "200-500",
-      description: "Battery and storage systems",
-      website: "https://energystorage.com",
-      jobs: 11,
-      categories: ["energy", "tech"],
-    },
-  ],
-  geospatial: [
-    {
-      name: "GeoMapping Technologies",
-      location: "Washington, DC",
-      coordinates: { x: 370, y: 200 },
-      employees: "300-500",
-      description: "Satellite and mapping solutions",
-      website: "https://geomapping.com",
-      jobs: 14,
-      categories: ["geospatial", "tech"],
-    },
-    {
-      name: "Spatial Analytics Corp",
-      location: "Portland, OR",
-      coordinates: { x: 60, y: 140 },
-      employees: "100-300",
-      description: "GIS and spatial data analysis",
-      website: "https://spatialanalytics.com",
-      jobs: 9,
-      categories: ["geospatial", "tech"],
-    },
-  ],
-  geophysics: [
-    {
-      name: "Earth Sciences Institute",
-      location: "Denver, CO",
-      coordinates: { x: 240, y: 200 },
-      employees: "200-500",
-      description: "Geological and geophysical research",
-      website: "https://earthsciences.com",
-      jobs: 12,
-      categories: ["geophysics", "academia"],
-    },
-    {
-      name: "Seismic Solutions Ltd",
-      location: "Houston, TX",
-      coordinates: { x: 260, y: 260 },
-      employees: "100-300",
-      description: "Seismic data analysis and interpretation",
-      website: "https://seismicsolutions.com",
-      jobs: 8,
-      categories: ["geophysics", "energy"],
-    },
-  ],
-  insurance: [
-    {
-      name: "Climate Risk Insurance",
-      location: "New York, NY",
-      coordinates: { x: 380, y: 170 },
-      employees: "1000+",
-      description: "Climate risk assessment and insurance",
-      website: "https://climaterisk.com",
-      jobs: 22,
-      categories: ["insurance", "climate"],
-    },
-    {
-      name: "Weather Insurance Group",
-      location: "Chicago, IL",
-      coordinates: { x: 300, y: 180 },
-      employees: "500-1000",
-      description: "Weather-related insurance products",
-      website: "https://weatherinsurance.com",
-      jobs: 16,
-      categories: ["insurance", "weather"],
-    },
-  ],
-  tech: [
-    {
-      name: "Climate Data Analytics",
-      location: "San Francisco, CA",
-      coordinates: { x: 120, y: 180 },
-      employees: "200-500",
-      description: "AI and ML for climate data analysis",
-      website: "https://climatedata.com",
-      jobs: 18,
-      categories: ["tech", "climate"],
-    },
-    {
-      name: "Weather AI Systems",
-      location: "Seattle, WA",
-      coordinates: { x: 80, y: 120 },
-      employees: "100-200",
-      description: "Machine learning for weather prediction",
-      website: "https://weatherai.com",
-      jobs: 10,
-      categories: ["tech", "weather"],
-    },
-  ],
-  weather: [
-    {
-      name: "WeatherTech Systems",
-      location: "Denver, CO",
-      coordinates: { x: 240, y: 200 },
-      employees: "200-500",
-      description: "Advanced weather forecasting",
-      website: "https://weathertech.com",
-      jobs: 15,
-      categories: ["weather", "tech"],
-    },
-    {
-      name: "Storm Analytics",
-      location: "Miami, FL",
-      coordinates: { x: 350, y: 280 },
-      employees: "100-200",
-      description: "Hurricane and storm prediction",
-      website: "https://stormanalytics.com",
-      jobs: 7,
-      categories: ["weather", "climate"],
-    },
-  ],
+interface Company {
+  id: number
+  name: string
+  location: string
+  employees: string
+  description: string
+  website: string
+  categories: string[]
+  isHiring: boolean
 }
 
 const industryColors = {
-  academia: "#8b5cf6",
-  banking: "#10b981",
-  climate: "#059669",
-  energy: "#f59e0b",
-  geospatial: "#ef4444",
-  geophysics: "#78716c",
-  insurance: "#06b6d4",
-  tech: "#3b82f6",
-  weather: "#0ea5e9",
+  "Academia & Research": "#8b5cf6",
+  "Banking & Finance": "#10b981",
+  "Climate Science": "#059669",
+  "Energy & Renewables": "#f59e0b",
+  "Geospatial & GIS": "#ef4444",
+  "Geophysics & Geology": "#78716c",
+  "Insurance & Reinsurance": "#06b6d4",
+  "Tech (Data Science & ML)": "#3b82f6",
+  "Weather & Meteorology": "#0ea5e9",
 }
 
-const industryDisplayNames = {
-  academia: "Academia & Research",
-  banking: "Banking & Finance",
-  climate: "Climate Science",
-  energy: "Energy & Renewables",
-  geospatial: "Geospatial & GIS",
-  geophysics: "Geophysics & Geology",
-  insurance: "Insurance & Reinsurance",
-  tech: "Tech (Data Science & ML)",
-  weather: "Weather & Meteorology",
-}
+const COMPANIES_PER_PAGE = 30
 
 export function CompaniesPage() {
   const [searchTerm, setSearchTerm] = useState("")
   const [selectedIndustries, setSelectedIndustries] = useState<string[]>([])
+  const [companies, setCompanies] = useState<Company[]>([])
+  const [loading, setLoading] = useState(true)
+  const [currentPage, setCurrentPage] = useState(1)
 
-  // Get all companies
-  const allCompanies = Object.entries(companiesData).flatMap(([industry, companies]) =>
-    companies.map((company) => ({ ...company, industry })),
-  )
+  useEffect(() => {
+    const loadCompanies = async () => {
+      try {
+        const response = await fetch("/data/companies.json")
+        const data = await response.json()
+        setCompanies(data.companies)
+      } catch (error) {
+        console.error("Failed to load companies:", error)
+      } finally {
+        setLoading(false)
+      }
+    }
+    loadCompanies()
+  }, [])
+
+  // Get unique industries from companies data
+  const allIndustries = Array.from(new Set(companies.flatMap((company) => company.categories))).sort()
 
   // Filter companies
-  const filteredCompanies = allCompanies.filter((company) => {
+  const filteredCompanies = companies.filter((company) => {
     const matchesSearch =
       company.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
       company.location.toLowerCase().includes(searchTerm.toLowerCase()) ||
       company.description.toLowerCase().includes(searchTerm.toLowerCase())
-    const matchesIndustry = selectedIndustries.length === 0 || selectedIndustries.includes(company.industry)
+    const matchesIndustry =
+      selectedIndustries.length === 0 || selectedIndustries.some((industry) => company.categories.includes(industry))
     return matchesSearch && matchesIndustry
   })
+
+  const totalPages = Math.ceil(filteredCompanies.length / COMPANIES_PER_PAGE)
+  const startIndex = (currentPage - 1) * COMPANIES_PER_PAGE
+  const endIndex = startIndex + COMPANIES_PER_PAGE
+  const paginatedCompanies = filteredCompanies.slice(startIndex, endIndex)
+
+  // Reset to page 1 when filters change
+  useEffect(() => {
+    setCurrentPage(1)
+  }, [searchTerm, selectedIndustries])
 
   const toggleIndustry = (industry: string) => {
     setSelectedIndustries((prev) =>
       prev.includes(industry) ? prev.filter((i) => i !== industry) : [...prev, industry],
+    )
+  }
+
+  const goToPage = (page: number) => {
+    setCurrentPage(page)
+    window.scrollTo({ top: 0, behavior: "smooth" })
+  }
+
+  const renderPaginationButtons = () => {
+    const buttons = []
+    const maxVisiblePages = 5
+
+    if (totalPages <= maxVisiblePages) {
+      for (let i = 1; i <= totalPages; i++) {
+        buttons.push(
+          <Button key={i} variant={currentPage === i ? "default" : "outline"} size="sm" onClick={() => goToPage(i)}>
+            {i}
+          </Button>,
+        )
+      }
+    } else {
+      buttons.push(
+        <Button key={1} variant={currentPage === 1 ? "default" : "outline"} size="sm" onClick={() => goToPage(1)}>
+          1
+        </Button>,
+      )
+
+      if (currentPage > 3) {
+        buttons.push(
+          <span key="ellipsis1" className="px-2">
+            ...
+          </span>,
+        )
+      }
+
+      const start = Math.max(2, currentPage - 1)
+      const end = Math.min(totalPages - 1, currentPage + 1)
+
+      for (let i = start; i <= end; i++) {
+        buttons.push(
+          <Button key={i} variant={currentPage === i ? "default" : "outline"} size="sm" onClick={() => goToPage(i)}>
+            {i}
+          </Button>,
+        )
+      }
+
+      if (currentPage < totalPages - 2) {
+        buttons.push(
+          <span key="ellipsis2" className="px-2">
+            ...
+          </span>,
+        )
+      }
+
+      if (totalPages > 1) {
+        buttons.push(
+          <Button
+            key={totalPages}
+            variant={currentPage === totalPages ? "default" : "outline"}
+            size="sm"
+            onClick={() => goToPage(totalPages)}
+          >
+            {totalPages}
+          </Button>,
+        )
+      }
+    }
+
+    return buttons
+  }
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-background flex items-center justify-center">
+        <div className="text-center">
+          <Building2 className="h-12 w-12 text-muted-foreground mx-auto mb-4 animate-pulse" />
+          <p className="text-muted-foreground">Loading companies...</p>
+        </div>
+      </div>
     )
   }
 
@@ -303,18 +189,22 @@ export function CompaniesPage() {
                 className="pl-10"
               />
             </div>
+            <div className="text-sm text-muted-foreground">
+              Showing {startIndex + 1}-{Math.min(endIndex, filteredCompanies.length)} of {filteredCompanies.length}{" "}
+              companies
+            </div>
           </div>
 
           {/* Industry Filters */}
           <div className="flex flex-wrap gap-2">
-            {Object.keys(companiesData).map((industry) => (
+            {allIndustries.map((industry) => (
               <Button
                 key={industry}
                 variant={selectedIndustries.includes(industry) ? "default" : "outline"}
                 size="sm"
                 onClick={() => toggleIndustry(industry)}
               >
-                {industryDisplayNames[industry as keyof typeof industryDisplayNames]}
+                {industry}
               </Button>
             ))}
             {selectedIndustries.length > 0 && (
@@ -326,8 +216,8 @@ export function CompaniesPage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredCompanies.map((company, index) => (
-            <Card key={index} className="hover:shadow-lg transition-shadow">
+          {paginatedCompanies.map((company) => (
+            <Card key={company.id} className="hover:shadow-lg transition-shadow">
               <CardHeader>
                 <div className="flex items-start justify-between">
                   <div className="flex items-center gap-2">
@@ -345,7 +235,7 @@ export function CompaniesPage() {
                           color: industryColors[category as keyof typeof industryColors],
                         }}
                       >
-                        {industryDisplayNames[category as keyof typeof industryDisplayNames]}
+                        {category}
                       </Badge>
                     ))}
                   </div>
@@ -361,8 +251,7 @@ export function CompaniesPage() {
                   {company.employees} employees
                 </div>
                 <p className="text-sm">{company.description}</p>
-                <div className="flex items-center justify-between pt-2">
-                  <div></div>
+                <div className="flex items-center justify-end pt-2">
                   <Button variant="outline" size="sm" asChild>
                     <a href={company.website} target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="h-3 w-3 mr-1" />
@@ -374,6 +263,27 @@ export function CompaniesPage() {
             </Card>
           ))}
         </div>
+
+        {totalPages > 1 && (
+          <div className="flex items-center justify-center gap-2 mt-8">
+            <Button variant="outline" size="sm" onClick={() => goToPage(currentPage - 1)} disabled={currentPage === 1}>
+              <ChevronLeft className="h-4 w-4 mr-1" />
+              Previous
+            </Button>
+
+            <div className="flex items-center gap-1">{renderPaginationButtons()}</div>
+
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => goToPage(currentPage + 1)}
+              disabled={currentPage === totalPages}
+            >
+              Next
+              <ChevronRight className="h-4 w-4 ml-1" />
+            </Button>
+          </div>
+        )}
 
         {filteredCompanies.length === 0 && (
           <div className="text-center py-12">

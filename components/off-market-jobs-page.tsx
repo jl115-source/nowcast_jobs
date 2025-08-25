@@ -182,7 +182,7 @@ export function OffMarketJobsPage() {
         <div className="relative z-10 flex items-center justify-center h-full">
           <div className="text-center text-white">
             <EyeOff className="h-16 w-16 mx-auto mb-4" />
-            <h1 className="text-4xl font-bold mb-2">Off-market Jobs</h1>
+            <h1 className="text-4xl font-bold mb-2">Off-Market Jobs</h1>
             <p className="text-xl opacity-90">Exclusive opportunities not advertised publicly</p>
           </div>
         </div>
