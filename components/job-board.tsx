@@ -9,7 +9,6 @@ import {
   Target,
   Map,
   Building2,
-  Users,
   BriefcaseIcon,
   GraduationCapIcon,
   ZapIcon,
@@ -23,6 +22,9 @@ import {
   CloudRain,
   ChevronDown,
   ChevronUp,
+  ChevronLeft,
+  ChevronRight,
+  Heart,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -85,18 +87,18 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
   const [jobs] = useState<Job[]>(jobsData.jobs)
   const [filteredJobs, setFilteredJobs] = useState<Job[]>(jobs)
   const [locationFilter, setLocationFilter] = useState<string>("all")
-  const [countryFilter, setCountryFilter] = useState<string>("all") // Added country filter state
-  const [typeFilter, setTypeFilter] = useState<string>("all")
   const [categoryFilter, setCategoryFilter] = useState<string>("all")
-  const [remoteFilter, setRemoteFilter] = useState<string>("all")
   const [sortBy, setSortBy] = useState<string>("newest")
   const [selectedJob, setSelectedJob] = useState<Job | null>(null)
   const [cvData, setCvData] = useState<CVData | null>(null)
   const [jobMatches, setJobMatches] = useState<JobMatch[]>([])
   const [isMatching, setIsMatching] = useState(false)
   const [showMatches, setShowMatches] = useState(false)
-  const [expandedJobs, setExpandedJobs] = useState<Set<string>>(new Set()) // Added state for expanded job cards
-  const [columnLayout, setColumnLayout] = useState<number>(2) // Set default to 2 columns and remove 3-column option
+  const [expandedJobs, setExpandedJobs] = useState<Set<string>>(new Set())
+  const [currentPage, setCurrentPage] = useState(1)
+  const [jobsPerPage] = useState(20)
+  const [favoriteJobs, setFavoriteJobs] = useState<Set<string>>(new Set())
+  const [showFavoritesOnly, setShowFavoritesOnly] = useState(false)
 
   const standardIndustries = [
     "academia",
@@ -110,17 +112,49 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
     "weather",
   ]
 
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search)
+    const jobId = urlParams.get("job")
+
+    if (jobId) {
+      setExpandedJobs(new Set([jobId]))
+
+      setTimeout(() => {
+        const jobElement = document.getElementById(`job-${jobId}`)
+        if (jobElement) {
+          jobElement.scrollIntoView({ behavior: "smooth", block: "center" })
+        }
+      }, 100)
+    }
+  }, [])
+
+  useEffect(() => {
+    const savedFavorites = localStorage.getItem("favoriteJobs")
+    if (savedFavorites) {
+      setFavoriteJobs(new Set(JSON.parse(savedFavorites)))
+    }
+  }, [])
+
+  useEffect(() => {
+    localStorage.setItem("favoriteJobs", JSON.stringify(Array.from(favoriteJobs)))
+  }, [favoriteJobs])
+
+  useEffect(() => {
+    applyFiltersAndSort(searchTerm, locationFilter, categoryFilter, sortBy, jobMatches)
+  }, [favoriteJobs, showFavoritesOnly])
+
   const applyFiltersAndSort = (
     search: string,
     location: string,
-    country: string,
-    type: string,
     category: string,
-    remote: string,
     sort: string,
     mapFilteredJobs?: Job[],
   ) => {
     let filtered = mapFilteredJobs || jobs
+
+    if (showFavoritesOnly) {
+      filtered = filtered.filter((job) => favoriteJobs.has(job.id))
+    }
 
     if (search) {
       filtered = filtered.filter(
@@ -135,28 +169,12 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
       filtered = filtered.filter((job) => job.location.toLowerCase().includes(location.toLowerCase()))
     }
 
-    if (country !== "all") {
-      filtered = filtered.filter((job) => job.location.toLowerCase().includes(country.toLowerCase()))
-    }
-
-    if (type !== "all") {
-      filtered = filtered.filter((job) => job.type.toLowerCase() === type.toLowerCase())
-    }
-
     if (category !== "all") {
       filtered = filtered.filter((job) =>
         Array.isArray(job.categories)
           ? job.categories.some((cat) => cat.toLowerCase() === category.toLowerCase())
           : job.category?.toLowerCase() === category.toLowerCase(),
       )
-    }
-
-    if (remote !== "all") {
-      if (remote === "remote") {
-        filtered = filtered.filter((job) => job.remote === true)
-      } else if (remote === "onsite") {
-        filtered = filtered.filter((job) => job.remote === false)
-      }
     }
 
     if (!showMatches || !mapFilteredJobs) {
@@ -177,152 +195,58 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
     }
 
     setFilteredJobs(filtered)
+    setCurrentPage(1)
   }
 
   const getSelectedCategories = () => {
     return categoryFilter === "all" ? [] : [categoryFilter]
   }
 
-  const getSelectedCountries = () => {
-    return countryFilter === "all" ? [] : [countryFilter]
-  }
-
   const handleSearch = (term: string) => {
     setSearchTerm(term)
-    applyFiltersAndSort(
-      term,
-      locationFilter,
-      countryFilter,
-      typeFilter,
-      categoryFilter,
-      remoteFilter,
-      sortBy,
-      jobMatches,
-    )
+    applyFiltersAndSort(term, locationFilter, categoryFilter, sortBy, jobMatches)
   }
 
   const handleLocationFilter = (location: string) => {
     setLocationFilter(location)
-    applyFiltersAndSort(
-      searchTerm,
-      location,
-      countryFilter,
-      typeFilter,
-      categoryFilter,
-      remoteFilter,
-      sortBy,
-      jobMatches,
-    )
-  }
-
-  const handleCountryFilter = (country: string) => {
-    setCountryFilter(country)
-    applyFiltersAndSort(
-      searchTerm,
-      locationFilter,
-      country,
-      typeFilter,
-      categoryFilter,
-      remoteFilter,
-      sortBy,
-      jobMatches,
-    )
-  }
-
-  const handleTypeFilter = (type: string) => {
-    setTypeFilter(type)
-    applyFiltersAndSort(
-      searchTerm,
-      locationFilter,
-      countryFilter,
-      type,
-      categoryFilter,
-      remoteFilter,
-      sortBy,
-      jobMatches,
-    )
+    applyFiltersAndSort(searchTerm, location, categoryFilter, sortBy, jobMatches)
   }
 
   const handleCategoryFilter = (category: string) => {
     setCategoryFilter(category)
-    applyFiltersAndSort(
-      searchTerm,
-      locationFilter,
-      countryFilter,
-      typeFilter,
-      category,
-      remoteFilter,
-      sortBy,
-      jobMatches,
-    )
-  }
-
-  const handleRemoteFilter = (remote: string) => {
-    setRemoteFilter(remote)
-    applyFiltersAndSort(
-      searchTerm,
-      locationFilter,
-      countryFilter,
-      typeFilter,
-      categoryFilter,
-      remote,
-      sortBy,
-      jobMatches,
-    )
+    applyFiltersAndSort(searchTerm, locationFilter, category, sortBy, jobMatches)
   }
 
   const handleSort = (sort: string) => {
     setSortBy(sort)
-    applyFiltersAndSort(
-      searchTerm,
-      locationFilter,
-      countryFilter,
-      typeFilter,
-      categoryFilter,
-      remoteFilter,
-      sort,
-      jobMatches,
-    )
+    applyFiltersAndSort(searchTerm, locationFilter, categoryFilter, sort, jobMatches)
   }
 
-  useEffect(() => {
-    const urlParams = new URLSearchParams(window.location.search)
-    const jobId = urlParams.get("job")
-
-    if (jobId) {
-      setExpandedJobs(new Set([jobId]))
-
-      setTimeout(() => {
-        const jobElement = document.getElementById(`job-${jobId}`)
-        if (jobElement) {
-          jobElement.scrollIntoView({ behavior: "smooth", block: "center" })
-        }
-      }, 100)
-    }
-  }, [])
-
-  const toggleJobExpansion = (jobId: string) => {
-    const newExpanded = new Set(expandedJobs)
-    if (newExpanded.has(jobId)) {
-      newExpanded.delete(jobId)
-      const url = new URL(window.location.href)
-      url.searchParams.delete("job")
-      window.history.replaceState({}, "", url.toString())
-    } else {
-      newExpanded.add(jobId)
-      const url = new URL(window.location.href)
-      url.searchParams.set("job", jobId)
-      window.history.replaceState({}, "", url.toString())
-    }
-    setExpandedJobs(newExpanded)
+  const handleFavoritesFilter = (showFavorites: boolean) => {
+    setShowFavoritesOnly(showFavorites)
+    applyFiltersAndSort(searchTerm, locationFilter, categoryFilter, sortBy, jobMatches)
   }
 
-  const copyJobLink = (jobId: string) => {
-    const url = new URL(window.location.href)
-    url.searchParams.set("job", jobId)
-    navigator.clipboard.writeText(url.toString()).then(() => {
-      console.log("Job link copied to clipboard")
-    })
+  const totalPages = Math.ceil(filteredJobs.length / jobsPerPage)
+  const startIndex = (currentPage - 1) * jobsPerPage
+  const endIndex = startIndex + jobsPerPage
+  const currentJobs = filteredJobs.slice(startIndex, endIndex)
+
+  const goToPage = (page: number) => {
+    setCurrentPage(page)
+    window.scrollTo({ top: 0, behavior: "smooth" })
+  }
+
+  const goToPreviousPage = () => {
+    if (currentPage > 1) {
+      goToPage(currentPage - 1)
+    }
+  }
+
+  const goToNextPage = () => {
+    if (currentPage < totalPages) {
+      goToPage(currentPage + 1)
+    }
   }
 
   const getJobMatch = (jobId: string): JobMatch | undefined => {
@@ -342,8 +266,6 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
   }
 
   const uniqueLocations = Array.from(new Set(jobs.map((job) => job.location.split(",")[0].trim())))
-  const uniqueCountries = Array.from(new Set(jobs.map((job) => job.location.split(",").pop()?.trim()).filter(Boolean)))
-  const uniqueTypes = Array.from(new Set(jobs.map((job) => job.type)))
   const uniqueCategories = Array.from(
     new Set(jobs.flatMap((job) => (Array.isArray(job.categories) ? job.categories : [job.category])).filter(Boolean)),
   )
@@ -398,6 +320,40 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
     }
   }
 
+  const toggleJobExpansion = (jobId: string) => {
+    const newExpanded = new Set(expandedJobs)
+    if (newExpanded.has(jobId)) {
+      newExpanded.delete(jobId)
+      const url = new URL(window.location.href)
+      url.searchParams.delete("job")
+      window.history.replaceState({}, "", url.toString())
+    } else {
+      newExpanded.add(jobId)
+      const url = new URL(window.location.href)
+      url.searchParams.set("job", jobId)
+      window.history.replaceState({}, "", url.toString())
+    }
+    setExpandedJobs(newExpanded)
+  }
+
+  const copyJobLink = (jobId: string) => {
+    const url = new URL(window.location.href)
+    url.searchParams.set("job", jobId)
+    navigator.clipboard.writeText(url.toString()).then(() => {
+      console.log("Job link copied to clipboard")
+    })
+  }
+
+  const toggleFavorite = (jobId: string) => {
+    const newFavorites = new Set(favoriteJobs)
+    if (newFavorites.has(jobId)) {
+      newFavorites.delete(jobId)
+    } else {
+      newFavorites.add(jobId)
+    }
+    setFavoriteJobs(newFavorites)
+  }
+
   return (
     <div className="min-h-screen bg-background">
       <div
@@ -412,16 +368,16 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
         <div className="relative z-10 text-center text-white">
           <h1 className="text-4xl font-bold mb-4">🌧️ Jobs for your niche</h1>
           <p className="text-xl mb-6 opacity-90">
-            Specialist jobs in weather, climate, energy, commodities, geophysics and geospatial fields
+            Specialist jobs in weather, climate, energy, commodities, insurance, banking and geoscience fields
           </p>
-          <div className="flex justify-center">
-            <button
-              onClick={() => onPageChange?.("job-notifications")}
-              className="bg-white/20 hover:bg-white/30 text-white px-6 py-2 rounded-lg transition-colors duration-200 backdrop-blur-sm border border-white/20"
-            >
-              🌧️ Get Job Notifications
-            </button>
-          </div>
+        </div>
+        <div className="absolute bottom-4 left-4">
+          <button
+            onClick={() => onPageChange?.("job-notifications")}
+            className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors duration-200 shadow-lg"
+          >
+            🌧️ Get Job Notifications
+          </button>
         </div>
       </div>
 
@@ -447,6 +403,22 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
               <span className="text-sm font-medium">Filters:</span>
             </div>
 
+            <div className="flex items-center gap-2">
+              <SortAsc className="h-4 w-4 text-muted-foreground" />
+              <span className="text-sm font-medium">Sort by:</span>
+              <Select value={sortBy} onValueChange={handleSort}>
+                <SelectTrigger className="w-[140px]">
+                  <SelectValue />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="newest">Newest</SelectItem>
+                  <SelectItem value="oldest">Oldest</SelectItem>
+                  <SelectItem value="company">Company</SelectItem>
+                  <SelectItem value="title">Job Title</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+
             <Select value={categoryFilter} onValueChange={handleCategoryFilter}>
               <SelectTrigger className="w-[180px]">
                 <SelectValue placeholder="Industry" />
@@ -459,20 +431,6 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
                       {getCategoryIcon(industry)}
                       {getCategoryDisplayName(industry)}
                     </div>
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
-
-            <Select value={countryFilter} onValueChange={handleCountryFilter}>
-              <SelectTrigger className="w-[140px]">
-                <SelectValue placeholder="Country" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="all">All Countries</SelectItem>
-                {uniqueCountries.map((country) => (
-                  <SelectItem key={country} value={country!.toLowerCase()}>
-                    {country}
                   </SelectItem>
                 ))}
               </SelectContent>
@@ -492,67 +450,21 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
               </SelectContent>
             </Select>
 
-            <Select value={typeFilter} onValueChange={handleTypeFilter}>
-              <SelectTrigger className="w-[140px]">
-                <SelectValue placeholder="Job Type" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="all">All Types</SelectItem>
-                {uniqueTypes.map((type) => (
-                  <SelectItem key={type} value={type.toLowerCase()}>
-                    {type}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
-
-            <Select value={remoteFilter} onValueChange={handleRemoteFilter}>
-              <SelectTrigger className="w-[140px]">
-                <SelectValue placeholder="Work Style" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="all">All</SelectItem>
-                <SelectItem value="remote">Remote</SelectItem>
-                <SelectItem value="onsite">On-site</SelectItem>
-              </SelectContent>
-            </Select>
-
-            <div className="flex items-center gap-2 ml-auto">
-              <SortAsc className="h-4 w-4 text-muted-foreground" />
-              <span className="text-sm font-medium">Sort by:</span>
-              <Select value={sortBy} onValueChange={handleSort}>
-                <SelectTrigger className="w-[140px]">
-                  <SelectValue />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="newest">Newest</SelectItem>
-                  <SelectItem value="oldest">Oldest</SelectItem>
-                  <SelectItem value="company">Company</SelectItem>
-                  <SelectItem value="title">Job Title</SelectItem>
-                </SelectContent>
-              </Select>
-
-              <div className="flex items-center gap-2 ml-4">
-                <span className="text-sm font-medium">Layout:</span>
-                <div className="flex border rounded-lg overflow-hidden">
-                  <Button
-                    variant={columnLayout === 1 ? "default" : "ghost"}
-                    size="sm"
-                    onClick={() => setColumnLayout(1)}
-                    className="rounded-none border-0"
-                  >
-                    <Users className="h-4 w-4 mr-1" />1 Column
-                  </Button>
-                  <Button
-                    variant={columnLayout === 2 ? "default" : "ghost"}
-                    size="sm"
-                    onClick={() => setColumnLayout(2)}
-                    className="rounded-none border-0"
-                  >
-                    <Users className="h-4 w-4 mr-1" />2 Columns
-                  </Button>
-                </div>
-              </div>
+            <div className="flex items-center gap-2">
+              <Button
+                variant={showFavoritesOnly ? "default" : "outline"}
+                size="sm"
+                onClick={() => handleFavoritesFilter(!showFavoritesOnly)}
+                className="flex items-center gap-2"
+              >
+                <Heart className={`h-4 w-4 ${showFavoritesOnly ? "fill-current" : ""}`} />
+                {showFavoritesOnly ? "Favorites Only" : "Show Favorites"}
+                {favoriteJobs.size > 0 && (
+                  <Badge variant="secondary" className="ml-1 text-xs">
+                    {favoriteJobs.size}
+                  </Badge>
+                )}
+              </Button>
             </div>
           </div>
         </div>
@@ -577,16 +489,7 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
                     variant={showMatches ? "default" : "outline"}
                     onClick={() => {
                       setShowMatches(true)
-                      applyFiltersAndSort(
-                        searchTerm,
-                        locationFilter,
-                        countryFilter,
-                        typeFilter,
-                        categoryFilter,
-                        remoteFilter,
-                        sortBy,
-                        jobMatches,
-                      )
+                      applyFiltersAndSort(searchTerm, locationFilter, categoryFilter, sortBy, jobMatches)
                     }}
                   >
                     <Target className="mr-2 h-4 w-4" />
@@ -596,15 +499,7 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
                     variant={!showMatches ? "default" : "outline"}
                     onClick={() => {
                       setShowMatches(false)
-                      applyFiltersAndSort(
-                        searchTerm,
-                        locationFilter,
-                        countryFilter,
-                        typeFilter,
-                        categoryFilter,
-                        remoteFilter,
-                        sortBy,
-                      )
+                      applyFiltersAndSort(searchTerm, locationFilter, categoryFilter, sortBy)
                     }}
                   >
                     Show All Jobs
@@ -619,10 +514,22 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
           </Card>
         )}
 
-        <div className={`grid gap-4 ${columnLayout === 1 ? "grid-cols-1" : "grid-cols-1 md:grid-cols-2"}`}>
-          {filteredJobs.map((job) => {
+        <div className="flex items-center justify-between mb-6">
+          <div className="text-sm text-muted-foreground">
+            Showing {startIndex + 1}-{Math.min(endIndex, filteredJobs.length)} of {filteredJobs.length} jobs
+          </div>
+          {totalPages > 1 && (
+            <div className="text-sm text-muted-foreground">
+              Page {currentPage} of {totalPages}
+            </div>
+          )}
+        </div>
+
+        <div className="grid gap-4 grid-cols-1 md:grid-cols-2">
+          {currentJobs.map((job) => {
             const jobMatch = getJobMatch(job.id)
             const isExpanded = expandedJobs.has(job.id)
+            const isFavorited = favoriteJobs.has(job.id)
 
             return (
               <Card key={job.id} id={`job-${job.id}`} className="hover:shadow-md transition-shadow">
@@ -635,11 +542,26 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
                         {job.company}
                       </CardDescription>
                     </div>
-                    {jobMatch && (
-                      <Badge variant={getMatchBadgeVariant(jobMatch.matchScore)} className="ml-2">
-                        {jobMatch.matchScore}% match
-                      </Badge>
-                    )}
+                    <div className="flex items-center gap-2">
+                      <Button variant="ghost" size="sm" onClick={() => toggleFavorite(job.id)} className="p-2">
+                        <Heart
+                          className={`h-4 w-4 ${isFavorited ? "fill-red-500 text-red-500" : "text-muted-foreground hover:text-red-500"}`}
+                        />
+                      </Button>
+                      {jobMatch && (
+                        <Badge
+                          variant={
+                            jobMatch.matchScore >= 80
+                              ? "default"
+                              : jobMatch.matchScore >= 60
+                                ? "secondary"
+                                : "destructive"
+                          }
+                        >
+                          {jobMatch.matchScore}% match
+                        </Badge>
+                      )}
+                    </div>
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-3">
@@ -681,9 +603,9 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
                     <div className="space-y-2">
                       <div className="flex justify-between text-xs">
                         <span>Skills Match</span>
-                        <span className={getMatchColor(jobMatch.skillsMatch)}>{jobMatch.skillsMatch}%</span>
+                        <span className={getMatchColor(jobMatch.matchScore)}>{jobMatch.matchScore}%</span>
                       </div>
-                      <Progress value={jobMatch.skillsMatch} className="h-1" />
+                      <Progress value={jobMatch.matchScore} className="h-1" />
                       <div className="text-xs text-muted-foreground">
                         {jobMatch.matchReasons.slice(0, 2).join(", ")}
                       </div>
@@ -757,6 +679,60 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
             )
           })}
         </div>
+
+        {totalPages > 1 && (
+          <div className="flex items-center justify-center gap-2 mt-8">
+            <Button variant="outline" size="sm" onClick={goToPreviousPage} disabled={currentPage === 1}>
+              <ChevronLeft className="h-4 w-4 mr-1" />
+              Previous
+            </Button>
+
+            <div className="flex items-center gap-1">
+              {currentPage > 3 && (
+                <>
+                  <Button variant={1 === currentPage ? "default" : "outline"} size="sm" onClick={() => goToPage(1)}>
+                    1
+                  </Button>
+                  {currentPage > 4 && <span className="px-2 text-muted-foreground">...</span>}
+                </>
+              )}
+
+              {Array.from({ length: Math.min(5, totalPages) }, (_, i) => {
+                const pageNum = Math.max(1, Math.min(totalPages - 4, currentPage - 2)) + i
+                if (pageNum > totalPages) return null
+
+                return (
+                  <Button
+                    key={pageNum}
+                    variant={pageNum === currentPage ? "default" : "outline"}
+                    size="sm"
+                    onClick={() => goToPage(pageNum)}
+                  >
+                    {pageNum}
+                  </Button>
+                )
+              })}
+
+              {currentPage < totalPages - 2 && (
+                <>
+                  {currentPage < totalPages - 3 && <span className="px-2 text-muted-foreground">...</span>}
+                  <Button
+                    variant={totalPages === currentPage ? "default" : "outline"}
+                    size="sm"
+                    onClick={() => goToPage(totalPages)}
+                  >
+                    {totalPages}
+                  </Button>
+                </>
+              )}
+            </div>
+
+            <Button variant="outline" size="sm" onClick={goToNextPage} disabled={currentPage === totalPages}>
+              Next
+              <ChevronRight className="h-4 w-4 ml-1" />
+            </Button>
+          </div>
+        )}
       </div>
     </div>
   )

@@ -124,8 +124,8 @@ export function MentorMatchingPage() {
               <CardTitle className="text-2xl">Join the List</CardTitle>
             </div>
             <CardDescription>
-              Sign up to be notified when mentor matching a good match is found! Choose whether you'd like to be a
-              mentor or find a mentor.
+              Sign up to be notified when a good mentor match is found! Choose whether you'd like to be a mentor or find
+              a mentor.
             </CardDescription>
           </CardHeader>
           <CardContent>

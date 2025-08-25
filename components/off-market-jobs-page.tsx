@@ -42,14 +42,10 @@ export function OffMarketJobsPage() {
   const [isRecruiterSubmitted, setIsRecruiterSubmitted] = useState(false)
 
   const industries = [
-    "Academia & Research",
     "Banking & Finance",
-    "Climate Science",
-    "Energy & Renewables",
     "Geospatial & GIS",
     "Geophysics & Geology",
     "Insurance & Reinsurance",
-    "Tech (Data Science & ML)",
     "Weather & Meteorology",
   ]
 
@@ -228,12 +224,15 @@ export function OffMarketJobsPage() {
                   </p>
                   <div className="space-y-2">
                     <div className="flex items-center gap-2">
-                      <Badge variant="secondary">Energy & Renewables</Badge>
-                      <Badge variant="secondary">Climate Science</Badge>
+                      <Badge variant="secondary">Banking & Finance</Badge>
+                      <Badge variant="secondary">Geospatial & GIS</Badge>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Badge variant="secondary">Tech (Data Science & ML)</Badge>
-                      <Badge variant="secondary">Academia & Research</Badge>
+                      <Badge variant="secondary">Geophysics & Geology</Badge>
+                      <Badge variant="secondary">Insurance & Reinsurance</Badge>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Badge variant="secondary">Weather & Meteorology</Badge>
                     </div>
                   </div>
                 </CardContent>
@@ -412,8 +411,8 @@ export function OffMarketJobsPage() {
                 <CardContent>
                   <p className="text-muted-foreground mb-4">
                     Access professionals who may not be on LinkedIn, actively looking, or responsive to typical
-                    outreach. We help you reach talent in niche climate, energy, and technology fields with
-                    expertise-based vetting to determine if they'll be a good fit for your role.
+                    outreach. We help you reach talent in niche fields with expertise-based vetting to determine if
+                    they'll be a good fit for your role.
                   </p>
                   <div className="space-y-2">
                     <div className="flex items-center gap-2">
@@ -452,8 +451,8 @@ export function OffMarketJobsPage() {
                       <div>
                         <p className="font-medium">Save Time, Money & Effort</p>
                         <p className="text-sm text-muted-foreground">
-                          Reach professionals not responsive to traditional outreach, saving you recruitment costs and
-                          effort
+                          Guided by experts to reduce time wasted and connect directly with vetted talent that may not
+                          be on common networking apps
                         </p>
                       </div>
                     </div>
@@ -466,9 +465,7 @@ export function OffMarketJobsPage() {
             <Card>
               <CardHeader>
                 <CardTitle>Join as a Recruiter</CardTitle>
-                <CardDescription>
-                  Apply to access our exclusive talent network for specialized climate and energy roles
-                </CardDescription>
+                <CardDescription>Apply to access our exclusive talent network for specialized roles</CardDescription>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleRecruiterSubmit} className="space-y-6">
