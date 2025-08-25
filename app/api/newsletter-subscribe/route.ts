@@ -3,14 +3,18 @@ import { createClient } from "@/lib/supabase/server"
 
 export async function POST(request: NextRequest) {
   try {
+    console.log("[v0] Newsletter API called")
     const { email, categories, frequency } = await request.json()
+    console.log("[v0] Newsletter request data:", { email, categories, frequency })
 
     // Validate input
     if (!email || !categories || categories.length === 0 || !frequency) {
+      console.log("[v0] Newsletter validation failed")
       return NextResponse.json({ error: "Email, frequency, and at least one category are required" }, { status: 400 })
     }
 
     const supabase = await createClient()
+    console.log("[v0] Newsletter Supabase client created")
 
     const industryColumns = {
       climate_science: categories.includes("Climate Science"),
@@ -24,23 +28,29 @@ export async function POST(request: NextRequest) {
       banking_finance: categories.includes("Banking & Finance"),
     }
 
-    const { data, error } = await supabase
-      .from("email_subscribers")
-      .insert([
-        {
-          email,
-          frequency,
-          ...industryColumns,
-        },
-      ])
-      .select()
+    console.log("[v0] Newsletter industry columns:", industryColumns)
+
+    const insertData = {
+      email,
+      frequency,
+      ...industryColumns,
+    }
+    console.log("[v0] Newsletter insert data:", insertData)
+
+    const { data, error } = await supabase.from("email_subscribers").insert([insertData]).select()
 
     if (error) {
-      console.error("[v0] Database error:", error)
-      return NextResponse.json({ error: "Failed to save subscription" }, { status: 500 })
+      console.error("[v0] Newsletter database error:", error)
+      return NextResponse.json(
+        {
+          error: "Failed to save subscription",
+          details: error.message,
+        },
+        { status: 500 },
+      )
     }
 
-    console.log("[v0] Newsletter subscription saved:", { email, categories, frequency })
+    console.log("[v0] Newsletter subscription saved successfully:", data)
 
     return NextResponse.json({
       success: true,
@@ -49,6 +59,12 @@ export async function POST(request: NextRequest) {
     })
   } catch (error) {
     console.error("[v0] Newsletter subscription error:", error)
-    return NextResponse.json({ error: "Failed to subscribe to newsletter" }, { status: 500 })
+    return NextResponse.json(
+      {
+        error: "Failed to subscribe to newsletter",
+        details: error instanceof Error ? error.message : "Unknown error",
+      },
+      { status: 500 },
+    )
   }
 }
