@@ -24,8 +24,7 @@ export async function POST(request: NextRequest) {
           email,
           role_type: signupType,
           industry,
-          bio: experience || null, // Map experience to bio field
-          status: "active",
+          bio: experience || null,
         },
       ])
       .select()

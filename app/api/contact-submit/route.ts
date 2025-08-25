@@ -16,12 +16,9 @@ export async function POST(request: NextRequest) {
       .from("contact_submissions")
       .insert([
         {
-          first_name: firstName,
-          last_name: lastName,
+          name: `${firstName} ${lastName}`,
           email,
-          subject,
-          message,
-          status: "new",
+          message: `Subject: ${subject}\n\n${message}`,
         },
       ])
       .select()
