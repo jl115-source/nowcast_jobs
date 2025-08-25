@@ -70,16 +70,52 @@ export function OffMarketJobsPage() {
     }))
   }
 
-  const handleTalentSubmit = (e: React.FormEvent) => {
+  const handleTalentSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    console.log("Off-market talent signup:", talentFormData)
-    setIsTalentSubmitted(true)
+
+    try {
+      const response = await fetch("/api/off-market-signup", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          type: "talent",
+          ...talentFormData,
+        }),
+      })
+
+      if (response.ok) {
+        console.log("Off-market talent signup saved to database")
+        setIsTalentSubmitted(true)
+      } else {
+        console.error("Failed to save talent signup")
+      }
+    } catch (error) {
+      console.error("Error submitting talent form:", error)
+    }
   }
 
-  const handleRecruiterSubmit = (e: React.FormEvent) => {
+  const handleRecruiterSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    console.log("Recruiter signup:", recruiterFormData)
-    setIsRecruiterSubmitted(true)
+
+    try {
+      const response = await fetch("/api/off-market-signup", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          type: "recruiter",
+          ...recruiterFormData,
+        }),
+      })
+
+      if (response.ok) {
+        console.log("Recruiter signup saved to database")
+        setIsRecruiterSubmitted(true)
+      } else {
+        console.error("Failed to save recruiter signup")
+      }
+    } catch (error) {
+      console.error("Error submitting recruiter form:", error)
+    }
   }
 
   if (isTalentSubmitted || isRecruiterSubmitted) {

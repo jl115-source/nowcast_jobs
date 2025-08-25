@@ -1,29 +1,40 @@
 import { type NextRequest, NextResponse } from "next/server"
+import { createClient } from "@/lib/supabase/server"
 
 export async function POST(request: NextRequest) {
   try {
-    const { email, categories } = await request.json()
+    const { email, categories, frequency } = await request.json()
 
     // Validate input
-    if (!email || !categories || categories.length === 0) {
-      return NextResponse.json({ error: "Email and at least one category are required" }, { status: 400 })
+    if (!email || !categories || categories.length === 0 || !frequency) {
+      return NextResponse.json({ error: "Email, frequency, and at least one category are required" }, { status: 400 })
     }
 
-    // Here you would integrate with your email service (Resend, SendGrid, etc.)
-    // For now, we'll simulate the subscription
-    console.log("[v0] Newsletter subscription:", { email, categories })
+    const supabase = createClient()
 
-    // Simulate API delay
-    await new Promise((resolve) => setTimeout(resolve, 1000))
+    const { data, error } = await supabase
+      .from("email_subscribers")
+      .insert([
+        {
+          email,
+          frequency,
+          industries: categories,
+          is_active: true,
+        },
+      ])
+      .select()
 
-    // In a real implementation, you would:
-    // 1. Store the subscription in your database
-    // 2. Add the email to your email service provider
-    // 3. Set up automated job alerts based on categories
+    if (error) {
+      console.error("Database error:", error)
+      return NextResponse.json({ error: "Failed to save subscription" }, { status: 500 })
+    }
+
+    console.log("[v0] Newsletter subscription saved:", { email, categories, frequency })
 
     return NextResponse.json({
       success: true,
       message: "Successfully subscribed to job alerts",
+      data: data[0],
     })
   } catch (error) {
     console.error("Newsletter subscription error:", error)

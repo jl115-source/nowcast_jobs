@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { Users, UserPlus } from "lucide-react"
+import { Users, UserPlus, CheckCircle, AlertCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -12,13 +12,48 @@ import { Textarea } from "@/components/ui/textarea"
 import { useState } from "react"
 
 export function MentorMatchingPage() {
-  const [signupType, setSignupType] = useState<string>("")
-  const [industry, setIndustry] = useState<string>("")
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    signupType: "",
+    industry: "",
+    experience: "",
+  })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle")
 
-  const handleSignup = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle signup logic here
-    console.log("Signup submitted")
+
+    if (!formData.name || !formData.email || !formData.signupType || !formData.industry) return
+
+    setIsSubmitting(true)
+    setSubmitStatus("idle")
+
+    try {
+      const response = await fetch("/api/mentor-signup", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      })
+
+      if (response.ok) {
+        setSubmitStatus("success")
+        setFormData({
+          name: "",
+          email: "",
+          signupType: "",
+          industry: "",
+          experience: "",
+        })
+      } else {
+        setSubmitStatus("error")
+      }
+    } catch (error) {
+      setSubmitStatus("error")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -62,22 +97,39 @@ export function MentorMatchingPage() {
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <form onSubmit={handleSignup} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label htmlFor="name">Full Name</Label>
-                  <Input id="name" placeholder="Enter your full name" required />
+                  <Input
+                    id="name"
+                    placeholder="Enter your full name"
+                    value={formData.name}
+                    onChange={(e) => setFormData((prev) => ({ ...prev, name: e.target.value }))}
+                    required
+                  />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="email">Email Address</Label>
-                  <Input id="email" type="email" placeholder="Enter your email" required />
+                  <Input
+                    id="email"
+                    type="email"
+                    placeholder="Enter your email"
+                    value={formData.email}
+                    onChange={(e) => setFormData((prev) => ({ ...prev, email: e.target.value }))}
+                    required
+                  />
                 </div>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label htmlFor="signup-type">I want to be a...</Label>
-                  <Select value={signupType} onValueChange={setSignupType} required>
+                  <Select
+                    value={formData.signupType}
+                    onValueChange={(value) => setFormData((prev) => ({ ...prev, signupType: value }))}
+                    required
+                  >
                     <SelectTrigger>
                       <SelectValue placeholder="Select your role" />
                     </SelectTrigger>
@@ -90,20 +142,24 @@ export function MentorMatchingPage() {
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="industry">Primary Industry</Label>
-                  <Select value={industry} onValueChange={setIndustry} required>
+                  <Select
+                    value={formData.industry}
+                    onValueChange={(value) => setFormData((prev) => ({ ...prev, industry: value }))}
+                    required
+                  >
                     <SelectTrigger>
                       <SelectValue placeholder="Select your industry" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="climate">Climate Science</SelectItem>
-                      <SelectItem value="tech">Tech (Data Science & ML)</SelectItem>
-                      <SelectItem value="energy">Energy & Renewables</SelectItem>
-                      <SelectItem value="weather">Weather & Meteorology</SelectItem>
                       <SelectItem value="academia">Academia & Research</SelectItem>
+                      <SelectItem value="banking">Banking & Finance</SelectItem>
+                      <SelectItem value="climate">Climate Science</SelectItem>
+                      <SelectItem value="energy">Energy & Renewables</SelectItem>
                       <SelectItem value="geospatial">Geospatial & GIS</SelectItem>
                       <SelectItem value="geophysics">Geophysics & Geology</SelectItem>
                       <SelectItem value="insurance">Insurance & Reinsurance</SelectItem>
-                      <SelectItem value="banking">Banking & Finance</SelectItem>
+                      <SelectItem value="tech">Tech (Data Science & ML)</SelectItem>
+                      <SelectItem value="weather">Weather & Meteorology</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
@@ -115,13 +171,36 @@ export function MentorMatchingPage() {
                   id="experience"
                   placeholder="Tell us about your experience and what you hope to achieve through mentorship..."
                   className="min-h-[100px]"
+                  value={formData.experience}
+                  onChange={(e) => setFormData((prev) => ({ ...prev, experience: e.target.value }))}
                 />
               </div>
 
-              <Button type="submit" size="lg" className="w-full">
+              <Button
+                type="submit"
+                size="lg"
+                className="w-full"
+                disabled={
+                  isSubmitting || !formData.name || !formData.email || !formData.signupType || !formData.industry
+                }
+              >
                 <UserPlus className="mr-2 h-4 w-4" />
-                Join Waitlist
+                {isSubmitting ? "Joining..." : "Join Waitlist"}
               </Button>
+
+              {submitStatus === "success" && (
+                <div className="flex items-center gap-2 text-green-600 bg-green-50 p-3 rounded-lg">
+                  <CheckCircle className="h-4 w-4" />
+                  <span>Successfully joined the mentor matching waitlist! We'll be in touch soon.</span>
+                </div>
+              )}
+
+              {submitStatus === "error" && (
+                <div className="flex items-center gap-2 text-red-600 bg-red-50 p-3 rounded-lg">
+                  <AlertCircle className="h-4 w-4" />
+                  <span>Something went wrong. Please try again.</span>
+                </div>
+              )}
             </form>
           </CardContent>
         </Card>
