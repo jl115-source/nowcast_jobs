@@ -108,8 +108,9 @@ export function MentorMatchingPage() {
             <h1 className="text-5xl font-bold">Mentor Matching</h1>
           </div>
           <p className="text-xl mb-8 max-w-3xl mx-auto opacity-90">
-            Whether you're seeking guidance or sharing expertise, mentorship can be a transformative experience that
-            shapes careers and advances the fields of climate, weather, energy, and geospatial science
+            We may match you with a mentor or mentee depending on your industry, experience, and goals. We'll leave it
+            entirely up to a matched pair to figure out what works best for you, though we will provide guidelines to
+            help guide the way!
           </p>
         </div>
       </div>
@@ -124,8 +125,8 @@ export function MentorMatchingPage() {
               <CardTitle className="text-2xl">Join the List</CardTitle>
             </div>
             <CardDescription>
-              Sign up to be notified when a good mentor match is found! Choose whether you'd like to be a mentor or find
-              a mentor.
+              Sign up to be notified when a good mentor match is found! We'll connect you based on your industry,
+              experience level, and professional goals. Choose whether you'd like to be a mentor or find a mentor.
             </CardDescription>
           </CardHeader>
           <CardContent>

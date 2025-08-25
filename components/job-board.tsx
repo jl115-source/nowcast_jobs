@@ -188,6 +188,24 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
         case "title":
           filtered.sort((a, b) => a.title.localeCompare(b.title))
           break
+        case "salary-high":
+          filtered.sort((a, b) => {
+            const getSalaryValue = (salary: string) => {
+              const match = salary.match(/[\d,]+/)
+              return match ? Number.parseInt(match[0].replace(/,/g, "")) : 0
+            }
+            return getSalaryValue(b.salary) - getSalaryValue(a.salary)
+          })
+          break
+        case "salary-low":
+          filtered.sort((a, b) => {
+            const getSalaryValue = (salary: string) => {
+              const match = salary.match(/[\d,]+/)
+              return match ? Number.parseInt(match[0].replace(/,/g, "")) : 0
+            }
+            return getSalaryValue(a.salary) - getSalaryValue(b.salary)
+          })
+          break
       }
     }
 
@@ -332,15 +350,17 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
       >
         <div className="absolute inset-0 bg-primary/40"></div>
         <div className="relative z-10 text-center text-white">
-          <h1 className="text-4xl font-bold mb-4">🌧️ Specialist Science Jobs</h1>
-          <p className="text-xl mb-6 opacity-90">Niche Jobs In Weather, Climate, Energy, Commodities And Geosciences</p>
+          <h1 className="text-4xl font-bold mb-4">Specialist Science Jobs</h1>
+          <p className="text-xl mb-6 opacity-90">
+            Niche Positions In Weather, Climate, Data, Energy, Commodities & Geosciences
+          </p>
         </div>
         <div className="absolute bottom-4 left-4">
           <button
             onClick={() => onPageChange?.("job-notifications")}
             className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors duration-200 shadow-lg"
           >
-            📧 Get Job Notifications
+            Get Job Notifications
           </button>
         </div>
       </div>
@@ -364,7 +384,6 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
           <div className="flex flex-wrap gap-4 items-center">
             <div className="flex items-center gap-2">
               <Filter className="h-4 w-4 text-primary" />
-              <span className="text-sm font-medium">Filters:</span>
             </div>
 
             <div className="flex items-center gap-2">
@@ -379,6 +398,8 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
                   <SelectItem value="oldest">Oldest</SelectItem>
                   <SelectItem value="company">Company</SelectItem>
                   <SelectItem value="title">Job Title</SelectItem>
+                  <SelectItem value="salary-high">Salary (High to Low)</SelectItem>
+                  <SelectItem value="salary-low">Salary (Low to High)</SelectItem>
                 </SelectContent>
               </Select>
             </div>
