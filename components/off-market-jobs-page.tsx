@@ -42,14 +42,15 @@ export function OffMarketJobsPage() {
   const [isRecruiterSubmitted, setIsRecruiterSubmitted] = useState(false)
 
   const industries = [
-    "Climate Tech",
-    "Renewable Energy",
-    "Weather Technology",
-    "Energy Trading",
-    "Software Development",
-    "Academia/Research",
-    "Geospatial Analysis",
-    "Insurance/Reinsurance",
+    "Academia & Research",
+    "Banking & Finance",
+    "Climate Science",
+    "Energy & Renewables",
+    "Geospatial & GIS",
+    "Geophysics & Geology",
+    "Insurance & Reinsurance",
+    "Tech (Data Science & ML)",
+    "Weather & Meteorology",
   ]
 
   const handleTalentIndustryToggle = (industry: string) => {
@@ -227,12 +228,12 @@ export function OffMarketJobsPage() {
                   </p>
                   <div className="space-y-2">
                     <div className="flex items-center gap-2">
-                      <Badge variant="secondary">Energy Trading</Badge>
-                      <Badge variant="secondary">Climate Tech</Badge>
+                      <Badge variant="secondary">Energy & Renewables</Badge>
+                      <Badge variant="secondary">Climate Science</Badge>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Badge variant="secondary">Software Engineering</Badge>
-                      <Badge variant="secondary">Research Roles</Badge>
+                      <Badge variant="secondary">Tech (Data Science & ML)</Badge>
+                      <Badge variant="secondary">Academia & Research</Badge>
                     </div>
                   </div>
                 </CardContent>
@@ -416,12 +417,12 @@ export function OffMarketJobsPage() {
                   </p>
                   <div className="space-y-2">
                     <div className="flex items-center gap-2">
-                      <Badge variant="secondary">Climate Scientists</Badge>
-                      <Badge variant="secondary">Energy Traders</Badge>
+                      <Badge variant="secondary">Climate Science</Badge>
+                      <Badge variant="secondary">Energy & Renewables</Badge>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Badge variant="secondary">Renewable Engineers</Badge>
-                      <Badge variant="secondary">Weather Tech</Badge>
+                      <Badge variant="secondary">Geospatial & GIS</Badge>
+                      <Badge variant="secondary">Weather & Meteorology</Badge>
                     </div>
                   </div>
                 </CardContent>

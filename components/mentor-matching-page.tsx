@@ -31,21 +31,32 @@ export function MentorMatchingPage() {
     setSubmitStatus("idle")
 
     try {
-      console.log("[v0] Mentor form data being sent:", formData)
-      console.log("[v0] Mapped data for API:", {
+      const industryMapping = {
+        academia: "Academia & Research",
+        banking: "Banking & Finance",
+        climate: "Climate Science",
+        energy: "Energy & Renewables",
+        geospatial: "Geospatial & GIS",
+        geophysics: "Geophysics & Geology",
+        insurance: "Insurance & Reinsurance",
+        tech: "Tech (Data Science & ML)",
+        weather: "Weather & Meteorology",
+      }
+
+      const mappedData = {
         ...formData,
         role_type: formData.signupType,
         bio: formData.experience,
-      })
+        industry: industryMapping[formData.industry as keyof typeof industryMapping] || formData.industry,
+      }
+
+      console.log("[v0] Mentor form data being sent:", formData)
+      console.log("[v0] Mapped data for API:", mappedData)
 
       const response = await fetch("/api/mentor-signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          ...formData,
-          role_type: formData.signupType, // Map signupType to role_type for database
-          bio: formData.experience, // Map experience to bio for database
-        }),
+        body: JSON.stringify(mappedData),
       })
 
       console.log("[v0] Mentor API response status:", response.status)
