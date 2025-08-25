@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react"
 import {
   Search,
-  Filter,
   SortAsc,
   CheckCircle,
   Target,
@@ -87,7 +86,7 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
   const [jobs] = useState<Job[]>(jobsData.jobs)
   const [filteredJobs, setFilteredJobs] = useState<Job[]>(jobs)
   const [locationFilter, setLocationFilter] = useState<string>("all")
-  const [categoryFilter, setCategoryFilter] = useState<string>("all")
+  const [selectedIndustries, setSelectedIndustries] = useState<string[]>([])
   const [sortBy, setSortBy] = useState<string>("newest")
   const [selectedJob, setSelectedJob] = useState<Job | null>(null)
   const [cvData, setCvData] = useState<CVData | null>(null)
@@ -101,15 +100,15 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
   const [showFavoritesOnly, setShowFavoritesOnly] = useState(false)
 
   const standardIndustries = [
-    "academia",
-    "banking",
-    "climate",
-    "energy",
-    "geospatial",
-    "geophysics",
-    "insurance",
-    "tech",
-    "weather",
+    { key: "academia", name: "Academia & Research" },
+    { key: "banking", name: "Banking & Finance" },
+    { key: "climate", name: "Climate Science" },
+    { key: "energy", name: "Energy & Renewables" },
+    { key: "geospatial", name: "Geospatial & GIS" },
+    { key: "geophysics", name: "Geophysics & Geology" },
+    { key: "insurance", name: "Insurance & Reinsurance" },
+    { key: "tech", name: "Tech (Data Science & ML)" },
+    { key: "weather", name: "Weather & Meteorology" },
   ]
 
   useEffect(() => {
@@ -141,7 +140,7 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
 
   useEffect(() => {
     applyFiltersAndSort()
-  }, [searchTerm, locationFilter, categoryFilter, sortBy, showFavoritesOnly])
+  }, [searchTerm, locationFilter, selectedIndustries, sortBy, showFavoritesOnly])
 
   const applyFiltersAndSort = () => {
     let baseJobs = showMatches ? jobMatches.map((match) => match.job) : jobs
@@ -166,47 +165,36 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
       filtered = filtered.filter((job) => job.location.toLowerCase().includes(locationFilter.toLowerCase()))
     }
 
-    if (categoryFilter !== "all") {
+    if (selectedIndustries.length > 0) {
       filtered = filtered.filter((job) =>
         Array.isArray(job.categories)
-          ? job.categories.some((cat) => cat.toLowerCase() === categoryFilter.toLowerCase())
-          : job.category?.toLowerCase() === categoryFilter.toLowerCase(),
+          ? job.categories.some((cat) => selectedIndustries.includes(cat.toLowerCase()))
+          : selectedIndustries.includes(job.category?.toLowerCase() || ""),
       )
     }
 
-    if (!showMatches) {
-      switch (sortBy) {
-        case "newest":
-          filtered.sort((a, b) => new Date(b.posted).getTime() - new Date(a.posted).getTime())
-          break
-        case "oldest":
-          filtered.sort((a, b) => new Date(a.posted).getTime() - new Date(b.posted).getTime())
-          break
-        case "company":
-          filtered.sort((a, b) => a.company.localeCompare(b.company))
-          break
-        case "title":
-          filtered.sort((a, b) => a.title.localeCompare(b.title))
-          break
-        case "salary-low":
-          filtered.sort((a, b) => {
-            const getSalaryValue = (salary: string) => {
-              const match = salary.match(/[\d,]+/)
-              return match ? Number.parseInt(match[0].replace(/,/g, "")) : 0
-            }
-            return getSalaryValue(b.salary) - getSalaryValue(a.salary)
-          })
-          break
-        case "salary-high":
-          filtered.sort((a, b) => {
-            const getSalaryValue = (salary: string) => {
-              const match = salary.match(/[\d,]+/)
-              return match ? Number.parseInt(match[0].replace(/,/g, "")) : 0
-            }
-            return getSalaryValue(a.salary) - getSalaryValue(b.salary)
-          })
-          break
-      }
+    switch (sortBy) {
+      case "newest":
+        filtered.sort((a, b) => new Date(b.posted).getTime() - new Date(a.posted).getTime())
+        break
+      case "salary-low":
+        filtered.sort((a, b) => {
+          const getSalaryValue = (salary: string) => {
+            const match = salary.match(/[\d,]+/)
+            return match ? Number.parseInt(match[0].replace(/,/g, "")) : 0
+          }
+          return getSalaryValue(a.salary) - getSalaryValue(b.salary)
+        })
+        break
+      case "salary-high":
+        filtered.sort((a, b) => {
+          const getSalaryValue = (salary: string) => {
+            const match = salary.match(/[\d,]+/)
+            return match ? Number.parseInt(match[0].replace(/,/g, "")) : 0
+          }
+          return getSalaryValue(b.salary) - getSalaryValue(a.salary)
+        })
+        break
     }
 
     setFilteredJobs(filtered)
@@ -214,7 +202,7 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
   }
 
   const getSelectedCategories = () => {
-    return categoryFilter === "all" ? [] : [categoryFilter]
+    return selectedIndustries
   }
 
   const handleSearch = (term: string) => {
@@ -223,10 +211,6 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
 
   const handleLocationFilter = (location: string) => {
     setLocationFilter(location)
-  }
-
-  const handleCategoryFilter = (category: string) => {
-    setCategoryFilter(category)
   }
 
   const handleSort = (sort: string) => {
@@ -338,6 +322,12 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
     setFavoriteJobs(newFavorites)
   }
 
+  const toggleIndustry = (industryKey: string) => {
+    setSelectedIndustries((prev) =>
+      prev.includes(industryKey) ? prev.filter((i) => i !== industryKey) : [...prev, industryKey],
+    )
+  }
+
   return (
     <div className="min-h-screen bg-background">
       <div
@@ -351,16 +341,14 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
         <div className="absolute inset-0 bg-primary/40"></div>
         <div className="relative z-10 text-center text-white">
           <h1 className="text-4xl font-bold mb-4">Specialist Science Jobs</h1>
-          <p className="text-xl mb-6 opacity-90">
-            Niche Positions In Weather, Climate, Data, Energy, Commodities & Geosciences
-          </p>
+          <p className="text-xl mb-6 opacity-90">Niche Jobs In Weather, Climate, Energy, Commodities And Geosciences</p>
         </div>
-        <div className="absolute bottom-4 left-4">
+        <div className="absolute bottom-4 right-4">
           <button
             onClick={() => onPageChange?.("job-notifications")}
-            className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors duration-200 shadow-lg"
+            className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors duration-200 shadow-lg flex items-center gap-2"
           >
-            Get Job Notifications
+            ☁️ Get Job Notifications
           </button>
         </div>
       </div>
@@ -381,11 +369,7 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
             </div>
           </div>
 
-          <div className="flex flex-wrap gap-4 items-center">
-            <div className="flex items-center gap-2">
-              <Filter className="h-4 w-4 text-primary" />
-            </div>
-
+          <div className="flex flex-wrap gap-4 items-center mb-4">
             <div className="flex items-center gap-2">
               <SortAsc className="h-4 w-4 text-muted-foreground" />
               <span className="text-sm font-medium">Sort by:</span>
@@ -395,31 +379,11 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="newest">Newest</SelectItem>
-                  <SelectItem value="oldest">Oldest</SelectItem>
-                  <SelectItem value="company">Company</SelectItem>
-                  <SelectItem value="title">Job Title</SelectItem>
                   <SelectItem value="salary-high">Salary (High to Low)</SelectItem>
                   <SelectItem value="salary-low">Salary (Low to High)</SelectItem>
                 </SelectContent>
               </Select>
             </div>
-
-            <Select value={categoryFilter} onValueChange={handleCategoryFilter}>
-              <SelectTrigger className="w-[180px]">
-                <SelectValue placeholder="Industry" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="all">All Industries</SelectItem>
-                {standardIndustries.map((industry) => (
-                  <SelectItem key={industry} value={industry.toLowerCase()}>
-                    <div className="flex items-center gap-2">
-                      {getCategoryIcon(industry)}
-                      {getCategoryDisplayName(industry)}
-                    </div>
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
 
             <Select value={locationFilter} onValueChange={handleLocationFilter}>
               <SelectTrigger className="w-[180px]">
@@ -444,6 +408,29 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
               <Heart className={`h-4 w-4 ${showFavoritesOnly ? "fill-current" : ""}`} />
               {showFavoritesOnly ? "Show All" : `Favorites (${favoriteJobs.size})`}
             </Button>
+          </div>
+
+          <div className="space-y-2">
+            <div className="text-sm font-medium">Industries:</div>
+            <div className="flex flex-wrap gap-2">
+              {standardIndustries.map((industry) => (
+                <Button
+                  key={industry.key}
+                  variant={selectedIndustries.includes(industry.key) ? "default" : "outline"}
+                  size="sm"
+                  onClick={() => toggleIndustry(industry.key)}
+                  className="flex items-center gap-2"
+                >
+                  {getCategoryIcon(industry.key)}
+                  {industry.name}
+                </Button>
+              ))}
+              {selectedIndustries.length > 0 && (
+                <Button variant="ghost" size="sm" onClick={() => setSelectedIndustries([])}>
+                  Clear All
+                </Button>
+              )}
+            </div>
           </div>
         </div>
 

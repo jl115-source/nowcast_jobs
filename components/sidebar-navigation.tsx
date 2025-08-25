@@ -14,6 +14,7 @@ import {
   ChevronUp,
   EyeOff,
   Building2,
+  BookOpen,
 } from "lucide-react"
 
 interface SidebarNavigationProps {
@@ -24,9 +25,9 @@ interface SidebarNavigationProps {
 export function SidebarNavigation({ currentPage, onPageChange }: SidebarNavigationProps) {
   const [isMinimized, setIsMinimized] = useState(false)
   const [isJobDropdownOpen, setIsJobDropdownOpen] = useState(true) // Set Jobs dropdown to be open by default
+  const [isResourcesDropdownOpen, setIsResourcesDropdownOpen] = useState(false) // Added Resources dropdown state
 
   const pages = [
-    { id: "conferences", label: "Conferences & Events", icon: Calendar },
     { id: "companies", label: "Companies", icon: Building2 },
     { id: "mentor-matching", label: "Mentor Matching", icon: Users },
   ]
@@ -36,6 +37,11 @@ export function SidebarNavigation({ currentPage, onPageChange }: SidebarNavigati
     { id: "job-notifications", label: "Job Notifications", icon: Zap },
     { id: "off-market", label: "Off-Market Jobs", icon: EyeOff }, // Capitalized "Market" in Off-Market Jobs
   ]
+
+  const resourcePages = [
+    { id: "resources", label: "General Resources", icon: BookOpen },
+    { id: "conferences", label: "Conferences & Events", icon: Calendar },
+  ] // Added Resources dropdown pages
 
   return (
     <div
@@ -87,6 +93,50 @@ export function SidebarNavigation({ currentPage, onPageChange }: SidebarNavigati
             {!isMinimized && isJobDropdownOpen && (
               <div className="ml-4 mt-1 space-y-1">
                 {jobPages.map((page) => {
+                  const Icon = page.icon
+                  const isActive = currentPage === page.id
+
+                  return (
+                    <Button
+                      key={page.id}
+                      variant={isActive ? "default" : "ghost"}
+                      className={`w-full justify-start gap-3 text-sm ${
+                        isActive
+                          ? "bg-sidebar-primary text-sidebar-primary-foreground"
+                          : "text-sidebar-foreground hover:bg-sidebar-accent/10"
+                      }`}
+                      onClick={() => onPageChange(page.id)}
+                    >
+                      <Icon className="h-3 w-3 flex-shrink-0" />
+                      <span>{page.label}</span>
+                    </Button>
+                  )
+                })}
+              </div>
+            )}
+          </div>
+
+          {/* Resources dropdown section */}
+          <div>
+            <Button
+              variant="ghost"
+              className={`w-full justify-between gap-3 text-sidebar-foreground hover:bg-sidebar-accent/10 ${
+                isMinimized ? "px-2" : "px-3"
+              }`}
+              onClick={() => !isMinimized && setIsResourcesDropdownOpen(!isResourcesDropdownOpen)}
+            >
+              <div className="flex items-center gap-3">
+                <BookOpen className="h-4 w-4 flex-shrink-0" />
+                {!isMinimized && <span>Resources</span>}
+              </div>
+              {!isMinimized &&
+                (isResourcesDropdownOpen ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />)}
+            </Button>
+
+            {/* Resources Dropdown Items */}
+            {!isMinimized && isResourcesDropdownOpen && (
+              <div className="ml-4 mt-1 space-y-1">
+                {resourcePages.map((page) => {
                   const Icon = page.icon
                   const isActive = currentPage === page.id
 

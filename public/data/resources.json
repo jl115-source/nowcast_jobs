@@ -1,0 +1,382 @@
+{
+  "resources": {
+    "Academia & Research": {
+      "certifications": [
+        {
+          "name": "Certified Research Administrator (CRA)",
+          "provider": "Research Administrators Certification Council",
+          "description": "Professional certification for research administration",
+          "link": "https://www.racc-cert.org/"
+        },
+        {
+          "name": "Project Management Professional (PMP)",
+          "provider": "Project Management Institute",
+          "description": "Global standard for project management certification",
+          "link": "https://www.pmi.org/certifications/project-management-pmp"
+        }
+      ],
+      "education": [
+        {
+          "name": "PhD in Environmental Science",
+          "institution": "Various Universities",
+          "description": "Advanced research degree in environmental sciences",
+          "link": "https://www.gradschools.com/programs/environmental-science"
+        },
+        {
+          "name": "Master's in Research Methods",
+          "institution": "Various Universities",
+          "description": "Advanced degree focusing on research methodologies",
+          "link": "https://www.mastersportal.com/studies/research-methods"
+        }
+      ],
+      "links": [
+        {
+          "name": "National Science Foundation",
+          "description": "US government agency supporting fundamental research",
+          "link": "https://www.nsf.gov/"
+        },
+        {
+          "name": "ResearchGate",
+          "description": "Social networking site for scientists and researchers",
+          "link": "https://www.researchgate.net/"
+        }
+      ]
+    },
+    "Banking & Finance": {
+      "certifications": [
+        {
+          "name": "Chartered Financial Analyst (CFA)",
+          "provider": "CFA Institute",
+          "description": "Global standard for investment analysis and portfolio management",
+          "link": "https://www.cfainstitute.org/"
+        },
+        {
+          "name": "Financial Risk Manager (FRM)",
+          "provider": "Global Association of Risk Professionals",
+          "description": "Leading certification for financial risk management",
+          "link": "https://www.garp.org/frm"
+        }
+      ],
+      "education": [
+        {
+          "name": "Master of Finance",
+          "institution": "Various Business Schools",
+          "description": "Advanced degree in financial theory and practice",
+          "link": "https://www.topuniversities.com/courses/finance/guide"
+        },
+        {
+          "name": "MBA with Finance Concentration",
+          "institution": "Various Business Schools",
+          "description": "Business administration degree with finance focus",
+          "link": "https://www.mba.com/"
+        }
+      ],
+      "links": [
+        {
+          "name": "Bloomberg Terminal",
+          "description": "Professional financial data and analytics platform",
+          "link": "https://www.bloomberg.com/professional/"
+        },
+        {
+          "name": "Financial Times",
+          "description": "Leading financial news and analysis",
+          "link": "https://www.ft.com/"
+        }
+      ]
+    },
+    "Climate Science": {
+      "certifications": [
+        {
+          "name": "Certified Climate Change Professional (CC-P)",
+          "provider": "Association of Climate Change Officers",
+          "description": "Professional certification in climate change management",
+          "link": "https://www.acco.us/"
+        },
+        {
+          "name": "LEED Green Associate",
+          "provider": "U.S. Green Building Council",
+          "description": "Entry-level green building certification",
+          "link": "https://www.usgbc.org/credentials"
+        }
+      ],
+      "education": [
+        {
+          "name": "Master's in Climate Science",
+          "institution": "Various Universities",
+          "description": "Advanced degree in climate systems and change",
+          "link": "https://www.gradschools.com/programs/climate-science"
+        },
+        {
+          "name": "PhD in Atmospheric Sciences",
+          "institution": "Various Universities",
+          "description": "Research degree in atmospheric physics and chemistry",
+          "link": "https://www.gradschools.com/programs/atmospheric-sciences"
+        }
+      ],
+      "links": [
+        {
+          "name": "IPCC - Intergovernmental Panel on Climate Change",
+          "description": "UN body for assessing climate change science",
+          "link": "https://www.ipcc.ch/"
+        },
+        {
+          "name": "Climate.gov",
+          "description": "NOAA's climate information portal",
+          "link": "https://www.climate.gov/"
+        }
+      ]
+    },
+    "Energy & Renewables": {
+      "certifications": [
+        {
+          "name": "Certified Energy Manager (CEM)",
+          "provider": "Association of Energy Engineers",
+          "description": "Professional certification in energy management",
+          "link": "https://www.aeecenter.org/"
+        },
+        {
+          "name": "NABCEP PV Installation Professional",
+          "provider": "North American Board of Certified Energy Practitioners",
+          "description": "Solar photovoltaic installation certification",
+          "link": "https://www.nabcep.org/"
+        }
+      ],
+      "education": [
+        {
+          "name": "Master's in Renewable Energy",
+          "institution": "Various Universities",
+          "description": "Advanced degree in renewable energy systems",
+          "link": "https://www.mastersportal.com/studies/renewable-energy"
+        },
+        {
+          "name": "Energy Engineering Degree",
+          "institution": "Various Universities",
+          "description": "Engineering degree focused on energy systems",
+          "link": "https://www.gradschools.com/programs/energy-engineering"
+        }
+      ],
+      "links": [
+        {
+          "name": "International Renewable Energy Agency (IRENA)",
+          "description": "Global intergovernmental agency for renewable energy",
+          "link": "https://www.irena.org/"
+        },
+        {
+          "name": "U.S. Department of Energy",
+          "description": "Federal agency for energy policy and research",
+          "link": "https://www.energy.gov/"
+        }
+      ]
+    },
+    "Geospatial & GIS": {
+      "certifications": [
+        {
+          "name": "GISP - GIS Professional",
+          "provider": "GIS Certification Institute",
+          "description": "Professional certification for GIS practitioners",
+          "link": "https://www.gisci.org/"
+        },
+        {
+          "name": "Esri Technical Certification",
+          "provider": "Esri",
+          "description": "Technical certification for Esri software products",
+          "link": "https://www.esri.com/training/certification/"
+        }
+      ],
+      "education": [
+        {
+          "name": "Master's in GIS",
+          "institution": "Various Universities",
+          "description": "Advanced degree in Geographic Information Systems",
+          "link": "https://www.gradschools.com/programs/gis"
+        },
+        {
+          "name": "Remote Sensing Certificate",
+          "institution": "Various Universities",
+          "description": "Specialized training in remote sensing technologies",
+          "link": "https://www.gradschools.com/programs/remote-sensing"
+        }
+      ],
+      "links": [
+        {
+          "name": "Esri",
+          "description": "Leading GIS software and solutions provider",
+          "link": "https://www.esri.com/"
+        },
+        {
+          "name": "Open Geospatial Consortium",
+          "description": "International standards organization for geospatial content",
+          "link": "https://www.ogc.org/"
+        }
+      ]
+    },
+    "Geophysics & Geology": {
+      "certifications": [
+        {
+          "name": "Professional Geologist (PG)",
+          "provider": "American Institute of Professional Geologists",
+          "description": "Professional certification for practicing geologists",
+          "link": "https://www.aipg.org/"
+        },
+        {
+          "name": "Certified Professional Geophysicist (CPG)",
+          "provider": "American Geophysical Union",
+          "description": "Professional certification for geophysicists",
+          "link": "https://www.agu.org/"
+        }
+      ],
+      "education": [
+        {
+          "name": "Master's in Geology",
+          "institution": "Various Universities",
+          "description": "Advanced degree in geological sciences",
+          "link": "https://www.gradschools.com/programs/geology"
+        },
+        {
+          "name": "PhD in Geophysics",
+          "institution": "Various Universities",
+          "description": "Research degree in geophysical sciences",
+          "link": "https://www.gradschools.com/programs/geophysics"
+        }
+      ],
+      "links": [
+        {
+          "name": "American Geophysical Union",
+          "description": "International scientific society for Earth and space sciences",
+          "link": "https://www.agu.org/"
+        },
+        {
+          "name": "Geological Society of America",
+          "description": "Professional society for geoscience professionals",
+          "link": "https://www.geosociety.org/"
+        }
+      ]
+    },
+    "Insurance & Reinsurance": {
+      "certifications": [
+        {
+          "name": "Associate in Risk Management (ARM)",
+          "provider": "The Institutes",
+          "description": "Professional designation in risk management",
+          "link": "https://www.theinstitutes.org/"
+        },
+        {
+          "name": "Chartered Property Casualty Underwriter (CPCU)",
+          "provider": "The Institutes",
+          "description": "Premier designation for property-casualty insurance professionals",
+          "link": "https://www.theinstitutes.org/"
+        }
+      ],
+      "education": [
+        {
+          "name": "Master's in Risk Management",
+          "institution": "Various Universities",
+          "description": "Advanced degree in risk assessment and management",
+          "link": "https://www.gradschools.com/programs/risk-management"
+        },
+        {
+          "name": "Actuarial Science Degree",
+          "institution": "Various Universities",
+          "description": "Specialized degree in actuarial mathematics and statistics",
+          "link": "https://www.gradschools.com/programs/actuarial-science"
+        }
+      ],
+      "links": [
+        {
+          "name": "Lloyd's of London",
+          "description": "World's leading insurance and reinsurance marketplace",
+          "link": "https://www.lloyds.com/"
+        },
+        {
+          "name": "Insurance Information Institute",
+          "description": "Industry resource for insurance information",
+          "link": "https://www.iii.org/"
+        }
+      ]
+    },
+    "Tech (Data Science & ML)": {
+      "certifications": [
+        {
+          "name": "Certified Analytics Professional (CAP)",
+          "provider": "INFORMS",
+          "description": "Professional certification for analytics practitioners",
+          "link": "https://www.informs.org/"
+        },
+        {
+          "name": "Google Cloud Professional Data Engineer",
+          "provider": "Google Cloud",
+          "description": "Cloud-based data engineering certification",
+          "link": "https://cloud.google.com/certification/data-engineer"
+        }
+      ],
+      "education": [
+        {
+          "name": "Master's in Data Science",
+          "institution": "Various Universities",
+          "description": "Advanced degree in data analysis and machine learning",
+          "link": "https://www.mastersportal.com/studies/data-science"
+        },
+        {
+          "name": "PhD in Machine Learning",
+          "institution": "Various Universities",
+          "description": "Research degree in artificial intelligence and ML",
+          "link": "https://www.gradschools.com/programs/machine-learning"
+        }
+      ],
+      "links": [
+        {
+          "name": "Kaggle",
+          "description": "Platform for data science competitions and learning",
+          "link": "https://www.kaggle.com/"
+        },
+        {
+          "name": "GitHub",
+          "description": "Code repository and collaboration platform",
+          "link": "https://github.com/"
+        }
+      ]
+    },
+    "Weather & Meteorology": {
+      "certifications": [
+        {
+          "name": "Certified Broadcast Meteorologist (CBM)",
+          "provider": "American Meteorological Society",
+          "description": "Professional certification for broadcast meteorologists",
+          "link": "https://www.ametsoc.org/"
+        },
+        {
+          "name": "Certified Consulting Meteorologist (CCM)",
+          "provider": "American Meteorological Society",
+          "description": "Professional certification for consulting meteorologists",
+          "link": "https://www.ametsoc.org/"
+        }
+      ],
+      "education": [
+        {
+          "name": "Master's in Meteorology",
+          "institution": "Various Universities",
+          "description": "Advanced degree in atmospheric sciences and weather prediction",
+          "link": "https://www.gradschools.com/programs/meteorology"
+        },
+        {
+          "name": "PhD in Atmospheric Sciences",
+          "institution": "Various Universities",
+          "description": "Research degree in atmospheric physics and dynamics",
+          "link": "https://www.gradschools.com/programs/atmospheric-sciences"
+        }
+      ],
+      "links": [
+        {
+          "name": "National Weather Service",
+          "description": "US government weather forecasting service",
+          "link": "https://www.weather.gov/"
+        },
+        {
+          "name": "World Meteorological Organization",
+          "description": "UN specialized agency for weather, climate and water",
+          "link": "https://public.wmo.int/"
+        }
+      ]
+    }
+  }
+}

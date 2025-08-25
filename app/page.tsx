@@ -10,6 +10,7 @@ import { MentorMatchingPage } from "@/components/mentor-matching-page"
 import { JobNotificationsPage } from "@/components/job-notifications-page"
 import { OffMarketJobsPage } from "@/components/off-market-jobs-page"
 import { CompaniesPage } from "@/components/companies-page" // Added companies page import
+import { ResourcesPage } from "@/components/resources-page" // Added Resources page import
 import { SidebarNavigation } from "@/components/sidebar-navigation"
 
 export default function Home() {
@@ -25,8 +26,10 @@ export default function Home() {
         return <CVMatcherPage />
       case "conferences":
         return <ConferencesPage />
-      case "companies": // Added companies page routing
+      case "companies":
         return <CompaniesPage />
+      case "resources":
+        return <ResourcesPage />
       case "cv-improver":
         return <CVImproverPage />
       case "mentor-matching":
