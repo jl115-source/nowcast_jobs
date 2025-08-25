@@ -13,7 +13,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "All fields are required" }, { status: 400 })
     }
 
-    const supabase = createClient()
+    const supabase = await createClient()
     console.log("[v0] Supabase client created")
 
     const { data, error } = await supabase
