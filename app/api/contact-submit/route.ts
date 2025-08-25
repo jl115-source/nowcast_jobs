@@ -22,7 +22,8 @@ export async function POST(request: NextRequest) {
         {
           name: `${firstName} ${lastName}`,
           email,
-          message: `Subject: ${subject}\n\n${message}`,
+          subject,
+          message,
         },
       ])
       .select()

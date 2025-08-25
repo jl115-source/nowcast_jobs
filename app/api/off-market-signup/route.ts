@@ -13,15 +13,28 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Invalid signup type" }, { status: 400 })
     }
 
-    const supabase = createClient()
+    const supabase = await createClient()
     console.log("[v0] Supabase client created")
 
     if (type === "talent") {
-      const { name, email, phone, experience, skills, industries, currentRole, location, availability } = formData
+      const { name, email, experience, skills, industries } = formData
 
       if (!name || !email || !experience || !skills || !industries || industries.length === 0) {
         console.log("[v0] Missing required fields for talent signup")
         return NextResponse.json({ error: "Missing required fields for talent signup" }, { status: 400 })
+      }
+
+      // <CHANGE> Map industries array to individual boolean columns
+      const industryColumns = {
+        climate_science: industries.includes('Climate Science'),
+        tech_data_science: industries.includes('Tech (Data Science & ML)'),
+        energy_renewables: industries.includes('Energy & Renewables'),
+        weather_meteorology: industries.includes('Weather & Meteorology'),
+        academia_research: industries.includes('Academia & Research'),
+        geospatial_gis: industries.includes('Geospatial & GIS'),
+        geophysics_geology: industries.includes('Geophysics & Geology'),
+        insurance_reinsurance: industries.includes('Insurance & Reinsurance'),
+        banking_finance: industries.includes('Banking & Finance'),
       }
 
       const { data, error } = await supabase
@@ -31,13 +44,9 @@ export async function POST(request: NextRequest) {
             type: "talent",
             name,
             email,
-            phone,
-            experience_level: experience, // Map to correct column
-            skills: Array.isArray(skills) ? skills : [skills], // Ensure array format
-            industries: Array.isArray(industries) ? industries : [industries], // Ensure array format
-            additional_info: currentRole, // Map currentRole to additional_info
-            location,
-            status: "active",
+            skills: Array.isArray(skills) ? skills.join(', ') : skills,
+            bio: experience,
+            ...industryColumns,
           },
         ])
         .select()
@@ -54,19 +63,24 @@ export async function POST(request: NextRequest) {
         data: data[0],
       })
     } else {
-      const { name, email, company, phone, website, specializations, experience, clientTypes, description } = formData
+      const { name, email, company, specializations, description } = formData
 
-      if (
-        !name ||
-        !email ||
-        !company ||
-        !specializations ||
-        specializations.length === 0 ||
-        !experience ||
-        !description
-      ) {
+      if (!name || !email || !company || !specializations || specializations.length === 0 || !description) {
         console.log("[v0] Missing required fields for recruiter signup")
         return NextResponse.json({ error: "Missing required fields for recruiter signup" }, { status: 400 })
+      }
+
+      // <CHANGE> Map specializations array to individual boolean columns
+      const industryColumns = {
+        climate_science: specializations.includes('Climate Science'),
+        tech_data_science: specializations.includes('Tech (Data Science & ML)'),
+        energy_renewables: specializations.includes('Energy & Renewables'),
+        weather_meteorology: specializations.includes('Weather & Meteorology'),
+        academia_research: specializations.includes('Academia & Research'),
+        geospatial_gis: specializations.includes('Geospatial & GIS'),
+        geophysics_geology: specializations.includes('Geophysics & Geology'),
+        insurance_reinsurance: specializations.includes('Insurance & Reinsurance'),
+        banking_finance: specializations.includes('Banking & Finance'),
       }
 
       const { data, error } = await supabase
@@ -76,13 +90,9 @@ export async function POST(request: NextRequest) {
             type: "recruiter",
             name,
             email,
-            phone,
             company,
-            website_url: website, // Map to correct column
-            industries: Array.isArray(specializations) ? specializations : [specializations], // Map specializations to industries
-            experience_level: experience, // Map to correct column
-            additional_info: description, // Map description to additional_info
-            status: "pending", // Recruiters need approval
+            bio: description,
+            ...industryColumns,
           },
         ])
         .select()

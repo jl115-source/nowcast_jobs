@@ -16,6 +16,18 @@ export async function POST(request: NextRequest) {
     const supabase = await createClient()
     console.log("[v0] Supabase client created")
 
+    const industryColumns = {
+      climate_science: industry.includes("Climate Science"),
+      tech_data_science: industry.includes("Tech (Data Science & ML)"),
+      energy_renewables: industry.includes("Energy & Renewables"),
+      weather_meteorology: industry.includes("Weather & Meteorology"),
+      academia_research: industry.includes("Academia & Research"),
+      geospatial_gis: industry.includes("Geospatial & GIS"),
+      geophysics_geology: industry.includes("Geophysics & Geology"),
+      insurance_reinsurance: industry.includes("Insurance & Reinsurance"),
+      banking_finance: industry.includes("Banking & Finance"),
+    }
+
     const { data, error } = await supabase
       .from("mentor_profiles")
       .insert([
@@ -23,8 +35,8 @@ export async function POST(request: NextRequest) {
           name,
           email,
           role_type: signupType,
-          industry,
           bio: experience || null,
+          ...industryColumns, // Spread individual industry columns
         },
       ])
       .select()
