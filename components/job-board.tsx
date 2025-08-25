@@ -188,7 +188,7 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
         case "title":
           filtered.sort((a, b) => a.title.localeCompare(b.title))
           break
-        case "salary-high":
+        case "salary-low":
           filtered.sort((a, b) => {
             const getSalaryValue = (salary: string) => {
               const match = salary.match(/[\d,]+/)
@@ -197,7 +197,7 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
             return getSalaryValue(b.salary) - getSalaryValue(a.salary)
           })
           break
-        case "salary-low":
+        case "salary-high":
           filtered.sort((a, b) => {
             const getSalaryValue = (salary: string) => {
               const match = salary.match(/[\d,]+/)

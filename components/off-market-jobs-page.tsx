@@ -223,22 +223,7 @@ export function OffMarketJobsPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-4">
-                    Many jobs, particularly in energy, trading, and software, are not open to the public and require
-                    recruiters finding talent.
-                  </p>
-                  <div className="space-y-2">
-                    <div className="flex items-center gap-2">
-                      <Badge variant="secondary">Banking & Finance</Badge>
-                      <Badge variant="secondary">Geospatial & GIS</Badge>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Badge variant="secondary">Geophysics & Geology</Badge>
-                      <Badge variant="secondary">Insurance & Reinsurance</Badge>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Badge variant="secondary">Weather & Meteorology</Badge>
-                    </div>
-                  </div>
+                  Many high-paying roles—especially in energy, trading, and software—are never publicly advertised, with recruiters quietly seeking the right talent. We make it easier to connect those opportunities directly to you.                  </p>
                 </CardContent>
               </Card>
 
@@ -418,16 +403,6 @@ export function OffMarketJobsPage() {
                     outreach. We help you reach talent in niche fields with expertise-based vetting to determine if
                     they'll be a good fit for your role.
                   </p>
-                  <div className="space-y-2">
-                    <div className="flex items-center gap-2">
-                      <Badge variant="secondary">Climate Science</Badge>
-                      <Badge variant="secondary">Energy & Renewables</Badge>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Badge variant="secondary">Geospatial & GIS</Badge>
-                      <Badge variant="secondary">Weather & Meteorology</Badge>
-                    </div>
-                  </div>
                 </CardContent>
               </Card>
 
