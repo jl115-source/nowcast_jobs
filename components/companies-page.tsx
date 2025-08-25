@@ -285,7 +285,7 @@ export function CompaniesPage() {
         <div className="absolute inset-0 bg-primary/40"></div>
         <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
           <div className="text-center w-full">
-            <h1 className="text-4xl font-bold text-white mb-2">Discover top companies & institutes in your field</h1>
+            <h1 className="text-4xl font-bold text-white mb-2">Discover Top Companies & Institutes In Your Field</h1>
           </div>
         </div>
       </div>

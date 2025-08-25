@@ -113,6 +113,17 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
   ]
 
   useEffect(() => {
+    const savedFavorites = localStorage.getItem("favoriteJobs")
+    if (savedFavorites) {
+      setFavoriteJobs(new Set(JSON.parse(savedFavorites)))
+    }
+  }, [])
+
+  useEffect(() => {
+    localStorage.setItem("favoriteJobs", JSON.stringify(Array.from(favoriteJobs)))
+  }, [favoriteJobs])
+
+  useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search)
     const jobId = urlParams.get("job")
 
@@ -129,56 +140,42 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
   }, [])
 
   useEffect(() => {
-    const savedFavorites = localStorage.getItem("favoriteJobs")
-    if (savedFavorites) {
-      setFavoriteJobs(new Set(JSON.parse(savedFavorites)))
-    }
-  }, [])
+    applyFiltersAndSort()
+  }, [searchTerm, locationFilter, categoryFilter, sortBy, showFavoritesOnly])
 
-  useEffect(() => {
-    localStorage.setItem("favoriteJobs", JSON.stringify(Array.from(favoriteJobs)))
-  }, [favoriteJobs])
+  const applyFiltersAndSort = () => {
+    let baseJobs = showMatches ? jobMatches.map((match) => match.job) : jobs
 
-  useEffect(() => {
-    applyFiltersAndSort(searchTerm, locationFilter, categoryFilter, sortBy, jobMatches)
-  }, [favoriteJobs, showFavoritesOnly])
-
-  const applyFiltersAndSort = (
-    search: string,
-    location: string,
-    category: string,
-    sort: string,
-    mapFilteredJobs?: Job[],
-  ) => {
-    let filtered = mapFilteredJobs || jobs
-
+    // Apply favorites filter first if enabled
     if (showFavoritesOnly) {
-      filtered = filtered.filter((job) => favoriteJobs.has(job.id))
+      baseJobs = baseJobs.filter((job) => favoriteJobs.has(job.id))
     }
 
-    if (search) {
+    let filtered = baseJobs
+
+    if (searchTerm) {
       filtered = filtered.filter(
         (job) =>
-          job.title.toLowerCase().includes(search.toLowerCase()) ||
-          job.company.toLowerCase().includes(search.toLowerCase()) ||
-          job.skills.some((skill) => skill.toLowerCase().includes(search.toLowerCase())),
+          job.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          job.company.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          job.skills.some((skill) => skill.toLowerCase().includes(searchTerm.toLowerCase())),
       )
     }
 
-    if (location !== "all") {
-      filtered = filtered.filter((job) => job.location.toLowerCase().includes(location.toLowerCase()))
+    if (locationFilter !== "all") {
+      filtered = filtered.filter((job) => job.location.toLowerCase().includes(locationFilter.toLowerCase()))
     }
 
-    if (category !== "all") {
+    if (categoryFilter !== "all") {
       filtered = filtered.filter((job) =>
         Array.isArray(job.categories)
-          ? job.categories.some((cat) => cat.toLowerCase() === category.toLowerCase())
-          : job.category?.toLowerCase() === category.toLowerCase(),
+          ? job.categories.some((cat) => cat.toLowerCase() === categoryFilter.toLowerCase())
+          : job.category?.toLowerCase() === categoryFilter.toLowerCase(),
       )
     }
 
-    if (!showMatches || !mapFilteredJobs) {
-      switch (sort) {
+    if (!showMatches) {
+      switch (sortBy) {
         case "newest":
           filtered.sort((a, b) => new Date(b.posted).getTime() - new Date(a.posted).getTime())
           break
@@ -204,49 +201,18 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
 
   const handleSearch = (term: string) => {
     setSearchTerm(term)
-    applyFiltersAndSort(term, locationFilter, categoryFilter, sortBy, jobMatches)
   }
 
   const handleLocationFilter = (location: string) => {
     setLocationFilter(location)
-    applyFiltersAndSort(searchTerm, location, categoryFilter, sortBy, jobMatches)
   }
 
   const handleCategoryFilter = (category: string) => {
     setCategoryFilter(category)
-    applyFiltersAndSort(searchTerm, locationFilter, category, sortBy, jobMatches)
   }
 
   const handleSort = (sort: string) => {
     setSortBy(sort)
-    applyFiltersAndSort(searchTerm, locationFilter, categoryFilter, sort, jobMatches)
-  }
-
-  const handleFavoritesFilter = (showFavorites: boolean) => {
-    setShowFavoritesOnly(showFavorites)
-    applyFiltersAndSort(searchTerm, locationFilter, categoryFilter, sortBy, jobMatches)
-  }
-
-  const totalPages = Math.ceil(filteredJobs.length / jobsPerPage)
-  const startIndex = (currentPage - 1) * jobsPerPage
-  const endIndex = startIndex + jobsPerPage
-  const currentJobs = filteredJobs.slice(startIndex, endIndex)
-
-  const goToPage = (page: number) => {
-    setCurrentPage(page)
-    window.scrollTo({ top: 0, behavior: "smooth" })
-  }
-
-  const goToPreviousPage = () => {
-    if (currentPage > 1) {
-      goToPage(currentPage - 1)
-    }
-  }
-
-  const goToNextPage = () => {
-    if (currentPage < totalPages) {
-      goToPage(currentPage + 1)
-    }
   }
 
   const getJobMatch = (jobId: string): JobMatch | undefined => {
@@ -450,22 +416,15 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
               </SelectContent>
             </Select>
 
-            <div className="flex items-center gap-2">
-              <Button
-                variant={showFavoritesOnly ? "default" : "outline"}
-                size="sm"
-                onClick={() => handleFavoritesFilter(!showFavoritesOnly)}
-                className="flex items-center gap-2"
-              >
-                <Heart className={`h-4 w-4 ${showFavoritesOnly ? "fill-current" : ""}`} />
-                {showFavoritesOnly ? "Favorites Only" : "Show Favorites"}
-                {favoriteJobs.size > 0 && (
-                  <Badge variant="secondary" className="ml-1 text-xs">
-                    {favoriteJobs.size}
-                  </Badge>
-                )}
-              </Button>
-            </div>
+            <Button
+              variant={showFavoritesOnly ? "default" : "outline"}
+              size="sm"
+              onClick={() => setShowFavoritesOnly(!showFavoritesOnly)}
+              className="flex items-center gap-2"
+            >
+              <Heart className={`h-4 w-4 ${showFavoritesOnly ? "fill-current" : ""}`} />
+              {showFavoritesOnly ? "Show All" : `Favorites (${favoriteJobs.size})`}
+            </Button>
           </div>
         </div>
 
@@ -487,9 +446,10 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
                 <div className="flex gap-4 items-center">
                   <Button
                     variant={showMatches ? "default" : "outline"}
+                    size="sm"
                     onClick={() => {
                       setShowMatches(true)
-                      applyFiltersAndSort(searchTerm, locationFilter, categoryFilter, sortBy, jobMatches)
+                      applyFiltersAndSort()
                     }}
                   >
                     <Target className="mr-2 h-4 w-4" />
@@ -499,7 +459,7 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
                     variant={!showMatches ? "default" : "outline"}
                     onClick={() => {
                       setShowMatches(false)
-                      applyFiltersAndSort(searchTerm, locationFilter, categoryFilter, sortBy)
+                      applyFiltersAndSort()
                     }}
                   >
                     Show All Jobs
@@ -516,17 +476,18 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
 
         <div className="flex items-center justify-between mb-6">
           <div className="text-sm text-muted-foreground">
-            Showing {startIndex + 1}-{Math.min(endIndex, filteredJobs.length)} of {filteredJobs.length} jobs
+            Showing {currentPage * jobsPerPage - jobsPerPage + 1}-
+            {Math.min(currentPage * jobsPerPage, filteredJobs.length)} of {filteredJobs.length} jobs
           </div>
-          {totalPages > 1 && (
+          {filteredJobs.length > jobsPerPage && (
             <div className="text-sm text-muted-foreground">
-              Page {currentPage} of {totalPages}
+              Page {currentPage} of {Math.ceil(filteredJobs.length / jobsPerPage)}
             </div>
           )}
         </div>
 
         <div className="grid gap-4 grid-cols-1 md:grid-cols-2">
-          {currentJobs.map((job) => {
+          {filteredJobs.slice((currentPage - 1) * jobsPerPage, currentPage * jobsPerPage).map((job) => {
             const jobMatch = getJobMatch(job.id)
             const isExpanded = expandedJobs.has(job.id)
             const isFavorited = favoriteJobs.has(job.id)
@@ -543,7 +504,7 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
                       </CardDescription>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Button variant="ghost" size="sm" onClick={() => toggleFavorite(job.id)} className="p-2">
+                      <Button variant="ghost" size="sm" onClick={() => toggleFavorite(job.id)} className="p-1 h-8 w-8">
                         <Heart
                           className={`h-4 w-4 ${isFavorited ? "fill-red-500 text-red-500" : "text-muted-foreground hover:text-red-500"}`}
                         />
@@ -680,9 +641,14 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
           })}
         </div>
 
-        {totalPages > 1 && (
+        {filteredJobs.length > jobsPerPage && (
           <div className="flex items-center justify-center gap-2 mt-8">
-            <Button variant="outline" size="sm" onClick={goToPreviousPage} disabled={currentPage === 1}>
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => setCurrentPage(currentPage - 1)}
+              disabled={currentPage === 1}
+            >
               <ChevronLeft className="h-4 w-4 mr-1" />
               Previous
             </Button>
@@ -690,44 +656,56 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
             <div className="flex items-center gap-1">
               {currentPage > 3 && (
                 <>
-                  <Button variant={1 === currentPage ? "default" : "outline"} size="sm" onClick={() => goToPage(1)}>
+                  <Button
+                    variant={1 === currentPage ? "default" : "outline"}
+                    size="sm"
+                    onClick={() => setCurrentPage(1)}
+                  >
                     1
                   </Button>
                   {currentPage > 4 && <span className="px-2 text-muted-foreground">...</span>}
                 </>
               )}
 
-              {Array.from({ length: Math.min(5, totalPages) }, (_, i) => {
-                const pageNum = Math.max(1, Math.min(totalPages - 4, currentPage - 2)) + i
-                if (pageNum > totalPages) return null
+              {Array.from({ length: Math.min(5, Math.ceil(filteredJobs.length / jobsPerPage)) }, (_, i) => {
+                const pageNum =
+                  Math.max(1, Math.min(Math.ceil(filteredJobs.length / jobsPerPage) - 4, currentPage - 2)) + i
+                if (pageNum > Math.ceil(filteredJobs.length / jobsPerPage)) return null
 
                 return (
                   <Button
                     key={pageNum}
                     variant={pageNum === currentPage ? "default" : "outline"}
                     size="sm"
-                    onClick={() => goToPage(pageNum)}
+                    onClick={() => setCurrentPage(pageNum)}
                   >
                     {pageNum}
                   </Button>
                 )
               })}
 
-              {currentPage < totalPages - 2 && (
+              {currentPage < Math.ceil(filteredJobs.length / jobsPerPage) - 2 && (
                 <>
-                  {currentPage < totalPages - 3 && <span className="px-2 text-muted-foreground">...</span>}
+                  {currentPage < Math.ceil(filteredJobs.length / jobsPerPage) - 3 && (
+                    <span className="px-2 text-muted-foreground">...</span>
+                  )}
                   <Button
-                    variant={totalPages === currentPage ? "default" : "outline"}
+                    variant={Math.ceil(filteredJobs.length / jobsPerPage) === currentPage ? "default" : "outline"}
                     size="sm"
-                    onClick={() => goToPage(totalPages)}
+                    onClick={() => setCurrentPage(Math.ceil(filteredJobs.length / jobsPerPage))}
                   >
-                    {totalPages}
+                    {Math.ceil(filteredJobs.length / jobsPerPage)}
                   </Button>
                 </>
               )}
             </div>
 
-            <Button variant="outline" size="sm" onClick={goToNextPage} disabled={currentPage === totalPages}>
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => setCurrentPage(currentPage + 1)}
+              disabled={currentPage === Math.ceil(filteredJobs.length / jobsPerPage)}
+            >
               Next
               <ChevronRight className="h-4 w-4 ml-1" />
             </Button>

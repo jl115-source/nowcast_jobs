@@ -42,10 +42,14 @@ export function OffMarketJobsPage() {
   const [isRecruiterSubmitted, setIsRecruiterSubmitted] = useState(false)
 
   const industries = [
+    "Academia & Research",
     "Banking & Finance",
+    "Climate Science",
+    "Energy & Renewables",
     "Geospatial & GIS",
     "Geophysics & Geology",
     "Insurance & Reinsurance",
+    "Tech (Data Science & ML)",
     "Weather & Meteorology",
   ]
 
