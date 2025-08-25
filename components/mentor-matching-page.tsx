@@ -31,13 +31,19 @@ export function MentorMatchingPage() {
     setSubmitStatus("idle")
 
     try {
+      console.log("[v0] Mentor form data being sent:", formData)
+
       const response = await fetch("/api/mentor-signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       })
 
+      console.log("[v0] Mentor API response status:", response.status)
+
       if (response.ok) {
+        const result = await response.json()
+        console.log("[v0] Mentor API success result:", result)
         setSubmitStatus("success")
         setFormData({
           name: "",
@@ -47,9 +53,12 @@ export function MentorMatchingPage() {
           experience: "",
         })
       } else {
+        const errorText = await response.text()
+        console.log("[v0] Mentor API error response:", errorText)
         setSubmitStatus("error")
       }
     } catch (error) {
+      console.log("[v0] Mentor API fetch error:", error)
       setSubmitStatus("error")
     } finally {
       setIsSubmitting(false)
