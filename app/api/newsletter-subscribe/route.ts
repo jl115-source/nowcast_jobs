@@ -16,6 +16,9 @@ export async function POST(request: NextRequest) {
     const supabase = await createClient()
     console.log("[v0] Newsletter Supabase client created")
 
+    console.log("[v0] Categories received:", categories)
+    console.log("[v0] Category type:", typeof categories, Array.isArray(categories))
+
     const industryColumns = {
       climate_science: categories.includes("Climate Science"),
       tech_data_science: categories.includes("Tech (Data Science & ML)"),
@@ -37,10 +40,14 @@ export async function POST(request: NextRequest) {
     }
     console.log("[v0] Newsletter insert data:", insertData)
 
+    const { data: testData, error: testError } = await supabase.from("email_subscribers").select("id").limit(1)
+    console.log("[v0] Test connection result:", { testData, testError })
+
     const { data, error } = await supabase.from("email_subscribers").insert([insertData]).select()
 
     if (error) {
       console.error("[v0] Newsletter database error:", error)
+      console.error("[v0] Error details:", JSON.stringify(error, null, 2))
       return NextResponse.json(
         {
           error: "Failed to save subscription",
@@ -59,6 +66,7 @@ export async function POST(request: NextRequest) {
     })
   } catch (error) {
     console.error("[v0] Newsletter subscription error:", error)
+    console.error("[v0] Error stack:", error instanceof Error ? error.stack : "No stack trace")
     return NextResponse.json(
       {
         error: "Failed to subscribe to newsletter",
