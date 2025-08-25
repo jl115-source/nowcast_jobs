@@ -4,11 +4,15 @@ import { createClient } from "@/lib/supabase/server"
 export async function POST(request: NextRequest) {
   try {
     console.log("[v0] Mentor API route called")
-    const { name, email, signupType, industry, experience } = await request.json()
-    console.log("[v0] Received data:", { name, email, signupType, industry, experience })
+    const { name, email, signupType, industry, experience, role_type, bio } = await request.json()
+    console.log("[v0] Received data:", { name, email, signupType, industry, experience, role_type, bio })
+
+    // Use the mapped fields from the form if available
+    const finalRoleType = role_type || signupType
+    const finalBio = bio || experience
 
     // Validate input
-    if (!name || !email || !signupType || !industry) {
+    if (!name || !email || !finalRoleType || !industry) {
       console.log("[v0] Validation failed - missing required fields")
       return NextResponse.json({ error: "All fields are required" }, { status: 400 })
     }
@@ -17,29 +21,30 @@ export async function POST(request: NextRequest) {
     console.log("[v0] Supabase client created")
 
     const industryColumns = {
-      climate_science: industry.includes("Climate Science"),
-      tech_data_science: industry.includes("Tech (Data Science & ML)"),
-      energy_renewables: industry.includes("Energy & Renewables"),
-      weather_meteorology: industry.includes("Weather & Meteorology"),
-      academia_research: industry.includes("Academia & Research"),
-      geospatial_gis: industry.includes("Geospatial & GIS"),
-      geophysics_geology: industry.includes("Geophysics & Geology"),
-      insurance_reinsurance: industry.includes("Insurance & Reinsurance"),
-      banking_finance: industry.includes("Banking & Finance"),
+      climate_science: industry === "climate",
+      tech_data_science: industry === "tech",
+      energy_renewables: industry === "energy",
+      weather_meteorology: industry === "weather",
+      academia_research: industry === "academia",
+      geospatial_gis: industry === "geospatial",
+      geophysics_geology: industry === "geophysics",
+      insurance_reinsurance: industry === "insurance",
+      banking_finance: industry === "banking",
     }
 
-    const { data, error } = await supabase
-      .from("mentor_profiles")
-      .insert([
-        {
-          name,
-          email,
-          role_type: signupType,
-          bio: experience || null,
-          ...industryColumns, // Spread individual industry columns
-        },
-      ])
-      .select()
+    console.log("[v0] Industry columns mapping:", industryColumns)
+
+    const insertData = {
+      name,
+      email,
+      role_type: finalRoleType,
+      bio: finalBio || null,
+      ...industryColumns,
+    }
+
+    console.log("[v0] Data to insert:", insertData)
+
+    const { data, error } = await supabase.from("mentor_profiles").insert([insertData]).select()
 
     if (error) {
       console.error("[v0] Database error:", error)

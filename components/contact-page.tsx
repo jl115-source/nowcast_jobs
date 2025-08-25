@@ -39,6 +39,7 @@ export function ContactPage() {
       })
 
       console.log("[v0] Contact API response status:", response.status)
+      console.log("[v0] Contact API response headers:", Object.fromEntries(response.headers.entries()))
 
       if (response.ok) {
         const result = await response.json()
@@ -52,12 +53,14 @@ export function ContactPage() {
           message: "",
         })
       } else {
-        const errorData = await response.json()
-        console.error("[v0] Contact API error:", errorData)
+        const errorText = await response.text()
+        console.error("[v0] Contact API error response:", errorText)
+        console.error("[v0] Contact API error status:", response.status)
         setSubmitStatus("error")
       }
     } catch (error) {
       console.error("[v0] Contact form network error:", error)
+      console.error("[v0] Error details:", error instanceof Error ? error.message : "Unknown error")
       setSubmitStatus("error")
     } finally {
       setIsSubmitting(false)

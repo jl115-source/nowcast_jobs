@@ -32,6 +32,11 @@ export function MentorMatchingPage() {
 
     try {
       console.log("[v0] Mentor form data being sent:", formData)
+      console.log("[v0] Mapped data for API:", {
+        ...formData,
+        role_type: formData.signupType,
+        bio: formData.experience,
+      })
 
       const response = await fetch("/api/mentor-signup", {
         method: "POST",
@@ -44,6 +49,7 @@ export function MentorMatchingPage() {
       })
 
       console.log("[v0] Mentor API response status:", response.status)
+      console.log("[v0] Mentor API response headers:", Object.fromEntries(response.headers.entries()))
 
       if (response.ok) {
         const result = await response.json()
@@ -59,10 +65,12 @@ export function MentorMatchingPage() {
       } else {
         const errorText = await response.text()
         console.log("[v0] Mentor API error response:", errorText)
+        console.log("[v0] Mentor API error status:", response.status)
         setSubmitStatus("error")
       }
     } catch (error) {
       console.log("[v0] Mentor API fetch error:", error)
+      console.log("[v0] Error details:", error instanceof Error ? error.message : "Unknown error")
       setSubmitStatus("error")
     } finally {
       setIsSubmitting(false)
