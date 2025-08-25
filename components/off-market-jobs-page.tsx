@@ -250,8 +250,7 @@ export function OffMarketJobsPage() {
                       <div>
                         <p className="font-medium">Easy Removal</p>
                         <p className="text-sm text-muted-foreground">
-                          We'll remove you any time you wish - no questions asked
-                        </p>
+                        Circumstances change—we’ll unsubscribe you anytime you choose.                        </p>
                       </div>
                     </div>
                   </div>
