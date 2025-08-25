@@ -36,7 +36,11 @@ export function MentorMatchingPage() {
       const response = await fetch("/api/mentor-signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          ...formData,
+          role_type: formData.signupType, // Map signupType to role_type for database
+          bio: formData.experience, // Map experience to bio for database
+        }),
       })
 
       console.log("[v0] Mentor API response status:", response.status)
@@ -98,11 +102,11 @@ export function MentorMatchingPage() {
               <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
                 <UserPlus className="h-5 w-5 text-primary" />
               </div>
-              <CardTitle className="text-2xl">Join the Waitlist</CardTitle>
+              <CardTitle className="text-2xl">Join the List</CardTitle>
             </div>
             <CardDescription>
-              Sign up to be notified when mentor matching becomes available. Choose whether you'd like to be a mentor or
-              find a mentor.
+              Sign up to be notified when mentor matching a good match is found! Choose whether you'd like to be a
+              mentor or find a mentor.
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -194,13 +198,13 @@ export function MentorMatchingPage() {
                 }
               >
                 <UserPlus className="mr-2 h-4 w-4" />
-                {isSubmitting ? "Joining..." : "Join Waitlist"}
+                {isSubmitting ? "Joining..." : "Join the List"}
               </Button>
 
               {submitStatus === "success" && (
                 <div className="flex items-center gap-2 text-green-600 bg-green-50 p-3 rounded-lg">
                   <CheckCircle className="h-4 w-4" />
-                  <span>Successfully joined the mentor matching waitlist! We'll be in touch soon.</span>
+                  <span>Successfully joined the list! We'll notify you when a good match is found.</span>
                 </div>
               )}
 

@@ -29,6 +29,8 @@ export function ContactPage() {
     setIsSubmitting(true)
     setSubmitStatus("idle")
 
+    console.log("[v0] Contact form submitting:", formData)
+
     try {
       const response = await fetch("/api/contact-submit", {
         method: "POST",
@@ -36,7 +38,11 @@ export function ContactPage() {
         body: JSON.stringify(formData),
       })
 
+      console.log("[v0] Contact API response status:", response.status)
+
       if (response.ok) {
+        const result = await response.json()
+        console.log("[v0] Contact submission successful:", result)
         setSubmitStatus("success")
         setFormData({
           firstName: "",
@@ -46,9 +52,12 @@ export function ContactPage() {
           message: "",
         })
       } else {
+        const errorData = await response.json()
+        console.error("[v0] Contact API error:", errorData)
         setSubmitStatus("error")
       }
     } catch (error) {
+      console.error("[v0] Contact form network error:", error)
       setSubmitStatus("error")
     } finally {
       setIsSubmitting(false)
