@@ -21,15 +21,15 @@ export async function POST(request: NextRequest) {
     console.log("[v0] Supabase client created")
 
     const industryColumns = {
-      climate_science: industry === "climate",
-      tech_data_science: industry === "tech",
-      energy_renewables: industry === "energy",
-      weather_meteorology: industry === "weather",
-      academia_research: industry === "academia",
-      geospatial_gis: industry === "geospatial",
-      geophysics_geology: industry === "geophysics",
-      insurance_reinsurance: industry === "insurance",
-      banking_finance: industry === "banking",
+      climate_science: industry === "Climate Science",
+      tech_data_science: industry === "Tech (Data Science & ML)",
+      energy_renewables: industry === "Energy & Renewables",
+      weather_meteorology: industry === "Weather & Meteorology",
+      academia_research: industry === "Academia & Research",
+      geospatial_gis: industry === "Geospatial & GIS",
+      geophysics_geology: industry === "Geophysics & Geology",
+      insurance_reinsurance: industry === "Insurance & Reinsurance",
+      banking_finance: industry === "Banking & Finance",
     }
 
     console.log("[v0] Industry columns mapping:", industryColumns)
