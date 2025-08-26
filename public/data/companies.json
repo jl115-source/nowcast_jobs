@@ -899,6 +899,846 @@
       "website": "https://patternenergy.com",
       "categories": ["Energy & Renewables"],
       "isHiring": true
-    }
+    }, 
+  {
+    "id": 91,
+    "name": "Lamont-Doherty Earth Observatory (Columbia University)",
+    "location": "New York, NY, USA",
+    "employees": "800+",
+    "description": "World-leading research institute in earth sciences, geology, and climate studies.",
+    "website": "https://lamont.columbia.edu",
+    "categories": ["Geophysics & Geology", "Academia & Research"],
+    "isHiring": true
+  },
+  {
+    "id": 92,
+    "name": "Max Planck Institute for Meteorology",
+    "location": "Hamburg, Germany",
+    "employees": "400+",
+    "description": "Research institute studying climate variability, climate change, and Earth system science.",
+    "website": "https://mpimet.mpg.de",
+    "categories": ["Climate Science", "Academia & Research"],
+    "isHiring": true
+  },
+  {
+    "id": 93,
+    "name": "British Antarctic Survey",
+    "location": "Cambridge, UK",
+    "employees": "500+",
+    "description": "UK research organization focused on polar science, climate, and glaciology.",
+    "website": "https://bas.ac.uk",
+    "categories": ["Climate Science", "Geophysics & Geology"],
+    "isHiring": true
+  },
+  {
+    "id": 94,
+    "name": "Alfred Wegener Institute",
+    "location": "Bremerhaven, Germany",
+    "employees": "1200+",
+    "description": "German institute conducting polar and marine research in climate and earth sciences.",
+    "website": "https://awi.de",
+    "categories": ["Climate Science", "Geophysics & Geology"],
+    "isHiring": true
+  },
+  {
+    "id": 95,
+    "name": "NOAA Geophysical Fluid Dynamics Laboratory (GFDL)",
+    "location": "Princeton, NJ, USA",
+    "employees": "600+",
+    "description": "NOAA lab dedicated to understanding climate and weather through modeling and theory.",
+    "website": "https://gfdl.noaa.gov",
+    "categories": ["Weather & Meteorology", "Climate Science"],
+    "isHiring": true
+  },
+  {
+    "id": 96,
+    "name": "Scripps Institution of Oceanography",
+    "location": "La Jolla, CA, USA",
+    "employees": "1500+",
+    "description": "Global leader in ocean, earth, and climate science research and education.",
+    "website": "https://scripps.ucsd.edu",
+    "categories": ["Climate Science", "Academia & Research"],
+    "isHiring": true
+  },
+  {
+    "id": 97,
+    "name": "European Space Agency (ESA) Climate Office",
+    "location": "Harwell, UK",
+    "employees": "20000+ (ESA overall)",
+    "description": "Coordinates climate research, satellite observations, and Earth system science projects.",
+    "website": "https://climate.esa.int",
+    "categories": ["Climate Science", "Academia & Research"],
+    "isHiring": true
+  },
+  {
+    "id": 98,
+    "name": "Met Office Hadley Centre",
+    "location": "Exeter, UK",
+    "employees": "500+",
+    "description": "UK’s leading center for climate science and services, part of the UK Met Office.",
+    "website": "https://metoffice.gov.uk/research/climate",
+    "categories": ["Weather & Meteorology", "Climate Science"],
+    "isHiring": true
+  },
+  {
+    "id": 99,
+    "name": "Finnish Meteorological Institute",
+    "location": "Helsinki, Finland",
+    "employees": "700+",
+    "description": "National meteorological service conducting research in climate, space, and weather sciences.",
+    "website": "https://fmi.fi",
+    "categories": ["Weather & Meteorology", "Climate Science"],
+    "isHiring": true
+  },
+  {
+    "id": 100,
+    "name": "International Research Institute for Climate and Society (IRI, Columbia University)",
+    "location": "New York, NY, USA",
+    "employees": "200+",
+    "description": "Applied climate research center focusing on climate risk management and prediction.",
+    "website": "https://iri.columbia.edu",
+    "categories": ["Climate Science", "Academia & Research"],
+    "isHiring": true
+  },
+  {
+    "id": 101,
+    "name": "Woods Hole Oceanographic Institution (WHOI)",
+    "location": "Woods Hole, MA, USA",
+    "employees": "1000+",
+    "description": "Independent organization conducting ocean and climate research globally.",
+    "website": "https://whoi.edu",
+    "categories": ["Climate Science", "Geophysics & Geology"],
+    "isHiring": true
+  },
+  {
+    "id": 102,
+    "name": "Centre National de la Recherche Scientifique (CNRS) - Climate Division",
+    "location": "Paris, France",
+    "employees": "33000+ (CNRS overall)",
+    "description": "France’s largest research institution with extensive climate and geophysics programs.",
+    "website": "https://cnrs.fr",
+    "categories": ["Academia & Research", "Climate Science"],
+    "isHiring": true
+  },
+  {
+    "id": 103,
+    "name": "Institute for Atmospheric and Climate Science (ETH Zurich)",
+    "location": "Zurich, Switzerland",
+    "employees": "300+",
+    "description": "ETH Zurich research institute specializing in climate dynamics and atmospheric science.",
+    "website": "https://iac.ethz.ch",
+    "categories": ["Academia & Research", "Climate Science"],
+    "isHiring": true
+  },
+  {
+    "id": 104,
+    "name": "Royal Netherlands Meteorological Institute (KNMI)",
+    "location": "De Bilt, Netherlands",
+    "employees": "450+",
+    "description": "Dutch national weather service conducting climate and geophysical research.",
+    "website": "https://knmi.nl",
+    "categories": ["Weather & Meteorology", "Climate Science"],
+    "isHiring": true
+  },
+  {
+    "id": 105,
+    "name": "Japan Agency for Marine-Earth Science and Technology (JAMSTEC)",
+    "location": "Yokosuka, Japan",
+    "employees": "1200+",
+    "description": "Japanese research agency for ocean, earth, and climate science.",
+    "website": "https://jamstec.go.jp",
+    "categories": ["Climate Science", "Geophysics & Geology"],
+    "isHiring": true
+  },
+  {
+    "id": 106,
+    "name": "Centre for Climate Research Singapore (CCRS)",
+    "location": "Singapore",
+    "employees": "200+",
+    "description": "National climate research center focusing on tropical weather and climate prediction.",
+    "website": "https://ccrs.weather.gov.sg",
+    "categories": ["Climate Science", "Weather & Meteorology"],
+    "isHiring": true
+  },
+  {
+    "id": 107,
+    "name": "Australian Bureau of Meteorology Research Centre",
+    "location": "Melbourne, Australia",
+    "employees": "2000+ (BOM overall)",
+    "description": "National weather and climate service with dedicated research in atmospheric science.",
+    "website": "https://bom.gov.au/research",
+    "categories": ["Weather & Meteorology", "Climate Science"],
+    "isHiring": true
+  },
+  {
+    "id": 108,
+    "name": "Institute of Atmospheric Physics (Chinese Academy of Sciences)",
+    "location": "Beijing, China",
+    "employees": "900+",
+    "description": "Leading Chinese research institute in atmospheric and climate sciences.",
+    "website": "http://www.iap.cas.cn",
+    "categories": ["Climate Science", "Academia & Research"],
+    "isHiring": true
+  },
+  {
+    "id": 109,
+    "name": "Stockholm Resilience Centre (Stockholm University)",
+    "location": "Stockholm, Sweden",
+    "employees": "200+",
+    "description": "Research institute focused on sustainability science, climate resilience, and ecosystems.",
+    "website": "https://stockholmresilience.su.se",
+    "categories": ["Climate Science", "Academia & Research"],
+    "isHiring": true
+  },
+  {
+    "id": 110,
+    "name": "Grantham Institute - Climate Change and the Environment (Imperial College London)",
+    "location": "London, UK",
+    "employees": "150+",
+    "description": "World-leading institute researching climate science, policy, and innovation.",
+    "website": "https://imperial.ac.uk/grantham",
+    "categories": ["Academia & Research", "Climate Science"],
+    "isHiring": true
+  },
+  {
+    "id": 111,
+    "name": "Climate Analytics",
+    "location": "Berlin, Germany",
+    "employees": "100+",
+    "description": "Research organization providing climate science, data analysis, and policy support.",
+    "website": "https://climateanalytics.org",
+    "categories": ["Climate Science", "Academia & Research"],
+    "isHiring": true
+  },
+  {
+    "id": 112,
+    "name": "CICERO Center for International Climate Research",
+    "location": "Oslo, Norway",
+    "employees": "150+",
+    "description": "Independent Norwegian institute conducting interdisciplinary climate research.",
+    "website": "https://cicero.oslo.no",
+    "categories": ["Climate Science", "Academia & Research"],
+    "isHiring": true
+  },
+  {
+    "id": 113,
+    "name": "National Institute of Water and Atmospheric Research (NIWA)",
+    "location": "Auckland, New Zealand",
+    "employees": "600+",
+    "description": "Research institute focused on climate, freshwater, and marine sciences.",
+    "website": "https://niwa.co.nz",
+    "categories": ["Climate Science", "Weather & Meteorology"],
+    "isHiring": true
+  },
+  {
+    "id": 114,
+    "name": "International Institute for Applied Systems Analysis (IIASA)",
+    "location": "Laxenburg, Austria",
+    "employees": "350+",
+    "description": "Independent research institute conducting policy-relevant climate and systems analysis.",
+    "website": "https://iiasa.ac.at",
+    "categories": ["Climate Science", "Academia & Research"],
+    "isHiring": true
+  },
+  {
+    "id": 115,
+    "name": "Basque Centre for Climate Change (BC3)",
+    "location": "Bilbao, Spain",
+    "employees": "100+",
+    "description": "International research center focused on climate change causes and impacts.",
+    "website": "https://bc3research.org",
+    "categories": ["Climate Science", "Academia & Research"],
+    "isHiring": true
+  },
+  {
+    "id": 116,
+    "name": "Helmholtz Centre for Ocean Research Kiel (GEOMAR)",
+    "location": "Kiel, Germany",
+    "employees": "1000+",
+    "description": "Research institute focused on ocean science, marine ecosystems, and climate interactions.",
+    "website": "https://geomar.de",
+    "categories": ["Climate Science", "Geophysics & Geology"],
+    "isHiring": true
+  },
+  {
+    "id": 117,
+    "name": "Tyndall Centre for Climate Change Research",
+    "location": "Norwich, UK",
+    "employees": "150+",
+    "description": "UK network of universities conducting interdisciplinary climate change research.",
+    "website": "https://tyndall.ac.uk",
+    "categories": ["Climate Science", "Academia & Research"],
+    "isHiring": true
+  },
+  {
+    "id": 118,
+    "name": "Center for Climate Systems Research (NASA GISS, Columbia University)",
+    "location": "New York, NY, USA",
+    "employees": "200+",
+    "description": "Research unit of Columbia University in partnership with NASA, focusing on climate modeling.",
+    "website": "https://ccsr.columbia.edu",
+    "categories": ["Climate Science", "Academia & Research"],
+    "isHiring": true
+  },
+  {
+    "id": 119,
+    "name": "Climate Impact Lab",
+    "location": "Chicago, IL, USA",
+    "employees": "50+",
+    "description": "Consortium of researchers quantifying economic and social impacts of climate change.",
+    "website": "https://impactlab.org",
+    "categories": ["Climate Science", "Academia & Research"],
+    "isHiring": true
+  },
+     {
+      "id": 120,
+      "name": "The Carbon Trust",
+      "location": "London, UK",
+      "employees": "200+",
+      "description": "Non-profit organization driving ambitious climate targets through insight, innovation, and partnerships.",
+      "website": "https://carbontrust.com",
+      "categories": ["Climate Science", "Academia & Research"],
+      "isHiring": true
+    },
+    {
+      "id": 121,
+      "name": "Climate-KIC",
+      "location": "Amsterdam, Netherlands",
+      "employees": "150+",
+      "description": "EU initiative fostering climate innovation through research and entrepreneurial programs.",
+      "website": "https://climate-kic.org",
+      "categories": ["Climate Science", "Academia & Research"],
+      "isHiring": true
+    },
+    {
+      "id": 122,
+      "name": "Norsk Regnesentral (Norwegian Computing Center)",
+      "location": "Oslo, Norway",
+      "employees": "300+",
+      "description": "Independent research foundation applying data science to geosciences, climate, and environment.",
+      "website": "https://nr.no",
+      "categories": ["Climate Science", "Geophysics & Geology"],
+      "isHiring": true
+    },
+    {
+      "id": 123,
+      "name": "Mercator Ocean International",
+      "location": "Toulouse, France",
+      "employees": "150+",
+      "description": "Operational oceanographic service providing ocean and climate data globally.",
+      "website": "https://mercator-ocean.eu",
+      "categories": ["Climate Science", "Geophysics & Geology"],
+      "isHiring": true
+    },
+    {
+      "id": 124,
+      "name": "Jet Propulsion Laboratory (Earth Science Division)",
+      "location": "Pasadena, CA, USA",
+      "employees": "3000+ (overall)",
+      "description": "NASA lab advancing Earth system science through satellite missions and geophysical research.",
+      "website": "https://science.jpl.nasa.gov/earth",
+      "categories": ["Climate Science", "Geophysics & Geology"],
+      "isHiring": true
+    },
+    {
+      "id": 125,
+      "name": "International Centre for Theoretical Physics (ICTP) – Earth System Physics",
+      "location": "Trieste, Italy",
+      "employees": "200+",
+      "description": "UNESCO institute advancing climate and Earth system physics research in developing countries.",
+      "website": "https://ictp.it",
+      "categories": ["Climate Science", "Academia & Research"],
+      "isHiring": true
+    },
+    {
+      "id": 126,
+      "name": "Center for International Climate Research (ICRI)",
+      "location": "Montreal, Canada",
+      "employees": "75+",
+      "description": "Research center analyzing climate policy and impacts with interdisciplinary methods.",
+      "website": "https://icri.ca",
+      "categories": ["Climate Science", "Academia & Research"],
+      "isHiring": true
+    },
+    {
+      "id": 127,
+      "name": "Ocean Networks Canada",
+      "location": "Victoria, Canada",
+      "employees": "180+",
+      "description": "Research facility providing ocean data to study climate, oceanography, and geophysics.",
+      "website": "https://oceannetworks.ca",
+      "categories": ["Climate Science", "Geophysics & Geology"],
+      "isHiring": true
+    },
+    {
+      "id": 128,
+      "name": "SMHI (Swedish Meteorological and Hydrological Institute)",
+      "location": "Norrköping, Sweden",
+      "employees": "1600+",
+      "description": "Sweden’s government agency for meteorology and climate services and research.",
+      "website": "https://smhi.se",
+      "categories": ["Weather & Meteorology", "Climate Science"],
+      "isHiring": true
+    },
+    {
+      "id": 129,
+      "name": "Atmosphere and Ocean Research Institute (AORI), University of Tokyo",
+      "location": "Tokyo, Japan",
+      "employees": "400+",
+      "description": "University institute conducting climate and atmosphere-ocean interaction studies.",
+      "website": "http://www.aori.u-tokyo.ac.jp",
+      "categories": ["Climate Science", "Academia & Research"],
+      "isHiring": true
+    },
+    {
+      "id": 130,
+      "name": "Pacific Climate Impacts Consortium (PCIC)",
+      "location": "Victoria, Canada",
+      "employees": "60+",
+      "description": "Applies climate change science to regional resilience and planning in western North America.",
+      "website": "https://pcic.ca",
+      "categories": ["Climate Science", "Academia & Research"],
+      "isHiring": true
+    },
+    {
+      "id": 131,
+      "name": "EU Joint Research Centre (Climate and Environment)",
+      "location": "Brussels, Belgium",
+      "employees": "3000+ (JRC overall)",
+      "description": "European Commission’s science and knowledge service with climate and environmental research.",
+      "website": "https://ec.europa.eu/jrc",
+      "categories": ["Climate Science", "Academia & Research"],
+      "isHiring": true
+    },
+    {
+      "id": 132,
+      "name": "Association of Meteorology and Climatology (AMS)",
+      "location": "Boston, MA, USA",
+      "employees": "600+ (staff)",
+      "description": "Professional society supporting weather, water, and climate science through education and research.",
+      "website": "https://ametsoc.org",
+      "categories": ["Climate Science", "Academia & Research"],
+      "isHiring": true
+    },
+    {
+      "id": 133,
+      "name": "Earthwatch Institute",
+      "location": "Boston, MA, USA",
+      "employees": "100+",
+      "description": "Global environmental NGO conducting citizen science expeditions in climate and Earth systems.",
+      "website": "https://earthwatch.org",
+      "categories": ["Climate Science", "Academia & Research"],
+      "isHiring": true
+    },
+    {
+      "id": 134,
+      "name": "National Institute of Oceanography (NIO)",
+      "location": "Goa, India",
+      "employees": "500+",
+      "description": "India’s premier oceanographic institute conducting climate and marine geophysics research.",
+      "website": "https://nio.org",
+      "categories": ["Geophysics & Geology", "Climate Science"],
+      "isHiring": true
+    },
+    {
+      "id": 135,
+      "name": "Chinese Academy of Sciences – Institute of Marine Systems Science and Ecology",
+      "location": "Qingdao, China",
+      "employees": "300+",
+      "description": "Research on marine climate, coastal geophysics, and ecosystem dynamics.",
+      "website": "http://www.imsse.ac.cn",
+      "categories": ["Climate Science", "Geophysics & Geology"],
+      "isHiring": true
+    },
+    {
+      "id": 136,
+      "name": "Center for Weather and Climate Systems (North Carolina State University)",
+      "location": "Raleigh, NC, USA",
+      "employees": "100+",
+      "description": "University research group focusing on atmospheric modeling and climate predictions.",
+      "website": "https://cwcs.ncsu.edu",
+      "categories": ["Weather & Meteorology", "Climate Science"],
+      "isHiring": true
+    },
+    {
+      "id": 137,
+      "name": "Institute of Arctic and Alpine Research (INSTAAR), University of Colorado Boulder",
+      "location": "Boulder, CO, USA",
+      "employees": "200+",
+      "description": "Research centre focusing on environmental and climate processes in polar and alpine regions.",
+      "website": "https://instaar.colorado.edu",
+      "categories": ["Climate Science", "Geophysics & Geology"],
+      "isHiring": true
+    },
+    {
+      "id": 138,
+      "name": "Met Office Hadley Centre for Climate Science and Services",
+      "location": "Exeter, UK",
+      "employees": "300+",
+      "description": "UK national climatology centre conducting climate modeling and impact assessments.",
+      "website": "https://metoffice.gov.uk/research",
+      "categories": ["Climate Science", "Weather & Meteorology"],
+      "isHiring": true
+    },
+    {
+      "id": 139,
+      "name": "Rocky Mountain Research Station (US Forest Service)",
+      "location": "Fort Collins, CO, USA",
+      "employees": "150+",
+      "description": "Conducts ecological and climate-related geophysical research in mountain environments.",
+      "website": "https://www.fs.usda.gov/rmrs",
+      "categories": ["Climate Science", "Geophysics & Geology"],
+      "isHiring": true
+    },
+    {
+      "id": 140,
+      "name": "Global Carbon Project",
+      "location": "Sydney, Australia",
+      "employees": "60+",
+      "description": "International research network tracking carbon cycle, greenhouse emissions, and climate feedbacks.",
+      "website": "https://globalcarbonproject.org",
+      "categories": ["Climate Science", "Academia & Research"],
+      "isHiring": true
+    },
+    {
+      "id": 141,
+      "name": "Climate Analytics (Regional Office)",
+      "location": "New Delhi, India",
+      "employees": "50+",
+      "description": "Regional branch of climate science NGO focusing on sustainability and climate vulnerability.",
+      "website": "https://climateanalytics.org",
+      "categories": ["Climate Science", "Academia & Research"],
+      "isHiring": true
+    },
+    {
+      "id": 142,
+      "name": "EcoTrend",
+      "location": "London, UK",
+      "employees": "100+",
+      "description": "Consultancy offering geophysics-informed climate risk analysis for the financial and insurance sectors.",
+      "website": "https://ecotrend.co.uk",
+      "categories": ["Geophysics & Geology", "Climate Science"],
+      "isHiring": true
+    },
+    {
+      "id": 143,
+      "name": "CarbonBrief",
+      "location": "London, UK",
+      "employees": "30+",
+      "description": "Journalism and research organization providing data-driven analysis on climate science and policy.",
+      "website": "https://carbonbrief.org",
+      "categories": ["Climate Science", "Academia & Research"],
+      "isHiring": true
+    },
+    {
+      "id": 144,
+      "name": "Future Earth",
+      "location": "Paris, France",
+      "employees": "100+",
+      "description": "Global network for sustainability science aimed at supporting research on human–Earth systems.",
+      "website": "https://futureearth.org",
+      "categories": ["Climate Science", "Academia & Research"],
+      "isHiring": true
+    },
+    {
+      "id": 145,
+      "name": "Climate Emergency Institute",
+      "location": "Berlin, Germany",
+      "employees": "40+",
+      "description": "Think tank conducting climate resilience and geophysical risk research for urban policy.",
+      "website": "https://climateemergencyinstitute.org",
+      "categories": ["Climate Science", "Academia & Research"],
+      "isHiring": true
+    },
+    {
+      "id": 146,
+      "name": "Global Earthquake Model Foundation (GEM)",
+      "location": "Pavia, Italy",
+      "employees": "60+",
+      "description": "International nonprofit providing geophysical risk models for seismic and climate-related hazards.",
+      "website": "https://gemfoundation.org",
+      "categories": ["Geophysics & Geology", "Climate Science"],
+      "isHiring": true
+    },
+    {
+      "id": 147,
+      "name": "United Nations Environment Programme (Climate Research Lab)",
+      "location": "Nairobi, Kenya",
+      "employees": "500+ (UNEP overall)",
+      "description": "UN’s science branch addressing climate impacts, resilience, and geophysical risks.",
+      "website": "https://unenvironment.org",
+      "categories": ["Climate Science", "Academia & Research"],
+      "isHiring": true
+    },
+    {
+      "id": 148,
+      "name": "African Centre for Meteorological Applications for Development (ACMAD)",
+      "location": "Niamey, Niger",
+      "employees": "100+",
+      "description": "Regional climate research and weather forecasting center supporting development in Africa.",
+      "website": "https://acmad.int",
+      "categories": ["Weather & Meteorology", "Climate Science"],
+      "isHiring": true
+    },
+    {
+      "id": 149,
+      "name": "StelIo (Seismology and Tectonics Institute)",
+      "location": "Istanbul, Turkey",
+      "employees": "80+",
+      "description": "Research institute focused on tectonics, geophysical hazards, and climate-geology interactions.",
+      "website": "https://stelio.org.tr",
+      "categories": ["Geophysics & Geology", "Climate Science"],
+      "isHiring": true
+    },
+    {
+    "id": 150,
+    "name": "Engelhart Commodities Trading Partners (ECTP)",
+    "location": "London, UK",
+    "employees": "500‑600 (est.)",
+    "description": "Global commodities trader active in power, gas, oil, agricultural markets and freight; recently acquired Trailstone to boost renewables and weather‑driven analytics in power trading.",
+    "website": "https://ectp.com",
+    "categories": ["Energy & Renewables", "Commodities", "Tech (Data Science & ML)", "Weather‑Trading"],
+    "isHiring": true
+  },
+  {
+    "id": 151,
+    "name": "Citadel",
+    "location": "Chicago, USA",
+    "employees": "2500+",
+    "description": "Leading global multi‑strategy hedge fund with quant trading capabilities including weather‑sensitive energy and commodity strategies.",
+    "website": "https://citadel.com",
+    "categories": ["Quant & Risk", "Commodities", "Weather‑Trading", "Banking & Finance"],
+    "isHiring": true
+  },
+  {
+    "id": 152,
+    "name": "Millennium Management",
+    "location": "New York, USA",
+    "employees": "3500+",
+    "description": "Global multi‑strategy investment manager with data‑driven trading desks including those focused on energy, commodities, and weather risk strategies.",
+    "website": "https://mlpfd.com",
+    "categories": ["Quant & Risk", "Commodities", "Weather‑Trading", "Banking & Finance"],
+    "isHiring": true
+  },
+  {
+    "id": 153,
+    "name": "Jane Street",
+    "location": "New York, USA",
+    "employees": "1800+",
+    "description": "Proprietary trading firm known for systematic and quantitative strategies, including energy and commodity markets—weather data often integrated into models.",
+    "website": "https://janestreet.com",
+    "categories": ["Quant & Risk", "Commodities", "Tech (Data Science & ML)", "Weather‑Trading"],
+    "isHiring": true
+  },
+  {
+    "id": 154,
+    "name": "Squarepoint Capital",
+    "location": "London, UK",
+    "employees": "2000+",
+    "description": "Quantitative investment manager using advanced modeling and data (including weather/weather‑impact signals) in commodities and energy markets.",
+    "website": "https://squarepointcap.com",
+    "categories": ["Quant & Risk", "Commodities", "Tech (Data Science & ML)", "Weather‑Trading"],
+    "isHiring": true
+  },
+  {
+    "id": 155,
+    "name": "DTN",
+    "location": "Bloomington, USA",
+    "employees": "700+",
+    "description": "Weather and market intelligence provider delivering real‑time weather and commodities data and analytics to energy, agriculture, and trading clients.",
+    "website": "https://dtn.com",
+    "categories": ["Weather & Meteorology", "Energy & Renewables", "Commodities", "Tech (Data Science & ML)"],
+    "isHiring": true
+  },
+  {
+    "id": 156,
+    "name": "Weather Trends International",
+    "location": "Bethlehem, USA",
+    "employees": "50‑100",
+    "description": "Provider of year‑ahead weather forecasts for businesses including commodity and energy market analysts managing weather risk.",
+    "website": "http://weathertrends360.com",
+    "categories": ["Weather & Meteorology", "Commodities"],
+    "isHiring": false
+  },
+  {
+    "id": 157,
+    "name": "Freese‑Notis Weather",
+    "location": "Des Moines, USA",
+    "employees": "50‑200",
+    "description": "Weather forecasting firm offering meteorological analytics and commodities forecasts spanning energy and natural gas markets.",
+    "website": "http://weather.net",
+    "categories": ["Weather & Meteorology", "Commodities", "Energy & Renewables"],
+    "isHiring": false
+  },
+  {
+    "id": 158,
+    "name": "Weather‑Risk Management Participants (e.g., Nephila, Susquehanna Energy)",
+    "location": "Global",
+    "employees": "Varies",
+    "description": "Capital providers and trading desks specializing in weather‑contingent commodity and energy trades, including firms like Nephila Capital, Susquehanna Energy, RJO, Tudor Capital, etc.",
+    "website": "",
+    "categories": ["Quant & Risk", "Commodities", "Weather‑Trading", "Insurance & Reinsurance"],
+    "isHiring": false
+  },
+    {
+    "id": 160,
+    "name": "InCommodities",
+    "location": "Aarhus, Denmark",
+    "employees": "100+ (est.)",
+    "description": "Algorithm-driven renewable energy trading firm leading Europe’s ‘Silicon Valley of energy trading’—leveraging data‑driven models for wind and solar trading.",
+    "website": "https://incommodities.com",
+    "categories": ["Energy & Renewables", "Commodities", "Tech (Data Science & ML)", "Weather‑Trading"],
+    "isHiring": true
+  },
+  {
+    "id": 161,
+    "name": "ElectronX",
+    "location": "Chicago, USA",
+    "employees": "50+",
+    "description": "Startup building an hourly electricity price futures exchange to manage volatility from extreme weather and renewable intermittency.",
+    "website": "https://electronx.com",
+    "categories": ["Energy & Renewables", "Commodities", "Weather‑Trading", "Market Infrastructure"],
+    "isHiring": true
+  },
+  {
+    "id": 162,
+    "name": "TP ICAP – Weather Derivatives Desk",
+    "location": "London, UK",
+    "employees": "Varies",
+    "description": "Broker providing tailored weather‑linked futures, options, and swaps to hedge weather-related risks across energy, agriculture, and insurance sectors.",
+    "website": "https://tpicap.com",
+    "categories": ["Energy & Renewables", "Commodities", "Insurance & Reinsurance", "Weather‑Trading"],
+    "isHiring": true
+  },
+  {
+    "id": 163,
+    "name": "CFAN (Climate Forecast Applications Network)",
+    "location": "USA",
+    "employees": "20–50 (est.)",
+    "description": "Provides probabilistic weather and climate forecasts using ML and ensemble methods to help energy traders manage weather risk.",
+    "website": "https://cfanenergy.com",
+    "categories": ["Energy & Renewables", "Weather & Meteorology", "Tech (Data Science & ML)", "Weather‑Trading"],
+    "isHiring": true
+  },
+  {
+    "id": 164,
+    "name": "Atmospheric G2 (AG2)",
+    "location": "USA",
+    "employees": "50–100 (est.)",
+    "description": "Offers advanced weather decision-support platform (including WSI Trader from IBM) tailored for electricity and natural gas traders.",
+    "website": "https://atmosphericg2.com",
+    "categories": ["Energy & Renewables", "Weather & Meteorology", "Tech (Data Science & ML)", "Weather‑Trading"],
+    "isHiring": true
+  },
+  {
+    "id": 165,
+    "name": "Uniper Trading",
+    "location": "Global",
+    "employees": "1000+ (est.)",
+    "description": "Global energy trading arm dealing in power, natural gas, LNG, carbon credits, and environmental certificates, pushing greener structured products.",
+    "website": "https://uniper.energy",
+    "categories": ["Energy & Renewables", "Commodities", "Carbon Markets"],
+    "isHiring": true
+  },
+  {
+    "id": 166,
+    "name": "Dexter Energy",
+    "location": "Europe",
+    "employees": "50–100 (est.)",
+    "description": "AI‑powered platform offering wind and solar forecasting plus trade optimization to mitigate balancing risk and capture short‑term trading profits.",
+    "website": "https://dexterenergy.ai",
+    "categories": ["Energy & Renewables", "Tech (Data Science & ML)", "Weather‑Trading", "Quant & Risk"],
+    "isHiring": true
+  },
+  {
+    "id": 167,
+    "name": "Quantrisk",
+    "location": "Global",
+    "employees": "50–100 (est.)",
+    "description": "AI forecast solutions for electricity load, price, solar & wind generation—optimizing electricity trading and asset dispatch (BESS, hydro, thermal).",
+    "website": "https://quantrisk.com",
+    "categories": ["Energy & Renewables", "Tech (Data Science & ML)", "Weather‑Trading", "Quant & Risk"],
+    "isHiring": true
+  },
+  {
+    "id": 168,
+    "name": "Interactive Energy AG",
+    "location": "Lucerne, Switzerland",
+    "employees": "100–200 (est.)",
+    "description": "Physical commodities trader across energy products, soft commodities, carbon, power; offering mobile trading app with real‑time data and logistics.",
+    "website": "https://inte-energy.com",
+    "categories": ["Energy & Renewables", "Commodities", "Tech (Data Science & ML)", "Logistics"],
+    "isHiring": false
+  },
+    {
+    "id": 170,
+    "name": "Hartree Partners",
+    "location": "London, UK / Houston, USA",
+    "employees": "200+ (est.)",
+    "description": "Commodity trading firm expanding via acquisitions—recently in soft commodities (cocoa via Touton)—data-driven trading across oil, gas, power.",
+    "website": "https://hartreepartners.com",
+    "categories": ["Commodities", "Energy & Renewables", "Weather‑Trading"],
+    "isHiring": true
+  },
+  {
+    "id": 171,
+    "name": "Trafigura",
+    "location": "Singapore / Global",
+    "employees": "8,000+",
+    "description": "One of the world’s largest commodity trading houses; expanding into energy infrastructure and integrating weather and climate risk into trading models.",
+    "website": "https://trafigura.com",
+    "categories": ["Commodities", "Energy & Renewables", "Weather‑Trading"],
+    "isHiring": true
+  },
+  {
+    "id": 172,
+    "name": "Vitol",
+    "location": "Rotterdam, Netherlands / Global",
+    "employees": "6,000+",
+    "description": "Leading global energy and commodities trader expanding its physical asset base (fuel stations, refineries) while incorporating weather-risk modeling in trading decisions.",
+    "website": "https://vitol.com",
+    "categories": ["Commodities", "Energy & Renewables", "Weather‑Trading"],
+    "isHiring": true
+  },
+  {
+    "id": 173,
+    "name": "Gunvor Group",
+    "location": "Geneva, Switzerland / Global",
+    "employees": "2,600+",
+    "description": "Major commodity trading firm active in energy, metals, and growing involvement in weather‑influenced renewable energy markets.",
+    "website": "https://gunvorgroup.com",
+    "categories": ["Commodities", "Energy & Renewables", "Weather‑Trading"],
+    "isHiring": true
+  },
+  {
+    "id": 174,
+    "name": "Mercuria",
+    "location": "Geneva, Switzerland / Global",
+    "employees": "3,500+",
+    "description": "Top-tier commodity trader with increasing investment in power generation, energy infrastructure, and analytics including weather-driven models.",
+    "website": "https://mercuria.com",
+    "categories": ["Commodities", "Energy & Renewables", "Weather‑Trading"],
+    "isHiring": true
+  },
+  {
+    "id": 175,
+    "name": "CME Group – Weather Products",
+    "location": "Chicago, USA / Global",
+    "employees": "3,900+",
+    "description": "Operator of listed weather derivatives markets (futures and options) enabling hedging of weather-related financial exposure across industries.",
+    "website": "https://cmegroup.com/markets/weather.html",
+    "categories": ["Market Infrastructure", "Weather‑Trading", "Commodities"],
+    "isHiring": true
+  },
+  {
+    "id": 176,
+    "name": "Chicago Mercantile Exchange (Weather Derivatives)",
+    "location": "Chicago, USA",
+    "employees": "Crowded within CME Group",
+    "description": "Pioneer exchange for listed weather derivatives; trading volume and open interest have surged recently amid growing climate volatility.",
+    "website": "https://cmegroup.com",
+    "categories": ["Market Infrastructure", "Weather‑Trading"],
+    "isHiring": true
+  }
   ]
 }
