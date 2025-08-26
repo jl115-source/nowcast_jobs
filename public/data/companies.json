@@ -1729,6 +1729,586 @@
     "website": "https://cmegroup.com",
     "categories": ["Market Infrastructure", "Weather‑Trading"],
     "isHiring": true
+  },
+    {
+    "id": 190,
+    "name": "RMS (Risk Management Solutions)",
+    "location": "USA / Global",
+    "employees": "500+ (est.)",
+    "description": "Pioneer in catastrophe risk modeling—provides high-resolution simulations for perils like hurricanes, earthquakes, floods across the globe via its RMS(one) and Risk Intelligence platforms.",
+    "website": "https://rms.com",
+    "categories": ["Insurance & Reinsurance", "Climate Science", "Tech (Data Science & ML)"],
+    "isHiring": true
+  },
+  {
+    "id": 191,
+    "name": "Verisk Analytics (AIR Worldwide, AER)",
+    "location": "USA / Global",
+    "employees": "7,800+",
+    "description": "Major data analytics and risk assessment firm serving insurance and reinsurance, including catastrophe modeling (via AIR Worldwide), weather risk, environmental research (via AER).",
+    "website": "https://verisk.com",
+    "categories": ["Insurance & Reinsurance", "Climate Science", "Tech (Data Science & ML)"],
+    "isHiring": true
+  },
+  {
+    "id": 192,
+    "name": "Fathom",
+    "location": "UK / Global",
+    "employees": "50‑100 (est.)",
+    "description": "Provides cutting-edge global flood catastrophe risk models (Global Flood Cat) for insurers/reinsurers, offering customizable, multi-peril flood analytics.",
+    "website": "https://fathom.global",
+    "categories": ["Insurance & Reinsurance", "Climate Science", "Tech (Data Science & ML)"],
+    "isHiring": true
+  },
+  {
+    "id": 193,
+    "name": "Reask",
+    "location": "UK / Global",
+    "employees": "50‑100 (est.)",
+    "description": "AI-driven extreme weather risk modeling firm delivering dynamic, climate‑connected catastrophe insights—focusing on tropical cyclones, tail-risk and parametric solutions.",
+    "website": "https://reask.earth",
+    "categories": ["Insurance & Reinsurance", "Climate Science", "Tech (Data Science & ML)", "Weather‑Trading"],
+    "isHiring": true
+  },
+     {
+    "id": 190,
+    "name": "Karen Clark & Company (KCC)",
+    "location": "USA / Global",
+    "employees": "50–100 (est.)",
+    "description": "Renowned for precision in catastrophe modeling; named Catastrophe Modeling Firm of the Year for innovative science and real‑time loss estimations (e.g., winter storm analytics).",
+    "website": "https://karenclarkandco.com",
+    "categories": ["Insurance & Reinsurance", "Climate Science", "Tech (Data Science & ML)"],
+    "isHiring": true
+  },
+  {
+    "id": 191,
+    "name": "Moody’s Catastrophe Modeling (incl. NRMC)",
+    "location": "USA / Global",
+    "employees": "Varies",
+    "description": "Provides cloud‑based catastrophe modeling tools and platform integrations (including Nasdaq’s NRMC) for high‑precision, fast catastrophe risk management.",
+    "website": "https://moodys.com",
+    "categories": ["Insurance & Reinsurance", "Climate Science", "Tech (Data Science & ML)"],
+    "isHiring": true
+  },
+  {
+    "id": 192,
+    "name": "WTW Natural Catastrophe Risk Group",
+    "location": "Global",
+    "employees": "Varies",
+    "description": "Offers consultancy, hazard & catastrophe modeling, vulnerability assessments, and catastrophe‑engineering insights for insurance clients.",
+    "website": "https://wtwco.com",
+    "categories": ["Insurance & Reinsurance", "Climate Science", "Consulting"],
+    "isHiring": true
+  },
+  {
+    "id": 193,
+    "name": "KatRisk",
+    "location": "USA / Global",
+    "employees": "50‑100 (est.)",
+    "description": "Delivers dynamic catastrophe risk modeling software empowering insurers, governments, and financial institutions to quantify and react to extreme weather events globally.",
+    "website": "https://katrisk.com",
+    "categories": ["Insurance & Reinsurance", "Climate Science", "Tech (Data Science & ML)"],
+    "isHiring": true
+  },
+  {
+    "id": 194,
+    "name": "Previsico",
+    "location": "UK",
+    "employees": "50‑100 (est.)",
+    "description": "Insurtech offering AI‑powered hydrodynamic flood modeling for insurers, enabling precise, bespoke risk assessments and improved underwriting in flood-prone areas.",
+    "website": "https://previsico.com",
+    "categories": ["Insurance & Reinsurance", "Climate Science", "Tech (Data Science & ML)"],
+    "isHiring": true
+  },
+  {
+    "id": 195,
+    "name": "Floodbase",
+    "location": "USA",
+    "employees": "20‑50 (est.)",
+    "description": "Uses AI and satellite imaging to build high‑resolution flood risk maps; supports parametric flood insurance and flood resilience planning globally.",
+    "website": "https://floodbase.com",
+    "categories": ["Insurance & Reinsurance", "Climate Science", "Tech (Data Science & ML)", "Parametric Insurance"],
+    "isHiring": true
+  },
+  {
+    "id": 196,
+    "name": "Stand Insurance",
+    "location": "USA",
+    "employees": "20‑50 (est.)",
+    "description": "Startup offering simulation‑based wildfire insurance in high‑risk regions by modeling physical risk and advising resilience improvements for underwriters.",
+    "website": "https://standinsurance.com",
+    "categories": ["Insurance & Reinsurance", "Climate Science", "Tech (Data Science & ML)"],
+    "isHiring": true
+  },
+  {
+    "id": 197,
+    "name": "Kettle",
+    "location": "USA",
+    "employees": "50‑100 (est.)",
+    "description": "Utilizes AI, satellite imagery, weather data, and machine learning to provide more accurate wildfire and wind risk assessment—enabling coverage for previously uninsurable properties.",
+    "website": "https://kettle.ai",
+    "categories": ["Insurance & Reinsurance", "Climate Science", "Tech (Data Science & ML)"],
+    "isHiring": true
+  },
+  {
+    "id": 198,
+    "name": "Near Space Labs",
+    "location": "USA",
+    "employees": "50‑100 (est.)",
+    "description": "Deploys AI‑equipped stratospheric balloons to capture high‑resolution disaster imagery, improving speed and accuracy in post‑disaster insurance claims.",
+    "website": "https://nearspacelabs.com",
+    "categories": ["Insurance & Reinsurance", "Tech (Data Science & ML)", "Disaster Recovery"],
+    "isHiring": true
+  },
+  {
+    "id": 199,
+    "name": "African Risk Capacity (ARC)",
+    "location": "Ivory Coast / Africa",
+    "employees": "100‑200 (est.)",
+    "description": "Mutual parametric insurer for African Union member states, providing climate‑linked risk pooling and parametric insurance solutions for drought, health, and disasters.",
+    "website": "https://arc.int",
+    "categories": ["Insurance & Reinsurance", "Parametric Insurance", "Climate Science"],
+    "isHiring": true
+  },
+    {
+    "id": 200,
+    "name": "ClimateCheck",
+    "location": "Global",
+    "employees": "Varies",
+    "description": "Delivers data, reporting, and analytics to quantify and manage climate risk for properties and real estate worldwide.",
+    "website": "https://climatecheck.com",
+    "categories": ["Climate Science", "Insurance & Reinsurance"],
+    "isHiring": true
+  },
+  {
+    "id": 201,
+    "name": "Jupiter Intelligence",
+    "location": "USA",
+    "employees": "Varies",
+    "description": "Provides climate resilience analytics and physical risk scores, enabling financial institutions and insurers to understand exposure to global climate events.",
+    "website": "https://jupiterintel.com",
+    "categories": ["Climate Science", "Insurance & Reinsurance"],
+    "isHiring": true
+  },
+  {
+    "id": 202,
+    "name": "Climate X",
+    "location": "UK / Global",
+    "employees": "Varies",
+    "description": "Offers enterprise-wide climate risk analytics (Spectra & Adapt) for financial services, real estate, and insurers to quantify physical risk and plan adaptation.",
+    "website": "https://climate-x.com",
+    "categories": ["Climate Science", "Insurance & Reinsurance"],
+    "isHiring": true
+  },
+  {
+    "id": 203,
+    "name": "XDI (Cross-Dependency Initiative)",
+    "location": "Global",
+    "employees": "Varies",
+    "description": "Quantifies the cost of extreme weather and climate-change impacts on physical assets to empower adaptive decision-making.",
+    "website": "https://xdi.systems",
+    "categories": ["Climate Science"],
+    "isHiring": true
+  },
+  {
+    "id": 204,
+    "name": "Felt AI",
+    "location": "USA",
+    "employees": "Varies",
+    "description": "AI-powered geospatial mapping platform for custom environmental risk maps covering wildfire, flood, and other climate hazards.",
+    "website": "https://felt.ai",
+    "categories": ["Climate Science", "Tech (Data Science & ML)"],
+    "isHiring": true
+  },
+  {
+    "id": 205,
+    "name": "Pula (Climate InsurTech)",
+    "location": "Switzerland / Kenya",
+    "employees": "Varies",
+    "description": "Agricultural insurance provider offering climate-smart insurance to smallholder farmers in Africa and beyond.",
+    "website": "https://pula.global",
+    "categories": ["Insurance & Reinsurance", "Climate Science"],
+    "isHiring": true
+  },
+  {
+    "id": 206,
+    "name": "Ocean Ledger",
+    "location": "UK",
+    "employees": "Varies",
+    "description": "Delivers high-resolution coastal climate risk analytics for adaptation planning and resilient infrastructure development.",
+    "website": "https://oceanledger.com",
+    "categories": ["Climate Science"],
+    "isHiring": true
+  },
+  {
+    "id": 207,
+    "name": "ICF Climate Risk Analytics",
+    "location": "Global",
+    "employees": "Varies",
+    "description": "Provides customized climate risk analytics and resilience planning solutions across sectors like energy, infrastructure, and government.",
+    "website": "https://icf.com",
+    "categories": ["Climate Science", "Insurance & Reinsurance", "Consulting"],
+    "isHiring": true
+  },
+    {
+    "id": 208,
+    "name": "CelsiusPro",
+    "location": "Switzerland / Global",
+    "employees": "Varies",
+    "description": "InsurTech offering parametric insurance for climate-related risks, leveraging data-driven triggers to simplify and speed up claims.",
+    "website": "https://celsiuspro.com",
+    "categories": ["Insurance & Reinsurance", "Climate Science"],
+    "isHiring": true
+  },
+  {
+    "id": 209,
+    "name": "Parameter Climate",
+    "location": "USA / Global",
+    "employees": "Varies",
+    "description": "Strategic risk advisor to the climate risk transfer market—offers the ClimateDelta analytics platform for underwriting and distributing climate risk.",
+    "website": "https://parameterclimate.com",
+    "categories": ["Insurance & Reinsurance", "Climate Science"],
+    "isHiring": true
+  },
+  {
+    "id": 210,
+    "name": "Arbol",
+    "location": "USA / Global",
+    "employees": "Varies",
+    "description": "Provides parametric insurance products using AI and blockchain to offer transparent and scalable coverage for climate risks.",
+    "website": "https://arbol.io",
+    "categories": ["Insurance & Reinsurance", "Climate Science"],
+    "isHiring": true
+  },
+  {
+    "id": 211,
+    "name": "ICEYE",
+    "location": "Finland / Global",
+    "employees": "Varies",
+    "description": "Satellite data company providing Earth observation for environmental monitoring—supports disaster response and insurance risk modeling.",
+    "website": "https://iceye.com",
+    "categories": ["Climate Science", "Tech (Data Science & ML)"],
+    "isHiring": true
+  },
+  {
+    "id": 212,
+    "name": "Aistech Space",
+    "location": "Spain / Global",
+    "employees": "Varies",
+    "description": "Deploys nanosatellites for thermal, infrared and visible imaging—used for wildfire detection, environmental monitoring, and climate threat forecasting.",
+    "website": "https://aistechaspace.com",
+    "categories": ["Climate Science", "Tech (Data Science & ML)"],
+    "isHiring": true
+  },
+  {
+    "id": 213,
+    "name": "Delos",
+    "location": "USA",
+    "employees": "Varies",
+    "description": "Uses machine learning and satellite data to assess wildfire risk at the property level—focusing on insurability in high-risk areas.",
+    "website": "https://delos.com",
+    "categories": ["Insurance & Reinsurance", "Climate Science", "Tech (Data Science & ML)"],
+    "isHiring": true
+  },
+  {
+    "id": 214,
+    "name": "Entelligent",
+    "location": "USA",
+    "employees": "Varies",
+    "description": "Climate risk analytics platform that measures and helps manage financial exposure to climate-related risks—used by investment and insurance firms.",
+    "website": "https://entelligent.com",
+    "categories": ["Insurance & Reinsurance", "Climate Science", "Tech (Data Science & ML)"],
+    "isHiring": true
+  },
+    {
+    "id": 215,
+    "name": "Schlumberger (SLB)",
+    "location": "Global",
+    "employees": "99,000+",
+    "description": "World’s largest oilfield services company offering seismic, logging, geophysical modeling, and reservoir characterization technologies.",
+    "website": "https://slb.com",
+    "categories": ["Geophysics & Geology", "Energy & Renewables"],
+    "isHiring": true
+  },
+  {
+    "id": 216,
+    "name": "Viridien (formerly CGG)",
+    "location": "France / Global",
+    "employees": "3,000+",
+    "description": "Specialist in geophysical data acquisition, subsurface imaging, and Earth data analytics for energy, minerals, and climate applications.",
+    "website": "https://viridien.com",
+    "categories": ["Geophysics & Geology", "Energy & Renewables"],
+    "isHiring": true
+  },
+  {
+    "id": 217,
+    "name": "PGS ASA",
+    "location": "Norway / Global",
+    "employees": "1,200+",
+    "description": "Marine geophysics firm specializing in offshore seismic acquisition and imaging with one of the largest streamer fleets globally.",
+    "website": "https://pgs.com",
+    "categories": ["Geophysics & Geology", "Energy & Renewables"],
+    "isHiring": true
+  },
+  {
+    "id": 218,
+    "name": "TGS ASA",
+    "location": "Norway / Global",
+    "employees": "1,000+",
+    "description": "Multi-client geophysical data and analytics company supporting oil, gas, CCS, and wind sectors with global subsurface data coverage.",
+    "website": "https://tgs.com",
+    "categories": ["Geophysics & Geology", "Energy & Renewables"],
+    "isHiring": true
+  },
+  {
+    "id": 219,
+    "name": "ION Geophysical",
+    "location": "USA",
+    "employees": "500–1,000",
+    "description": "Developer of seismic imaging software, data acquisition systems, and geophysical technology for exploration industries.",
+    "website": "https://iongeo.com",
+    "categories": ["Geophysics & Geology", "Tech (Data Science & ML)"],
+    "isHiring": false
+  },
+  {
+    "id": 220,
+    "name": "Fugro",
+    "location": "Netherlands / Global",
+    "employees": "9,000+",
+    "description": "Global geo-data specialist conducting geophysical, geotechnical, and environmental surveys for energy, marine, and infrastructure markets.",
+    "website": "https://fugro.com",
+    "categories": ["Geophysics & Geology", "Energy & Renewables"],
+    "isHiring": true
+  },
+  {
+    "id": 221,
+    "name": "EMGS (Electromagnetic Geoservices ASA)",
+    "location": "Norway",
+    "employees": "200+",
+    "description": "Pioneer of marine CSEM (controlled source electromagnetic) surveys to detect subsurface resistivity for offshore energy exploration.",
+    "website": "https://emgs.com",
+    "categories": ["Geophysics & Geology", "Energy & Renewables"],
+    "isHiring": false
+  },
+  {
+    "id": 222,
+    "name": "Geospace Technologies",
+    "location": "USA",
+    "employees": "500+",
+    "description": "Designer and manufacturer of geophysical acquisition tools including seismic sensors, nodes, and data telemetry systems.",
+    "website": "https://geospace.com",
+    "categories": ["Geophysics & Geology", "Tech (Data Science & ML)"],
+    "isHiring": true
+  },
+  {
+    "id": 223,
+    "name": "Sercel",
+    "location": "France",
+    "employees": "Varies (subsidiary of Viridien)",
+    "description": "Leading supplier of geophysical survey equipment including land and marine seismic acquisition systems.",
+    "website": "https://sercel.com",
+    "categories": ["Geophysics & Geology"],
+    "isHiring": true
+  },
+  {
+    "id": 224,
+    "name": "Dawson Geophysical",
+    "location": "USA",
+    "employees": "200–500",
+    "description": "North American seismic acquisition company focused on land surveys for oil & gas and subsurface modeling.",
+    "website": "https://dawson3d.com",
+    "categories": ["Geophysics & Geology", "Energy & Renewables"],
+    "isHiring": false
+  },
+  {
+    "id": 225,
+    "name": "Geotech Ltd.",
+    "location": "Canada",
+    "employees": "200+",
+    "description": "Airborne geophysical survey provider specializing in VTEM, ZTEM, and magnetic surveys for mineral exploration.",
+    "website": "https://geotech.ca",
+    "categories": ["Geophysics & Geology", "Mining & Exploration"],
+    "isHiring": true
+  },
+  {
+    "id": 226,
+    "name": "Phoenix Geophysics",
+    "location": "Canada",
+    "employees": "50–100",
+    "description": "Manufacturer of electromagnetic geophysical instrumentation used in mineral, geothermal, and groundwater exploration.",
+    "website": "https://phoenix-geophysics.com",
+    "categories": ["Geophysics & Geology", "Mining & Exploration"],
+    "isHiring": true
+  },
+  {
+    "id": 227,
+    "name": "Global Geophysical Services",
+    "location": "USA / Latin America",
+    "employees": "200–500",
+    "description": "Provides land and near-shore seismic data acquisition and multi-client surveys in North and South America.",
+    "website": "https://globalgeophysical.com",
+    "categories": ["Geophysics & Geology", "Energy & Renewables"],
+    "isHiring": false
+  },
+  {
+    "id": 228,
+    "name": "DMT GmbH & Co. KG",
+    "location": "Germany / Global",
+    "employees": "1,000+",
+    "description": "Multidisciplinary geoscience and engineering consultancy offering geophysical surveying, monitoring, and geotechnical services.",
+    "website": "https://dmt-group.com",
+    "categories": ["Geophysics & Geology", "Mining & Exploration"],
+    "isHiring": true
+  },
+  {
+    "id": 229,
+    "name": "Shearwater GeoServices",
+    "location": "Norway",
+    "employees": "1,000+",
+    "description": "Marine geophysics company offering full-cycle seismic acquisition, processing, and software solutions.",
+    "website": "https://shearwatergeo.com",
+    "categories": ["Geophysics & Geology", "Energy & Renewables"],
+    "isHiring": true
+  },
+    {
+    "id": 230,
+    "name": "Fleet Space Technologies",
+    "location": "Australia / Global",
+    "employees": "140+",
+    "description": "Space-powered geoscience company delivering AI-driven 3D subsurface mapping in real time via nanosatellite and ground sensor fusion (ExoSphere platform).",
+    "website": "https://fleetspace.com",
+    "categories": ["Geophysics & Geology", "Tech (Data Science & ML)", "Mining & Exploration"],
+    "isHiring": true
+  },
+  {
+    "id": 231,
+    "name": "Forland Geophysical Services (FGS)",
+    "location": "USA",
+    "employees": "50–100 (est.)",
+    "description": "Specializes in applying advanced technologies to land and shallow-water seismic acquisition and imaging services.",
+    "website": "https://forlandgeo.com",
+    "categories": ["Geophysics & Geology", "Energy & Renewables"],
+    "isHiring": true
+  },
+  {
+    "id": 232,
+    "name": "Vantage Geophysical",
+    "location": "USA",
+    "employees": "50–100 (est.)",
+    "description": "Provider of custom seismic acquisition solutions tailored to client-specific needs in geophysical exploration.",
+    "website": "https://vantagegeophysical.com",
+    "categories": ["Geophysics & Geology"],
+    "isHiring": true
+  },
+  {
+    "id": 233,
+    "name": "Geophysical Technology (GTI)",
+    "location": "USA",
+    "employees": "50–200 (est.)",
+    "description": "Develops advanced geophysical equipment and technologies—like NuSeis—for enhancing seismic recording efficiency and subsurface imaging.",
+    "website": "https://geophysicaltechnology.com",
+    "categories": ["Geophysics & Geology", "Tech (Data Science & ML)"],
+    "isHiring": true
+  },
+  {
+    "id": 234,
+    "name": "Viridien Satellite Mapping (formerly NPA)",
+    "location": "UK / Global",
+    "employees": "Varies",
+    "description": "Satellite mapping and remote sensing specialist providing InSAR, SAR, and elevation products for geological mapping, oil & gas, and mineral exploration.",
+    "website": "https://viridiengroup.com/expertise/satellite-mapping",
+    "categories": ["Geophysics & Geology", "Tech (Data Science & ML)"],
+    "isHiring": true
+  },
+  {
+    "id": 235,
+    "name": "Geophysical Insights",
+    "location": "USA",
+    "employees": "50–100 (est.)",
+    "description": "Offers AI-powered seismic interpretation tools (e.g. Paradise) to accelerate reservoir characterization and improve data extraction from seismic datasets.",
+    "website": "https://geoinsights.com",
+    "categories": ["Geophysics & Geology", "Tech (Data Science & ML)"],
+    "isHiring": true
+  },
+    {
+    "id": 236,
+    "name": "Xcalibur Smart Mapping",
+    "location": "Global",
+    "employees": "400+ professionals",
+    "description": "Provides airborne survey-based mapping of natural capital—including critical minerals, groundwater, geothermal potential, biodiversity, hydrocarbons, and CCS planning.",
+    "website": "https://xcaliburmp.com",
+    "categories": ["Geophysics & Geology", "Mining & Exploration", "Energy & Renewables"],
+    "isHiring": true
+  },
+  {
+    "id": 237,
+    "name": "Exodigo",
+    "location": "Global",
+    "employees": "Varies",
+    "description": "Non-intrusive underground mapping platform combining multisensor fusion, 3D imaging, and AI for hazard detection and project risk reduction.",
+    "website": "https://exodigo.com",
+    "categories": ["Geophysics & Geology", "Tech (Data Science & ML)", "Mining & Exploration"],
+    "isHiring": true
+  },
+  {
+    "id": 238,
+    "name": "RagnaRock Geo",
+    "location": "Norway",
+    "employees": "Varies",
+    "description": "Startup using AI to interpret seismic data with volumetric analysis—predicting faults, horizons, and geological structures from seismic cubes.",
+    "website": "n/a",
+    "categories": ["Geophysics & Geology", "Tech (Data Science & ML)"],
+    "isHiring": true
+  },
+  {
+    "id": 239,
+    "name": "SkyTEM",
+    "location": "Global",
+    "employees": "Varies",
+    "description": "Pioneer in airborne electromagnetic geophysics, delivering high-resolution subsurface data for groundwater, minerals, environmental, and geotechnical mapping.",
+    "website": "https://skytem.com",
+    "categories": ["Geophysics & Geology", "Mining & Exploration", "Energy & Renewables"],
+    "isHiring": true
+  },
+  {
+    "id": 240,
+    "name": "Sanborn Geophysics ULC",
+    "location": "Canada / Global",
+    "employees": "Varies",
+    "description": "Provides geophysical survey services for energy, mineral, and groundwater resource mapping using advanced airborne sensors (e.g., wing‐tip magnetometers).",
+    "website": "https://sanborn.com/sanborn-geophysics",
+    "categories": ["Geophysics & Geology", "Mining & Exploration", "Energy & Renewables"],
+    "isHiring": true
+  },
+  {
+    "id": 241,
+    "name": "Sage Geosystems",
+    "location": "USA",
+    "employees": "Varies",
+    "description": "Develops novel geothermal energy subsurface technologies—includes artificial reservoir creation for renewable energy and underground energy storage solutions.",
+    "website": "n/a",
+    "categories": ["Geophysics & Geology", "Energy & Renewables", "Tech (Data Science & ML)"],
+    "isHiring": true
+  },
+  {
+    "id": 242,
+    "name": "subsurfaceAI",
+    "location": "Canada",
+    "employees": "Varies",
+    "description": "AI-powered seismic interpretation software accelerating seismic and well data workflows by 20–200×, including geomodeling and attribute prediction modules.",
+    "website": "https://subsurfaceai.ca",
+    "categories": ["Geophysics & Geology", "Tech (Data Science & ML)"],
+    "isHiring": true
+  },
+  {
+    "id": 243,
+    "name": "Autonomous Robotics Ltd",
+    "location": "UK",
+    "employees": "Varies",
+    "description": "Develops autonomous underwater vehicles (AUVs) for ocean bottom seismic (OBS) surveys—enabling efficient marine subsurface sensing with swarm-capable systems.",
+    "website": "n/a",
+    "categories": ["Geophysics & Geology", "Energy & Renewables", "Tech (Data Science & ML)"],
+    "isHiring": true
   }
   ]
 }
