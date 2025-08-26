@@ -1797,7 +1797,7 @@
     "employees": "Varies",
     "description": "Offers consultancy, hazard & catastrophe modeling, vulnerability assessments, and catastrophe‑engineering insights for insurance clients.",
     "website": "https://wtwco.com",
-    "categories": ["Insurance & Reinsurance", "Climate Science", "Consulting"],
+    "categories": ["Insurance & Reinsurance", "Climate Science"],
     "isHiring": true
   },
   {
@@ -1947,7 +1947,7 @@
     "employees": "Varies",
     "description": "Provides customized climate risk analytics and resilience planning solutions across sectors like energy, infrastructure, and government.",
     "website": "https://icf.com",
-    "categories": ["Climate Science", "Insurance & Reinsurance", "Consulting"],
+    "categories": ["Climate Science", "Insurance & Reinsurance"],
     "isHiring": true
   },
     {
