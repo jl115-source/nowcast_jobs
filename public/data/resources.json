@@ -178,13 +178,31 @@
           "name": "Certified Climate Change Professional (CC-P)",
           "provider": "Association of Climate Change Officers",
           "description": "Recognized expertise in climate adaptation and resilience.",
-          "link": "https://www.acco.us/"
+          "link": "https://climateofficers.org/certification-professional"
         },
         {
           "name": "LEED Green Associate",
           "provider": "US Green Building Council",
           "description": "Credential in sustainable design and energy efficiency.",
           "link": "https://www.usgbc.org/credentials"
+        },
+                {
+          "name": "Sustainability and Climate Risk (SCR) Certificate",
+          "provider": "GARP",
+          "description": "Focused on climate risk, sustainability, and regulatory frameworks.",
+          "link": "https://www.garp.org/scr"
+        },
+        {
+          "name": "Sustainable Investing Certificate",
+          "provider": "CFA Institute",
+          "description": "Covers ESG integration and sustainable investing strategies.",
+          "link": "https://www.cfainstitute.org/programs/sustainable-investing-certificate"
+        },
+        {
+          "name": "Climate Risk, Valuation, and Investing Certificate",
+          "provider": "CFA Institute",
+          "description": "Advanced focus on climate risk analysis and valuation methods.",
+          "link": "https://www.cfainstitute.org/programs/climate-investing-certificate"
         },
         {
           "name": "ISO 14064 GHG Lead Verifier",
