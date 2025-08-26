@@ -599,6 +599,306 @@
       "website": "https://engie.com",
       "categories": ["Energy & Renewables"],
       "isHiring": true
+    },
+      {
+      "id": 61,
+      "name": "Wood Mackenzie",
+      "location": "Edinburgh, UK",
+      "employees": "2,000+",
+      "description": "Global research and consultancy group providing data analytics for energy, chemicals, and renewables.",
+      "website": "https://woodmac.com",
+      "categories": ["Energy & Renewables", "Geophysics & Geology"],
+      "isHiring": true
+    },
+    {
+      "id": 62,
+      "name": "Weathernews Inc.",
+      "location": "Tokyo, Japan",
+      "employees": "1,000+",
+      "description": "Japanese weather service company providing forecasting solutions for shipping, aviation, and energy industries.",
+      "website": "https://weathernews.com",
+      "categories": ["Weather & Meteorology"],
+      "isHiring": true
+    },
+    {
+      "id": 63,
+      "name": "Repsol",
+      "location": "Madrid, Spain",
+      "employees": "24,000+",
+      "description": "Integrated energy company with a growing portfolio in renewables and advanced geophysical exploration.",
+      "website": "https://repsol.com",
+      "categories": ["Geophysics & Geology", "Energy & Renewables"],
+      "isHiring": false
+    },
+    {
+      "id": 64,
+      "name": "National Renewable Energy Laboratory (NREL)",
+      "location": "Golden, USA",
+      "employees": "2,700+",
+      "description": "US national laboratory dedicated to renewable energy and energy efficiency research and development.",
+      "website": "https://nrel.gov",
+      "categories": ["Energy & Renewables", "Climate Science"],
+      "isHiring": true
+    },
+    {
+      "id": 65,
+      "name": "MeteoGroup",
+      "location": "Utrecht, Netherlands",
+      "employees": "400+",
+      "description": "Private weather company offering forecasting and weather intelligence services to industries worldwide.",
+      "website": "https://meteogroup.com",
+      "categories": ["Weather & Meteorology"],
+      "isHiring": false
+    },
+    {
+      "id": 66,
+      "name": "CGG",
+      "location": "Paris, France",
+      "employees": "3,300+",
+      "description": "Geoscience company providing geological, geophysical, and reservoir services for the energy industry.",
+      "website": "https://cgg.com",
+      "categories": ["Geophysics & Geology"],
+      "isHiring": true
+    },
+    {
+      "id": 67,
+      "name": "Enel Green Power",
+      "location": "Rome, Italy",
+      "employees": "7,000+",
+      "description": "Subsidiary of Enel Group, focusing on renewable energy projects including solar, wind, hydro, and geothermal.",
+      "website": "https://enelgreenpower.com",
+      "categories": ["Energy & Renewables"],
+      "isHiring": true
+    },
+    {
+      "id": 68,
+      "name": "Climavision",
+      "location": "Louisville, USA",
+      "employees": "100+",
+      "description": "Weather technology company integrating proprietary radar networks with advanced weather modeling.",
+      "website": "https://climavision.com",
+      "categories": ["Weather & Meteorology", "Tech (Data Science & ML)"],
+      "isHiring": true
+    },
+    {
+      "id": 69,
+      "name": "Petrobras",
+      "location": "Rio de Janeiro, Brazil",
+      "employees": "45,000+",
+      "description": "Brazilian multinational energy corporation specializing in petroleum, gas, and renewable energy projects.",
+      "website": "https://petrobras.com",
+      "categories": ["Geophysics & Geology", "Energy & Renewables"],
+      "isHiring": false
+    },
+    {
+      "id": 70,
+      "name": "DNV",
+      "location": "Oslo, Norway",
+      "employees": "12,000+",
+      "description": "Global assurance and risk management company providing advisory services in energy, renewables, and climate risk.",
+      "website": "https://dnv.com",
+      "categories": ["Energy & Renewables", "Climate Science"],
+      "isHiring": true
+    },
+    {
+      "id": 71,
+      "name": "Weatherbell Analytics",
+      "location": "New York, USA",
+      "employees": "50-100",
+      "description": "Private weather consulting firm offering forecasting and climate data analytics for businesses.",
+      "website": "https://weatherbell.com",
+      "categories": ["Weather & Meteorology"],
+      "isHiring": false
+    },
+    {
+      "id": 72,
+      "name": "Halliburton Labs",
+      "location": "Houston, USA",
+      "employees": "500+",
+      "description": "Innovation and clean tech accelerator by Halliburton, supporting startups in energy transition.",
+      "website": "https://halliburtonlabs.com",
+      "categories": ["Energy & Renewables"],
+      "isHiring": true
+    },
+    {
+      "id": 73,
+      "name": "EUMETSAT",
+      "location": "Darmstadt, Germany",
+      "employees": "1,200+",
+      "description": "European Organization for the Exploitation of Meteorological Satellites, providing weather and climate data.",
+      "website": "https://eumetsat.int",
+      "categories": ["Weather & Meteorology", "Climate Science"],
+      "isHiring": true
+    },
+    {
+      "id": 74,
+      "name": "TGS",
+      "location": "Oslo, Norway",
+      "employees": "500+",
+      "description": "Provider of geoscience data and intelligence to oil, gas, and renewable industries worldwide.",
+      "website": "https://tgs.com",
+      "categories": ["Geophysics & Geology"],
+      "isHiring": false
+    },
+    {
+      "id": 75,
+      "name": "Brookfield Renewable Partners",
+      "location": "Toronto, Canada",
+      "employees": "3,000+",
+      "description": "One of the world’s largest publicly traded renewable energy platforms, focused on hydro, wind, and solar assets.",
+      "website": "https://bep.brookfield.com",
+      "categories": ["Energy & Renewables"],
+      "isHiring": true
+    },
+    {
+      "id": 76,
+      "name": "Tomorrow.io",
+      "location": "Boston, USA",
+      "employees": "200+",
+      "description": "Weather intelligence platform using advanced modeling and AI to deliver hyperlocal forecasts.",
+      "website": "https://tomorrow.io",
+      "categories": ["Weather & Meteorology", "Tech (Data Science & ML)"],
+      "isHiring": true
+    },
+    {
+      "id": 77,
+      "name": "Gazprom",
+      "location": "Moscow, Russia",
+      "employees": "470,000+",
+      "description": "Largest publicly listed natural gas company with geophysical and exploration divisions.",
+      "website": "https://gazprom.com",
+      "categories": ["Geophysics & Geology", "Energy & Renewables"],
+      "isHiring": false
+    },
+    {
+      "id": 78,
+      "name": "Iberdrola",
+      "location": "Bilbao, Spain",
+      "employees": "39,000+",
+      "description": "Multinational electric utility and renewable energy leader focused on wind and solar development.",
+      "website": "https://iberdrola.com",
+      "categories": ["Energy & Renewables"],
+      "isHiring": true
+    },
+    {
+      "id": 79,
+      "name": "ClimaCell Research",
+      "location": "Tel Aviv, Israel",
+      "employees": "50-200",
+      "description": "Weather research group developing AI-based models for atmospheric and climate forecasting.",
+      "website": "https://climacell.co",
+      "categories": ["Weather & Meteorology", "Climate Science"],
+      "isHiring": false
+    },
+    {
+      "id": 80,
+      "name": "Geospace Technologies",
+      "location": "Houston, USA",
+      "employees": "500+",
+      "description": "Provider of geophysical technology and seismic equipment for subsurface exploration.",
+      "website": "https://geospace.com",
+      "categories": ["Geophysics & Geology"],
+      "isHiring": true
+    },
+    {
+      "id": 81,
+      "name": "RWE Renewables",
+      "location": "Essen, Germany",
+      "employees": "3,500+",
+      "description": "One of the world’s largest renewable energy companies, focusing on offshore wind and solar projects.",
+      "website": "https://rwe.com",
+      "categories": ["Energy & Renewables"],
+      "isHiring": true
+    },
+    {
+      "id": 82,
+      "name": "Spire Global",
+      "location": "Vienna, Virginia, USA",
+      "employees": "400+",
+      "description": "Satellite-powered data company providing global weather, maritime, and aviation intelligence.",
+      "website": "https://spire.com",
+      "categories": ["Weather & Meteorology", "Geospatial & GIS"],
+      "isHiring": true
+    },
+    {
+      "id": 83,
+      "name": "Sercel",
+      "location": "Nantes, France",
+      "employees": "1,000+",
+      "description": "Developer of geophysical equipment and systems for seismic exploration and subsurface imaging.",
+      "website": "https://sercel.com",
+      "categories": ["Geophysics & Geology"],
+      "isHiring": false
+    },
+    {
+      "id": 84,
+      "name": "EDF Renewables",
+      "location": "Paris, France",
+      "employees": "4,500+",
+      "description": "Subsidiary of EDF Group, developing and operating renewable energy projects worldwide.",
+      "website": "https://edf-re.com",
+      "categories": ["Energy & Renewables"],
+      "isHiring": true
+    },
+    {
+      "id": 85,
+      "name": "MetraWeather",
+      "location": "Auckland, New Zealand",
+      "employees": "200+",
+      "description": "Weather intelligence company delivering forecasts and climate analytics for businesses.",
+      "website": "https://metraweather.com",
+      "categories": ["Weather & Meteorology"],
+      "isHiring": false
+    },
+    {
+      "id": 86,
+      "name": "Paradigm Geophysical",
+      "location": "Houston, USA",
+      "employees": "1,200+",
+      "description": "Geoscience software company providing advanced imaging and modeling tools for exploration.",
+      "website": "https://paradigm.com",
+      "categories": ["Geophysics & Geology"],
+      "isHiring": true
+    },
+    {
+      "id": 87,
+      "name": "SunPower",
+      "location": "San Jose, USA",
+      "employees": "2,100+",
+      "description": "Solar energy company specializing in high-efficiency solar panels and energy solutions.",
+      "website": "https://sunpower.com",
+      "categories": ["Energy & Renewables"],
+      "isHiring": true
+    },
+    {
+      "id": 88,
+      "name": "Baron Weather",
+      "location": "Huntsville, USA",
+      "employees": "100+",
+      "description": "Weather intelligence company providing radar systems and advanced forecasting tools.",
+      "website": "https://baronweather.com",
+      "categories": ["Weather & Meteorology"],
+      "isHiring": true
+    },
+    {
+      "id": 89,
+      "name": "Seabed Geosolutions",
+      "location": "Leidschendam, Netherlands",
+      "employees": "500+",
+      "description": "Specialist in ocean bottom seismic services for offshore geophysical exploration.",
+      "website": "https://fugro.com/seabedgeo",
+      "categories": ["Geophysics & Geology"],
+      "isHiring": false
+    },
+    {
+      "id": 90,
+      "name": "Pattern Energy",
+      "location": "San Francisco, USA",
+      "employees": "600+",
+      "description": "Independent renewable energy company focused on wind, solar, and energy storage projects.",
+      "website": "https://patternenergy.com",
+      "categories": ["Energy & Renewables"],
+      "isHiring": true
     }
   ]
 }
