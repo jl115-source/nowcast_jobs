@@ -1507,7 +1507,7 @@
     "employees": "2500+",
     "description": "Leading global multi‑strategy hedge fund with quant trading capabilities including weather‑sensitive energy and commodity strategies.",
     "website": "https://citadel.com",
-    "categories": ["Quant & Risk", "Commodities", "Weather‑Trading", "Banking & Finance"],
+    "categories": [ "Commodities", "Weather‑Trading", "Banking & Finance"],
     "isHiring": true
   },
   {
@@ -1517,7 +1517,7 @@
     "employees": "3500+",
     "description": "Global multi‑strategy investment manager with data‑driven trading desks including those focused on energy, commodities, and weather risk strategies.",
     "website": "https://mlpfd.com",
-    "categories": ["Quant & Risk", "Commodities", "Weather‑Trading", "Banking & Finance"],
+    "categories": [ "Commodities", "Weather‑Trading", "Banking & Finance"],
     "isHiring": true
   },
   {
@@ -1527,7 +1527,7 @@
     "employees": "1800+",
     "description": "Proprietary trading firm known for systematic and quantitative strategies, including energy and commodity markets—weather data often integrated into models.",
     "website": "https://janestreet.com",
-    "categories": ["Quant & Risk", "Commodities", "Tech (Data Science & ML)", "Weather‑Trading"],
+    "categories": [ "Commodities", "Tech (Data Science & ML)", "Weather‑Trading"],
     "isHiring": true
   },
   {
@@ -1537,7 +1537,7 @@
     "employees": "2000+",
     "description": "Quantitative investment manager using advanced modeling and data (including weather/weather‑impact signals) in commodities and energy markets.",
     "website": "https://squarepointcap.com",
-    "categories": ["Quant & Risk", "Commodities", "Tech (Data Science & ML)", "Weather‑Trading"],
+    "categories": [ "Commodities", "Tech (Data Science & ML)", "Weather‑Trading"],
     "isHiring": true
   },
   {
@@ -1569,17 +1569,7 @@
     "website": "http://weather.net",
     "categories": ["Weather & Meteorology", "Commodities", "Energy & Renewables"],
     "isHiring": false
-  },
-  {
-    "id": 158,
-    "name": "Weather‑Risk Management Participants (e.g., Nephila, Susquehanna Energy)",
-    "location": "Global",
-    "employees": "Varies",
-    "description": "Capital providers and trading desks specializing in weather‑contingent commodity and energy trades, including firms like Nephila Capital, Susquehanna Energy, RJO, Tudor Capital, etc.",
-    "website": "",
-    "categories": ["Quant & Risk", "Commodities", "Weather‑Trading", "Insurance & Reinsurance"],
-    "isHiring": false
-  },
+  }, 
     {
     "id": 160,
     "name": "InCommodities",
@@ -1647,7 +1637,7 @@
     "employees": "50–100 (est.)",
     "description": "AI‑powered platform offering wind and solar forecasting plus trade optimization to mitigate balancing risk and capture short‑term trading profits.",
     "website": "https://dexterenergy.ai",
-    "categories": ["Energy & Renewables", "Tech (Data Science & ML)", "Weather‑Trading", "Quant & Risk"],
+    "categories": ["Energy & Renewables", "Tech (Data Science & ML)", "Weather‑Trading" ],
     "isHiring": true
   },
   {
@@ -1657,7 +1647,7 @@
     "employees": "50–100 (est.)",
     "description": "AI forecast solutions for electricity load, price, solar & wind generation—optimizing electricity trading and asset dispatch (BESS, hydro, thermal).",
     "website": "https://quantrisk.com",
-    "categories": ["Energy & Renewables", "Tech (Data Science & ML)", "Weather‑Trading", "Quant & Risk"],
+    "categories": ["Energy & Renewables", "Tech (Data Science & ML)", "Weather‑Trading" ],
     "isHiring": true
   },
   {
@@ -1667,7 +1657,7 @@
     "employees": "100–200 (est.)",
     "description": "Physical commodities trader across energy products, soft commodities, carbon, power; offering mobile trading app with real‑time data and logistics.",
     "website": "https://inte-energy.com",
-    "categories": ["Energy & Renewables", "Commodities", "Tech (Data Science & ML)", "Logistics"],
+    "categories": ["Energy & Renewables", "Commodities", "Tech (Data Science & ML)" ],
     "isHiring": false
   },
     {
@@ -1727,7 +1717,7 @@
     "employees": "3,900+",
     "description": "Operator of listed weather derivatives markets (futures and options) enabling hedging of weather-related financial exposure across industries.",
     "website": "https://cmegroup.com/markets/weather.html",
-    "categories": ["Market Infrastructure", "Weather‑Trading", "Commodities"],
+    "categories": [ "Weather‑Trading", "Commodities"],
     "isHiring": true
   },
   {
