@@ -2310,5 +2310,235 @@
     "categories": ["Geophysics & Geology", "Energy & Renewables", "Tech (Data Science & ML)"],
     "isHiring": true
   }
+      {
+    "id": 301,
+    "name": "Leadenhall Capital Partners",
+    "location": "UK",
+    "employees": "Varies",
+    "description": "Specialist investment manager focused on insurance-linked securities (ILS) and reinsurance risk strategies.",
+    "website": "https://www.leadenhallcp.com",
+    "categories": ["Insurance & Reinsurance"],
+    "isHiring": false
+  },
+  {
+    "id": 302,
+    "name": "Securis Investment Partners",
+    "location": "UK",
+    "employees": "Varies",
+    "description": "Global investment manager dedicated to ILS and reinsurance-linked investments.",
+    "website": "https://www.securisinvestments.com",
+    "categories": ["Insurance & Reinsurance"],
+    "isHiring": false
+  },
+  {
+    "id": 303,
+    "name": "Twelve Capital",
+    "location": "Switzerland",
+    "employees": "Varies",
+    "description": "Independent investment manager specializing in insurance-related investments including ILS, private debt, and equity.",
+    "website": "https://www.twelvecapital.com",
+    "categories": ["Insurance & Reinsurance"],
+    "isHiring": false
+  },
+  {
+    "id": 304,
+    "name": "Schroders",
+    "location": "UK",
+    "employees": "5,000+",
+    "description": "Global asset manager offering a broad range of investment solutions including sustainable and insurance-related investments.",
+    "website": "https://www.schroders.com",
+    "categories": ["Insurance & Reinsurance"],
+    "isHiring": true
+  },
+  {
+    "id": 305,
+    "name": "Plenum Investments",
+    "location": "Switzerland",
+    "employees": "Varies",
+    "description": "Swiss-based ILS and insurance asset manager with expertise in cat bonds and reinsurance portfolios.",
+    "website": "https://www.plenum.ch",
+    "categories": ["Insurance & Reinsurance"],
+    "isHiring": false
+  },
+  {
+    "id": 306,
+    "name": "Credit Suisse (Insurance-Linked Strategies)",
+    "location": "Switzerland",
+    "employees": "Varies",
+    "description": "Part of Credit Suisse’s asset management division focusing on ILS and reinsurance-related funds.",
+    "website": "https://www.credit-suisse.com",
+    "categories": ["Insurance & Reinsurance"],
+    "isHiring": false
+  },
+  {
+    "id": 307,
+    "name": "TransRe",
+    "location": "USA",
+    "employees": "1,000+",
+    "description": "Global property and casualty reinsurance company providing treaty and facultative reinsurance solutions.",
+    "website": "https://www.transre.com",
+    "categories": ["Insurance & Reinsurance"],
+    "isHiring": true
+  },
+  {
+    "id": 308,
+    "name": "Gen Re",
+    "location": "USA",
+    "employees": "2,000+",
+    "description": "Subsidiary of Berkshire Hathaway, providing life, health, and P&C reinsurance globally.",
+    "website": "https://www.genre.com",
+    "categories": ["Insurance & Reinsurance"],
+    "isHiring": true
+  },
+  {
+    "id": 309,
+    "name": "RenaissanceRe",
+    "location": "Bermuda",
+    "employees": "500+",
+    "description": "Leading global reinsurance and insurance provider specializing in catastrophe risk.",
+    "website": "https://www.renre.com",
+    "categories": ["Insurance & Reinsurance"],
+    "isHiring": true
+  },
+  {
+    "id": 310,
+    "name": "SCOR",
+    "location": "France",
+    "employees": "3,000+",
+    "description": "Global reinsurance company offering life and P&C reinsurance solutions worldwide.",
+    "website": "https://www.scor.com",
+    "categories": ["Insurance & Reinsurance"],
+    "isHiring": true
+  },
+  {
+    "id": 311,
+    "name": "Hannover Re",
+    "location": "Germany",
+    "employees": "3,000+",
+    "description": "One of the world’s largest reinsurance groups, offering a full spectrum of reinsurance products and services.",
+    "website": "https://www.hannover-re.com",
+    "categories": ["Insurance & Reinsurance"],
+    "isHiring": true
+  },
+  {
+    "id": 312,
+    "name": "Allianz",
+    "location": "Germany",
+    "employees": "150,000+",
+    "description": "One of the world’s largest insurers and asset managers, providing insurance, reinsurance, and investment management.",
+    "website": "https://www.allianz.com",
+    "categories": ["Insurance & Reinsurance"],
+    "isHiring": true
+  },
+  {
+    "id": 313,
+    "name": "Aviva",
+    "location": "UK",
+    "employees": "20,000+",
+    "description": "UK-based multinational insurance company with global life, general, and health insurance offerings.",
+    "website": "https://www.aviva.com",
+    "categories": ["Insurance & Reinsurance"],
+    "isHiring": true
+  },
+  {
+    "id": 314,
+    "name": "Hiscox",
+    "location": "Bermuda / UK",
+    "employees": "3,000+",
+    "description": "Specialty insurer with expertise in catastrophe, reinsurance, and specialty risk insurance lines.",
+    "website": "https://www.hiscoxgroup.com",
+    "categories": ["Insurance & Reinsurance"],
+    "isHiring": true
+  },
+  {
+    "id": 315,
+    "name": "Chubb",
+    "location": "Switzerland",
+    "employees": "30,000+",
+    "description": "Global insurance company offering property, casualty, accident, health, and reinsurance products.",
+    "website": "https://www.chubb.com",
+    "categories": ["Insurance & Reinsurance"],
+    "isHiring": true
+  },
+  {
+    "id": 316,
+    "name": "Zurich Insurance Group",
+    "location": "Switzerland",
+    "employees": "50,000+",
+    "description": "Swiss multinational insurance company providing property, casualty, life, and reinsurance solutions.",
+    "website": "https://www.zurich.com",
+    "categories": ["Insurance & Reinsurance"],
+    "isHiring": true
+  },
+  {
+    "id": 317,
+    "name": "Aspen Insurance",
+    "location": "Bermuda",
+    "employees": "1,000+",
+    "description": "Specialty insurance and reinsurance company focused on property, casualty, and specialty lines.",
+    "website": "https://www.aspen.co",
+    "categories": ["Insurance & Reinsurance"],
+    "isHiring": false
+  },
+  {
+    "id": 318,
+    "name": "Chaucer",
+    "location": "UK",
+    "employees": "Varies",
+    "description": "Lloyd’s of London insurance group providing specialty insurance and reinsurance solutions.",
+    "website": "https://www.chaucerplc.com",
+    "categories": ["Insurance & Reinsurance"],
+    "isHiring": false
+  },
+  {
+    "id": 319,
+    "name": "AIG (American International Group)",
+    "location": "USA",
+    "employees": "25,000+",
+    "description": "Global insurance organization offering property, casualty, life, and retirement insurance.",
+    "website": "https://www.aig.com",
+    "categories": ["Insurance & Reinsurance"],
+    "isHiring": true
+  },
+  {
+    "id": 320,
+    "name": "Liberty Mutual",
+    "location": "USA",
+    "employees": "45,000+",
+    "description": "One of the largest U.S. insurers, offering global property, casualty, and specialty insurance and reinsurance.",
+    "website": "https://www.libertymutual.com",
+    "categories": ["Insurance & Reinsurance"],
+    "isHiring": true
+  },
+  {
+    "id": 321,
+    "name": "Ascot Group",
+    "location": "UK / Bermuda",
+    "employees": "Varies",
+    "description": "Global specialty insurance and reinsurance group operating through Lloyd’s and U.S. markets.",
+    "website": "https://www.ascotgroup.com",
+    "categories": ["Insurance & Reinsurance"],
+    "isHiring": true
+  },
+  {
+    "id": 322,
+    "name": "Blenheim Underwriting",
+    "location": "UK",
+    "employees": "Varies",
+    "description": "Lloyd’s of London managing agency providing specialty insurance underwriting services.",
+    "website": "https://www.blenheimuw.com",
+    "categories": ["Insurance & Reinsurance"],
+    "isHiring": false
+  },
+  {
+    "id": 323,
+    "name": "Cathedral Capital",
+    "location": "UK",
+    "employees": "Varies",
+    "description": "Specialty reinsurance and insurance provider operating at Lloyd’s of London.",
+    "website": "https://www.cathedralcapital.com",
+    "categories": ["Insurance & Reinsurance"],
+    "isHiring": false
+  }
   ]
 }
