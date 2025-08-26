@@ -5,40 +5,80 @@
         {
           "name": "Certified Research Administrator (CRA)",
           "provider": "Research Administrators Certification Council",
-          "description": "Professional certification for research administration",
+          "description": "Professional certification for research administration and compliance.",
           "link": "https://www.racc-cert.org/"
         },
         {
           "name": "Project Management Professional (PMP)",
           "provider": "Project Management Institute",
-          "description": "Global standard for project management certification",
+          "description": "Global gold standard for managing large and complex projects.",
           "link": "https://www.pmi.org/certifications/project-management-pmp"
-        }
-      ],
-      "education": [
-        {
-          "name": "PhD in Environmental Science",
-          "institution": "Various Universities",
-          "description": "Advanced research degree in environmental sciences",
-          "link": "https://www.gradschools.com/programs/environmental-science"
         },
         {
-          "name": "Master's in Research Methods",
-          "institution": "Various Universities",
-          "description": "Advanced degree focusing on research methodologies",
-          "link": "https://www.mastersportal.com/studies/research-methods"
+          "name": "Certified in Research Integrity and Compliance",
+          "provider": "PRIM&R (Public Responsibility in Medicine & Research)",
+          "description": "Certification focusing on ethics, compliance, and responsible research conduct.",
+          "link": "https://primr.org/"
+        },
+        {
+          "name": "Human Subjects Research & GCP",
+          "provider": "CITI Program",
+          "description": "Foundational certifications for IRB/Human Subjects protections and Good Clinical Practice.",
+          "link": "https://www.citiprogram.org/"
+        },
+        {
+          "name": "Lean Six Sigma Green Belt",
+          "provider": "ASQ",
+          "description": "Process improvement credential useful for research operations and labs.",
+          "link": "https://asq.org/cert/lean-six-sigma-green-belt"
+        },
+        {
+          "name": "Certified Data Management Professional (CDMP)",
+          "provider": "DAMA International",
+          "description": "Data governance and stewardship certification relevant to research data management.",
+          "link": "https://www.dama.org/certification"
         }
       ],
       "links": [
         {
-          "name": "National Science Foundation",
-          "description": "US government agency supporting fundamental research",
+          "name": "National Science Foundation (NSF)",
+          "description": "US government agency supporting fundamental scientific research.",
           "link": "https://www.nsf.gov/"
         },
         {
           "name": "ResearchGate",
-          "description": "Social networking site for scientists and researchers",
+          "description": "Networking platform for sharing publications and collaborations.",
           "link": "https://www.researchgate.net/"
+        },
+        {
+          "name": "American Association for the Advancement of Science (AAAS)",
+          "description": "Largest general science membership organization in the world.",
+          "link": "https://www.aaas.org/"
+        },
+        {
+          "name": "ORCID",
+          "description": "Persistent digital identifier to distinguish your research identity.",
+          "link": "https://orcid.org/"
+        },
+        {
+          "name": "Open Science Framework (OSF)",
+          "description": "Platform for preregistration, data sharing, and reproducible research workflows.",
+          "link": "https://osf.io/"
+        },
+        {
+          "name": "NIH Grants & Funding",
+          "description": "Funding opportunities and grant guidance for biomedical and behavioral research.",
+          "link": "https://grants.nih.gov/"
+        },
+        {
+          "name": "European Research Council (ERC)",
+          "description": "Prestigious grants for frontier research across Europe.",
+          "link": "https://erc.europa.eu/"
+        },
+        {
+          "name": "arXiv",
+          "description": "Open access repository for preprints in STEM fields.",
+          "link": "https://arxiv.org/"
         }
       ]
     },
@@ -47,40 +87,88 @@
         {
           "name": "Chartered Financial Analyst (CFA)",
           "provider": "CFA Institute",
-          "description": "Global standard for investment analysis and portfolio management",
+          "description": "Most respected global credential for investment management.",
           "link": "https://www.cfainstitute.org/"
         },
         {
           "name": "Financial Risk Manager (FRM)",
           "provider": "Global Association of Risk Professionals",
-          "description": "Leading certification for financial risk management",
+          "description": "Credential for risk professionals managing financial markets.",
           "link": "https://www.garp.org/frm"
-        }
-      ],
-      "education": [
-        {
-          "name": "Master of Finance",
-          "institution": "Various Business Schools",
-          "description": "Advanced degree in financial theory and practice",
-          "link": "https://www.topuniversities.com/courses/finance/guide"
         },
         {
-          "name": "MBA with Finance Concentration",
-          "institution": "Various Business Schools",
-          "description": "Business administration degree with finance focus",
-          "link": "https://www.mba.com/"
+          "name": "Sustainability and Climate Risk (SCR) Certificate",
+          "provider": "GARP",
+          "description": "Focused on climate risk, sustainability, and regulatory frameworks.",
+          "link": "https://www.garp.org/scr"
+        },
+        {
+          "name": "Sustainable Investing Certificate",
+          "provider": "CFA Institute",
+          "description": "Covers ESG integration and sustainable investing strategies.",
+          "link": "https://www.cfainstitute.org/programs/sustainable-investing-certificate"
+        },
+        {
+          "name": "Climate Risk, Valuation, and Investing Certificate",
+          "provider": "CFA Institute",
+          "description": "Advanced focus on climate risk analysis and valuation methods.",
+          "link": "https://www.cfainstitute.org/programs/climate-investing-certificate"
+        },
+        {
+          "name": "Professional Risk Manager (PRM)",
+          "provider": "PRMIA",
+          "description": "Advanced risk management designation complementary to FRM.",
+          "link": "https://prmia.org/"
+        },
+        {
+          "name": "Certificate in Quantitative Finance (CQF)",
+          "provider": "Fitch Learning",
+          "description": "Highly regarded program for quant finance, pricing, and risk.",
+          "link": "https://www.cqf.com/"
+        },
+        {
+          "name": "Chartered Alternative Investment Analyst (CAIA)",
+          "provider": "CAIA Association",
+          "description": "Specialist credential for alternative investments.",
+          "link": "https://caia.org/"
+        },
+        {
+          "name": "Chartered Market Technician (CMT)",
+          "provider": "CMT Association",
+          "description": "Technical analysis designation valued on trading desks.",
+          "link": "https://cmtassociation.org/certification/"
         }
       ],
       "links": [
         {
-          "name": "Bloomberg Terminal",
-          "description": "Professional financial data and analytics platform",
-          "link": "https://www.bloomberg.com/professional/"
+          "name": "CFA Institute",
+          "description": "Global professional association for investment management.",
+          "link": "https://www.cfainstitute.org/"
         },
         {
-          "name": "Financial Times",
-          "description": "Leading financial news and analysis",
-          "link": "https://www.ft.com/"
+          "name": "Global Association of Risk Professionals (GARP)",
+          "description": "Association advancing financial and climate risk management.",
+          "link": "https://www.garp.org/"
+        },
+        {
+          "name": "PRMIA (Professional Risk Managers’ International Association)",
+          "description": "Membership and credentialing organization for risk professionals.",
+          "link": "https://www.prmia.org/"
+        },
+        {
+          "name": "CAIA Association",
+          "description": "Global network for alternative investment professionals.",
+          "link": "https://caia.org/"
+        },
+        {
+          "name": "CMT Association",
+          "description": "Home of the CMT designation and technical analysis community.",
+          "link": "https://cmtassociation.org/"
+        },
+        {
+          "name": "CQF Institute",
+          "description": "Community, events, and resources for quant finance professionals.",
+          "link": "https://www.cqfinstitute.org/"
         }
       ]
     },
@@ -89,40 +177,86 @@
         {
           "name": "Certified Climate Change Professional (CC-P)",
           "provider": "Association of Climate Change Officers",
-          "description": "Professional certification in climate change management",
+          "description": "Recognized expertise in climate adaptation and resilience.",
           "link": "https://www.acco.us/"
         },
         {
           "name": "LEED Green Associate",
-          "provider": "U.S. Green Building Council",
-          "description": "Entry-level green building certification",
+          "provider": "US Green Building Council",
+          "description": "Credential in sustainable design and energy efficiency.",
           "link": "https://www.usgbc.org/credentials"
-        }
-      ],
-      "education": [
-        {
-          "name": "Master's in Climate Science",
-          "institution": "Various Universities",
-          "description": "Advanced degree in climate systems and change",
-          "link": "https://www.gradschools.com/programs/climate-science"
         },
         {
-          "name": "PhD in Atmospheric Sciences",
-          "institution": "Various Universities",
-          "description": "Research degree in atmospheric physics and chemistry",
-          "link": "https://www.gradschools.com/programs/atmospheric-sciences"
+          "name": "ISO 14064 GHG Lead Verifier",
+          "provider": "Various Accreditation Bodies",
+          "description": "Certification in greenhouse gas quantification and verification.",
+          "link": "https://www.iso.org/iso-14064-greenhouse-gases.html"
+        },
+        {
+          "name": "ISO 14001 Environmental Management – Lead Auditor",
+          "provider": "Various Accreditation Bodies",
+          "description": "Auditor credential for environmental management systems.",
+          "link": "https://www.iso.org/iso-14001-environmental-management.html"
+        },
+        {
+          "name": "EDGE Expert",
+          "provider": "IFC (World Bank Group)",
+          "description": "Accreditation for green buildings and resource efficiency.",
+          "link": "https://www.edgebuildings.com/edge-expert/"
+        },
+        {
+          "name": "FSA Credential (Fundamentals of Sustainability Accounting)",
+          "provider": "IFRS Foundation (SASB Standards)",
+          "description": "Rigorous credential in sustainability accounting and disclosure.",
+          "link": "https://www.ifrs.org/sustainability-sasb/learning/fsa-credential/"
+        },
+        {
+          "name": "GHG Protocol Corporate Standard Training",
+          "provider": "WRI/WBCSD",
+          "description": "Corporate greenhouse gas accounting training with certificate of completion.",
+          "link": "https://ghgprotocol.org/training"
         }
       ],
       "links": [
         {
-          "name": "IPCC - Intergovernmental Panel on Climate Change",
-          "description": "UN body for assessing climate change science",
+          "name": "Intergovernmental Panel on Climate Change (IPCC)",
+          "description": "UN body providing authoritative assessments of climate science.",
           "link": "https://www.ipcc.ch/"
         },
         {
           "name": "Climate.gov",
-          "description": "NOAA's climate information portal",
+          "description": "NOAA’s official climate data and education portal.",
           "link": "https://www.climate.gov/"
+        },
+        {
+          "name": "C40 Cities",
+          "description": "Network of global cities committed to climate action.",
+          "link": "https://www.c40.org/"
+        },
+        {
+          "name": "GHG Protocol",
+          "description": "Widely used standards for GHG accounting and reporting.",
+          "link": "https://ghgprotocol.org/"
+        },
+        {
+          "name": "Science Based Targets initiative (SBTi)",
+          "description": "Corporate climate target setting aligned with climate science.",
+          "link": "https://sciencebasedtargets.org/"
+        },
+        {
+          "name": "IFRS—TCFD",
+          "description": "Climate-related disclosures guidance and resources.",
+          "link": "https://www.ifrs.org/sustainability/standards/tcfd/"
+        },
+        {
+          "name": "UNFCCC",
+          "description": "Global climate policy and negotiations hub.",
+          "link": "https://unfccc.int/"
+        },
+        {
+          "name": "NASA GISS",
+          "description": "Leading climate science research center and datasets.",
+          "link": "https://www.giss.nasa.gov/"
         }
       ]
     },
@@ -131,82 +265,180 @@
         {
           "name": "Certified Energy Manager (CEM)",
           "provider": "Association of Energy Engineers",
-          "description": "Professional certification in energy management",
+          "description": "Credential for professionals in energy efficiency and sustainability.",
           "link": "https://www.aeecenter.org/"
         },
         {
           "name": "NABCEP PV Installation Professional",
-          "provider": "North American Board of Certified Energy Practitioners",
-          "description": "Solar photovoltaic installation certification",
+          "provider": "NABCEP",
+          "description": "Gold standard certification for solar installation.",
           "link": "https://www.nabcep.org/"
-        }
-      ],
-      "education": [
-        {
-          "name": "Master's in Renewable Energy",
-          "institution": "Various Universities",
-          "description": "Advanced degree in renewable energy systems",
-          "link": "https://www.mastersportal.com/studies/renewable-energy"
         },
         {
-          "name": "Energy Engineering Degree",
-          "institution": "Various Universities",
-          "description": "Engineering degree focused on energy systems",
-          "link": "https://www.gradschools.com/programs/energy-engineering"
+          "name": "Renewable Energy Professional (REP)",
+          "provider": "Association of Energy Engineers",
+          "description": "Credential recognizing expertise in renewable energy systems.",
+          "link": "https://www.aeecenter.org/"
+        },
+        {
+          "name": "NERC System Operator Certification",
+          "provider": "NERC",
+          "description": "Grid operations credential (RC/TO/BA) valued by ISOs/RTOs and utilities.",
+          "link": "https://www.nerc.com/pa/RO/Pages/System-Operator-Certification-Program.aspx"
+        },
+        {
+          "name": "GWO Basic Safety Training (BST)",
+          "provider": "Global Wind Organisation",
+          "description": "Mandatory safety credential for many wind energy field roles.",
+          "link": "https://www.globalwindsafety.org/training-standards/basic-safety-training-bst"
+        },
+        {
+          "name": "Certified Energy Auditor (CEA)",
+          "provider": "AEE",
+          "description": "Energy auditing credential for buildings and industrial sites.",
+          "link": "https://www.aeecenter.org/certifications/cea-certified-energy-auditor/"
+        },
+        {
+          "name": "Certified Energy Procurement Professional (CEP)",
+          "provider": "AEE",
+          "description": "Credential covering competitive energy procurement and markets.",
+          "link": "https://www.aeecenter.org/certifications/cep-certified-energy-procurement-professional/"
+        },
+        {
+          "name": "NABCEP PV Technical Sales",
+          "provider": "NABCEP",
+          "description": "Certification for PV sales professionals with technical expertise.",
+          "link": "https://www.nabcep.org/certifications/pv-technical-sales-professional/"
+        },
+        {
+          "name": "EVITP Certification",
+          "provider": "Electric Vehicle Infrastructure Training Program",
+          "description": "Credential for EV charging infrastructure installation and safety.",
+          "link": "https://evitp.org/"
         }
       ],
       "links": [
         {
           "name": "International Renewable Energy Agency (IRENA)",
-          "description": "Global intergovernmental agency for renewable energy",
+          "description": "Global intergovernmental body promoting renewables.",
           "link": "https://www.irena.org/"
         },
         {
-          "name": "U.S. Department of Energy",
-          "description": "Federal agency for energy policy and research",
+          "name": "US Department of Energy (DOE)",
+          "description": "Federal agency advancing clean energy and technology.",
           "link": "https://www.energy.gov/"
+        },
+        {
+          "name": "Renewable Energy World",
+          "description": "Industry news and resources for professionals in renewables.",
+          "link": "https://www.renewableenergyworld.com/"
+        },
+        {
+          "name": "NREL",
+          "description": "US national lab for cutting-edge renewable energy R&D.",
+          "link": "https://www.nrel.gov/"
+        },
+        {
+          "name": "EPRI",
+          "description": "Applied research organization for the electric power sector.",
+          "link": "https://www.epri.com/"
+        },
+        {
+          "name": "American Clean Power Association (ACP)",
+          "description": "US trade association for wind, solar, storage, and transmission.",
+          "link": "https://cleanpower.org/"
+        },
+        {
+          "name": "SEIA",
+          "description": "US solar industry trade association and policy advocacy.",
+          "link": "https://www.seia.org/"
+        },
+        {
+          "name": "Smart Electric Power Alliance (SEPA)",
+          "description": "Utility-focused non-profit accelerating clean energy adoption.",
+          "link": "https://sepapower.org/"
         }
       ]
     },
     "Geospatial & GIS": {
       "certifications": [
         {
-          "name": "GISP - GIS Professional",
+          "name": "GIS Professional (GISP)",
           "provider": "GIS Certification Institute",
-          "description": "Professional certification for GIS practitioners",
+          "description": "Credential for experienced GIS professionals.",
           "link": "https://www.gisci.org/"
         },
         {
           "name": "Esri Technical Certification",
           "provider": "Esri",
-          "description": "Technical certification for Esri software products",
+          "description": "Role-based certification for Esri GIS technology.",
           "link": "https://www.esri.com/training/certification/"
-        }
-      ],
-      "education": [
-        {
-          "name": "Master's in GIS",
-          "institution": "Various Universities",
-          "description": "Advanced degree in Geographic Information Systems",
-          "link": "https://www.gradschools.com/programs/gis"
         },
         {
-          "name": "Remote Sensing Certificate",
-          "institution": "Various Universities",
-          "description": "Specialized training in remote sensing technologies",
-          "link": "https://www.gradschools.com/programs/remote-sensing"
+          "name": "Remote Sensing Certification",
+          "provider": "ASPRS (American Society for Photogrammetry & Remote Sensing)",
+          "description": "Certification in remote sensing and photogrammetry.",
+          "link": "https://www.asprs.org/"
+        },
+        {
+          "name": "GEOINT Professional Certification (GPC)",
+          "provider": "USGIF",
+          "description": "Geospatial intelligence credential recognized across defense and industry.",
+          "link": "https://usgif.org/certification/"
+        },
+        {
+          "name": "FME Certified Professional",
+          "provider": "Safe Software",
+          "description": "Data integration and ETL certification widely used in GIS pipelines.",
+          "link": "https://www.safe.com/certification/"
+        },
+        {
+          "name": "Trimble Certified Professional",
+          "provider": "Trimble",
+          "description": "Hardware/software certification for surveying and geospatial solutions.",
+          "link": "https://certification.trimble.com/"
         }
       ],
       "links": [
         {
-          "name": "Esri",
-          "description": "Leading GIS software and solutions provider",
-          "link": "https://www.esri.com/"
+          "name": "Open Geospatial Consortium (OGC)",
+          "description": "International standards organization for geospatial data.",
+          "link": "https://www.ogc.org/"
         },
         {
-          "name": "Open Geospatial Consortium",
-          "description": "International standards organization for geospatial content",
-          "link": "https://www.ogc.org/"
+          "name": "URISA",
+          "description": "Professional association for GIS and spatial data practitioners.",
+          "link": "https://www.urisa.org/"
+        },
+        {
+          "name": "ASPRS",
+          "description": "Membership body for photogrammetry, LiDAR, and remote sensing.",
+          "link": "https://www.asprs.org/"
+        },
+        {
+          "name": "USGS EarthExplorer",
+          "description": "Portal for Landsat and other remote sensing datasets.",
+          "link": "https://earthexplorer.usgs.gov/"
+        },
+        {
+          "name": "Copernicus Data Space Ecosystem",
+          "description": "Free, open access to Sentinel satellite data and services.",
+          "link": "https://dataspace.copernicus.eu/"
+        },
+        {
+          "name": "Sentinel Hub EO Browser",
+          "description": "Quick visualization and download of multi-mission EO data.",
+          "link": "https://apps.sentinel-hub.com/eo-browser/"
+        },
+        {
+          "name": "OpenStreetMap",
+          "description": "Collaborative map data for geospatial applications.",
+          "link": "https://www.openstreetmap.org/"
+        },
+        {
+          "name": "Mapbox",
+          "description": "Developer platform for custom maps and geospatial apps.",
+          "link": "https://www.mapbox.com/"
         }
       ]
     },
@@ -214,41 +446,87 @@
       "certifications": [
         {
           "name": "Professional Geologist (PG)",
-          "provider": "American Institute of Professional Geologists",
-          "description": "Professional certification for practicing geologists",
+          "provider": "AIPG",
+          "description": "Credential for licensed professional practice of geology.",
           "link": "https://www.aipg.org/"
         },
         {
-          "name": "Certified Professional Geophysicist (CPG)",
-          "provider": "American Geophysical Union",
-          "description": "Professional certification for geophysicists",
-          "link": "https://www.agu.org/"
-        }
-      ],
-      "education": [
-        {
-          "name": "Master's in Geology",
-          "institution": "Various Universities",
-          "description": "Advanced degree in geological sciences",
-          "link": "https://www.gradschools.com/programs/geology"
+          "name": "European Geologist (EurGeol)",
+          "provider": "EFG",
+          "description": "Pan-European title for qualified geoscientists.",
+          "link": "https://eurogeologists.eu/"
         },
         {
-          "name": "PhD in Geophysics",
-          "institution": "Various Universities",
-          "description": "Research degree in geophysical sciences",
-          "link": "https://www.gradschools.com/programs/geophysics"
+          "name": "Certified Petroleum Geologist",
+          "provider": "American Association of Petroleum Geologists",
+          "description": "Certification for geoscientists in the petroleum industry.",
+          "link": "https://www.aapg.org/"
+        },
+        {
+          "name": "ASBOG Fundamentals of Geology (FG)",
+          "provider": "ASBOG",
+          "description": "Entry-level licensing exam that precedes the PG in many US states.",
+          "link": "https://asbog.org/"
+        },
+        {
+          "name": "Professional Hydrologist (PH)",
+          "provider": "American Institute of Hydrology (AIH)",
+          "description": "Credential for surface water, groundwater, and water quality specializations.",
+          "link": "https://www.aihydrology.org/"
+        },
+        {
+          "name": "Certified Groundwater Professional (CGWP)",
+          "provider": "National Ground Water Association",
+          "description": "Industry-recognized credential for groundwater expertise.",
+          "link": "https://www.ngwa.org/members/credentials/cgwp"
+        },
+        {
+          "name": "IWCF Well Control",
+          "provider": "International Well Control Forum",
+          "description": "Global well control certification for drilling and well operations.",
+          "link": "https://www.iwcf.org/"
         }
       ],
       "links": [
         {
-          "name": "American Geophysical Union",
-          "description": "International scientific society for Earth and space sciences",
+          "name": "American Geophysical Union (AGU)",
+          "description": "Global membership society for Earth and space sciences.",
           "link": "https://www.agu.org/"
         },
         {
-          "name": "Geological Society of America",
-          "description": "Professional society for geoscience professionals",
+          "name": "Geological Society of America (GSA)",
+          "description": "Professional society for advancing geosciences.",
           "link": "https://www.geosociety.org/"
+        },
+        {
+          "name": "Society of Exploration Geophysicists (SEG)",
+          "description": "Membership organization supporting applied geophysics.",
+          "link": "https://seg.org/"
+        },
+        {
+          "name": "European Association of Geoscientists & Engineers (EAGE)",
+          "description": "International geoscience and engineering society with strong industry programs.",
+          "link": "https://eage.org/"
+        },
+        {
+          "name": "Society of Petroleum Engineers (SPE)",
+          "description": "Technical resources and networking for petroleum professionals.",
+          "link": "https://www.spe.org/"
+        },
+        {
+          "name": "SPWLA",
+          "description": "Society of Petrophysicists and Well Log Analysts.",
+          "link": "https://www.spwla.org/"
+        },
+        {
+          "name": "National Ground Water Association (NGWA)",
+          "description": "Association advancing groundwater knowledge and practice.",
+          "link": "https://www.ngwa.org/"
+        },
+        {
+          "name": "USGS",
+          "description": "US Geological Survey—data, maps, hazards, and research.",
+          "link": "https://www.usgs.gov/"
         }
       ]
     },
@@ -257,40 +535,92 @@
         {
           "name": "Associate in Risk Management (ARM)",
           "provider": "The Institutes",
-          "description": "Professional designation in risk management",
+          "description": "Credential for enterprise risk management professionals.",
           "link": "https://www.theinstitutes.org/"
         },
         {
           "name": "Chartered Property Casualty Underwriter (CPCU)",
           "provider": "The Institutes",
-          "description": "Premier designation for property-casualty insurance professionals",
+          "description": "Premier certification for insurance and reinsurance experts.",
           "link": "https://www.theinstitutes.org/"
-        }
-      ],
-      "education": [
-        {
-          "name": "Master's in Risk Management",
-          "institution": "Various Universities",
-          "description": "Advanced degree in risk assessment and management",
-          "link": "https://www.gradschools.com/programs/risk-management"
         },
         {
-          "name": "Actuarial Science Degree",
-          "institution": "Various Universities",
-          "description": "Specialized degree in actuarial mathematics and statistics",
-          "link": "https://www.gradschools.com/programs/actuarial-science"
+          "name": "Chartered Insurance Professional (CIP)",
+          "provider": "Insurance Institute of Canada",
+          "description": "Widely recognized insurance credential in North America.",
+          "link": "https://www.insuranceinstitute.ca/"
+        },
+        {
+          "name": "Associate in Reinsurance (ARe)",
+          "provider": "The Institutes",
+          "description": "Specialized designation focused on treaty and facultative reinsurance.",
+          "link": "https://web.theinstitutes.org/designations-and-certificates/associate-reinsurance-are"
+        },
+        {
+          "name": "Fellow/Associate of the Casualty Actuarial Society (FCAS/ACAS)",
+          "provider": "CAS",
+          "description": "Actuarial designations for P&C risk and pricing.",
+          "link": "https://www.casact.org/become-casualty-actuary"
+        },
+        {
+          "name": "Associate/Fellow of the Society of Actuaries (ASA/FSA)",
+          "provider": "SOA",
+          "description": "Actuarial credentials for life, health, investment, and ERM tracks.",
+          "link": "https://www.soa.org/education/exam-req/"
+        },
+        {
+          "name": "Chartered Enterprise Risk Analyst (CERA)",
+          "provider": "SOA / Global CERA",
+          "description": "Enterprise risk credential spanning insurance and financial services.",
+          "link": "https://www.soa.org/credentials/cera/"
+        },
+        {
+          "name": "ARM-E (Enterprise Risk Management)",
+          "provider": "The Institutes",
+          "description": "ERM-focused variant of the ARM designation.",
+          "link": "https://web.theinstitutes.org/designations-and-certificates/associate-risk-management-enterprise-risk-management-arm-e"
         }
       ],
       "links": [
         {
           "name": "Lloyd's of London",
-          "description": "World's leading insurance and reinsurance marketplace",
+          "description": "World’s leading insurance and reinsurance marketplace.",
           "link": "https://www.lloyds.com/"
         },
         {
-          "name": "Insurance Information Institute",
-          "description": "Industry resource for insurance information",
+          "name": "Insurance Information Institute (III)",
+          "description": "Industry resource for insurance market information.",
           "link": "https://www.iii.org/"
+        },
+        {
+          "name": "International Association of Insurance Supervisors (IAIS)",
+          "description": "Global standard-setting body for insurance regulation.",
+          "link": "https://www.iaisweb.org/"
+        },
+        {
+          "name": "RIMS",
+          "description": "Risk and Insurance Management Society—community and resources.",
+          "link": "https://www.rims.org/"
+        },
+        {
+          "name": "Casualty Actuarial Society (CAS)",
+          "description": "P&C actuarial association, education, and research.",
+          "link": "https://www.casact.org/"
+        },
+        {
+          "name": "Society of Actuaries (SOA)",
+          "description": "Actuarial education and credentials across multiple practice areas.",
+          "link": "https://www.soa.org/"
+        },
+        {
+          "name": "FERMA",
+          "description": "Federation of European Risk Management Associations.",
+          "link": "https://www.ferma.eu/"
+        },
+        {
+          "name": "The Geneva Association",
+          "description": "Insurance industry think tank on risk and economics.",
+          "link": "https://www.genevaassociation.org/"
         }
       ]
     },
@@ -299,40 +629,109 @@
         {
           "name": "Certified Analytics Professional (CAP)",
           "provider": "INFORMS",
-          "description": "Professional certification for analytics practitioners",
+          "description": "Credential for advanced analytics practitioners.",
           "link": "https://www.informs.org/"
         },
         {
           "name": "Google Cloud Professional Data Engineer",
           "provider": "Google Cloud",
-          "description": "Cloud-based data engineering certification",
+          "description": "Certification for cloud-based ML and data engineering.",
           "link": "https://cloud.google.com/certification/data-engineer"
-        }
-      ],
-      "education": [
-        {
-          "name": "Master's in Data Science",
-          "institution": "Various Universities",
-          "description": "Advanced degree in data analysis and machine learning",
-          "link": "https://www.mastersportal.com/studies/data-science"
         },
         {
-          "name": "PhD in Machine Learning",
-          "institution": "Various Universities",
-          "description": "Research degree in artificial intelligence and ML",
-          "link": "https://www.gradschools.com/programs/machine-learning"
+          "name": "AWS Certified Machine Learning – Specialty",
+          "provider": "Amazon Web Services",
+          "description": "Certification for building, training, and deploying ML models in AWS.",
+          "link": "https://aws.amazon.com/certification/certified-machine-learning-specialty/"
+        },
+        {
+          "name": "Microsoft Azure Data Scientist Associate (DP-100)",
+          "provider": "Microsoft",
+          "description": "Design and run ML solutions on Azure.",
+          "link": "https://learn.microsoft.com/certifications/azure-data-scientist/"
+        },
+        {
+          "name": "Google Cloud Professional Machine Learning Engineer",
+          "provider": "Google Cloud",
+          "description": "Production ML systems, MLOps, and responsible AI.",
+          "link": "https://cloud.google.com/certification/machine-learning-engineer"
+        },
+        {
+          "name": "Databricks Certified Machine Learning Professional",
+          "provider": "Databricks",
+          "description": "Applied ML/LLM on the Lakehouse with MLflow and Spark.",
+          "link": "https://www.databricks.com/learn/certification/machine-learning-professional"
+        },
+        {
+          "name": "SnowPro Core Certification",
+          "provider": "Snowflake",
+          "description": "Foundational credential for Snowflake data platform.",
+          "link": "https://www.snowflake.com/en/certifications/snowpro-core/"
+        },
+        {
+          "name": "CKA (Certified Kubernetes Administrator)",
+          "provider": "The Linux Foundation",
+          "description": "Core platform/infra skill for ML and data services.",
+          "link": "https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/"
+        },
+        {
+          "name": "TensorFlow Developer Certificate",
+          "provider": "Google/DeepLearning.AI",
+          "description": "Hands-on model building and deployment with TensorFlow.",
+          "link": "https://www.tensorflow.org/certificate"
+        },
+        {
+          "name": "NVIDIA Deep Learning Institute Certificates",
+          "provider": "NVIDIA",
+          "description": "Practical GPU-accelerated AI courses with certificates.",
+          "link": "https://www.nvidia.com/en-us/training/"
         }
       ],
       "links": [
         {
+          "name": "INFORMS",
+          "description": "Society for analytics, operations research, and AI.",
+          "link": "https://www.informs.org/"
+        },
+        {
+          "name": "ACM (Association for Computing Machinery)",
+          "description": "Global membership society for computing professionals.",
+          "link": "https://www.acm.org/"
+        },
+        {
+          "name": "IEEE Computational Intelligence Society",
+          "description": "Membership body advancing neural networks, fuzzy systems, and evolutionary computation.",
+          "link": "https://cis.ieee.org/"
+        },
+        {
           "name": "Kaggle",
-          "description": "Platform for data science competitions and learning",
+          "description": "Competitions, datasets, and notebooks to sharpen ML skills.",
           "link": "https://www.kaggle.com/"
         },
         {
-          "name": "GitHub",
-          "description": "Code repository and collaboration platform",
-          "link": "https://github.com/"
+          "name": "Papers with Code",
+          "description": "Leaderboards, code, and SOTA tracking for ML research.",
+          "link": "https://paperswithcode.com/"
+        },
+        {
+          "name": "Hugging Face",
+          "description": "Models, datasets, and MLOps tools for NLP and beyond.",
+          "link": "https://huggingface.co/"
+        },
+        {
+          "name": "MLOps Community",
+          "description": "Meetups, Slack, and resources for production ML.",
+          "link": "https://mlops.community/"
+        },
+        {
+          "name": "ODSC",
+          "description": "Open Data Science Conference—talks, training, and networking.",
+          "link": "https://odsc.com/"
+        },
+        {
+          "name": "fast.ai",
+          "description": "Practical deep learning courses and community.",
+          "link": "https://www.fast.ai/"
         }
       ]
     },
@@ -340,41 +739,90 @@
       "certifications": [
         {
           "name": "Certified Broadcast Meteorologist (CBM)",
-          "provider": "American Meteorological Society",
-          "description": "Professional certification for broadcast meteorologists",
-          "link": "https://www.ametsoc.org/"
+          "provider": "AMS",
+          "description": "Professional excellence in broadcast meteorology.",
+          "link": "https://www.ametsoc.org/index.cfm/ams/education-careers/ams-professional-certification-programs/cbm-certified-broadcast-meteorologist/"
         },
         {
           "name": "Certified Consulting Meteorologist (CCM)",
-          "provider": "American Meteorological Society",
-          "description": "Professional certification for consulting meteorologists",
-          "link": "https://www.ametsoc.org/"
-        }
-      ],
-      "education": [
-        {
-          "name": "Master's in Meteorology",
-          "institution": "Various Universities",
-          "description": "Advanced degree in atmospheric sciences and weather prediction",
-          "link": "https://www.gradschools.com/programs/meteorology"
+          "provider": "AMS",
+          "description": "Credential for professional consulting meteorologists.",
+          "link": "https://www.ametsoc.org/index.cfm/ams/education-careers/ams-professional-certification-programs/ccm-certified-consulting-meteorologists/"
         },
         {
-          "name": "PhD in Atmospheric Sciences",
-          "institution": "Various Universities",
-          "description": "Research degree in atmospheric physics and dynamics",
-          "link": "https://www.gradschools.com/programs/atmospheric-sciences"
+          "name": "Chartered Meteorologist (CMet)",
+          "provider": "Royal Meteorological Society (RMetS)",
+          "description": "Chartered title for professional meteorologists in the UK and internationally.",
+          "link": "https://www.rmets.org/"
+        },
+        {
+          "name": "NWA Broadcaster Seal of Approval",
+          "provider": "National Weather Association",
+          "description": "Broadcast credential valued across US media markets.",
+          "link": "https://nwas.org/seals/broadcast-seal/"
+        },
+        {
+          "name": "FAA Part 107 Remote Pilot",
+          "provider": "FAA",
+          "description": "Commercial drone pilot certification for aerial weather observations and inspections.",
+          "link": "https://www.faa.gov/uas/commercial_operators/become_a_drone_pilot"
         }
       ],
       "links": [
         {
-          "name": "National Weather Service",
-          "description": "US government weather forecasting service",
-          "link": "https://www.weather.gov/"
+          "name": "American Meteorological Society (AMS)",
+          "description": "US professional society for weather and climate scientists.",
+          "link": "https://www.ametsoc.org/"
         },
         {
-          "name": "World Meteorological Organization",
-          "description": "UN specialized agency for weather, climate and water",
+          "name": "World Meteorological Organization (WMO)",
+          "description": "UN specialized agency for weather, climate, and water.",
           "link": "https://public.wmo.int/"
+        },
+        {
+          "name": "National Weather Association (NWA)",
+          "description": "US society supporting operational meteorology.",
+          "link": "https://nwas.org/"
+        },
+        {
+          "name": "Weather Risk Management Association (WRMA)",
+          "description": "Industry association for weather risk transfer and derivatives.",
+          "link": "https://wrma.org/"
+        },
+        {
+          "name": "Royal Meteorological Society (RMetS)",
+          "description": "International membership society for atmospheric science.",
+          "link": "https://www.rmets.org/"
+        },
+        {
+          "name": "UCAR/NCAR",
+          "description": "Community programs and research in atmospheric sciences.",
+          "link": "https://www.ucar.edu/"
+        },
+        {
+          "name": "COMET MetEd",
+          "description": "Free, high-quality meteorology and hydrology training modules.",
+          "link": "https://www.meted.ucar.edu/"
+        },
+        {
+          "name": "NOAA Climate Prediction Center (CPC)",
+          "description": "Official US climate outlooks, teleconnections, and diagnostics.",
+          "link": "https://www.cpc.ncep.noaa.gov/"
+        },
+        {
+          "name": "ECMWF",
+          "description": "Global NWP center with world-class reanalysis and forecast tools.",
+          "link": "https://www.ecmwf.int/"
+        },
+        {
+          "name": "EUMETSAT",
+          "description": "European satellite agency with data for weather and climate.",
+          "link": "https://www.eumetsat.int/"
+        },
+        {
+          "name": "UK Met Office",
+          "description": "Operational NWP, training, and research resources.",
+          "link": "https://www.metoffice.gov.uk/"
         }
       ]
     }
