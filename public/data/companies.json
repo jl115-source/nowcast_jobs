@@ -1627,7 +1627,7 @@
     "employees": "1000+ (est.)",
     "description": "Global energy trading arm dealing in power, natural gas, LNG, carbon credits, and environmental certificates, pushing greener structured products.",
     "website": "https://uniper.energy",
-    "categories": ["Energy & Renewables", "Commodities", "Carbon Markets"],
+    "categories": ["Energy & Renewables", "Commodities",
     "isHiring": true
   },
   {
@@ -1857,7 +1857,7 @@
     "employees": "50‑100 (est.)",
     "description": "Deploys AI‑equipped stratospheric balloons to capture high‑resolution disaster imagery, improving speed and accuracy in post‑disaster insurance claims.",
     "website": "https://nearspacelabs.com",
-    "categories": ["Insurance & Reinsurance", "Tech (Data Science & ML)", "Disaster Recovery"],
+    "categories": ["Insurance & Reinsurance", "Tech (Data Science & ML)"],
     "isHiring": true
   },
   {
@@ -2127,7 +2127,7 @@
     "employees": "200+",
     "description": "Airborne geophysical survey provider specializing in VTEM, ZTEM, and magnetic surveys for mineral exploration.",
     "website": "https://geotech.ca",
-    "categories": ["Geophysics & Geology", "Mining & Exploration"],
+    "categories": ["Geophysics & Geology" ],
     "isHiring": true
   },
   {
@@ -2137,7 +2137,7 @@
     "employees": "50–100",
     "description": "Manufacturer of electromagnetic geophysical instrumentation used in mineral, geothermal, and groundwater exploration.",
     "website": "https://phoenix-geophysics.com",
-    "categories": ["Geophysics & Geology", "Mining & Exploration"],
+    "categories": ["Geophysics & Geology"],
     "isHiring": true
   },
   {
@@ -2157,7 +2157,7 @@
     "employees": "1,000+",
     "description": "Multidisciplinary geoscience and engineering consultancy offering geophysical surveying, monitoring, and geotechnical services.",
     "website": "https://dmt-group.com",
-    "categories": ["Geophysics & Geology", "Mining & Exploration"],
+    "categories": ["Geophysics & Geology" ],
     "isHiring": true
   },
   {
@@ -2177,7 +2177,7 @@
     "employees": "140+",
     "description": "Space-powered geoscience company delivering AI-driven 3D subsurface mapping in real time via nanosatellite and ground sensor fusion (ExoSphere platform).",
     "website": "https://fleetspace.com",
-    "categories": ["Geophysics & Geology", "Tech (Data Science & ML)", "Mining & Exploration"],
+    "categories": ["Geophysics & Geology", "Tech (Data Science & ML)" ,
     "isHiring": true
   },
   {
@@ -2237,7 +2237,7 @@
     "employees": "400+ professionals",
     "description": "Provides airborne survey-based mapping of natural capital—including critical minerals, groundwater, geothermal potential, biodiversity, hydrocarbons, and CCS planning.",
     "website": "https://xcaliburmp.com",
-    "categories": ["Geophysics & Geology", "Mining & Exploration", "Energy & Renewables"],
+    "categories": ["Geophysics & Geology", "Energy & Renewables"],
     "isHiring": true
   },
   {
@@ -2247,7 +2247,7 @@
     "employees": "Varies",
     "description": "Non-intrusive underground mapping platform combining multisensor fusion, 3D imaging, and AI for hazard detection and project risk reduction.",
     "website": "https://exodigo.com",
-    "categories": ["Geophysics & Geology", "Tech (Data Science & ML)", "Mining & Exploration"],
+    "categories": ["Geophysics & Geology", "Tech (Data Science & ML)" ],
     "isHiring": true
   },
   {
@@ -2267,7 +2267,7 @@
     "employees": "Varies",
     "description": "Pioneer in airborne electromagnetic geophysics, delivering high-resolution subsurface data for groundwater, minerals, environmental, and geotechnical mapping.",
     "website": "https://skytem.com",
-    "categories": ["Geophysics & Geology", "Mining & Exploration", "Energy & Renewables"],
+    "categories": ["Geophysics & Geology",  "Energy & Renewables"],
     "isHiring": true
   },
   {
@@ -2277,7 +2277,7 @@
     "employees": "Varies",
     "description": "Provides geophysical survey services for energy, mineral, and groundwater resource mapping using advanced airborne sensors (e.g., wing‐tip magnetometers).",
     "website": "https://sanborn.com/sanborn-geophysics",
-    "categories": ["Geophysics & Geology", "Mining & Exploration", "Energy & Renewables"],
+    "categories": ["Geophysics & Geology",   "Energy & Renewables"],
     "isHiring": true
   },
   {
