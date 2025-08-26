@@ -1727,11 +1727,11 @@
     "employees": "Crowded within CME Group",
     "description": "Pioneer exchange for listed weather derivatives; trading volume and open interest have surged recently amid growing climate volatility.",
     "website": "https://cmegroup.com",
-    "categories": ["Market Infrastructure", "Weather‑Trading"],
+    "categories": [ "Weather‑Trading"],
     "isHiring": true
   },
     {
-    "id": 190,
+    "id": 4970,
     "name": "RMS (Risk Management Solutions)",
     "location": "USA / Global",
     "employees": "500+ (est.)",
@@ -1741,7 +1741,7 @@
     "isHiring": true
   },
   {
-    "id": 191,
+    "id": 4980,
     "name": "Verisk Analytics (AIR Worldwide, AER)",
     "location": "USA / Global",
     "employees": "7,800+",
@@ -1751,7 +1751,7 @@
     "isHiring": true
   },
   {
-    "id": 192,
+    "id": 4990,
     "name": "Fathom",
     "location": "UK / Global",
     "employees": "50‑100 (est.)",
@@ -1761,7 +1761,7 @@
     "isHiring": true
   },
   {
-    "id": 193,
+    "id": 5000,
     "name": "Reask",
     "location": "UK / Global",
     "employees": "50‑100 (est.)",
@@ -1827,7 +1827,7 @@
     "employees": "20‑50 (est.)",
     "description": "Uses AI and satellite imaging to build high‑resolution flood risk maps; supports parametric flood insurance and flood resilience planning globally.",
     "website": "https://floodbase.com",
-    "categories": ["Insurance & Reinsurance", "Climate Science", "Tech (Data Science & ML)", "Parametric Insurance"],
+    "categories": ["Insurance & Reinsurance", "Climate Science", "Tech (Data Science & ML)" ,
     "isHiring": true
   },
   {
@@ -1867,7 +1867,7 @@
     "employees": "100‑200 (est.)",
     "description": "Mutual parametric insurer for African Union member states, providing climate‑linked risk pooling and parametric insurance solutions for drought, health, and disasters.",
     "website": "https://arc.int",
-    "categories": ["Insurance & Reinsurance", "Parametric Insurance", "Climate Science"],
+    "categories": ["Insurance & Reinsurance",  "Climate Science"],
     "isHiring": true
   },
     {
