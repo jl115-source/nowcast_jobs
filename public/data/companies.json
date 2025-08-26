@@ -781,16 +781,6 @@
       "isHiring": true
     },
     {
-      "id": 79,
-      "name": "ClimaCell Research",
-      "location": "Tel Aviv, Israel",
-      "employees": "50-200",
-      "description": "Weather research group developing AI-based models for atmospheric and climate forecasting.",
-      "website": "https://climacell.co",
-      "categories": ["Weather & Meteorology", "Climate Science"],
-      "isHiring": false
-    },
-    {
       "id": 80,
       "name": "Geospace Technologies",
       "location": "Houston, USA",
@@ -1587,7 +1577,7 @@
     "employees": "50+",
     "description": "Startup building an hourly electricity price futures exchange to manage volatility from extreme weather and renewable intermittency.",
     "website": "https://electronx.com",
-    "categories": ["Energy & Renewables", "Commodities", "Weather‑Trading", "Market Infrastructure"],
+    "categories": ["Energy & Renewables", "Commodities", "Weather‑Trading"],
     "isHiring": true
   },
   {
