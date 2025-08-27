@@ -51,32 +51,6 @@
       ]
     },
     {
-      "id": "renewable-energy-world-2024",
-      "title": "Renewable Energy World Conference & Expo",
-      "description": "Leading renewable energy event covering solar, wind, storage, and grid modernization technologies.",
-      "categories": [
-        "energy",
-        "tech"
-      ],
-      "location": "Anaheim, CA, USA",
-      "country": "USA",
-      "startDate": "2024-10-15",
-      "endDate": "2024-10-17",
-      "website": "https://www.renewableenergyworld.com",
-      "type": "Expo",
-      "isVirtual": false,
-      "linkedJobs": [
-        "renewable-energy-engineer-tesla",
-        "energy-analyst-nrel"
-      ],
-      "tags": [
-        "solar",
-        "wind",
-        "energy storage",
-        "grid modernization"
-      ]
-    },
-    {
       "id": "climate-adaptation-summit-2024",
       "title": "Climate Adaptation Summit",
       "description": "International summit on climate adaptation strategies and resilience building for communities and ecosystems.",
@@ -99,32 +73,6 @@
         "resilience",
         "climate impacts",
         "policy"
-      ]
-    },
-    {
-      "id": "fintech-climate-2024",
-      "title": "FinTech for Climate Solutions Summit",
-      "description": "Exploring how financial technology can accelerate climate action and sustainable finance solutions.",
-      "categories": [
-        "banking",
-        "tech",
-        "climate"
-      ],
-      "location": "New York, NY, USA",
-      "country": "USA",
-      "startDate": "2024-11-05",
-      "endDate": "2024-11-06",
-      "website": "https://www.fintechclimate2024.com",
-      "type": "Summit",
-      "isVirtual": false,
-      "linkedJobs": [
-        "climate-finance-analyst-goldman"
-      ],
-      "tags": [
-        "fintech",
-        "sustainable finance",
-        "climate tech",
-        "innovation"
       ]
     },
     {

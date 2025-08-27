@@ -67,7 +67,7 @@
       "employees": "100-200",
       "description": "MIT's hub for climate change science, engineering, and policy research and education.",
       "website": "https://climate.mit.edu",
-      "categories": ["Academia & Research", "Climate Science"],
+      "categories": ["Academia & Research"],
       "isHiring": false
     },
     {
@@ -167,7 +167,7 @@
       "employees": "12000+",
       "description": "National Oceanic and Atmospheric Administration providing weather, climate, and ocean services.",
       "website": "https://noaa.gov",
-      "categories": ["Weather & Meteorology", "Climate Science"],
+      "categories": ["Academia & Research"],
       "isHiring": false
     },
     {
@@ -197,7 +197,7 @@
       "employees": "8000+",
       "description": "Leading research university with world-class programs in climate science and environmental research.",
       "website": "https://cam.ac.uk",
-      "categories": ["Academia & Research", "Climate Science"],
+      "categories": ["Academia & Research"],
       "isHiring": true
     },
     {
@@ -437,7 +437,7 @@
       "employees": "15000+",
       "description": "Ivy League research university with leading programs in environmental studies and climate science.",
       "website": "https://yale.edu",
-      "categories": ["Academia & Research", "Climate Science"],
+      "categories": ["Academia & Research"],
       "isHiring": true
     },
     {
@@ -577,7 +577,7 @@
       "employees": "18000+",
       "description": "Leading research university with world-class Earth and environmental sciences programs.",
       "website": "https://columbia.edu",
-      "categories": ["Academia & Research", "Climate Science"],
+      "categories": ["Academia & Research"],
       "isHiring": true
     },
     {
@@ -897,7 +897,7 @@
     "employees": "800+",
     "description": "World-leading research institute in earth sciences, geology, and climate studies.",
     "website": "https://lamont.columbia.edu",
-    "categories": ["Geophysics & Geology", "Academia & Research"],
+      "categories": ["Academia & Research"],
     "isHiring": true
   },
   {
@@ -907,7 +907,7 @@
     "employees": "400+",
     "description": "Research institute studying climate variability, climate change, and Earth system science.",
     "website": "https://mpimet.mpg.de",
-    "categories": ["Climate Science", "Academia & Research"],
+      "categories": ["Academia & Research"],
     "isHiring": true
   },
   {
@@ -937,7 +937,7 @@
     "employees": "600+",
     "description": "NOAA lab dedicated to understanding climate and weather through modeling and theory.",
     "website": "https://gfdl.noaa.gov",
-    "categories": ["Weather & Meteorology", "Climate Science"],
+      "categories": ["Academia & Research"],
     "isHiring": true
   },
   {
@@ -947,7 +947,7 @@
     "employees": "1500+",
     "description": "Global leader in ocean, earth, and climate science research and education.",
     "website": "https://scripps.ucsd.edu",
-    "categories": ["Climate Science", "Academia & Research"],
+      "categories": ["Academia & Research"],
     "isHiring": true
   },
   {
@@ -957,7 +957,7 @@
     "employees": "20000+ (ESA overall)",
     "description": "Coordinates climate research, satellite observations, and Earth system science projects.",
     "website": "https://climate.esa.int",
-    "categories": ["Climate Science", "Academia & Research"],
+      "categories": ["Academia & Research"],
     "isHiring": true
   },
   {
@@ -987,7 +987,7 @@
     "employees": "200+",
     "description": "Applied climate research center focusing on climate risk management and prediction.",
     "website": "https://iri.columbia.edu",
-    "categories": ["Climate Science", "Academia & Research"],
+      "categories": ["Academia & Research"],
     "isHiring": true
   },
   {
@@ -1007,7 +1007,7 @@
     "employees": "33000+ (CNRS overall)",
     "description": "France’s largest research institution with extensive climate and geophysics programs.",
     "website": "https://cnrs.fr",
-    "categories": ["Academia & Research", "Climate Science"],
+      "categories": ["Academia & Research"],
     "isHiring": true
   },
   {
@@ -1017,7 +1017,7 @@
     "employees": "300+",
     "description": "ETH Zurich research institute specializing in climate dynamics and atmospheric science.",
     "website": "https://iac.ethz.ch",
-    "categories": ["Academia & Research", "Climate Science"],
+      "categories": ["Academia & Research"],
     "isHiring": true
   },
   {
@@ -1067,7 +1067,7 @@
     "employees": "900+",
     "description": "Leading Chinese research institute in atmospheric and climate sciences.",
     "website": "http://www.iap.cas.cn",
-    "categories": ["Climate Science", "Academia & Research"],
+      "categories": ["Academia & Research"],
     "isHiring": true
   },
   {
@@ -1077,7 +1077,7 @@
     "employees": "200+",
     "description": "Research institute focused on sustainability science, climate resilience, and ecosystems.",
     "website": "https://stockholmresilience.su.se",
-    "categories": ["Climate Science", "Academia & Research"],
+      "categories": ["Academia & Research"],
     "isHiring": true
   },
   {
@@ -1087,7 +1087,7 @@
     "employees": "150+",
     "description": "World-leading institute researching climate science, policy, and innovation.",
     "website": "https://imperial.ac.uk/grantham",
-    "categories": ["Academia & Research", "Climate Science"],
+      "categories": ["Academia & Research"],
     "isHiring": true
   },
   {
@@ -1097,7 +1097,7 @@
     "employees": "100+",
     "description": "Research organization providing climate science, data analysis, and policy support.",
     "website": "https://climateanalytics.org",
-    "categories": ["Climate Science", "Academia & Research"],
+      "categories": ["Academia & Research"],
     "isHiring": true
   },
   {
@@ -1107,7 +1107,7 @@
     "employees": "150+",
     "description": "Independent Norwegian institute conducting interdisciplinary climate research.",
     "website": "https://cicero.oslo.no",
-    "categories": ["Climate Science", "Academia & Research"],
+      "categories": ["Academia & Research"],
     "isHiring": true
   },
   {
@@ -1127,7 +1127,7 @@
     "employees": "350+",
     "description": "Independent research institute conducting policy-relevant climate and systems analysis.",
     "website": "https://iiasa.ac.at",
-    "categories": ["Climate Science", "Academia & Research"],
+      "categories": ["Academia & Research"],
     "isHiring": true
   },
   {
@@ -1137,7 +1137,7 @@
     "employees": "100+",
     "description": "International research center focused on climate change causes and impacts.",
     "website": "https://bc3research.org",
-    "categories": ["Climate Science", "Academia & Research"],
+      "categories": ["Academia & Research"],
     "isHiring": true
   },
   {
@@ -1157,7 +1157,7 @@
     "employees": "150+",
     "description": "UK network of universities conducting interdisciplinary climate change research.",
     "website": "https://tyndall.ac.uk",
-    "categories": ["Climate Science", "Academia & Research"],
+      "categories": ["Academia & Research"],
     "isHiring": true
   },
   {
@@ -1167,7 +1167,7 @@
     "employees": "200+",
     "description": "Research unit of Columbia University in partnership with NASA, focusing on climate modeling.",
     "website": "https://ccsr.columbia.edu",
-    "categories": ["Climate Science", "Academia & Research"],
+      "categories": ["Academia & Research"],
     "isHiring": true
   },
   {
@@ -1187,7 +1187,7 @@
       "employees": "200+",
       "description": "Non-profit organization driving ambitious climate targets through insight, innovation, and partnerships.",
       "website": "https://carbontrust.com",
-      "categories": ["Climate Science", "Academia & Research"],
+      "categories": ["Academia & Research"],
       "isHiring": true
     },
     {
@@ -1197,7 +1197,7 @@
       "employees": "150+",
       "description": "EU initiative fostering climate innovation through research and entrepreneurial programs.",
       "website": "https://climate-kic.org",
-      "categories": ["Climate Science", "Academia & Research"],
+      "categories": ["Academia & Research"],
       "isHiring": true
     },
     {
@@ -1237,7 +1237,7 @@
       "employees": "200+",
       "description": "UNESCO institute advancing climate and Earth system physics research in developing countries.",
       "website": "https://ictp.it",
-      "categories": ["Climate Science", "Academia & Research"],
+      "categories": ["Academia & Research"],
       "isHiring": true
     },
     {
@@ -1247,7 +1247,7 @@
       "employees": "75+",
       "description": "Research center analyzing climate policy and impacts with interdisciplinary methods.",
       "website": "https://icri.ca",
-      "categories": ["Climate Science", "Academia & Research"],
+      "categories": ["Academia & Research"],
       "isHiring": true
     },
     {
@@ -1277,7 +1277,7 @@
       "employees": "400+",
       "description": "University institute conducting climate and atmosphere-ocean interaction studies.",
       "website": "http://www.aori.u-tokyo.ac.jp",
-      "categories": ["Climate Science", "Academia & Research"],
+      "categories": ["Academia & Research"],
       "isHiring": true
     },
     {
@@ -1287,7 +1287,7 @@
       "employees": "60+",
       "description": "Applies climate change science to regional resilience and planning in western North America.",
       "website": "https://pcic.ca",
-      "categories": ["Climate Science", "Academia & Research"],
+      "categories": ["Academia & Research"],
       "isHiring": true
     },
     {
@@ -1297,7 +1297,7 @@
       "employees": "3000+ (JRC overall)",
       "description": "European Commission’s science and knowledge service with climate and environmental research.",
       "website": "https://ec.europa.eu/jrc",
-      "categories": ["Climate Science", "Academia & Research"],
+      "categories": ["Academia & Research"],
       "isHiring": true
     },
     {
@@ -1307,7 +1307,7 @@
       "employees": "600+ (staff)",
       "description": "Professional society supporting weather, water, and climate science through education and research.",
       "website": "https://ametsoc.org",
-      "categories": ["Climate Science", "Academia & Research"],
+      "categories": ["Academia & Research"],
       "isHiring": true
     },
     {
@@ -1317,7 +1317,7 @@
       "employees": "100+",
       "description": "Global environmental NGO conducting citizen science expeditions in climate and Earth systems.",
       "website": "https://earthwatch.org",
-      "categories": ["Climate Science", "Academia & Research"],
+      "categories": ["Academia & Research"],
       "isHiring": true
     },
     {
@@ -1347,7 +1347,7 @@
       "employees": "100+",
       "description": "University research group focusing on atmospheric modeling and climate predictions.",
       "website": "https://cwcs.ncsu.edu",
-      "categories": ["Weather & Meteorology", "Climate Science"],
+      "categories": ["Academia & Research"],
       "isHiring": true
     },
     {
@@ -1387,7 +1387,7 @@
       "employees": "60+",
       "description": "International research network tracking carbon cycle, greenhouse emissions, and climate feedbacks.",
       "website": "https://globalcarbonproject.org",
-      "categories": ["Climate Science", "Academia & Research"],
+      "categories": ["Academia & Research"],
       "isHiring": true
     },
     {
@@ -1397,7 +1397,7 @@
       "employees": "50+",
       "description": "Regional branch of climate science NGO focusing on sustainability and climate vulnerability.",
       "website": "https://climateanalytics.org",
-      "categories": ["Climate Science", "Academia & Research"],
+      "categories": ["Academia & Research"],
       "isHiring": true
     },
     {
@@ -1427,7 +1427,7 @@
       "employees": "100+",
       "description": "Global network for sustainability science aimed at supporting research on human–Earth systems.",
       "website": "https://futureearth.org",
-      "categories": ["Climate Science", "Academia & Research"],
+      "categories": ["Academia & Research"],
       "isHiring": true
     },
     {
@@ -1437,7 +1437,7 @@
       "employees": "40+",
       "description": "Think tank conducting climate resilience and geophysical risk research for urban policy.",
       "website": "https://climateemergencyinstitute.org",
-      "categories": ["Climate Science", "Academia & Research"],
+      "categories": ["Academia & Research"],
       "isHiring": true
     },
     {
@@ -1457,7 +1457,7 @@
       "employees": "500+ (UNEP overall)",
       "description": "UN’s science branch addressing climate impacts, resilience, and geophysical risks.",
       "website": "https://unenvironment.org",
-      "categories": ["Climate Science", "Academia & Research"],
+      "categories": ["Academia & Research"],
       "isHiring": true
     },
     {
