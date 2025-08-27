@@ -337,7 +337,7 @@
       "employees": "2000+",
       "description": "UK's national weather service providing meteorological services and climate science research.",
       "website": "https://metoffice.gov.uk",
-      "categories": ["Weather & Meteorology", "Climate Science"],
+      "categories": ["Academia & Research"],
       "isHiring": true
     },
     {
@@ -637,7 +637,7 @@
       "employees": "2,700+",
       "description": "US national laboratory dedicated to renewable energy and energy efficiency research and development.",
       "website": "https://nrel.gov",
-      "categories": ["Energy & Renewables", "Climate Science"],
+      "categories": ["Academia & Research"],
       "isHiring": true
     },
     {
@@ -917,7 +917,7 @@
     "employees": "500+",
     "description": "UK research organization focused on polar science, climate, and glaciology.",
     "website": "https://bas.ac.uk",
-    "categories": ["Climate Science", "Geophysics & Geology"],
+      "categories": ["Academia & Research"],
     "isHiring": true
   },
   {
@@ -927,7 +927,7 @@
     "employees": "1200+",
     "description": "German institute conducting polar and marine research in climate and earth sciences.",
     "website": "https://awi.de",
-    "categories": ["Climate Science", "Geophysics & Geology"],
+      "categories": ["Academia & Research"],
     "isHiring": true
   },
   {
@@ -967,7 +967,7 @@
     "employees": "500+",
     "description": "UK’s leading center for climate science and services, part of the UK Met Office.",
     "website": "https://metoffice.gov.uk/research/climate",
-    "categories": ["Weather & Meteorology", "Climate Science"],
+      "categories": ["Academia & Research"],
     "isHiring": true
   },
   {
@@ -977,7 +977,7 @@
     "employees": "700+",
     "description": "National meteorological service conducting research in climate, space, and weather sciences.",
     "website": "https://fmi.fi",
-    "categories": ["Weather & Meteorology", "Climate Science"],
+      "categories": ["Academia & Research"],
     "isHiring": true
   },
   {
@@ -997,7 +997,7 @@
     "employees": "1000+",
     "description": "Independent organization conducting ocean and climate research globally.",
     "website": "https://whoi.edu",
-    "categories": ["Climate Science", "Geophysics & Geology"],
+      "categories": ["Academia & Research"],
     "isHiring": true
   },
   {
@@ -1027,7 +1027,7 @@
     "employees": "450+",
     "description": "Dutch national weather service conducting climate and geophysical research.",
     "website": "https://knmi.nl",
-    "categories": ["Weather & Meteorology", "Climate Science"],
+      "categories": ["Academia & Research"],
     "isHiring": true
   },
   {
@@ -1037,7 +1037,7 @@
     "employees": "1200+",
     "description": "Japanese research agency for ocean, earth, and climate science.",
     "website": "https://jamstec.go.jp",
-    "categories": ["Climate Science", "Geophysics & Geology"],
+      "categories": ["Academia & Research"],
     "isHiring": true
   },
   {
@@ -1117,7 +1117,7 @@
     "employees": "600+",
     "description": "Research institute focused on climate, freshwater, and marine sciences.",
     "website": "https://niwa.co.nz",
-    "categories": ["Climate Science", "Weather & Meteorology"],
+      "categories": ["Academia & Research"],
     "isHiring": true
   },
   {
@@ -1147,7 +1147,7 @@
     "employees": "1000+",
     "description": "Research institute focused on ocean science, marine ecosystems, and climate interactions.",
     "website": "https://geomar.de",
-    "categories": ["Climate Science", "Geophysics & Geology"],
+      "categories": ["Academia & Research"],
     "isHiring": true
   },
   {
@@ -1267,7 +1267,7 @@
       "employees": "1600+",
       "description": "Sweden’s government agency for meteorology and climate services and research.",
       "website": "https://smhi.se",
-      "categories": ["Weather & Meteorology", "Climate Science"],
+      "categories": ["Academia & Research"],
       "isHiring": true
     },
     {
@@ -1327,7 +1327,7 @@
       "employees": "500+",
       "description": "India’s premier oceanographic institute conducting climate and marine geophysics research.",
       "website": "https://nio.org",
-      "categories": ["Geophysics & Geology", "Climate Science"],
+      "categories": ["Academia & Research"],
       "isHiring": true
     },
     {
@@ -1337,7 +1337,7 @@
       "employees": "300+",
       "description": "Research on marine climate, coastal geophysics, and ecosystem dynamics.",
       "website": "http://www.imsse.ac.cn",
-      "categories": ["Climate Science", "Geophysics & Geology"],
+      "categories": ["Academia & Research"],
       "isHiring": true
     },
     {
@@ -1357,7 +1357,7 @@
       "employees": "200+",
       "description": "Research centre focusing on environmental and climate processes in polar and alpine regions.",
       "website": "https://instaar.colorado.edu",
-      "categories": ["Climate Science", "Geophysics & Geology"],
+      "categories": ["Academia & Research"],
       "isHiring": true
     },
     {
@@ -1367,7 +1367,7 @@
       "employees": "300+",
       "description": "UK national climatology centre conducting climate modeling and impact assessments.",
       "website": "https://metoffice.gov.uk/research",
-      "categories": ["Climate Science", "Weather & Meteorology"],
+      "categories": ["Academia & Research"],
       "isHiring": true
     },
     {
@@ -1377,7 +1377,7 @@
       "employees": "150+",
       "description": "Conducts ecological and climate-related geophysical research in mountain environments.",
       "website": "https://www.fs.usda.gov/rmrs",
-      "categories": ["Climate Science", "Geophysics & Geology"],
+      "categories": ["Academia & Research"],
       "isHiring": true
     },
     {
@@ -1447,7 +1447,7 @@
       "employees": "60+",
       "description": "International nonprofit providing geophysical risk models for seismic and climate-related hazards.",
       "website": "https://gemfoundation.org",
-      "categories": ["Geophysics & Geology", "Climate Science"],
+      "categories": ["Academia & Research"],
       "isHiring": true
     },
     {
@@ -1467,7 +1467,7 @@
       "employees": "100+",
       "description": "Regional climate research and weather forecasting center supporting development in Africa.",
       "website": "https://acmad.int",
-      "categories": ["Weather & Meteorology", "Climate Science"],
+      "categories": ["Academia & Research"],
       "isHiring": true
     },
     {
@@ -1477,7 +1477,7 @@
       "employees": "80+",
       "description": "Research institute focused on tectonics, geophysical hazards, and climate-geology interactions.",
       "website": "https://stelio.org.tr",
-      "categories": ["Geophysics & Geology", "Climate Science"],
+      "categories": ["Academia & Research"],
       "isHiring": true
     },
     {
@@ -1857,7 +1857,7 @@
     "employees": "100‑200 (est.)",
     "description": "Mutual parametric insurer for African Union member states, providing climate‑linked risk pooling and parametric insurance solutions for drought, health, and disasters.",
     "website": "https://arc.int",
-    "categories": ["Insurance & Reinsurance",  "Climate Science"],
+      "categories": ["Academia & Research"],
     "isHiring": true
   },
     {
@@ -1988,16 +1988,6 @@
     "description": "Deploys nanosatellites for thermal, infrared and visible imaging—used for wildfire detection, environmental monitoring, and climate threat forecasting.",
     "website": "https://aistechaspace.com",
     "categories": ["Climate Science", "Tech (Data Science & ML)"],
-    "isHiring": true
-  },
-  {
-    "id": 213,
-    "name": "Delos",
-    "location": "USA",
-    "employees": "Varies",
-    "description": "Uses machine learning and satellite data to assess wildfire risk at the property level—focusing on insurability in high-risk areas.",
-    "website": "https://delos.com",
-    "categories": ["Insurance & Reinsurance", "Climate Science", "Tech (Data Science & ML)"],
     "isHiring": true
   },
   {
