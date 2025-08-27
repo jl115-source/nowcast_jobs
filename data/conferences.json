@@ -1,55 +1,13 @@
 {
   "conferences": [
     {
-      "id": "cop29-2024",
-      "title": "COP29 Climate Summit",
-      "description": "The 29th Conference of the Parties to the United Nations Framework Convention on Climate Change, focusing on global climate action and policy.",
-      "categories": ["climate", "energy"],
-      "location": "Baku, Azerbaijan",
-      "country": "Azerbaijan",
-      "startDate": "2024-11-11",
-      "endDate": "2024-11-22",
-      "website": "https://cop29.az",
-      "type": "Summit",
-      "isVirtual": false,
-      "linkedJobs": ["climate-scientist-noaa", "climate-policy-analyst-un"],
-      "tags": ["climate policy", "international cooperation", "sustainability"]
-    },
-    {
-      "id": "agu-fall-2024",
-      "title": "AGU Fall Meeting 2024",
-      "description": "The largest Earth and space science meeting in the world, bringing together researchers, educators, and students.",
-      "categories": ["academia", "geophysics", "climate"],
-      "location": "Washington, DC, USA",
-      "country": "USA",
-      "startDate": "2024-12-09",
-      "endDate": "2024-12-13",
-      "website": "https://www.agu.org/fall-meeting",
-      "type": "Conference",
-      "isVirtual": false,
-      "linkedJobs": ["research-scientist-mit", "postdoc-climate-modeling-stanford"],
-      "tags": ["earth science", "research", "networking", "academia"]
-    },
-    {
-      "id": "renewable-energy-world-2024",
-      "title": "Renewable Energy World Conference & Expo",
-      "description": "Leading renewable energy event covering solar, wind, storage, and grid modernization technologies.",
-      "categories": ["energy", "tech"],
-      "location": "Anaheim, CA, USA",
-      "country": "USA",
-      "startDate": "2024-10-15",
-      "endDate": "2024-10-17",
-      "website": "https://www.renewableenergyworld.com",
-      "type": "Expo",
-      "isVirtual": false,
-      "linkedJobs": ["renewable-energy-engineer-tesla", "energy-analyst-nrel"],
-      "tags": ["solar", "wind", "energy storage", "grid modernization"]
-    },
-    {
       "id": "ems-annual-meeting-2024",
       "title": "European Meteorological Society Annual Meeting",
       "description": "Annual meeting focusing on advances in meteorology, climatology, and atmospheric sciences.",
-      "categories": ["weather", "academia"],
+      "categories": [
+        "weather",
+        "academia"
+      ],
       "location": "Barcelona, Spain",
       "country": "Spain",
       "startDate": "2024-09-02",
@@ -57,89 +15,24 @@
       "website": "https://www.emetsoc.org",
       "type": "Conference",
       "isVirtual": false,
-      "linkedJobs": ["meteorologist-met-office"],
-      "tags": ["meteorology", "atmospheric science", "weather forecasting"]
-    },
-    {
-      "id": "gis-day-2024",
-      "title": "International GIS Day Conference",
-      "description": "Global celebration of Geographic Information Systems technology and its applications across industries.",
-      "categories": ["geospatial", "tech"],
-      "location": "London, UK",
-      "country": "UK",
-      "startDate": "2024-11-20",
-      "endDate": "2024-11-20",
-      "website": "https://www.gisday.com",
-      "type": "Workshop",
-      "isVirtual": true,
-      "linkedJobs": ["gis-analyst-ordnance-survey"],
-      "tags": ["GIS", "mapping", "spatial analysis", "remote sensing"]
-    },
-    {
-      "id": "climate-adaptation-summit-2024",
-      "title": "Climate Adaptation Summit",
-      "description": "International summit on climate adaptation strategies and resilience building for communities and ecosystems.",
-      "categories": ["climate", "insurance"],
-      "location": "Amsterdam, Netherlands",
-      "country": "Netherlands",
-      "startDate": "2024-10-25",
-      "endDate": "2024-10-27",
-      "website": "https://www.cas2024.com",
-      "type": "Summit",
-      "isVirtual": false,
-      "linkedJobs": ["climate-adaptation-specialist-deltares"],
-      "tags": ["adaptation", "resilience", "climate impacts", "policy"]
-    },
-    {
-      "id": "offshore-wind-europe-2024",
-      "title": "Offshore Wind Europe 2024",
-      "description": "Europe's premier offshore wind energy conference bringing together industry leaders and innovators.",
-      "categories": ["energy", "geophysics"],
-      "location": "Hamburg, Germany",
-      "country": "Germany",
-      "startDate": "2024-11-19",
-      "endDate": "2024-11-21",
-      "website": "https://www.windeurope.org",
-      "type": "Conference",
-      "isVirtual": false,
-      "linkedJobs": ["offshore-wind-engineer-orsted"],
-      "tags": ["offshore wind", "marine energy", "engineering", "sustainability"]
-    },
-    {
-      "id": "weather-climate-risk-2024",
-      "title": "Weather & Climate Risk Management Conference",
-      "description": "Conference focused on weather and climate risk assessment, modeling, and management strategies.",
-      "categories": ["weather", "insurance", "banking"],
-      "location": "Paris, France",
-      "country": "France",
-      "startDate": "2024-12-03",
-      "endDate": "2024-12-05",
-      "website": "https://www.weatherrisk2024.com",
-      "type": "Conference",
-      "isVirtual": false,
-      "linkedJobs": ["climate-risk-analyst-axa"],
-      "tags": ["risk management", "climate modeling", "insurance", "finance"]
-    },
-    {
-      "id": "fintech-climate-2024",
-      "title": "FinTech for Climate Solutions Summit",
-      "description": "Exploring how financial technology can accelerate climate action and sustainable finance solutions.",
-      "categories": ["banking", "tech", "climate"],
-      "location": "New York, NY, USA",
-      "country": "USA",
-      "startDate": "2024-11-05",
-      "endDate": "2024-11-06",
-      "website": "https://www.fintechclimate2024.com",
-      "type": "Summit",
-      "isVirtual": false,
-      "linkedJobs": ["climate-finance-analyst-goldman"],
-      "tags": ["fintech", "sustainable finance", "climate tech", "innovation"]
+      "linkedJobs": [
+        "meteorologist-met-office"
+      ],
+      "tags": [
+        "meteorology",
+        "atmospheric science",
+        "weather forecasting"
+      ]
     },
     {
       "id": "geophysics-exploration-2024",
       "title": "International Geophysics & Exploration Conference",
       "description": "Leading conference on geophysical methods for energy exploration, environmental monitoring, and geological research.",
-      "categories": ["geophysics", "energy", "academia"],
+      "categories": [
+        "geophysics",
+        "energy",
+        "academia"
+      ],
       "location": "Calgary, AB, Canada",
       "country": "Canada",
       "startDate": "2024-10-08",
@@ -147,8 +40,960 @@
       "website": "https://www.geophysics2024.org",
       "type": "Conference",
       "isVirtual": false,
-      "linkedJobs": ["geophysicist-chevron"],
-      "tags": ["seismic", "exploration", "subsurface", "geology"]
-    }
+      "linkedJobs": [
+        "geophysicist-chevron"
+      ],
+      "tags": [
+        "seismic",
+        "exploration",
+        "subsurface",
+        "geology"
+      ]
+    },
+    {
+      "id": "renewable-energy-world-2024",
+      "title": "Renewable Energy World Conference & Expo",
+      "description": "Leading renewable energy event covering solar, wind, storage, and grid modernization technologies.",
+      "categories": [
+        "energy",
+        "tech"
+      ],
+      "location": "Anaheim, CA, USA",
+      "country": "USA",
+      "startDate": "2024-10-15",
+      "endDate": "2024-10-17",
+      "website": "https://www.renewableenergyworld.com",
+      "type": "Expo",
+      "isVirtual": false,
+      "linkedJobs": [
+        "renewable-energy-engineer-tesla",
+        "energy-analyst-nrel"
+      ],
+      "tags": [
+        "solar",
+        "wind",
+        "energy storage",
+        "grid modernization"
+      ]
+    },
+    {
+      "id": "climate-adaptation-summit-2024",
+      "title": "Climate Adaptation Summit",
+      "description": "International summit on climate adaptation strategies and resilience building for communities and ecosystems.",
+      "categories": [
+        "climate",
+        "insurance"
+      ],
+      "location": "Amsterdam, Netherlands",
+      "country": "Netherlands",
+      "startDate": "2024-10-25",
+      "endDate": "2024-10-27",
+      "website": "https://www.cas2024.com",
+      "type": "Summit",
+      "isVirtual": false,
+      "linkedJobs": [
+        "climate-adaptation-specialist-deltares"
+      ],
+      "tags": [
+        "adaptation",
+        "resilience",
+        "climate impacts",
+        "policy"
+      ]
+    },
+    {
+      "id": "fintech-climate-2024",
+      "title": "FinTech for Climate Solutions Summit",
+      "description": "Exploring how financial technology can accelerate climate action and sustainable finance solutions.",
+      "categories": [
+        "banking",
+        "tech",
+        "climate"
+      ],
+      "location": "New York, NY, USA",
+      "country": "USA",
+      "startDate": "2024-11-05",
+      "endDate": "2024-11-06",
+      "website": "https://www.fintechclimate2024.com",
+      "type": "Summit",
+      "isVirtual": false,
+      "linkedJobs": [
+        "climate-finance-analyst-goldman"
+      ],
+      "tags": [
+        "fintech",
+        "sustainable finance",
+        "climate tech",
+        "innovation"
+      ]
+    },
+    {
+      "id": "cop29-2024",
+      "title": "COP29 Climate Summit",
+      "description": "The 29th Conference of the Parties to the United Nations Framework Convention on Climate Change, focusing on global climate action and policy.",
+      "categories": [
+        "climate",
+        "energy"
+      ],
+      "location": "Baku, Azerbaijan",
+      "country": "Azerbaijan",
+      "startDate": "2024-11-11",
+      "endDate": "2024-11-22",
+      "website": "https://cop29.az",
+      "type": "Summit",
+      "isVirtual": false,
+      "linkedJobs": [
+        "climate-scientist-noaa",
+        "climate-policy-analyst-un"
+      ],
+      "tags": [
+        "climate policy",
+        "international cooperation",
+        "sustainability"
+      ]
+    },
+    {
+      "id": "offshore-wind-europe-2024",
+      "title": "Offshore Wind Europe 2024",
+      "description": "Europe's premier offshore wind energy conference bringing together industry leaders and innovators.",
+      "categories": [
+        "energy",
+        "geophysics"
+      ],
+      "location": "Hamburg, Germany",
+      "country": "Germany",
+      "startDate": "2024-11-19",
+      "endDate": "2024-11-21",
+      "website": "https://www.windeurope.org",
+      "type": "Conference",
+      "isVirtual": false,
+      "linkedJobs": [
+        "offshore-wind-engineer-orsted"
+      ],
+      "tags": [
+        "offshore wind",
+        "marine energy",
+        "engineering",
+        "sustainability"
+      ]
+    },
+    {
+      "id": "gis-day-2024",
+      "title": "International GIS Day Conference",
+      "description": "Global celebration of Geographic Information Systems technology and its applications across industries.",
+      "categories": [
+        "geospatial",
+        "tech"
+      ],
+      "location": "London, UK",
+      "country": "UK",
+      "startDate": "2024-11-20",
+      "endDate": "2024-11-20",
+      "website": "https://www.gisday.com",
+      "type": "Workshop",
+      "isVirtual": true,
+      "linkedJobs": [
+        "gis-analyst-ordnance-survey"
+      ],
+      "tags": [
+        "GIS",
+        "mapping",
+        "spatial analysis",
+        "remote sensing"
+      ]
+    },
+    {
+      "id": "weather-climate-risk-2024",
+      "title": "Weather & Climate Risk Management Conference",
+      "description": "Conference focused on weather and climate risk assessment, modeling, and management strategies.",
+      "categories": [
+        "weather",
+        "insurance",
+        "banking"
+      ],
+      "location": "Paris, France",
+      "country": "France",
+      "startDate": "2024-12-03",
+      "endDate": "2024-12-05",
+      "website": "https://www.weatherrisk2024.com",
+      "type": "Conference",
+      "isVirtual": false,
+      "linkedJobs": [
+        "climate-risk-analyst-axa"
+      ],
+      "tags": [
+        "risk management",
+        "climate modeling",
+        "insurance",
+        "finance"
+      ]
+    },
+    {
+      "id": "agu-fall-2024",
+      "title": "AGU Fall Meeting 2024",
+      "description": "The largest Earth and space science meeting in the world, bringing together researchers, educators, and students.",
+      "categories": [
+        "academia",
+        "geophysics",
+        "climate"
+      ],
+      "location": "Washington, DC, USA",
+      "country": "USA",
+      "startDate": "2024-12-09",
+      "endDate": "2024-12-13",
+      "website": "https://www.agu.org/fall-meeting",
+      "type": "Conference",
+      "isVirtual": false,
+      "linkedJobs": [
+        "research-scientist-mit",
+        "postdoc-climate-modeling-stanford"
+      ],
+      "tags": [
+        "earth science",
+        "research",
+        "networking",
+        "academia"
+      ]
+    },
+    {
+      "id": "image-geoscience-2025",
+      "title": "IMAGE '25 (International Meeting for Applied Geoscience & Energy)",
+      "description": "SEG–AAPG–SEPM research & industry meeting on geophysics, subsurface imaging, and energy geoscience.",
+      "categories": [
+        "geophysics",
+        "energy",
+        "academia"
+      ],
+      "location": "Houston, TX, USA",
+      "country": "USA",
+      "startDate": "2025-08-25",
+      "endDate": "2025-08-28",
+      "website": "https://www.imageevent.org/",
+      "type": "Conference",
+      "isVirtual": false,
+      "linkedJobs": [
+        "geophysicist-shell"
+      ],
+      "tags": [
+        "seismic",
+        "subsurface",
+        "energy"
+      ]
+    },
+    {
+      "id": "ams-radar-2025",
+      "title": "AMS 41st International Conference on Radar Meteorology",
+      "description": "Research-focused AMS specialty conference on radar meteorology.",
+      "categories": [
+        "weather",
+        "academia"
+      ],
+      "location": "Toronto, Ontario, Canada",
+      "country": "Canada",
+      "startDate": "2025-08-25",
+      "endDate": "2025-08-29",
+      "website": "https://www.ametsoc.org/ams/meetings-events/ams-meetings/41st-international-conference-on-radar-meteorology/",
+      "type": "Conference",
+      "isVirtual": true,
+      "linkedJobs": [
+        "radar-meteorologist-nssl"
+      ],
+      "tags": [
+        "radar",
+        "nowcasting",
+        "precipitation"
+      ]
+    },
+    {
+      "id": "giscience-2025",
+      "title": "GIScience 2025",
+      "description": "Flagship academic conference in Geographic Information Science.",
+      "categories": [
+        "geospatial",
+        "academia",
+        "tech"
+      ],
+      "location": "Christchurch, New Zealand",
+      "country": "New Zealand",
+      "startDate": "2025-08-26",
+      "endDate": "2025-08-29",
+      "website": "https://giscience2025.org/",
+      "type": "Conference",
+      "isVirtual": false,
+      "linkedJobs": [
+        "gis-researcher-university-canterbury"
+      ],
+      "tags": [
+        "GIScience",
+        "spatial analysis",
+        "theory"
+      ]
+    },
+    {
+      "id": "egrie-2025",
+      "title": "EGRIE Annual Seminar 2025",
+      "description": "European Group of Risk and Insurance Economists annual research seminar.",
+      "categories": [
+        "insurance",
+        "academia",
+        "banking"
+      ],
+      "location": "Calgary, Alberta, Canada",
+      "country": "Canada",
+      "startDate": "2025-09-03",
+      "endDate": "2025-09-07",
+      "website": "https://www.egrie.org/annual-seminars",
+      "type": "Conference",
+      "isVirtual": false,
+      "linkedJobs": [
+        "risk-economist-swissre"
+      ],
+      "tags": [
+        "risk",
+        "insurance economics"
+      ]
+    },
+    {
+      "id": "ems-annual-meeting-2025",
+      "title": "EMS Annual Meeting 2025",
+      "description": "European Meteorological Society Annual Meeting focusing on atmospheric sciences and applications.",
+      "categories": [
+        "weather",
+        "academia"
+      ],
+      "location": "Ljubljana, Slovenia",
+      "country": "Slovenia",
+      "startDate": "2025-09-07",
+      "endDate": "2025-09-12",
+      "website": "https://ems2025.eu/",
+      "type": "Conference",
+      "isVirtual": false,
+      "linkedJobs": [
+        "meteorologist-ecmwf"
+      ],
+      "tags": [
+        "meteorology",
+        "climatology"
+      ]
+    },
+    {
+      "id": "european-geothermal-congress-2025",
+      "title": "European Geothermal Congress 2025",
+      "description": "Triennial research & industry congress for geothermal energy.",
+      "categories": [
+        "energy",
+        "academia"
+      ],
+      "location": "Zürich, Switzerland",
+      "country": "Switzerland",
+      "startDate": "2025-10-06",
+      "endDate": "2025-10-10",
+      "website": "https://europeangeothermalcongress.eu/",
+      "type": "Congress",
+      "isVirtual": false,
+      "linkedJobs": [
+        "geothermal-researcher-sintef"
+      ],
+      "tags": [
+        "geothermal",
+        "renewables"
+      ]
+    },
+    {
+      "id": "gsa-connects-2025",
+      "title": "GSA Connects 2025",
+      "description": "Geological Society of America’s annual research meeting across the geosciences.",
+      "categories": [
+        "academia",
+        "geophysics"
+      ],
+      "location": "San Antonio, TX, USA",
+      "country": "USA",
+      "startDate": "2025-10-19",
+      "endDate": "2025-10-22",
+      "website": "https://community.geosociety.org/gsa2025/home",
+      "type": "Conference",
+      "isVirtual": false,
+      "linkedJobs": [
+        "geoscientist-usgs"
+      ],
+      "tags": [
+        "geology",
+        "paleontology",
+        "tectonics"
+      ]
+    },
+    {
+      "id": "acm-sigspatial-2025",
+      "title": "ACM SIGSPATIAL 2025",
+      "description": "Top research conference on advances in geographic information systems.",
+      "categories": [
+        "geospatial",
+        "tech",
+        "academia"
+      ],
+      "location": "Minneapolis, MN, USA",
+      "country": "USA",
+      "startDate": "2025-11-03",
+      "endDate": "2025-11-06",
+      "website": "https://sigspatial2025.sigspatial.org/",
+      "type": "Conference",
+      "isVirtual": false,
+      "linkedJobs": [
+        "spatial-data-scientist-apple"
+      ],
+      "tags": [
+        "GIS",
+        "databases",
+        "spatial computing"
+      ]
+    },
+    {
+      "id": "cas-annual-2025",
+      "title": "CAS Annual Meeting 2025",
+      "description": "Casualty Actuarial Society Annual Meeting (P&C actuarial science research & practice).",
+      "categories": [
+        "insurance",
+        "academia"
+      ],
+      "location": "Austin, TX, USA",
+      "country": "USA",
+      "startDate": "2025-11-09",
+      "endDate": "2025-11-12",
+      "website": "https://www.casact.org/event/2025-cas-annual-meeting",
+      "type": "Conference",
+      "isVirtual": true,
+      "linkedJobs": [
+        "actuarial-scientist-allstate"
+      ],
+      "tags": [
+        "actuarial science",
+        "P&C",
+        "pricing"
+      ]
+    },
+    {
+      "id": "neurips-2025",
+      "title": "NeurIPS 2025",
+      "description": "Premier machine learning research conference (Neural Information Processing Systems).",
+      "categories": [
+        "tech",
+        "academia"
+      ],
+      "location": "San Diego, CA, USA",
+      "country": "USA",
+      "startDate": "2025-12-02",
+      "endDate": "2025-12-07",
+      "website": "https://neurips.cc/Conferences/2025",
+      "type": "Conference",
+      "isVirtual": false,
+      "linkedJobs": [
+        "ml-research-scientist-openai"
+      ],
+      "tags": [
+        "ML",
+        "AI",
+        "deep learning"
+      ]
+    },
+    {
+      "id": "agu-annual-2025",
+      "title": "AGU Annual Meeting 2025",
+      "description": "AGU’s flagship Earth and space sciences meeting spanning geophysics, climate, oceans, cryosphere, space physics, and more.",
+      "categories": [
+        "academia",
+        "geophysics",
+        "climate"
+      ],
+      "location": "New Orleans, LA, USA",
+      "country": "USA",
+      "startDate": "2025-12-15",
+      "endDate": "2025-12-19",
+      "website": "https://www.agu.org/annual-meeting",
+      "type": "Conference",
+      "isVirtual": false,
+      "linkedJobs": [
+        "earth-scientist-nasa",
+        "postdoc-geoscience-ucsd"
+      ],
+      "tags": [
+        "earth science",
+        "research",
+        "abstracts"
+      ]
+    },
+    {
+      "id": "afa-annual-2026",
+      "title": "AFA Annual Meeting 2026 (ASSA)",
+      "description": "American Finance Association research conference, part of the ASSA meetings.",
+      "categories": [
+        "banking",
+        "academia"
+      ],
+      "location": "Philadelphia, PA, USA",
+      "country": "USA",
+      "startDate": "2026-01-03",
+      "endDate": "2026-01-05",
+      "website": "https://afajof.org/annual-meeting/",
+      "type": "Conference",
+      "isVirtual": false,
+      "linkedJobs": [
+        "finance-professor-wharton"
+      ],
+      "tags": [
+        "finance",
+        "econometrics"
+      ]
+    },
+    {
+      "id": "astin-bulletin-conf-2026",
+      "title": "ASTIN Bulletin Conference 2026",
+      "description": "Inaugural academic conference linked to the ASTIN Bulletin (actuarial science).",
+      "categories": [
+        "insurance",
+        "academia"
+      ],
+      "location": "Zurich, Switzerland",
+      "country": "Switzerland",
+      "startDate": "2026-01-14",
+      "endDate": "2026-01-16",
+      "website": "https://math.ethz.ch/fim/activities/conferences/1st-astin-bulletin-conference.html",
+      "type": "Conference",
+      "isVirtual": false,
+      "linkedJobs": [
+        "actuarial-researcher-ethz"
+      ],
+      "tags": [
+        "actuarial",
+        "risk theory"
+      ]
+    },
+    {
+      "id": "eera-deepwind-2026",
+      "title": "EERA DeepWind 2026",
+      "description": "Offshore Wind Research & Innovation Conference.",
+      "categories": [
+        "energy",
+        "academia"
+      ],
+      "location": "Trondheim, Norway",
+      "country": "Norway",
+      "startDate": "2026-01-14",
+      "endDate": "2026-01-16",
+      "website": "https://www.sintef.no/en/events/eera-deepwind-2026/",
+      "type": "Conference",
+      "isVirtual": false,
+      "linkedJobs": [
+        "offshore-wind-researcher-ntnu"
+      ],
+      "tags": [
+        "offshore wind",
+        "R&D"
+      ]
+    },
+    {
+      "id": "ams-annual-2026",
+      "title": "AMS Annual Meeting 2026",
+      "description": "The American Meteorological Society’s flagship meeting for weather, water, and climate research and applications.",
+      "categories": [
+        "weather",
+        "academia"
+      ],
+      "location": "Houston, TX, USA",
+      "country": "USA",
+      "startDate": "2026-01-25",
+      "endDate": "2026-01-29",
+      "website": "https://annual.ametsoc.org/index.cfm/2026/",
+      "type": "Conference",
+      "isVirtual": true,
+      "linkedJobs": [
+        "numerical-weather-prediction-noaa",
+        "atmospheric-scientist-ncar"
+      ],
+      "tags": [
+        "meteorology",
+        "climate",
+        "hybrid"
+      ]
+    },
+    {
+      "id": "ocean-sciences-meeting-2026",
+      "title": "Ocean Sciences Meeting 2026",
+      "description": "Biennial AGU–ASLO–TOS research conference for the ocean sciences community.",
+      "categories": [
+        "academia",
+        "climate",
+        "weather"
+      ],
+      "location": "Glasgow, Scotland, UK",
+      "country": "UK",
+      "startDate": "2026-02-22",
+      "endDate": "2026-02-27",
+      "website": "https://www.agu.org/ocean-sciences-meeting",
+      "type": "Conference",
+      "isVirtual": false,
+      "linkedJobs": [
+        "oceanographer-noaa",
+        "marine-scientist-woodshole"
+      ],
+      "tags": [
+        "oceanography",
+        "marine",
+        "abstracts"
+      ]
+    },
+    {
+      "id": "ams-hurricanes-2026",
+      "title": "AMS 37th Conference on Hurricanes and Tropical Meteorology",
+      "description": "Biennial AMS research conference on tropical meteorology.",
+      "categories": [
+        "weather",
+        "academia"
+      ],
+      "location": "San Diego/La Jolla, CA, USA",
+      "country": "USA",
+      "startDate": "2026-03-30",
+      "endDate": "2026-04-03",
+      "website": "https://www.ametsoc.org/ams/meetings-events/ams-meetings/37th-conference-on-hurricanes-and-tropical-meteorology/",
+      "type": "Conference",
+      "isVirtual": true,
+      "linkedJobs": [
+        "tropical-meteorology-researcher-ucar"
+      ],
+      "tags": [
+        "tropical cyclones",
+        "hurricanes"
+      ]
+    },
+    {
+      "id": "iclr-2026",
+      "title": "ICLR 2026",
+      "description": "International Conference on Learning Representations.",
+      "categories": [
+        "tech",
+        "academia"
+      ],
+      "location": "Rio de Janeiro, Brazil",
+      "country": "Brazil",
+      "startDate": "2026-04-23",
+      "endDate": "2026-04-27",
+      "website": "https://openreview.net/group?id=ICLR.cc/2026/Conference",
+      "type": "Conference",
+      "isVirtual": false,
+      "linkedJobs": [
+        "ml-researcher-google"
+      ],
+      "tags": [
+        "representation learning",
+        "AI"
+      ]
+    },
+    {
+      "id": "egu-general-assembly-2026",
+      "title": "EGU General Assembly 2026",
+      "description": "Europe’s premier geoscience conference covering all disciplines of Earth, planetary and space sciences.",
+      "categories": [
+        "academia",
+        "geophysics",
+        "climate"
+      ],
+      "location": "Vienna, Austria",
+      "country": "Austria",
+      "startDate": "2026-05-03",
+      "endDate": "2026-05-08",
+      "website": "https://www.egu.eu/meetings/calendar/egu/",
+      "type": "Conference",
+      "isVirtual": false,
+      "linkedJobs": [
+        "postdoc-geoscience-oxford",
+        "hydrology-researcher-ethz"
+      ],
+      "tags": [
+        "geoscience",
+        "sessions",
+        "EGU"
+      ]
+    },
+    {
+      "id": "sfs-cavalcade-na-2026",
+      "title": "SFS Cavalcade North America 2026",
+      "description": "Society for Financial Studies multi-track finance research conference.",
+      "categories": [
+        "banking",
+        "academia"
+      ],
+      "location": "Charlottesville, VA, USA",
+      "country": "USA",
+      "startDate": "2026-05-18",
+      "endDate": "2026-05-21",
+      "website": "https://sfs.org/sfs-cavalcade-north-america-2026/",
+      "type": "Conference",
+      "isVirtual": false,
+      "linkedJobs": [
+        "finance-phd-uva"
+      ],
+      "tags": [
+        "financial economics",
+        "empirical finance"
+      ]
+    },
+    {
+      "id": "wfa-2026",
+      "title": "Western Finance Association 2026",
+      "description": "Top-tier academic finance research conference.",
+      "categories": [
+        "banking",
+        "academia"
+      ],
+      "location": "Denver, CO, USA",
+      "country": "USA",
+      "startDate": "2026-06-21",
+      "endDate": "2026-06-24",
+      "website": "https://westernfinance.org/future/",
+      "type": "Conference",
+      "isVirtual": false,
+      "linkedJobs": [
+        "finance-researcher-university-colorado"
+      ],
+      "tags": [
+        "asset pricing",
+        "corporate finance"
+      ]
+    },
+    {
+      "id": "isprs-congress-2026",
+      "title": "ISPRS Congress 2026",
+      "description": "XXV Congress of the International Society for Photogrammetry and Remote Sensing.",
+      "categories": [
+        "geospatial",
+        "academia"
+      ],
+      "location": "Toronto, Ontario, Canada",
+      "country": "Canada",
+      "startDate": "2026-07-04",
+      "endDate": "2026-07-11",
+      "website": "https://www.isprs2026toronto.com/",
+      "type": "Congress",
+      "isVirtual": false,
+      "linkedJobs": [
+        "remote-sensing-scientist"
+      ],
+      "tags": [
+        "photogrammetry",
+        "remote sensing"
+      ]
+    },
+    {
+      "id": "icml-2026",
+      "title": "ICML 2026",
+      "description": "International Conference on Machine Learning.",
+      "categories": [
+        "tech",
+        "academia"
+      ],
+      "location": "Seoul, South Korea",
+      "country": "South Korea",
+      "startDate": "2026-07-06",
+      "endDate": "2026-07-12",
+      "website": "https://icml.cc/Conferences/2026",
+      "type": "Conference",
+      "isVirtual": false,
+      "linkedJobs": [
+        "ml-engineer-nvidia"
+      ],
+      "tags": [
+        "machine learning",
+        "theory",
+        "applications"
+      ]
+    },
+    {
+      "id": "goldschmidt-2026",
+      "title": "Goldschmidt 2026",
+      "description": "Premiere international conference on geochemistry, hosted by the Geochemical Society and EAG.",
+      "categories": [
+        "academia",
+        "geophysics"
+      ],
+      "location": "Montréal, Québec, Canada",
+      "country": "Canada",
+      "startDate": "2026-07-12",
+      "endDate": "2026-07-17",
+      "website": "https://geochemsoc.org/events/goldschmidt-conference",
+      "type": "Conference",
+      "isVirtual": false,
+      "linkedJobs": [
+        "geochemist-nasa-jpl"
+      ],
+      "tags": [
+        "geochemistry",
+        "isotopes",
+        "mantle"
+      ]
+    },
+    {
+      "id": "ieee-pes-gm-2026",
+      "title": "IEEE PES General Meeting 2026",
+      "description": "IEEE Power & Energy Society’s flagship research meeting on power systems and grids.",
+      "categories": [
+        "energy",
+        "academia",
+        "tech"
+      ],
+      "location": "Montréal, Québec, Canada",
+      "country": "Canada",
+      "startDate": "2026-07-19",
+      "endDate": "2026-07-23",
+      "website": "https://pes-gm.org/",
+      "type": "Conference",
+      "isVirtual": false,
+      "linkedJobs": [
+        "power-systems-researcher-hydroquebec"
+      ],
+      "tags": [
+        "power systems",
+        "grid",
+        "AI"
+      ]
+    },
+    {
+      "id": "aogs-2026",
+      "title": "AOGS 2026",
+      "description": "Asia Oceania Geosciences Society Annual Meeting.",
+      "categories": [
+        "academia",
+        "geophysics",
+        "climate",
+        "weather"
+      ],
+      "location": "Fukuoka, Japan",
+      "country": "Japan",
+      "startDate": "2026-08-02",
+      "endDate": "2026-08-07",
+      "website": "https://www.fukuoka-now.com/en/news/major-international-conference-aogs-2026-to-be-held-in-fukuoka/",
+      "type": "Conference",
+      "isVirtual": false,
+      "linkedJobs": [
+        "geoscientist-aist"
+      ],
+      "tags": [
+        "Asia-Oceania",
+        "geoscience"
+      ]
+    },
+    {
+      "id": "igarss-2026",
+      "title": "IGARSS 2026",
+      "description": "IEEE International Geoscience and Remote Sensing Symposium.",
+      "categories": [
+        "geospatial",
+        "academia",
+        "climate"
+      ],
+      "location": "Washington, DC, USA",
+      "country": "USA",
+      "startDate": "2026-08-09",
+      "endDate": "2026-08-14",
+      "website": "https://2026.ieeeigarss.org/",
+      "type": "Symposium",
+      "isVirtual": false,
+      "linkedJobs": [
+        "remote-sensing-scientist-nasa"
+      ],
+      "tags": [
+        "remote sensing",
+        "earth observation"
+      ]
+    },
+    {
+    "id": "icml-2025",
+    "title": "ICML 2025 — Forty-Second International Conference on Machine Learning",
+    "description": "Premier machine learning research conference covering theory, methods, and applications.",
+    "categories": ["Tech (Data Science & ML)", "Academia & Research"],
+    "location": "Vancouver, BC",
+    "country": "Canada",
+    "startDate": "2025-07-13",
+    "endDate": "2025-07-19",
+    "website": "https://icml.cc/",
+    "type": "Conference",
+    "isVirtual": true,
+    "linkedJobs": [],
+    "tags": ["ML", "AI", "peer-reviewed", "hybrid"]
+  },
+  {
+    "id": "icml-2026-seoul",
+    "title": "ICML 2026 — International Conference on Machine Learning",
+    "description": "Annual top-tier machine learning research conference.",
+    "categories": ["Tech (Data Science & ML)", "Academia & Research"],
+    "location": "Seoul",
+    "country": "South Korea",
+    "startDate": "2026-07-06",
+    "endDate": "2026-07-12",
+    "website": "https://icml.cc/Conferences/FutureMeetings",
+    "type": "Conference",
+    "isVirtual": false,
+    "linkedJobs": [],
+    "tags": ["ML", "AI", "PMLR"]
+  },
+  {
+    "id": "ams-41-radar-2025",
+    "title": "41st International Conference on Radar Meteorology (AMS)",
+    "description": "Research-focused specialty meeting on radar meteorology, nowcasting, and precipitation.",
+    "categories": ["Weather & Meteorology", "Academia & Research"],
+    "location": "Toronto, Ontario",
+    "country": "Canada",
+    "startDate": "2025-08-25",
+    "endDate": "2025-08-29",
+    "website": "https://www.ametsoc.org/ams/meetings-events/ams-meetings/41st-international-conference-on-radar-meteorology/",
+    "type": "Conference",
+    "isVirtual": true,
+    "linkedJobs": [],
+    "tags": ["radar", "nowcasting", "remote sensing", "hybrid"]
+  },
+  {
+    "id": "ams-106-annual-2026",
+    "title": "106th AMS Annual Meeting",
+    "description": "Flagship research meeting for weather, water, and climate science across dozens of AMS conferences/symposia.",
+    "categories": ["Weather & Meteorology", "Academia & Research"],
+    "location": "Houston, TX",
+    "country": "USA",
+    "startDate": "2026-01-25",
+    "endDate": "2026-01-29",
+    "website": "https://annual.ametsoc.org/2026/",
+    "type": "Conference",
+    "isVirtual": true,
+    "linkedJobs": [],
+    "tags": ["meteorology", "climate", "hydrology", "hybrid"]
+  },
+  {
+    "id": "ams-37-hurricanes-2026",
+    "title": "37th Conference on Hurricanes and Tropical Meteorology (AMS)",
+    "description": "Biennial research conference on tropical cyclones and tropical meteorology.",
+    "categories": ["Weather & Meteorology", "Academia & Research"],
+    "location": "San Diego/La Jolla, CA",
+    "country": "USA",
+    "startDate": "2026-03-30",
+    "endDate": "2026-04-03",
+    "website": "https://www.ametsoc.org/ams/meetings-events/ams-meetings/37th-conference-on-hurricanes-and-tropical-meteorology/",
+    "type": "Conference",
+    "isVirtual": true,
+    "linkedJobs": [],
+    "tags": ["tropical cyclones", "hurricanes", "hybrid"]
+  },
+  {
+    "id": "ams-madison-summit-2026",
+    "title": "2026 AMS Madison Summit",
+    "description": "Multi-conference summit (WAF, NWP, Severe Local Storms, Weather Warnings & Communication, etc.).",
+    "categories": ["Weather & Meteorology", "Academia & Research"],
+    "location": "Madison, WI",
+    "country": "USA",
+    "startDate": "2026-08-03",
+    "endDate": "2026-08-07",
+    "website": "https://www.ametsoc.org/ams/meetings-events/ams-meetings/2026-ams-madison-summit/",
+    "type": "Summit",
+    "isVirtual": true,
+    "linkedJobs": [],
+    "tags": ["forecasting", "NWP", "severe weather", "hybrid"]
+  }
   ]
 }

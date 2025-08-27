@@ -2021,16 +2021,6 @@
     "isHiring": true
   },
   {
-    "id": 216,
-    "name": "Viridien (formerly CGG)",
-    "location": "France / Global",
-    "employees": "3,000+",
-    "description": "Specialist in geophysical data acquisition, subsurface imaging, and Earth data analytics for energy, minerals, and climate applications.",
-    "website": "https://viridien.com",
-    "categories": ["Geophysics & Geology", "Energy & Renewables"],
-    "isHiring": true
-  },
-  {
     "id": 217,
     "name": "PGS ASA",
     "location": "Norway / Global",
@@ -2529,6 +2519,186 @@
     "website": "https://www.cathedralcapital.com",
     "categories": ["Insurance & Reinsurance"],
     "isHiring": false
+  },
+  {
+    "id": 324,
+    "name": "Brightband",
+    "location": "n/a",
+    "employees": "Varies",
+    "description": "Making AI weather forecasting tools available to all to help humanity adapt to increasingly extreme weather.",
+    "website": "https://www.brightband.com/",
+    "categories": ["Weather & Meteorology", "Tech (Data Science & ML)"],
+    "isHiring": false
+  },
+  {
+    "id": 325,
+    "name": "IBM Sustainability",
+    "location": "USA / Global",
+    "employees": "250,000+",
+    "description": "IBM’s sustainability software and consulting solutions—ESG data management, decarbonization, and climate risk analytics.",
+    "website": "https://www.ibm.com/sustainability",
+    "categories": ["Tech (Data Science & ML)", "Climate Science"],
+    "isHiring": true
+  },
+  {
+    "id": 326,
+    "name": "Pachama",
+    "location": "USA",
+    "employees": "Varies",
+    "description": "Nature-based carbon projects and monitoring using satellite data and machine learning.",
+    "website": "https://pachama.com",
+    "categories": ["Climate Science", "Geospatial & GIS", "Tech (Data Science & ML)"],
+    "isHiring": true
+  },
+  {
+    "id": 327,
+    "name": "EarthDaily",
+    "location": "Canada",
+    "employees": "Varies",
+    "description": "Earth observation analytics for agriculture and environmental monitoring.",
+    "website": "https://www.earthdaily.com",
+    "categories": ["Geospatial & GIS", "Climate Science", "Tech (Data Science & ML)"],
+    "isHiring": true
+  },
+  {
+    "id": 328,
+    "name": "Sunairio",
+    "location": "USA",
+    "employees": "Varies",
+    "description": "Climate scenario modeling platform for financial and operational risk planning.",
+    "website": "https://www.sunairio.com",
+    "categories": ["Tech (Data Science & ML)", "Climate Science", "Banking & Finance"],
+    "isHiring": true
+  },
+  {
+    "id": 329,
+    "name": "Space Intelligence",
+    "location": "UK",
+    "employees": "Varies",
+    "description": "Remote-sensing analytics for nature-based solutions, land-use change, and carbon baselines.",
+    "website": "https://www.space-intelligence.com",
+    "categories": ["Geospatial & GIS", "Climate Science"],
+    "isHiring": true
+  },
+  {
+    "id": 330,
+    "name": "Cascade Climate",
+    "location": "n/a",
+    "employees": "Varies",
+    "description": "Accelerates R&D and deployment for climate solutions—demonstrated in enhanced rock weathering—and now advancing near-term warming mitigation via super-pollutant (methane, HFCs) markets and policy.",
+    "website": "https://cascadeclimate.org/",
+    "categories": ["Climate Science", "Tech (Data Science & ML)"],
+    "isHiring": false
+  },
+  {
+    "id": 331,
+    "name": "Regrow Ag",
+    "location": "USA",
+    "employees": "Varies",
+    "description": "MRV and regenerative agriculture platform enabling supply-chain emissions tracking and reduction.",
+    "website": "https://www.regrow.ag",
+    "categories": ["Climate Science", "Geospatial & GIS", "Tech (Data Science & ML)"],
+    "isHiring": true
+  },
+  {
+    "id": 332,
+    "name": "Freddie Mac",
+    "location": "USA",
+    "employees": "7,000+",
+    "description": "Government-sponsored enterprise providing liquidity to the U.S. housing market; growing climate-risk capabilities.",
+    "website": "https://www.freddiemac.com",
+    "categories": ["Banking & Finance"],
+    "isHiring": true
+  },
+  {
+    "id": 333,
+    "name": "EDF Energy",
+    "location": "UK",
+    "employees": "10,000+",
+    "description": "Integrated energy company (generation, supply, nuclear/renewables) with decarbonization initiatives.",
+    "website": "https://www.edfenergy.com",
+    "categories": ["Energy & Renewables"],
+    "isHiring": true
+  },
+  {
+    "id": 334,
+    "name": "Environmental Defense Fund (EDF)",
+    "location": "USA",
+    "employees": "1,000+",
+    "description": "Nonprofit advancing science-based climate solutions across policy, markets, and technology.",
+    "website": "https://www.edf.org",
+    "categories": ["Climate Science", "Academia & Research"],
+    "isHiring": true
+  },
+  {
+    "id": 335,
+    "name": "Climate X",
+    "location": "UK",
+    "employees": "Varies",
+    "description": "Physical climate risk analytics platform for assets and portfolios.",
+    "website": "https://www.climate-x.com",
+    "categories": ["Tech (Data Science & ML)", "Banking & Finance", "Climate Science"],
+    "isHiring": true
+  },
+  {
+    "id": 336,
+    "name": "Climate Change AI",
+    "location": "Global",
+    "employees": "Varies",
+    "description": "Nonprofit catalyzing impactful work at the intersection of climate change and machine learning.",
+    "website": "https://www.climatechange.ai",
+    "categories": ["Academia & Research", "Tech (Data Science & ML)"],
+    "isHiring": true
+  },
+  {
+    "id": 337,
+    "name": "Booz Allen Hamilton",
+    "location": "USA / Global",
+    "employees": "30,000+",
+    "description": "Technology and analytics consulting, including climate resilience, energy, and sustainability services.",
+    "website": "https://www.boozallen.com",
+    "categories": ["Tech (Data Science & ML)", "Climate Science"],
+    "isHiring": true
+  },
+  {
+    "id": 338,
+    "name": "Bayer",
+    "location": "Germany",
+    "employees": "100,000+",
+    "description": "Life sciences company with climate-smart agriculture, sustainability, and data-driven platforms.",
+    "website": "https://www.bayer.com",
+    "categories": ["Climate Science", "Tech (Data Science & ML)"],
+    "isHiring": true
+  },
+  {
+    "id": 339,
+    "name": "Watershed",
+    "location": "USA",
+    "employees": "Varies",
+    "description": "Enterprise carbon accounting and decarbonization software platform.",
+    "website": "https://www.watershed.com",
+    "categories": ["Tech (Data Science & ML)", "Climate Science"],
+    "isHiring": true
+  },
+  {
+  "id": 341,
+  "name": "Citi",
+  "location": "USA / Global",
+  "employees": "200,000+",
+  "description": "Global banking institution providing financial services and advancing climate finance, sustainable bonds, and ESG risk management.",
+  "website": "https://www.citigroup.com",
+  "categories": ["Banking & Finance"],
+  "isHiring": true
+  },
+  {
+    "id": 340,
+    "name": "Gallagher Re",
+    "location": "UK",
+    "employees": "5,000+",
+    "description": "Global reinsurance broker advising on catastrophe, specialty, and climate risk.",
+    "website": "https://www.gallagherre.com",
+    "categories": ["Insurance & Reinsurance"],
+    "isHiring": true
   }
   ]
 }
