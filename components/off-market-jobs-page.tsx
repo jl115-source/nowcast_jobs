@@ -223,7 +223,7 @@ export function OffMarketJobsPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-4">
-                  Many high-paying roles—especially in energy, trading, and software—are never publicly advertised, with recruiters quietly seeking the right talent. We make it easier to connect those opportunities directly to you.                  </p>
+                  Some high-paying roles—especially in energy, trading, and software—are never publicly advertised, with recruiters tasked by companies to quietly seek the right talent. We make it easier to connect those opportunities directly to you.                  </p>
                 </CardContent>
               </Card>
 

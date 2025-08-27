@@ -27,10 +27,7 @@ export function SidebarNavigation({ currentPage, onPageChange }: SidebarNavigati
   const [isJobDropdownOpen, setIsJobDropdownOpen] = useState(true) // Set Jobs dropdown to be open by default
   const [isResourcesDropdownOpen, setIsResourcesDropdownOpen] = useState(false) // Added Resources dropdown state
 
-  const pages = [
-    { id: "companies", label: "Companies", icon: Building2 },
-    { id: "mentor-matching", label: "Mentor Matching", icon: Users },
-  ]
+  const pages = [{ id: "mentor-matching", label: "Mentor Matching", icon: Users }]
 
   const jobPages = [
     { id: "job-board", label: "Job Board", icon: Briefcase },
@@ -39,9 +36,10 @@ export function SidebarNavigation({ currentPage, onPageChange }: SidebarNavigati
   ]
 
   const resourcePages = [
-    { id: "resources", label: "General Resources", icon: BookOpen },
+    { id: "resources", label: "Professional Certification & Links", icon: BookOpen },
     { id: "conferences", label: "Conferences & Events", icon: Calendar },
-  ] // Added Resources dropdown pages
+    { id: "companies", label: "Companies", icon: Building2 },
+  ]
 
   return (
     <div
