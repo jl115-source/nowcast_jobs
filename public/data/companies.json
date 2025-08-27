@@ -2699,6 +2699,156 @@
     "website": "https://www.gallagherre.com",
     "categories": ["Insurance & Reinsurance"],
     "isHiring": true
+  },
+    {
+    "id": 345,
+    "name": "Meteologica",
+    "location": "Spain",
+    "employees": "Varies",
+    "description": "Wind/solar generation, load and market fundamentals forecasting for energy markets worldwide.",
+    "website": "https://www.meteologica.com",
+    "categories": ["Weather & Meteorology", "Energy & Renewables"],
+    "isHiring": true
+  },
+  {
+    "id": 346,
+    "name": "Speedwell Weather",
+    "location": "UK / USA",
+    "employees": "Varies",
+    "description": "Weather data, forecasts, and sector indices for energy, agriculture, and weather-risk applications.",
+    "website": "https://speedwellweather.com",
+    "categories": ["Weather & Meteorology", "Banking & Finance"],
+    "isHiring": false
+  },
+  {
+    "id": 347,
+    "name": "WeatherTrends360",
+    "location": "USA",
+    "employees": "Varies",
+    "description": "Year-ahead weather forecasts linked to demand analytics for retail, CPG, and agriculture.",
+    "website": "https://www.weathertrends360.com",
+    "categories": ["Weather & Meteorology", "Tech (Data Science & ML)"],
+    "isHiring": true
+  },
+  {
+    "id": 348,
+    "name": "Understory",
+    "location": "USA",
+    "employees": "Varies",
+    "description": "Ground-truth weather sensor network and climate-risk/insurance solutions for severe weather perils.",
+    "website": "https://understoryweather.com",
+    "categories": ["Weather & Meteorology", "Insurance & Reinsurance"],
+    "isHiring": false
+  },
+  {
+    "id": 349,
+    "name": "Stormglass",
+    "location": "Sweden",
+    "employees": "Varies",
+    "description": "Marine weather API aggregating multi-source metocean data for apps and industry.",
+    "website": "https://stormglass.io",
+    "categories": ["Weather & Meteorology", "Geospatial & GIS"],
+    "isHiring": false
+  },
+  {
+    "id": 350,
+    "name": "Planalytics",
+    "location": "USA",
+    "employees": "Varies",
+    "description": "Weather-driven demand analytics that translate meteorology into business metrics for planning and marketing.",
+    "website": "https://www.planalytics.com",
+    "categories": ["Weather & Meteorology", "Tech (Data Science & ML)"],
+    "isHiring": true
+  },
+  {
+    "id": 351,
+    "name": "Sencrop",
+    "location": "France",
+    "employees": "Varies",
+    "description": "Networked ag-weather stations and app for plot-level decisions, spraying, and frost management.",
+    "website": "https://sencrop.com",
+    "categories": ["Weather & Meteorology", "Geospatial & GIS"],
+    "isHiring": true
+  },
+  {
+    "id": 352,
+    "name": "Arable",
+    "location": "USA",
+    "employees": "Varies",
+    "description": "In-field devices combining weather, crop, and soil sensing with ML for irrigation and yield decisions.",
+    "website": "https://www.arable.com",
+    "categories": ["Weather & Meteorology", "Climate Science"],
+    "isHiring": true
+  },
+  {
+    "id": 353,
+    "name": "nowcast GmbH (LINET)",
+    "location": "Germany",
+    "employees": "Varies",
+    "description": "High-precision lightning detection network (LINET) with 3D intra-cloud detection and nowcasting.",
+    "website": "https://www.nowcast.de",
+    "categories": ["Weather & Meteorology", "Tech (Data Science & ML)"],
+    "isHiring": false
+  },
+  {
+    "id": 354,
+    "name": "WeatherBell Analytics",
+    "location": "USA",
+    "employees": "Varies",
+    "description": "Meteorological consulting, data services, and sector-specific forecasting tools for energy and ag.",
+    "website": "https://www.weatherbell.com",
+    "categories": ["Weather & Meteorology"],
+    "isHiring": false
+  },
+  {
+    "id": 355,
+    "name": "Athenium Analytics",
+    "location": "USA",
+    "employees": "Varies",
+    "description": "Verified weather datasets and forensic dashboards for claims validation and risk analytics.",
+    "website": "https://www.athenium.com",
+    "categories": ["Weather & Meteorology", "Insurance & Reinsurance", "Tech (Data Science & ML)"],
+    "isHiring": true
+  },
+  {
+    "id": 356,
+    "name": "Praedictix",
+    "location": "USA",
+    "employees": "Varies",
+    "description": "Custom forecasting, risk briefings, and forensic meteorology services for enterprises and media.",
+    "website": "https://praedictix.com",
+    "categories": ["Weather & Meteorology"],
+    "isHiring": true
+  },
+  {
+    "id": 357,
+    "name": "WeatherFlow-Tempest",
+    "location": "USA",
+    "employees": "Varies",
+    "description": "Consumer and enterprise weather stations with ML-enhanced forecasts and an open data/API ecosystem.",
+    "website": "https://tempest.earth",
+    "categories": ["Weather & Meteorology", "Tech (Data Science & ML)"],
+    "isHiring": true
+  },
+  {
+    "id": 358,
+    "name": "Saildrone",
+    "location": "USA",
+    "employees": "Varies",
+    "description": "Uncrewed surface vehicles collecting met-ocean data for forecasting, research, and maritime monitoring.",
+    "website": "https://www.saildrone.com",
+    "categories": ["Weather & Meteorology", "Geospatial & GIS"],
+    "isHiring": true
+  },
+  {
+    "id": 359,
+    "name": "HailTrace",
+    "location": "USA",
+    "employees": "Varies",
+    "description": "Severe weather (hail/wind/tornado) mapping, alerts, and forensic reports for restoration and insurance.",
+    "website": "https://hailtrace.com",
+    "categories": ["Weather & Meteorology", "Insurance & Reinsurance"],
+    "isHiring": true
   }
   ]
 }
