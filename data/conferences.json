@@ -942,6 +942,456 @@
     "isVirtual": true,
     "linkedJobs": [],
     "tags": ["forecasting", "NWP", "severe weather", "hybrid"]
-  }
+  },
+  {
+      "id": "ime-2025-tartu",
+      "title": "28th International Congress on Insurance: Mathematics and Economics (IME 2025)",
+      "description": "Flagship academic conference on actuarial science, insurance mathematics, and economics.",
+      "categories": [
+        "Insurance & Reinsurance",
+        "Academia & Research"
+      ],
+      "location": "Tartu",
+      "country": "Estonia",
+      "startDate": "2025-07-01",
+      "endDate": "2025-07-04",
+      "website": "https://ime2025.ut.ee/",
+      "type": "Conference",
+      "isVirtual": false,
+      "linkedJobs": [],
+      "tags": [
+        "actuarial science",
+        "risk",
+        "econometrics"
+      ]
+    },
+    {
+      "id": "wriec-2025-calgary",
+      "title": "World Risk and Insurance Economics Congress (WRIEC) 2025",
+      "description": "Joint global academic conference by ARIA, APRIA and EGRIE on risk and insurance economics.",
+      "categories": [
+        "Insurance & Reinsurance",
+        "Academia & Research"
+      ],
+      "location": "Calgary, AB",
+      "country": "Canada",
+      "startDate": "2025-08-03",
+      "endDate": "2025-08-07",
+      "website": "https://www.apria.org/Pages/AnnualConference.aspx",
+      "type": "Congress",
+      "isVirtual": false,
+      "linkedJobs": [],
+      "tags": [
+        "risk",
+        "insurance economics"
+      ]
+    },
+    {
+      "id": "egrie-2025-calgary",
+      "title": "52nd EGRIE Annual Seminar 2025",
+      "description": "European Group of Risk and Insurance Economists annual academic seminar.",
+      "categories": [
+        "Insurance & Reinsurance",
+        "Academia & Research"
+      ],
+      "location": "Calgary, AB",
+      "country": "Canada",
+      "startDate": "2025-09-03",
+      "endDate": "2025-09-07",
+      "website": "https://www.egrie.org/annual-seminars",
+      "type": "Seminar",
+      "isVirtual": false,
+      "linkedJobs": [],
+      "tags": [
+        "risk",
+        "insurance economics"
+      ]
+    },
+    {
+      "id": "rts-2026-tallahassee",
+      "title": "Risk Theory Society Annual Seminar 2026",
+      "description": "Research seminar devoted to theoretical and quantitative aspects of risk and insurance.",
+      "categories": [
+        "Insurance & Reinsurance",
+        "Academia & Research"
+      ],
+      "location": "Tallahassee, FL",
+      "country": "USA",
+      "startDate": "2026-04-24",
+      "endDate": "2026-04-26",
+      "website": "https://www.aria.org/risk-theory-society-annual-seminar",
+      "type": "Seminar",
+      "isVirtual": false,
+      "linkedJobs": [],
+      "tags": [
+        "risk theory",
+        "actuarial"
+      ]
+    },
+    {
+      "id": "ids-2026-hannover",
+      "title": "Insurance Data Science Conference 2026",
+      "description": "Academic conference on data science and machine learning applications in insurance.",
+      "categories": [
+        "Insurance & Reinsurance",
+        "Tech (Data Science & ML)",
+        "Academia & Research"
+      ],
+      "location": "Hannover",
+      "country": "Germany",
+      "startDate": "2026-06-09",
+      "endDate": "2026-06-10",
+      "website": "https://insurancedatascience.org/",
+      "type": "Conference",
+      "isVirtual": false,
+      "linkedJobs": [],
+      "tags": [
+        "machine learning",
+        "pricing",
+        "claims"
+      ]
+    },
+    {
+      "id": "ica-2026-tokyo",
+      "title": "33rd International Congress of Actuaries (ICA 2026)",
+      "description": "Triennial global congress of the actuarial profession (hybrid).",
+      "categories": [
+        "Insurance & Reinsurance",
+        "Academia & Research"
+      ],
+      "location": "Tokyo",
+      "country": "Japan",
+      "startDate": "2026-11-08",
+      "endDate": "2026-11-13",
+      "website": "https://ica2026.org/",
+      "type": "Congress",
+      "isVirtual": true,
+      "linkedJobs": [],
+      "tags": [
+        "actuarial",
+        "risk management",
+        "hybrid"
+      ]
+    },
+    {
+      "id": "eaj-2026-istanbul",
+      "title": "European Actuarial Journal Conference 2026",
+      "description": "Peer-reviewed academic conference connecting actuarial theory and practice.",
+      "categories": [
+        "Insurance & Reinsurance",
+        "Academia & Research"
+      ],
+      "location": "Istanbul",
+      "country": "Türkiye",
+      "startDate": "2026-09-09",
+      "endDate": "2026-09-11",
+      "website": "https://eaj2026-iam.metu.edu.tr/",
+      "type": "Conference",
+      "isVirtual": false,
+      "linkedJobs": [],
+      "tags": [
+        "actuarial",
+        "risk"
+      ]
+    },
+    {
+      "id": "astin-bulletin-2026-zurich",
+      "title": "1st ASTIN Bulletin Conference 2026",
+      "description": "Inaugural research conference of ASTIN Bulletin hosted at ETH Zürich.",
+      "categories": [
+        "Insurance & Reinsurance",
+        "Academia & Research"
+      ],
+      "location": "Zurich",
+      "country": "Switzerland",
+      "startDate": "2026-01-14",
+      "endDate": "2026-01-16",
+      "website": "https://math.ethz.ch/fim/activities/conferences/1st-astin-bulletin-conference.html",
+      "type": "Conference",
+      "isVirtual": false,
+      "linkedJobs": [],
+      "tags": [
+        "actuarial science",
+        "risk"
+      ]
+    },
+    {
+      "id": "cas-annual-2025-austin",
+      "title": "CAS Annual Meeting 2025 (Casualty Actuarial Society)",
+      "description": "Property & casualty actuarial meeting with research and practice sessions (livestream available).",
+      "categories": [
+        "Insurance & Reinsurance",
+        "Academia & Research"
+      ],
+      "location": "Austin, TX",
+      "country": "USA",
+      "startDate": "2025-11-09",
+      "endDate": "2025-11-12",
+      "website": "https://annual.casact.org/",
+      "type": "Conference",
+      "isVirtual": true,
+      "linkedJobs": [],
+      "tags": [
+        "actuarial",
+        "P&C",
+        "hybrid"
+      ]
+    },
+    {
+      "id": "eage-annual-2026-aberdeen",
+      "title": "EAGE Annual 2026 — 87th Conference & Exhibition",
+      "description": "Major international meeting on geoscience and engineering across energy and subsurface topics.",
+      "categories": [
+        "Geophysics & Geology",
+        "Energy & Renewables",
+        "Academia & Research"
+      ],
+      "location": "Aberdeen",
+      "country": "UK",
+      "startDate": "2026-06-08",
+      "endDate": "2026-06-11",
+      "website": "https://eageannual.org/",
+      "type": "Conference",
+      "isVirtual": false,
+      "linkedJobs": [],
+      "tags": [
+        "geoscience",
+        "subsurface"
+      ]
+    },
+    {
+      "id": "eage-nearsurface-2025-naples",
+      "title": "Near Surface Geoscience Conference & Exhibition 2025 (EAGE)",
+      "description": "Research-focused conference series on near-surface geophysics and applied geoscience.",
+      "categories": [
+        "Geophysics & Geology",
+        "Academia & Research"
+      ],
+      "location": "Naples",
+      "country": "Italy",
+      "startDate": "2025-09-07",
+      "endDate": "2025-09-11",
+      "website": "https://eagensg.org/",
+      "type": "Conference",
+      "isVirtual": false,
+      "linkedJobs": [],
+      "tags": [
+        "near-surface",
+        "environmental geophysics"
+      ]
+    },
+    {
+      "id": "ssa-annual-2026-pasadena",
+      "title": "Seismological Society of America Annual Meeting 2026",
+      "description": "Annual research meeting covering all areas of earthquake science.",
+      "categories": [
+        "Geophysics & Geology",
+        "Academia & Research"
+      ],
+      "location": "Pasadena, CA",
+      "country": "USA",
+      "startDate": "2026-04-14",
+      "endDate": "2026-04-18",
+      "website": "https://www.seismosoc.org/annual-meeting/",
+      "type": "Annual Meeting",
+      "isVirtual": false,
+      "linkedJobs": [],
+      "tags": [
+        "seismology",
+        "earthquakes"
+      ]
+    },
+    {
+      "id": "esc-2026-istanbul",
+      "title": "40th General Assembly of the European Seismological Commission (ESC 2026)",
+      "description": "Biennial general assembly for seismology researchers in Europe and beyond.",
+      "categories": [
+        "Geophysics & Geology",
+        "Academia & Research"
+      ],
+      "location": "Istanbul",
+      "country": "Türkiye",
+      "startDate": "2026-09-06",
+      "endDate": "2026-09-11",
+      "website": "https://www.esc2026.org/",
+      "type": "General Assembly",
+      "isVirtual": false,
+      "linkedJobs": [],
+      "tags": [
+        "seismology",
+        "hazards"
+      ]
+    },
+    {
+      "id": "seg-2026-saltlake",
+      "title": "SEG 2026 Conference — Society of Economic Geologists",
+      "description": "International economic geology conference on ore deposits and geological processes.",
+      "categories": [
+        "Geophysics & Geology",
+        "Academia & Research"
+      ],
+      "location": "Salt Lake City, UT",
+      "country": "USA",
+      "startDate": "2026-09-30",
+      "endDate": "2026-10-03",
+      "website": "https://www.segweb.org/SEG-2026/SEG-Conference/SEG-2026/Home.aspx",
+      "type": "Conference",
+      "isVirtual": false,
+      "linkedJobs": [],
+      "tags": [
+        "economic geology",
+        "ore deposits"
+      ]
+    },
+    {
+      "id": "goldschmidt-2025-prague",
+      "title": "Goldschmidt 2025",
+      "description": "Foremost annual international conference on geochemistry and related subjects.",
+      "categories": [
+        "Geophysics & Geology",
+        "Academia & Research"
+      ],
+      "location": "Prague",
+      "country": "Czech Republic",
+      "startDate": "2025-07-06",
+      "endDate": "2025-07-11",
+      "website": "https://www.eag.org/events/goldschmidt/",
+      "type": "Conference",
+      "isVirtual": false,
+      "linkedJobs": [],
+      "tags": [
+        "geochemistry"
+      ]
+    },
+    {
+      "id": "goldschmidt-2026-montreal",
+      "title": "Goldschmidt 2026",
+      "description": "Premiere international conference on geochemistry, hosted by the Geochemical Society and EAG.",
+      "categories": [
+        "Geophysics & Geology",
+        "Academia & Research"
+      ],
+      "location": "Montréal, QC",
+      "country": "Canada",
+      "startDate": "2026-07-12",
+      "endDate": "2026-07-17",
+      "website": "https://geochemsoc.org/events/goldschmidt-conference",
+      "type": "Conference",
+      "isVirtual": false,
+      "linkedJobs": [],
+      "tags": [
+        "geochemistry"
+      ]
+    },
+    {
+      "id": "image-2025-houston",
+      "title": "IMAGE '25 — International Meeting for Applied Geoscience & Energy",
+      "description": "SEG/AAPG/SEPM meeting spanning applied geoscience, subsurface imaging, and energy geoscience.",
+      "categories": [
+        "Geophysics & Geology",
+        "Energy & Renewables",
+        "Academia & Research"
+      ],
+      "location": "Houston, TX",
+      "country": "USA",
+      "startDate": "2025-08-25",
+      "endDate": "2025-08-28",
+      "website": "https://www.imageevent.org/",
+      "type": "Conference",
+      "isVirtual": false,
+      "linkedJobs": [],
+      "tags": [
+        "seismic",
+        "subsurface",
+        "energy"
+      ]
+    },
+    {
+      "id": "agu-chapman-ebc-2025",
+      "title": "AGU Chapman Conference: Energy Balance Closure — Causes, Corrections, and Implications",
+      "description": "Topical research meeting on energy balance closure and flux measurements.",
+      "categories": [
+        "Geophysics & Geology",
+        "Academia & Research",
+        "Climate Science"
+      ],
+      "location": "Boulder, CO",
+      "country": "USA",
+      "startDate": "2025-09-15",
+      "endDate": "2025-09-19",
+      "website": "https://www.agu.org/chapman-energy-balance-closure",
+      "type": "Conference",
+      "isVirtual": false,
+      "linkedJobs": [],
+      "tags": [
+        "micrometeorology",
+        "flux towers"
+      ]
+    },
+    {
+      "id": "seg-ml-2026-houston",
+      "title": "Advancing Data Analytics & ML for Exploration Geophysics (SEG Workshop) 2026",
+      "description": "SEG Research Committee workshop on data analytics and machine learning for exploration geophysics.",
+      "categories": [
+        "Geophysics & Geology",
+        "Tech (Data Science & ML)",
+        "Academia & Research"
+      ],
+      "location": "Houston, TX",
+      "country": "USA",
+      "startDate": "2026-05-18",
+      "endDate": "2026-05-21",
+      "website": "https://seg.org/calendar_events/advancing-data-analytics-machine-learning-for-exploration-geophysics/",
+      "type": "Workshop",
+      "isVirtual": false,
+      "linkedJobs": [],
+      "tags": [
+        "machine learning",
+        "exploration"
+      ]
+    },
+    {
+      "id": "seg-agu-hydrogeo-2026",
+      "title": "SEG/AGU Hydrogeophysics Workshop 2026",
+      "description": "Topical workshop on hydrogeophysics methods and applications.",
+      "categories": [
+        "Geophysics & Geology",
+        "Academia & Research"
+      ],
+      "location": "Boise, ID",
+      "country": "USA",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-22",
+      "website": "https://seg.org/calendar_events/seg-agu-hydrogeophysics-workshop/",
+      "type": "Workshop",
+      "isVirtual": false,
+      "linkedJobs": [],
+      "tags": [
+        "hydrogeophysics",
+        "subsurface"
+      ]
+    },
+    {
+      "id": "eage-fault-topseals-2025",
+      "title": "7th International Conference on Fault and Top Seals (EAGE)",
+      "description": "Research conference on faults, seals, and subsurface fluid flow.",
+      "categories": [
+        "Geophysics & Geology",
+        "Academia & Research"
+      ],
+      "location": "Bucharest",
+      "country": "Romania",
+      "startDate": "2025-09-15",
+      "endDate": "2025-09-18",
+      "website": "https://eage.eventsair.com/seventh-international-conference-on-fault-and-top-seals/",
+      "type": "Conference",
+      "isVirtual": false,
+      "linkedJobs": [],
+      "tags": [
+        "faults",
+        "seals",
+        "subsurface"
+      ]
+    }
   ]
 }
