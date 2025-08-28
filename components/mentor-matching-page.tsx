@@ -108,12 +108,13 @@ export function MentorMatchingPage() {
             <h1 className="text-5xl font-bold">Mentor Matching</h1>
           </div>
           <p className="text-xl mb-8 max-w-3xl mx-auto opacity-90">
-            Mentorship has the power to accelerate growth, open new opportunities, and even change the course of your career.
+            Mentorship has the power to accelerate growth, open new opportunities, and even change the course of your
+            career.
           </p>
         </div>
       </div>
 
-      <div className="max-w-2xl mx-auto">
+      <div className="max-w-4xl mx-auto">
         <Card className="border-primary/20">
           <CardHeader>
             <div className="flex items-center gap-3">
@@ -123,8 +124,10 @@ export function MentorMatchingPage() {
               <CardTitle className="text-2xl">Join the List</CardTitle>
             </div>
             <CardDescription>
-              Sign up to be notified when we’ve found your ideal mentor match. We’ll connect you based on your industry, experience level, and professional goals. Once matched, you and your match decide what works best for you, with helpful guidelines available to support the journey.
-              Choose whether you'd like to be a mentor or find a mentor.
+              Sign up to be notified when we’ve found your ideal mentor match. We’ll connect you based on your industry,
+              experience level, and professional goals. Once matched, you and your match decide what works best for you,
+              with helpful guidelines available to support the journey. Choose whether you'd like to be a mentor or find
+              a mentor.
             </CardDescription>
           </CardHeader>
           <CardContent>

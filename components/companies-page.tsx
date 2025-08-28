@@ -219,7 +219,7 @@ export function CompaniesPage() {
           {paginatedCompanies.map((company) => (
             <Card key={company.id} className="hover:shadow-lg transition-shadow">
               <CardHeader>
-                <div className="flex items-start justify-between">
+                <div className="space-y-3">
                   <div className="flex items-center gap-2">
                     <Building2 className="h-5 w-5 text-primary" />
                     <CardTitle className="text-lg">{company.name}</CardTitle>
@@ -229,7 +229,7 @@ export function CompaniesPage() {
                       <Badge
                         key={category}
                         variant="secondary"
-                        className="text-xs"
+                        className="text-xs whitespace-nowrap"
                         style={{
                           backgroundColor: `${industryColors[category as keyof typeof industryColors]}20`,
                           color: industryColors[category as keyof typeof industryColors],
