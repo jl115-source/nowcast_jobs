@@ -107,7 +107,7 @@ export function JobNotificationsPage() {
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-0 bg-primary/40"></div>
+        <div className="absolute inset-0 bg-primary/60"></div>
         <div className="relative z-10 text-center text-white">
           <Mail className="h-16 w-16 mx-auto mb-4" />
           <h1 className="text-4xl font-bold mb-2">Job Notifications</h1>
@@ -117,7 +117,7 @@ export function JobNotificationsPage() {
 
       {/* Content */}
       <div className="container mx-auto px-4 py-12">
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
@@ -153,7 +153,6 @@ export function JobNotificationsPage() {
                       <SelectValue placeholder="Select how often you'd like to receive notifications" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="daily">Daily - Get notified every day</SelectItem>
                       <SelectItem value="weekly">Weekly - Get notified once a week</SelectItem>
                       <SelectItem value="monthly">Monthly - Get notified once a month</SelectItem>
                     </SelectContent>

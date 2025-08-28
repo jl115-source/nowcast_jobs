@@ -223,7 +223,7 @@ export function ConferencesPage() {
             backgroundPosition: "center",
           }}
         />
-        <div className="absolute inset-0 bg-primary/40"></div>
+        <div className="absolute inset-0 bg-primary/60"></div>
         <div className="relative z-10 py-16 px-8 text-white">
           <div className="flex items-center justify-center gap-3 mb-6">
             <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">

@@ -36,7 +36,7 @@ export function SidebarNavigation({ currentPage, onPageChange }: SidebarNavigati
   ]
 
   const resourcePages = [
-    { id: "resources", label: "Professional Certification & Links", icon: BookOpen },
+    { id: "resources", label: "Professional Certification", icon: BookOpen }, // Removed "& Links" from the label
     { id: "conferences", label: "Conferences & Events", icon: Calendar },
     { id: "companies", label: "Companies", icon: Building2 },
   ]

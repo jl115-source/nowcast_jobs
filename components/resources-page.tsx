@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { ChevronDown, ChevronUp, ExternalLink, BookOpen, Award, LinkIcon, Menu } from "lucide-react"
+import { ChevronDown, ChevronUp, ExternalLink, BookOpen, Award, Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible"
@@ -88,11 +88,11 @@ export function ResourcesPage() {
       {/* Header */}
       <div className="relative h-48 bg-gradient-to-r from-primary/20 to-accent/20 overflow-hidden">
         <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/sky-clouds.png')" }} />
-        <div className="absolute inset-0 bg-primary/40"></div>
+        <div className="absolute inset-0 bg-primary/60"></div>
         <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
           <div className="text-center w-full">
             <h1 className="text-4xl font-bold text-white mb-2">Professional Resources</h1>
-            <p className="text-xl text-white/90">Certifications, Education & Helpful Links By Industry</p>
+            <p className="text-xl text-white/90">Certifications By Industry</p>
           </div>
         </div>
       </div>
@@ -198,43 +198,6 @@ export function ResourcesPage() {
                             </div>
                             <Button variant="outline" size="sm" asChild>
                               <a href={cert.link} target="_blank" rel="noopener noreferrer">
-                                <ExternalLink className="h-3 w-3" />
-                              </a>
-                            </Button>
-                          </div>
-                        </div>
-                      ))}
-                    </CollapsibleContent>
-                  </Collapsible>
-
-                  {/* Helpful Links */}
-                  <Collapsible
-                    open={openSections[`${industry}-links`]}
-                    onOpenChange={() => toggleSection(`${industry}-links`)}
-                  >
-                    <CollapsibleTrigger asChild>
-                      <Button variant="outline" className="w-full justify-between bg-transparent">
-                        <div className="flex items-center gap-2">
-                          <LinkIcon className="h-4 w-4" />
-                          Helpful Links ({resources.links.length})
-                        </div>
-                        {openSections[`${industry}-links`] ? (
-                          <ChevronUp className="h-4 w-4" />
-                        ) : (
-                          <ChevronDown className="h-4 w-4" />
-                        )}
-                      </Button>
-                    </CollapsibleTrigger>
-                    <CollapsibleContent className="mt-3 space-y-3">
-                      {resources.links.map((link, index) => (
-                        <div key={index} className="border rounded-lg p-4">
-                          <div className="flex items-start justify-between">
-                            <div className="flex-1">
-                              <h4 className="font-medium">{link.name}</h4>
-                              <p className="text-sm mt-1">{link.description}</p>
-                            </div>
-                            <Button variant="outline" size="sm" asChild>
-                              <a href={link.link} target="_blank" rel="noopener noreferrer">
                                 <ExternalLink className="h-3 w-3" />
                               </a>
                             </Button>
