@@ -1243,6 +1243,108 @@
       "dateAdded": "2025-08-28",
       "remote": true,
       "applicationLink": "https://www.linkedin.com/jobs/view/4283771728"
+    },
+     {
+      "id": "57",
+      "title": "Catastrophe Risk Analyst",
+      "company": "Aon",
+      "location": "London, UK",
+      "type": "Full-time",
+      "salary": "Undisclosed",
+      "categories": ["Insurance & Reinsurance", "Weather & Meteorology", "Climate Science"],
+      "description": "Support Aon’s UK&I Property Catastrophe Analytics team by analyzing exposures to natural disasters (windstorms, floods, earthquakes). Act as analytics lead on reinsurance placements and provide insights on climate, inflation, and event response.",
+      "requirements": [
+        "5+ years in catastrophe analytics in insurance, reinsurance, or financial services",
+        "MSc or higher in finance, statistics, science, or risk-related field",
+        "Experience with catastrophe models (RMS, Verisk, JBA)",
+        "Coding skills in Python, SQL, R; GIS and visualization tools experience preferred"
+      ],
+      "skills": ["Catastrophe Risk", "Reinsurance", "Python", "SQL", "ArcGIS", "Tableau/PowerBI"],
+      "dateAdded": "2025-08-28",
+      "remote": false,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4289314879"
+    },
+    {
+      "id": "58",
+      "title": "Senior Catastrophe Modelling Analyst",
+      "company": "Westfield Insurance",
+      "location": "London, UK",
+      "type": "Full-time",
+      "salary": "Undisclosed",
+      "categories": ["Insurance & Reinsurance", "Weather & Meteorology"],
+      "description": "Ensure exposure data standards, support underwriting with catastrophe risk insights, optimize portfolio management, and validate vendor models. Represent Westfield in market forums and contribute to strategic risk modelling initiatives.",
+      "requirements": [
+        "Minimum 4 years’ catastrophe modelling experience",
+        "Proficiency with RMS and/or AIR vendor models",
+        "Degree in mathematics, modelling, geology, meteorology, or related field",
+        "Strong SQL and Excel skills; Python/R, QGIS desirable"
+      ],
+      "skills": ["Catastrophe Modelling", "Exposure Management", "RMS", "AIR", "SQL", "Python", "QGIS"],
+      "dateAdded": "2025-08-28",
+      "remote": false,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4280222959"
+    },
+    {
+      "id": "59",
+      "title": "Research Fellow in Machine Learning for African Weather Prediction",
+      "company": "University of Leeds",
+      "location": "Leeds, UK",
+      "type": "Full-time",
+      "salary": "Undisclosed",
+      "categories": ["Academia & Research", "Weather & Meteorology", "Tech (Data Science & ML)"],
+      "description": "Research and develop machine learning methods to improve weather prediction across Africa. Collaborate with academic and regional partners, applying AI/ML to enhance numerical weather prediction skill in under-observed regions.",
+      "requirements": [
+        "PhD (or near completion) in atmospheric science, machine learning, or related field",
+        "Experience with weather/climate data and numerical weather prediction",
+        "Strong programming skills in Python and ML frameworks",
+        "Ability to collaborate in interdisciplinary teams"
+      ],
+      "skills": ["Machine Learning", "Weather Prediction", "Numerical Models", "Python", "AI/ML"],
+      "dateAdded": "2025-08-28",
+      "remote": true,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4283771728"
+    },
+        {
+      "id": "60",
+      "title": "Energy Analyst",
+      "company": "Shell",
+      "location": "London, UK",
+      "type": "Full-time",
+      "salary": "Undisclosed",
+      "categories": ["Energy & Renewables", "Weather & Meteorology", "Tech (Data Science & ML)", "Banking & Finance"],
+      "description": "Shell Energy Europe & Environmental Products seeks an Energy Analyst to join the Market Analysis team. The role focuses on developing and improving forecasting models for power fundamentals using machine learning and optimization techniques. The analyst will clean and analyze large energy and weather datasets, build production-ready models for trading, and collaborate with domain experts and traders to enhance decision-making.",
+      "requirements": [
+        "Graduate qualification in engineering, mathematics, computer science; PhD in ML/optimisation preferred",
+        "Experience with forecasting, stochastic optimisation, or dynamic programming",
+        "Proficiency in Python, SQL, and cloud deployment (Azure/AWS)",
+        "Knowledge of power and gas markets advantageous",
+        "Strong mathematical and algorithmic background"
+      ],
+      "skills": ["Python", "SQL", "Machine Learning", "Forecasting", "Optimisation", "Cloud (Azure/AWS)", "Time Series"],
+      "dateAdded": "2025-08-28",
+      "remote": true,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4291926108"
+    },
+    {
+      "id": "61",
+      "title": "Scientific Software Engineer",
+      "company": "Met Office",
+      "location": "Exeter, UK",
+      "type": "Full-time",
+      "salary": "£33,794 – £49,806",
+      "categories": ["Weather & Meteorology", "Tech (Data Science & ML)", "Geospatial & GIS"],
+      "description": "Join the Met Office Research to Operations group as a Scientific Software Engineer. Contribute to operational evaluation and monitoring of NWP systems, ensuring system performance and guiding scientific innovation. Develop, maintain, and support software for numerical weather prediction model verification, delivering scalable and efficient code that underpins operational forecasting and research.",
+      "requirements": [
+        "Proficiency in Python and strong software development background",
+        "Experience with QA, version control (Git/GitHub), and best coding practices",
+        "Ability to deliver robust, scalable, and efficient code",
+        "Collaborative skills to work with scientists and software engineers",
+        "Clear communication of technical knowledge to diverse audiences"
+      ],
+      "skills": ["Python", "Numerical Weather Prediction (NWP)", "Software Engineering", "Git/GitHub", "QA", "Model Verification"],
+      "dateAdded": "2025-08-28",
+      "remote": true,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4291940287"
     }
   ]
 }
