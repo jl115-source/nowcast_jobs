@@ -153,6 +153,7 @@ export function JobNotificationsPage() {
                       <SelectValue placeholder="Select how often you'd like to receive notifications" />
                     </SelectTrigger>
                     <SelectContent>
+                      <SelectItem value="weekly">Biweekly - Get notified twice a week</SelectItem>
                       <SelectItem value="weekly">Weekly - Get notified once a week</SelectItem>
                       <SelectItem value="monthly">Monthly - Get notified once a month</SelectItem>
                     </SelectContent>
