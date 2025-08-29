@@ -28,14 +28,9 @@
         "Satellite Data",
         "Time Series Analysis"
       ],
-      "posted": "2024-01-15",
+      "dateAdded": "2024-01-15",
       "remote": true,
-      "contact": "careers@climateanalytics.org",
-      "applicationLink": "https://climateanalytics.org/careers/climate-data-scientist",
-      "coordinates": {
-        "lat": 40.015,
-        "lng": -105.2705
-      }
+      "applicationLink": "https://climateanalytics.org/careers/climate-data-scientist"
     },
     {
       "id": "2",
@@ -65,14 +60,78 @@
         "Wind Energy",
         "SCADA"
       ],
-      "posted": "2024-01-12",
+      "dateAdded": "2024-01-12",
       "remote": false,
-      "contact": "hr@solarwindtech.com",
-      "applicationLink": "https://solarwindtech.com/jobs/renewable-energy-engineer",
-      "coordinates": {
-        "lat": 30.2672,
-        "lng": -97.7431
-      }
+      "applicationLink": "https://solarwindtech.com/jobs/renewable-energy-engineer"
+    },
+      {
+      "id": "2",
+      "title": "Meteorologist / Weather Analyst",
+      "company": "CW Talent Solutions (Global Hedge Fund)",
+      "location": "Miami, FL",
+      "type": "Full-time",
+      "salary": "Market-leading compensation (Base + Bonus + Sign-on + Relocation)",
+      "categories": ["Banking & Finance", "Energy & Renewables", "Weather & Meteorology"],
+      "description": "Work within a top global hedge fund as a Weather Analyst/Meteorologist, applying atmospheric science and data analytics to trading strategies. The role focuses on research into atmospheric predictability, weather models, and fundamental market analysis, directly supporting investment decisions across energy and related products.",
+      "requirements": [
+        "2+ years of experience as a Weather Analyst/Meteorologist in a buyside or trade shop environment",
+        "Strong knowledge of power and energy markets",
+        "Proficiency in Python",
+        "STEM degree (Meteorology, Atmospheric Science, Data Science, or related field)"
+      ],
+      "skills": [
+        "Python",
+        "Atmospheric Predictability",
+        "Weather Modeling",
+        "Energy Market Analysis",
+        "Data Analysis",
+        "Forecasting",
+        "Trading Strategy Support",
+        "Power Markets",
+        "Statistical Methods",
+        "Fundamental Market Analysis"
+      ],
+      "dateAdded": "2025-08-25",
+      "remote": false,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4290663298"
+    },
+    {
+      "id": "1",
+      "title": "Research Scientist - Weather and Climate Risks",
+      "company": "FM",
+      "location": "Norwood, MA",
+      "type": "Full-time",
+      "salary": "$90,700 - $130,400",
+      "categories": ["Insurance & Reinsurance", "Weather & Meteorology", "Climate Science"],
+      "description": "Join FM’s world-class research team to tackle the pressing challenges of weather and climate risks. You will lead research on extreme weather catastrophes such as tropical cyclones, severe convective storms, and extreme precipitation, contributing to global Climate Risk & Resilience activities and the development of hazard models for wind, flood, storms, and wildfire risks.",
+      "requirements": [
+        "MS in meteorology, data science, or adjacent field with 3+ years professional experience, OR PhD in meteorology, data science, or adjacent field",
+        "Strong knowledge of statistical/dynamical downscaling techniques",
+        "Experience with global and/or regional climate models and CMIP6 output",
+        "Ability to analyze large atmospheric datasets (GeoTIFF, NetCDF, HDF, GRIB)",
+        "Proficiency in at least two programming languages (Python, R, Fortran, Matlab)",
+        "Strong communication and teamwork skills"
+      ],
+      "skills": [
+        "Statistical Downscaling",
+        "Dynamical Downscaling",
+        "Extreme Value Analysis",
+        "Probabilistic Modeling",
+        "Machine Learning",
+        "Neural Networks",
+        "AI for Climate Data",
+        "Python",
+        "R",
+        "Fortran",
+        "Matlab",
+        "NetCDF",
+        "GRIB",
+        "High-Performance Computing",
+        "GIS (ArcGIS, QGIS, GDAL, Google Earth Engine)"
+      ],
+      "dateAdded": "2025-08-14",
+      "remote": false,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4245274371"
     }
   ]
 }
