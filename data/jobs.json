@@ -204,7 +204,7 @@
       "location": "United States (Remote)",
       "type": "Contract",
       "salary": "$80 - $110 per hour",
-      "categories": ["Geospatial & GIS", "Tech (Data Science & ML)", "Climate Science"],
+      "categories": ["Geospatial & GIS", "Tech (Data Science & ML)"],
       "description": "Attis seeks a Geospatial ML Engineer to develop and deploy algorithms for satellite and geospatial data analysis. This 8–12 month W2 contract role focuses on building AI-driven solutions to support climate resilience and infrastructure. You will lead projects from data exploration through delivery, with opportunities for extension.",
       "requirements": [
         "6+ years commercial experience as Data Scientist or ML Engineer",
@@ -579,26 +579,6 @@
       "dateAdded": "2025-08-26",
       "remote": false,
       "applicationLink": "https://www.linkedin.com/jobs/view/4282848228"
-    },
-    {
-      "id": "33",
-      "title": "Director, Product & Sustainability Communications",
-      "company": "General Motors",
-      "location": "Mountain View, CA / Warren, MI (Hybrid)",
-      "type": "Full-time",
-      "salary": "$110,000 - $172,100",
-      "categories": ["Energy & Renewables", "Communications"],
-      "description": "GM seeks a Director to lead sustainability and product communications strategy, advising executives, shaping public narratives, and engaging media around zero-emissions goals.",
-      "requirements": [
-        "Bachelor’s degree",
-        "10+ years communications/PR experience",
-        "Strong media relations and executive comms background",
-        "Sustainability knowledge a plus"
-      ],
-      "skills": ["Strategic Communications", "Media Relations", "Sustainability", "Executive Messaging"],
-      "dateAdded": "2025-08-26",
-      "remote": true,
-      "applicationLink": "https://www.linkedin.com/jobs/view/4290690411"
     },
     {
       "id": "34",
@@ -1374,6 +1354,163 @@
       "dateAdded": "2025-08-28",
       "remote": true,
       "applicationLink": "https://www.linkedin.com/jobs/view/4291940287"
+    },
+      {
+      "id": "62",
+      "title": "Associate - Sustainable Investing Group",
+      "company": "Goldman Sachs (Asset & Wealth Management)",
+      "location": "New York, NY, USA",
+      "type": "Full-time",
+      "salary": "USD 150,000 – 225,000",
+      "categories": ["Banking & Finance", "Climate Science", "Energy & Renewables"],
+      "description": "Goldman Sachs Asset & Wealth Management seeks an Associate for its Sustainable Investing Group within the Horizon Inclusive Growth Fund. The role involves sourcing, evaluating, and structuring private equity investments with a focus on healthcare, education, and financial inclusion. Responsibilities include due diligence, financial modeling, impact analysis, and portfolio management.",
+      "requirements": [
+        "2+ years in investment banking, management consulting, or private equity",
+        "Strong analytical and financial modeling skills",
+        "Passion for impact investing and sustainable finance",
+        "Excellent communication and stakeholder engagement skills"
+      ],
+      "skills": ["Financial Modeling", "Private Equity", "Impact Investing", "Healthcare", "Education", "Financial Inclusion"],
+      "dateAdded": "2025-08-28",
+      "remote": false,
+      "applicationLink": "https://higher.gs.com/roles/143649"
+    },
+    {
+      "id": "63",
+      "title": "Software Engineer, CAT E&A",
+      "company": "Berkshire Hathaway Specialty Insurance",
+      "location": "Atlanta, GA / Boston, MA / San Ramon, CA, USA",
+      "type": "Full-time",
+      "salary": "USD 115,000 – 155,000",
+      "categories": ["Insurance & Reinsurance", "Tech (Data Science & ML)", "Geospatial & GIS"],
+      "description": "BHSI’s Catastrophe Engineering & Analytics (CAT E&A) team seeks a Software Engineer to design and develop end-to-end systems for catastrophe risk research. The role includes building data pipelines, deploying models, collaborating across data science and product teams, and supporting AI/ML projects in catastrophe analytics.",
+      "requirements": [
+        "Bachelor’s or Master’s in Computer Science, Engineering, or related field",
+        "3+ years of software/data/ML engineering experience",
+        "Proficiency in Python or R",
+        "Experience with data pipelines, APIs, and containerization (Docker/Kubernetes) preferred"
+      ],
+      "skills": ["Python", "Data Pipelines", "Machine Learning", "APIs", "Docker", "Kubernetes", "GIS"],
+      "dateAdded": "2025-08-28",
+      "remote": false,
+      "applicationLink": "https://www.bhspecialty.com/career/software-engineer-cat-ea/"
+    },
+    {
+      "id": "64",
+      "title": "Research Scientist (Wildfire Modeling)",
+      "company": "Karen Clark & Company",
+      "location": "Boston, MA, USA",
+      "type": "Full-time",
+      "salary": "Undisclosed",
+      "categories": ["Weather & Meteorology", "Geophysics & Geology", "Insurance & Reinsurance"],
+      "description": "KCC seeks a Research Scientist specializing in wildfire modeling to join its Model Development Team. The role involves developing catastrophe models, conducting sensitivity and validation tests, compiling datasets, and participating in post-disaster field surveys.",
+      "requirements": [
+        "PhD in geophysical sciences or related field",
+        "Experience modeling wildfire behavior and spread",
+        "Strong statistical and probability knowledge",
+        "Proficiency in Python; GIS knowledge a plus"
+      ],
+      "skills": ["Wildfire Modeling", "Python", "Probability & Statistics", "GIS", "Catastrophe Modeling"],
+      "dateAdded": "2025-08-28",
+      "remote": false,
+      "applicationLink": "https://www.karenclarkandco.com/careers/model-development-research-scientist-wildfire-modeling"
+    },
+    {
+      "id": "65",
+      "title": "Flood Engineer",
+      "company": "Karen Clark & Company",
+      "location": "Boston, MA, USA",
+      "type": "Full-time",
+      "salary": "Undisclosed",
+      "categories": ["Weather & Meteorology", "Geophysics & Geology", "Insurance & Reinsurance"],
+      "description": "KCC seeks a Flood Engineer to develop advanced catastrophe models for inland and coastal flooding. Responsibilities include hydrological research, model setup and validation, and post-disaster fieldwork.",
+      "requirements": [
+        "PhD in hydrology/hydraulics or related field",
+        "Experience with flood modeling, calibration, and validation",
+        "Proficiency in Python, FORTRAN, R, or C#",
+        "GIS experience required; remote sensing data experience a plus"
+      ],
+      "skills": ["Flood Modeling", "Hydrology", "Python", "FORTRAN", "GIS", "Remote Sensing"],
+      "dateAdded": "2025-08-28",
+      "remote": false,
+      "applicationLink": "https://www.karenclarkandco.com/careers/model-development-flood-engineer"
+    },
+    {
+      "id": "66",
+      "title": "Wind Engineer",
+      "company": "Karen Clark & Company",
+      "location": "Boston, MA, USA",
+      "type": "Full-time",
+      "salary": "Undisclosed",
+      "categories": ["Weather & Meteorology", "Geophysics & Geology", "Insurance & Reinsurance"],
+      "description": "KCC seeks a Wind Engineer to develop catastrophe models for tropical and extratropical cyclones. Tasks include analyzing building codes, insurance claims, and conducting damage surveys. The role requires strong communication and analytical skills.",
+      "requirements": [
+        "MS in Structural or Wind Engineering; PhD preferred",
+        "Experience with catastrophe modeling a plus",
+        "Ability to travel internationally at short notice"
+      ],
+      "skills": ["Wind Engineering", "Structural Engineering", "Catastrophe Modeling", "Damage Surveys"],
+      "dateAdded": "2025-08-28",
+      "remote": false,
+      "applicationLink": "https://www.karenclarkandco.com/careers/model-development-wind-engineer"
+    },
+    {
+      "id": "67",
+      "title": "Research Scientist (Atmospheric Science)",
+      "company": "Karen Clark & Company",
+      "location": "Boston, MA, USA",
+      "type": "Full-time",
+      "salary": "Undisclosed",
+      "categories": ["Weather & Meteorology", "Tech (Data Science & ML)", "Insurance & Reinsurance"],
+      "description": "KCC seeks a Research Scientist with expertise in atmospheric science for severe convective storm modeling. The role requires data analysis from NWP, radar, and satellite datasets, application of machine learning techniques, and participation in post-disaster surveys.",
+      "requirements": [
+        "PhD in atmospheric science, physics, or applied mathematics",
+        "Experience with atmospheric processes and remote sensing",
+        "Proficiency in Python; GIS and catastrophe modeling experience a plus"
+      ],
+      "skills": ["Atmospheric Science", "Python", "Machine Learning", "NWP", "Remote Sensing", "GIS"],
+      "dateAdded": "2025-08-28",
+      "remote": false,
+      "applicationLink": "https://www.karenclarkandco.com/careers/model-development-research-scientist"
+    },
+    {
+      "id": "68",
+      "title": "Founding Atmospheric Engineer",
+      "company": "Sorcerer",
+      "location": "San Francisco, CA, USA",
+      "type": "Full-time",
+      "salary": "Undisclosed",
+      "categories": ["Weather & Meteorology", "Tech (Data Science & ML)", "Energy & Renewables"],
+      "description": "YC-backed startup Sorcerer seeks a Founding Atmospheric Engineer to own its weather forecasting stack end-to-end. The role involves building NWP and ML models, assimilating balloon observations, deploying on cloud infrastructure, and supporting customer-facing pilots.",
+      "requirements": [
+        "6+ years in atmospheric science",
+        "Expertise with NWP models (WRF, MPAS) and ML models (GraphCast, Anemoi)",
+        "Proficiency in Python, Git, and cloud deployment (AWS, GCP, Azure)"
+      ],
+      "skills": ["NWP", "ML Forecasting", "Python", "Cloud Deployment", "Weather Modeling"],
+      "dateAdded": "2025-08-28",
+      "remote": false,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4286563527/"
+    },
+    {
+      "id": "69",
+      "title": "Software Developer – Forecasting Team",
+      "company": "Norlys Energy Trading A/S",
+      "location": "Aalborg, Denmark",
+      "type": "Full-time",
+      "salary": "Undisclosed",
+      "categories": ["Energy & Renewables", "Weather & Meteorology", "Tech (Data Science & ML)"],
+      "description": "Norlys Energy Trading seeks a Software Developer for its Forecasting team in Aalborg. The role includes building scalable pipelines for weather and forecast data, supporting researchers with tools and infrastructure, and enabling actionable insights for trading strategies.",
+      "requirements": [
+        "MSc in Computer Science, Software Engineering, or Data Science",
+        "Proficiency in Python and clean code practices",
+        "Experience with Azure cloud platforms",
+        "Bonus: experience with scientific Python tools (Pandas, Xarray, Dask, Zarr)"
+      ],
+      "skills": ["Python", "Azure", "Xarray", "Dask", "Data Pipelines", "Forecasting"],
+      "dateAdded": "2025-08-28",
+      "remote": false,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4286910166/"
     }
   ]
 }
