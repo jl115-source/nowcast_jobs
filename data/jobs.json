@@ -876,6 +876,165 @@
       "dateAdded": "2025-08-28",
       "remote": true,
       "applicationLink": "https://www.linkedin.com/jobs/view/4277843875"
+    },
+      {
+      "id": "40",
+      "title": "Climate Risk Modeling Senior Manager",
+      "company": "EY",
+      "location": "Washington, DC",
+      "type": "Full-time",
+      "salary": "$150,400 - $343,600",
+      "categories": ["Consulting", "Climate Science", "Banking & Finance"],
+      "description": "Lead EY’s Climate Change and Sustainability Services practice in climate risk modeling. Oversee advanced risk quantification, scenario analysis, and advisory for clients integrating climate risk into business and financial strategies.",
+      "requirements": [
+        "Extensive experience in climate risk modeling, scenario analysis, and risk management",
+        "Proven leadership in consulting and client advisory roles",
+        "Strong background in financial risk frameworks and sustainability"
+      ],
+      "skills": ["Climate Risk Modeling", "Scenario Analysis", "Consulting Leadership", "Sustainability Strategy"],
+      "dateAdded": "2025-08-28",
+      "remote": false,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4284313348"
+    },
+    {
+      "id": "41",
+      "title": "Climate Sr. Manager",
+      "company": "Mars",
+      "location": "Chicago, IL",
+      "type": "Full-time",
+      "salary": "$152,142 - $209,202",
+      "categories": ["Climate Science", "Energy & Renewables", "Corporate Sustainability"],
+      "description": "Mars is seeking a Climate Senior Manager to lead corporate climate strategy and GHG mitigation efforts across supply chain, packaging, operations, and services. Focus on developing policies, spend-based accounting, and mitigation strategies to drive Mars’ Net Zero commitment.",
+      "requirements": [
+        "BS in business, engineering, or science; advanced sustainability degree preferred",
+        "7+ years in corporate sustainability strategy",
+        "Experience in GHG accounting (spend-based preferred)",
+        "Strong stakeholder engagement and communication skills"
+      ],
+      "skills": ["GHG Accounting", "Corporate Sustainability", "Climate Policy", "Stakeholder Engagement", "Strategy Development"],
+      "dateAdded": "2025-08-28",
+      "remote": false,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4290947939"
+    },
+    {
+      "id": "42",
+      "title": "Geophysicist",
+      "company": "Coterra Energy",
+      "location": "Pittsburgh, PA",
+      "type": "Full-time",
+      "salary": "Undisclosed",
+      "categories": ["Geophysics & Geology", "Energy & Renewables"],
+      "description": "Support drilling and completions planning with seismic interpretation and subsurface analysis. Work closely with engineers, geologists, and drilling teams to optimize unconventional resource development.",
+      "requirements": [
+        "Master’s degree in Geology or Geophysics",
+        "5+ years upstream oil & gas geophysical experience",
+        "Experience with seismic data interpretation, AVO, inversion",
+        "Proficiency with Kingdom and Geographix/Petra"
+      ],
+      "skills": ["Seismic Interpretation", "Reservoir Characterization", "Subsurface Modeling", "Geophysical Risk Analysis"],
+      "dateAdded": "2025-08-28",
+      "remote": false,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4281094624"
+    },
+    {
+      "id": "43",
+      "title": "Senior Geophysicist - Marine",
+      "company": "DUG",
+      "location": "Houston, TX",
+      "type": "Full-time",
+      "salary": "Undisclosed",
+      "categories": ["Geophysics & Geology", "Energy & Renewables"],
+      "description": "Deliver advanced seismic processing and depth imaging for marine projects. Provide technical leadership, QC workflows, and collaborate with clients on seismic imaging solutions.",
+      "requirements": [
+        "BSc, MSc, or PhD in Geophysics, Physics, or related field",
+        "5+ years in marine seismic processing/depth imaging",
+        "Strong Linux/Unix, scripting/programming skills",
+        "Experience with OBC or OBN seismic methods"
+      ],
+      "skills": ["Seismic Processing", "Depth Imaging", "Marine Geophysics", "Seismic QC", "Client Engagement"],
+      "dateAdded": "2025-08-28",
+      "remote": false,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4290062182"
+    },
+    {
+      "id": "44",
+      "title": "Exploration Geophysicist",
+      "company": "Fleet Space Technologies",
+      "location": "United States (Remote)",
+      "type": "Full-time",
+      "salary": "Undisclosed",
+      "categories": ["Geophysics & Geology", "Tech (Data Science & ML)", "Energy & Renewables"],
+      "description": "Process, model, and interpret geophysical datasets for mineral exploration. Support clients with EM and seismic techniques, geophysical inversions, and data analysis workflows.",
+      "requirements": [
+        "Bachelor’s or higher in Geophysics",
+        "3+ years mineral exploration experience",
+        "Strong EM methods expertise",
+        "Proficiency in Python for geophysical data analysis"
+      ],
+      "skills": ["Electromagnetic Geophysics", "Mineral Exploration", "Geophysical Inversions", "Python", "Data Interpretation"],
+      "dateAdded": "2025-08-28",
+      "remote": true,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4282485309"
+    },
+    {
+      "id": "45",
+      "title": "Research Geophysicist",
+      "company": "Viridien",
+      "location": "Houston, TX (Hybrid)",
+      "type": "Full-time",
+      "salary": "Undisclosed (with relocation + signing bonus)",
+      "categories": ["Geophysics & Geology", "Tech (Data Science & ML)", "Energy & Renewables"],
+      "description": "Develop new algorithms and imaging solutions for seismic processing. Work closely with software engineers and seismic imagers to advance HPC-enabled geophysical solutions.",
+      "requirements": [
+        "PhD or Master’s in Geophysics, Physics, or related field",
+        "Strong coding skills (C/C++, CUDA, FORTRAN, Python)",
+        "Knowledge of wave propagation, seismic inversion, HPC",
+        "Research mindset with innovation focus"
+      ],
+      "skills": ["Seismic Imaging", "Wave Propagation", "High-Performance Computing", "Algorithm Development", "Geophysical R&D"],
+      "dateAdded": "2025-08-28",
+      "remote": true,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4195743297"
+    },
+    {
+      "id": "46",
+      "title": "Project Geophysicist",
+      "company": "Terracon",
+      "location": "Chattanooga, TN",
+      "type": "Full-time",
+      "salary": "Undisclosed",
+      "categories": ["Geophysics & Geology", "Consulting", "Infrastructure"],
+      "description": "Perform ground and borehole geophysical surveys to support geotechnical, groundwater, and environmental investigations. Provide interpretations for infrastructure planning and environmental assessment.",
+      "requirements": [
+        "Bachelor’s in Geology or Geophysics; Master’s preferred",
+        "5–8 years’ professional geophysics experience",
+        "Experience with non-invasive and borehole geophysical methods",
+        "Valid driver’s license"
+      ],
+      "skills": ["Geophysical Surveys", "Subsurface Imaging", "Environmental Geophysics", "Groundwater Assessment"],
+      "dateAdded": "2025-08-28",
+      "remote": false,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4227746238"
+    },
+    {
+      "id": "47",
+      "title": "Geophysicist III",
+      "company": "Calpine",
+      "location": "Middletown, CA",
+      "type": "Full-time",
+      "salary": "$119,372 - $168,611",
+      "categories": ["Geophysics & Geology", "Energy & Renewables"],
+      "description": "Support Calpine’s geothermal operations at The Geysers by monitoring seismicity, supporting drilling programs, and evaluating reservoir performance. Collaborate with labs, USGS, and universities on seismic research.",
+      "requirements": [
+        "MS or PhD in Geology/Geophysics",
+        "5+ years experience in applied seismology",
+        "Experience with geothermal or oil/gas field operations",
+        "Proficiency with 3D geological visualization tools"
+      ],
+      "skills": ["Seismology", "Reservoir Evaluation", "Geothermal Energy", "3D Structural Modeling"],
+      "dateAdded": "2025-08-28",
+      "remote": false,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4286575963"
     }
   ]
 }
