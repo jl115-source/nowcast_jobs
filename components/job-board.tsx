@@ -289,6 +289,9 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
   }
 
   const toggleJobExpansion = (jobId: string) => {
+    console.log("[v0] Toggling job expansion for ID:", jobId)
+    console.log("[v0] Current expanded jobs:", Array.from(expandedJobs))
+
     const newExpanded = new Set(expandedJobs)
     if (newExpanded.has(jobId)) {
       newExpanded.delete(jobId)
@@ -302,6 +305,7 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
       window.history.replaceState({}, "", url.toString())
     }
     setExpandedJobs(newExpanded)
+    console.log("[v0] New expanded jobs:", Array.from(newExpanded))
   }
 
   const copyJobLink = (jobId: string) => {
@@ -627,7 +631,15 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
                         Share
                       </Button>
                     </div>
-                    <Button variant="ghost" size="sm" onClick={() => toggleJobExpansion(job.id)}>
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      onClick={(e) => {
+                        e.preventDefault()
+                        e.stopPropagation()
+                        toggleJobExpansion(job.id)
+                      }}
+                    >
                       {isExpanded ? (
                         <>
                           <ChevronUp className="h-4 w-4 mr-1" />

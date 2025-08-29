@@ -1,71 +1,7 @@
 {
   "jobs": [
     {
-      "id": "1",
-      "title": "Climate Data Scientist",
-      "company": "Climate Analytics Institute",
-      "location": "Boulder, CO",
-      "type": "Full-time",
-      "salary": "$95,000 - $130,000",
-      "categories": ["Weather & Meteorology"],
-      "description": "Join our team to analyze global climate data and develop predictive models for climate change impacts. You'll work with satellite data, weather station records, and advanced statistical methods to understand climate patterns and trends.",
-      "requirements": [
-        "PhD in Climate Science, Atmospheric Physics, or related field",
-        "5+ years experience with climate data analysis",
-        "Proficiency in Python, R, and MATLAB",
-        "Experience with NetCDF, HDF5, and geospatial data formats",
-        "Knowledge of climate models (GCMs, RCMs) and statistical downscaling"
-      ],
-      "skills": [
-        "Python",
-        "R",
-        "MATLAB",
-        "NetCDF",
-        "Climate Modeling",
-        "Statistics",
-        "Machine Learning",
-        "GIS",
-        "Satellite Data",
-        "Time Series Analysis"
-      ],
-      "dateAdded": "2024-01-15",
-      "remote": true,
-      "applicationLink": "https://climateanalytics.org/careers/climate-data-scientist"
-    },
-    {
-      "id": "2",
-      "title": "Renewable Energy Systems Engineer",
-      "company": "SolarWind Technologies",
-      "location": "Austin, TX",
-      "type": "Full-time",
-      "salary": "$85,000 - $115,000",
-      "categories": ["Energy & Renewables"],
-      "description": "Design and optimize renewable energy systems including solar, wind, and battery storage. You'll work on grid integration, energy forecasting, and system performance optimization for utility-scale projects.",
-      "requirements": [
-        "MS in Electrical Engineering, Renewable Energy, or related field",
-        "3+ years experience in renewable energy systems",
-        "Knowledge of power systems, grid codes, and energy storage",
-        "Experience with MATLAB/Simulink, PVsyst, or WindPRO",
-        "Understanding of electrical grid operations and smart grid technologies"
-      ],
-      "skills": [
-        "MATLAB",
-        "Simulink",
-        "PVsyst",
-        "WindPRO",
-        "Power Systems",
-        "Grid Integration",
-        "Energy Storage",
-        "Solar PV",
-        "Wind Energy",
-        "SCADA"
-      ],
-      "dateAdded": "2024-01-12",
-      "remote": false,
-      "applicationLink": "https://solarwindtech.com/jobs/renewable-energy-engineer"
-    },
-      {
-      "id": "2",
+      "id": "3",
       "title": "Meteorologist / Weather Analyst",
       "company": "CW Talent Solutions (Global Hedge Fund)",
       "location": "Miami, FL",
@@ -96,7 +32,7 @@
       "applicationLink": "https://www.linkedin.com/jobs/view/4290663298"
     },
     {
-      "id": "1",
+      "id": "4",
       "title": "Research Scientist - Weather and Climate Risks",
       "company": "FM",
       "location": "Norwood, MA",
@@ -132,6 +68,267 @@
       "dateAdded": "2025-08-14",
       "remote": false,
       "applicationLink": "https://www.linkedin.com/jobs/view/4245274371"
+    },
+      {
+      "id": "5",
+      "title": "Meteorologist",
+      "company": "Department of Commerce – NOAA National Weather Service",
+      "location": "Multiple Locations (Anchorage, AK; Mobile, AL; North Little Rock, AR; Miami, FL; and others)",
+      "type": "Full-time",
+      "salary": "$40,332 - $90,898 per year (GS-5 to GS-9, promotion potential GS-12)",
+      "categories": ["Academia & Research", "Climate Science", "Weather & Meteorology", "Insurance & Reinsurance"],
+      "description": "Meteorologists at the National Weather Service (NWS) provide forecasts, warnings, and advisories for weather and climate hazards. This role involves integrating environmental data, producing impact-based warnings, and providing decision support services to emergency managers and public safety partners. Positions are based in Weather Forecast Offices (WFOs) that operate 24/7, requiring rotating shift work, and are developmental through GS-12 full performance level.",
+      "requirements": [
+        "U.S. Citizenship required",
+        "Degree in Meteorology, Atmospheric Science, or related natural science with required coursework (atmospheric dynamics/thermodynamics, synoptic/mesoscale analysis, physical meteorology, remote sensing, physics, differential equations, and related sciences)",
+        "Specialized experience depending on GS level (use of hydro-meteorological data, forecast preparation, monitoring hazards)",
+        "OR equivalent graduate education in Meteorology/Atmospheric Science (Master’s or higher for GS-9)",
+        "Ability to obtain/maintain Low Risk Security Clearance"
+      ],
+      "skills": [
+        "Weather Forecasting",
+        "Impact-Based Decision Support Services (IDSS)",
+        "Hazard Monitoring",
+        "Synoptic and Mesoscale Meteorology",
+        "Hydro-meteorological Data Analysis",
+        "Climate Hazard Assessment",
+        "Communication of Risk and Warnings",
+        "Team Collaboration",
+        "Operational Meteorology"
+      ],
+      "dateAdded": "2025-08-25",
+      "remote": false,
+      "applicationLink": "https://www.usajobs.gov/job/844171600"
+    },
+    {
+      "id": "7",
+      "title": "Quantitative Researcher - Commodities, Weather",
+      "company": "DRW",
+      "location": "Greenwich, CT",
+      "type": "Full-time",
+      "salary": "$150,000 - $300,000",
+      "categories": [
+        "Banking & Finance",
+        "Energy & Renewables",
+        "Weather & Meteorology",
+        "Tech (Data Science & ML)"
+      ],
+      "description": "Join DRW’s Commodities Weather Team to develop quantitative and systematic trading models that merge commodity fundamentals with weather datasets. You’ll utilize machine learning and statistical techniques, enhance model frameworks, and generate predictive trading signals.",
+      "requirements": [
+        "Master’s or PhD in Physics, Mathematics, Statistics, or related technical field",
+        "Strong proficiency in probability, statistics, time series analysis, econometrics, and machine learning",
+        "Programming experience in Python or R",
+        "Prior exposure to commodities (energy/agricultural) is a plus",
+        "Prior exposure to weather data is a plus",
+        "Experience in systematic trading is highly advantageous"
+      ],
+      "skills": [
+        "Probability & Statistics",
+        "Time Series Analysis",
+        "Econometrics",
+        "Machine Learning",
+        "Python",
+        "R",
+        "Commodity Fundamentals",
+        "Weather Data Integration",
+        "Quantitative Modeling",
+        "Systematic Trading"
+      ],
+      "dateAdded": "2025-08-25",
+      "remote": false,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4283422400"
+    },
+     {
+      "id": "5",
+      "title": "Meteorologist",
+      "company": "Department of Commerce – NOAA National Weather Service",
+      "location": "Multiple Locations (Anchorage, AK; Mobile, AL; North Little Rock, AR; Miami, FL; and others)",
+      "type": "Full-time",
+      "salary": "$40,332 - $90,898 per year (GS-5 to GS-9, promotion potential GS-12)",
+      "categories": ["Academia & Research", "Climate Science", "Weather & Meteorology", "Insurance & Reinsurance"],
+      "description": "Meteorologists at the National Weather Service (NWS) provide forecasts, warnings, and advisories for weather and climate hazards. This role involves integrating environmental data, producing impact-based warnings, and providing decision support services to emergency managers and public safety partners. Positions are based in Weather Forecast Offices (WFOs) that operate 24/7, requiring rotating shift work, and are developmental through GS-12 full performance level.",
+      "requirements": [
+        "U.S. Citizenship required",
+        "Degree in Meteorology, Atmospheric Science, or related natural science with required coursework (atmospheric dynamics/thermodynamics, synoptic/mesoscale analysis, physical meteorology, remote sensing, physics, differential equations, and related sciences)",
+        "Specialized experience depending on GS level (use of hydro-meteorological data, forecast preparation, monitoring hazards)",
+        "OR equivalent graduate education in Meteorology/Atmospheric Science (Master’s or higher for GS-9)",
+        "Ability to obtain/maintain Low Risk Security Clearance"
+      ],
+      "skills": [
+        "Weather Forecasting",
+        "Impact-Based Decision Support Services (IDSS)",
+        "Hazard Monitoring",
+        "Synoptic and Mesoscale Meteorology",
+        "Hydro-meteorological Data Analysis",
+        "Climate Hazard Assessment",
+        "Communication of Risk and Warnings",
+        "Team Collaboration",
+        "Operational Meteorology"
+      ],
+      "dateAdded": "2025-08-25",
+      "remote": false,
+      "applicationLink": "https://www.usajobs.gov/job/844171600"
+    },
+    {
+      "id": "8",
+      "title": "Consulting Associate, Geospatial Science",
+      "company": "ERM",
+      "location": "Seattle, WA (Hybrid)",
+      "type": "Full-time",
+      "salary": "$63,103 - $71,651",
+      "categories": ["Geospatial & GIS", "Energy & Renewables", "Climate Science"],
+      "description": "Join ERM’s Pacific Northwest team as a Consulting Associate in Geospatial Science, applying GIS and related technologies to environmental impact assessments, planning, permitting, energy infrastructure, and remediation projects. You will design and maintain GIS projects, develop scripts in Python, manage spatial data, and deliver web-based mapping tools for clients.",
+      "requirements": [
+        "Bachelor’s in Geography, GIS, Natural Sciences, or related field (or equivalent experience)",
+        "0–1 year of experience in GIS or related work",
+        "Experience with Esri ArcGIS Pro suite",
+        "Experience designing ArcGIS Online web maps and apps",
+        "Strong communication and presentation skills",
+        "Must be eligible to work in the U.S. (no sponsorship available)"
+      ],
+      "skills": [
+        "ArcGIS Pro",
+        "ArcGIS Server",
+        "ArcGIS Online",
+        "Python",
+        "ModelBuilder",
+        "GIS Data Management",
+        "Remote Sensing",
+        "SQL Geodatabases",
+        "Cartography",
+        "Field Data Collection (Trimble, Esri mobile apps)"
+      ],
+      "dateAdded": "2025-08-20",
+      "remote": false,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4259879230"
+    },
+    {
+      "id": "9",
+      "title": "Senior Geoscientist",
+      "company": "ONEOK",
+      "location": "Houston, TX (Hybrid)",
+      "type": "Full-time",
+      "salary": "$173,000 - $259,000",
+      "categories": ["Energy & Renewables", "Geophysics & Geology"],
+      "description": "The Senior Storage Geoscientist will optimize underground natural gas storage assets through advanced subsurface evaluation and geologic modeling. Responsibilities include developing 3D reservoir models, seismic interpretation, salt cavern studies, and supporting both brownfield expansions and greenfield feasibility studies.",
+      "requirements": [
+        "Bachelor’s or Master’s in Geology, Geophysics, or related field",
+        "7+ years experience in underground gas storage or related industry",
+        "Proficiency in geoscience software (Petrel, Kingdom, or similar)",
+        "Experience with seismic interpretation and reservoir property modeling",
+        "Strong collaboration and technical communication skills"
+      ],
+      "skills": [
+        "Geologic Modeling",
+        "Seismic Interpretation",
+        "Reservoir Simulation Integration",
+        "Salt Creep Analysis",
+        "Cavern Lifecycle Management",
+        "Petrel",
+        "Kingdom",
+        "Reservoir Development Strategies",
+        "Subsurface Evaluation"
+      ],
+      "dateAdded": "2025-08-21",
+      "remote": false,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4289134617"
+    },
+    {
+      "id": "10",
+      "title": "Geospatial Machine Learning Engineer",
+      "company": "Attis",
+      "location": "United States (Remote)",
+      "type": "Contract",
+      "salary": "$80 - $110 per hour",
+      "categories": ["Geospatial & GIS", "Tech (Data Science & ML)", "Climate Science"],
+      "description": "Attis seeks a Geospatial ML Engineer to develop and deploy algorithms for satellite and geospatial data analysis. This 8–12 month W2 contract role focuses on building AI-driven solutions to support climate resilience and infrastructure. You will lead projects from data exploration through delivery, with opportunities for extension.",
+      "requirements": [
+        "6+ years commercial experience as Data Scientist or ML Engineer",
+        "Extensive experience with geospatial/satellite data and libraries (GDAL, Rasterio, GeoPandas, QGIS)",
+        "Proficiency in Python (NumPy, SciPy, scikit-learn, etc.)",
+        "Experience with deep learning (PyTorch or TensorFlow)",
+        "Must be U.S.-based (Citizen or Green Card holder)"
+      ],
+      "skills": [
+        "Python",
+        "PyTorch",
+        "TensorFlow",
+        "GDAL",
+        "Rasterio",
+        "GeoPandas",
+        "QGIS",
+        "Deep Learning",
+        "Satellite Imagery Analysis",
+        "Geospatial ML Pipelines"
+      ],
+      "dateAdded": "2025-08-21",
+      "remote": true,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4288695758"
+    },
+    {
+      "id": "11",
+      "title": "Research Geophysicist",
+      "company": "Viridien",
+      "location": "Houston, TX (Hybrid)",
+      "type": "Full-time",
+      "salary": "Undisclosed",
+      "categories": ["Geophysics & Geology", "Energy & Renewables", "Tech (Data Science & ML)"],
+      "description": "As part of Viridien’s Subsurface Imaging team, the Research Geophysicist will design innovative solutions for seismic imaging and inversion challenges. You will develop signal processing and wave propagation algorithms, collaborate on HPC applications for GPU/CPU architectures, and publish findings in industry venues.",
+      "requirements": [
+        "PhD or Master’s in Geophysics, Physics, Electrical Engineering, Computer Science, Applied Mathematics, or related field",
+        "Excellent coding skills in C/C++, CUDA, FORTRAN, Python, or OpenCL",
+        "Strong problem-solving and analytical skills",
+        "Knowledge of geophysical concepts and seismic imaging/inversion preferred",
+        "Experience with HPC (MPI, GPU computing) highly desirable",
+        "Must have U.S. work authorization"
+      ],
+      "skills": [
+        "Signal Processing",
+        "Seismic Imaging",
+        "Numerical Optimization",
+        "Wave Propagation",
+        "High Performance Computing",
+        "C/C++",
+        "CUDA",
+        "FORTRAN",
+        "Python",
+        "MPI"
+      ],
+      "dateAdded": "2025-08-23",
+      "remote": false,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4195743297"
+    },
+    {
+      "id": "12",
+      "title": "Data Scientist",
+      "company": "Leidos",
+      "location": "San Diego, CA",
+      "type": "Full-time",
+      "salary": "$85,150 - $153,925",
+      "categories": ["Tech (Data Science & ML)", "Geophysics & Geology"],
+      "description": "Leidos seeks a Data Scientist to join its advanced signal processing and data analytics group in San Diego. This role supports national defense projects through the design of ML-driven solutions in physics domains including hydrodynamics, acoustics, and RF/EO/IR propagation.",
+      "requirements": [
+        "Bachelor’s degree with 4+ years relevant experience OR Master’s with 2+ years",
+        "Experience in developing and implementing machine learning solutions",
+        "Proficiency in C/C++, Python, or Matlab",
+        "Strong knowledge of ML concepts, algorithms, and data exploration techniques",
+        "Must be U.S. citizen eligible for Top Secret clearance"
+      ],
+      "skills": [
+        "Machine Learning",
+        "Signal Processing",
+        "C/C++",
+        "Python",
+        "Matlab",
+        "Hydrodynamics",
+        "Acoustics",
+        "RF/EO/IR Propagation",
+        "Data Analytics",
+        "Defense Applications"
+      ],
+      "dateAdded": "2025-08-27",
+      "remote": false,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4292313859"
     }
   ]
 }
