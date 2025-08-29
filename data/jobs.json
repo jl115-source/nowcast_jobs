@@ -69,37 +69,6 @@
       "remote": false,
       "applicationLink": "https://www.linkedin.com/jobs/view/4245274371"
     },
-      {
-      "id": "5",
-      "title": "Meteorologist",
-      "company": "Department of Commerce – NOAA National Weather Service",
-      "location": "Multiple Locations (Anchorage, AK; Mobile, AL; North Little Rock, AR; Miami, FL; and others)",
-      "type": "Full-time",
-      "salary": "$40,332 - $90,898 per year (GS-5 to GS-9, promotion potential GS-12)",
-      "categories": ["Academia & Research", "Climate Science", "Weather & Meteorology", "Insurance & Reinsurance"],
-      "description": "Meteorologists at the National Weather Service (NWS) provide forecasts, warnings, and advisories for weather and climate hazards. This role involves integrating environmental data, producing impact-based warnings, and providing decision support services to emergency managers and public safety partners. Positions are based in Weather Forecast Offices (WFOs) that operate 24/7, requiring rotating shift work, and are developmental through GS-12 full performance level.",
-      "requirements": [
-        "U.S. Citizenship required",
-        "Degree in Meteorology, Atmospheric Science, or related natural science with required coursework (atmospheric dynamics/thermodynamics, synoptic/mesoscale analysis, physical meteorology, remote sensing, physics, differential equations, and related sciences)",
-        "Specialized experience depending on GS level (use of hydro-meteorological data, forecast preparation, monitoring hazards)",
-        "OR equivalent graduate education in Meteorology/Atmospheric Science (Master’s or higher for GS-9)",
-        "Ability to obtain/maintain Low Risk Security Clearance"
-      ],
-      "skills": [
-        "Weather Forecasting",
-        "Impact-Based Decision Support Services (IDSS)",
-        "Hazard Monitoring",
-        "Synoptic and Mesoscale Meteorology",
-        "Hydro-meteorological Data Analysis",
-        "Climate Hazard Assessment",
-        "Communication of Risk and Warnings",
-        "Team Collaboration",
-        "Operational Meteorology"
-      ],
-      "dateAdded": "2025-08-25",
-      "remote": false,
-      "applicationLink": "https://www.usajobs.gov/job/844171600"
-    },
     {
       "id": "7",
       "title": "Quantitative Researcher - Commodities, Weather",
@@ -1035,6 +1004,245 @@
       "dateAdded": "2025-08-28",
       "remote": false,
       "applicationLink": "https://www.linkedin.com/jobs/view/4286575963"
+    },
+    {
+      "id": "48",
+      "title": "Sustainability Data Advisor",
+      "company": "Watershed",
+      "location": "London, UK",
+      "type": "Full-time",
+      "salary": "Undisclosed",
+      "categories": ["Climate Science", "Sustainability Consulting", "Tech (Data Science & ML)"],
+      "description": "Advise sustainability teams at leading global companies on carbon and non-carbon footprinting, data optimization, and emissions verification. Provide customer-facing advisory services to accelerate decarbonization programs using Watershed’s platform.",
+      "requirements": [
+        "1–3 years in consulting, solutions engineering, or customer-facing role",
+        "Experience with GHG accounting and/or ESG reporting",
+        "Excellent communication and problem-solving skills",
+        "Ability to thrive in a fast-paced, high-volume environment"
+      ],
+      "skills": ["GHG Accounting", "ESG Reporting", "Sustainability Advisory", "Client Engagement"],
+      "dateAdded": "2025-08-28",
+      "remote": false,
+      "applicationLink": "https://watershed.com/en-GB/careers/8f33c1d0-sustainability-data-advisor"
+    },
+    {
+      "id": "49",
+      "title": "Engineering Manager, Sustainability Data Products",
+      "company": "Watershed",
+      "location": "San Francisco, CA",
+      "type": "Full-time",
+      "salary": "$227,000 - $275,300",
+      "categories": ["Engineering Management", "Data Engineering", "Climate Tech"],
+      "description": "Lead a hybrid team of engineers, data scientists, and climate scientists to build sustainability data products. Own the scientific and technical roadmap for core datasets and methodologies powering Watershed’s climate intelligence.",
+      "requirements": [
+        "3–5+ years of engineering management experience",
+        "8+ years in software/data engineering",
+        "Experience managing teams of 9+ engineers",
+        "Background in data engineering, ML, or AI fields"
+      ],
+      "skills": ["Data Engineering", "Team Leadership", "AI/ML", "Climate Tech"],
+      "dateAdded": "2025-08-28",
+      "remote": false,
+      "applicationLink": "https://watershed.com/en-GB/careers/8c28f682-engineering-manager-sustainability-data-products"
+    },
+    {
+      "id": "50",
+      "title": "Staff Software Engineer, Data Engineering",
+      "company": "Watershed",
+      "location": "San Francisco, CA",
+      "type": "Full-time",
+      "salary": "$197,400 - $258,800",
+      "categories": ["Data Engineering", "Software Engineering", "Climate Tech"],
+      "description": "Design, implement, and maintain sustainability data pipelines and models across global value chains. Ensure consistency, reliability, and correctness of datasets used for carbon and ESG reporting.",
+      "requirements": [
+        "6+ years in data/software engineering with focus on data systems",
+        "Fluent in Python and SQL; experience with data pipelining frameworks",
+        "Experience harmonizing messy/heterogeneous datasets",
+        "Strong communication and data modeling skills"
+      ],
+      "skills": ["Python", "SQL", "Data Pipelines", "Data Modeling", "Sustainability Data"],
+      "dateAdded": "2025-08-28",
+      "remote": false,
+      "applicationLink": "https://watershed.com/en-GB/careers/9261bfc7-staff-software-engineer-data-engineering"
+    },
+    {
+      "id": "51",
+      "title": "Meteorologist",
+      "company": "DTN",
+      "location": "Aberdeen, Scotland, UK",
+      "type": "Full-time",
+      "salary": "£26,200 - £32,000",
+      "categories": ["Weather & Meteorology", "Energy & Renewables"],
+      "description": "Provide operational meteorological forecasts primarily for offshore clients. Translate NWP model output into actionable forecasts, send alerts, and deliver client consultations in a shift-based team environment.",
+      "requirements": [
+        "Experience in operational forecasting preferred",
+        "Strong organizational and communication skills",
+        "Ability to work shifts, including nights and weekends",
+        "Interest in working in an international environment"
+      ],
+      "skills": ["Forecasting", "Numerical Weather Prediction", "Client Advisory", "Meteorology"],
+      "dateAdded": "2025-08-28",
+      "remote": false,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4290369108"
+    },
+    {
+      "id": "52",
+      "title": "Quantitative Developer - Weather/Energy Derivatives",
+      "company": "Swiss Re",
+      "location": "London, UK",
+      "type": "Full-time",
+      "salary": "£86,000 - £128,000",
+      "categories": ["Banking & Finance", "Weather & Meteorology", "Tech (Data Science & ML)"],
+      "description": "Develop IT infrastructure and processes for pricing and managing weather/energy derivative contracts. Collaborate with origination and underwriting teams on customized weather risk solutions.",
+      "requirements": [
+        "Master’s degree in a quantitative discipline",
+        "5+ years OOP (Python, R, C++) and SQL/Oracle expertise",
+        "Experience in Linux/Unix and shell scripting",
+        "Familiarity with weather/energy commodity markets is a plus"
+      ],
+      "skills": ["Weather Derivatives", "OOP (Python/R/C++)", "SQL", "Risk Modeling"],
+      "dateAdded": "2025-08-28",
+      "remote": true,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4280392832"
+    },
+    {
+      "id": "53",
+      "title": "KTP Associate – Weather Data Analytics Lead",
+      "company": "University of Reading",
+      "location": "Reading, UK",
+      "type": "Full-time (30-month fixed term)",
+      "salary": "Undisclosed",
+      "categories": ["Weather & Meteorology", "Academia & Research"],
+      "description": "Lead analysis of airborne stratospheric observation data for numerical weather prediction improvement. Work with Voltitude Ltd and University of Reading to evaluate observation impacts on forecast skill.",
+      "requirements": [
+        "PhD or equivalent in atmospheric science, data assimilation, or related field",
+        "Experience coding ensemble sensitivity analyses",
+        "Strong data assimilation and uncertainty quantification background",
+        "Ability to engage in academic and field work"
+      ],
+      "skills": ["Weather Data Analytics", "Numerical Weather Prediction", "Data Assimilation", "Observation Impact"],
+      "dateAdded": "2025-08-28",
+      "remote": false,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4281284655"
+    },
+    {
+      "id": "54",
+      "title": "Python Data Engineer - Weather Team",
+      "company": "DRW",
+      "location": "London, UK",
+      "type": "Full-time",
+      "salary": "Undisclosed",
+      "categories": ["Tech (Data Science & ML)", "Weather & Meteorology", "Energy & Renewables"],
+      "description": "Work on DRW’s Weather Team to build, maintain, and optimize Python-based pipelines for weather and energy data. Enable high-performance quantitative research and trading workflows.",
+      "requirements": [
+        "Strong Python programming skills",
+        "Experience in data engineering or related roles",
+        "Knowledge of weather/energy data handling preferred"
+      ],
+      "skills": ["Python", "Data Engineering", "Weather Data Processing"],
+      "dateAdded": "2025-08-28",
+      "remote": false,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4279663706"
+    },
+    {
+      "id": "55",
+      "title": "Storms Scientist",
+      "company": "Climate X",
+      "location": "London, UK",
+      "type": "Full-time",
+      "salary": "Undisclosed",
+      "categories": ["Climate Science", "Weather & Meteorology", "Tech (Data Science & ML)"],
+      "description": "Develop and validate tropical and extratropical cyclone hazard models for climate risk analytics. Collaborate across scientific teams to deliver storm risk assessments for financial services clients.",
+      "requirements": [
+        "PhD or equivalent in climate science, hazard modelling, or statistics",
+        "Experience with tropical/extratropical cyclone modelling",
+        "Strong Python and scientific computing background",
+        "Ability to present findings to both technical and client audiences"
+      ],
+      "skills": ["Storm Modelling", "Climate Science", "Hazard Models", "Python", "Extreme Value Analysis"],
+      "dateAdded": "2025-08-28",
+      "remote": false,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4283447514"
+    },
+    {
+      "id": "56",
+      "title": "Typhoon Research Lead - APAC",
+      "company": "Aon",
+      "location": "London, UK",
+      "type": "Full-time",
+      "salary": "Undisclosed",
+      "categories": ["Insurance & Reinsurance", "Weather & Meteorology", "Climate Science"],
+      "description": "Lead research into Typhoon and Flood risk in the APAC region. Evaluate catastrophe models, mentor junior researchers, and develop custom risk views for Aon Reinsurance clients.",
+      "requirements": [
+        "Expertise in catastrophe modelling and climate risk",
+        "Experience with Python, R, SQL",
+        "Knowledge of climate change impacts on natural catastrophes",
+        "Strong presentation and mentoring skills"
+      ],
+      "skills": ["Catastrophe Modelling", "Typhoon Risk", "Climate Change Impacts", "Python/R/SQL"],
+      "dateAdded": "2025-08-28",
+      "remote": false,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4259759727"
+    },
+     {
+      "id": "57",
+      "title": "Catastrophe Risk Analyst",
+      "company": "Aon",
+      "location": "London, UK",
+      "type": "Full-time",
+      "salary": "Undisclosed",
+      "categories": ["Insurance & Reinsurance", "Weather & Meteorology", "Climate Science"],
+      "description": "Support Aon’s UK&I Property Catastrophe Analytics team by analyzing exposures to natural disasters (windstorms, floods, earthquakes). Act as analytics lead on reinsurance placements and provide insights on climate, inflation, and event response.",
+      "requirements": [
+        "5+ years in catastrophe analytics in insurance, reinsurance, or financial services",
+        "MSc or higher in finance, statistics, science, or risk-related field",
+        "Experience with catastrophe models (RMS, Verisk, JBA)",
+        "Coding skills in Python, SQL, R; GIS and visualization tools experience preferred"
+      ],
+      "skills": ["Catastrophe Risk", "Reinsurance", "Python", "SQL", "ArcGIS", "Tableau/PowerBI"],
+      "dateAdded": "2025-08-28",
+      "remote": false,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4289314879"
+    },
+    {
+      "id": "58",
+      "title": "Senior Catastrophe Modelling Analyst",
+      "company": "Westfield Insurance",
+      "location": "London, UK",
+      "type": "Full-time",
+      "salary": "Undisclosed",
+      "categories": ["Insurance & Reinsurance", "Weather & Meteorology"],
+      "description": "Ensure exposure data standards, support underwriting with catastrophe risk insights, optimize portfolio management, and validate vendor models. Represent Westfield in market forums and contribute to strategic risk modelling initiatives.",
+      "requirements": [
+        "Minimum 4 years’ catastrophe modelling experience",
+        "Proficiency with RMS and/or AIR vendor models",
+        "Degree in mathematics, modelling, geology, meteorology, or related field",
+        "Strong SQL and Excel skills; Python/R, QGIS desirable"
+      ],
+      "skills": ["Catastrophe Modelling", "Exposure Management", "RMS", "AIR", "SQL", "Python", "QGIS"],
+      "dateAdded": "2025-08-28",
+      "remote": false,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4280222959"
+    },
+    {
+      "id": "59",
+      "title": "Research Fellow in Machine Learning for African Weather Prediction",
+      "company": "University of Leeds",
+      "location": "Leeds, UK",
+      "type": "Full-time",
+      "salary": "Undisclosed",
+      "categories": ["Academia & Research", "Weather & Meteorology", "Tech (Data Science & ML)"],
+      "description": "Research and develop machine learning methods to improve weather prediction across Africa. Collaborate with academic and regional partners, applying AI/ML to enhance numerical weather prediction skill in under-observed regions.",
+      "requirements": [
+        "PhD (or near completion) in atmospheric science, machine learning, or related field",
+        "Experience with weather/climate data and numerical weather prediction",
+        "Strong programming skills in Python and ML frameworks",
+        "Ability to collaborate in interdisciplinary teams"
+      ],
+      "skills": ["Machine Learning", "Weather Prediction", "Numerical Models", "Python", "AI/ML"],
+      "dateAdded": "2025-08-28",
+      "remote": true,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4283771728"
     }
   ]
 }
