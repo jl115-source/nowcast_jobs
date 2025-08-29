@@ -111,6 +111,18 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
     { key: "weather", name: "Weather & Meteorology" },
   ]
 
+  const industryColors = {
+    "Academia & Research": "#8b5cf6",
+    "Banking & Finance": "#10b981",
+    "Climate Science": "#059669",
+    "Energy & Renewables": "#f59e0b",
+    "Geospatial & GIS": "#ef4444",
+    "Geophysics & Geology": "#78716c",
+    "Insurance & Reinsurance": "#06b6d4",
+    "Tech (Data Science & ML)": "#3b82f6",
+    "Weather & Meteorology": "#0ea5e9",
+  }
+
   useEffect(() => {
     const savedFavorites = localStorage.getItem("favoriteJobs")
     if (savedFavorites) {
@@ -562,12 +574,27 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
                   <div className="flex flex-wrap gap-1">
                     {Array.isArray(job.categories)
                       ? job.categories.map((category) => (
-                          <Badge key={category} variant="outline" className="text-xs">
+                          <Badge
+                            key={category}
+                            variant="secondary"
+                            className="text-xs"
+                            style={{
+                              backgroundColor: `${industryColors[category as keyof typeof industryColors]}20`,
+                              color: industryColors[category as keyof typeof industryColors],
+                            }}
+                          >
                             {getCategoryDisplayName(category)}
                           </Badge>
                         ))
                       : job.category && (
-                          <Badge variant="outline" className="text-xs">
+                          <Badge
+                            variant="secondary"
+                            className="text-xs"
+                            style={{
+                              backgroundColor: `${industryColors[job.category as keyof typeof industryColors]}20`,
+                              color: industryColors[job.category as keyof typeof industryColors],
+                            }}
+                          >
                             {getCategoryDisplayName(job.category)}
                           </Badge>
                         )}

@@ -61,7 +61,7 @@ export function SidebarNavigation({ currentPage, onPageChange }: SidebarNavigati
           variant="ghost"
           size="sm"
           onClick={() => setIsMinimized(!isMinimized)}
-          className="text-sidebar-foreground hover:bg-sidebar-accent/10"
+          className="text-sidebar-foreground hover:!bg-transparent"
         >
           {isMinimized ? <ChevronRight className="h-4 w-4" /> : <ChevronLeft className="h-4 w-4" />}
         </Button>
@@ -74,7 +74,7 @@ export function SidebarNavigation({ currentPage, onPageChange }: SidebarNavigati
           <div>
             <Button
               variant="ghost"
-              className={`w-full justify-between gap-3 text-sidebar-foreground hover:bg-sidebar-accent/10 ${
+              className={`w-full justify-between gap-3 text-sidebar-foreground hover:!bg-transparent hover:!text-sidebar-foreground ${
                 isMinimized ? "px-2" : "px-3"
               }`}
               onClick={() => !isMinimized && setIsJobDropdownOpen(!isJobDropdownOpen)}
@@ -101,7 +101,7 @@ export function SidebarNavigation({ currentPage, onPageChange }: SidebarNavigati
                       className={`w-full justify-start gap-3 text-sm ${
                         isActive
                           ? "bg-sidebar-primary text-sidebar-primary-foreground"
-                          : "text-sidebar-foreground hover:bg-sidebar-accent/10"
+                          : "text-sidebar-foreground hover:!bg-transparent hover:!text-sidebar-foreground"
                       }`}
                       onClick={() => onPageChange(page.id)}
                     >
@@ -118,7 +118,7 @@ export function SidebarNavigation({ currentPage, onPageChange }: SidebarNavigati
           <div>
             <Button
               variant="ghost"
-              className={`w-full justify-between gap-3 text-sidebar-foreground hover:bg-sidebar-accent/10 ${
+              className={`w-full justify-between gap-3 text-sidebar-foreground hover:!bg-transparent hover:!text-sidebar-foreground ${
                 isMinimized ? "px-2" : "px-3"
               }`}
               onClick={() => !isMinimized && setIsResourcesDropdownOpen(!isResourcesDropdownOpen)}
@@ -145,7 +145,7 @@ export function SidebarNavigation({ currentPage, onPageChange }: SidebarNavigati
                       className={`w-full justify-start gap-3 text-sm ${
                         isActive
                           ? "bg-sidebar-primary text-sidebar-primary-foreground"
-                          : "text-sidebar-foreground hover:bg-sidebar-accent/10"
+                          : "text-sidebar-foreground hover:!bg-transparent hover:!text-sidebar-foreground"
                       }`}
                       onClick={() => onPageChange(page.id)}
                     >
@@ -169,7 +169,7 @@ export function SidebarNavigation({ currentPage, onPageChange }: SidebarNavigati
                 className={`w-full justify-start gap-3 ${
                   isActive
                     ? "bg-sidebar-primary text-sidebar-primary-foreground"
-                    : "text-sidebar-foreground hover:bg-sidebar-accent/10"
+                    : "text-sidebar-foreground hover:!bg-transparent hover:!text-sidebar-foreground"
                 } ${isMinimized ? "px-2" : "px-3"}`}
                 onClick={() => onPageChange(page.id)}
               >
@@ -185,7 +185,7 @@ export function SidebarNavigation({ currentPage, onPageChange }: SidebarNavigati
               className={`w-full justify-start gap-3 ${
                 currentPage === "contact"
                   ? "bg-sidebar-primary text-sidebar-primary-foreground"
-                  : "text-sidebar-foreground hover:bg-sidebar-accent/10"
+                  : "text-sidebar-foreground hover:!bg-transparent hover:!text-sidebar-foreground"
               } ${isMinimized ? "px-2" : "px-3"}`}
               onClick={() => onPageChange("contact")}
             >

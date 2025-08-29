@@ -581,7 +581,7 @@
       "applicationLink": "https://www.linkedin.com/jobs/view/4282848228"
     },
     {
-      "id": "34",
+      "id": "344",
       "title": "Forecast Model Analyst",
       "company": "California ISO",
       "location": "Folsom, CA (Hybrid)",
@@ -1511,6 +1511,273 @@
       "dateAdded": "2025-08-28",
       "remote": false,
       "applicationLink": "https://www.linkedin.com/jobs/view/4286910166/"
-    }
+    },
+    {
+  "id": "77",
+  "title": "Assistant Professor in Geophysics",
+  "company": "Stanford University",
+  "location": "Stanford, CA",
+  "type": "Full-time, Tenure-track",
+  "salary": "$143,500 - $193,000",
+  "categories": ["Geophysics & Geology", "Climate Science", "Academia & Research"],
+  "description": "Stanford University's Department of Geophysics, part of the Doerr School of Sustainability, invites applications for a tenure-track Assistant Professor position in any field of observational, experimental, computational, or theoretical geophysics. Areas of particular interest include freshwater geophysics, sustainable energy geophysics, planetary interiors, atmospheric/ocean/cryosphere geophysics, and disaster risk.",
+  "requirements": [
+    "Ph.D. in Geophysics or related field (recent or near completion preferred)",
+    "Evidence of exceptional research potential",
+    "Strong teaching capabilities",
+    "Commitment to diversity, equity, and inclusion in academia",
+    "Submission of cover letter, CV, research and teaching statement (max 3 pages), and 3 reference contacts"
+  ],
+  "skills": [
+    "Geophysical modeling",
+    "Observational and experimental geophysics",
+    "Computational geosciences",
+    "Earth system science",
+    "Planetary and environmental applications"
+  ],
+  "dateAdded": "2025-08-21",
+  "remote": false,
+  "applicationLink": "https://facultypositions.stanford.edu/en-us/job/494892/assistant-professor-in-geophysics?lApplicationSubSourceID=11250"
+},
+ {
+    "id": "71",
+    "title": "Postdoctoral Fellow in Atmospheric Chemistry Modeling",
+    "company": "Harvard University (SEAS)",
+    "location": "Cambridge, MA",
+    "type": "Full-time, Postdoctoral",
+    "salary": null,
+    "categories": ["Climate Science", "Atmospheric Chemistry", "Academia & Research"],
+    "description": "Use satellite observations of atmospheric methane to quantify emissions on regional to global scales through inverse analyses; opportunities also include global atmospheric chemistry, air quality, and model development.",
+    "requirements": [
+      "Ph.D. in atmospheric science",
+      "Substantial experience in modeling atmospheric composition"
+    ],
+    "skills": null,
+    "dateAdded": "2025-07-15",
+    "remote": false,
+    "contact": null,
+    "applicationLink": null
+  },
+  {
+    "id": "72",
+    "title": "Assistant Professor – Environmental Geochemistry",
+    "company": "University of California, Berkeley",
+    "location": "Berkeley, CA",
+    "type": "Full-time, tenure-track (9-month)",
+    "salary": "$80,800–$128,700 (base; off‑scale possible)",
+    "categories": ["Geophysics & Geology", "Climate Science", "Academia & Research"],
+    "description": "Tenure‑track position focused on environmental/biogeochemical cycles, including carbon, nitrogen, soils, and land–atmosphere interactions; climate‑solution oriented research encouraged.",
+    "requirements": null,
+    "skills": null,
+    "dateAdded": "2025-08-13",
+    "remote": false,
+    "contact": null,
+    "applicationLink": null
+  },
+  {
+    "id": "73",
+    "title": "Assistant Professor – Physical Climate Science",
+    "company": "University of California, Berkeley",
+    "location": "Berkeley, CA",
+    "type": "Full-time, tenure-track (9-month)",
+    "salary": "$80,800–$128,700 (base; off‑scale possible)",
+    "categories": ["Climate Science", "Academia & Research"],
+    "description": "Tenure‑track position focusing on atmospheric and/or terrestrial dynamics within environmental/climate systems.",
+    "requirements": null,
+    "skills": null,
+    "dateAdded": "2025-08-13",
+    "remote": false,
+    "contact": null,
+    "applicationLink": null
+  },
+  {
+    "id": "74",
+    "title": "Economic Geologist / Research Scientist IV",
+    "company": "Arizona Geological Survey (University of Arizona)",
+    "location": "Tucson, AZ",
+    "type": "Full-time, Research Scientist",
+    "salary": "$76,000–$98,000",
+    "categories": ["Geophysics & Geology", "Academia & Research"],
+    "description": "Economic Geologist role involving geological research, resource assessments, and public service.",
+    "requirements": null,
+    "skills": null,
+    "dateAdded": "2025-08-15",
+    "remote": false,
+    "contact": null,
+    "applicationLink": null
+  },
+  {
+    "id": "75",
+    "title": "Assistant Project Scientist – Earth & Planetary Science",
+    "company": "University of California, Berkeley",
+    "location": "Berkeley, CA",
+    "type": "Full-time, Project Scientist",
+    "salary": null,
+    "categories": ["Geophysics & Geology", "Academia & Research"],
+    "description": "Position with the Global Seismology Research Group focusing on seismic imaging of Earth's structure and internal dynamics.",
+    "requirements": null,
+    "skills": null,
+    "dateAdded": "2025-08-18",
+    "remote": false,
+    "contact": "emartinez24@berkeley.edu",
+    "applicationLink": null
+  },
+  {
+    "id": "76",
+    "title": "Part-time Earth Sciences / Geology / Oceanography Instructor (Pool)",
+    "company": "West Valley‑Mission Community College District",
+    "location": "Saratoga, CA",
+    "type": "Part-time, Instructor Pool",
+    "salary": "$34,000–$56,000 (estimated annual)",
+    "categories": ["Education", "Geophysics & Geology"],
+    "description": "Adjunct pool for courses like Earth Science with Lab, Historical Geology, Physical Geology, etc.",
+    "requirements": [
+      "Submission of district application, resume, transcripts, and equivalency requirements"
+    ],
+    "skills": null,
+    "dateAdded": "2025-08-18",
+    "remote": false,
+    "contact": null,
+    "applicationLink": null
+  },
+  {
+    "id": "77",
+    "title": "Assistant Professor in Geophysics",
+    "company": "Stanford University",
+    "location": "Stanford, CA",
+    "type": "Full-time, Tenure-track",
+    "salary": "$143,500 - $193,000",
+    "categories": ["Geophysics & Geology", "Climate Science", "Academia & Research"],
+    "description": "Stanford University's Department of Geophysics, part of the Doerr School of Sustainability, invites applications for a tenure-track Assistant Professor position in any field of observational, experimental, computational, or theoretical geophysics. Areas of particular interest include freshwater geophysics, sustainable energy geophysics, planetary interiors, atmospheric/ocean/cryosphere geophysics, and disaster risk.",
+    "requirements": [
+      "Ph.D. in Geophysics or related field (recent or near completion preferred)",
+      "Evidence of exceptional research potential",
+      "Strong teaching capabilities",
+      "Commitment to diversity, equity, and inclusion in academia",
+      "Submission of cover letter, CV, research and teaching statement (max 3 pages), and 3 reference contacts"
+    ],
+    "skills": [
+      "Geophysical modeling",
+      "Observational and experimental geophysics",
+      "Computational geosciences",
+      "Earth system science",
+      "Planetary and environmental applications"
+    ],
+    "dateAdded": "2025-08-21",
+    "remote": false,
+    "contact": "dfo-geophysics@stanford.edu",
+    "applicationLink": "https://facultypositions.stanford.edu/en-us/job/494892/assistant-professor-in-geophysics?lApplicationSubSourceID=11250"
+  },
+  {
+    "id": "78",
+    "title": "Postdoctoral Associate – Climate Modeling Alliance (CliMA)",
+    "company": "Massachusetts Institute of Technology (MIT)",
+    "location": "Cambridge, MA",
+    "type": "Full-time, Postdoctoral",
+    "salary": null,
+    "categories": ["Climate Science", "Computational Modeling", "Academia & Research"],
+    "description": "Work with the CliMA team (MIT, Caltech, JPL) developing a GPU‑based climate model using machine‑learned physics for the ocean component in Julia.",
+    "requirements": [
+      "Ph.D. in applied mathematics, atmospheric/oceanic sciences, computer science, engineering, physics, statistics, or related field",
+      "Experience in Julia or parallel programming",
+      "Strong physical, mathematical, and computational background"
+    ],
+    "skills": ["Julia", "GPU computing", "Climate Modeling"],
+    "dateAdded": "2025-08-21",
+    "remote": false,
+    "contact": "earthmachine@mit.edu",
+    "applicationLink": "https://careers.peopleclick.com/careerscp/client_mit/external/jobDetails/jobDetail.html?jobPostId=32814&localeCode=en-us"
+  },
+  {
+    "id": "79",
+    "title": "Postdoctoral Researcher – Antarctic Ice Sheet Observations and Modeling",
+    "company": "Pennsylvania State University",
+    "location": "University Park, PA",
+    "type": "Full-time, Postdoctoral",
+    "salary": null,
+    "categories": ["Cryosphere", "Remote Sensing", "Academia & Research"],
+    "description": "Conduct research on Antarctic supraglacial hydrology and ice‑shelf collapse modeling using remote sensing, machine learning, and climate model emulation (ISMIP7).",
+    "requirements": [
+      "Ph.D. in Glaciology, Geophysics, Geography, Earth System Science or related field",
+      "Expertise in remote sensing and machine learning",
+      "Experience with ice sheet or climate modeling"
+    ],
+    "skills": ["ICESat‑2", "Python", "ML toolkits", "Remote sensing"],
+    "dateAdded": "2025-08-20",
+    "remote": false,
+    "contact": "trusel@psu.edu",
+    "applicationLink": "https://psu.wd1.myworkdayjobs.com/en-US/PSU_Academic/job/Penn-State-University-Park/Postdoctoral-Researcher-in-Antarctic-Ice-Sheet-Observations-and-Modeling_REQ_0000070355-1?source=HigherEdJobs"
+  },
+  {
+    "id": "80",
+    "title": "Research Scientist – Geologist (Researcher/Scientist IV)",
+    "company": "Arizona Geological Survey (University of Arizona)",
+    "location": "Tucson, AZ",
+    "type": "Full-time, Research Scientist",
+    "salary": "$75,540 - $98,201",
+    "categories": ["Geophysics & Geology", "Academia & Research"],
+    "description": "Field‑oriented economic geologist for surficial geologic mapping, geological hazards, and geomorphologic research as part of the STATEMAP program.",
+    "requirements": [
+      "Ph.D. and ≥8 years experience",
+      "Valid driver’s license"
+    ],
+    "skills": ["Geomorphology", "Surficial geologic mapping", "GIS"],
+    "dateAdded": "2025-08-22",
+    "remote": false,
+    "contact": null,
+    "applicationLink": "https://www.higheredjobs.com/faculty/details.cfm?JobCode=179221391&Title=Research%20Scientist%20-%20Researcher%2FScientist%20IV"
+  },
+  {
+    "id": "81",
+    "title": "Assistant or Associate Professor – Energy & Resources Group",
+    "company": "University of California, Berkeley",
+    "location": "Berkeley, CA",
+    "type": "Full-time, Tenure-track (Assistant or Associate)",
+    "salary": "$80,800 - $149,500",
+    "categories": ["Energy & Renewables", "Climate Science", "Academia & Research"],
+    "description": "Tenure‑track position (Assistant or Associate) within UC Berkeley's ERG exploring interdisciplinary research across environmental science, energy systems/engineering, and social science.",
+    "requirements": ["Ph.D. in relevant field", "Interdisciplinary research & teaching potential", "Commitment to inclusive pedagogy"],
+    "skills": ["Mixed‑methods research", "Energy systems", "Socio‑environmental modeling"],
+    "dateAdded": "2025-08-18",
+    "remote": false,
+    "contact": "ERG_AP@berkeley.edu",
+    "applicationLink": "https://aprecruit.berkeley.edu/JPF05092"
+  },
+  {
+    "id": "82",
+    "title": "Postdoctoral Scholar – Geological & Mining Eng & Sciences",
+    "company": "Michigan Technological University",
+    "location": "Houghton, MI",
+    "type": "Full-time, Postdoctoral",
+    "salary": null,
+    "categories": ["Geophysics & Geology", "Energy & Renewables", "Academia & Research"],
+    "description": "Postdoc for DOE‑funded CarbonSAFE CCUS project on reservoir simulation with geomechanical coupling, leakage risk assessment, and capacity evaluations for CO₂ sequestration.",
+    "requirements": [
+      "Ph.D. in geoscience, petroleum, civil/environmental engineering, or related field",
+      "Experience in reservoir simulation and geomechanics"
+    ],
+    "skills": ["Reservoir simulation", "Geomechanical modeling", "CCUS"],
+    "dateAdded": "2025-08-20",
+    "remote": false,
+    "contact": null,
+    "applicationLink": "https://www.employment.mtu.edu/en-us/job/494009/postdoctoral-scholar-geological-mining-engineering-sciences"
+  },
+  {
+    "id": "83",
+    "title": "Assistant/Associate Professor – Geology",
+    "company": "Texas A&M University–Corpus Christi",
+    "location": "Corpus Christi, TX",
+    "type": "Full-time, Tenure-track (Spring 2026 start)",
+    "salary": "Commensurate",
+    "categories": ["Geophysics & Geology", "Academia & Research"],
+    "description": "Tenure‑track Assistant or Associate Professor in Geology focusing on geosystem modeling, Earth system dynamics, or biogeosciences, starting Spring 2026.",
+    "requirements": ["Ph.D. in cohesive discipline", "Strong publication record", "Teaching and mentorship capabilities"],
+    "skills": ["Modeling", "Earth system dynamics", "Interdisciplinary research"],
+    "dateAdded": "2025-08-18",
+    "remote": false,
+    "contact": "valeriu.murgulet@tamucc.edu",
+    "applicationLink": "https://apptrkr.com/get_redirect.php?id=6483475"
+  }
+
   ]
 }
