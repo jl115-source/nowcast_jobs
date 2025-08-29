@@ -229,10 +229,10 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
       case "newest":
         filtered.sort((a, b) => new Date(b.posted).getTime() - new Date(a.posted).getTime())
         break
-      case "salary-low":
+      case "salary-high":
         filtered.sort((a, b) => extractSalaryValue(a.salary) - extractSalaryValue(b.salary))
         break
-      case "salary-high":
+      case "salary-low":
         filtered.sort((a, b) => extractSalaryValue(b.salary) - extractSalaryValue(a.salary))
         break
     }
