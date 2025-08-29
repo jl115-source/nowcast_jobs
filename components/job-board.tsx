@@ -154,6 +154,44 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
     applyFiltersAndSort()
   }, [searchTerm, locationFilter, selectedIndustries, sortBy, showFavoritesOnly])
 
+  const extractSalaryValue = (salary: string): number => {
+    if (!salary || typeof salary !== "string") {
+      return 0
+    }
+
+    // Remove currency symbols and common text
+    const cleanSalary = salary.replace(/[$£€,]/g, "").toLowerCase()
+
+    // Look for salary ranges (e.g., "50000-70000" or "50000 - 70000")
+    const rangeMatch = cleanSalary.match(/(\d+)\s*[-–]\s*(\d+)/)
+    if (rangeMatch) {
+      const min = Number.parseInt(rangeMatch[1])
+      const max = Number.parseInt(rangeMatch[2])
+      return (min + max) / 2 // Use average of range
+    }
+
+    // Look for single salary values
+    const singleMatch = cleanSalary.match(/(\d+)/)
+    if (singleMatch) {
+      const value = Number.parseInt(singleMatch[1])
+
+      // Handle hourly rates (convert to annual assuming 40h/week, 52 weeks)
+      if (cleanSalary.includes("hour") || cleanSalary.includes("hr")) {
+        return value * 40 * 52
+      }
+
+      // Handle monthly rates (convert to annual)
+      if (cleanSalary.includes("month") || cleanSalary.includes("monthly")) {
+        return value * 12
+      }
+
+      // Assume annual if no specific period mentioned
+      return value
+    }
+
+    return 0
+  }
+
   const applyFiltersAndSort = () => {
     let baseJobs = showMatches ? jobMatches.map((match) => match.job) : jobs
 
@@ -192,22 +230,10 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
         filtered.sort((a, b) => new Date(b.posted).getTime() - new Date(a.posted).getTime())
         break
       case "salary-low":
-        filtered.sort((a, b) => {
-          const getSalaryValue = (salary: string) => {
-            const match = salary.match(/[\d,]+/)
-            return match ? Number.parseInt(match[0].replace(/,/g, "")) : 0
-          }
-          return getSalaryValue(a.salary) - getSalaryValue(b.salary)
-        })
+        filtered.sort((a, b) => extractSalaryValue(a.salary) - extractSalaryValue(b.salary))
         break
       case "salary-high":
-        filtered.sort((a, b) => {
-          const getSalaryValue = (salary: string) => {
-            const match = salary.match(/[\d,]+/)
-            return match ? Number.parseInt(match[0].replace(/,/g, "")) : 0
-          }
-          return getSalaryValue(b.salary) - getSalaryValue(a.salary)
-        })
+        filtered.sort((a, b) => extractSalaryValue(b.salary) - extractSalaryValue(a.salary))
         break
     }
 
@@ -358,8 +384,8 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
       >
         <div className="absolute inset-0 bg-primary/60"></div>
         <div className="relative z-10 text-center text-white">
-          <h1 className="text-4xl font-bold mb-4">Specialist Science Jobs</h1>
-          <p className="text-xl mb-6 opacity-90">Niche Jobs in Weather, Climate, Energy, Commodities And Geosciences</p>
+          <h1 className="text-4xl font-bold mb-4">Applied Science Jobs</h1>
+          <p className="text-xl mb-6 opacity-90">Focus on Weather, Climate, Energy, Commodities And Geosciences</p>
         </div>
         <div className="absolute bottom-4 right-4">
           <button
