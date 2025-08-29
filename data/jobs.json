@@ -329,6 +329,553 @@
       "dateAdded": "2025-08-27",
       "remote": false,
       "applicationLink": "https://www.linkedin.com/jobs/view/4292313859"
+    },
+     {
+      "id": "21",
+      "title": "Quantitative Researcher - Commodities, Weather",
+      "company": "DRW",
+      "location": "London, UK",
+      "type": "Full-time",
+      "salary": "Undisclosed",
+      "categories": ["Banking & Finance", "Weather & Meteorology", "Commodities"],
+      "description": "Join DRW’s Commodities Weather Team to develop and expand in-house forecasting models, apply machine learning to commodity fundamentals, and generate trading ideas from weather and market datasets.",
+      "requirements": [
+        "Master’s or PhD in Physics, Mathematics, Statistics, or similar",
+        "Strong background in probability, statistics, econometrics, and ML",
+        "Python or R programming",
+        "Experience in commodities and/or weather a plus",
+        "Systematic trading exposure advantageous"
+      ],
+      "skills": ["Python", "R", "Time Series Analysis", "Econometrics", "Machine Learning", "Systematic Trading"],
+      "dateAdded": "2025-08-26",
+      "remote": false,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4279665647"
+    },
+    {
+      "id": "22",
+      "title": "Atmospheric Scientist / ML Engineer",
+      "company": "Lumicity",
+      "location": "San Francisco Bay Area, CA",
+      "type": "Full-time",
+      "salary": "Undisclosed",
+      "categories": ["Climate Science", "Tech (Data Science & ML)", "Weather & Meteorology"],
+      "description": "High-growth startup seeking atmospheric scientist with experience developing modern ML-based weather prediction models, handling large-scale geospatial data, and leveraging cloud infrastructure for operational forecasts.",
+      "requirements": [
+        "Experience training AI/NWP models",
+        "Expertise with large-scale atmospheric/geospatial datasets",
+        "Cloud infrastructure familiarity",
+        "Industry experience preferred"
+      ],
+      "skills": ["Machine Learning", "Numerical Weather Prediction", "Geospatial Data", "Cloud Infrastructure", "AI Weather Models"],
+      "dateAdded": "2025-08-26",
+      "remote": false,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4279723357"
+    },
+    {
+      "id": "23",
+      "title": "Physical Climate & Natural Catastrophe Risk Consultant",
+      "company": "WTW",
+      "location": "United States (Remote)",
+      "type": "Full-time",
+      "salary": "$100,000 - $200,000",
+      "categories": ["Insurance & Reinsurance", "Climate Science"],
+      "description": "WTW seeks a consultant to conduct catastrophe risk engineering assessments, model hazard exposure, and support climate-related financial disclosures using catastrophe models (RMS, AIR, KatRisk).",
+      "requirements": [
+        "Engineering or science degree",
+        "Experience with catastrophe models",
+        "Familiarity with probabilistic modeling",
+        "SQL, R, and GIS experience",
+        "Insurance industry experience a plus"
+      ],
+      "skills": ["Catastrophe Modeling", "RMS", "AIR", "KatRisk", "SQL", "R", "GIS", "Risk Assessment"],
+      "dateAdded": "2025-08-26",
+      "remote": true,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4247583572"
+    },
+    {
+      "id": "24",
+      "title": "Power Analyst",
+      "company": "Six One Commodities",
+      "location": "Stamford, CT (also Houston, TX & Calgary, CAN)",
+      "type": "Full-time",
+      "salary": "Undisclosed",
+      "categories": ["Energy & Renewables", "Banking & Finance"],
+      "description": "Power Analyst role focused on modeling U.S. power markets, supporting trading desk with forecasts, developing long-term outlooks, and analyzing ISO fundamentals (PJM, ERCOT, MISO).",
+      "requirements": [
+        "Bachelor’s or Master’s in quantitative field",
+        "Proficiency in Python and SQL",
+        "Experience with Tableau, Git, Azure DevOps",
+        "3-5 years analyzing U.S. power markets",
+        "Knowledge of ISOs, power derivatives, FERC rules"
+      ],
+      "skills": ["Python", "SQL", "Tableau", "Power Market Analysis", "Forecasting", "Machine Learning", "US ISO Markets"],
+      "dateAdded": "2025-08-26",
+      "remote": false,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4288076687"
+    },
+    {
+      "id": "25",
+      "title": "Climate Risk Specialist",
+      "company": "Arcadis",
+      "location": "New York, NY (Hybrid, other US locations possible)",
+      "type": "Full-time",
+      "salary": "$90,900 - $140,600",
+      "categories": ["Climate Science", "Geospatial & GIS", "Risk Management"],
+      "description": "Arcadis seeks a Climate Risk Specialist to support climate adaptation projects, leveraging GIS, programming, and climate data analysis to deliver risk assessments and resilience strategies.",
+      "requirements": [
+        "Bachelor’s in environmental science, climatology, geography, or related (Master’s preferred)",
+        "4+ years in climate data analysis or risk assessment",
+        "Expertise in GIS software (ArcGIS/QGIS)",
+        "Proficiency in Python (pandas, ArcPy)",
+        "Experience leading tasks and client delivery"
+      ],
+      "skills": ["Climate Risk Assessment", "ArcGIS", "QGIS", "Python", "HAZUS", "HEC-FDA", "Data Analysis", "GIS Visualization"],
+      "dateAdded": "2025-08-26",
+      "remote": true,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4274246784"
+    },
+    {
+      "id": "26",
+      "title": "Catastrophe Analytics & Model Analyst",
+      "company": "Moody’s Corporation",
+      "location": "Newark, CA",
+      "type": "Full-time",
+      "salary": "$88,000 - $95,800",
+      "categories": ["Insurance & Reinsurance", "Climate Science"],
+      "description": "Moody’s seeks a Catastrophe Analytics & Model Analyst to support model development, validation, and data analytics across insurance solutions. Focus on catastrophe models, climate science, and re/insurance applications.",
+      "requirements": [
+        "Bachelor’s in climate science, meteorology, statistics, or related",
+        "Knowledge of programming languages (SQL, R, Python, Fortran)",
+        "Experience with catastrophe modeling and RMS products a plus",
+        "Strong analytical and problem-solving skills"
+      ],
+      "skills": ["R", "SQL", "Python", "Catastrophe Modeling", "RiskLink", "Risk Modeler", "Data Pipelines", "GitHub"],
+      "dateAdded": "2025-08-26",
+      "remote": false,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4289462770"
+    },
+    {
+      "id": "27",
+      "title": "Program Manager, Environmental Metrics Accounting Lead",
+      "company": "Google",
+      "location": "San Francisco, CA (also Boulder, Mountain View, NYC)",
+      "type": "Full-time",
+      "salary": "$174,000 - $258,000",
+      "categories": ["Tech (Data Science & ML)", "Climate Science"],
+      "description": "Google seeks a Program Manager to lead global environmental metrics accounting, integrating AI/ML for real-time sustainability insights, GHG accounting, and regulatory compliance.",
+      "requirements": [
+        "Bachelor’s degree",
+        "8+ years in program/project management",
+        "Experience with GHG accounting and standards (GHG Protocol, SBTi)",
+        "AI/ML and advanced analytics experience preferred",
+        "Strong cross-functional leadership and communication skills"
+      ],
+      "skills": ["GHG Accounting", "AI/ML", "Data Platforms", "SBTi", "Environmental Metrics", "Sustainability Reporting"],
+      "dateAdded": "2025-08-26",
+      "remote": false,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4273591551"
+    },
+    {
+      "id": "28",
+      "title": "Storm Warning Meteorologist",
+      "company": "AccuWeather",
+      "location": "Wichita, KS",
+      "type": "Full-time",
+      "salary": "Undisclosed",
+      "categories": ["Weather & Meteorology"],
+      "description": "AccuWeather seeks a Storm Warning Meteorologist to issue tornado, hurricane, flood, and site-specific warnings, and support hazardous weather forecasting for clients across North America.",
+      "requirements": [
+        "Bachelor’s in Meteorology/Atmospheric Sciences",
+        "Strong forecasting and communication skills",
+        "Ability to work rotating shifts (including nights, weekends, holidays)"
+      ],
+      "skills": ["Severe Weather Forecasting", "Storm Warnings", "Meteorological Data Analysis", "Client Communication"],
+      "dateAdded": "2025-08-26",
+      "remote": false,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4288454745"
+    },
+    {
+      "id": "29",
+      "title": "Principal Analyst, Renewable Energy & Power Markets",
+      "company": "Karbone",
+      "location": "New York, NY",
+      "type": "Full-time",
+      "salary": "$170,000 - $220,000",
+      "categories": ["Energy & Renewables", "Banking & Finance"],
+      "description": "Karbone seeks a Principal Analyst to lead power and renewable markets research, manage modeling teams, track policy/regulation, and deliver client-ready forecasts and valuations.",
+      "requirements": [
+        "5-10+ years in power market modeling/research",
+        "Renewable energy or environmental markets expertise",
+        "Bachelor’s or higher in quantitative discipline",
+        "Python & Excel required, VBA a plus"
+      ],
+      "skills": ["Python", "Excel", "Power Market Modeling", "RECs", "Capacity Markets", "Policy Analysis", "Forecasting"],
+      "dateAdded": "2025-08-26",
+      "remote": false,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4290579885"
+    },
+    {
+      "id": "30",
+      "title": "Risk Manager - Commodities",
+      "company": "Hudson River Trading",
+      "location": "New York, NY",
+      "type": "Full-time",
+      "salary": "$200,000 - $300,000",
+      "categories": ["Banking & Finance", "Risk Management"],
+      "description": "HRT seeks a Commodities Risk Manager to design and manage risk controls, analyze strategies, build models, and oversee market/liquidity risk for a growing commodities trading desk.",
+      "requirements": [
+        "7+ years commodities risk experience",
+        "Strong understanding of commodities landscape (futures & physical)",
+        "Bachelor’s in math, physics, CS, or related",
+        "Python, Linux, SQL skills"
+      ],
+      "skills": ["Risk Management", "Commodities Trading", "Python", "SQL", "Linux", "Relative Value Strategies"],
+      "dateAdded": "2025-08-26",
+      "remote": false,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4251186706"
+    },
+    {
+      "id": "31",
+      "title": "Climate Quantitative Modeler – Senior VP",
+      "company": "Citi",
+      "location": "Irving, TX (Hybrid)",
+      "type": "Full-time",
+      "salary": "$156,160 - $234,240",
+      "categories": ["Banking & Finance", "Climate Science", "Risk Management"],
+      "description": "Citi seeks a Senior VP Climate Quantitative Modeler to develop climate risk models for wholesale lending portfolios, integrating ML and statistical approaches into firmwide stress testing.",
+      "requirements": [
+        "MS/PhD in Hydrology, Meteorology, Statistics, Math, or Engineering",
+        "6-10 years quantitative modeling experience",
+        "Climate risk/climate change background",
+        "Proficiency in Python, SQL, Unix/Linux"
+      ],
+      "skills": ["Climate Risk Modeling", "Python", "SQL", "Bayesian Inference", "Stress Testing", "Data Management"],
+      "dateAdded": "2025-08-26",
+      "remote": true,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4259596227"
+    },
+    {
+      "id": "32",
+      "title": "Senior Non-Natural Catastrophe Research Analyst",
+      "company": "MS Amlin",
+      "location": "London, UK",
+      "type": "Full-time",
+      "salary": "Undisclosed",
+      "categories": ["Insurance & Reinsurance", "Risk Management"],
+      "description": "MS Amlin seeks a Senior Analyst for Non-Natural Catastrophe research, including cyber, aviation, and casualty risks. Responsible for exposure management, model validation, and NNC risk scenarios.",
+      "requirements": [
+        "Knowledge of casualty/crisis management risk",
+        "Experience with R or Python",
+        "Strong communication and analytics skills"
+      ],
+      "skills": ["Catastrophe Modeling", "Exposure Management", "Non-Natural Risk", "Python", "R"],
+      "dateAdded": "2025-08-26",
+      "remote": false,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4282848228"
+    },
+    {
+      "id": "33",
+      "title": "Director, Product & Sustainability Communications",
+      "company": "General Motors",
+      "location": "Mountain View, CA / Warren, MI (Hybrid)",
+      "type": "Full-time",
+      "salary": "$110,000 - $172,100",
+      "categories": ["Energy & Renewables", "Communications"],
+      "description": "GM seeks a Director to lead sustainability and product communications strategy, advising executives, shaping public narratives, and engaging media around zero-emissions goals.",
+      "requirements": [
+        "Bachelor’s degree",
+        "10+ years communications/PR experience",
+        "Strong media relations and executive comms background",
+        "Sustainability knowledge a plus"
+      ],
+      "skills": ["Strategic Communications", "Media Relations", "Sustainability", "Executive Messaging"],
+      "dateAdded": "2025-08-26",
+      "remote": true,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4290690411"
+    },
+    {
+      "id": "34",
+      "title": "Forecast Model Analyst",
+      "company": "California ISO",
+      "location": "Folsom, CA (Hybrid)",
+      "type": "Full-time",
+      "salary": "$43.27 - $72.12/hour",
+      "categories": ["Energy & Renewables", "Weather & Meteorology", "Tech (Data Science & ML)"],
+      "description": "CAISO seeks a Forecast Model Analyst to develop and improve short-term load, wind, and solar forecasts using ML, AI, and NWP models. Supports real-time energy efficiency and demand models.",
+      "requirements": [
+        "Bachelor’s in Engineering, Stats, CS, Meteorology, or related",
+        "2+ years forecasting experience (load/wind/solar)",
+        "ML/AI forecasting techniques (ANN, SVM, regression)",
+        "Programming in SQL, Python, R, C#, VBA"
+      ],
+      "skills": ["Machine Learning", "Numerical Weather Prediction", "Short-Term Load Forecasting", "SQL", "Python", "R"],
+      "dateAdded": "2025-08-26",
+      "remote": true,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4231266929"
+    },{
+      "id": "17",
+      "title": "Consultant, Ocean Modeler",
+      "company": "ERM",
+      "location": "Ewing, NJ",
+      "type": "Full-time",
+      "salary": "$74,000 - $83,600",
+      "categories": ["Climate Science", "Geophysics & Geology", "Geospatial & GIS"],
+      "description": "ERM seeks a Consultant, Ocean Modeler to join its Water Resources and Climate Change Modeling team. The role involves applying hydrodynamic, sediment transport, and water quality models to marine and freshwater environments, supporting environmental assessments and permitting for large-scale capital projects.",
+      "requirements": [
+        "Bachelor’s in Engineering, Oceanography, or related field (Master’s preferred)",
+        "2+ years of experience with numerical models",
+        "Programming in FORTRAN, C++, or Python",
+        "Expertise with hydrodynamic, wave, and sediment transport models (ROMS, Delft3D, SWAN, XBeach, ADCIRC)",
+        "Experience with hydraulic/flood modeling tools (HEC-RAS, Flo2D, Flood Modeller)",
+        "Excellent problem-solving and technical writing skills"
+      ],
+      "skills": [
+        "Hydrodynamic Modeling",
+        "Sediment Transport",
+        "ROMS",
+        "Delft3D",
+        "SWAN",
+        "XBeach",
+        "ADCIRC",
+        "Python",
+        "FORTRAN",
+        "GIS Analysis"
+      ],
+      "dateAdded": "2025-08-18",
+      "remote": false,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4273365392"
+    },
+    {
+      "id": "18",
+      "title": "Geospatial Data Scientist (TS/SCI)",
+      "company": "Maxar Technologies",
+      "location": "Tampa, FL",
+      "type": "Full-time",
+      "salary": "$71,000 - $152,000",
+      "categories": ["Geospatial & GIS", "Tech (Data Science & ML)"],
+      "description": "Maxar is seeking a Geospatial Data Scientist with an active TS/SCI clearance to support advanced geospatial analyses in Tampa, FL. The role focuses on developing geoprocessing workflows, performing temporal and spatial analysis, and building user-facing applications to enable high-level decision-making.",
+      "requirements": [
+        "US citizenship with active TS/SCI clearance",
+        "BS in Computer Science, GIS, or related technical discipline (Master’s a plus)",
+        "2+ years of experience as a Data Scientist or ORSA",
+        "Proficiency with Python, R, and relational databases",
+        "Experience with ArcGIS Pro, ArcGIS Online, and geospatial visualization",
+        "Ability to work onsite 4 days per week in Tampa, FL"
+      ],
+      "skills": [
+        "Python",
+        "R",
+        "ArcGIS Pro",
+        "ArcGIS Online",
+        "Geospatial Analysis",
+        "Database Management",
+        "GDAL",
+        "GeoPandas",
+        "Data Visualization",
+        "Workflow Automation"
+      ],
+      "dateAdded": "2025-08-19",
+      "remote": false,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4289963748"
+    },
+    {
+      "id": "19",
+      "title": "Geochemical Data Science Fellow",
+      "company": "Cascade Climate",
+      "location": "Boston, MA (Remote option)",
+      "type": "Full-time (9-month fellowship, extendable)",
+      "salary": "$80,000 - $150,000",
+      "categories": ["Climate Science", "Academia & Research"],
+      "description": "Cascade Climate seeks a Geochemical Data Science Fellow to analyze Enhanced Rock Weathering (ERW) field data. The fellow will develop an analytical framework for messy geochemistry datasets, produce rigorous statistical results, and publish findings to support the scaling of durable carbon removal solutions.",
+      "requirements": [
+        "3+ years of experience analyzing large, complex earth science datasets",
+        "Advanced degree in earth science, geochemistry, data science, or related field",
+        "Proficiency in R or Python",
+        "Knowledge of environmental geochemistry and statistical methods for uncertainty analysis",
+        "Strong technical writing and stakeholder communication skills"
+      ],
+      "skills": [
+        "Python",
+        "R",
+        "Geochemistry",
+        "Statistical Modeling",
+        "Bayesian Methods",
+        "PostgreSQL",
+        "GitHub",
+        "Uncertainty Analysis",
+        "Geochemical Modeling",
+        "Data Management"
+      ],
+      "dateAdded": "2025-08-20",
+      "remote": true,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4269564543"
+    },
+    {
+      "id": "20",
+      "title": "Lead Wind Resource Analyst",
+      "company": "GE Vernova",
+      "location": "Schenectady, NY",
+      "type": "Full-time",
+      "salary": "$98,400 - $164,000",
+      "categories": ["Energy & Renewables", "Weather & Meteorology"],
+      "description": "GE Vernova is hiring a Lead Wind Resource Analyst to support sales proposals for onshore wind projects. The role involves conducting wind resource assessments, annual energy production analyses, and turbine layout optimization, while providing technical recommendations for digital wind farm optimization.",
+      "requirements": [
+        "Bachelor’s in Meteorology, Atmospheric Science, or related field",
+        "5+ years of experience in Wind Resource Assessment or wind-related engineering",
+        "Experience with OpenWind, Windographer, and GIS tools",
+        "Knowledge of wind flow modeling and turbine micro-siting",
+        "Ability to communicate technical results effectively"
+      ],
+      "skills": [
+        "Wind Resource Assessment",
+        "Annual Energy Production Modeling",
+        "OpenWind",
+        "Windographer",
+        "GIS",
+        "Turbine Layout Optimization",
+        "Atmospheric Flow Modeling",
+        "Data Analysis",
+        "Technical Communication",
+        "Renewable Energy Strategy"
+      ],
+      "dateAdded": "2025-08-20",
+      "remote": false,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4278513444"
+    },
+    {
+      "id": "33",
+      "title": "Scientist, Climate Innovation",
+      "company": "Environmental Defense Fund",
+      "location": "Boulder, CO",
+      "type": "Full-time",
+      "salary": "$95,000 - $105,000",
+      "categories": ["Climate Science", "Energy & Renewables", "Academia & Research"],
+      "description": "Conduct early-stage research on innovative decarbonization and climate-warming reduction strategies across energy, industry, agriculture, and natural systems. Translate science into actionable climate solutions.",
+      "requirements": [
+        "PhD with 2+ years postdoc, or MS with 5+ years, or BS with 7+ years relevant experience",
+        "Strong quantitative skills in Python/R",
+        "Experience with spatial analysis (ArcGIS/QGIS, Google Earth Engine)",
+        "Track record of collaborative research and peer-reviewed publications"
+      ],
+      "skills": ["Python", "R", "Spatial Data Analysis", "Climate Science", "Statistical Modeling", "Policy Translation"],
+      "dateAdded": "2025-08-28",
+      "remote": false,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4288107302"
+    },
+    {
+      "id": "34",
+      "title": "Senior Air Quality and Climate Change Consultant",
+      "company": "Stantec",
+      "location": "Las Vegas, NV",
+      "type": "Full-time",
+      "salary": "$99,000 - $175,200",
+      "categories": ["Climate Science", "Consulting", "Energy & Renewables"],
+      "description": "Provide technical direction and business development for air quality, climate change, and energy consulting services. Manage permitting, compliance, modeling, and health risk assessments.",
+      "requirements": [
+        "10+ years consulting experience in air quality, climate change, or energy services",
+        "Expertise with permitting (NSR, PSD, Title V) and dispersion modeling",
+        "Strong client-facing and project management skills"
+      ],
+      "skills": ["Air Quality Modeling", "GHG Analysis", "Project Management", "Client Engagement", "Business Development"],
+      "dateAdded": "2025-08-28",
+      "remote": false,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4252804709"
+    },
+    {
+      "id": "35",
+      "title": "Senior Consultant, Climate, Resilience and Sustainability",
+      "company": "WSP USA",
+      "location": "Chipley, FL (or Southeastern US offices)",
+      "type": "Full-time",
+      "salary": "Undisclosed",
+      "categories": ["Climate Science", "Consulting", "Resilience Planning"],
+      "description": "Support transportation agencies and local governments in developing sustainability, energy, and climate strategies. Provide planning and policy expertise to integrate climate into organizational strategies.",
+      "requirements": [
+        "Bachelor's degree in engineering, planning, policy, or related field",
+        "5-7 years of experience developing sustainability/climate plans",
+        "Experience with stakeholder engagement and policy integration"
+      ],
+      "skills": ["Climate Policy", "Sustainability Planning", "Resilience Analysis", "Public Sector Consulting"],
+      "dateAdded": "2025-08-28",
+      "remote": false,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4269822484"
+    },
+    {
+      "id": "36",
+      "title": "Sustainability Expert - Climate Risk",
+      "company": "Quantis",
+      "location": "Boston, MA",
+      "type": "Full-time",
+      "salary": "$118,000 - $130,000",
+      "categories": ["Consulting", "Climate Science", "Banking & Finance"],
+      "description": "Advise clients on climate risk strategies, scenario analysis, and sustainability frameworks. Deliver client-facing consulting in ESG, climate disclosure, and corporate strategy.",
+      "requirements": [
+        "5+ years consulting experience in climate/ESG",
+        "Experience with TCFD, CDP, CSRD, SBTi frameworks",
+        "Strong client engagement and strategy skills"
+      ],
+      "skills": ["Climate Risk Analysis", "Scenario Modeling", "Sustainability Strategy", "ESG Frameworks", "Client Consulting"],
+      "dateAdded": "2025-08-28",
+      "remote": true,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4283778548"
+    },
+    {
+      "id": "37",
+      "title": "Climate Strategist",
+      "company": "Patch",
+      "location": "San Francisco, CA",
+      "type": "Full-time",
+      "salary": "$165,000 - $250,000",
+      "categories": ["Climate Science", "Banking & Finance", "Consulting"],
+      "description": "Guide corporates through carbon markets, decarbonization pathways, climate disclosures, and long-term carbon credit strategies. Act as trusted advisor on voluntary and compliance carbon markets.",
+      "requirements": [
+        "10+ years experience in sustainability strategy, carbon markets, or climate advisory",
+        "Deep knowledge of carbon markets and net-zero frameworks",
+        "Strong client-facing and strategic advisory experience"
+      ],
+      "skills": ["Carbon Markets", "Sustainability Strategy", "Climate Finance", "ESG Reporting", "Client Engagement"],
+      "dateAdded": "2025-08-28",
+      "remote": false,
+      "applicationLink": "https://www.linkedin.com/jobs/view/3994456403"
+    },
+    {
+      "id": "38",
+      "title": "Climate Risk Specialist",
+      "company": "Arcadis",
+      "location": "Philadelphia, PA",
+      "type": "Full-time",
+      "salary": "$90,900 - $140,600",
+      "categories": ["Consulting", "Climate Science", "Resilience Planning"],
+      "description": "Perform applied climate risk assessments for infrastructure projects. Provide resilience planning, physical risk assessment, and stakeholder engagement across public and private clients.",
+      "requirements": [
+        "Experience in climate risk assessment and resilience planning",
+        "Strong consulting and stakeholder engagement skills",
+        "Technical expertise in physical climate risk analysis"
+      ],
+      "skills": ["Climate Risk", "Resilience Planning", "Infrastructure Risk", "Stakeholder Engagement"],
+      "dateAdded": "2025-08-28",
+      "remote": true,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4274254061"
+    },
+    {
+      "id": "39",
+      "title": "Director, Climate Action Accelerator",
+      "company": "Harvard University",
+      "location": "Cambridge, MA",
+      "type": "Full-time",
+      "salary": "Senior leadership pay band (Grade 060)",
+      "categories": ["Academia & Research", "Climate Science", "Leadership"],
+      "description": "Lead Harvard’s Climate Action Accelerator under the Salata Institute. Convene stakeholders across academia, business, and government to identify and act on promising climate solutions.",
+      "requirements": [
+        "Advanced degree required",
+        "10+ years of leadership experience in climate change issues",
+        "Proven ability to convene stakeholders and build consensus",
+        "Strong network across policy, business, academia, and NGOs"
+      ],
+      "skills": ["Climate Leadership", "Stakeholder Engagement", "Policy Translation", "Program Management", "Strategic Convening"],
+      "dateAdded": "2025-08-28",
+      "remote": true,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4277843875"
     }
   ]
 }
