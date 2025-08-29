@@ -37,7 +37,7 @@
       "company": "FM",
       "location": "Norwood, MA",
       "type": "Full-time",
-      "salary": "$90,700 - $130,400",
+      "salary": "90,700 - 130,400",
       "categories": ["Insurance & Reinsurance", "Weather & Meteorology", "Climate Science"],
       "description": "Join FM’s world-class research team to tackle the pressing challenges of weather and climate risks. You will lead research on extreme weather catastrophes such as tropical cyclones, severe convective storms, and extreme precipitation, contributing to global Climate Risk & Resilience activities and the development of hazard models for wind, flood, storms, and wildfire risks.",
       "requirements": [
@@ -75,13 +75,8 @@
       "company": "DRW",
       "location": "Greenwich, CT",
       "type": "Full-time",
-      "salary": "$150,000 - $300,000",
-      "categories": [
-        "Banking & Finance",
-        "Energy & Renewables",
-        "Weather & Meteorology",
-        "Tech (Data Science & ML)"
-      ],
+      "salary": "150,000 - 300,000",
+      "categories": ["Banking & Finance", "Energy & Renewables", "Weather & Meteorology", "Tech (Data Science & ML)"],
       "description": "Join DRW’s Commodities Weather Team to develop quantitative and systematic trading models that merge commodity fundamentals with weather datasets. You’ll utilize machine learning and statistical techniques, enhance model frameworks, and generate predictive trading signals.",
       "requirements": [
         "Master’s or PhD in Physics, Mathematics, Statistics, or related technical field",
@@ -107,7 +102,7 @@
       "remote": false,
       "applicationLink": "https://www.linkedin.com/jobs/view/4283422400"
     },
-     {
+    {
       "id": "5",
       "title": "Meteorologist",
       "company": "Department of Commerce – NOAA National Weather Service",
@@ -299,7 +294,7 @@
       "remote": false,
       "applicationLink": "https://www.linkedin.com/jobs/view/4292313859"
     },
-     {
+    {
       "id": "21",
       "title": "Quantitative Researcher - Commodities, Weather",
       "company": "DRW",
@@ -335,7 +330,13 @@
         "Cloud infrastructure familiarity",
         "Industry experience preferred"
       ],
-      "skills": ["Machine Learning", "Numerical Weather Prediction", "Geospatial Data", "Cloud Infrastructure", "AI Weather Models"],
+      "skills": [
+        "Machine Learning",
+        "Numerical Weather Prediction",
+        "Geospatial Data",
+        "Cloud Infrastructure",
+        "AI Weather Models"
+      ],
       "dateAdded": "2025-08-26",
       "remote": false,
       "applicationLink": "https://www.linkedin.com/jobs/view/4279723357"
@@ -377,7 +378,15 @@
         "3-5 years analyzing U.S. power markets",
         "Knowledge of ISOs, power derivatives, FERC rules"
       ],
-      "skills": ["Python", "SQL", "Tableau", "Power Market Analysis", "Forecasting", "Machine Learning", "US ISO Markets"],
+      "skills": [
+        "Python",
+        "SQL",
+        "Tableau",
+        "Power Market Analysis",
+        "Forecasting",
+        "Machine Learning",
+        "US ISO Markets"
+      ],
       "dateAdded": "2025-08-26",
       "remote": false,
       "applicationLink": "https://www.linkedin.com/jobs/view/4288076687"
@@ -398,7 +407,16 @@
         "Proficiency in Python (pandas, ArcPy)",
         "Experience leading tasks and client delivery"
       ],
-      "skills": ["Climate Risk Assessment", "ArcGIS", "QGIS", "Python", "HAZUS", "HEC-FDA", "Data Analysis", "GIS Visualization"],
+      "skills": [
+        "Climate Risk Assessment",
+        "ArcGIS",
+        "QGIS",
+        "Python",
+        "HAZUS",
+        "HEC-FDA",
+        "Data Analysis",
+        "GIS Visualization"
+      ],
       "dateAdded": "2025-08-26",
       "remote": true,
       "applicationLink": "https://www.linkedin.com/jobs/view/4274246784"
@@ -439,7 +457,14 @@
         "AI/ML and advanced analytics experience preferred",
         "Strong cross-functional leadership and communication skills"
       ],
-      "skills": ["GHG Accounting", "AI/ML", "Data Platforms", "SBTi", "Environmental Metrics", "Sustainability Reporting"],
+      "skills": [
+        "GHG Accounting",
+        "AI/ML",
+        "Data Platforms",
+        "SBTi",
+        "Environmental Metrics",
+        "Sustainability Reporting"
+      ],
       "dateAdded": "2025-08-26",
       "remote": false,
       "applicationLink": "https://www.linkedin.com/jobs/view/4273591551"
@@ -458,7 +483,12 @@
         "Strong forecasting and communication skills",
         "Ability to work rotating shifts (including nights, weekends, holidays)"
       ],
-      "skills": ["Severe Weather Forecasting", "Storm Warnings", "Meteorological Data Analysis", "Client Communication"],
+      "skills": [
+        "Severe Weather Forecasting",
+        "Storm Warnings",
+        "Meteorological Data Analysis",
+        "Client Communication"
+      ],
       "dateAdded": "2025-08-26",
       "remote": false,
       "applicationLink": "https://www.linkedin.com/jobs/view/4288454745"
@@ -478,7 +508,15 @@
         "Bachelor’s or higher in quantitative discipline",
         "Python & Excel required, VBA a plus"
       ],
-      "skills": ["Python", "Excel", "Power Market Modeling", "RECs", "Capacity Markets", "Policy Analysis", "Forecasting"],
+      "skills": [
+        "Python",
+        "Excel",
+        "Power Market Modeling",
+        "RECs",
+        "Capacity Markets",
+        "Policy Analysis",
+        "Forecasting"
+      ],
       "dateAdded": "2025-08-26",
       "remote": false,
       "applicationLink": "https://www.linkedin.com/jobs/view/4290579885"
@@ -577,11 +615,19 @@
         "ML/AI forecasting techniques (ANN, SVM, regression)",
         "Programming in SQL, Python, R, C#, VBA"
       ],
-      "skills": ["Machine Learning", "Numerical Weather Prediction", "Short-Term Load Forecasting", "SQL", "Python", "R"],
+      "skills": [
+        "Machine Learning",
+        "Numerical Weather Prediction",
+        "Short-Term Load Forecasting",
+        "SQL",
+        "Python",
+        "R"
+      ],
       "dateAdded": "2025-08-26",
       "remote": true,
       "applicationLink": "https://www.linkedin.com/jobs/view/4231266929"
-    },{
+    },
+    {
       "id": "17",
       "title": "Consultant, Ocean Modeler",
       "company": "ERM",
@@ -726,7 +772,14 @@
         "Experience with spatial analysis (ArcGIS/QGIS, Google Earth Engine)",
         "Track record of collaborative research and peer-reviewed publications"
       ],
-      "skills": ["Python", "R", "Spatial Data Analysis", "Climate Science", "Statistical Modeling", "Policy Translation"],
+      "skills": [
+        "Python",
+        "R",
+        "Spatial Data Analysis",
+        "Climate Science",
+        "Statistical Modeling",
+        "Policy Translation"
+      ],
       "dateAdded": "2025-08-28",
       "remote": false,
       "applicationLink": "https://www.linkedin.com/jobs/view/4288107302"
@@ -745,7 +798,13 @@
         "Expertise with permitting (NSR, PSD, Title V) and dispersion modeling",
         "Strong client-facing and project management skills"
       ],
-      "skills": ["Air Quality Modeling", "GHG Analysis", "Project Management", "Client Engagement", "Business Development"],
+      "skills": [
+        "Air Quality Modeling",
+        "GHG Analysis",
+        "Project Management",
+        "Client Engagement",
+        "Business Development"
+      ],
       "dateAdded": "2025-08-28",
       "remote": false,
       "applicationLink": "https://www.linkedin.com/jobs/view/4252804709"
@@ -783,7 +842,13 @@
         "Experience with TCFD, CDP, CSRD, SBTi frameworks",
         "Strong client engagement and strategy skills"
       ],
-      "skills": ["Climate Risk Analysis", "Scenario Modeling", "Sustainability Strategy", "ESG Frameworks", "Client Consulting"],
+      "skills": [
+        "Climate Risk Analysis",
+        "Scenario Modeling",
+        "Sustainability Strategy",
+        "ESG Frameworks",
+        "Client Consulting"
+      ],
       "dateAdded": "2025-08-28",
       "remote": true,
       "applicationLink": "https://www.linkedin.com/jobs/view/4283778548"
@@ -841,12 +906,18 @@
         "Proven ability to convene stakeholders and build consensus",
         "Strong network across policy, business, academia, and NGOs"
       ],
-      "skills": ["Climate Leadership", "Stakeholder Engagement", "Policy Translation", "Program Management", "Strategic Convening"],
+      "skills": [
+        "Climate Leadership",
+        "Stakeholder Engagement",
+        "Policy Translation",
+        "Program Management",
+        "Strategic Convening"
+      ],
       "dateAdded": "2025-08-28",
       "remote": true,
       "applicationLink": "https://www.linkedin.com/jobs/view/4277843875"
     },
-      {
+    {
       "id": "40",
       "title": "Climate Risk Modeling Senior Manager",
       "company": "EY",
@@ -880,7 +951,13 @@
         "Experience in GHG accounting (spend-based preferred)",
         "Strong stakeholder engagement and communication skills"
       ],
-      "skills": ["GHG Accounting", "Corporate Sustainability", "Climate Policy", "Stakeholder Engagement", "Strategy Development"],
+      "skills": [
+        "GHG Accounting",
+        "Corporate Sustainability",
+        "Climate Policy",
+        "Stakeholder Engagement",
+        "Strategy Development"
+      ],
       "dateAdded": "2025-08-28",
       "remote": false,
       "applicationLink": "https://www.linkedin.com/jobs/view/4290947939"
@@ -900,7 +977,12 @@
         "Experience with seismic data interpretation, AVO, inversion",
         "Proficiency with Kingdom and Geographix/Petra"
       ],
-      "skills": ["Seismic Interpretation", "Reservoir Characterization", "Subsurface Modeling", "Geophysical Risk Analysis"],
+      "skills": [
+        "Seismic Interpretation",
+        "Reservoir Characterization",
+        "Subsurface Modeling",
+        "Geophysical Risk Analysis"
+      ],
       "dateAdded": "2025-08-28",
       "remote": false,
       "applicationLink": "https://www.linkedin.com/jobs/view/4281094624"
@@ -940,7 +1022,13 @@
         "Strong EM methods expertise",
         "Proficiency in Python for geophysical data analysis"
       ],
-      "skills": ["Electromagnetic Geophysics", "Mineral Exploration", "Geophysical Inversions", "Python", "Data Interpretation"],
+      "skills": [
+        "Electromagnetic Geophysics",
+        "Mineral Exploration",
+        "Geophysical Inversions",
+        "Python",
+        "Data Interpretation"
+      ],
       "dateAdded": "2025-08-28",
       "remote": true,
       "applicationLink": "https://www.linkedin.com/jobs/view/4282485309"
@@ -960,7 +1048,13 @@
         "Knowledge of wave propagation, seismic inversion, HPC",
         "Research mindset with innovation focus"
       ],
-      "skills": ["Seismic Imaging", "Wave Propagation", "High-Performance Computing", "Algorithm Development", "Geophysical R&D"],
+      "skills": [
+        "Seismic Imaging",
+        "Wave Propagation",
+        "High-Performance Computing",
+        "Algorithm Development",
+        "Geophysical R&D"
+      ],
       "dateAdded": "2025-08-28",
       "remote": true,
       "applicationLink": "https://www.linkedin.com/jobs/view/4195743297"
@@ -1184,7 +1278,7 @@
       "remote": false,
       "applicationLink": "https://www.linkedin.com/jobs/view/4259759727"
     },
-     {
+    {
       "id": "57",
       "title": "Catastrophe Risk Analyst",
       "company": "Aon",
@@ -1225,86 +1319,6 @@
       "applicationLink": "https://www.linkedin.com/jobs/view/4280222959"
     },
     {
-      "id": "59",
-      "title": "Research Fellow in Machine Learning for African Weather Prediction",
-      "company": "University of Leeds",
-      "location": "Leeds, UK",
-      "type": "Full-time",
-      "salary": "Undisclosed",
-      "categories": ["Academia & Research", "Weather & Meteorology", "Tech (Data Science & ML)"],
-      "description": "Research and develop machine learning methods to improve weather prediction across Africa. Collaborate with academic and regional partners, applying AI/ML to enhance numerical weather prediction skill in under-observed regions.",
-      "requirements": [
-        "PhD (or near completion) in atmospheric science, machine learning, or related field",
-        "Experience with weather/climate data and numerical weather prediction",
-        "Strong programming skills in Python and ML frameworks",
-        "Ability to collaborate in interdisciplinary teams"
-      ],
-      "skills": ["Machine Learning", "Weather Prediction", "Numerical Models", "Python", "AI/ML"],
-      "dateAdded": "2025-08-28",
-      "remote": true,
-      "applicationLink": "https://www.linkedin.com/jobs/view/4283771728"
-    },
-     {
-      "id": "57",
-      "title": "Catastrophe Risk Analyst",
-      "company": "Aon",
-      "location": "London, UK",
-      "type": "Full-time",
-      "salary": "Undisclosed",
-      "categories": ["Insurance & Reinsurance", "Weather & Meteorology", "Climate Science"],
-      "description": "Support Aon’s UK&I Property Catastrophe Analytics team by analyzing exposures to natural disasters (windstorms, floods, earthquakes). Act as analytics lead on reinsurance placements and provide insights on climate, inflation, and event response.",
-      "requirements": [
-        "5+ years in catastrophe analytics in insurance, reinsurance, or financial services",
-        "MSc or higher in finance, statistics, science, or risk-related field",
-        "Experience with catastrophe models (RMS, Verisk, JBA)",
-        "Coding skills in Python, SQL, R; GIS and visualization tools experience preferred"
-      ],
-      "skills": ["Catastrophe Risk", "Reinsurance", "Python", "SQL", "ArcGIS", "Tableau/PowerBI"],
-      "dateAdded": "2025-08-28",
-      "remote": false,
-      "applicationLink": "https://www.linkedin.com/jobs/view/4289314879"
-    },
-    {
-      "id": "58",
-      "title": "Senior Catastrophe Modelling Analyst",
-      "company": "Westfield Insurance",
-      "location": "London, UK",
-      "type": "Full-time",
-      "salary": "Undisclosed",
-      "categories": ["Insurance & Reinsurance", "Weather & Meteorology"],
-      "description": "Ensure exposure data standards, support underwriting with catastrophe risk insights, optimize portfolio management, and validate vendor models. Represent Westfield in market forums and contribute to strategic risk modelling initiatives.",
-      "requirements": [
-        "Minimum 4 years’ catastrophe modelling experience",
-        "Proficiency with RMS and/or AIR vendor models",
-        "Degree in mathematics, modelling, geology, meteorology, or related field",
-        "Strong SQL and Excel skills; Python/R, QGIS desirable"
-      ],
-      "skills": ["Catastrophe Modelling", "Exposure Management", "RMS", "AIR", "SQL", "Python", "QGIS"],
-      "dateAdded": "2025-08-28",
-      "remote": false,
-      "applicationLink": "https://www.linkedin.com/jobs/view/4280222959"
-    },
-    {
-      "id": "59",
-      "title": "Research Fellow in Machine Learning for African Weather Prediction",
-      "company": "University of Leeds",
-      "location": "Leeds, UK",
-      "type": "Full-time",
-      "salary": "Undisclosed",
-      "categories": ["Academia & Research", "Weather & Meteorology", "Tech (Data Science & ML)"],
-      "description": "Research and develop machine learning methods to improve weather prediction across Africa. Collaborate with academic and regional partners, applying AI/ML to enhance numerical weather prediction skill in under-observed regions.",
-      "requirements": [
-        "PhD (or near completion) in atmospheric science, machine learning, or related field",
-        "Experience with weather/climate data and numerical weather prediction",
-        "Strong programming skills in Python and ML frameworks",
-        "Ability to collaborate in interdisciplinary teams"
-      ],
-      "skills": ["Machine Learning", "Weather Prediction", "Numerical Models", "Python", "AI/ML"],
-      "dateAdded": "2025-08-28",
-      "remote": true,
-      "applicationLink": "https://www.linkedin.com/jobs/view/4283771728"
-    },
-        {
       "id": "60",
       "title": "Energy Analyst",
       "company": "Shell",
@@ -1320,7 +1334,15 @@
         "Knowledge of power and gas markets advantageous",
         "Strong mathematical and algorithmic background"
       ],
-      "skills": ["Python", "SQL", "Machine Learning", "Forecasting", "Optimisation", "Cloud (Azure/AWS)", "Time Series"],
+      "skills": [
+        "Python",
+        "SQL",
+        "Machine Learning",
+        "Forecasting",
+        "Optimisation",
+        "Cloud (Azure/AWS)",
+        "Time Series"
+      ],
       "dateAdded": "2025-08-28",
       "remote": true,
       "applicationLink": "https://www.linkedin.com/jobs/view/4291926108"
@@ -1341,7 +1363,14 @@
         "Collaborative skills to work with scientists and software engineers",
         "Clear communication of technical knowledge to diverse audiences"
       ],
-      "skills": ["Python", "Numerical Weather Prediction (NWP)", "Software Engineering", "Git/GitHub", "QA", "Model Verification"],
+      "skills": [
+        "Python",
+        "Numerical Weather Prediction (NWP)",
+        "Software Engineering",
+        "Git/GitHub",
+        "QA",
+        "Model Verification"
+      ],
       "dateAdded": "2025-08-28",
       "remote": true,
       "applicationLink": "https://www.linkedin.com/jobs/view/4291940287"

@@ -166,11 +166,13 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
     }
 
     if (selectedIndustries.length > 0) {
-      filtered = filtered.filter((job) =>
-        Array.isArray(job.categories)
-          ? job.categories.some((cat) => selectedIndustries.includes(cat.toLowerCase()))
-          : selectedIndustries.includes(job.category?.toLowerCase() || ""),
-      )
+      filtered = filtered.filter((job) => {
+        const jobCategories = Array.isArray(job.categories) ? job.categories : [job.category].filter(Boolean)
+        return selectedIndustries.some((industryKey) => {
+          const industryName = getCategoryDisplayName(industryKey)
+          return jobCategories.some((category) => category === industryName)
+        })
+      })
     }
 
     switch (sortBy) {
@@ -233,7 +235,7 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
     return "destructive"
   }
 
-  const uniqueLocations = Array.from(new Set(jobs.map((job) => job.location.split(",")[0].trim())))
+  const uniqueLocations = Array.from(new Set(jobs.map((job) => job.location.split(",")[0].trim()))).sort()
   const uniqueCategories = Array.from(
     new Set(jobs.flatMap((job) => (Array.isArray(job.categories) ? job.categories : [job.category])).filter(Boolean)),
   )
@@ -391,10 +393,10 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
 
             <Select value={locationFilter} onValueChange={handleLocationFilter}>
               <SelectTrigger className="w-[180px]">
-                <SelectValue placeholder="Location" />
+                <SelectValue placeholder="City" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="all">All Locations</SelectItem>
+                <SelectItem value="all">All Cities</SelectItem>
                 {uniqueLocations.map((location) => (
                   <SelectItem key={location} value={location.toLowerCase()}>
                     {location}
@@ -496,7 +498,7 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
           )}
         </div>
 
-        <div className="grid gap-4 grid-cols-1 md:grid-cols-2">
+        <div className="grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {filteredJobs.slice((currentPage - 1) * jobsPerPage, currentPage * jobsPerPage).map((job) => {
             const jobMatch = getJobMatch(job.id)
             const isExpanded = expandedJobs.has(job.id)
@@ -504,19 +506,19 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
 
             return (
               <Card key={job.id} id={`job-${job.id}`} className="hover:shadow-md transition-shadow">
-                <CardHeader className="pb-3">
+                <CardHeader className="pb-2">
                   <div className="flex items-start justify-between">
                     <div className="flex-1">
-                      <CardTitle className="text-lg mb-1">{job.title}</CardTitle>
-                      <CardDescription className="flex items-center gap-2">
-                        <Building2 className="h-4 w-4" />
+                      <CardTitle className="text-base mb-1 leading-tight">{job.title}</CardTitle>
+                      <CardDescription className="flex items-center gap-2 text-xs">
+                        <Building2 className="h-3 w-3" />
                         {job.company}
                       </CardDescription>
                     </div>
-                    <div className="flex items-center gap-2">
-                      <Button variant="ghost" size="sm" onClick={() => toggleFavorite(job.id)} className="p-1 h-8 w-8">
+                    <div className="flex items-center gap-1">
+                      <Button variant="ghost" size="sm" onClick={() => toggleFavorite(job.id)} className="p-1 h-6 w-6">
                         <Heart
-                          className={`h-4 w-4 ${isFavorited ? "fill-red-500 text-red-500" : "text-muted-foreground hover:text-red-500"}`}
+                          className={`h-3 w-3 ${isFavorited ? "fill-red-500 text-red-500" : "text-muted-foreground hover:text-red-500"}`}
                         />
                       </Button>
                       {jobMatch && (
@@ -528,6 +530,7 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
                                 ? "secondary"
                                 : "destructive"
                           }
+                          className="text-xs"
                         >
                           {jobMatch.matchScore}% match
                         </Badge>
@@ -535,8 +538,8 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
                     </div>
                   </div>
                 </CardHeader>
-                <CardContent className="space-y-3">
-                  <div className="flex flex-wrap gap-2 text-sm text-muted-foreground">
+                <CardContent className="space-y-2 pt-0">
+                  <div className="flex flex-wrap gap-2 text-xs text-muted-foreground">
                     <div className="flex items-center gap-1">
                       <MapPin className="h-3 w-3" />
                       {job.location}
@@ -571,7 +574,7 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
                   </div>
 
                   {jobMatch && (
-                    <div className="space-y-2">
+                    <div className="space-y-1">
                       <div className="flex justify-between text-xs">
                         <span>Skills Match</span>
                         <span className={getMatchColor(jobMatch.matchScore)}>{jobMatch.matchScore}%</span>
@@ -584,24 +587,24 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
                   )}
 
                   {isExpanded && (
-                    <div className="space-y-3 pt-3 border-t">
+                    <div className="space-y-2 pt-2 border-t">
                       <div>
-                        <h4 className="font-medium text-sm mb-2">Description</h4>
-                        <p className="text-sm text-muted-foreground">{job.description}</p>
+                        <h4 className="font-medium text-xs mb-1">Description</h4>
+                        <p className="text-xs text-muted-foreground">{job.description}</p>
                       </div>
                       <div>
-                        <h4 className="font-medium text-sm mb-2">Requirements</h4>
-                        <ul className="text-sm text-muted-foreground space-y-1">
+                        <h4 className="font-medium text-xs mb-1">Requirements</h4>
+                        <ul className="text-xs text-muted-foreground space-y-1">
                           {job.requirements.map((req, index) => (
-                            <li key={index} className="flex items-start gap-2">
-                              <span className="text-primary mt-1">•</span>
+                            <li key={index} className="flex items-start gap-1">
+                              <span className="text-primary mt-0.5">•</span>
                               {req}
                             </li>
                           ))}
                         </ul>
                       </div>
                       <div>
-                        <h4 className="font-medium text-sm mb-2">Skills</h4>
+                        <h4 className="font-medium text-xs mb-1">Skills</h4>
                         <div className="flex flex-wrap gap-1">
                           {job.skills.map((skill) => (
                             <Badge key={skill} variant="secondary" className="text-xs">
@@ -613,27 +616,33 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
                     </div>
                   )}
 
-                  <div className="flex items-center justify-between pt-2">
-                    <div className="flex items-center gap-2">
+                  <div className="flex items-center justify-between pt-1">
+                    <div className="flex items-center gap-1">
                       {job.contact && (
-                        <Button variant="outline" size="sm" asChild>
+                        <Button variant="outline" size="sm" className="text-xs h-7 bg-transparent" asChild>
                           <a href={`mailto:${job.contact}`}>Contact</a>
                         </Button>
                       )}
                       {job.applicationLink && (
-                        <Button variant="outline" size="sm" asChild>
+                        <Button variant="outline" size="sm" className="text-xs h-7 bg-transparent" asChild>
                           <a href={job.applicationLink} target="_blank" rel="noopener noreferrer">
                             Apply
                           </a>
                         </Button>
                       )}
-                      <Button variant="outline" size="sm" onClick={() => copyJobLink(job.id)}>
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className="text-xs h-7 bg-transparent"
+                        onClick={() => copyJobLink(job.id)}
+                      >
                         Share
                       </Button>
                     </div>
                     <Button
                       variant="ghost"
                       size="sm"
+                      className="text-xs h-7"
                       onClick={(e) => {
                         e.preventDefault()
                         e.stopPropagation()
@@ -642,12 +651,12 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
                     >
                       {isExpanded ? (
                         <>
-                          <ChevronUp className="h-4 w-4 mr-1" />
+                          <ChevronUp className="h-3 w-3 mr-1" />
                           Less
                         </>
                       ) : (
                         <>
-                          <ChevronDown className="h-4 w-4 mr-1" />
+                          <ChevronDown className="h-3 w-3 mr-1" />
                           Details
                         </>
                       )}
