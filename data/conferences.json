@@ -169,6 +169,21 @@
       ]
     },
     {
+      "id": "cesoc-mlesm-2025",
+      "title": "Machine Learning for the Earth System — Workshop & Hackathon (CESOC)",
+      "description": "Research-focused workshop and hackathon on machine learning for the Earth system, covering AI-NWP, data assimilation, evaluation, and foundation models.",
+      "categories": ["Climate Science", "Weather & Meteorology", "Tech (Data Science & ML)", "Academia & Research"],
+      "location": "Bonn",
+      "country": "Germany",
+      "startDate": "2025-08-25",
+      "endDate": "2025-08-29",
+      "website": "https://cesoc.net/machine-learning-for-the-earth-system-programme/",
+      "type": "Workshop",
+      "isVirtual": true,
+      "linkedJobs": [],
+      "tags": ["ML for Earth System", "NWP", "foundation models", "data assimilation", "evaluation", "hackathon"]
+    },
+    {
       "id": "acm-sigspatial-2025",
       "title": "ACM SIGSPATIAL 2025",
       "description": "Top research conference on advances in geographic information systems.",

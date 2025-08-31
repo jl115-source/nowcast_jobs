@@ -145,7 +145,7 @@ export function JobNotificationsPage() {
         <div className="relative z-10 text-center text-white">
           <Mail className="h-16 w-16 mx-auto mb-4" />
           <h1 className="text-4xl font-bold mb-2">Job Notifications</h1>
-          <p className="text-xl opacity-90">Stay updated with the latest opportunities</p>
+          <p className="text-xl opacity-90">  Stay updated with the latest opportunities — speed matters, so choose to get updates bi-weekly, weekly, or monthly.</p>
         </div>
       </div>
 

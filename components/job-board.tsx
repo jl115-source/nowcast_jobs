@@ -406,14 +406,14 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
         <div className="absolute inset-0 bg-primary/60"></div>
         <div className="relative z-10 text-center text-white">
           <h1 className="text-4xl font-bold mb-4">Applied Science Jobs</h1>
-          <p className="text-xl mb-6 opacity-90">Focus on Weather, Insurance, Energy, Commodities And More...</p>
+          <p className="text-xl mb-6 opacity-90">Fresh updates at least twice a week, so you’re never late to the party.</p>
         </div>
         <div className="absolute bottom-4 right-4">
           <button
             onClick={() => onPageChange?.("job-notifications")}
             className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors duration-200 shadow-lg flex items-center gap-2"
           >
-            ☁️ Get Job Notifications
+            ☁️ Speed Matters → Get Job Notifications
           </button>
         </div>
       </div>
