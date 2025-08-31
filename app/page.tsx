@@ -11,6 +11,7 @@ import { JobNotificationsPage } from "@/components/job-notifications-page"
 import { OffMarketJobsPage } from "@/components/off-market-jobs-page"
 import { CompaniesPage } from "@/components/companies-page"
 import { ResourcesPage } from "@/components/resources-page"
+import { AccountPage } from "@/components/account-page"
 import { SidebarNavigation } from "@/components/sidebar-navigation"
 import { AuthButtons } from "@/components/auth-buttons"
 import dynamic from "next/dynamic"
@@ -44,6 +45,8 @@ export default function Home() {
         return <OffMarketJobsPage />
       case "contact":
         return <ContactPage />
+      case "account":
+        return <AccountPage />
       case "login":
         return <LoginPage />
       case "sign-up":

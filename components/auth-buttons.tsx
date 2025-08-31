@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import { createClient } from "@/lib/supabase/client"
 import { Button } from "@/components/ui/button"
-import { LogIn, UserPlus, LogOut, User } from "lucide-react"
+import { LogIn, UserPlus, LogOut, User, Settings } from "lucide-react"
 
 interface AuthButtonsProps {
   onPageChange: (page: string) => void
@@ -48,6 +48,10 @@ export function AuthButtons({ onPageChange }: AuthButtonsProps) {
     onPageChange("sign-up")
   }
 
+  const handleAccount = () => {
+    onPageChange("account")
+  }
+
   if (loading) return null
 
   return (
@@ -60,6 +64,15 @@ export function AuthButtons({ onPageChange }: AuthButtonsProps) {
               <span className="truncate max-w-32">{user.user_metadata?.full_name || user.email}</span>
             </div>
           </div>
+          <Button
+            onClick={handleAccount}
+            variant="outline"
+            size="sm"
+            className="bg-background/90 backdrop-blur-sm border shadow-lg"
+          >
+            <Settings className="h-4 w-4 mr-2" />
+            Account
+          </Button>
           <Button
             onClick={handleSignOut}
             variant="outline"

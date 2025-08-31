@@ -10,12 +10,12 @@ import { Trash2, Mail, Users, Briefcase } from "lucide-react"
 interface UserSubscription {
   id: string
   email: string
-  type: "job_notifications" | "mentor_matching" | "off_market_jobs"
+  type: "job_notifications" | "mentor_matching" | "off_market_signups"
   categories: string[]
   created_at: string
 }
 
-export default function AccountPage() {
+export function AccountPage() {
   const [user, setUser] = useState<any>(null)
   const [subscriptions, setSubscriptions] = useState<UserSubscription[]>([])
   const [loading, setLoading] = useState(true)
@@ -29,7 +29,7 @@ export default function AccountPage() {
       setUser(user)
 
       if (user?.email) {
-        await fetchSubscriptions(user.email)
+        await fetchSubscriptions()
       }
       setLoading(false)
     }
@@ -37,89 +37,85 @@ export default function AccountPage() {
     getUser()
   }, [])
 
-  const fetchSubscriptions = async (email: string) => {
+  const fetchSubscriptions = async () => {
     try {
-      // Fetch job notifications
-      const { data: jobNotifications } = await supabase.from("job_notifications").select("*").eq("email", email)
+      const response = await fetch("/api/user-subscriptions")
+      if (response.ok) {
+        const data = await response.json()
 
-      // Fetch mentor matching
-      const { data: mentorMatching } = await supabase.from("mentor_matching").select("*").eq("email", email)
+        const allSubscriptions: UserSubscription[] = []
 
-      // Fetch off-market jobs
-      const { data: offMarketJobs } = await supabase.from("off_market_jobs").select("*").eq("email", email)
+        // Process job notifications
+        if (data.jobNotifications) {
+          data.jobNotifications.forEach((sub: any) => {
+            const categories = []
+            if (sub.academia_research) categories.push("Academia & Research")
+            if (sub.banking_finance) categories.push("Banking & Finance")
+            if (sub.climate_science) categories.push("Climate Science")
+            if (sub.energy_renewables) categories.push("Energy & Renewables")
+            if (sub.geospatial_gis) categories.push("Geospatial & GIS")
+            if (sub.geophysics_geology) categories.push("Geophysics & Geology")
+            if (sub.insurance_reinsurance) categories.push("Insurance & Reinsurance")
+            if (sub.tech_data_science) categories.push("Tech (Data Science & ML)")
+            if (sub.weather_meteorology) categories.push("Weather & Meteorology")
+            if (sub.phd) categories.push("PhD")
+            if (sub.professor) categories.push("Professor")
+            if (sub.trading) categories.push("Trading (Commodities, weather, energy)")
+            if (sub.postdoc) categories.push("Post-doc")
 
-      const allSubscriptions: UserSubscription[] = []
-
-      // Process job notifications
-      if (jobNotifications) {
-        jobNotifications.forEach((sub) => {
-          const categories = []
-          if (sub.academia_research) categories.push("Academia & Research")
-          if (sub.banking_finance) categories.push("Banking & Finance")
-          if (sub.climate_science) categories.push("Climate Science")
-          if (sub.energy_renewables) categories.push("Energy & Renewables")
-          if (sub.geospatial_gis) categories.push("Geospatial & GIS")
-          if (sub.geophysics_geology) categories.push("Geophysics & Geology")
-          if (sub.insurance_reinsurance) categories.push("Insurance & Reinsurance")
-          if (sub.tech_data_science) categories.push("Tech (Data Science & ML)")
-          if (sub.weather_meteorology) categories.push("Weather & Meteorology")
-          if (sub.phd) categories.push("PhD")
-          if (sub.professor) categories.push("Professor")
-          if (sub.trading) categories.push("Trading (Commodities, weather, energy)")
-          if (sub.postdoc) categories.push("Post-doc")
-
-          allSubscriptions.push({
-            id: sub.id,
-            email: sub.email,
-            type: "job_notifications",
-            categories,
-            created_at: sub.created_at,
+            allSubscriptions.push({
+              id: sub.id,
+              email: sub.email,
+              type: "job_notifications",
+              categories,
+              created_at: sub.created_at,
+            })
           })
-        })
-      }
+        }
 
-      // Process mentor matching
-      if (mentorMatching) {
-        mentorMatching.forEach((sub) => {
-          allSubscriptions.push({
-            id: sub.id,
-            email: sub.email,
-            type: "mentor_matching",
-            categories: [sub.industry, sub.experience_level].filter(Boolean),
-            created_at: sub.created_at,
+        // Process mentor matching
+        if (data.mentorMatching) {
+          data.mentorMatching.forEach((sub: any) => {
+            allSubscriptions.push({
+              id: sub.id,
+              email: sub.email,
+              type: "mentor_matching",
+              categories: [sub.industry, sub.experience_level].filter(Boolean),
+              created_at: sub.created_at,
+            })
           })
-        })
-      }
+        }
 
-      // Process off-market jobs
-      if (offMarketJobs) {
-        offMarketJobs.forEach((sub) => {
-          const categories = []
-          if (sub.academia_research) categories.push("Academia & Research")
-          if (sub.banking_finance) categories.push("Banking & Finance")
-          if (sub.climate_science) categories.push("Climate Science")
-          if (sub.energy_renewables) categories.push("Energy & Renewables")
-          if (sub.geospatial_gis) categories.push("Geospatial & GIS")
-          if (sub.geophysics_geology) categories.push("Geophysics & Geology")
-          if (sub.insurance_reinsurance) categories.push("Insurance & Reinsurance")
-          if (sub.tech_data_science) categories.push("Tech (Data Science & ML)")
-          if (sub.weather_meteorology) categories.push("Weather & Meteorology")
-          if (sub.phd) categories.push("PhD")
-          if (sub.professor) categories.push("Professor")
-          if (sub.trading) categories.push("Trading (Commodities, weather, energy)")
-          if (sub.postdoc) categories.push("Post-doc")
+        // Process off-market jobs
+        if (data.offMarketJobs) {
+          data.offMarketJobs.forEach((sub: any) => {
+            const categories = []
+            if (sub.academia_research) categories.push("Academia & Research")
+            if (sub.banking_finance) categories.push("Banking & Finance")
+            if (sub.climate_science) categories.push("Climate Science")
+            if (sub.energy_renewables) categories.push("Energy & Renewables")
+            if (sub.geospatial_gis) categories.push("Geospatial & GIS")
+            if (sub.geophysics_geology) categories.push("Geophysics & Geology")
+            if (sub.insurance_reinsurance) categories.push("Insurance & Reinsurance")
+            if (sub.tech_data_science) categories.push("Tech (Data Science & ML)")
+            if (sub.weather_meteorology) categories.push("Weather & Meteorology")
+            if (sub.phd) categories.push("PhD")
+            if (sub.professor) categories.push("Professor")
+            if (sub.trading) categories.push("Trading (Commodities, weather, energy)")
+            if (sub.postdoc) categories.push("Post-doc")
 
-          allSubscriptions.push({
-            id: sub.id,
-            email: sub.email,
-            type: "off_market_jobs",
-            categories,
-            created_at: sub.created_at,
+            allSubscriptions.push({
+              id: sub.id,
+              email: sub.email,
+              type: "off_market_signups",
+              categories,
+              created_at: sub.created_at,
+            })
           })
-        })
-      }
+        }
 
-      setSubscriptions(allSubscriptions)
+        setSubscriptions(allSubscriptions)
+      }
     } catch (error) {
       console.error("Error fetching subscriptions:", error)
     }
@@ -127,26 +123,22 @@ export default function AccountPage() {
 
   const handleUnsubscribe = async (subscription: UserSubscription) => {
     try {
-      let tableName = ""
-      switch (subscription.type) {
-        case "job_notifications":
-          tableName = "job_notifications"
-          break
-        case "mentor_matching":
-          tableName = "mentor_matching"
-          break
-        case "off_market_jobs":
-          tableName = "off_market_jobs"
-          break
-      }
+      const response = await fetch("/api/unsubscribe", {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          table: subscription.type,
+          id: subscription.id,
+        }),
+      })
 
-      const { error } = await supabase.from(tableName).delete().eq("id", subscription.id)
-
-      if (error) throw error
-
-      // Refresh subscriptions
-      if (user?.email) {
-        await fetchSubscriptions(user.email)
+      if (response.ok) {
+        // Refresh subscriptions
+        await fetchSubscriptions()
+      } else {
+        console.error("Failed to unsubscribe")
       }
     } catch (error) {
       console.error("Error unsubscribing:", error)
@@ -159,7 +151,7 @@ export default function AccountPage() {
         return <Mail className="h-4 w-4" />
       case "mentor_matching":
         return <Users className="h-4 w-4" />
-      case "off_market_jobs":
+      case "off_market_signups":
         return <Briefcase className="h-4 w-4" />
       default:
         return <Mail className="h-4 w-4" />
@@ -172,7 +164,7 @@ export default function AccountPage() {
         return "Job Notifications"
       case "mentor_matching":
         return "Mentor Matching"
-      case "off_market_jobs":
+      case "off_market_signups":
         return "Off-Market Jobs"
       default:
         return type
