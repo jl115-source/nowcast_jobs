@@ -1,18 +1,17 @@
 "use client"
 
 import { useEffect } from "react"
-import { useRouter, useSearchParams } from "next/navigation"
+import { useRouter } from "next/navigation"
 import { createClient } from "@/lib/supabase/client"
 
 export default function AuthCallback() {
   const router = useRouter()
-  const searchParams = useSearchParams()
 
   useEffect(() => {
     const handleAuthCallback = async () => {
       const supabase = createClient()
 
-      const { data, error } = await supabase.auth.getSession()
+      const { data, error } = await supabase.auth.exchangeCodeForSession(window.location.href)
 
       if (error) {
         console.error("Auth callback error:", error)
@@ -21,14 +20,14 @@ export default function AuthCallback() {
       }
 
       if (data.session) {
-        router.push("/?page=account")
+        router.replace("/?page=account")
       } else {
-        router.push("/auth/login")
+        router.replace("/auth/login")
       }
     }
 
     handleAuthCallback()
-  }, [router, searchParams])
+  }, [router])
 
   return (
     <div className="min-h-screen bg-background flex items-center justify-center">
