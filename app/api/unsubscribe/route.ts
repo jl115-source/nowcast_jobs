@@ -6,6 +6,8 @@ export async function DELETE(request: NextRequest) {
     const supabase = createClient()
     const { table, id } = await request.json()
 
+    console.log("[v0] Unsubscribe request:", { table, id })
+
     // Get the authenticated user
     const {
       data: { user },
@@ -15,6 +17,8 @@ export async function DELETE(request: NextRequest) {
     if (authError || !user) {
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
     }
+
+    console.log("[v0] Authenticated user:", user.email)
 
     // Delete the subscription based on table and id
     let result
@@ -34,6 +38,8 @@ export async function DELETE(request: NextRequest) {
       default:
         return NextResponse.json({ error: "Invalid table" }, { status: 400 })
     }
+
+    console.log("[v0] Delete result:", result.error, "Status:", result.status)
 
     if (result.error) {
       return NextResponse.json({ error: result.error.message }, { status: 500 })

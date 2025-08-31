@@ -11,6 +11,8 @@ export async function GET(request: NextRequest) {
       error: authError,
     } = await supabase.auth.getUser()
 
+    console.log("[v0] Auth user:", user?.email, "Auth error:", authError)
+
     if (authError || !user) {
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
     }
@@ -36,10 +38,19 @@ export async function GET(request: NextRequest) {
         .eq("email", user.email),
     ])
 
+    console.log("[v0] Job notifications query:", jobNotifications.error, "Data count:", jobNotifications.data?.length)
+    console.log("[v0] Mentor matching query:", mentorMatching.error, "Data count:", mentorMatching.data?.length)
+    console.log("[v0] Off-market jobs query:", offMarketJobs.error, "Data count:", offMarketJobs.data?.length)
+
     return NextResponse.json({
       jobNotifications: jobNotifications.data || [],
       mentorMatching: mentorMatching.data || [],
       offMarketJobs: offMarketJobs.data || [],
+      errors: {
+        jobNotifications: jobNotifications.error?.message,
+        mentorMatching: mentorMatching.error?.message,
+        offMarketJobs: offMarketJobs.error?.message,
+      },
     })
   } catch (error) {
     console.error("Error fetching user subscriptions:", error)
