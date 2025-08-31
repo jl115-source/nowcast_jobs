@@ -7,16 +7,15 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Mail, Lock, ArrowLeft } from "lucide-react"
+import { Mail, Hash, ArrowLeft } from "lucide-react"
 import Link from "next/link"
 
 export default function LoginPage() {
   const [email, setEmail] = useState("")
-  const [password, setPassword] = useState("")
+  const [passcode, setPasscode] = useState("")
+  const [step, setStep] = useState<"email" | "passcode">("email")
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState("")
-  const [isResetMode, setIsResetMode] = useState(false)
-  const [resetMessage, setResetMessage] = useState("")
 
   const handleGoogleLogin = async () => {
     setLoading(true)
@@ -64,22 +63,24 @@ export default function LoginPage() {
     }
   }
 
-  const handlePasswordReset = async (e: React.FormEvent) => {
+  const handleSendPasscode = async (e: React.FormEvent) => {
     e.preventDefault()
     setLoading(true)
     setError("")
-    setResetMessage("")
 
     try {
       const supabase = createClient()
-      const { error } = await supabase.auth.resetPasswordForEmail(email, {
-        redirectTo: `${window.location.origin}/auth/reset-password`,
+      const { error } = await supabase.auth.signInWithOtp({
+        email,
+        options: {
+          shouldCreateUser: false, // Only allow existing users to login
+        },
       })
 
       if (error) {
         setError(error.message)
       } else {
-        setResetMessage("Password reset email sent! Check your inbox.")
+        setStep("passcode")
       }
     } catch (err) {
       setError("An unexpected error occurred")
@@ -88,17 +89,17 @@ export default function LoginPage() {
     }
   }
 
-  const handleLogin = async (e: React.FormEvent) => {
+  const handleVerifyPasscode = async (e: React.FormEvent) => {
     e.preventDefault()
     setLoading(true)
     setError("")
 
     try {
       const supabase = createClient()
-
-      const { error } = await supabase.auth.signInWithPassword({
+      const { error } = await supabase.auth.verifyOtp({
         email,
-        password,
+        token: passcode,
+        type: "email",
       })
 
       if (error) {
@@ -114,6 +115,12 @@ export default function LoginPage() {
     }
   }
 
+  const handleBackToEmail = () => {
+    setStep("email")
+    setPasscode("")
+    setError("")
+  }
+
   return (
     <div className="min-h-screen bg-background flex items-center justify-center p-4">
       <div className="w-full max-w-md">
@@ -126,13 +133,13 @@ export default function LoginPage() {
 
         <Card>
           <CardHeader className="text-center">
-            <CardTitle className="text-2xl">{isResetMode ? "Reset Password" : "Welcome Back"}</CardTitle>
+            <CardTitle className="text-2xl">{step === "email" ? "Welcome Back" : "Enter Passcode"}</CardTitle>
             <CardDescription>
-              {isResetMode ? "Enter your email to reset your password" : "Sign in to your account"}
+              {step === "email" ? "Enter your email to receive a passcode" : `We sent a 6-digit passcode to ${email}`}
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
-            {!isResetMode && (
+            {step === "email" && (
               <>
                 <Button
                   onClick={handleGoogleLogin}
@@ -184,84 +191,78 @@ export default function LoginPage() {
               </>
             )}
 
-            <form onSubmit={isResetMode ? handlePasswordReset : handleLogin} className="space-y-4">
-              <div className="space-y-2">
-                <Label htmlFor="email">Email</Label>
-                <div className="relative">
-                  <Mail className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
-                  <Input
-                    id="email"
-                    type="email"
-                    placeholder="Enter your email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    className="pl-10"
-                    required
-                  />
-                </div>
-              </div>
-
-              {!isResetMode && (
+            <form onSubmit={step === "email" ? handleSendPasscode : handleVerifyPasscode} className="space-y-4">
+              {step === "email" ? (
                 <div className="space-y-2">
-                  <Label htmlFor="password">Password</Label>
+                  <Label htmlFor="email">Email</Label>
                   <div className="relative">
-                    <Lock className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
+                    <Mail className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
                     <Input
-                      id="password"
-                      type="password"
-                      placeholder="Enter your password"
-                      value={password}
-                      onChange={(e) => setPassword(e.target.value)}
+                      id="email"
+                      type="email"
+                      placeholder="Enter your email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                       className="pl-10"
                       required
                     />
                   </div>
                 </div>
+              ) : (
+                <div className="space-y-2">
+                  <Label htmlFor="passcode">6-Digit Passcode</Label>
+                  <div className="relative">
+                    <Hash className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
+                    <Input
+                      id="passcode"
+                      type="text"
+                      placeholder="Enter 6-digit passcode"
+                      value={passcode}
+                      onChange={(e) => setPasscode(e.target.value.replace(/\D/g, "").slice(0, 6))}
+                      className="pl-10 text-center text-lg tracking-widest"
+                      maxLength={6}
+                      required
+                    />
+                  </div>
+                  <p className="text-xs text-muted-foreground text-center">Check your email for the passcode</p>
+                </div>
               )}
 
               {error && <div className="text-sm text-red-600 bg-red-50 p-3 rounded-md">{error}</div>}
-              {resetMessage && <div className="text-sm text-green-600 bg-green-50 p-3 rounded-md">{resetMessage}</div>}
 
               <Button type="submit" className="w-full" disabled={loading}>
                 {loading
-                  ? isResetMode
-                    ? "Sending..."
-                    : "Signing In..."
-                  : isResetMode
-                    ? "Send Reset Email"
+                  ? step === "email"
+                    ? "Sending Passcode..."
+                    : "Verifying..."
+                  : step === "email"
+                    ? "Send Passcode"
                     : "Sign In"}
               </Button>
             </form>
 
             <div className="mt-6 text-center space-y-2">
-              {!isResetMode ? (
-                <>
+              {step === "email" ? (
+                <p className="text-sm text-muted-foreground">
+                  New to our platform?{" "}
+                  <Link href="/auth/sign-up" className="text-primary hover:underline">
+                    Sign up
+                  </Link>
+                </p>
+              ) : (
+                <div className="space-y-2">
+                  <button type="button" onClick={handleBackToEmail} className="text-sm text-primary hover:underline">
+                    Use different email
+                  </button>
                   <button
                     type="button"
-                    onClick={() => setIsResetMode(true)}
-                    className="text-sm text-primary hover:underline"
+                    onClick={handleSendPasscode}
+                    className="text-sm text-muted-foreground hover:text-foreground block w-full"
+                    disabled={loading}
                   >
-                    Forgot your password?
+                    Resend passcode
                   </button>
-                  <p className="text-sm text-muted-foreground">
-                    New to our platform?{" "}
-                    <Link href="/auth/sign-up" className="text-primary hover:underline">
-                      Sign up
-                    </Link>
-                  </p>
-                </>
-              ) : (
-                <button
-                  type="button"
-                  onClick={() => {
-                    setIsResetMode(false)
-                    setResetMessage("")
-                    setError("")
-                  }}
-                  className="text-sm text-primary hover:underline"
-                >
-                  Back to sign in
-                </button>
+                </div>
               )}
             </div>
           </CardContent>
