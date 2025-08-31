@@ -246,8 +246,7 @@ export function JobNotificationsPage() {
           <h1 className="text-4xl font-bold mb-2">Job Notifications</h1>
           <p className="text-xl opacity-90">
             {" "}
-            Stay updated with the latest opportunities — speed matters, so choose to get updates bi-weekly, weekly, or
-            monthly.
+            Stay updated with the latest opportunities — speed matters, so choose to get updates weekly or monthly.
           </p>
         </div>
       </div>
@@ -266,7 +265,7 @@ export function JobNotificationsPage() {
                 based on your selected industries and job types.
               </CardDescription>
               <p className="text-sm text-muted-foreground mt-2">
-                Your email is only used for job notifications and can be unsubscribed at any time.
+                Your email is only used for job notifications and you can unsubscribed yourself anytime in your accounts page. 
               </p>
             </CardHeader>
             <CardContent>

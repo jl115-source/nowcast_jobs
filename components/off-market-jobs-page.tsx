@@ -482,9 +482,7 @@ export function OffMarketJobsPage() {
 
                   <div className="bg-muted/50 p-4 rounded-lg">
                     <p className="text-sm text-muted-foreground">
-                      🔒 <strong>Privacy Notice:</strong> Your information is only used for job matching and is never
-                      sold or shared publicly. Only vetted recruiters with relevant opportunities can contact you. You
-                      can request removal at any time.
+                      🔒 <strong>Privacy Notice:</strong> Unsubscribe anytime in accounts.
                     </p>
                   </div>
 
