@@ -26,23 +26,12 @@ export default function SignUpPage() {
       const { data, error } = await supabase.auth.signUp({
         email,
         password,
-        options: {
-          emailRedirectTo: undefined, // No email confirmation needed
-        },
       })
 
       if (error) throw error
 
-      // If signup successful, automatically sign in
+      // If signup successful, show success message and redirect
       if (data.user) {
-        const { error: signInError } = await supabase.auth.signInWithPassword({
-          email,
-          password,
-        })
-
-        if (signInError) throw signInError
-
-        // Redirect to main page
         window.location.href = "/"
       }
     } catch (error: unknown) {

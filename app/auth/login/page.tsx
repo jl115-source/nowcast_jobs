@@ -50,14 +50,12 @@ export default function LoginPage() {
     setResetMessage("")
 
     try {
-      const { error } = await supabase.auth.resetPasswordForEmail(email, {
-        redirectTo: `${window.location.origin}/auth/reset-password`,
-      })
+      const { error } = await supabase.auth.resetPasswordForEmail(email)
 
       if (error) {
         setError(error.message)
       } else {
-        setResetMessage("Password reset email sent! Check your inbox.")
+        setResetMessage("If an account with this email exists, you'll receive a password reset email.")
       }
     } catch (err) {
       setError("An unexpected error occurred")
