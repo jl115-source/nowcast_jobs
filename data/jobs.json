@@ -1526,7 +1526,7 @@
       "location": "Cambridge, MA",
       "type": "Full-time, Postdoctoral",
       "salary": null,
-      "categories": ["Climate Science", "Post-doc","Academia & Research"],
+      "categories": ["Climate Science", "Post-doc", "Academia & Research"],
       "description": "Use satellite observations of atmospheric methane to quantify emissions on regional to global scales through inverse analyses; opportunities also include global atmospheric chemistry, air quality, and model development.",
       "requirements": ["Ph.D. in atmospheric science", "Substantial experience in modeling atmospheric composition"],
       "skills": null,
@@ -1758,7 +1758,6 @@
       "contact": "valeriu.murgulet@tamucc.edu",
       "applicationLink": "https://apptrkr.com/get_redirect.php?id=6483475"
     },
-      "jobs": [
     {
       "id": "90",
       "title": "Staff Software Engineer, Geo, Core, Maps, Platform",
