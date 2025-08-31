@@ -7,14 +7,14 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { useState } from "react"
-import { Mail, ArrowLeft } from "lucide-react"
+import { Mail, Lock, ArrowLeft } from "lucide-react"
 import Link from "next/link"
 
 export default function SignUpPage() {
   const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
   const [error, setError] = useState<string | null>(null)
   const [isLoading, setIsLoading] = useState(false)
-  const [success, setSuccess] = useState(false)
 
   const handleSignUp = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -24,56 +24,22 @@ export default function SignUpPage() {
     try {
       const supabase = createClient()
 
-      const { error } = await supabase.auth.signInWithOtp({
+      const { error } = await supabase.auth.signUp({
         email,
-        // No emailRedirectTo option - user will stay on current page
+        password,
       })
 
       if (error) {
         throw error
       }
 
-      setSuccess(true)
+      // Redirect to account page on successful signup
+      window.location.href = "/?page=account"
     } catch (error: unknown) {
       setError(error instanceof Error ? error.message : "An error occurred during signup")
     } finally {
       setIsLoading(false)
     }
-  }
-
-  if (success) {
-    return (
-      <div className="flex min-h-screen w-full items-center justify-center p-6 md:p-10">
-        <div className="w-full max-w-sm">
-          <Card>
-            <CardHeader className="text-center">
-              <CardTitle className="text-2xl">Check Your Email</CardTitle>
-              <CardDescription>
-                We've sent you a magic link to get started. Click the link in your email to create your account.
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="text-center">
-              <div className="mb-4">
-                <Mail className="h-12 w-12 text-primary mx-auto mb-2" />
-                <p className="text-sm text-muted-foreground">
-                  Sent to: <strong>{email}</strong>
-                </p>
-              </div>
-              <Button
-                variant="outline"
-                onClick={() => {
-                  setSuccess(false)
-                  setEmail("")
-                }}
-                className="w-full"
-              >
-                Try Different Email
-              </Button>
-            </CardContent>
-          </Card>
-        </div>
-      </div>
-    )
   }
 
   return (
@@ -90,7 +56,7 @@ export default function SignUpPage() {
           <Card>
             <CardHeader>
               <CardTitle className="text-2xl">Get Started</CardTitle>
-              <CardDescription>Enter your email to receive a magic link and create your account</CardDescription>
+              <CardDescription>Create your account with email and password</CardDescription>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSignUp}>
@@ -110,9 +76,27 @@ export default function SignUpPage() {
                       />
                     </div>
                   </div>
+
+                  <div className="grid gap-2">
+                    <Label htmlFor="password">Password</Label>
+                    <div className="relative">
+                      <Lock className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
+                      <Input
+                        id="password"
+                        type="password"
+                        placeholder="Create a password"
+                        required
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                        className="pl-10"
+                        minLength={6}
+                      />
+                    </div>
+                  </div>
+
                   {error && <p className="text-sm text-red-500">{error}</p>}
                   <Button type="submit" className="w-full" disabled={isLoading}>
-                    {isLoading ? "Sending Magic Link..." : "Send Magic Link"}
+                    {isLoading ? "Creating Account..." : "Create Account"}
                   </Button>
                 </div>
               </form>
