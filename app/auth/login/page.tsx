@@ -24,13 +24,9 @@ export default function LoginPage() {
     try {
       const supabase = createClient()
 
-      const redirectUrl = process.env.NEXT_PUBLIC_DEV_SUPABASE_REDIRECT_URL || `${window.location.origin}/auth/callback`
-
       const { error } = await supabase.auth.signInWithOtp({
         email,
-        options: {
-          emailRedirectTo: redirectUrl,
-        },
+        // No emailRedirectTo option - user will stay on current page
       })
 
       if (error) {
