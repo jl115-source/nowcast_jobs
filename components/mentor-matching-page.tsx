@@ -233,7 +233,7 @@ export function MentorMatchingPage() {
                     value={formData.name}
                     onChange={(e) => setFormData((prev) => ({ ...prev, name: e.target.value }))}
                     required
-                    className="bg-gray-100"
+                    className="bg-blue-50"
                   />
                 </div>
                 <div className="space-y-2">
@@ -246,7 +246,7 @@ export function MentorMatchingPage() {
                     onChange={(e) => setFormData((prev) => ({ ...prev, email: e.target.value }))}
                     disabled={!!user?.email}
                     required
-                    className="bg-gray-100"
+                    className="bg-blue-50"
                   />
                   {user?.email && <p className="text-sm text-muted-foreground">Using your account email</p>}
                 </div>
@@ -260,7 +260,7 @@ export function MentorMatchingPage() {
                     onValueChange={(value) => setFormData((prev) => ({ ...prev, signupType: value }))}
                     required
                   >
-                    <SelectTrigger className="bg-gray-100">
+                    <SelectTrigger className="bg-blue-50">
                       <SelectValue placeholder="Select your role" />
                     </SelectTrigger>
                     <SelectContent>
@@ -277,7 +277,7 @@ export function MentorMatchingPage() {
                     onValueChange={(value) => setFormData((prev) => ({ ...prev, industry: value }))}
                     required
                   >
-                    <SelectTrigger className="bg-gray-100">
+                    <SelectTrigger className="bg-blue-50">
                       <SelectValue placeholder="Select your industry" />
                     </SelectTrigger>
                     <SelectContent>
@@ -301,7 +301,7 @@ export function MentorMatchingPage() {
                 <Textarea
                   id="experience"
                   placeholder="Tell us about your experience and what you hope to achieve through mentorship..."
-                  className="min-h-[100px] bg-gray-100"
+                  className="min-h-[100px] bg-blue-50"
                   value={formData.experience}
                   onChange={(e) => setFormData((prev) => ({ ...prev, experience: e.target.value }))}
                 />

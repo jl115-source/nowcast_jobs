@@ -281,7 +281,7 @@ export function JobNotificationsPage() {
                     onChange={(e) => setEmail(e.target.value)}
                     disabled={!!user?.email}
                     required
-                    className="bg-gray-100"
+                    className="bg-blue-50"
                   />
                   {user?.email && <p className="text-sm text-muted-foreground">Using your account email</p>}
                 </div>
@@ -289,7 +289,7 @@ export function JobNotificationsPage() {
                 <div className="space-y-2">
                   <Label htmlFor="frequency">Notification Frequency</Label>
                   <Select value={frequency} onValueChange={setFrequency} required>
-                    <SelectTrigger className="bg-gray-100">
+                    <SelectTrigger className="bg-blue-50">
                       <SelectValue placeholder="Select how often you'd like to receive notifications" />
                     </SelectTrigger>
                     <SelectContent>
