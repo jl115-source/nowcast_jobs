@@ -8,7 +8,6 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
 import { EyeOff, Shield, UserCheck, Mail, Briefcase, Users, Search } from "lucide-react"
 
 export function OffMarketJobsPage() {
@@ -49,7 +48,10 @@ export function OffMarketJobsPage() {
     "Geospatial & GIS",
     "Geophysics & Geology",
     "Insurance & Reinsurance",
+    "Post-doc",
+    "Professor",
     "Tech (Data Science & ML)",
+    "Trading (Commodities, weather, energy)",
     "Weather & Meteorology",
   ]
 
@@ -223,7 +225,9 @@ export function OffMarketJobsPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-4">
-                  Some high-paying roles are never publicly advertised, with recruiters tasked by companies to quietly seek the right talent. We make it easier to connect those opportunities directly to you.                  </p>
+                    Some high-paying roles are never publicly advertised, with recruiters tasked by companies to quietly
+                    seek the right talent. We make it easier to connect those opportunities directly to you.{" "}
+                  </p>
                 </CardContent>
               </Card>
 
@@ -250,7 +254,8 @@ export function OffMarketJobsPage() {
                       <div>
                         <p className="font-medium">Easy Removal</p>
                         <p className="text-sm text-muted-foreground">
-                        Circumstances change—we’ll unsubscribe you anytime you choose.                        </p>
+                          Circumstances change—we’ll unsubscribe you anytime you choose.{" "}
+                        </p>
                       </div>
                     </div>
                   </div>

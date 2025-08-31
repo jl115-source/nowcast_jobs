@@ -24,17 +24,19 @@ export async function POST(request: NextRequest) {
         return NextResponse.json({ error: "Missing required fields for talent signup" }, { status: 400 })
       }
 
-      // <CHANGE> Map industries array to individual boolean columns
       const industryColumns = {
-        climate_science: industries.includes('Climate Science'),
-        tech_data_science: industries.includes('Tech (Data Science & ML)'),
-        energy_renewables: industries.includes('Energy & Renewables'),
-        weather_meteorology: industries.includes('Weather & Meteorology'),
-        academia_research: industries.includes('Academia & Research'),
-        geospatial_gis: industries.includes('Geospatial & GIS'),
-        geophysics_geology: industries.includes('Geophysics & Geology'),
-        insurance_reinsurance: industries.includes('Insurance & Reinsurance'),
-        banking_finance: industries.includes('Banking & Finance'),
+        climate_science: industries.includes("Climate Science"),
+        tech_data_science: industries.includes("Tech (Data Science & ML)"),
+        energy_renewables: industries.includes("Energy & Renewables"),
+        weather_meteorology: industries.includes("Weather & Meteorology"),
+        academia_research: industries.includes("Academia & Research"),
+        geospatial_gis: industries.includes("Geospatial & GIS"),
+        geophysics_geology: industries.includes("Geophysics & Geology"),
+        insurance_reinsurance: industries.includes("Insurance & Reinsurance"),
+        banking_finance: industries.includes("Banking & Finance"),
+        post_doc: industries.includes("Post-doc"),
+        professor: industries.includes("Professor"),
+        trading_commodities_weather_energy: industries.includes("Trading (Commodities, weather, energy)"),
       }
 
       const { data, error } = await supabase
@@ -44,7 +46,7 @@ export async function POST(request: NextRequest) {
             type: "talent",
             name,
             email,
-            skills: Array.isArray(skills) ? skills.join(', ') : skills,
+            skills: Array.isArray(skills) ? skills.join(", ") : skills,
             bio: experience,
             ...industryColumns,
           },
@@ -70,17 +72,19 @@ export async function POST(request: NextRequest) {
         return NextResponse.json({ error: "Missing required fields for recruiter signup" }, { status: 400 })
       }
 
-      // <CHANGE> Map specializations array to individual boolean columns
       const industryColumns = {
-        climate_science: specializations.includes('Climate Science'),
-        tech_data_science: specializations.includes('Tech (Data Science & ML)'),
-        energy_renewables: specializations.includes('Energy & Renewables'),
-        weather_meteorology: specializations.includes('Weather & Meteorology'),
-        academia_research: specializations.includes('Academia & Research'),
-        geospatial_gis: specializations.includes('Geospatial & GIS'),
-        geophysics_geology: specializations.includes('Geophysics & Geology'),
-        insurance_reinsurance: specializations.includes('Insurance & Reinsurance'),
-        banking_finance: specializations.includes('Banking & Finance'),
+        climate_science: specializations.includes("Climate Science"),
+        tech_data_science: specializations.includes("Tech (Data Science & ML)"),
+        energy_renewables: specializations.includes("Energy & Renewables"),
+        weather_meteorology: specializations.includes("Weather & Meteorology"),
+        academia_research: specializations.includes("Academia & Research"),
+        geospatial_gis: specializations.includes("Geospatial & GIS"),
+        geophysics_geology: specializations.includes("Geophysics & Geology"),
+        insurance_reinsurance: specializations.includes("Insurance & Reinsurance"),
+        banking_finance: specializations.includes("Banking & Finance"),
+        post_doc: specializations.includes("Post-doc"),
+        professor: specializations.includes("Professor"),
+        trading_commodities_weather_energy: specializations.includes("Trading (Commodities, weather, energy)"),
       }
 
       const { data, error } = await supabase

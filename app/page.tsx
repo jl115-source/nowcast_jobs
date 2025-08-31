@@ -9,9 +9,15 @@ import { CVImproverPage } from "@/components/cv-improver-page"
 import { MentorMatchingPage } from "@/components/mentor-matching-page"
 import { JobNotificationsPage } from "@/components/job-notifications-page"
 import { OffMarketJobsPage } from "@/components/off-market-jobs-page"
-import { CompaniesPage } from "@/components/companies-page" // Added companies page import
-import { ResourcesPage } from "@/components/resources-page" // Added Resources page import
+import { CompaniesPage } from "@/components/companies-page"
+import { ResourcesPage } from "@/components/resources-page"
 import { SidebarNavigation } from "@/components/sidebar-navigation"
+import { AuthButtons } from "@/components/auth-buttons"
+import dynamic from "next/dynamic"
+
+const LoginPage = dynamic(() => import("@/app/auth/login/page"), { ssr: false })
+const SignUpPage = dynamic(() => import("@/app/auth/sign-up/page"), { ssr: false })
+const SignUpSuccessPage = dynamic(() => import("@/app/auth/sign-up-success/page"), { ssr: false })
 
 export default function Home() {
   const [currentPage, setCurrentPage] = useState("job-board")
@@ -19,7 +25,7 @@ export default function Home() {
   const renderPage = () => {
     switch (currentPage) {
       case "job-board":
-        return <JobBoard onPageChange={setCurrentPage} /> // Pass navigation function to JobBoard
+        return <JobBoard onPageChange={setCurrentPage} />
       case "job-notifications":
         return <JobNotificationsPage />
       case "cv-matcher":
@@ -38,6 +44,12 @@ export default function Home() {
         return <OffMarketJobsPage />
       case "contact":
         return <ContactPage />
+      case "login":
+        return <LoginPage />
+      case "sign-up":
+        return <SignUpPage />
+      case "sign-up-success":
+        return <SignUpSuccessPage />
       default:
         return <JobBoard />
     }
@@ -47,6 +59,7 @@ export default function Home() {
     <main className="min-h-screen bg-background flex">
       <SidebarNavigation currentPage={currentPage} onPageChange={setCurrentPage} />
       <div className="flex-1">{renderPage()}</div>
+      <AuthButtons onPageChange={setCurrentPage} />
     </main>
   )
 }
