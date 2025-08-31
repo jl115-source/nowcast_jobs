@@ -376,6 +376,7 @@ export function OffMarketJobsPage() {
                         value={talentFormData.name}
                         onChange={(e) => setTalentFormData((prev) => ({ ...prev, name: e.target.value }))}
                         required
+                        className="bg-gray-100"
                       />
                     </div>
                     <div className="space-y-2">
@@ -387,6 +388,7 @@ export function OffMarketJobsPage() {
                         onChange={(e) => setTalentFormData((prev) => ({ ...prev, email: e.target.value }))}
                         disabled={!!user?.email}
                         required
+                        className="bg-gray-100"
                       />
                       {user?.email && <p className="text-sm text-muted-foreground">Using your account email</p>}
                     </div>
@@ -399,6 +401,7 @@ export function OffMarketJobsPage() {
                         id="phone"
                         value={talentFormData.phone}
                         onChange={(e) => setTalentFormData((prev) => ({ ...prev, phone: e.target.value }))}
+                        className="bg-gray-100"
                       />
                     </div>
                     <div className="space-y-2">
@@ -408,6 +411,7 @@ export function OffMarketJobsPage() {
                         placeholder="City, Country"
                         value={talentFormData.location}
                         onChange={(e) => setTalentFormData((prev) => ({ ...prev, location: e.target.value }))}
+                        className="bg-gray-100"
                       />
                     </div>
                   </div>
@@ -419,6 +423,7 @@ export function OffMarketJobsPage() {
                       placeholder="e.g., Senior Software Engineer, Climate Researcher"
                       value={talentFormData.currentRole}
                       onChange={(e) => setTalentFormData((prev) => ({ ...prev, currentRole: e.target.value }))}
+                      className="bg-gray-100"
                     />
                   </div>
 
@@ -430,6 +435,7 @@ export function OffMarketJobsPage() {
                       value={talentFormData.experience}
                       onChange={(e) => setTalentFormData((prev) => ({ ...prev, experience: e.target.value }))}
                       required
+                      className="bg-gray-100"
                     />
                   </div>
 
@@ -459,6 +465,7 @@ export function OffMarketJobsPage() {
                       value={talentFormData.skills}
                       onChange={(e) => setTalentFormData((prev) => ({ ...prev, skills: e.target.value }))}
                       required
+                      className="bg-gray-100"
                     />
                   </div>
 
@@ -469,6 +476,7 @@ export function OffMarketJobsPage() {
                       placeholder="e.g., Immediately, 2 weeks notice, 1 month"
                       value={talentFormData.availability}
                       onChange={(e) => setTalentFormData((prev) => ({ ...prev, availability: e.target.value }))}
+                      className="bg-gray-100"
                     />
                   </div>
 
@@ -557,6 +565,7 @@ export function OffMarketJobsPage() {
                         value={recruiterFormData.name}
                         onChange={(e) => setRecruiterFormData((prev) => ({ ...prev, name: e.target.value }))}
                         required
+                        className="bg-gray-100"
                       />
                     </div>
                     <div className="space-y-2">
@@ -568,6 +577,7 @@ export function OffMarketJobsPage() {
                         onChange={(e) => setRecruiterFormData((prev) => ({ ...prev, email: e.target.value }))}
                         disabled={!!user?.email}
                         required
+                        className="bg-gray-100"
                       />
                       {user?.email && <p className="text-sm text-muted-foreground">Using your account email</p>}
                     </div>
@@ -581,6 +591,7 @@ export function OffMarketJobsPage() {
                         value={recruiterFormData.company}
                         onChange={(e) => setRecruiterFormData((prev) => ({ ...prev, company: e.target.value }))}
                         required
+                        className="bg-gray-100"
                       />
                     </div>
                     <div className="space-y-2">
@@ -589,6 +600,7 @@ export function OffMarketJobsPage() {
                         id="recruiter-phone"
                         value={recruiterFormData.phone}
                         onChange={(e) => setRecruiterFormData((prev) => ({ ...prev, phone: e.target.value }))}
+                        className="bg-gray-100"
                       />
                     </div>
                   </div>
@@ -600,6 +612,7 @@ export function OffMarketJobsPage() {
                       placeholder="https://yourcompany.com"
                       value={recruiterFormData.website}
                       onChange={(e) => setRecruiterFormData((prev) => ({ ...prev, website: e.target.value }))}
+                      className="bg-gray-100"
                     />
                   </div>
 
@@ -611,6 +624,7 @@ export function OffMarketJobsPage() {
                       value={recruiterFormData.experience}
                       onChange={(e) => setRecruiterFormData((prev) => ({ ...prev, experience: e.target.value }))}
                       required
+                      className="bg-gray-100"
                     />
                   </div>
 
@@ -639,6 +653,7 @@ export function OffMarketJobsPage() {
                       placeholder="e.g., Startups, Fortune 500, Research Institutions"
                       value={recruiterFormData.clientTypes}
                       onChange={(e) => setRecruiterFormData((prev) => ({ ...prev, clientTypes: e.target.value }))}
+                      className="bg-gray-100"
                     />
                   </div>
 
@@ -650,6 +665,7 @@ export function OffMarketJobsPage() {
                       value={recruiterFormData.description}
                       onChange={(e) => setRecruiterFormData((prev) => ({ ...prev, description: e.target.value }))}
                       required
+                      className="bg-gray-100"
                     />
                   </div>
 
