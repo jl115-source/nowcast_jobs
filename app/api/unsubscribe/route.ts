@@ -20,11 +20,11 @@ export async function DELETE(request: NextRequest) {
     let result
     switch (table) {
       case "job_notifications":
-        result = await supabase.from("job_notifications").delete().eq("id", id).eq("email", user.email)
+        result = await supabase.from("email_subscribers").delete().eq("id", id).eq("email", user.email)
         break
 
       case "mentor_matching":
-        result = await supabase.from("mentor_matching").delete().eq("id", id).eq("email", user.email)
+        result = await supabase.from("mentor_profiles").delete().eq("id", id).eq("email", user.email)
         break
 
       case "off_market_signups":

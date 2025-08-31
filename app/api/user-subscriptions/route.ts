@@ -17,19 +17,19 @@ export async function GET(request: NextRequest) {
 
     // Fetch user's subscriptions from all tables
     const [jobNotifications, mentorMatching, offMarketJobs] = await Promise.all([
-      // Job notifications
+      // Job notifications - using email_subscribers table
       supabase
-        .from("job_notifications")
+        .from("email_subscribers")
         .select("*")
         .eq("email", user.email),
 
-      // Mentor matching
+      // Mentor matching - using mentor_profiles table
       supabase
-        .from("mentor_matching")
+        .from("mentor_profiles")
         .select("*")
         .eq("email", user.email),
 
-      // Off-market jobs
+      // Off-market jobs - table name is correct
       supabase
         .from("off_market_signups")
         .select("*")
