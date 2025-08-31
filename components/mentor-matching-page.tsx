@@ -2,16 +2,21 @@
 
 import type React from "react"
 
-import { Users, UserPlus, CheckCircle, AlertCircle } from "lucide-react"
+import { Users, UserPlus, CheckCircle, AlertCircle, LogIn } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Textarea } from "@/components/ui/textarea"
-import { useState } from "react"
+import { useState, useEffect } from "react"
+import { createBrowserClient } from "@/lib/supabase/client"
 
 export function MentorMatchingPage() {
+  const [user, setUser] = useState<any>(null)
+  const [loading, setLoading] = useState(true)
+  const supabase = createBrowserClient()
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -21,6 +26,31 @@ export function MentorMatchingPage() {
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle")
+
+  useEffect(() => {
+    const getUser = async () => {
+      const {
+        data: { user },
+      } = await supabase.auth.getUser()
+      setUser(user)
+      if (user?.email) {
+        setFormData((prev) => ({ ...prev, email: user.email }))
+      }
+      setLoading(false)
+    }
+    getUser()
+
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange((event, session) => {
+      setUser(session?.user ?? null)
+      if (session?.user?.email) {
+        setFormData((prev) => ({ ...prev, email: session.user.email }))
+      }
+    })
+
+    return () => subscription.unsubscribe()
+  }, [supabase.auth])
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -51,42 +81,103 @@ export function MentorMatchingPage() {
         industry: industryMapping[formData.industry as keyof typeof industryMapping] || formData.industry,
       }
 
-      console.log("[v0] Mentor form data being sent:", formData)
-      console.log("[v0] Mapped data for API:", mappedData)
-
       const response = await fetch("/api/mentor-signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(mappedData),
       })
 
-      console.log("[v0] Mentor API response status:", response.status)
-      console.log("[v0] Mentor API response headers:", Object.fromEntries(response.headers.entries()))
-
       if (response.ok) {
-        const result = await response.json()
-        console.log("[v0] Mentor API success result:", result)
         setSubmitStatus("success")
         setFormData({
           name: "",
-          email: "",
+          email: user?.email || "",
           signupType: "",
           industry: "",
           experience: "",
         })
       } else {
-        const errorText = await response.text()
-        console.log("[v0] Mentor API error response:", errorText)
-        console.log("[v0] Mentor API error status:", response.status)
         setSubmitStatus("error")
       }
     } catch (error) {
-      console.log("[v0] Mentor API fetch error:", error)
-      console.log("[v0] Error details:", error instanceof Error ? error.message : "Unknown error")
       setSubmitStatus("error")
     } finally {
       setIsSubmitting(false)
     }
+  }
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-background flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary mx-auto mb-4"></div>
+          <p>Loading...</p>
+        </div>
+      </div>
+    )
+  }
+
+  if (!user) {
+    return (
+      <div className="container mx-auto px-4 py-8">
+        <div className="relative text-center mb-12 rounded-2xl overflow-hidden">
+          <div
+            className="absolute inset-0 bg-gradient-to-r from-primary/90 to-secondary/90"
+            style={{
+              backgroundImage: `url('/sky-clouds.png')`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          />
+          <div className="absolute inset-0 bg-primary/60"></div>
+          <div className="relative z-10 py-16 px-8 text-white">
+            <div className="flex items-center justify-center gap-3 mb-6">
+              <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
+                <Users className="h-7 w-7" />
+              </div>
+              <h1 className="text-5xl font-bold">Mentor Matching</h1>
+            </div>
+            <p className="text-xl mb-8 max-w-3xl mx-auto opacity-90">
+              Mentorship has the power to accelerate growth, open new opportunities, and even change the course of your
+              career.
+            </p>
+          </div>
+        </div>
+
+        <div className="max-w-2xl mx-auto">
+          <Card>
+            <CardHeader className="text-center">
+              <LogIn className="h-12 w-12 mx-auto mb-4 text-primary" />
+              <CardTitle className="text-2xl">Login Required</CardTitle>
+              <CardDescription>
+                You need to be logged in to join our mentor matching program. This helps us create better matches and
+                manage your mentorship connections.
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="text-center">
+              <p className="text-muted-foreground mb-6">Once logged in, you'll be able to:</p>
+              <ul className="text-left space-y-2 mb-6 max-w-md mx-auto">
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="h-4 w-4 text-green-600" />
+                  <span>Join as a mentor or mentee</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="h-4 w-4 text-green-600" />
+                  <span>Get matched based on your industry and goals</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="h-4 w-4 text-green-600" />
+                  <span>Manage your mentorship connections</span>
+                </li>
+              </ul>
+              <p className="text-sm text-muted-foreground">
+                Please use the login button in the bottom left corner to sign in or create an account.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    )
   }
 
   return (
@@ -125,7 +216,7 @@ export function MentorMatchingPage() {
               <CardTitle className="text-2xl">Join the List</CardTitle>
             </div>
             <CardDescription>
-              Sign up to be notified when we’ve found your ideal mentor match. We’ll connect you based on your industry,
+              Sign up to be notified when we've found your ideal mentor match. We'll connect you based on your industry,
               experience level, and professional goals. Once matched, you and your match decide what works best for you,
               with helpful guidelines available to support the journey. Choose whether you'd like to be a mentor or find
               a mentor.
@@ -152,8 +243,10 @@ export function MentorMatchingPage() {
                     placeholder="Enter your email"
                     value={formData.email}
                     onChange={(e) => setFormData((prev) => ({ ...prev, email: e.target.value }))}
+                    disabled={!!user?.email}
                     required
                   />
+                  {user?.email && <p className="text-sm text-muted-foreground">Using your account email</p>}
                 </div>
               </div>
 

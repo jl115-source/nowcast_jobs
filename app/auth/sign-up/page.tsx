@@ -8,11 +8,11 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { useState } from "react"
+import { Mail, ArrowLeft } from "lucide-react"
+import Link from "next/link"
 
 export default function SignUpPage() {
   const [email, setEmail] = useState("")
-  const [password, setPassword] = useState("")
-  const [repeatPassword, setRepeatPassword] = useState("")
   const [error, setError] = useState<string | null>(null)
   const [isLoading, setIsLoading] = useState(false)
   const [success, setSuccess] = useState(false)
@@ -23,18 +23,11 @@ export default function SignUpPage() {
     setIsLoading(true)
     setError(null)
 
-    if (password !== repeatPassword) {
-      setError("Passwords do not match")
-      setIsLoading(false)
-      return
-    }
-
     try {
-      const { error } = await supabase.auth.signUp({
+      const { error } = await supabase.auth.signInWithOtp({
         email,
-        password,
         options: {
-          emailRedirectTo: process.env.NEXT_PUBLIC_DEV_SUPABASE_REDIRECT_URL || `${window.location.origin}`,
+          emailRedirectTo: `${window.location.origin}/auth/callback`,
         },
       })
       if (error) throw error
@@ -52,13 +45,18 @@ export default function SignUpPage() {
         <div className="w-full max-w-sm">
           <Card>
             <CardHeader>
-              <CardTitle className="text-2xl">Thank you for signing up!</CardTitle>
-              <CardDescription>Check your email to confirm</CardDescription>
+              <CardTitle className="text-2xl">Check Your Email</CardTitle>
+              <CardDescription>We've sent you a magic link</CardDescription>
             </CardHeader>
             <CardContent>
-              <p className="text-sm text-muted-foreground">
-                You've successfully signed up. Please check your email to confirm your account before signing in.
+              <p className="text-sm text-muted-foreground mb-4">
+                Click the link in your email to sign in to your account.
               </p>
+              <Link href="/">
+                <Button variant="outline" className="w-full bg-transparent">
+                  Back to Job Board
+                </Button>
+              </Link>
             </CardContent>
           </Card>
         </div>
@@ -69,56 +67,52 @@ export default function SignUpPage() {
   return (
     <div className="flex min-h-screen w-full items-center justify-center p-6 md:p-10">
       <div className="w-full max-w-sm">
+        <div className="mb-6">
+          <Link href="/" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground">
+            <ArrowLeft className="h-4 w-4" />
+            Back to Job Board
+          </Link>
+        </div>
+
         <div className="flex flex-col gap-6">
           <Card>
             <CardHeader>
-              <CardTitle className="text-2xl">Sign up</CardTitle>
-              <CardDescription>Create a new account</CardDescription>
+              <CardTitle className="text-2xl">Get Started</CardTitle>
+              <CardDescription>Enter your email to create an account</CardDescription>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSignUp}>
                 <div className="flex flex-col gap-6">
                   <div className="grid gap-2">
                     <Label htmlFor="email">Email</Label>
-                    <Input
-                      id="email"
-                      type="email"
-                      placeholder="m@example.com"
-                      required
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                    />
-                  </div>
-                  <div className="grid gap-2">
-                    <div className="flex items-center">
-                      <Label htmlFor="password">Password</Label>
+                    <div className="relative">
+                      <Mail className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
+                      <Input
+                        id="email"
+                        type="email"
+                        placeholder="Enter your email"
+                        required
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        className="pl-10"
+                      />
                     </div>
-                    <Input
-                      id="password"
-                      type="password"
-                      required
-                      value={password}
-                      onChange={(e) => setPassword(e.target.value)}
-                    />
-                  </div>
-                  <div className="grid gap-2">
-                    <div className="flex items-center">
-                      <Label htmlFor="repeat-password">Repeat Password</Label>
-                    </div>
-                    <Input
-                      id="repeat-password"
-                      type="password"
-                      required
-                      value={repeatPassword}
-                      onChange={(e) => setRepeatPassword(e.target.value)}
-                    />
                   </div>
                   {error && <p className="text-sm text-red-500">{error}</p>}
                   <Button type="submit" className="w-full" disabled={isLoading}>
-                    {isLoading ? "Creating an account..." : "Sign up"}
+                    {isLoading ? "Sending magic link..." : "Send Magic Link"}
                   </Button>
                 </div>
               </form>
+
+              <div className="mt-6 text-center">
+                <p className="text-sm text-muted-foreground">
+                  Already have an account?{" "}
+                  <Link href="/auth/login" className="text-primary hover:underline">
+                    Sign in
+                  </Link>
+                </p>
+              </div>
             </CardContent>
           </Card>
         </div>

@@ -1,15 +1,16 @@
 "use client"
 
 import type React from "react"
-import { Mail } from "lucide-react"
+import { Mail, LogIn } from "lucide-react"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import { createBrowserClient } from "@/lib/supabase/client"
 import {
   GraduationCap,
   CheckCircle,
@@ -28,11 +29,40 @@ import {
 } from "lucide-react"
 
 export function JobNotificationsPage() {
+  const [user, setUser] = useState<any>(null)
+  const [loading, setLoading] = useState(true)
+  const supabase = createBrowserClient()
+
   const [email, setEmail] = useState("")
   const [selectedCategories, setSelectedCategories] = useState<string[]>([])
   const [frequency, setFrequency] = useState("")
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle")
+
+  useEffect(() => {
+    const getUser = async () => {
+      const {
+        data: { user },
+      } = await supabase.auth.getUser()
+      setUser(user)
+      if (user?.email) {
+        setEmail(user.email)
+      }
+      setLoading(false)
+    }
+    getUser()
+
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange((event, session) => {
+      setUser(session?.user ?? null)
+      if (session?.user?.email) {
+        setEmail(session.user.email)
+      }
+    })
+
+    return () => subscription.unsubscribe()
+  }, [supabase.auth])
 
   const categories = [
     { id: "academia", label: "Academia & Research", color: "bg-purple-100 text-purple-800", icon: GraduationCap },
@@ -117,7 +147,6 @@ export function JobNotificationsPage() {
 
       if (response.ok) {
         setSubmitStatus("success")
-        setEmail("")
         setSelectedCategories([])
         setFrequency("")
       } else {
@@ -128,6 +157,76 @@ export function JobNotificationsPage() {
     } finally {
       setIsSubmitting(false)
     }
+  }
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-background flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary mx-auto mb-4"></div>
+          <p>Loading...</p>
+        </div>
+      </div>
+    )
+  }
+
+  if (!user) {
+    return (
+      <div className="min-h-screen bg-background">
+        {/* Header */}
+        <div
+          className="relative h-64 bg-gradient-to-r from-primary/20 to-accent/20 flex items-center justify-center"
+          style={{
+            backgroundImage: "url('/sky-clouds.png')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <div className="absolute inset-0 bg-primary/60"></div>
+          <div className="relative z-10 text-center text-white">
+            <Mail className="h-16 w-16 mx-auto mb-4" />
+            <h1 className="text-4xl font-bold mb-2">Job Notifications</h1>
+            <p className="text-xl opacity-90">Stay updated with the latest opportunities</p>
+          </div>
+        </div>
+
+        {/* Login Required Message */}
+        <div className="container mx-auto px-4 py-12">
+          <div className="max-w-2xl mx-auto">
+            <Card>
+              <CardHeader className="text-center">
+                <LogIn className="h-12 w-12 mx-auto mb-4 text-primary" />
+                <CardTitle className="text-2xl">Login Required</CardTitle>
+                <CardDescription>
+                  You need to be logged in to subscribe to job notifications. This helps us personalize your experience
+                  and manage your subscriptions.
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="text-center">
+                <p className="text-muted-foreground mb-6">Once logged in, you'll be able to:</p>
+                <ul className="text-left space-y-2 mb-6 max-w-md mx-auto">
+                  <li className="flex items-center gap-2">
+                    <CheckCircle className="h-4 w-4 text-green-600" />
+                    <span>Subscribe to personalized job alerts</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle className="h-4 w-4 text-green-600" />
+                    <span>Manage your notification preferences</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle className="h-4 w-4 text-green-600" />
+                    <span>Access your account dashboard</span>
+                  </li>
+                </ul>
+                <p className="text-sm text-muted-foreground">
+                  Please use the login button in the bottom left corner to sign in or create an account.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </div>
+    )
   }
 
   return (
@@ -145,7 +244,11 @@ export function JobNotificationsPage() {
         <div className="relative z-10 text-center text-white">
           <Mail className="h-16 w-16 mx-auto mb-4" />
           <h1 className="text-4xl font-bold mb-2">Job Notifications</h1>
-          <p className="text-xl opacity-90">  Stay updated with the latest opportunities — speed matters, so choose to get updates bi-weekly, weekly, or monthly.</p>
+          <p className="text-xl opacity-90">
+            {" "}
+            Stay updated with the latest opportunities — speed matters, so choose to get updates bi-weekly, weekly, or
+            monthly.
+          </p>
         </div>
       </div>
 
@@ -176,8 +279,10 @@ export function JobNotificationsPage() {
                     placeholder="your.email@example.com"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
+                    disabled={!!user?.email}
                     required
                   />
+                  {user?.email && <p className="text-sm text-muted-foreground">Using your account email</p>}
                 </div>
 
                 <div className="space-y-2">

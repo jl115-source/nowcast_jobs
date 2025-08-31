@@ -2,15 +2,20 @@
 
 import type React from "react"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { EyeOff, Shield, UserCheck, Mail, Briefcase, Users, Search } from "lucide-react"
+import { EyeOff, Shield, UserCheck, Mail, Briefcase, Users, Search, LogIn, CheckCircle } from "lucide-react"
+import { createBrowserClient } from "@/lib/supabase/client"
 
 export function OffMarketJobsPage() {
+  const [user, setUser] = useState<any>(null)
+  const [loading, setLoading] = useState(true)
+  const supabase = createBrowserClient()
+
   const [activeTab, setActiveTab] = useState<"talent" | "recruiter">("talent")
 
   const [talentFormData, setTalentFormData] = useState({
@@ -39,6 +44,33 @@ export function OffMarketJobsPage() {
 
   const [isTalentSubmitted, setIsTalentSubmitted] = useState(false)
   const [isRecruiterSubmitted, setIsRecruiterSubmitted] = useState(false)
+
+  useEffect(() => {
+    const getUser = async () => {
+      const {
+        data: { user },
+      } = await supabase.auth.getUser()
+      setUser(user)
+      if (user?.email) {
+        setTalentFormData((prev) => ({ ...prev, email: user.email }))
+        setRecruiterFormData((prev) => ({ ...prev, email: user.email }))
+      }
+      setLoading(false)
+    }
+    getUser()
+
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange((event, session) => {
+      setUser(session?.user ?? null)
+      if (session?.user?.email) {
+        setTalentFormData((prev) => ({ ...prev, email: session.user.email }))
+        setRecruiterFormData((prev) => ({ ...prev, email: session.user.email }))
+      }
+    })
+
+    return () => subscription.unsubscribe()
+  }, [supabase.auth])
 
   const industries = [
     "Academia & Research",
@@ -119,6 +151,69 @@ export function OffMarketJobsPage() {
     } catch (error) {
       console.error("Error submitting recruiter form:", error)
     }
+  }
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-background flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary mx-auto mb-4"></div>
+          <p>Loading...</p>
+        </div>
+      </div>
+    )
+  }
+
+  if (!user) {
+    return (
+      <div className="min-h-screen bg-background">
+        {/* Header */}
+        <div className="relative h-64 bg-gradient-to-r from-primary/90 to-accent/90 overflow-hidden">
+          <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/sky-clouds.png')" }} />
+          <div className="absolute inset-0 bg-primary/40"></div>
+          <div className="relative z-10 flex items-center justify-center h-full">
+            <div className="text-center text-white">
+              <EyeOff className="h-16 w-16 mx-auto mb-4" />
+              <h1 className="text-4xl font-bold mb-2">Off-Market Jobs</h1>
+              <p className="text-xl opacity-90">Exclusive opportunities not advertised publicly</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="max-w-2xl mx-auto p-6">
+          <Card>
+            <CardHeader className="text-center">
+              <LogIn className="h-12 w-12 mx-auto mb-4 text-primary" />
+              <CardTitle className="text-2xl">Login Required</CardTitle>
+              <CardDescription>
+                You need to be logged in to access our exclusive off-market job network. This helps us verify your
+                identity and provide personalized opportunities.
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="text-center">
+              <p className="text-muted-foreground mb-6">Once logged in, you'll be able to:</p>
+              <ul className="text-left space-y-2 mb-6 max-w-md mx-auto">
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="h-4 w-4 text-green-600" />
+                  <span>Access exclusive hidden job opportunities</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="h-4 w-4 text-green-600" />
+                  <span>Connect with vetted recruiters in your field</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="h-4 w-4 text-green-600" />
+                  <span>Manage your off-market job preferences</span>
+                </li>
+              </ul>
+              <p className="text-sm text-muted-foreground">
+                Please use the login button in the bottom left corner to sign in or create an account.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    )
   }
 
   if (isTalentSubmitted || isRecruiterSubmitted) {
@@ -254,7 +349,7 @@ export function OffMarketJobsPage() {
                       <div>
                         <p className="font-medium">Easy Removal</p>
                         <p className="text-sm text-muted-foreground">
-                          Circumstances change—we’ll unsubscribe you anytime you choose.{" "}
+                          Circumstances change—we'll unsubscribe you anytime you choose.{" "}
                         </p>
                       </div>
                     </div>
@@ -290,8 +385,10 @@ export function OffMarketJobsPage() {
                         type="email"
                         value={talentFormData.email}
                         onChange={(e) => setTalentFormData((prev) => ({ ...prev, email: e.target.value }))}
+                        disabled={!!user?.email}
                         required
                       />
+                      {user?.email && <p className="text-sm text-muted-foreground">Using your account email</p>}
                     </div>
                   </div>
 
@@ -469,8 +566,10 @@ export function OffMarketJobsPage() {
                         type="email"
                         value={recruiterFormData.email}
                         onChange={(e) => setRecruiterFormData((prev) => ({ ...prev, email: e.target.value }))}
+                        disabled={!!user?.email}
                         required
                       />
+                      {user?.email && <p className="text-sm text-muted-foreground">Using your account email</p>}
                     </div>
                   </div>
 
