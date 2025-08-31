@@ -236,7 +236,7 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
 
     switch (sortBy) {
       case "newest":
-        filtered.sort((a, b) => new Date(b.posted).getTime() - new Date(a.posted).getTime())
+        filtered.sort((a, b) => new Date(b.dateAdded).getTime() - new Date(a.dateAdded).getTime())
         break
       case "salary-high":
         filtered.sort((a, b) => extractSalaryValue(b.salary) - extractSalaryValue(a.salary))
@@ -406,7 +406,9 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
         <div className="absolute inset-0 bg-primary/60"></div>
         <div className="relative z-10 text-center text-white">
           <h1 className="text-4xl font-bold mb-4">Applied Science Jobs</h1>
-          <p className="text-xl mb-6 opacity-90">Fresh updates at least twice a week, so you’re never late to the party.</p>
+          <p className="text-xl mb-6 opacity-90">
+            Fresh updates at least twice a week, so you’re never late to the party.
+          </p>
         </div>
         <div className="absolute bottom-4 right-4">
           <button
