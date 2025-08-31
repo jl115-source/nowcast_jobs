@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import { createClient } from "@/lib/supabase/client"
 import { Button } from "@/components/ui/button"
-import { LogIn, UserPlus, LogOut, User, Settings } from "lucide-react"
+import { LogIn, LogOut, User, Settings } from "lucide-react"
 
 interface AuthButtonsProps {
   onPageChange: (page: string) => void
@@ -40,12 +40,8 @@ export function AuthButtons({ onPageChange }: AuthButtonsProps) {
     onPageChange("job-board")
   }
 
-  const handleSignIn = () => {
+  const handleAuth = () => {
     onPageChange("login")
-  }
-
-  const handleSignUp = () => {
-    onPageChange("sign-up")
   }
 
   const handleAccount = () => {
@@ -84,21 +80,10 @@ export function AuthButtons({ onPageChange }: AuthButtonsProps) {
           </Button>
         </div>
       ) : (
-        <div className="flex flex-col gap-2">
-          <Button
-            onClick={handleSignIn}
-            variant="outline"
-            size="sm"
-            className="bg-background/90 backdrop-blur-sm border shadow-lg"
-          >
-            <LogIn className="h-4 w-4 mr-2" />
-            Sign In
-          </Button>
-          <Button onClick={handleSignUp} size="sm" className="bg-primary/90 backdrop-blur-sm shadow-lg">
-            <UserPlus className="h-4 w-4 mr-2" />
-            Sign Up
-          </Button>
-        </div>
+        <Button onClick={handleAuth} size="sm" className="bg-primary/90 backdrop-blur-sm shadow-lg">
+          <LogIn className="h-4 w-4 mr-2" />
+          Sign In / Sign Up
+        </Button>
       )}
     </div>
   )

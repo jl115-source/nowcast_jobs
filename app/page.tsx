@@ -17,8 +17,6 @@ import { AuthButtons } from "@/components/auth-buttons"
 import dynamic from "next/dynamic"
 
 const LoginPage = dynamic(() => import("@/app/auth/login/page"), { ssr: false })
-const SignUpPage = dynamic(() => import("@/app/auth/sign-up/page"), { ssr: false })
-const SignUpSuccessPage = dynamic(() => import("@/app/auth/sign-up-success/page"), { ssr: false })
 
 export default function Home() {
   const [currentPage, setCurrentPage] = useState("job-board")
@@ -49,10 +47,6 @@ export default function Home() {
         return <AccountPage />
       case "login":
         return <LoginPage />
-      case "sign-up":
-        return <SignUpPage />
-      case "sign-up-success":
-        return <SignUpSuccessPage />
       default:
         return <JobBoard />
     }
