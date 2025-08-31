@@ -52,6 +52,7 @@ interface Job {
     lat: number
     lng: number
   }
+  dateAdded: string // Added dateAdded field
 }
 
 interface CVData {
@@ -107,7 +108,10 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
     { key: "geospatial", name: "Geospatial & GIS" },
     { key: "geophysics", name: "Geophysics & Geology" },
     { key: "insurance", name: "Insurance & Reinsurance" },
+    { key: "postdoc", name: "Post-doc" },
+    { key: "professor", name: "Professor" },
     { key: "tech", name: "Tech (Data Science & ML)" },
+    { key: "trading", name: "Trading (Commodities, Weather, Energy)" },
     { key: "weather", name: "Weather & Meteorology" },
   ]
 
@@ -121,6 +125,9 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
     "Insurance & Reinsurance": "#06b6d4",
     "Tech (Data Science & ML)": "#3b82f6",
     "Weather & Meteorology": "#0ea5e9",
+    Professor: "#7c3aed",
+    "Trading (Commodities, Weather, Energy)": "#ea580c",
+    "Post-doc": "#0891b2",
   }
 
   useEffect(() => {
@@ -207,7 +214,9 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
         (job) =>
           job.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
           job.company.toLowerCase().includes(searchTerm.toLowerCase()) ||
-          job.skills.some((skill) => skill.toLowerCase().includes(searchTerm.toLowerCase())),
+          (job.skills &&
+            Array.isArray(job.skills) &&
+            job.skills.some((skill) => skill.toLowerCase().includes(searchTerm.toLowerCase()))),
       )
     }
 
@@ -217,7 +226,7 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
 
     if (selectedIndustries.length > 0) {
       filtered = filtered.filter((job) => {
-        const jobCategories = Array.isArray(job.categories) ? job.categories : [job.category].filter(Boolean)
+        const jobCategories = Array.isArray(job.categories) ? job.categories : []
         return selectedIndustries.some((industryKey) => {
           const industryName = getCategoryDisplayName(industryKey)
           return jobCategories.some((category) => category === industryName)
@@ -230,10 +239,10 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
         filtered.sort((a, b) => new Date(b.posted).getTime() - new Date(a.posted).getTime())
         break
       case "salary-high":
-        filtered.sort((a, b) => extractSalaryValue(a.salary) - extractSalaryValue(b.salary))
+        filtered.sort((a, b) => extractSalaryValue(b.salary) - extractSalaryValue(a.salary))
         break
       case "salary-low":
-        filtered.sort((a, b) => extractSalaryValue(b.salary) - extractSalaryValue(a.salary))
+        filtered.sort((a, b) => extractSalaryValue(a.salary) - extractSalaryValue(b.salary))
         break
     }
 
@@ -298,6 +307,12 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
         return <CodeIcon className="h-4 w-4" />
       case "weather":
         return <CloudRain className="h-4 w-4" />
+      case "postdoc":
+        return <GraduationCapIcon className="h-4 w-4" />
+      case "professor":
+        return <BriefcaseIcon className="h-4 w-4" />
+      case "trading":
+        return <BriefcaseIcon className="h-4 w-4" />
       default:
         return <BriefcaseIcon className="h-4 w-4" />
     }
@@ -323,6 +338,12 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
         return "Tech (Data Science & ML)"
       case "weather":
         return "Weather & Meteorology"
+      case "postdoc":
+        return "Post-doc"
+      case "professor":
+        return "Professor"
+      case "trading":
+        return "Trading (Commodities, Weather, Energy)"
       default:
         return category.charAt(0).toUpperCase() + category.slice(1)
     }
@@ -385,7 +406,7 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
         <div className="absolute inset-0 bg-primary/60"></div>
         <div className="relative z-10 text-center text-white">
           <h1 className="text-4xl font-bold mb-4">Applied Science Jobs</h1>
-          <p className="text-xl mb-6 opacity-90">Focus on Weather, Climate, Energy, Commodities And Geosciences</p>
+          <p className="text-xl mb-6 opacity-90">Focus on Weather, Insurance, Energy, Commodities And More...</p>
         </div>
         <div className="absolute bottom-4 right-4">
           <button
@@ -588,7 +609,7 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
                     </div>
                     <div className="flex items-center gap-1">
                       <Briefcase className="h-3 w-3" />
-                      {job.type}
+                      {job.dateAdded}
                     </div>
                     {job.remote && (
                       <Badge variant="secondary" className="text-xs">

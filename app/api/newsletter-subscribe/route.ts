@@ -4,39 +4,31 @@ import { createClient } from "@/lib/supabase/server"
 export async function POST(request: NextRequest) {
   try {
     console.log("[v0] Newsletter API called")
-    const { email, categories, frequency } = await request.json()
-    console.log("[v0] Newsletter request data:", { email, categories, frequency })
+    const requestData = await request.json()
+    console.log("[v0] Newsletter request data:", requestData)
+
+    const { email, frequency, ...categoryColumns } = requestData
 
     // Validate input
-    if (!email || !categories || categories.length === 0 || !frequency) {
+    if (!email || !frequency) {
       console.log("[v0] Newsletter validation failed")
-      return NextResponse.json({ error: "Email, frequency, and at least one category are required" }, { status: 400 })
+      return NextResponse.json({ error: "Email and frequency are required" }, { status: 400 })
+    }
+
+    // Check if at least one category is selected
+    const hasSelectedCategory = Object.values(categoryColumns).some((value) => value === true)
+    if (!hasSelectedCategory) {
+      console.log("[v0] No categories selected")
+      return NextResponse.json({ error: "At least one category must be selected" }, { status: 400 })
     }
 
     const supabase = await createClient()
     console.log("[v0] Newsletter Supabase client created")
 
-    console.log("[v0] Categories received:", categories)
-    console.log("[v0] Category type:", typeof categories, Array.isArray(categories))
-
-    const industryColumns = {
-      climate_science: categories.includes("Climate Science"),
-      tech_data_science: categories.includes("Tech (Data Science & ML)"),
-      energy_renewables: categories.includes("Energy & Renewables"),
-      weather_meteorology: categories.includes("Weather & Meteorology"),
-      academia_research: categories.includes("Academia & Research"),
-      geospatial_gis: categories.includes("Geospatial & GIS"),
-      geophysics_geology: categories.includes("Geophysics & Geology"),
-      insurance_reinsurance: categories.includes("Insurance & Reinsurance"),
-      banking_finance: categories.includes("Banking & Finance"),
-    }
-
-    console.log("[v0] Newsletter industry columns:", industryColumns)
-
     const insertData = {
       email,
       frequency,
-      ...industryColumns,
+      ...categoryColumns,
     }
     console.log("[v0] Newsletter insert data:", insertData)
 

@@ -40,6 +40,7 @@ export function MentorMatchingPage() {
         geophysics: "Geophysics & Geology",
         insurance: "Insurance & Reinsurance",
         tech: "Tech (Data Science & ML)",
+        trading: "Trading (Commodities, Weather, Energy)",
         weather: "Weather & Meteorology",
       }
 
@@ -193,6 +194,7 @@ export function MentorMatchingPage() {
                       <SelectItem value="geophysics">Geophysics & Geology</SelectItem>
                       <SelectItem value="insurance">Insurance & Reinsurance</SelectItem>
                       <SelectItem value="tech">Tech (Data Science & ML)</SelectItem>
+                      <SelectItem value="trading">Trading (Commodities, Weather, Energy)</SelectItem>
                       <SelectItem value="weather">Weather & Meteorology</SelectItem>
                     </SelectContent>
                   </Select>

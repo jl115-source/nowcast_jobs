@@ -103,7 +103,7 @@
       "applicationLink": "https://www.linkedin.com/jobs/view/4283422400"
     },
     {
-      "id": "5",
+      "id": "500",
       "title": "Meteorologist",
       "company": "Department of Commerce – NOAA National Weather Service",
       "location": "Multiple Locations (Anchorage, AK; Mobile, AL; North Little Rock, AR; Miami, FL; and others)",
@@ -1512,33 +1512,6 @@
       "remote": false,
       "applicationLink": "https://www.linkedin.com/jobs/view/4286910166/"
     },
-    {
-  "id": "77",
-  "title": "Assistant Professor in Geophysics",
-  "company": "Stanford University",
-  "location": "Stanford, CA",
-  "type": "Full-time, Tenure-track",
-  "salary": "$143,500 - $193,000",
-  "categories": ["Geophysics & Geology", "Climate Science", "Academia & Research"],
-  "description": "Stanford University's Department of Geophysics, part of the Doerr School of Sustainability, invites applications for a tenure-track Assistant Professor position in any field of observational, experimental, computational, or theoretical geophysics. Areas of particular interest include freshwater geophysics, sustainable energy geophysics, planetary interiors, atmospheric/ocean/cryosphere geophysics, and disaster risk.",
-  "requirements": [
-    "Ph.D. in Geophysics or related field (recent or near completion preferred)",
-    "Evidence of exceptional research potential",
-    "Strong teaching capabilities",
-    "Commitment to diversity, equity, and inclusion in academia",
-    "Submission of cover letter, CV, research and teaching statement (max 3 pages), and 3 reference contacts"
-  ],
-  "skills": [
-    "Geophysical modeling",
-    "Observational and experimental geophysics",
-    "Computational geosciences",
-    "Earth system science",
-    "Planetary and environmental applications"
-  ],
-  "dateAdded": "2025-08-21",
-  "remote": false,
-  "applicationLink": "https://facultypositions.stanford.edu/en-us/job/494892/assistant-professor-in-geophysics?lApplicationSubSourceID=11250"
-},
  {
     "id": "71",
     "title": "Postdoctoral Fellow in Atmospheric Chemistry Modeling",
@@ -1565,7 +1538,7 @@
     "location": "Berkeley, CA",
     "type": "Full-time, tenure-track (9-month)",
     "salary": "$80,800–$128,700 (base; off‑scale possible)",
-    "categories": ["Geophysics & Geology", "Climate Science", "Academia & Research"],
+    "categories": ["Geophysics & Geology", "Climate Science", "Professor","Academia & Research"],
     "description": "Tenure‑track position focused on environmental/biogeochemical cycles, including carbon, nitrogen, soils, and land–atmosphere interactions; climate‑solution oriented research encouraged.",
     "requirements": null,
     "skills": null,
@@ -1647,7 +1620,7 @@
     "location": "Stanford, CA",
     "type": "Full-time, Tenure-track",
     "salary": "$143,500 - $193,000",
-    "categories": ["Geophysics & Geology", "Climate Science", "Academia & Research"],
+    "categories": ["Geophysics & Geology", "Academia & Research"],
     "description": "Stanford University's Department of Geophysics, part of the Doerr School of Sustainability, invites applications for a tenure-track Assistant Professor position in any field of observational, experimental, computational, or theoretical geophysics. Areas of particular interest include freshwater geophysics, sustainable energy geophysics, planetary interiors, atmospheric/ocean/cryosphere geophysics, and disaster risk.",
     "requirements": [
       "Ph.D. in Geophysics or related field (recent or near completion preferred)",

@@ -22,6 +22,9 @@ import {
   Mountain,
   Shield,
   Building2,
+  TrendingUp,
+  Users,
+  Award,
 } from "lucide-react"
 
 export function JobNotificationsPage() {
@@ -39,7 +42,15 @@ export function JobNotificationsPage() {
     { id: "geospatial", label: "Geospatial & GIS", color: "bg-indigo-100 text-indigo-800", icon: Map },
     { id: "geophysics", label: "Geophysics & Geology", color: "bg-stone-100 text-stone-800", icon: Mountain },
     { id: "insurance", label: "Insurance & Reinsurance", color: "bg-orange-100 text-orange-800", icon: Shield },
+    { id: "postdoc", label: "Post-doc", color: "bg-cyan-100 text-cyan-800", icon: Users },
+    { id: "professor", label: "Professor", color: "bg-violet-100 text-violet-800", icon: Award },
     { id: "tech", label: "Tech (Data Science & ML)", color: "bg-blue-100 text-blue-800", icon: Code },
+    {
+      id: "trading",
+      label: "Trading (Commodities, Weather, Energy)",
+      color: "bg-orange-100 text-orange-800",
+      icon: TrendingUp,
+    },
     { id: "weather", label: "Weather & Meteorology", color: "bg-sky-100 text-sky-800", icon: CloudRain },
   ]
 
@@ -58,27 +69,50 @@ export function JobNotificationsPage() {
 
     try {
       const categoryMap: { [key: string]: string } = {
-        academia: "Academia & Research",
-        banking: "Banking & Finance",
-        climate: "Climate Science",
-        energy: "Energy & Renewables",
-        geospatial: "Geospatial & GIS",
-        geophysics: "Geophysics & Geology",
-        insurance: "Insurance & Reinsurance",
-        tech: "Tech (Data Science & ML)",
-        weather: "Weather & Meteorology",
+        academia: "academia_research",
+        banking: "banking_finance",
+        climate: "climate_science",
+        energy: "energy_renewables",
+        geospatial: "geospatial_gis",
+        geophysics: "geophysics_geology",
+        insurance: "insurance_reinsurance",
+        tech: "tech_data_science",
+        weather: "weather_meteorology",
+        professor: "professor",
+        trading: "trading_commodities_weather_energy",
+        postdoc: "postdoc",
       }
 
-      const fullCategoryNames = selectedCategories.map((id) => categoryMap[id])
+      const payload: any = {
+        email,
+        frequency,
+        // Set all categories to false initially
+        academia_research: false,
+        banking_finance: false,
+        climate_science: false,
+        energy_renewables: false,
+        geospatial_gis: false,
+        geophysics_geology: false,
+        insurance_reinsurance: false,
+        tech_data_science: false,
+        weather_meteorology: false,
+        professor: false,
+        trading_commodities_weather_energy: false,
+        postdoc: false,
+      }
+
+      // Set selected categories to true
+      selectedCategories.forEach((categoryId) => {
+        const dbColumn = categoryMap[categoryId]
+        if (dbColumn) {
+          payload[dbColumn] = true
+        }
+      })
 
       const response = await fetch("/api/newsletter-subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          email,
-          categories: fullCategoryNames,
-          frequency,
-        }),
+        body: JSON.stringify(payload),
       })
 
       if (response.ok) {
@@ -126,7 +160,7 @@ export function JobNotificationsPage() {
               </CardTitle>
               <CardDescription>
                 Get notified when new jobs are posted in your areas of interest. We'll send you personalized job alerts
-                based on your selected categories.
+                based on your selected industries and job types.
               </CardDescription>
               <p className="text-sm text-muted-foreground mt-2">
                 Your email is only used for job notifications and can be unsubscribed at any time.
@@ -153,7 +187,6 @@ export function JobNotificationsPage() {
                       <SelectValue placeholder="Select how often you'd like to receive notifications" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="weekly">Biweekly - Get notified twice a week</SelectItem>
                       <SelectItem value="weekly">Weekly - Get notified once a week</SelectItem>
                       <SelectItem value="monthly">Monthly - Get notified once a month</SelectItem>
                     </SelectContent>
@@ -161,7 +194,7 @@ export function JobNotificationsPage() {
                 </div>
 
                 <div className="space-y-3">
-                  <Label>Select Industries</Label>
+                  <Label>Select Industries & Job Types</Label>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     {categories.map((category) => {
                       const IconComponent = category.icon
@@ -190,7 +223,7 @@ export function JobNotificationsPage() {
                     })}
                   </div>
                   {selectedCategories.length === 0 && (
-                    <p className="text-sm text-muted-foreground">Please select at least one industry</p>
+                    <p className="text-sm text-muted-foreground">Please select at least one industry or job type</p>
                   )}
                 </div>
 
