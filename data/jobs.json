@@ -1757,6 +1757,128 @@
       "remote": false,
       "contact": "valeriu.murgulet@tamucc.edu",
       "applicationLink": "https://apptrkr.com/get_redirect.php?id=6483475"
+    },
+      "jobs": [
+    {
+      "id": "90",
+      "title": "Staff Software Engineer, Geo, Core, Maps, Platform",
+      "company": "Google",
+      "location": "Seattle, WA, USA",
+      "type": "Full-time",
+      "salary": "$197,000–$291,000 + bonus + equity + benefits",
+      "categories": ["Tech (Data Science & ML)", "Geospatial & GIS"],
+      "description": "Build the cartographic map platform powering Google Maps Consumer and Developer products, working across Android, iOS, and Web platforms.",
+      "requirements": [
+        "Bachelor’s degree or equivalent experience",
+        "8+ years software development",
+        "3+ years in software architecture",
+        "Experience with public APIs and Android/iOS/Web development"
+      ],
+      "posted": "Undisclosed",
+      "link": "https://www.google.com/about/careers/applications/jobs/results/121902761112412870-staff-software-engineer"
+    },
+    {
+      "id": "91",
+      "title": "Lead Catastrophe Risk Analyst",
+      "company": "Tokio Marine HCC",
+      "location": "Duluth, GA, USA (Hybrid)",
+      "type": "Full-time",
+      "salary": "Undisclosed",
+      "categories": ["Insurance & Reinsurance", "Geospatial & GIS", "Climate Science"],
+      "description": "Lead catastrophe risk analytics, manage vendor catastrophe models (e.g., RMS, AIR), and support exposure and climate risk assessment.",
+      "requirements": [
+        "Bachelor's in applied science/engineering or related",
+        "5+ years experience in catastrophe modeling",
+        "Proficient in SQL, Excel, Python/R, GIS tools"
+      ],
+      "posted": "Undisclosed",
+      "link": "https://tmhcc.wd1.myworkdayjobs.com/External/job/Georgia---Duluth/Lead-Catastrophe-Risk-Analyst_2024-411"
+    },
+    {
+      "id": "92",
+      "title": "AVP/VP Catastrophe Modeling",
+      "company": "Gallagher Re",
+      "location": "Philadelphia, PA, USA",
+      "type": "Full-time",
+      "salary": "Undisclosed",
+      "categories": ["Insurance & Reinsurance", "Geospatial & GIS", "Climate Science"],
+      "description": "Use RMS/AIR models to quantify catastrophe risk, work closely with brokers and clients, and mentor junior modelers.",
+      "requirements": [
+        "Bachelor's degree",
+        "2+ years in catastrophe modeling",
+        "Experience in GIS, SQL, Excel, RMS/AIR"
+      ],
+      "posted": "Undisclosed",
+      "link": "https://jobs.ajg.com/ajg-global/jobs/39898?lang=en-us&iis=LinkedIn"
+    },
+    {
+      "id": "93",
+      "title": "Junior Geospatial Data Analyst",
+      "company": "KatRisk",
+      "location": "Remote (US only)",
+      "type": "Full-time",
+      "salary": "Undisclosed",
+      "categories": ["Insurance & Reinsurance", "Geospatial & GIS", "Climate Science"],
+      "description": "Support geospatial workflows for catastrophe risk modeling, maintain documentation, and process customer-provided datasets.",
+      "requirements": [
+        "MSc or equivalent in hydrology, geoscience, or related field",
+        "Experience with Python or R",
+        "Experience with GIS tools (QGIS, GDAL, etc.)"
+      ],
+      "posted": "Undisclosed",
+      "link": "https://job-boards.greenhouse.io/katrisk/jobs/4893568008?gh_src=9p6ed7yq8us"
+    },
+    {
+      "id": "94",
+      "title": "Director, Product & Sustainability Communications",
+      "company": "General Motors",
+      "location": "Mountain View, CA or Warren, MI (Hybrid)",
+      "type": "Full-time",
+      "salary": "$110,000 - $172,100 + bonus + benefits",
+      "categories": ["Energy & Renewables", "Climate Science"],
+      "description": "Develop and execute sustainability and product communications strategies, oversee cross-functional messaging, and advise senior leadership.",
+      "requirements": [
+        "Bachelor’s degree",
+        "10+ years in communications or public relations",
+        "Experience working with senior executives",
+        "Familiarity with sustainability issues and stakeholders"
+      ],
+      "posted": "6 days ago",
+      "link": "https://generalmotors.wd5.myworkdayjobs.com/en-GB/Careers_GM/job/Mountain-View-California-United-States-of-America/Director--Product---Sustainability-Communications_JR-202514959"
+    },
+    {
+      "id": "95",
+      "title": "Sustainability & Climate Specialist",
+      "company": "MSCI",
+      "location": "New York, NY, USA",
+      "type": "Full-time",
+      "salary": "$100,000–$130,000 + bonus",
+      "categories": ["Banking & Finance", "Climate Science", "Tech (Data Science & ML)"],
+      "description": "Client-facing expert supporting institutional investors with MSCI’s sustainability and climate products, with responsibility for client engagement and revenue growth.",
+      "requirements": [
+        "5+ years in finance or sustainability roles",
+        "Experience with sustainable investing",
+        "Strong client and project management skills"
+      ],
+      "posted": "Undisclosed",
+      "link": "https://careers.msci.com/job/product-management/new-york/sustainability-climate-specialist/2025-3942?mode=apply&iis=LinkedIn"
+    },
+    {
+      "id": "96",
+      "title": "Hydrologist",
+      "company": "NOAA / National Weather Service",
+      "location": "Multiple US Locations (River Forecast Centers)",
+      "type": "Full-time",
+      "salary": "Federal GS-07 to GS-12",
+      "categories": ["Weather & Meteorology", "Climate Science", "Geophysics & Geology"],
+      "description": "Develop and use hydrologic models, issue river forecasts and flood alerts, and support national water resource management at River Forecast Centers.",
+      "requirements": [
+        "Bachelor's degree in hydrology, meteorology, or related field",
+        "GS-07 to GS-12 qualifications depending on experience and education",
+        "Knowledge of hydrologic models, forecast systems, data assimilation"
+      ],
+      "posted": "2025-08-30",
+      "link": "https://www.usajobs.gov/job/843727300"
     }
   ]
 }
