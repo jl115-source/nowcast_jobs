@@ -3,7 +3,9 @@ import { createClient } from "@/lib/supabase/server"
 
 export async function GET(request: NextRequest) {
   try {
-    const supabase = createClient()
+    const supabase = await createClient()
+
+    console.log("[v0] Supabase client created successfully")
 
     // Get the authenticated user
     const {
@@ -14,8 +16,11 @@ export async function GET(request: NextRequest) {
     console.log("[v0] Auth user:", user?.email, "Auth error:", authError)
 
     if (authError || !user) {
+      console.log("[v0] Authentication failed:", authError?.message)
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
     }
+
+    console.log("[v0] User authenticated, fetching subscriptions for:", user.email)
 
     // Fetch user's subscriptions from all tables
     const [jobNotifications, mentorMatching, offMarketJobs] = await Promise.all([
@@ -42,6 +47,10 @@ export async function GET(request: NextRequest) {
     console.log("[v0] Mentor matching query:", mentorMatching.error, "Data count:", mentorMatching.data?.length)
     console.log("[v0] Off-market jobs query:", offMarketJobs.error, "Data count:", offMarketJobs.data?.length)
 
+    if (jobNotifications.error) console.log("[v0] Job notifications error:", jobNotifications.error)
+    if (mentorMatching.error) console.log("[v0] Mentor matching error:", mentorMatching.error)
+    if (offMarketJobs.error) console.log("[v0] Off-market jobs error:", offMarketJobs.error)
+
     return NextResponse.json({
       jobNotifications: jobNotifications.data || [],
       mentorMatching: mentorMatching.data || [],
@@ -53,7 +62,10 @@ export async function GET(request: NextRequest) {
       },
     })
   } catch (error) {
-    console.error("Error fetching user subscriptions:", error)
-    return NextResponse.json({ error: "Internal server error" }, { status: 500 })
+    console.error("[v0] Error fetching user subscriptions:", error)
+    return NextResponse.json(
+      { error: "Internal server error", details: error instanceof Error ? error.message : "Unknown error" },
+      { status: 500 },
+    )
   }
 }
