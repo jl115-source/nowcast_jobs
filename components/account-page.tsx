@@ -123,6 +123,7 @@ export function AccountPage() {
 
   const handleUnsubscribe = async (subscription: UserSubscription) => {
     try {
+      console.log("[v0] Attempting to unsubscribe:", subscription)
       const response = await fetch("/api/unsubscribe", {
         method: "DELETE",
         headers: {
@@ -134,14 +135,20 @@ export function AccountPage() {
         }),
       })
 
+      console.log("[v0] Unsubscribe response status:", response.status)
+      const responseData = await response.json()
+      console.log("[v0] Unsubscribe response data:", responseData)
+
       if (response.ok) {
         // Refresh subscriptions
         await fetchSubscriptions()
       } else {
-        console.error("Failed to unsubscribe")
+        console.error("Failed to unsubscribe - Status:", response.status, "Data:", responseData)
+        alert(`Failed to unsubscribe: ${responseData.error || "Unknown error"}`)
       }
     } catch (error) {
       console.error("Error unsubscribing:", error)
+      alert(`Error unsubscribing: ${error}`)
     }
   }
 
