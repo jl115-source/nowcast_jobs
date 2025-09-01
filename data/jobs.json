@@ -2495,7 +2495,7 @@
     "location": "Bristol, UK (Hybrid)",
     "type": "Full-time",
     "salary": "Competitive + benefits",
-    "categories": ["Geophysics & Geology", "Climate Science", "Tech (Data Science & ML)"],
+    "categories": [ "Insurance & Reinsurance","Geospatial & GIS",  "Tech (Data Science & ML)"],
     "description": "Fathom seeks a Hydraulic Model Developer to contribute to global-scale flood modeling projects. The role involves incorporating new datasets into the modeling framework, validating outputs, and improving hydraulic models. The position also provides opportunities for CPD, academic contributions, and cross-team collaboration.",
     "requirements": [
       "2+ years’ experience with hydraulic models (industry or academia)",
@@ -2516,7 +2516,7 @@
     "location": "Bristol or London, UK (Hybrid)",
     "type": "Full-time",
     "salary": "Competitive + benefits",
-    "categories": ["Tech (Data Science & ML)", "Climate Science"],
+    "categories": ["Tech (Data Science & ML)", "Geospatial & GIS", "Insurance & Reinsurance"],
     "description": "Fathom is expanding its ML capabilities and seeks a Machine Learning Engineer to develop state-of-the-art models for water intelligence. The role involves building robust ML solutions, working with spatial datasets, supporting MLOps, and contributing to scientific publications. Projects include DEM creation, climate downscaling, hydrological prediction, and sensor fusion.",
     "requirements": [
       "Strong foundation in machine learning techniques",
@@ -2537,7 +2537,7 @@
     "location": "Bristol, UK (Hybrid)",
     "type": "Full-time (Permanent)",
     "salary": "Competitive",
-    "categories": ["Tech (Data Science & ML)", "Weather & Meteorology", "Insurance & Reinsurance"],
+    "categories": ["Tech (Data Science & ML)", "Geospatial & GIS", "Insurance & Reinsurance"],
     "description": "Fathom seeks a Senior Software Developer (Python) to contribute to its Global Catastrophe Model and risk assessment platform. The role focuses on building well-tested Python tools, processing large geospatial datasets (GeoTIFF, Parquet), improving model frameworks in OasisLMF, and developing robust data pipelines. Candidates should bring strong Python expertise and experience with scientific computing in flood/climate risk contexts.",
     "requirements": [
       "University degree in Computer Science, Mathematics, Physics, Engineering, or related quantitative field",
