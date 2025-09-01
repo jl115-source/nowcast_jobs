@@ -1971,7 +1971,7 @@
     "location": "Stockholm, Sweden",
     "type": "Full-time (4-year contract, extendable)",
     "salary": "Undisclosed",
-    "categories": ["Geospatial & GIS", "Academia & Research"],
+    "categories": ["Geospatial & GIS"],
     "description": "Nordregio seeks a Senior GIS Analyst/Cartographer to lead projects on regional development, planning, and digitalisation across the Nordic and Baltic regions. Responsibilities include data harmonization, spatial/network analyses, cartography, and project leadership.",
     "requirements": [
       "PhD or Master’s with 5+ years relevant research/practice experience",
@@ -1992,7 +1992,7 @@
     "location": "Stockholm, Sweden",
     "type": "Full-time (4-year contract, extendable)",
     "salary": "Undisclosed",
-    "categories": ["Geospatial & GIS", "Academia & Research"],
+    "categories": ["Geospatial & GIS"],
     "description": "Nordregio seeks 1–2 GIS Analysts/Cartographers to support multidisciplinary projects in regional development and planning. The role involves data collection, spatial analysis, visualization, and supporting dissemination of research outputs.",
     "requirements": [
       "Bachelor’s or Master’s degree with 2+ years relevant experience",
@@ -2469,25 +2469,6 @@
     "remote": false,
     "applicationLink": "https://apol-recruit.ucsd.edu/JPF04327"
   },
-  {
-  "id": "135",
-  "title": "RII FEC: Reversing Disproportionate Impacts of Hydroclimatic Extremes in Water-Rich Regions via Justice-Minded Research and Collaborative Adaptation Planning",
-  "company": "University of Louisiana at Lafayette (Lead Institution, with LSU, Tulane, Univ. of Alabama, Tuskegee Univ., Jackson State Univ.)",
-  "location": "Lafayette, LA, USA",
-  "type": "Research Grant (NSF Cooperative Agreement)",
-  "salary": "£5,875,117.00 (Total Intended Award)",
-  "categories": ["Academia & Research"],
-  "description": "This NSF EPSCoR RII-FEC project addresses disproportionate impacts of hydroclimatic extremes in U.S. Gulf regions. It uses interdisciplinary, justice-minded research and collaborative adaptation planning to reduce vulnerabilities in marginalized communities. Objectives include co-generating historical and social vulnerability data, modeling climatic extremes and community hydrologic systems, co-developing adaptation scenarios, and building research infrastructure for equitable climate resilience.",
-  "requirements": [
-    "Interdisciplinary collaboration across climatology, hydrology, engineering, geography, economics, sociology, and history",
-    "Community co-production with stakeholders in Louisiana, Alabama, and Mississippi",
-    "Engagement with environmental justice and climate adaptation research"
-  ],
-  "skills": ["Hydroclimatic Modeling", "Climate Adaptation", "Environmental Justice", "Flood Risk Assessment", "Community Engagement"],
-  "dateAdded": "2025-09-01",
-  "remote": false,
-  "applicationLink": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2418434"
-},
   {
     "id": "136",
     "title": "Hydraulic Model Developer",
