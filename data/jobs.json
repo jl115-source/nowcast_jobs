@@ -614,7 +614,7 @@
       "location": "Ewing, NJ",
       "type": "Full-time",
       "salary": "$74,000 - $83,600",
-      "categories": ["Climate Science", "Geophysics & Geology", "Geospatial & GIS"],
+      "categories": ["Climate Science" ],
       "description": "ERM seeks a Consultant, Ocean Modeler to join its Water Resources and Climate Change Modeling team. The role involves applying hydrodynamic, sediment transport, and water quality models to marine and freshwater environments, supporting environmental assessments and permitting for large-scale capital projects.",
       "requirements": [
         "Bachelor’s in Engineering, Oceanography, or related field (Master’s preferred)",
@@ -1225,7 +1225,7 @@
       "location": "London, UK",
       "type": "Full-time",
       "salary": "Undisclosed",
-      "categories": ["Climate Science", "Weather & Meteorology", "Tech (Data Science & ML)"],
+      "categories": ["Climate Science", "Weather & Meteorology", "Insurance & Reinsurance"],
       "description": "Develop and validate tropical and extratropical cyclone hazard models for climate risk analytics. Collaborate across scientific teams to deliver storm risk assessments for financial services clients.",
       "requirements": [
         "PhD or equivalent in climate science, hazard modelling, or statistics",
@@ -1429,7 +1429,7 @@
       "location": "Boston, MA, USA",
       "type": "Full-time",
       "salary": "Undisclosed",
-      "categories": ["Weather & Meteorology", "Geophysics & Geology", "Insurance & Reinsurance"],
+      "categories": ["Weather & Meteorology",   "Insurance & Reinsurance"],
       "description": "KCC seeks a Flood Engineer to develop advanced catastrophe models for inland and coastal flooding. Responsibilities include hydrological research, model setup and validation, and post-disaster fieldwork.",
       "requirements": [
         "PhD in hydrology/hydraulics or related field",
@@ -2487,6 +2487,69 @@
   "dateAdded": "2025-09-01",
   "remote": false,
   "applicationLink": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2418434"
-}
+},
+  {
+    "id": "136",
+    "title": "Hydraulic Model Developer",
+    "company": "Fathom (Swiss Re Group)",
+    "location": "Bristol, UK (Hybrid)",
+    "type": "Full-time",
+    "salary": "Competitive + benefits",
+    "categories": ["Geophysics & Geology", "Climate Science", "Tech (Data Science & ML)"],
+    "description": "Fathom seeks a Hydraulic Model Developer to contribute to global-scale flood modeling projects. The role involves incorporating new datasets into the modeling framework, validating outputs, and improving hydraulic models. The position also provides opportunities for CPD, academic contributions, and cross-team collaboration.",
+    "requirements": [
+      "2+ years’ experience with hydraulic models (industry or academia)",
+      "Strong coding skills in Python (essential), Matlab (desirable)",
+      "Knowledge of hydraulic modeling principles and solver packages (e.g., LISFLOOD-FP)",
+      "Experience in GIS (QGIS desirable)",
+      "Ability to build, simulate, and analyze hydraulic models"
+    ],
+    "skills": ["Hydraulic Modeling", "Flood Risk Analysis", "Python", "Matlab", "GIS", "Model Validation"],
+    "dateAdded": "2025-09-01",
+    "remote": true,
+    "applicationLink": "https://careers.fathom.global/jobs/6306611-hydraulic-model-developer"
+  },
+  {
+    "id": "137",
+    "title": "Machine Learning Engineer",
+    "company": "Fathom",
+    "location": "Bristol or London, UK (Hybrid)",
+    "type": "Full-time",
+    "salary": "Competitive + benefits",
+    "categories": ["Tech (Data Science & ML)", "Climate Science"],
+    "description": "Fathom is expanding its ML capabilities and seeks a Machine Learning Engineer to develop state-of-the-art models for water intelligence. The role involves building robust ML solutions, working with spatial datasets, supporting MLOps, and contributing to scientific publications. Projects include DEM creation, climate downscaling, hydrological prediction, and sensor fusion.",
+    "requirements": [
+      "Strong foundation in machine learning techniques",
+      "1–2 years industry experience (PhD preferred)",
+      "Proficiency in Python and ML libraries (PyTorch, TensorFlow, scikit-learn)",
+      "Experience with geospatial data (geopandas, xarray)",
+      "Familiarity with Git/GitHub and project management tools (e.g., ClickUp)"
+    ],
+    "skills": ["Machine Learning", "Python", "PyTorch", "TensorFlow", "Geospatial Data", "MLOps", "Climate Modeling"],
+    "dateAdded": "2025-09-01",
+    "remote": true,
+    "applicationLink": "https://careers.fathom.global/jobs/6281369-machine-learning-engineer"
+  },
+  {
+    "id": "138",
+    "title": "Senior Software Developer (Python)",
+    "company": "Fathom",
+    "location": "Bristol, UK (Hybrid)",
+    "type": "Full-time (Permanent)",
+    "salary": "Competitive",
+    "categories": ["Tech (Data Science & ML)", "Weather & Meteorology", "Insurance & Reinsurance"],
+    "description": "Fathom seeks a Senior Software Developer (Python) to contribute to its Global Catastrophe Model and risk assessment platform. The role focuses on building well-tested Python tools, processing large geospatial datasets (GeoTIFF, Parquet), improving model frameworks in OasisLMF, and developing robust data pipelines. Candidates should bring strong Python expertise and experience with scientific computing in flood/climate risk contexts.",
+    "requirements": [
+      "University degree in Computer Science, Mathematics, Physics, Engineering, or related quantitative field",
+      "5+ years professional programming experience",
+      "Expertise with Python, Pandas, NumPy",
+      "Experience with Docker, CI/CD (GitHub Actions), Git",
+      "Experience processing large datasets (GeoTIFFs, Parquet)"
+    ],
+    "skills": ["Python", "Pandas", "NumPy", "Docker", "Git", "CI/CD", "GeoTIFF", "Raster Data", "Scientific Computing"],
+    "dateAdded": "2025-09-01",
+    "remote": true,
+    "applicationLink": "https://careers.fathom.global/jobs/6274746-senior-software-developer-python"
+  }
   ]
 }
