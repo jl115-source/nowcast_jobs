@@ -8,25 +8,25 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Updated to light theme with white background and dark text */
-  --background: oklch(1 0 0); /* White background */
-  --foreground: oklch(0.15 0.01 213.97); /* Dark text */
-  --card: oklch(0.98 0.005 213.97); /* Light card background */
-  --card-foreground: oklch(0.15 0.01 213.97); /* Dark card text */
-  --popover: oklch(1 0 0); /* White popover */
-  --popover-foreground: oklch(0.15 0.01 213.97); /* Dark popover text */
+  /* Updated to darker theme with ocean-inspired colors */
+  --background: oklch(0.15 0.01 213.97); /* Dark background */
+  --foreground: oklch(0.95 0 0); /* Light text */
+  --card: oklch(0.18 0.015 213.97); /* Dark card background */
+  --card-foreground: oklch(0.95 0 0); /* Light card text */
+  --popover: oklch(0.15 0.01 213.97); /* Dark popover */
+  --popover-foreground: oklch(0.95 0 0); /* Light popover text */
   --primary: oklch(0.55 0.18 220); /* Ocean blue primary */
   --primary-foreground: oklch(1 0 0); /* White text on primary */
-  --secondary: oklch(0.95 0.01 213.97); /* Light secondary */
-  --secondary-foreground: oklch(0.15 0.01 213.97); /* Dark text on secondary */
-  --muted: oklch(0.96 0.005 213.97); /* Light muted background */
-  --muted-foreground: oklch(0.4 0.01 213.97); /* Muted dark text */
+  --secondary: oklch(0.45 0.15 200); /* Deep ocean blue */
+  --secondary-foreground: oklch(1 0 0); /* White text on secondary */
+  --muted: oklch(0.22 0.015 213.97); /* Muted dark background */
+  --muted-foreground: oklch(0.7 0.01 213.97); /* Muted light text */
   --accent: oklch(0.6 0.2 180); /* Teal ocean accent */
-  --accent-foreground: oklch(1 0 0); /* White text on accent */
+  --accent-foreground: oklch(0.15 0.01 213.97); /* Dark text on accent */
   --destructive: oklch(0.577 0.245 27.325); /* Red for errors */
   --destructive-foreground: oklch(1 0 0);
-  --border: oklch(0.9 0.005 213.97); /* Light border */
-  --input: oklch(0.98 0.005 213.97); /* Light input background */
+  --border: oklch(0.25 0.015 213.97); /* Dark border */
+  --input: oklch(0.18 0.015 213.97); /* Dark input background */
   --ring: oklch(0.55 0.18 220); /* Ocean blue focus ring */
   --chart-1: oklch(0.55 0.18 220); /* Ocean blue */
   --chart-2: oklch(0.6 0.2 180); /* Teal */
@@ -34,18 +34,18 @@
   --chart-4: oklch(0.69 0.18 70.08); /* Amber */
   --chart-5: oklch(0.55 0.22 16.44); /* Rose */
   --radius: 0.5rem;
-  --sidebar: oklch(0.97 0.005 213.97); /* Light sidebar */
-  --sidebar-foreground: oklch(0.15 0.01 213.97); /* Dark sidebar text */
+  --sidebar: oklch(0.12 0.01 213.97); /* Darker sidebar */
+  --sidebar-foreground: oklch(0.95 0 0); /* Light sidebar text */
   --sidebar-primary: oklch(0.55 0.18 220); /* Ocean blue sidebar primary */
   --sidebar-primary-foreground: oklch(1 0 0); /* White text */
   --sidebar-accent: oklch(0.6 0.2 180); /* Teal sidebar accent */
-  --sidebar-accent-foreground: oklch(1 0 0); /* White accent text */
-  --sidebar-border: oklch(0.9 0.005 213.97); /* Light sidebar border */
+  --sidebar-accent-foreground: oklch(0.15 0.01 213.97); /* Dark accent text */
+  --sidebar-border: oklch(0.25 0.015 213.97); /* Dark sidebar border */
   --sidebar-ring: oklch(0.55 0.18 220); /* Ocean blue sidebar ring */
 }
 
 .dark {
-  /* Dark mode remains darker for users who prefer it */
+  /* Even darker theme for dark mode */
   --background: oklch(0.08 0.005 213.97); /* Very dark background */
   --foreground: oklch(0.98 0 0); /* Very light text */
   --card: oklch(0.12 0.01 213.97); /* Very dark card background */
