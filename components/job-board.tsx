@@ -271,17 +271,22 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
     setCurrentPage(newPage)
 
     setTimeout(() => {
-      // Try multiple scroll methods for better compatibility
-      window.scrollTo({ top: 0, behavior: "smooth" })
+      const scrollPosition = window.innerHeight * 0.25
+      window.scrollTo({ top: scrollPosition, behavior: "smooth" })
 
       // Fallback for browsers that don't support smooth scrolling
       setTimeout(() => {
-        if (window.pageYOffset > 100) {
-          window.scrollTo(0, 0)
+        if (Math.abs(window.pageYOffset - scrollPosition) > 50) {
+          window.scrollTo(0, scrollPosition)
         }
       }, 100)
 
-      console.log("[v0] Scrolled to top, current scroll position:", window.pageYOffset)
+      console.log(
+        "[v0] Scrolled to 3/4 up page, target position:",
+        scrollPosition,
+        "current position:",
+        window.pageYOffset,
+      )
     }, 50)
   }
 
