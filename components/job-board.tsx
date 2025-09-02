@@ -267,8 +267,22 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
   }
 
   const handlePageChange = (newPage: number) => {
+    console.log("[v0] Page changing from", currentPage, "to", newPage)
     setCurrentPage(newPage)
-    window.scrollTo({ top: 0, behavior: "smooth" })
+
+    setTimeout(() => {
+      // Try multiple scroll methods for better compatibility
+      window.scrollTo({ top: 0, behavior: "smooth" })
+
+      // Fallback for browsers that don't support smooth scrolling
+      setTimeout(() => {
+        if (window.pageYOffset > 100) {
+          window.scrollTo(0, 0)
+        }
+      }, 100)
+
+      console.log("[v0] Scrolled to top, current scroll position:", window.pageYOffset)
+    }, 50)
   }
 
   const getJobMatch = (jobId: string): JobMatch | undefined => {
