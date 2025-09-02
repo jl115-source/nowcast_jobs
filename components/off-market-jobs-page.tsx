@@ -192,7 +192,7 @@ export function OffMarketJobsPage() {
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: "url('/ocean-waves-dark-blue-water-shaded-darker.png')",
+              backgroundImage: "url('/sky-clouds.png')",
               filter: "brightness(0.7)",
             }}
           />
@@ -251,7 +251,7 @@ export function OffMarketJobsPage() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/ocean-waves-dark-blue-water-shaded-darker.png')",
+            backgroundImage: "url('/sky-clouds.png')",
             filter: "brightness(0.7)",
           }}
         />
