@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { Users, UserPlus, CheckCircle, AlertCircle, LogIn } from "lucide-react"
+import { Users, UserPlus, CheckCircle, AlertCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -54,6 +54,11 @@ export function MentorMatchingPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+
+    if (!user) {
+      setSubmitStatus("error")
+      return
+    }
 
     if (!formData.name || !formData.email || !formData.signupType || !formData.industry) return
 
@@ -117,68 +122,7 @@ export function MentorMatchingPage() {
     )
   }
 
-  if (!user) {
-    return (
-      <div className="container mx-auto px-4 py-8">
-        <div className="relative text-center mb-12 rounded-2xl overflow-hidden">
-          <div
-            className="absolute inset-0 bg-gradient-to-r from-primary/90 to-secondary/90"
-            style={{
-              backgroundImage: `url('/sky-clouds.png')`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          />
-          <div className="absolute inset-0 bg-primary/60"></div>
-          <div className="relative z-10 py-16 px-8 text-white">
-            <div className="flex items-center justify-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
-                <Users className="h-7 w-7" />
-              </div>
-              <h1 className="text-5xl font-bold">Mentor Matching</h1>
-            </div>
-            <p className="text-xl mb-8 max-w-3xl mx-auto opacity-90">
-              Mentorship has the power to accelerate growth, open new opportunities, and even change the course of your
-              career.
-            </p>
-          </div>
-        </div>
-
-        <div className="max-w-2xl mx-auto">
-          <Card>
-            <CardHeader className="text-center">
-              <LogIn className="h-12 w-12 mx-auto mb-4 text-primary" />
-              <CardTitle className="text-2xl">Login Required</CardTitle>
-              <CardDescription>
-                You need to be logged in to join our mentor matching program. This helps us create better matches and
-                manage your mentorship connections.
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="text-center">
-              <p className="text-muted-foreground mb-6">Once logged in, you'll be able to:</p>
-              <ul className="text-left space-y-2 mb-6 max-w-md mx-auto">
-                <li className="flex items-center gap-2">
-                  <CheckCircle className="h-4 w-4 text-green-600" />
-                  <span>Join as a mentor or mentee</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle className="h-4 w-4 text-green-600" />
-                  <span>Get matched based on your industry and goals</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle className="h-4 w-4 text-green-600" />
-                  <span>Manage your mentorship connections</span>
-                </li>
-              </ul>
-              <p className="text-sm text-muted-foreground">
-                Please use the login button in the bottom left corner to sign in or create an account.
-              </p>
-            </CardContent>
-          </Card>
-        </div>
-      </div>
-    )
-  }
+  const showLoginWarning = !user
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -186,7 +130,7 @@ export function MentorMatchingPage() {
         <div
           className="absolute inset-0 bg-gradient-to-r from-primary/90 to-secondary/90"
           style={{
-            backgroundImage: `url('/sky-clouds.png')`,
+            backgroundImage: `url('/ocean-waves-dark-blue-water-shaded-darker.png')`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -207,6 +151,16 @@ export function MentorMatchingPage() {
       </div>
 
       <div className="max-w-4xl mx-auto">
+        {showLoginWarning && (
+          <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-6">
+            <div className="flex items-center gap-2 text-red-700">
+              <AlertCircle className="h-5 w-5" />
+              <span className="font-medium">Please login before signing up</span>
+            </div>
+            <p className="text-red-600 text-sm mt-1">You need to be logged in to join the mentor matching program.</p>
+          </div>
+        )}
+
         <Card className="border-primary/20">
           <CardHeader>
             <div className="flex items-center gap-3">
@@ -329,7 +283,11 @@ export function MentorMatchingPage() {
               {submitStatus === "error" && (
                 <div className="flex items-center gap-2 text-red-600 bg-red-50 p-3 rounded-lg">
                   <AlertCircle className="h-4 w-4" />
-                  <span>Something went wrong. Please try again.</span>
+                  <span>
+                    {!user
+                      ? "Please sign in to join the mentor matching program."
+                      : "Something went wrong. Please try again."}
+                  </span>
                 </div>
               )}
             </form>

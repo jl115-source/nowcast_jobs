@@ -96,7 +96,7 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
   const [showMatches, setShowMatches] = useState(false)
   const [expandedJobs, setExpandedJobs] = useState<Set<string>>(new Set())
   const [currentPage, setCurrentPage] = useState(1)
-  const [jobsPerPage] = useState(20)
+  const [jobsPerPage] = useState(21) // Changed jobs per page to 21 (divisible by 3) for 3-column layout
   const [favoriteJobs, setFavoriteJobs] = useState<Set<string>>(new Set())
   const [showFavoritesOnly, setShowFavoritesOnly] = useState(false)
 
@@ -398,9 +398,10 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
       <div
         className="relative h-64 bg-gradient-to-r from-primary/20 to-accent/20 flex items-center justify-center"
         style={{
-          backgroundImage: "url('/sky-clouds.png')",
+          backgroundImage: `url("/ocean-waves-dark-blue-water.png")`,
           backgroundSize: "cover",
           backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
       >
         <div className="absolute inset-0 bg-primary/60"></div>
@@ -560,6 +561,8 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
         </div>
 
         <div className="grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          {" "}
+          {/* Changed grid from 4 columns back to 3 columns for proper layout */}
           {filteredJobs.slice((currentPage - 1) * jobsPerPage, currentPage * jobsPerPage).map((job) => {
             const jobMatch = getJobMatch(job.id)
             const isExpanded = expandedJobs.has(job.id)

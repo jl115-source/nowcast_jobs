@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { EyeOff, Shield, UserCheck, Mail, Briefcase, Users, Search, LogIn, CheckCircle } from "lucide-react"
+import { EyeOff, Shield, UserCheck, Mail, Briefcase, Users, Search, AlertCircle } from "lucide-react"
 import { createBrowserClient } from "@/lib/supabase/client"
 
 export function OffMarketJobsPage() {
@@ -44,6 +44,8 @@ export function OffMarketJobsPage() {
 
   const [isTalentSubmitted, setIsTalentSubmitted] = useState(false)
   const [isRecruiterSubmitted, setIsRecruiterSubmitted] = useState(false)
+  const [talentSubmitStatus, setTalentSubmitStatus] = useState<"idle" | "success" | "error">("idle")
+  const [recruiterSubmitStatus, setRecruiterSubmitStatus] = useState<"idle" | "success" | "error">("idle")
 
   useEffect(() => {
     const getUser = async () => {
@@ -108,6 +110,11 @@ export function OffMarketJobsPage() {
   const handleTalentSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
 
+    if (!user) {
+      setTalentSubmitStatus("error")
+      return
+    }
+
     try {
       const response = await fetch("/api/off-market-signup", {
         method: "POST",
@@ -121,16 +128,24 @@ export function OffMarketJobsPage() {
       if (response.ok) {
         console.log("Off-market talent signup saved to database")
         setIsTalentSubmitted(true)
+        setTalentSubmitStatus("success")
       } else {
         console.error("Failed to save talent signup")
+        setTalentSubmitStatus("error")
       }
     } catch (error) {
       console.error("Error submitting talent form:", error)
+      setTalentSubmitStatus("error")
     }
   }
 
   const handleRecruiterSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+
+    if (!user) {
+      setRecruiterSubmitStatus("error")
+      return
+    }
 
     try {
       const response = await fetch("/api/off-market-signup", {
@@ -145,11 +160,14 @@ export function OffMarketJobsPage() {
       if (response.ok) {
         console.log("Recruiter signup saved to database")
         setIsRecruiterSubmitted(true)
+        setRecruiterSubmitStatus("success")
       } else {
         console.error("Failed to save recruiter signup")
+        setRecruiterSubmitStatus("error")
       }
     } catch (error) {
       console.error("Error submitting recruiter form:", error)
+      setRecruiterSubmitStatus("error")
     }
   }
 
@@ -164,64 +182,20 @@ export function OffMarketJobsPage() {
     )
   }
 
-  if (!user) {
-    return (
-      <div className="min-h-screen bg-background">
-        {/* Header */}
-        <div className="relative h-64 bg-gradient-to-r from-primary/90 to-accent/90 overflow-hidden">
-          <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/sky-clouds.png')" }} />
-          <div className="absolute inset-0 bg-primary/40"></div>
-          <div className="relative z-10 flex items-center justify-center h-full">
-            <div className="text-center text-white">
-              <EyeOff className="h-16 w-16 mx-auto mb-4" />
-              <h1 className="text-4xl font-bold mb-2">Off-Market Jobs</h1>
-              <p className="text-xl opacity-90">Exclusive opportunities not advertised publicly</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="max-w-2xl mx-auto p-6">
-          <Card>
-            <CardHeader className="text-center">
-              <LogIn className="h-12 w-12 mx-auto mb-4 text-primary" />
-              <CardTitle className="text-2xl">Login Required</CardTitle>
-              <CardDescription>
-                You need to be logged in to access our exclusive off-market job network. This helps us verify your
-                identity and provide personalized opportunities.
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="text-center">
-              <p className="text-muted-foreground mb-6">Once logged in, you'll be able to:</p>
-              <ul className="text-left space-y-2 mb-6 max-w-md mx-auto">
-                <li className="flex items-center gap-2">
-                  <CheckCircle className="h-4 w-4 text-green-600" />
-                  <span>Access exclusive hidden job opportunities</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle className="h-4 w-4 text-green-600" />
-                  <span>Connect with vetted recruiters in your field</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle className="h-4 w-4 text-green-600" />
-                  <span>Manage your off-market job preferences</span>
-                </li>
-              </ul>
-              <p className="text-sm text-muted-foreground">
-                Please use the login button in the bottom left corner to sign in or create an account.
-              </p>
-            </CardContent>
-          </Card>
-        </div>
-      </div>
-    )
-  }
+  const showLoginWarning = !user
 
   if (isTalentSubmitted || isRecruiterSubmitted) {
     return (
       <div className="min-h-screen bg-background">
         {/* Header */}
         <div className="relative h-64 bg-gradient-to-r from-primary/90 to-accent/90 overflow-hidden">
-          <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/sky-clouds.png')" }} />
+          <div
+            className="absolute inset-0 bg-cover bg-center"
+            style={{
+              backgroundImage: "url('/ocean-waves-dark-blue-water-shaded-darker.png')",
+              filter: "brightness(0.7)",
+            }}
+          />
           <div className="absolute inset-0 bg-primary/40"></div>
           <div className="relative z-10 flex items-center justify-center h-full">
             <div className="text-center text-white">
@@ -274,7 +248,13 @@ export function OffMarketJobsPage() {
     <div className="min-h-screen bg-background">
       {/* Header */}
       <div className="relative h-64 bg-gradient-to-r from-primary/90 to-accent/90 overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/sky-clouds.png')" }} />
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: "url('/ocean-waves-dark-blue-water-shaded-darker.png')",
+            filter: "brightness(0.7)",
+          }}
+        />
         <div className="absolute inset-0 bg-primary/40"></div>
         <div className="relative z-10 flex items-center justify-center h-full">
           <div className="text-center text-white">
@@ -286,6 +266,18 @@ export function OffMarketJobsPage() {
       </div>
 
       <div className="max-w-4xl mx-auto p-6 space-y-8">
+        {showLoginWarning && (
+          <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-6">
+            <div className="flex items-center gap-2 text-red-700">
+              <AlertCircle className="h-5 w-5" />
+              <span className="font-medium">Please login before signing up</span>
+            </div>
+            <p className="text-red-600 text-sm mt-1">
+              You need to be logged in to access our exclusive off-market job network.
+            </p>
+          </div>
+        )}
+
         <div className="flex justify-center">
           <div className="flex bg-muted rounded-lg p-1">
             <Button
@@ -489,6 +481,17 @@ export function OffMarketJobsPage() {
                   <Button type="submit" className="w-full" size="lg">
                     Join Exclusive Talent Network
                   </Button>
+
+                  {talentSubmitStatus === "error" && (
+                    <div className="flex items-center gap-2 text-red-600 bg-red-50 p-3 rounded-lg">
+                      <AlertCircle className="h-4 w-4" />
+                      <span>
+                        {!user
+                          ? "Please sign in to join the off-market talent network."
+                          : "Something went wrong. Please try again."}
+                      </span>
+                    </div>
+                  )}
                 </form>
               </CardContent>
             </Card>
@@ -678,6 +681,17 @@ export function OffMarketJobsPage() {
                   <Button type="submit" className="w-full" size="lg">
                     Apply for Recruiter Access
                   </Button>
+
+                  {recruiterSubmitStatus === "error" && (
+                    <div className="flex items-center gap-2 text-red-600 bg-red-50 p-3 rounded-lg">
+                      <AlertCircle className="h-4 w-4" />
+                      <span>
+                        {!user
+                          ? "Please sign in to apply for recruiter access."
+                          : "Something went wrong. Please try again."}
+                      </span>
+                    </div>
+                  )}
                 </form>
               </CardContent>
             </Card>

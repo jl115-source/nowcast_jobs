@@ -1,7 +1,7 @@
 "use client"
 
 import type React from "react"
-import { Mail, LogIn } from "lucide-react"
+import { Mail } from "lucide-react"
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
@@ -92,6 +92,12 @@ export function JobNotificationsPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+
+    if (!user) {
+      setSubmitStatus("error")
+      return
+    }
+
     if (!email || selectedCategories.length === 0 || !frequency) return
 
     setIsSubmitting(true)
@@ -170,64 +176,7 @@ export function JobNotificationsPage() {
     )
   }
 
-  if (!user) {
-    return (
-      <div className="min-h-screen bg-background">
-        {/* Header */}
-        <div
-          className="relative h-64 bg-gradient-to-r from-primary/20 to-accent/20 flex items-center justify-center"
-          style={{
-            backgroundImage: "url('/sky-clouds.png')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <div className="absolute inset-0 bg-primary/60"></div>
-          <div className="relative z-10 text-center text-white">
-            <Mail className="h-16 w-16 mx-auto mb-4" />
-            <h1 className="text-4xl font-bold mb-2">Job Notifications</h1>
-            <p className="text-xl opacity-90">Stay updated with the latest opportunities</p>
-          </div>
-        </div>
-
-        {/* Login Required Message */}
-        <div className="container mx-auto px-4 py-12">
-          <div className="max-w-2xl mx-auto">
-            <Card>
-              <CardHeader className="text-center">
-                <LogIn className="h-12 w-12 mx-auto mb-4 text-primary" />
-                <CardTitle className="text-2xl">Login Required</CardTitle>
-                <CardDescription>
-                  You need to be logged in to subscribe to job notifications. This helps us personalize your experience
-                  and manage your subscriptions.
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="text-center">
-                <p className="text-muted-foreground mb-6">Once logged in, you'll be able to:</p>
-                <ul className="text-left space-y-2 mb-6 max-w-md mx-auto">
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-green-600" />
-                    <span>Subscribe to personalized job alerts</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-green-600" />
-                    <span>Manage your notification preferences</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-green-600" />
-                    <span>Access your account dashboard</span>
-                  </li>
-                </ul>
-                <p className="text-sm text-muted-foreground">
-                  Please use the login button in the bottom left corner to sign in or create an account.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </div>
-    )
-  }
+  const showLoginWarning = !user
 
   return (
     <div className="min-h-screen bg-background">
@@ -235,7 +184,7 @@ export function JobNotificationsPage() {
       <div
         className="relative h-64 bg-gradient-to-r from-primary/20 to-accent/20 flex items-center justify-center"
         style={{
-          backgroundImage: "url('/sky-clouds.png')",
+          backgroundImage: "url('/ocean-waves-dark-blue-water-shaded-darker.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -245,7 +194,6 @@ export function JobNotificationsPage() {
           <Mail className="h-16 w-16 mx-auto mb-4" />
           <h1 className="text-4xl font-bold mb-2">Job Notifications</h1>
           <p className="text-xl opacity-90">
-            {" "}
             Stay updated with the latest opportunities — speed matters, so choose to get updates weekly or monthly.
           </p>
         </div>
@@ -254,6 +202,16 @@ export function JobNotificationsPage() {
       {/* Content */}
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto">
+          {showLoginWarning && (
+            <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-6">
+              <div className="flex items-center gap-2 text-red-700">
+                <AlertCircle className="h-5 w-5" />
+                <span className="font-medium">Please login before signing up</span>
+              </div>
+              <p className="text-red-600 text-sm mt-1">You need to be logged in to subscribe to job notifications.</p>
+            </div>
+          )}
+
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
@@ -265,7 +223,8 @@ export function JobNotificationsPage() {
                 based on your selected industries and job types.
               </CardDescription>
               <p className="text-sm text-muted-foreground mt-2">
-                Your email is only used for job notifications and you can unsubscribed yourself anytime in your accounts page. 
+                Your email is only used for job notifications and you can unsubscribed yourself anytime in your accounts
+                page.
               </p>
             </CardHeader>
             <CardContent>
@@ -350,7 +309,11 @@ export function JobNotificationsPage() {
                 {submitStatus === "error" && (
                   <div className="flex items-center gap-2 text-red-600 bg-red-50 p-3 rounded-lg">
                     <AlertCircle className="h-4 w-4" />
-                    <span>Something went wrong. Please try again.</span>
+                    <span>
+                      {!user
+                        ? "Please sign in to subscribe to job notifications."
+                        : "Something went wrong. Please try again."}
+                    </span>
                   </div>
                 )}
               </form>
