@@ -273,8 +273,7 @@ export function OffMarketJobsPage() {
               <span className="font-medium">Please login before signing up</span>
             </div>
             <p className="text-red-600 text-sm mt-1">
-              You need to be logged in to access our exclusive off-market job network.
-            </p>
+              
           </div>
         )}
 
