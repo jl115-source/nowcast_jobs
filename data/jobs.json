@@ -2531,6 +2531,333 @@
     "dateAdded": "2025-09-01",
     "remote": true,
     "applicationLink": "https://careers.fathom.global/jobs/6274746-senior-software-developer-python"
+  },
+   {
+    "id": "139",
+    "title": "Postdoctoral Researcher – Sedimentary Geology & Reservoir Characterization / Geochemical Modeling",
+    "company": "College of Petroleum Engineering & Geosciences, KFUPM",
+    "location": "Dhahran, Saudi Arabia",
+    "type": "Full-time, Postdoctoral (2-year appointment)",
+    "salary": "Undisclosed",
+    "categories": ["Post-doc", "Academia & Research", "Geophysics & Geology"],
+    "description": "Postdoctoral research opportunities in deep learning for sedimentary geology and reservoir characterization (with a focus on Vision-Language and Foundational Models), and quantitative/geochemical modeling applied to carbonate systems.",
+    "requirements": [
+      "PhD from a top 200 QS-ranked university",
+      "Proven publication record in high-impact journals"
+    ],
+    "skills": ["Deep Learning", "Vision-Language Models", "Reservoir Characterization", "Geochemical Modeling"],
+    "dateAdded": "2025-09-02",
+    "remote": false,
+    "applicationLink": "https://www.linkedin.com/posts/ardiansyah-koeshidayatullah-24737461_kfupm-collegeofpetroleumengineeringandgeosciences-activity-7368311677768863744-MXY3",
+    "contact": "a.koeshidayatullah@kfupm.edu.sa"
+  },
+  {
+    "id": "140",
+    "title": "Senior Director, Impact Strategy, Integration & Reporting",
+    "company": "lululemon",
+    "location": "Portland, OR, USA",
+    "type": "Full-time, Senior Leadership",
+    "salary": "$179,700 – $235,800 annually + bonus + equity",
+    "categories": ["Energy & Renewables", "Climate Science"],
+    "description": "Lead lululemon’s enterprise-wide ESG and sustainability strategy, including impact governance, reporting, and stakeholder engagement. Oversee ESG disclosures and guide executive leadership on sustainability risks and opportunities.",
+    "requirements": [
+      "Advanced degree in business, management, sociology, environmental sciences, or related field",
+      "15+ years of leadership experience with large budgets",
+      "10+ years of ESG strategy and reporting",
+      "Experience managing high-performing teams in a global organization"
+    ],
+    "skills": ["ESG Strategy", "Impact Reporting", "Stakeholder Engagement", "Leadership"],
+    "dateAdded": "2025-09-02",
+    "remote": false,
+    "applicationLink": "https://jobs.trellis.net/senior-director-impact-strategy-integration-reporting-ab7f64ea88b5"
+  },
+  {
+    "id": "141",
+    "title": "Chair, Department of Geography & Spatial Sciences",
+    "company": "University of Delaware, College of Earth, Ocean and Environment",
+    "location": "Newark, DE, USA",
+    "type": "Full-time, Professor (Tenured)",
+    "salary": "Undisclosed",
+    "categories": ["Geophysics & Geology", "Professor", "Academia & Research"],
+    "description": "Seeking an inspirational and visionary leader with international reputation to chair the Department of Geography & Spatial Sciences. Responsible for leadership in research, teaching, service, fiscal management, and fostering collaboration.",
+    "requirements": [
+      "PhD in Geography",
+      "Qualify for rank of Professor with tenure",
+      "Strong record of research, funding, and leadership",
+      "Demonstrated commitment to teaching and mentoring"
+    ],
+    "skills": ["Department Leadership", "Geography", "Geospatial Science", "Research Management"],
+    "dateAdded": "2025-09-02",
+    "remote": false,
+    "applicationLink": "https://careers.udel.edu/cw/en-us/job/502218/chair-department-of-geography-spatial-sciences-college-of-earth-ocean-and-environment-university-of-delaware"
+  },
+  {
+    "id": "142",
+    "title": "Satellite Systems Engineer",
+    "company": "Tomorrow.io",
+    "location": "Golden, CO, USA",
+    "type": "Full-time",
+    "salary": "$120,000 – $140,000 annually",
+    "categories": ["Weather & Meteorology", "Tech (Data Science & ML)", "Geospatial & GIS", "Energy & Renewables"],
+    "description": "Join Tomorrow.io’s Space & Sensors team to design and implement next-generation weather satellites and RF-based sensing systems. Support spacecraft architecture, payloads, and verification processes for global weather intelligence.",
+    "requirements": [
+      "B.S. in Electrical, Mechanical, or Aerospace Engineering",
+      "3+ years of spacecraft development, test, or operations",
+      "Experience with spacecraft subsystems and payloads",
+      "Knowledge of orbital mechanics and space environments"
+    ],
+    "skills": ["Satellite Engineering", "Systems Engineering", "Spacecraft Development", "Python", "STK", "Matlab"],
+    "dateAdded": "2025-09-02",
+    "remote": false,
+    "applicationLink": "https://job-boards.greenhouse.io/tomorrow/jobs/6682805003"
+  },
+    {
+    "id": "143",
+    "title": "Media Relations Manager (World Weather Attribution & Grantham Institute)",
+    "company": "Imperial College London – Grantham Institute",
+    "location": "London, UK",
+    "type": "Full-time, Fixed-term (18 months)",
+    "salary": "£46,614 – £56,345 per annum",
+    "categories": ["Climate Science", "Academia & Research"],
+    "description": "Responsible for communications strategy and media engagement for the World Weather Attribution project and Grantham Institute. Develop press materials, manage media briefings, and strengthen WWA’s public reputation.",
+    "requirements": [
+      "Experience in media relations and science communication",
+      "Ability to explain complex scientific concepts clearly",
+      "Knowledge of digital communications and social media"
+    ],
+    "skills": ["Media Relations", "Science Communication", "Climate Change", "Digital Content"],
+    "dateAdded": "2025-09-02",
+    "remote": true,
+    "applicationLink": "https://www.imperial.ac.uk/jobs/search-jobs/description/index.php?jobId=25286"
+  },
+  {
+    "id": "144",
+    "title": "Research Fellow in Climate Intervention",
+    "company": "University of Birmingham – School of Geography, Earth and Environmental Sciences",
+    "location": "Birmingham, UK",
+    "type": "Full-time, Fixed-term (to Jan 2029)",
+    "salary": "£36,636 – £46,049 (Grade 7)",
+    "categories": ["Climate Science", "Academia & Research", "Post-doc"],
+    "description": "Research position investigating solar radiation management (SRM) using natural analogues. Apply AI/ML and climate models to study impacts of stratospheric aerosol injection on chemistry, ozone, water vapor, and precipitation.",
+    "requirements": [
+      "PhD (or near completion) in atmospheric or climate science, meteorology, data science, or related field",
+      "Programming skills in Python, MATLAB, R, or NCL",
+      "Experience with UNIX/Linux and high-performance computing"
+    ],
+    "skills": ["Climate Modeling", "Machine Learning", "Atmospheric Science", "Python", "Remote Sensing"],
+    "dateAdded": "2025-09-02",
+    "remote": false,
+    "applicationLink": "https://www.jobs.ac.uk/job/DOI255/research-fellow-in-climate-intervention"
+  },
+  {
+    "id": "145",
+    "title": "Machine Learning / Artificial Intelligence Engineer",
+    "company": "Barclays",
+    "location": "Pune, India",
+    "type": "Full-time",
+    "salary": "Undisclosed",
+    "categories": ["Tech (Data Science & ML)", "Banking & Finance"],
+    "description": "Design, develop, and optimize AI/ML software solutions to enhance Barclays’ digital landscape. Build GenAI applications, RAG architectures, and deploy models for predictive analytics, NLP, and recommender systems.",
+    "requirements": [
+      "Experience with AI/ML models (GPT, BERT, NLP, Computer Vision)",
+      "Hands-on with AWS/Azure cloud platforms",
+      "Strong programming and deployment skills"
+    ],
+    "skills": ["Machine Learning", "Generative AI", "NLP", "Python", "Cloud Platforms"],
+    "dateAdded": "2025-09-02",
+    "remote": false,
+    "applicationLink": "https://barclays.wd3.myworkdayjobs.com/External_Career_Site_Barclays/job/Gera-Commerzone-SEZ--Pune/Machine-Learning-Artificial-Intelligence-Engineer_JR-0000051626"
+  },
+  {
+    "id": "146",
+    "title": "Climate Reporter",
+    "company": "The Seattle Times",
+    "location": "Seattle, WA, USA",
+    "type": "Full-time",
+    "salary": "$75,000 – $90,000 annually (range $62,425 – $104,700)",
+    "categories": ["Climate Science"],
+    "description": "Lead climate coverage in the Pacific Northwest. Report on impacts of climate change on businesses, policy, wildfire, and innovations. Produce breaking news, enterprise stories, and long-form investigations.",
+    "requirements": [
+      "3+ years reporting experience",
+      "Bachelor’s degree or equivalent experience",
+      "Experience covering business, climate, or environmental issues"
+    ],
+    "skills": ["Reporting", "Climate Journalism", "Investigative Journalism", "Storytelling"],
+    "dateAdded": "2025-09-02",
+    "remote": false,
+    "applicationLink": "https://seattletimes.applytojob.com/apply/apstHygrhc/Climate-Reporter"
+  },
+  {
+    "id": "147",
+    "title": "Catastrophe Data Engineer",
+    "company": "ResiQuant (backed by Pear VC & LDV Capital)",
+    "location": "Austin, TX, USA (preferred San Francisco Bay Area)",
+    "type": "Full-time",
+    "salary": "$166,053 per year (estimated)",
+    "categories": ["Insurance & Reinsurance", "Geophysics & Geology", "Tech (Data Science & ML)"],
+    "description": "Build a multi-hazard catastrophe risk platform integrating AI and structural engineering for insurers. Lead development of geospatial databases and catastrophe modeling tools to support underwriting and disaster resilience.",
+    "requirements": [
+      "5+ years with catastrophe models (RMS/Verisk) OR PhD",
+      "Experience in structural engineering and risk analysis",
+      "Proficiency in Python and statistical modeling"
+    ],
+    "skills": ["Catastrophe Modeling", "Python", "Risk Analysis", "Structural Engineering", "Geospatial Data"],
+    "dateAdded": "2025-09-02",
+    "remote": true,
+    "applicationLink": "https://www.adzuna.com/details/5378884690"
+  },
+  {
+    "id": "149",
+    "title": "Summer Intern 2026 – Load and Weather Risk Analyst",
+    "company": "MISO (Midcontinent Independent System Operator)",
+    "location": "Carmel, IN, USA",
+    "type": "Internship (Summer 2026)",
+    "salary": "Undisclosed (with housing assistance)",
+    "categories": ["Energy & Renewables", "Weather & Meteorology", "Internship"],
+    "description": "Summer internship in load and weather risk analysis. Projects may include load forecasting models, renewable generation risk assessments, and automation of forecasting processes.",
+    "requirements": [
+      "Currently pursuing degree in Meteorology or Atmospheric Science",
+      "Experience with Python, SQL, and data analytics",
+      "Understanding of weather models and energy systems"
+    ],
+    "skills": ["Load Forecasting", "Python", "SQL", "Data Analytics", "Weather Modeling"],
+    "dateAdded": "2025-09-02",
+    "remote": false,
+    "applicationLink": "https://recruiting.ultipro.com/MID1029MISO/JobBoard/362b6b1d-f1c3-46f5-9554-4aa90e2bda64/OpportunityDetail?opportunityId=94a4f20a-89a1-47a7-be5e-2eb89b4c0f44"
+  },
+  {
+    "id": "150",
+    "title": "Geophysicist - College Hire",
+    "company": "Oxy (Occidental Petroleum)",
+    "location": "Houston, TX / The Woodlands, TX, USA",
+    "type": "Full-time",
+    "salary": "Undisclosed",
+    "categories": ["Geophysics & Geology", "Energy & Renewables"],
+    "description": "Entry-level geophysicist role at Oxy supporting exploration and development projects. Responsibilities include seismic interpretation, velocity modeling, well-to-seismic ties, drilling support, and integration with multidisciplinary teams.",
+    "requirements": [
+      "MS or PhD in Geophysics or Geology with strong geophysical focus",
+      "Graduation date 2025–2026",
+      "Minimum GPA of 2.85",
+      "Advanced skills in 2D/3D seismic interpretation and attribute analysis"
+    ],
+    "skills": ["Seismic Interpretation", "Velocity Modeling", "Geophysics", "Reservoir Characterization"],
+    "dateAdded": "2025-09-02",
+    "remote": false,
+    "applicationLink": "https://oxy.wd5.myworkdayjobs.com/UniversityRelations/job/Houston-Texas/Geophysicist---College-Hire_JR104504"
+  },
+  {
+    "id": "151",
+    "title": "Global Decarbonization & Climate Leader",
+    "company": "General Motors",
+    "location": "Warren, MI, USA (Hybrid/Remote)",
+    "type": "Full-time",
+    "salary": "$137,000 – $214,300",
+    "categories": ["Climate Science", "Energy & Renewables"],
+    "description": "Lead GM’s global decarbonization and climate strategy. Responsible for Scopes 1–3 emissions, product carbon footprint, and climate policy leadership. Act as spokesperson internally and externally, including at Climate Week and COP.",
+    "requirements": [
+      "Bachelor’s degree in Engineering, Business, Sustainability, or related",
+      "10+ years of climate leadership experience",
+      "Recognized expertise in decarbonization and sustainability strategy"
+    ],
+    "skills": ["Decarbonization Strategy", "Climate Policy", "Leadership", "Stakeholder Engagement"],
+    "dateAdded": "2025-09-02",
+    "remote": true,
+    "applicationLink": "https://generalmotors.wd5.myworkdayjobs.com/en-GB/Careers_GM/job/Warren-Michigan-United-States-of-America/Global-Decarbonization---Climate-Leader_JR-202515392"
+  },
+  {
+    "id": "152",
+    "title": "Hazards Scientist",
+    "company": "Mercury Insurance",
+    "location": "California, USA (remote options available)",
+    "type": "Full-time",
+    "salary": "$92,154 – $174,681 (location dependent)",
+    "categories": ["Insurance & Reinsurance", "Climate Science", "Weather & Meteorology"],
+    "description": "Advance Mercury’s catastrophe risk science, focusing on wildfires, hurricanes, severe convective storms, and earthquakes. Develop hazard frameworks, datasets, and models for pricing, underwriting, and reinsurance strategies.",
+    "requirements": [
+      "Postgraduate degree in natural/physical sciences (PhD preferred)",
+      "Experience with catastrophe modeling and hazard datasets",
+      "Proficiency in Python/R and geospatial data"
+    ],
+    "skills": ["Catastrophe Modeling", "Climate Risk Analysis", "Python", "Geospatial Data", "Extreme Weather"],
+    "dateAdded": "2025-09-02",
+    "remote": true,
+    "applicationLink": "https://careers-mercuryinsurance.icims.com/jobs/5654/hazards-scientist/job"
+  },
+  {
+    "id": "153",
+    "title": "Climate Change Strategy Consultant",
+    "company": "Inter-American Development Bank (IDB)",
+    "location": "Washington, DC (remote if national applicant)",
+    "type": "Consultant (12 months, renewable up to 36 months)",
+    "salary": "Undisclosed",
+    "categories": ["Climate Science", "Banking & Finance", "Academia & Research"],
+    "description": "Support IDB’s Climate Change and Sustainability Sector in implementing Paris Agreement alignment and sustainability strategies. Provide inputs for reporting, policy engagement, and cross-sectoral action plans.",
+    "requirements": [
+      "Master’s degree in economics, environmental engineering, natural resources, or related field",
+      "5+ years of climate or environmental policy experience",
+      "Fluency in English and one additional IDB language (Spanish, French, Portuguese)"
+    ],
+    "skills": ["Climate Policy", "Paris Agreement Alignment", "Data Management", "Sustainability Strategy"],
+    "dateAdded": "2025-09-02",
+    "remote": true,
+    "applicationLink": "https://jobs.iadb.org/job/Climate-Change-Strategy-Consultant/1637-en_US"
+  },
+  {
+    "id": "154",
+    "title": "Associate I, Energy Modernization",
+    "company": "The Pew Charitable Trusts",
+    "location": "Washington, DC, USA",
+    "type": "Full-time",
+    "salary": "$63,800 – $71,300",
+    "categories": ["Energy & Renewables", "Climate Science"],
+    "description": "Support Pew’s Energy Modernization Project by advancing clean energy policies, modernizing electricity grids, and accelerating renewable energy adoption. Assist with policy tracking, materials, and stakeholder engagement.",
+    "requirements": [
+      "Bachelor’s degree or equivalent experience",
+      "1+ year of policy, advocacy, or energy-related experience",
+      "Strong writing and research skills"
+    ],
+    "skills": ["Energy Policy", "Stakeholder Engagement", "Research", "Campaign Strategy"],
+    "dateAdded": "2025-09-02",
+    "remote": false,
+    "applicationLink": "https://pewtrusts.wd5.myworkdayjobs.com/TrustsExternal/job/Washington-DC-901-E/Associate-I--Energy-Modernization_R002955"
+  },
+  {
+    "id": "155",
+    "title": "Data Scientist (Environmental Services)",
+    "company": "Xcel Energy",
+    "location": "Minneapolis, MN / Denver, CO / Amarillo, TX, USA",
+    "type": "Full-time",
+    "salary": "$95,200 – $135,200",
+    "categories": ["Tech (Data Science & ML)", "Energy & Renewables", "Climate Science"],
+    "description": "Develop machine learning and statistical models to support environmental services. Analyze large datasets, deploy models, and deliver actionable insights to support Xcel’s clean energy transition.",
+    "requirements": [
+      "Bachelor’s degree in Data Science, Computer Science, Statistics, or related",
+      "3+ years of data science experience (2+ with MS/PhD)",
+      "Experience with Python, R, SQL"
+    ],
+    "skills": ["Data Science", "Machine Learning", "Python", "SQL", "Statistical Modeling"],
+    "dateAdded": "2025-09-02",
+    "remote": false,
+    "applicationLink": "https://xcelenergy.wd1.myworkdayjobs.com/External/job/Minneapolis-MN-55401/Data-Scientist--Environmental-Services-_JR110315-1"
+  },
+  {
+    "id": "156",
+    "title": "Assistant Director, Sustainability",
+    "company": "Yale University",
+    "location": "New Haven, CT, USA",
+    "type": "Full-time",
+    "salary": "$68,000 – $120,500",
+    "categories": ["Climate Science", "Academia & Research"],
+    "description": "Support Yale’s Office of Sustainability by advancing sustainability initiatives, data-driven decision-making, and communications across the university. Manage staff engagement programs, surveys, and reporting.",
+    "requirements": [
+      "Bachelor’s degree in a related field and 4+ years of experience (Master’s preferred)",
+      "Proven project management and sustainability expertise",
+      "Strong communication and stakeholder engagement skills"
+    ],
+    "skills": ["Sustainability Strategy", "Project Management", "Data Visualization", "Stakeholder Engagement"],
+    "dateAdded": "2025-09-02",
+    "remote": false,
+    "applicationLink": "https://careers.yale.edu/us/en/job/129275WD/Assistant-Director-Sustainability"
   }
-  ]
-}
+  ],
+  }

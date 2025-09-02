@@ -271,18 +271,33 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
     setCurrentPage(newPage)
 
     setTimeout(() => {
-      const scrollPosition = window.innerHeight * 0.25
-      window.scrollTo({ top: scrollPosition, behavior: "smooth" })
+      const scrollPosition = window.innerHeight * 0.35
 
-      // Fallback for browsers that don't support smooth scrolling
-      setTimeout(() => {
-        if (Math.abs(window.pageYOffset - scrollPosition) > 50) {
-          window.scrollTo(0, scrollPosition)
+      // Custom slower scroll animation
+      const startPosition = window.pageYOffset
+      const distance = scrollPosition - startPosition
+      const duration = 800 // Slower animation duration (800ms instead of default)
+      let start: number | null = null
+
+      function step(timestamp: number) {
+        if (!start) start = timestamp
+        const progress = Math.min((timestamp - start) / duration, 1)
+
+        // Easing function for smoother animation
+        const easeInOutCubic =
+          progress < 0.5 ? 4 * progress * progress * progress : 1 - Math.pow(-2 * progress + 2, 3) / 2
+
+        window.scrollTo(0, startPosition + distance * easeInOutCubic)
+
+        if (progress < 1) {
+          requestAnimationFrame(step)
         }
-      }, 100)
+      }
+
+      requestAnimationFrame(step)
 
       console.log(
-        "[v0] Scrolled to 3/4 up page, target position:",
+        "[v0] Scrolled to 35% down page, target position:",
         scrollPosition,
         "current position:",
         window.pageYOffset,
