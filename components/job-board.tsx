@@ -266,6 +266,11 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
     setSortBy(sort)
   }
 
+  const handlePageChange = (newPage: number) => {
+    setCurrentPage(newPage)
+    window.scrollTo({ top: 0, behavior: "smooth" })
+  }
+
   const getJobMatch = (jobId: string): JobMatch | undefined => {
     return jobMatches.find((match) => match.jobId === jobId)
   }
@@ -752,7 +757,7 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
             <Button
               variant="outline"
               size="sm"
-              onClick={() => setCurrentPage(currentPage - 1)}
+              onClick={() => handlePageChange(currentPage - 1)}
               disabled={currentPage === 1}
             >
               <ChevronLeft className="h-4 w-4 mr-1" />
@@ -765,7 +770,7 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
                   <Button
                     variant={1 === currentPage ? "default" : "outline"}
                     size="sm"
-                    onClick={() => setCurrentPage(1)}
+                    onClick={() => handlePageChange(1)}
                   >
                     1
                   </Button>
@@ -783,7 +788,7 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
                     key={pageNum}
                     variant={pageNum === currentPage ? "default" : "outline"}
                     size="sm"
-                    onClick={() => setCurrentPage(pageNum)}
+                    onClick={() => handlePageChange(pageNum)}
                   >
                     {pageNum}
                   </Button>
@@ -798,7 +803,7 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
                   <Button
                     variant={Math.ceil(filteredJobs.length / jobsPerPage) === currentPage ? "default" : "outline"}
                     size="sm"
-                    onClick={() => setCurrentPage(Math.ceil(filteredJobs.length / jobsPerPage))}
+                    onClick={() => handlePageChange(Math.ceil(filteredJobs.length / jobsPerPage))}
                   >
                     {Math.ceil(filteredJobs.length / jobsPerPage)}
                   </Button>
@@ -809,7 +814,7 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
             <Button
               variant="outline"
               size="sm"
-              onClick={() => setCurrentPage(currentPage + 1)}
+              onClick={() => handlePageChange(currentPage + 1)}
               disabled={currentPage === Math.ceil(filteredJobs.length / jobsPerPage)}
             >
               Next
