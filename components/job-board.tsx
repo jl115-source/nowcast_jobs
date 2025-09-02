@@ -398,7 +398,7 @@ export function JobBoard({ onPageChange }: JobBoardProps) {
       <div
         className="relative h-64 bg-gradient-to-r from-primary/20 to-accent/20 flex items-center justify-center"
         style={{
-          backgroundImage: `url("/ocean-waves-dark-blue-water.png")`,
+          backgroundImage: `url("/sky-clouds.png")`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
