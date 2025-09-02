@@ -270,10 +270,8 @@ export function OffMarketJobsPage() {
           <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-6">
             <div className="flex items-center gap-2 text-red-700">
               <AlertCircle className="h-5 w-5" />
-              <span className="font-medium">Please login before signing up</span>
+              <span className="font-medium">Please login before signing up.</span>
             </div>
-            <p className="text-red-600 text-sm mt-1">
-              
           </div>
         )}
 
