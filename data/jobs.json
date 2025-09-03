@@ -3531,6 +3531,37 @@
     "remote": false,
     "contact": null,
     "applicationLink": "https://usnh.wd5.myworkdayjobs.com/en-US/Careers/job/University-of-New-Hampshire--Main-Campus/Postdoctoral-Research-Associate_JR4439"
-  }
+  },
+    {
+  "id": "200",
+  "title": "Geospatial Data Manager/Architect",
+  "company": "Fathom",
+  "location": "Bristol, UK (Hybrid)",
+  "type": "Full-time",
+  "salary": "Competitive + Generous benefits package",
+  "categories": ["Geospatial & GIS", "Climate Science", "Insurance & Reinsurance", "Academia & Research"],
+  "description": "Fathom, a leader in water risk intelligence, seeks a Geospatial Data Manager/Architect to oversee the architecture, implementation, and management of geospatial data systems. The role involves establishing governance policies, managing metadata and catalogs, ensuring data quality and version control, and facilitating access for internal and external stakeholders. This position supports Fathom’s mission to bridge academic research with industry applications in water risk, catastrophe modeling, and geospatial intelligence.",
+  "requirements": [
+    "Proven experience in data management or a similar role",
+    "Strong background in data governance",
+    "Experience with metadata management and standards",
+    "Experience in data quality assurance and version control",
+    "Understanding of data lifecycle management principles"
+  ],
+  "skills": [
+    "Geospatial Data Management",
+    "Data Governance",
+    "Metadata Standards",
+    "Data Quality Assurance",
+    "Version Control",
+    "Cloud Platforms (AWS, Google Cloud preferred)",
+    "Scripting for data processing",
+    "Database querying"
+  ],
+  "posted": "Undisclosed (2025)",
+  "remote": true,
+  "contact": null,
+  "applicationLink": "https://careers.fathom.global/jobs/6394535-geospatial-data-manager-architect"
+}
   ]
 }
