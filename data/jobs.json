@@ -2858,6 +2858,679 @@
     "dateAdded": "2025-09-02",
     "remote": false,
     "applicationLink": "https://careers.yale.edu/us/en/job/129275WD/Assistant-Director-Sustainability"
-    }
+    },
+    {
+    "id": "157",
+    "title": "Senior Economist - Climate Consulting",
+    "company": "Oxford Economics",
+    "location": "London or Oxford, UK",
+    "type": "Full-time",
+    "salary": "Undisclosed",
+    "categories": ["Banking & Finance", "Energy & Renewables", "Climate Science"],
+    "description": "Deliver and manage macroeconomic and climate consultancy projects. Focus on climate scenario analysis, policy impacts, adaptation, and macroeconomic modeling. Projects include stress-testing, corporate strategy analysis, and long-term forecasts using Oxford Economics’ GEM model.",
+    "requirements": [
+      "BA/BSc in Economics (postgraduate preferred)",
+      "Strong macroeconomic background with climate/environmental focus",
+      "Experience with econometrics and applied macroeconomic models",
+      "Proficiency with Excel, EViews, Stata, R and/or Python"
+    ],
+    "skills": ["Macroeconomics", "Climate Scenario Analysis", "Econometrics", "Forecasting"],
+    "dateAdded": "2025-09-03",
+    "remote": true,
+    "applicationLink": "https://careers.oxfordeconomics.com/postings/e528c1b2-0b59-4bd8-bc2b-f12636b9525f"
+  },
+  {
+    "id": "158",
+    "title": "Senior Researcher (Digital Climate)",
+    "company": "Fujitsu Research of America",
+    "location": "United States (Remote/Silicon Valley HQ)",
+    "type": "Full-time",
+    "salary": "Undisclosed",
+    "categories": ["Tech (Data Science & ML)", "Climate Science"],
+    "description": "Advance cutting-edge AI/ML solutions for climate resilience with focus on floods, landslides, and extreme precipitation. Develop foundation models and geospatial modeling for multi-hazard prediction and climate risk reduction.",
+    "requirements": [
+      "PhD in ML, hydrology, remote sensing, geosciences, or related field",
+      "Strong publication record in climate-related AI or hazard modeling",
+      "Experience with ML frameworks, geospatial tools, cloud platforms"
+    ],
+    "skills": ["AI/ML", "Geospatial Modeling", "Remote Sensing", "Climate Risk Analysis"],
+    "dateAdded": "2025-09-03",
+    "remote": true,
+    "applicationLink": "https://edzt.fa.em4.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/30296"
+  },
+  {
+    "id": "159",
+    "title": "Head of Weather/Meteorology",
+    "company": "Undisclosed Energy Trading & Analytics Firm",
+    "location": "California, USA (Hybrid)",
+    "type": "Full-time",
+    "salary": "$200,000 - $260,000",
+    "categories": ["Trading (Commodities, Weather, Energy)", "Energy & Renewables", "Weather & Meteorology"],
+    "description": "Lead weather and climate modeling for energy markets, integrating AI/ML with meteorology. Manage a team of scientists and analysts, partner with trading desks, and deliver climate-driven insights for commodities and energy portfolios.",
+    "requirements": [
+      "PhD or advanced degree in Meteorology, Atmospheric Science, or Climate Science",
+      "7+ years experience in weather/climate modeling with energy/trading applications",
+      "Proven leadership of cross-functional science and data teams"
+    ],
+    "skills": ["Weather Modeling", "Climate Forecasting", "AI/ML Integration", "Energy Trading Analytics"],
+    "dateAdded": "2025-09-03",
+    "remote": false,
+    "applicationLink": "https://www.linkedin.com/jobs/view/4295031566"
+  },
+  {
+    "id": "160",
+    "title": "Geospatial Data Scientist (TS/SCI)",
+    "company": "Maxar Technologies",
+    "location": "Tampa, FL, USA",
+    "type": "Full-time",
+    "salary": "$71,000 - $152,000",
+    "categories": ["Geospatial & GIS", "Tech (Data Science & ML)"],
+    "description": "Perform advanced GIS analysis on structured and unstructured data, build statistical/geospatial models, and support high-level decision making. Requires TS/SCI clearance.",
+    "requirements": [
+      "US citizenship with TS/SCI clearance",
+      "BS in Computer Science or related field (Master’s preferred)",
+      "Proficiency with Python, R, ArcGIS Pro",
+      "Experience with relational databases and data visualization"
+    ],
+    "skills": ["Python", "R", "ArcGIS", "Geospatial Modeling", "Data Science"],
+    "dateAdded": "2025-09-03",
+    "remote": false,
+    "applicationLink": "https://maxar.wd1.myworkdayjobs.com/en-GB/MAXAR/job/Tampa-FL/Geospatial-Data-Scientist--TS-SCI-_R22682"
+  },
+      {
+    "id": "161",
+    "title": "Flood Risk Modeller",
+    "company": "Mott MacDonald",
+    "location": "Sheffield, Bristol, Cardiff, Leeds, Cambridge, Brighton, UK",
+    "type": "Full-time, Permanent",
+    "salary": "Undisclosed",
+    "categories": ["Geophysics & Geology", "Weather & Meteorology", "Geospatial & GIS"],
+    "description": "Develop hydraulic models for flood risk management schemes, deliver Flood Risk Assessments, and conduct reservoir flood studies. Involves hydrological analysis, GIS-based data analysis, and report writing for clients.",
+    "requirements": [
+      "Degree in hydrology, geography, mathematics, civil engineering, or related discipline",
+      "Experience delivering flood risk management studies",
+      "Proficiency with hydraulic modelling software (Flood Modeller, TUFLOW, HEC-RAS, ICM)"
+    ],
+    "skills": ["Flood Modelling", "Hydrology", "ArcGIS", "QGIS", "Python"],
+    "dateAdded": "2025-09-03",
+    "remote": true,
+    "applicationLink": "https://apply.mottmac.com/job/Sheffield-Flood-Risk-Modeller/827926202"
+  },
+  {
+    "id": "162",
+    "title": "Foundation Scientific Software Engineer",
+    "company": "UK Met Office",
+    "location": "Exeter, UK (Hybrid)",
+    "type": "Full-time, Permanent",
+    "salary": "£26,954 - £29,531 + Civil Service Pension",
+    "categories": ["Weather & Meteorology", "Tech (Data Science & ML)"],
+    "description": "Contribute to the evaluation and monitoring of operational NWP systems, develop and maintain software for weather model verification, and support convective-scale NWP teams at the Met Office.",
+    "requirements": [
+      "Good knowledge of Python or another high-level programming language",
+      "Experience in delivering robust scientific software",
+      "Knowledge of Git/GitHub and QA processes"
+    ],
+    "skills": ["Python", "Git", "Software Engineering", "Numerical Weather Prediction"],
+    "dateAdded": "2025-09-03",
+    "remote": true,
+    "applicationLink": "https://www.civilservicejobs.service.gov.uk/csr/jobs.cgi?jcode=1967615"
+  },
+  {
+    "id": "163",
+    "title": "Catastrophe Modelling Portfolio Lead - Marine",
+    "company": "Westfield (Lloyd’s Syndicate 1200)",
+    "location": "London, UK (On-site)",
+    "type": "Full-time",
+    "salary": "Undisclosed",
+    "categories": ["Insurance & Reinsurance", "Weather & Meteorology"],
+    "description": "Lead catastrophe modelling across Marine product lines, ensuring data quality, reporting, model rollups, and supporting underwriting strategy. Focus on embedding new technology and aligning with Lloyd’s standards.",
+    "requirements": [
+      "2+ years catastrophe modelling experience",
+      "Experience with RMS and/or AIR vendor models",
+      "Proficiency in SQL, Excel, VBA, Python or R"
+    ],
+    "skills": ["Catastrophe Modelling", "RMS", "AIR", "SQL", "Python"],
+    "dateAdded": "2025-09-03",
+    "remote": false,
+    "applicationLink": "https://fa-exdv-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/Careers/job/10977"
+  },
+  {
+    "id": "164",
+    "title": "Senior Analyst - Science and Natural Perils",
+    "company": "AXA XL",
+    "location": "London, UK",
+    "type": "Full-time, Permanent",
+    "salary": "Undisclosed",
+    "categories": ["Insurance & Reinsurance", "Weather & Meteorology", "Climate Science"],
+    "description": "Support validation and analytical review of catastrophe models, with focus on flood risk. Conduct research, translate scientific findings into insurance practices, and contribute to internal cat model development.",
+    "requirements": [
+      "MSc/PhD in Civil/Environmental Engineering or related discipline",
+      "Experience with hydrological/hydraulic modelling (HEC-RAS, LISFLOOD)",
+      "Proficiency in Python, R, SQL"
+    ],
+    "skills": ["Flood Risk Modelling", "Python", "R", "Hydrology", "Catastrophe Models"],
+    "dateAdded": "2025-09-03",
+    "remote": false,
+    "applicationLink": "https://axa.jibeapply.com/careers-home/jobs/7356"
+  },
+  {
+    "id": "165",
+    "title": "Catastrophe Modelling Analyst",
+    "company": "Arch Capital",
+    "location": "London, UK",
+    "type": "Full-time",
+    "salary": "Undisclosed",
+    "categories": ["Insurance & Reinsurance", "Weather & Meteorology"],
+    "description": "Manage and model property portfolio for exposure management and catastrophe analytics. Prepare data for underwriting, reinsurance, and reporting, with focus on Lloyd’s syndicates.",
+    "requirements": [
+      "3+ years insurance or catastrophe modelling experience",
+      "Knowledge of AIR or RMS models",
+      "Strong SQL, Excel, VBA programming skills"
+    ],
+    "skills": ["Catastrophe Modelling", "AIR", "RMS", "SQL", "Excel"],
+    "dateAdded": "2025-09-03",
+    "remote": false,
+    "applicationLink": "https://archgroup.wd1.myworkdayjobs.com/Careers/job/London-United-Kingdom/Catastrophe-Modelling-Analyst_R25_790"
+  },
+  {
+    "id": "166",
+    "title": "Senior Research Scientist – Applied AI Team",
+    "company": "Balyasny Asset Management",
+    "location": "Chicago, New York, Austin, or London",
+    "type": "Full-time",
+    "salary": "$150,000 - $250,000",
+    "categories": ["Banking & Finance", "Tech (Data Science & ML)"],
+    "description": "Conduct original ML research (LLMs, RL, NLP) to advance AI-powered investment tools. Prototype and deploy models to support portfolio managers and analysts. Contribute to open-source and research community.",
+    "requirements": [
+      "PhD in Computer Science, ML, or related field",
+      "Strong publication record (NeurIPS, ICML, ICLR, etc.)",
+      "Python/PyTorch experience"
+    ],
+    "skills": ["Machine Learning", "NLP", "Reinforcement Learning", "Python", "PyTorch"],
+    "dateAdded": "2025-09-03",
+    "remote": true,
+    "applicationLink": "https://bambusdev.my.site.com/s/details?jobReq=Senior-Research-Scientist---Applied-AI-Team_REQ7143"
+  },
+  {
+    "id": "167",
+    "title": "Senior ML Engineer, Energy",
+    "company": "SB Energy",
+    "location": "San Francisco, CA, Houston, TX, Denver, CO (Hybrid/Remote)",
+    "type": "Full-time",
+    "salary": "$130,000 - $145,000",
+    "categories": ["Tech (Data Science & ML)", "Energy & Renewables", "Trading (Commodities, Weather, Energy)"],
+    "description": "Develop optimization models for solar, storage, and 24/7 energy matching. Build ML pipelines for trading and forecasting, support algorithmic energy trading strategies in CAISO and ERCOT markets.",
+    "requirements": [
+      "Bachelor’s in Engineering, Computer Science, Statistics, or related field",
+      "5-8 years ML engineering experience (2-3 in energy markets preferred)",
+      "Strong Python, ML libraries, and optimization experience"
+    ],
+    "skills": ["Python", "Machine Learning", "Energy Trading", "Optimization", "Forecasting"],
+    "dateAdded": "2025-09-03",
+    "remote": true,
+    "applicationLink": "https://www.linkedin.com/jobs/view/4252936337"
+  },
+  {
+    "id": "168",
+    "title": "Postdoctoral Appointee – Data Infrastructure and Software for AI",
+    "company": "Argonne National Laboratory",
+    "location": "Lemont, IL, USA",
+    "type": "Full-time, Postdoctoral",
+    "salary": "$70,758 - $110,379",
+    "categories": ["Post-doc", "Academia & Research", "Tech (Data Science & ML)"],
+    "description": "Work on exascale supercomputing systems to develop data infrastructure for AI applications. Research data management, retrieval-augmented generation, and integration of diverse scientific datasets.",
+    "requirements": [
+      "Recent PhD in Computer Science, Computational Science, or related field",
+      "Experience with Python, C/C++, PyTorch or TensorFlow",
+      "Knowledge of HPC systems and distributed storage"
+    ],
+    "skills": ["Python", "C++", "PyTorch", "TensorFlow", "Data Infrastructure", "HPC"],
+    "dateAdded": "2025-09-03",
+    "remote": false,
+    "applicationLink": "https://argonne.wd1.myworkdayjobs.com/en-US/Argonne_Careers/job/Lemont-IL-USA/Postdoctoral-Appointee---Data-Infrastructure-and-Software-for-AI_419461"
+  },
+      {
+    "id": "169",
+    "title": "Subsurface Scientist",
+    "company": "Booz Allen Hamilton",
+    "location": "Washington, DC, USA",
+    "type": "Full-time",
+    "salary": "$62,000 - $141,000",
+    "categories": ["Geophysics & Geology", "Energy & Renewables"],
+    "description": "Serve as a subsurface scientist supporting energy clients. Provide advice and guidance on design, evaluation, and management of subsurface R&D programs. Collaborate with experts to advance sustainable energy technologies.",
+    "requirements": [
+      "Doctorate degree in Physical Science or Engineering",
+      "5+ years authoring technical reports or research papers",
+      "2+ years of experience in mining, drilling, reservoir analysis, geophysics, or related fields"
+    ],
+    "skills": ["Reservoir Analysis", "Petroleum Geology", "Geochemistry", "Rock Characterization"],
+    "dateAdded": "2025-09-03",
+    "remote": false,
+    "applicationLink": "https://careers.boozallen.com/careers/JobDetail?jobId=114948&source=JB-16500"
+  },
+  {
+    "id": "170",
+    "title": "Software Engineer III, Geo Map the World",
+    "company": "Google",
+    "location": "New York, NY, USA",
+    "type": "Full-time",
+    "salary": "$141,000 - $202,000",
+    "categories": ["Tech (Data Science & ML)", "Geospatial & GIS"],
+    "description": "Develop next-generation mapping technologies at scale. Collaborate with cross-functional teams to enhance Geo data infrastructure and design geographic data tools. Build reliable, large-scale systems supporting Google Maps and related platforms.",
+    "requirements": [
+      "Bachelor’s degree in Computer Science or related field",
+      "2+ years software development experience",
+      "Experience with data structures and algorithms"
+    ],
+    "skills": ["C++", "Python", "Data Pipelines", "Distributed Computing"],
+    "dateAdded": "2025-09-03",
+    "remote": false,
+    "applicationLink": "https://www.google.com/about/careers/applications/jobs/results/113626060632793798-software-engineer-iii/"
+  },
+  {
+    "id": "171",
+    "title": "Risk Management - Modeler for Climate, Nature and Social - Vice President",
+    "company": "JPMorgan Chase & Co.",
+    "location": "New York, NY, USA",
+    "type": "Full-time",
+    "salary": "$128,250 - $190,000",
+    "categories": ["Banking & Finance", "Climate Science"],
+    "description": "Develop and refine macroeconomic and climate risk models integrating nature and social risks. Collaborate with economists, climate scientists, and risk professionals to design scenarios assessing economic impacts of climate change.",
+    "requirements": [
+      "Advanced degree in Economics, Environmental Economics, or Climate Science",
+      "Experience in econometric/statistical modelling and climate risk analysis",
+      "Proficiency in R, Stata, MATLAB, or Python"
+    ],
+    "skills": ["Climate Risk Modelling", "Econometrics", "Python", "Macroeconomic Forecasting"],
+    "dateAdded": "2025-09-03",
+    "remote": false,
+    "applicationLink": "https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/210574426"
+  },
+  {
+    "id": "172",
+    "title": "Senior GIS/Data Analyst",
+    "company": "SAIC",
+    "location": "Bethesda, MD, USA",
+    "type": "Full-time, On-site",
+    "salary": "$160,000 - $200,000",
+    "categories": ["Geospatial & GIS", "Tech (Data Science & ML)"],
+    "description": "Support intelligence and counterintelligence operations by performing geospatial data analysis. Model map layers, integrate georeferenced information, and deliver intelligence products for the US Intelligence Community.",
+    "requirements": [
+      "Active TS/SCI clearance with polygraph",
+      "3-10 years GIS, cartography, or geospatial data experience",
+      "Proficiency with ArcGIS and SQL"
+    ],
+    "skills": ["ArcGIS", "SQL", "Data Visualization", "Spatial Analysis"],
+    "dateAdded": "2025-09-03",
+    "remote": false,
+    "applicationLink": "https://jobs.saic.com/jobs/16670638-senior-gis-slash-data-analyst"
+  },
+  {
+    "id": "173",
+    "title": "Senior Geospatial Software Engineer",
+    "company": "Element 84",
+    "location": "Remote (US-based)",
+    "type": "Full-time",
+    "salary": "$128,000 - $168,500",
+    "categories": ["Geospatial & GIS", "Tech (Data Science & ML)"],
+    "description": "Design and build scalable, cloud-native geospatial applications leveraging AWS and open-source geospatial tools. Lead development of Earth observation data processing pipelines to solve environmental and infrastructure challenges.",
+    "requirements": [
+      "6+ years software engineering experience with geospatial focus",
+      "Expertise in Python and AWS serverless/cloud-native architectures",
+      "Experience with STAC, open-source geospatial libraries, and CI/CD"
+    ],
+    "skills": ["Python", "AWS", "Terraform", "STAC", "Cloud Geospatial Processing"],
+    "dateAdded": "2025-09-03",
+    "remote": true,
+    "applicationLink": "https://jobs.ashbyhq.com/element84/ede60ce6-b4ba-4cd9-aa4e-df213fc9374b/application"
+  },
+  {
+    "id": "174",
+    "title": "Vendor Manager, Geospatial",
+    "company": "Amazon",
+    "location": "Austin, TX or Bellevue, WA, USA",
+    "type": "Full-time",
+    "salary": "$83,100 - $177,800",
+    "categories": ["Geospatial & GIS", "Tech (Data Science & ML)"],
+    "description": "Manage geospatial vendor relationships for Amazon’s logistics mapping solutions. Negotiate contracts, analyze data, and ensure delivery of high-quality mapping attributes for efficient global logistics.",
+    "requirements": [
+      "Bachelor’s degree or equivalent",
+      "Experience in business development or vendor management",
+      "Analytical and negotiation skills"
+    ],
+    "skills": ["Vendor Management", "Data Analysis", "Negotiation", "Project Management"],
+    "dateAdded": "2025-09-03",
+    "remote": false,
+    "applicationLink": "https://www.amazon.jobs/en/jobs/3038658/vendor-manager-geospatial"
+  },
+  {
+    "id": "175",
+    "title": "Meteorologist (Contract)",
+    "company": "The Judge Group",
+    "location": "Azusa, CA, USA",
+    "type": "Contract, On-site",
+    "salary": "$60 - $65/hr",
+    "categories": ["Weather & Meteorology" ],
+    "description": "Support Energy Procurement and Management through accurate weather forecasts and analysis. Deliver 1–7 day forecasts, monitor impactful weather events, and assess implications for renewable energy generation.",
+    "requirements": [
+      "Bachelor’s degree in Meteorology or Atmospheric Science",
+      "Understanding of California and Western U.S. weather",
+      "Experience with NWS/NOAA forecasting tools"
+    ],
+    "skills": ["Weather Forecasting", "Temperature Modelling", "Renewable Energy Impacts"],
+    "dateAdded": "2025-09-03",
+    "remote": false,
+    "applicationLink": "https://www.linkedin.com/jobs/view/4294392975"
+  },
+  {
+    "id": "176",
+    "title": "GIS Specialist, Data Center Supply Solutions",
+    "company": "Amazon Web Services",
+    "location": "USA (various, incl. Seattle & Virginia)",
+    "type": "Full-time",
+    "salary": "$114,500 - $197,800",
+    "categories": ["Geospatial & GIS", "Tech (Data Science & ML)", "Energy & Renewables"],
+    "description": "Develop GIS applications and analysis tools to support AWS data center development. Build geospatial data pipelines, contribute to system architecture, and expand location intelligence capabilities for cloud infrastructure planning.",
+    "requirements": [
+      "3+ years technical product/program management",
+      "2+ years software development",
+      "3+ years GIS project management"
+    ],
+    "skills": ["GIS", "Geospatial Databases", "Web GIS Applications", "Project Management"],
+    "dateAdded": "2025-09-03",
+    "remote": false,
+    "applicationLink": "https://www.amazon.jobs/en/jobs/3056757/gis-specialist-data-center-supply-solutions"
+  },
+  {
+    "id": "177",
+    "title": "Radar Algorithms Engineer",
+    "company": "Array Labs",
+    "location": "Palo Alto, CA, USA (Hybrid)",
+    "type": "Full-time",
+    "salary": "$150,000 - $400,000",
+    "categories": ["Geospatial & GIS", "Weather & Meteorology",  "Tech (Data Science & ML)"],
+    "description": "Develop and deploy SAR algorithms for Array Labs’ radar imaging constellation. Contribute to real-time 3D Earth models, advance image formation techniques, and integrate algorithms into production pipelines.",
+    "requirements": [
+      "Bachelor’s degree in EE, Physics, or related field",
+      "Experience in SAR signal processing",
+      "Proficiency in Python, C++, or MATLAB"
+    ],
+    "skills": ["SAR", "Radar Algorithms", "Python", "C++", "3D Reconstruction"],
+    "dateAdded": "2025-09-03",
+    "remote": true,
+    "applicationLink": "https://www.linkedin.com/jobs/view/4235865357"
+  },
+     {
+    "id": "178",
+    "title": "Assistant Professor, Earth System Science",
+    "company": "Central Michigan University",
+    "location": "Mount Pleasant, MI, USA",
+    "type": "Full-time, Tenure Track",
+    "salary": "Undisclosed",
+    "categories": ["Geophysics & Geology", "Professor", "Academia & Research", "Climate Science"],
+    "description": "Tenure-track position in Earth System Science, focusing on environmental change, data science, Earth system processes, or critical zone science. Responsibilities include teaching, research, student mentorship, and securing external funding.",
+    "requirements": [
+      "PhD in Earth System Science or related field (ABD considered)",
+      "Potential for outstanding teaching and research",
+      "Commitment to student success and diversity"
+    ],
+    "skills": ["Earth System Modeling", "Environmental Data Science", "Critical Zone Science"],
+    "dateAdded": "2025-09-03",
+    "remote": false,
+    "applicationLink": "https://www.jobs.cmich.edu/postings/43626"
+  },
+  {
+    "id": "179",
+    "title": "Director, Sustainability Reporting and Engagement",
+    "company": "Atlassian",
+    "location": "San Francisco, CA; Sydney, AU; Mountain View, CA; Seattle, WA (Remote options)",
+    "type": "Full-time",
+    "salary": "$136,800 - $213,850",
+    "categories": ["Climate Science", "Banking & Finance", "Tech (Data Science & ML)"],
+    "description": "Lead Atlassian’s customer engagement and sustainability reporting programs. Drive disclosures, investor engagement, and ESG communications aligned with customer and stakeholder expectations.",
+    "requirements": [
+      "Deep expertise in sustainability/ESG",
+      "Experience in reporting and customer engagement",
+      "Exceptional written and stakeholder management skills"
+    ],
+    "skills": ["ESG Reporting", "Stakeholder Engagement", "Sustainability Strategy", "Communications"],
+    "dateAdded": "2025-09-03",
+    "remote": true,
+    "applicationLink": "https://careers-americas.icims.com/jobs/22043/director%2c-sustainability-reporting-and-engagement/job"
+  },
+  {
+    "id": "180",
+    "title": "Sustainability Program Specialist",
+    "company": "Caterpillar",
+    "location": "Peoria, IL or Irving, TX, USA",
+    "type": "Full-time",
+    "salary": "$110,520 - $165,840",
+    "categories": ["Climate Science", "Energy & Renewables"],
+    "description": "Support Caterpillar’s enterprise sustainability strategy through program management, ESG survey response, and reporting. Manage sustainability data, reports, and disclosures to align with evolving regulatory and customer requirements.",
+    "requirements": [
+      "Experience with ESG reporting frameworks (GRI, SASB, TCFD, etc.)",
+      "Strong project management and data analysis skills",
+      "Knowledge of sustainability frameworks and regulations"
+    ],
+    "skills": ["ESG Reporting", "Data Analysis", "Project Management", "Sustainability Strategy"],
+    "dateAdded": "2025-09-03",
+    "remote": false,
+    "applicationLink": "https://careers.caterpillar.com/en/jobs/r0000321501/sustainability-program-specialist"
+  },
+  {
+    "id": "181",
+    "title": "Applied Machine Learning Scientist (Contract/Internship)",
+    "company": "Treeconomy",
+    "location": "Remote/Hybrid (UK preferred)",
+    "type": "Contract/Internship",
+    "salary": "Undisclosed",
+    "categories": ["Tech (Data Science & ML)", "Climate Science"],
+    "description": "Lead research for QUBIST project, developing methodologies to quantify uncertainty in biomass estimates using integrated satellite technologies. Contribute to MRV systems for carbon sequestration projects.",
+    "requirements": [
+      "Experience in machine learning and statistical modeling",
+      "Strong background in remote sensing or carbon monitoring",
+      "Ability to work independently on R&D tasks"
+    ],
+    "skills": ["Machine Learning", "Remote Sensing", "Carbon Monitoring", "Uncertainty Quantification"],
+    "dateAdded": "2025-09-03",
+    "remote": true,
+    "applicationLink": "https://treeconomy.notion.site/Applied-Machine-Learning-Scientist-contract-internship-2630dcbf61878083b030e9a7fc93dedb"
+  },
+  {
+    "id": "182",
+    "title": "Strategy & Operations Manager, Sustainability Practice",
+    "company": "Bain & Company",
+    "location": "New Delhi, India",
+    "type": "Full-time",
+    "salary": "Undisclosed",
+    "categories": ["Banking & Finance", "Climate Science"],
+    "description": "Drive internal strategy, operations, and execution for Bain’s global Sustainability Practice. Partner with leadership to deliver growth strategy, ensure operational excellence, and scale sustainability expertise worldwide.",
+    "requirements": [
+      "Background in strategy consulting or business operations",
+      "Strong problem-solving and analytical skills",
+      "Experience with sustainability or ESG initiatives"
+    ],
+    "skills": ["Strategy Execution", "Operations Management", "Data Analytics", "Sustainability Consulting"],
+    "dateAdded": "2025-09-03",
+    "remote": false,
+    "applicationLink": "https://careers.bain.com/jobs/FolderDetail/Strategy-Operations-Manager-Sustainability-Practice/98227"
+  },
+  {
+    "id": "183",
+    "title": "Senior Manager, Sustainability (Fixed Term Contract)",
+    "company": "London Stock Exchange Group (LSEG)",
+    "location": "London, UK",
+    "type": "Full-time, Fixed Term (12 months)",
+    "salary": "Undisclosed",
+    "categories": ["Banking & Finance", "Climate Science"],
+    "description": "Lead LSEG’s sustainability strategy related to human rights and CSDDD compliance. Manage reporting, internal capacity building, and sustainability risk management within the Group Sustainability team.",
+    "requirements": [
+      "Expertise in human rights, modern slavery, and sustainability legislation",
+      "Project management and stakeholder engagement skills",
+      "Experience in sustainability strategy implementation"
+    ],
+    "skills": ["Sustainability Strategy", "Human Rights", "Regulatory Compliance", "Project Management"],
+    "dateAdded": "2025-09-03",
+    "remote": false,
+    "applicationLink": "https://lseg.wd3.myworkdayjobs.com/Careers/job/London-United-Kingdom/Senior-Manager--Sustainability_R0109040-1"
+  },
+  {
+    "id": "184",
+    "title": "Head of Sales - Weather Data & Maps",
+    "company": "Vaisala",
+    "location": "Minneapolis, MN, USA (Remote possible)",
+    "type": "Full-time",
+    "salary": "$115,000 - $140,000 + bonus",
+    "categories": ["Weather & Meteorology", "Energy & Renewables", "Geospatial & GIS"],
+    "description": "Lead go-to-market strategy for Vaisala Xweather’s Data and Maps portfolio. Drive adoption among developers and product teams, build partnerships, and represent the developer voice in product roadmap.",
+    "requirements": [
+      "5+ years of sales leadership in SaaS, APIs, or data services",
+      "Experience selling to technical audiences",
+      "Knowledge of developer tools, SDKs, and cloud platforms"
+    ],
+    "skills": ["Sales Leadership", "API Economy", "Developer Relations", "Weather Intelligence"],
+    "dateAdded": "2025-09-03",
+    "remote": true,
+    "applicationLink": "https://careers.vaisala.com/job/Minneapolis-Head-of-Sales-Weather-Data-&-Maps-NC-28652/828409802/"
+  },
+  {
+    "id": "185",
+    "title": "Global Weather and Climate Business Manager",
+    "company": "NVIDIA",
+    "location": "Santa Clara, CA, USA",
+    "type": "Full-time",
+    "salary": "$200,000 - $356,500",
+    "categories": ["Climate Science", "Weather & Meteorology", "Tech (Data Science & ML)", "Energy & Renewables"],
+    "description": "Lead NVIDIA’s global strategy for weather and climate markets. Build partnerships with agencies and research institutions, identify commercial opportunities, and integrate AI/HPC into climate and Earth system modeling.",
+    "requirements": [
+      "10+ years in weather/climate, geospatial, or scientific computing",
+      "Advanced degree in Atmospheric or Climate Science",
+      "Knowledge of AI, HPC, or cloud-based modeling"
+    ],
+    "skills": ["Climate Analytics", "Business Development", "AI for Climate", "HPC Modeling"],
+    "dateAdded": "2025-09-03",
+    "remote": false,
+    "applicationLink": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Global-Weather-and-Climate-Business-Manager_JR2000249"
+  },
+     {
+    "id": "186",
+    "title": "Adjunct Professor – Earth Sciences",
+    "company": "Mt. San Antonio College",
+    "location": "Walnut, CA, USA",
+    "type": "Part-time, Adjunct",
+    "salary": "$98.45 per hour",
+    "categories": ["Geophysics & Geology", "Professor", "Academia & Research"],
+    "description": "Part-time adjunct pool for Earth Sciences and related courses including Earth Science, Oceanography, and Geology. Involves lecture and lab instruction, student mentorship, and supporting departmental goals.",
+    "requirements": [
+      "Master’s degree in geology, geophysics, earth sciences, meteorology, oceanography, or paleontology",
+      "OR Bachelor’s in geology and Master’s in geography, physics, or geochemistry",
+      "Commitment to community college mission and diversity"
+    ],
+    "skills": ["Teaching", "Earth Sciences", "Oceanography", "Geology"],
+    "posted": "August 26, 2025",
+    "remote": false,
+    "contact": "jbray-ali@mtsac.edu; mhood@mtsac.edu",
+    "applicationLink": "https://hrjobs.mtsac.edu/postings/13731"
+  },
+  {
+    "id": "187",
+    "title": "Postdoctoral Research Associate – Environmental Earth & Atmospheric Sciences",
+    "company": "University of Massachusetts Lowell",
+    "location": "Lowell, MA, USA",
+    "type": "Full-time, Postdoctoral",
+    "salary": "Commensurate with experience",
+    "categories": ["Post-doc", "Climate Science", "Energy & Renewables", "Academia & Research"],
+    "description": "Support ongoing work at the Climate Change Initiative and Rist Institute for Sustainability and Energy. Role involves developing system dynamics models for decarbonization pathways, energy resilience, and stakeholder engagement.",
+    "requirements": [
+      "PhD in system dynamics, data science, energy science, engineering, or related field",
+      "Programming proficiency in Python or R",
+      "Experience with stakeholder-engaged research"
+    ],
+    "skills": ["System Dynamics", "Energy Modeling", "Python", "R", "Stakeholder Engagement"],
+    "posted": "August 28, 2025",
+    "remote": false,
+    "contact": null,
+    "applicationLink": "https://explorejobs.uml.edu/lowell/en-us/job/528201"
+  },
+  {
+    "id": "188",
+    "title": "Bolin Dissertation and Post-MFA Fellowship: Geosciences",
+    "company": "Williams College",
+    "location": "Williamstown, MA, USA",
+    "type": "Two-year Fellowship",
+    "salary": "$57,000 annual stipend + benefits",
+    "categories": ["Post-doc", "Geophysics & Geology", "Academia & Research"],
+    "description": "Two-year residency supporting dissertation completion or portfolio development while teaching one course per year. Fellows receive research support, housing assistance, and mentoring for academic career development.",
+    "requirements": [
+      "PhD candidates (ABD) in geosciences or related fields",
+      "OR Post-MFA degree holders (2025–2026)",
+      "Commitment to diversity and inclusive excellence"
+    ],
+    "skills": ["Teaching", "Research", "Academic Writing"],
+    "posted": "September 1, 2025",
+    "remote": false,
+    "contact": null,
+    "applicationLink": "https://apply.interfolio.com/171976"
+  },
+  {
+    "id": "189",
+    "title": "Assistant Professor – Earth System Science",
+    "company": "Central Michigan University",
+    "location": "Mount Pleasant, MI, USA",
+    "type": "Full-time, Tenure Track (9-month)",
+    "salary": "Undisclosed",
+    "categories": ["Professor", "Academia & Research", "Climate Science", "Geophysics & Geology"],
+    "description": "Tenure-track position in Earth System Science beginning August 2026. Focus areas include environmental change, environmental data science, Earth system processes, and critical zone science.",
+    "requirements": [
+      "PhD in relevant field (ABD considered)",
+      "Potential for excellence in teaching and research",
+      "Commitment to student success and diversity"
+    ],
+    "skills": ["Earth System Science", "Environmental Data Science", "Teaching"],
+    "posted": "September 2, 2025",
+    "remote": false,
+    "contact": null,
+    "applicationLink": "https://www.jobs.cmich.edu/postings/43551"
+  },
+  {
+    "id": "190",
+    "title": "Assistant Professor – Meteorology",
+    "company": "Mississippi State University",
+    "location": "Starkville, MS, USA",
+    "type": "Full-time, Tenure Track (9-month)",
+    "salary": "Undisclosed",
+    "categories": ["Professor", "Weather & Meteorology", "Academia & Research"],
+    "description": "Two tenure-track positions in Meteorology, starting August 2026. Priority areas: Physical Meteorology, Satellite Meteorology, Numerical Weather Prediction, Atmospheric Data Analysis, and Operational Forecasting.",
+    "requirements": [
+      "PhD in Meteorology, Atmospheric Science, or related field (ABD considered)",
+      "Evidence of scholarly productivity",
+      "Commitment to inclusive teaching and mentoring"
+    ],
+    "skills": ["Operational Forecasting", "Numerical Weather Prediction", "Satellite Meteorology"],
+    "posted": "September 2, 2025",
+    "remote": false,
+    "contact": "aem35@msstate.edu",
+    "applicationLink": "https://careers.pageuppeople.com/773/cw/en-us/job/509663"
+  },
+  {
+    "id": "191",
+    "title": "Postdoctoral Research Associate – Coastal Plant Biomechanics & Sediment Transport",
+    "company": "University of New Hampshire",
+    "location": "Durham, NH, USA",
+    "type": "Full-time, Postdoctoral",
+    "salary": "Undisclosed",
+    "categories": ["Post-doc", "Climate Science", "Geophysics & Geology", "Academia & Research"],
+    "description": "Postdoctoral role on a USCRP-funded project studying plant biomechanics and sediment transport in coastal environments. Involves experimental work at Chase Ocean Engineering Laboratory, manuscript writing, and mentoring.",
+    "requirements": [
+      "PhD in Ocean Engineering or related field",
+      "Experience with Matlab or similar programming",
+      "Hands-on experimental/field research experience"
+    ],
+    "skills": ["Sediment Transport", "Biomechanics", "Matlab", "Ocean Engineering"],
+    "posted": "September 3, 2025",
+    "remote": false,
+    "contact": null,
+    "applicationLink": "https://usnh.wd5.myworkdayjobs.com/en-US/Careers/job/University-of-New-Hampshire--Main-Campus/Postdoctoral-Research-Associate_JR4439"
+  }
   ]
 }
