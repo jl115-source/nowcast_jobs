@@ -2154,7 +2154,7 @@
     "location": "St. Mary’s City, MD, USA",
     "type": "Tenure-track Faculty",
     "salary": "$74,000 - $80,000 (USD)",
-    "categories": ["Climate Science", "Professor"],
+    "categories": [ "Professor"],
     "description": "St. Mary’s College of Maryland seeks an Assistant Professor of Marine Science to teach marine science courses, develop undergraduate research programs, and support a new program in marine science. Research emphasis on quantitative skills and integration with Data Science program preferred.",
     "requirements": [
       "PhD in Marine Science, Oceanography, or related",
@@ -2174,7 +2174,7 @@
     "location": "New Haven, CT, USA",
     "type": "Tenure-track / Tenured Faculty",
     "salary": "Undisclosed",
-    "categories": ["Climate Science", "Professor"],
+    "categories": [ "Professor"],
     "description": "Yale EPS and the Yale Center for Natural Carbon Capture invite applications for a faculty position in marine and geological CO2 removal. Research areas include ocean alkalinity enhancement, blue carbon, enhanced weathering, and greenhouse gas mitigation.",
     "requirements": [
       "PhD in oceanography, geochemistry, or related field",
@@ -2236,7 +2236,7 @@
     "location": "Lafayette, LA, USA",
     "type": "Post-doc (2 years, renewable to 3)",
     "salary": "Undisclosed",
-    "categories": ["Post-doc", "Climate Science", "Geophysics & Geology"],
+    "categories": ["Post-doc"],
     "description": "The Louisiana Watershed Flood Center seeks a Postdoctoral Researcher to contribute to NSF-funded projects on hydroclimatic extremes, climate justice, and flood resilience in the Gulf and Caribbean regions. The researcher will perform hydrologic and hydrodynamic modeling, flood risk assessment, and interdisciplinary adaptation planning with partners across the US, Canada, and the UK.",
     "requirements": [
       "PhD in Civil and Environmental Engineering or related field (ABD considered)",
@@ -2257,7 +2257,7 @@
     "location": "Buffalo, NY, USA",
     "type": "Post-doc (2 years, renewable annually)",
     "salary": "$50,000 - $55,000",
-    "categories": ["Post-doc", "Climate Science"],
+    "categories": ["Post-doc"],
     "description": "The Department of Epidemiology and Environmental Health seeks three Postdoctoral Associates for its Center for Climate Change and Health Equity. Research areas include climate change and aging/inequities, vector-borne diseases in Amazon and Congo Basins, and One Health approaches for climate resilience. Responsibilities span quantitative analyses, modeling, manuscript writing, mentoring, and grant development.",
     "requirements": [
       "Doctoral degree (PhD, MD, DDS, PharmD, etc.) in a relevant field",
@@ -2277,7 +2277,7 @@
     "location": "Houghton, MI, USA",
     "type": "Post-doc (12 months)",
     "salary": "Undisclosed",
-    "categories": ["Post-doc", "Geophysics & Geology", "Energy & Renewables"],
+    "categories": ["Post-doc"],
     "description": "The GMES Department at Michigan Tech seeks a Postdoctoral Scholar for DOE-funded CarbonSAFE CCUS research. Work includes reservoir simulation modeling, coupled geomechanics, leakage risk assessments with NRAP tools, and subsurface capacity evaluations for CO₂ storage.",
     "requirements": [
       "PhD in Geoscience, Petroleum Engineering, Civil/Environmental Engineering, or related",
@@ -2356,7 +2356,7 @@
     "location": "Morgantown, WV, USA",
     "type": "Post-doc",
     "salary": "Undisclosed",
-    "categories": ["Post-doc", "Geospatial & GIS", "Geophysics & Geology"],
+    "categories": ["Post-doc"],
     "description": "The Department of Geology and Geography seeks a Postdoctoral Research Associate to study terrestrial laser scanning (TLS) data for mapping forest fire fuels and prescribed fire efficacy. Research includes geospatial data processing, fuel mapping workflows, and scientific publication.",
     "requirements": [
       "PhD in Remote Sensing, Forestry, Geography, Geospatial Science, Computer/Data Science, or related field",
@@ -2396,7 +2396,7 @@
     "location": "Greenville or Manteo, NC, USA",
     "type": "Professor (Tenure-track, 9 months)",
     "salary": "Commensurate with qualifications",
-    "categories": ["Professor", "Climate Science"],
+    "categories": ["Professor"],
     "description": "ECU seeks a tenure-track Assistant or Associate Professor specializing in the human dimensions of coastal and marine environments. Research areas include fisheries, aquaculture, renewable energy, ocean governance, blue carbon, and climate adaptation. The role includes teaching, PhD mentoring, securing extramural funding, and publishing high-impact research.",
     "requirements": [
       "Doctoral degree in Anthropology, Geography, Sociology, Political Science, Agricultural/Environmental Economics, or related discipline",
@@ -2539,7 +2539,7 @@
     "location": "Dhahran, Saudi Arabia",
     "type": "Full-time, Postdoctoral (2-year appointment)",
     "salary": "Undisclosed",
-    "categories": ["Post-doc", "Academia & Research", "Geophysics & Geology"],
+    "categories": ["Post-doc"],
     "description": "Postdoctoral research opportunities in deep learning for sedimentary geology and reservoir characterization (with a focus on Vision-Language and Foundational Models), and quantitative/geochemical modeling applied to carbonate systems.",
     "requirements": [
       "PhD from a top 200 QS-ranked university",
@@ -2828,7 +2828,7 @@
     "location": "Minneapolis, MN / Denver, CO / Amarillo, TX, USA",
     "type": "Full-time",
     "salary": "$95,200 – $135,200",
-    "categories": ["Tech (Data Science & ML)", "Energy & Renewables", "Climate Science"],
+    "categories": ["Tech (Data Science & ML)", "Energy & Renewables" ],
     "description": "Develop machine learning and statistical models to support environmental services. Analyze large datasets, deploy models, and deliver actionable insights to support Xcel’s clean energy transition.",
     "requirements": [
       "Bachelor’s degree in Data Science, Computer Science, Statistics, or related",
@@ -3267,7 +3267,7 @@
     "location": "Mount Pleasant, MI, USA",
     "type": "Full-time, Tenure Track",
     "salary": "Undisclosed",
-    "categories": ["Geophysics & Geology", "Professor", "Academia & Research", "Climate Science"],
+    "categories": ["Geophysics & Geology", "Professor", "Academia & Research"],
     "description": "Tenure-track position in Earth System Science, focusing on environmental change, data science, Earth system processes, or critical zone science. Responsibilities include teaching, research, student mentorship, and securing external funding.",
     "requirements": [
       "PhD in Earth System Science or related field (ABD considered)",
