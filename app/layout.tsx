@@ -1,13 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
 import "./globals.css"
-
-const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-inter",
-})
+import ClientLayout from "./ClientLayout"
 
 export const metadata: Metadata = {
   title: "Nowcast Jobs",
@@ -20,9 +14,5 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  return (
-    <html lang="en" className={inter.variable}>
-      <body className="font-sans antialiased">{children}</body>
-    </html>
-  )
+  return <ClientLayout>{children}</ClientLayout>
 }
