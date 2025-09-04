@@ -53,9 +53,9 @@ export default function Home() {
   }
 
   return (
-    <main className="min-h-screen bg-background flex">
+    <main className="min-h-screen bg-background flex relative">
       <SidebarNavigation currentPage={currentPage} onPageChange={setCurrentPage} />
-      <div className="flex-1">{renderPage()}</div>
+      <div className="flex-1 md:ml-0 pt-16 md:pt-0">{renderPage()}</div>
       <AuthButtons onPageChange={setCurrentPage} />
     </main>
   )

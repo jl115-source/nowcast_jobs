@@ -26,13 +26,18 @@ export function AuthButtons({ onPageChange }: AuthButtonsProps) {
 
     getUser()
 
-    const {
-      data: { subscription },
-    } = supabase.auth.onAuthStateChange((event, session) => {
-      setUser(session?.user ?? null)
-    })
+    try {
+      const {
+        data: { subscription },
+      } = supabase.auth.onAuthStateChange((event, session) => {
+        setUser(session?.user ?? null)
+      })
 
-    return () => subscription.unsubscribe()
+      return () => subscription?.unsubscribe?.()
+    } catch (error) {
+      console.log("[v0] Auth state change not available:", error)
+      return () => {}
+    }
   }, [supabase.auth])
 
   const handleSignOut = async () => {
