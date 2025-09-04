@@ -55,11 +55,6 @@ export function MentorMatchingPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
 
-    if (!user) {
-      setSubmitStatus("error")
-      return
-    }
-
     if (!formData.name || !formData.email || !formData.signupType || !formData.industry) return
 
     setIsSubmitting(true)
@@ -122,8 +117,6 @@ export function MentorMatchingPage() {
     )
   }
 
-  const showLoginWarning = !user
-
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="relative text-center mb-12 rounded-2xl overflow-hidden">
@@ -151,15 +144,6 @@ export function MentorMatchingPage() {
       </div>
 
       <div className="max-w-4xl mx-auto">
-        {showLoginWarning && (
-          <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-6">
-            <div className="flex items-center gap-2 text-red-700">
-              <AlertCircle className="h-5 w-5" />
-              <span className="font-medium">Please login before signing up.</span>
-            </div>
-          </div>
-        )}
-
         <Card className="border-primary/20">
           <CardHeader>
             <div className="flex items-center gap-3">
@@ -197,7 +181,6 @@ export function MentorMatchingPage() {
                     placeholder="Enter your email"
                     value={formData.email}
                     onChange={(e) => setFormData((prev) => ({ ...prev, email: e.target.value }))}
-                    disabled={!!user?.email}
                     required
                     className="bg-primary/10"
                   />
@@ -282,11 +265,7 @@ export function MentorMatchingPage() {
               {submitStatus === "error" && (
                 <div className="flex items-center gap-2 text-red-600 bg-red-50 p-3 rounded-lg">
                   <AlertCircle className="h-4 w-4" />
-                  <span>
-                    {!user
-                      ? "Please sign in to join the mentor matching program."
-                      : "Something went wrong. Please try again."}
-                  </span>
+                  <span>Something went wrong. Please try again.</span>
                 </div>
               )}
             </form>

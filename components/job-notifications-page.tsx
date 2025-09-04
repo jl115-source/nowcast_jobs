@@ -93,11 +93,6 @@ export function JobNotificationsPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
 
-    if (!user) {
-      setSubmitStatus("error")
-      return
-    }
-
     if (!email || selectedCategories.length === 0 || !frequency) return
 
     setIsSubmitting(true)
@@ -176,8 +171,6 @@ export function JobNotificationsPage() {
     )
   }
 
-  const showLoginWarning = !user
-
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
@@ -202,15 +195,6 @@ export function JobNotificationsPage() {
       {/* Content */}
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto">
-          {showLoginWarning && (
-            <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-6">
-              <div className="flex items-center gap-2 text-red-700">
-                <AlertCircle className="h-5 w-5" />
-                <span className="font-medium">Please login before signing up.</span>
-              </div>
-            </div>
-          )}
-
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
@@ -236,11 +220,9 @@ export function JobNotificationsPage() {
                     placeholder="your.email@example.com"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    disabled={!!user?.email}
                     required
                     className="bg-primary/10"
                   />
-                  {user?.email && <p className="text-sm text-muted-foreground">Using your account email</p>}
                 </div>
 
                 <div className="space-y-2">
@@ -308,11 +290,7 @@ export function JobNotificationsPage() {
                 {submitStatus === "error" && (
                   <div className="flex items-center gap-2 text-red-600 bg-red-50 p-3 rounded-lg">
                     <AlertCircle className="h-4 w-4" />
-                    <span>
-                      {!user
-                        ? "Please sign in to subscribe to job notifications."
-                        : "Something went wrong. Please try again."}
-                    </span>
+                    <span>Something went wrong. Please try again.</span>
                   </div>
                 )}
               </form>

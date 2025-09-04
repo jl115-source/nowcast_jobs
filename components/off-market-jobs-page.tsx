@@ -110,11 +110,6 @@ export function OffMarketJobsPage() {
   const handleTalentSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
 
-    if (!user) {
-      setTalentSubmitStatus("error")
-      return
-    }
-
     try {
       const response = await fetch("/api/off-market-signup", {
         method: "POST",
@@ -141,11 +136,6 @@ export function OffMarketJobsPage() {
 
   const handleRecruiterSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-
-    if (!user) {
-      setRecruiterSubmitStatus("error")
-      return
-    }
 
     try {
       const response = await fetch("/api/off-market-signup", {
@@ -181,8 +171,6 @@ export function OffMarketJobsPage() {
       </div>
     )
   }
-
-  const showLoginWarning = !user
 
   if (isTalentSubmitted || isRecruiterSubmitted) {
     return (
@@ -266,15 +254,6 @@ export function OffMarketJobsPage() {
       </div>
 
       <div className="max-w-4xl mx-auto p-6 space-y-8">
-        {showLoginWarning && (
-          <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-6">
-            <div className="flex items-center gap-2 text-red-700">
-              <AlertCircle className="h-5 w-5" />
-              <span className="font-medium">Please login before signing up.</span>
-            </div>
-          </div>
-        )}
-
         <div className="flex justify-center">
           <div className="flex bg-muted rounded-lg p-1">
             <Button
@@ -375,11 +354,9 @@ export function OffMarketJobsPage() {
                         type="email"
                         value={talentFormData.email}
                         onChange={(e) => setTalentFormData((prev) => ({ ...prev, email: e.target.value }))}
-                        disabled={!!user?.email}
                         required
                         className="bg-primary/10"
                       />
-                      {user?.email && <p className="text-sm text-muted-foreground">Using your account email</p>}
                     </div>
                   </div>
 
@@ -482,11 +459,7 @@ export function OffMarketJobsPage() {
                   {talentSubmitStatus === "error" && (
                     <div className="flex items-center gap-2 text-red-600 bg-red-50 p-3 rounded-lg">
                       <AlertCircle className="h-4 w-4" />
-                      <span>
-                        {!user
-                          ? "Please sign in to join the off-market talent network."
-                          : "Something went wrong. Please try again."}
-                      </span>
+                      <span>Something went wrong. Please try again.</span>
                     </div>
                   )}
                 </form>
@@ -573,11 +546,9 @@ export function OffMarketJobsPage() {
                         type="email"
                         value={recruiterFormData.email}
                         onChange={(e) => setRecruiterFormData((prev) => ({ ...prev, email: e.target.value }))}
-                        disabled={!!user?.email}
                         required
                         className="bg-primary/10"
                       />
-                      {user?.email && <p className="text-sm text-muted-foreground">Using your account email</p>}
                     </div>
                   </div>
 
@@ -682,11 +653,7 @@ export function OffMarketJobsPage() {
                   {recruiterSubmitStatus === "error" && (
                     <div className="flex items-center gap-2 text-red-600 bg-red-50 p-3 rounded-lg">
                       <AlertCircle className="h-4 w-4" />
-                      <span>
-                        {!user
-                          ? "Please sign in to apply for recruiter access."
-                          : "Something went wrong. Please try again."}
-                      </span>
+                      <span>Something went wrong. Please try again.</span>
                     </div>
                   )}
                 </form>
