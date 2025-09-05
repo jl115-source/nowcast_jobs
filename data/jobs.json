@@ -4047,13 +4047,13 @@
       "applicationLink": "https://durham.taleo.net/careersection/du_ext/jobdetail.ftl?job=25001213"
     },
     {
-      "id": "221",
+      "id": "1",
       "title": "Postdoctoral Associate – Biogeochemistry & Permafrost Thaw",
       "company": "University of Colorado Boulder",
       "location": "Boulder, CO, USA",
       "type": "Full-time, Research Faculty",
       "salary": "$61,896 annually",
-      "categories": ["Climate Science", "Post-doc", "Academia & Research"],
+      "categories": [ "Post-doc" ],
       "description": "The Turetsky Lab seeks a Postdoctoral Associate to analyze data from a MURI project on permafrost thaw, biogeochemistry, and carbon/nutrient cycling in Arctic and Boreal regions. The role involves data integration, collaboration with NOAA, and publishing manuscripts.",
       "requirements": [
         "PhD in a related field",
