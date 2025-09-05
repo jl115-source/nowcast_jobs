@@ -3562,6 +3562,754 @@
   "remote": true,
   "contact": null,
   "applicationLink": "https://careers.fathom.global/jobs/6394535-geospatial-data-manager-architect"
-}
+},
+      "jobs": [
+    {
+      "id": "201",
+      "title": "UX Designer, Geospatial Visualization, Geo",
+      "company": "Google",
+      "location": "New York, NY, USA",
+      "type": "Full-time",
+      "salary": "$129,000–$185,000 + bonus + equity + benefits",
+      "categories": ["Tech (Data Science & ML)", "Geospatial & GIS", "Climate Science"],
+      "description": "Google seeks a UX Designer for geospatial visualization on the Geo team, focusing on map-based interactions and visualization of complex 2D and 3D geospatial datasets. The role requires expertise in interaction design, geospatial platforms, and immersive experiences.",
+      "requirements": [
+        "Bachelor's degree or equivalent practical experience",
+        "4+ years in interaction or UX design",
+        "Experience with geospatial platforms, data visualization, or 3D immersive design",
+        "Portfolio showcasing relevant work"
+      ],
+      "skills": [
+        "Interaction design",
+        "User-centered design",
+        "Geospatial visualization (2D/3D)",
+        "Motion design and prototyping",
+        "Accessibility design"
+      ],
+      "posted": "Undisclosed (2025)",
+      "remote": false,
+      "contact": null,
+      "applicationLink": "https://www.google.com/about/careers/applications/jobs/results/136583064556839622-ux-designer/"
+    },
+    {
+      "id": "202",
+      "title": "Associate Director – Energy and Environment Policy",
+      "company": "RSK Group",
+      "location": "UK (Remote/Hybrid: Belfast, Birmingham, Bristol, Cambridge, Glasgow, Leeds, London, Manchester, Newcastle)",
+      "type": "Full-time",
+      "salary": "Competitive (based on experience)",
+      "categories": ["Energy & Renewables", "Climate Science", "Academia & Research"],
+      "description": "RSK Group seeks an Associate Director to enhance its energy and environment policy team. The role involves economic and policy analysis, program evaluation, and influencing policy decisions in energy, net zero, and environmental sectors.",
+      "requirements": [
+        "Extensive experience in evaluating energy, net zero, and environmental policy/programmes",
+        "Strong analytical and policy evaluation skills",
+        "Proven track record of influencing policy decisions"
+      ],
+      "skills": [
+        "Policy evaluation",
+        "Economic analysis",
+        "Energy and environment expertise",
+        "Programme delivery"
+      ],
+      "posted": "Undisclosed (2025)",
+      "remote": true,
+      "contact": null,
+      "applicationLink": "https://www.rskgroup.com"
+    },
+    {
+      "id": "203",
+      "title": "Director, Sustainability Risk and Traceability",
+      "company": "LEGO Group",
+      "location": "Billund, Denmark or London, UK",
+      "type": "Full-time",
+      "salary": "Undisclosed",
+      "categories": ["Climate Science", "Energy & Renewables", "Banking & Finance"],
+      "description": "LEGO seeks a Director of Sustainability Risk and Traceability to lead integration of ESG factors into supplier risk assessments, manage supply chain traceability, and support sustainability reporting and governance.",
+      "requirements": [
+        "10+ years in sustainability, supply chain, sourcing, or risk management",
+        "Experience with enterprise and supply chain risk management",
+        "Leadership in global or matrixed organizations",
+        "Proven ability to build and manage traceability systems"
+      ],
+      "skills": [
+        "Sustainability risk",
+        "Traceability systems",
+        "Supply chain governance",
+        "Cross-functional leadership",
+        "Change management"
+      ],
+      "posted": "Undisclosed (2025)",
+      "remote": false,
+      "contact": null,
+      "applicationLink": "https://www.lego.com/en-dk/careers/job/director-sustainability-risk-and-traceability-c4949372457110011f7ffe0068440000"
+    },
+    {
+      "id": "204",
+      "title": "Nature and Climate Assessment Manager",
+      "company": "Syngenta",
+      "location": "Manchester, England, UK (Hybrid)",
+      "type": "Full-time",
+      "salary": "Undisclosed (with pension, bonus, medical, insurance, holidays)",
+      "categories": ["Climate Science", "Energy & Renewables", "Geophysics & Geology"],
+      "description": "Syngenta seeks a Nature and Climate Assessment Manager to lead farm-level sustainability assessments, implement climate impact reduction strategies, and use advanced modeling tools to analyze biodiversity, carbon sequestration, and water management impacts.",
+      "requirements": [
+        "5+ years in agricultural sustainability assessments",
+        "PhD or Master's in Environmental Sciences, Agronomy, or related field",
+        "Experience with climate, water, and biodiversity initiatives",
+        "Expertise in tools such as Cool Farm Tool and Roth-C model"
+      ],
+      "skills": [
+        "Sustainability assessments",
+        "Carbon sequestration methodologies",
+        "Life Cycle Assessment (LCA)",
+        "Biodiversity modeling",
+        "Agricultural emissions modeling"
+      ],
+      "posted": "September 2025",
+      "remote": true,
+      "contact": null,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4295686647"
+    },
+    {
+      "id": "205",
+      "title": "Decarbonisation and Climate Risk Expert",
+      "company": "EDHEC Climate Institute",
+      "location": "London, UK or Singapore",
+      "type": "Full-time",
+      "salary": "Attractive salary + bonus + healthcare + pension",
+      "categories": ["Climate Science", "Banking & Finance", "Academia & Research"],
+      "description": "The EDHEC Climate Institute seeks a Decarbonisation and Climate Risk Expert to develop methodologies for emissions reduction, resilience strategies, and cost-benefit analyses across sectors like infrastructure and real estate. The role involves close engagement with the financial sector and high-impact research publication.",
+      "requirements": [
+        "Advanced degree in engineering, environmental sciences, or related discipline",
+        "Experience in decarbonisation technologies or climate adaptation",
+        "Project delivery experience in infrastructure or industrial sectors",
+        "Familiarity with lifecycle assessment, techno-economic modeling"
+      ],
+      "skills": [
+        "Climate risk modeling",
+        "Decarbonisation strategies",
+        "Cost-benefit analysis",
+        "Lifecycle assessment",
+        "Climate resilience"
+      ],
+      "posted": "September 2025",
+      "remote": true,
+      "contact": null,
+      "applicationLink": "https://www.linkedin.com/jobs/view/4282824411"
+    },
+    {
+      "id": "206",
+      "title": "Associate Catastrophe Model Product Manager (Wildfire/Earthquake)",
+      "company": "Verisk",
+      "location": "Boston, MA, USA",
+      "type": "Full-time",
+      "salary": "Undisclosed",
+      "categories": ["Insurance & Reinsurance", "Geophysics & Geology", "Weather & Meteorology"],
+      "description": "Verisk seeks an Associate Catastrophe Model Product Manager to support development and market launch of North American peril models, focusing on wildfire and earthquake. The role blends geoscience expertise with insurance industry knowledge.",
+      "requirements": [
+        "3+ years developing or working with catastrophe models",
+        "BS degree in a STEM field (Master’s a plus)",
+        "Experience with long-term, complex projects",
+        "Understanding of insurance and reinsurance applications"
+      ],
+      "skills": [
+        "Catastrophe modeling",
+        "Market research",
+        "Risk analysis",
+        "Product management",
+        "Stakeholder engagement"
+      ],
+      "posted": "Undisclosed (2025)",
+      "remote": false,
+      "contact": null,
+      "applicationLink": "https://fa-ewmy-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/1923"
+    },
+    {
+      "id": "207",
+      "title": "Research & Development Specialist – Parametric Reinsurance",
+      "company": "Guy Carpenter (Marsh McLennan)",
+      "location": "New York, NY, USA (Hybrid)",
+      "type": "Full-time",
+      "salary": "$65,600 – $108,300 + performance incentives",
+      "categories": ["Insurance & Reinsurance", "Climate Science", "Weather & Meteorology"],
+      "description": "Guy Carpenter seeks a Research & Development Specialist to design novel parametric insurance solutions for catastrophe risk transfer. The role includes conducting hazard research, coding models, and publishing results, with a focus on parametric instruments and environmental challenges.",
+      "requirements": [
+        "Bachelor's degree in natural hazards, engineering, or related discipline",
+        "Excellent coding skills (MATLAB preferred, Python acceptable)",
+        "At least one peer-reviewed publication",
+        "Ability to communicate technical concepts clearly"
+      ],
+      "skills": [
+        "Parametric reinsurance",
+        "Catastrophe risk transfer",
+        "MATLAB/Python coding",
+        "Technical research and publications"
+      ],
+      "posted": "Undisclosed (2025)",
+      "remote": false,
+      "contact": null,
+      "applicationLink": "https://careers.marshmclennan.com/global/en/job/R_290836"
+    },
+    {
+      "id": "208",
+      "title": "Data Scientist III",
+      "company": "AccuWeather",
+      "location": "Remote or State College, PA, USA",
+      "type": "Full-time",
+      "salary": "Undisclosed",
+      "categories": ["Weather & Meteorology", "Tech (Data Science & ML)", "Climate Science"],
+      "description": "AccuWeather seeks a Data Scientist III to develop advanced models for weather prediction and atmospheric data science. The role involves severe weather forecasting, tropical storm analysis, and mentorship of junior scientists, contributing to industry-wide decision-making.",
+      "requirements": [
+        "5+ years applying advanced meteorological models/algorithms",
+        "Experience leading weather/climate projects",
+        "Expertise in meteorological datasets and remote sensing",
+        "Proficiency in Python, SQL, and C++",
+        "Familiarity with big data tools (e.g., Spark)"
+      ],
+      "skills": [
+        "Atmospheric modeling",
+        "Severe weather prediction",
+        "Remote sensing analysis",
+        "Python/SQL/C++",
+        "Big data analytics"
+      ],
+      "posted": "September 2025",
+      "remote": true,
+      "contact": null,
+      "applicationLink": "https://job-boards.greenhouse.io/accuweather/jobs/7228352"
+    },
+    {
+      "id": "209",
+      "title": "Applied Machine Learning Scientist (Contract/Internship)",
+      "company": "Treeconomy",
+      "location": "Remote/Hybrid",
+      "type": "Contract/Internship",
+      "salary": "Undisclosed",
+      "categories": ["Climate Science", "Tech (Data Science & ML)", "Energy & Renewables"],
+      "description": "Treeconomy seeks an Applied Machine Learning Scientist to develop digital MRV systems for nature-based carbon projects. The role combines satellite imagery, drone data, and ML to measure carbon sequestration and biodiversity impact for the forest carbon market.",
+      "requirements": [
+        "Background in machine learning and environmental sciences",
+        "Strong programming and remote sensing skills",
+        "Interest in carbon markets and biodiversity"
+      ],
+      "skills": [
+        "Machine learning",
+        "Remote sensing",
+        "Carbon market modeling",
+        "MRV system development"
+      ],
+      "posted": "September 2025",
+      "remote": true,
+      "contact": null,
+      "applicationLink": "https://treeconomy.notion.site/Applied-Machine-Learning-Scientist-contract-internship-2630dcbf61878083b030e9a7fc93dedb"
+    },
+    {
+      "id": "210",
+      "title": "International Catastrophe Modeller Lead",
+      "company": "SiriusPoint",
+      "location": "London, UK",
+      "type": "Full-time",
+      "salary": "Undisclosed",
+      "categories": ["Insurance & Reinsurance", "Weather & Meteorology", "Geophysics & Geology"],
+      "description": "SiriusPoint seeks an International Catastrophe Modeller Lead to head catastrophe modelling for the international portfolio. Responsibilities include exposure validation, model execution (AIR/RMS), portfolio roll-up, and communication with underwriters, actuaries, and regulators.",
+      "requirements": [
+        "5–10 years catastrophe modelling experience (AIR/RMS)",
+        "Bachelor’s degree in a quantitative field",
+        "Experience in marine, energy, and non-property exposures",
+        "Strong communication skills and process improvement experience"
+      ],
+      "skills": [
+        "Catastrophe modeling",
+        "Portfolio management",
+        "AIR/RMS software",
+        "SQL/Python",
+        "Data visualization (Tableau/PowerBI)"
+      ],
+      "posted": "Undisclosed (2025)",
+      "remote": false,
+      "contact": null,
+      "applicationLink": "https://jobs.jobvite.com/siriuspoint/job/oO4exfwn"
+    },
+    {
+      "id": "211",
+      "title": "Technical Program Manager, Sustainability",
+      "company": "Google DeepMind",
+      "location": "London, UK",
+      "type": "Full-time",
+      "salary": "Undisclosed",
+      "categories": ["Tech (Data Science & ML)", "Climate Science", "Energy & Renewables"],
+      "description": "Google DeepMind seeks a Technical Program Manager for its Sustainability Program, working on AI applications for grid operations, renewable energy, weather modeling, biodiversity, and agriculture. The role spans research management, program strategy, and operational excellence.",
+      "requirements": [
+        "Technical degree or equivalent in AI, computer science, or sustainability-related fields",
+        "Proven experience in project/program management",
+        "Experience in AI research or sustainability applications",
+        "Strong communication and cross-functional leadership skills"
+      ],
+      "skills": [
+        "AI for sustainability",
+        "Program management",
+        "Climate/energy modeling",
+        "Stakeholder engagement",
+        "Research strategy"
+      ],
+      "posted": "September 2025",
+      "remote": false,
+      "contact": null,
+      "applicationLink": "https://job-boards.greenhouse.io/deepmind/jobs/7217897"
+    },
+         {
+      "id": "212",
+      "title": "Geographic Informational Systems Analyst",
+      "company": "BTG Pactual / TTG Forestry Services LLC",
+      "location": "Atlanta, GA, USA",
+      "type": "Full-time",
+      "salary": "Undisclosed",
+      "categories": ["Geospatial & GIS", "Energy & Renewables", "Climate Science"],
+      "description": "GIS Analyst responsible for forest data management, spatial analysis, map production, land sales/acquisition support, environmental analysis, and maintaining geodatabases. Supports TTG’s forestry management system and internal/external clients.",
+      "requirements": [
+        "Bachelor’s degree in Forestry, Natural Resources, GIS, or related field",
+        "3+ years of experience with data and relational database management",
+        "Experience with QGIS, ESRI ArcGIS Pro",
+        "Familiarity with Trimble Forestry software (Cengea or LRM)",
+        "Experience with enterprise geodatabase management"
+      ],
+      "skills": ["GIS", "ArcGIS Pro", "QGIS", "Database Management", "Spatial Analysis"],
+      "posted": "September 2025",
+      "remote": false,
+      "contact": null,
+      "applicationLink": "https://www.btgpactual.eu/career?gh_jid=5570670004"
+    },
+    {
+      "id": "213",
+      "title": "Industry Specialist – Climate Smart Agriculture",
+      "company": "World Bank Group (IFC)",
+      "location": "Washington, DC, USA",
+      "type": "Full-time (3-year term)",
+      "salary": "Undisclosed",
+      "categories": ["Climate Science", "Energy & Renewables", "Academia & Research"],
+      "description": "The IFC seeks an Industry Specialist for Climate Smart Agriculture (CSA) to develop and expand regenerative agriculture programs. Responsibilities include building frameworks, piloting technologies, supporting private-sector clients, and scaling CSA solutions.",
+      "requirements": [
+        "Advanced degree in Agriculture, Environmental Sciences, or related field",
+        "5+ years relevant work experience in agribusiness and climate change",
+        "Hands-on experience in regenerative agriculture and CSA technologies",
+        "Knowledge of MDB Climate Finance methodology and Paris Agreement processes"
+      ],
+      "skills": ["Climate Smart Agriculture", "Regenerative Agriculture", "Sustainability Finance", "Policy Analysis"],
+      "posted": "September 3, 2025",
+      "remote": false,
+      "contact": null,
+      "applicationLink": "https://worldbankgroup.csod.com/ux/ats/careersite/1/home/requisition/34162"
+    },
+    {
+      "id": "214",
+      "title": "Senior Consultant – Natural Resources",
+      "company": "Esri",
+      "location": "Redlands, CA, USA",
+      "type": "Full-time",
+      "salary": "$104,000–$177,840",
+      "categories": ["Geospatial & GIS", "Climate Science", "Energy & Renewables"],
+      "description": "Esri seeks a Senior Consultant to support clients across industries with location intelligence, environmental management, and natural resources planning. The role includes project management, business development, and innovative ArcGIS implementations.",
+      "requirements": [
+        "8+ years enterprise geospatial technology experience",
+        "Proficiency with ArcGIS Online, Pro, Enterprise",
+        "Bachelor’s degree in geography, GIS, or related STEM field",
+        "Experience in proposal management and business development"
+      ],
+      "skills": ["ArcGIS", "Spatial Analysis", "Project Management", "Business Development"],
+      "posted": "September 2025",
+      "remote": false,
+      "contact": null,
+      "applicationLink": "https://www.esri.com/careers/4825970007"
+    },
+    {
+      "id": "215",
+      "title": "Data Scientist, Product, Geo Data Science",
+      "company": "Google",
+      "location": "Mountain View, CA, USA",
+      "type": "Full-time",
+      "salary": "$113,000–$161,000 + bonus + equity + benefits",
+      "categories": ["Tech (Data Science & ML)", "Geospatial & GIS", "Climate Science"],
+      "description": "Google seeks a Data Scientist to join the Geo Data Science team. Responsibilities include analyzing large datasets, building KPIs, developing BI solutions, and supporting decision-making for Google Maps, Local Search, and Ads.",
+      "requirements": [
+        "Bachelor’s degree in quantitative field",
+        "2+ years experience in statistical analysis and coding (Python, R, SQL)",
+        "Experience with large-scale data analysis",
+        "Preferred: Master’s degree and 3+ years experience"
+      ],
+      "skills": ["Python", "R", "SQL", "Business Intelligence", "Statistical Modeling"],
+      "posted": "September 2025",
+      "remote": false,
+      "contact": null,
+      "applicationLink": "https://www.google.com/about/careers/applications/jobs/results/133624321716167366-data-scientist/"
+    },
+    {
+      "id": "216",
+      "title": "Senior Meteorologist",
+      "company": "San Diego Gas & Electric (SDG&E)",
+      "location": "San Diego, CA, USA",
+      "type": "Full-time",
+      "salary": "Undisclosed (competitive total rewards)",
+      "categories": ["Weather & Meteorology", "Energy & Renewables"],
+      "description": "SDG&E seeks a Senior Meteorologist to provide operational forecasts, fire potential assessments, and weather analyses. The role involves short-range prediction, Red Flag Warnings, storm procedures, and emergency response support.",
+      "requirements": [
+        "Bachelor’s degree in meteorology or atmospheric science",
+        "2–4 years meteorological operations experience",
+        "Strong forecasting and analytical skills",
+        "Preferred: Master’s degree or utility meteorology experience"
+      ],
+      "skills": ["Weather Forecasting", "Fire Weather Analysis", "Python", "Statistical Analysis"],
+      "posted": "Closes October 21, 2025",
+      "remote": false,
+      "contact": null,
+      "applicationLink": "https://myjobs.adp.com/sdgecareers/cx/job-details?reqId=5001141001606"
+    },
+    {
+      "id": "217",
+      "title": "Senior Data Scientist, Brokerage",
+      "company": "Robinhood",
+      "location": "Menlo Park, CA or New York, NY, USA",
+      "type": "Full-time",
+      "salary": "$187,000–$220,000 (Zone 1) + bonus + equity",
+      "categories": ["Banking & Finance", "Trading (Commodities, Weather, Energy)", "Tech (Data Science & ML)"],
+      "description": "Robinhood seeks a Senior Data Scientist to join its Brokerage Data Science team, focusing on risk modeling for leveraged trading products such as margin, options, and futures. The role involves statistical/ML modeling and integration into product workflows.",
+      "requirements": [
+        "PhD in quantitative field with 3+ years experience, or Master's with 5+ years",
+        "Strong statistics and ML modeling skills",
+        "Knowledge of trading asset pricing",
+        "Proficiency in SQL and Spark"
+      ],
+      "skills": ["Machine Learning", "Risk Modeling", "SQL", "Spark", "Trading Analytics"],
+      "posted": "September 2025",
+      "remote": false,
+      "contact": null,
+      "applicationLink": "https://job-boards.greenhouse.io/robinhood/jobs/7070876"
+    },
+    {
+      "id": "218",
+      "title": "Senior Environmental Data Scientist",
+      "company": "GIST Impact",
+      "location": "Remote (India preferred)",
+      "type": "Full-time",
+      "salary": "Undisclosed",
+      "categories": ["Climate Science", "Tech (Data Science & ML)", "Geospatial & GIS"],
+      "description": "GIST Impact seeks a Senior Environmental Data Scientist to lead biodiversity/nature data solutions. Role includes developing scalable analytics, building spatial models, and mentoring junior scientists. Strong focus on applying environmental science at scale.",
+      "requirements": [
+        "PhD or Master’s in environmental science, ecology, or related field",
+        "5+ years applying data science in environmental contexts",
+        "Expert Python skills and software engineering practices",
+        "Proficiency in GIS, remote sensing, ML/AI, and data systems"
+      ],
+      "skills": ["Python", "GIS", "Remote Sensing", "Machine Learning", "Biodiversity Modeling"],
+      "posted": "August 4, 2025",
+      "remote": true,
+      "contact": null,
+      "applicationLink": "https://gistimpact.zohorecruit.in/jobs/Careers/162989000001208474"
+    },
+    {
+      "id": "219",
+      "title": "Director, Sustainability Reporting and Engagement",
+      "company": "Atlassian",
+      "location": "San Francisco, CA; Mountain View, CA; Seattle, WA; or Sydney, Australia",
+      "type": "Full-time",
+      "salary": "Zone A: $163,800–$213,850 (US); AU equivalent disclosed separately",
+      "categories": ["Climate Science", "Academia & Research", "Banking & Finance"],
+      "description": "Atlassian seeks a Director of Sustainability Reporting and Engagement to align sustainability disclosures with customer, investor, and regulatory expectations. The role involves managing the annual report, customer engagement programs, and ESG ratings.",
+      "requirements": [
+        "Extensive experience in sustainability, ESG, or related fields",
+        "Experience leading sustainability reporting initiatives",
+        "Strong communications, narrative development, and stakeholder engagement skills",
+        "Background in SaaS or technology preferred"
+      ],
+      "skills": ["Sustainability Reporting", "ESG Engagement", "Narrative Development", "Cross-functional Leadership"],
+      "posted": "September 2025",
+      "remote": true,
+      "contact": null,
+      "applicationLink": "https://careers-americas.icims.com/jobs/22043/director%2c-sustainability-reporting-and-engagement/job"
+    },
+           {
+      "id": "220",
+      "title": "Associate Professor in Sustainable Earth Energy",
+      "company": "Durham University – Department of Earth Sciences",
+      "location": "Durham, UK",
+      "type": "Full-time, Permanent",
+      "salary": "£59,966 – £67,468 per annum",
+      "categories": ["Geophysics & Geology", "Energy & Renewables", "Professor", "Academia & Research", "Climate Science"],
+      "description": "Durham University seeks an Associate Professor in Sustainable Earth Energy to strengthen research, teaching, and leadership in areas such as low-carbon geoenergy, energy storage, and energy transition resource sustainability. The role includes world-class research, teaching at undergraduate and postgraduate levels, and leadership within the Department of Earth Sciences.",
+      "requirements": [
+        "PhD in Geoscience or related discipline",
+        "Evidence of internationally excellent research in earth energy systems, energy transition, or sustainability",
+        "Significant record of research leadership and grant acquisition",
+        "Proven teaching excellence and curriculum development experience"
+      ],
+      "skills": ["Earth Energy Systems", "Low Carbon Geoenergy", "Energy Transition", "Carbon Sequestration", "Geoscience Teaching"],
+      "posted": "August 2025",
+      "remote": true,
+      "contact": "earthsci.hod@durham.ac.uk",
+      "applicationLink": "https://durham.taleo.net/careersection/du_ext/jobdetail.ftl?job=25001213"
+    },
+    {
+      "id": "221",
+      "title": "Postdoctoral Associate – Biogeochemistry & Permafrost Thaw",
+      "company": "University of Colorado Boulder",
+      "location": "Boulder, CO, USA",
+      "type": "Full-time, Research Faculty",
+      "salary": "$61,896 annually",
+      "categories": ["Climate Science", "Post-doc", "Academia & Research"],
+      "description": "The Turetsky Lab seeks a Postdoctoral Associate to analyze data from a MURI project on permafrost thaw, biogeochemistry, and carbon/nutrient cycling in Arctic and Boreal regions. The role involves data integration, collaboration with NOAA, and publishing manuscripts.",
+      "requirements": [
+        "PhD in a related field",
+        "Experience in biogeochemistry of permafrost thaw",
+        "Strong analytical and writing skills"
+      ],
+      "skills": ["Biogeochemistry", "Permafrost Thaw", "Data Analysis", "Manuscript Preparation"],
+      "posted": "September 3, 2025",
+      "remote": false,
+      "contact": "Recruiting@colorado.edu",
+      "applicationLink": "https://jobs.colorado.edu/jobs/JobDetail/Postdoctoral-Associate/67089"
+    },
+    {
+      "id": "222",
+      "title": "Assistant Professor of Geoscience – Hydrogeosciences",
+      "company": "University of Oklahoma – School of Geosciences",
+      "location": "Norman, OK, USA",
+      "type": "Full-time, Tenure-track",
+      "salary": "Undisclosed",
+      "categories": ["Geophysics & Geology", "Professor", "Academia & Research"],
+      "description": "OU invites applications for a tenure-track Assistant Professor in Hydrogeoscience. The position involves building an externally funded research program, teaching hydrogeoscience courses, and developing interdisciplinary collaborations addressing water resources and critical zone processes.",
+      "requirements": [
+        "PhD in Geology, Hydrogeology, or related field by start date",
+        "Potential for impactful externally funded research",
+        "Commitment to undergraduate and graduate teaching"
+      ],
+      "skills": ["Hydrogeoscience", "Groundwater Modeling", "Water Resources", "Geoscience Teaching"],
+      "posted": "June 4, 2025",
+      "remote": false,
+      "contact": "chodges@ou.edu",
+      "applicationLink": "https://apply.interfolio.com/168657"
+    },
+    {
+      "id": "223",
+      "title": "Assistant Teaching Professor – Marine & Environmental Sciences",
+      "company": "Northeastern University",
+      "location": "Boston, MA, USA",
+      "type": "Full-time, Non-tenure track",
+      "salary": "$76,000 – $93,000",
+      "categories": ["Geophysics & Geology", "Professor", "Academia & Research", "Climate Science"],
+      "description": "Northeastern seeks an Assistant Teaching Professor in Marine & Environmental Sciences with expertise in terrestrial geosciences, geomorphology, soil science, or paleontology. The role involves teaching, mentoring, and offering experiential learning opportunities, including GIS and science communication.",
+      "requirements": [
+        "PhD in Earth/Environmental Sciences or closely related field",
+        "Experience teaching undergraduate and graduate geoscience courses",
+        "Strong communication and leadership skills"
+      ],
+      "skills": ["Geoscience Teaching", "Marine Sciences", "Environmental Sciences", "GIS", "Science Communication"],
+      "posted": "August 2025",
+      "remote": false,
+      "contact": null,
+      "applicationLink": "https://northeastern.wd1.myworkdayjobs.com/en-US/careers/job/Boston-MA-Main-Campus/Assistant-Teaching-Professor--Marine-and-Environmental-Sciences_R133705"
+    },
+    {
+      "id": "224",
+      "title": "Visiting Assistant Instructor/Assistant Professor of Instruction – Geosciences",
+      "company": "University of South Florida – School of Geosciences",
+      "location": "Tampa, FL, USA",
+      "type": "Full-time, Visiting (9-month)",
+      "salary": "$50,000",
+      "categories": ["Geophysics & Geology", "Professor", "Academia & Research"],
+      "description": "USF seeks a Visiting Assistant Instructor or Visiting Assistant Professor of Instruction for the 2025–26 academic year. Responsibilities include teaching undergraduate courses in Structural Geology and Geocomputation.",
+      "requirements": [
+        "M.S. in Geology or closely related field (PhD preferred)",
+        "Ability to teach undergraduate geoscience effectively",
+        "Commitment to inclusive teaching practices"
+      ],
+      "skills": ["Structural Geology", "Geocomputation", "Geoscience Education"],
+      "posted": "May 19, 2025",
+      "remote": false,
+      "contact": "cbconnor@usf.edu",
+      "applicationLink": "https://fa-ewkd-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/USF/job/40644"
+    },
+            {
+      "id": "220",
+      "title": "Associate Professor in Sustainable Earth Energy",
+      "company": "Durham University – Department of Earth Sciences",
+      "location": "Durham, UK",
+      "type": "Full-time, Permanent",
+      "salary": "£59,966 – £67,468 per annum",
+      "categories": ["Geophysics & Geology", "Energy & Renewables", "Professor", "Academia & Research", "Climate Science"],
+      "description": "Durham University seeks an Associate Professor in Sustainable Earth Energy to strengthen research, teaching, and leadership in areas such as low-carbon geoenergy, energy storage, and energy transition resource sustainability. The role includes world-class research, teaching at undergraduate and postgraduate levels, and leadership within the Department of Earth Sciences.",
+      "requirements": [
+        "PhD in Geoscience or related discipline",
+        "Evidence of internationally excellent research in earth energy systems, energy transition, or sustainability",
+        "Significant record of research leadership and grant acquisition",
+        "Proven teaching excellence and curriculum development experience"
+      ],
+      "skills": ["Earth Energy Systems", "Low Carbon Geoenergy", "Energy Transition", "Carbon Sequestration", "Geoscience Teaching"],
+      "posted": "August 2025",
+      "remote": true,
+      "contact": "earthsci.hod@durham.ac.uk",
+      "applicationLink": "https://durham.taleo.net/careersection/du_ext/jobdetail.ftl?job=25001213"
+    },
+    {
+      "id": "221",
+      "title": "Postdoctoral Associate – Biogeochemistry & Permafrost Thaw",
+      "company": "University of Colorado Boulder",
+      "location": "Boulder, CO, USA",
+      "type": "Full-time, Research Faculty",
+      "salary": "$61,896 annually",
+      "categories": ["Climate Science", "Post-doc", "Academia & Research"],
+      "description": "The Turetsky Lab seeks a Postdoctoral Associate to analyze data from a MURI project on permafrost thaw, biogeochemistry, and carbon/nutrient cycling in Arctic and Boreal regions. The role involves data integration, collaboration with NOAA, and publishing manuscripts.",
+      "requirements": [
+        "PhD in a related field",
+        "Experience in biogeochemistry of permafrost thaw",
+        "Strong analytical and writing skills"
+      ],
+      "skills": ["Biogeochemistry", "Permafrost Thaw", "Data Analysis", "Manuscript Preparation"],
+      "posted": "September 3, 2025",
+      "remote": false,
+      "contact": "Recruiting@colorado.edu",
+      "applicationLink": "https://jobs.colorado.edu/jobs/JobDetail/Postdoctoral-Associate/67089"
+    },
+    {
+      "id": "222",
+      "title": "Assistant Professor of Geoscience – Hydrogeosciences",
+      "company": "University of Oklahoma – School of Geosciences",
+      "location": "Norman, OK, USA",
+      "type": "Full-time, Tenure-track",
+      "salary": "Undisclosed",
+      "categories": ["Geophysics & Geology", "Professor", "Academia & Research"],
+      "description": "OU invites applications for a tenure-track Assistant Professor in Hydrogeoscience. The position involves building an externally funded research program, teaching hydrogeoscience courses, and developing interdisciplinary collaborations addressing water resources and critical zone processes.",
+      "requirements": [
+        "PhD in Geology, Hydrogeology, or related field by start date",
+        "Potential for impactful externally funded research",
+        "Commitment to undergraduate and graduate teaching"
+      ],
+      "skills": ["Hydrogeoscience", "Groundwater Modeling", "Water Resources", "Geoscience Teaching"],
+      "posted": "June 4, 2025",
+      "remote": false,
+      "contact": "chodges@ou.edu",
+      "applicationLink": "https://apply.interfolio.com/168657"
+    },
+    {
+      "id": "223",
+      "title": "Assistant Teaching Professor – Marine & Environmental Sciences",
+      "company": "Northeastern University",
+      "location": "Boston, MA, USA",
+      "type": "Full-time, Non-tenure track",
+      "salary": "$76,000 – $93,000",
+      "categories": ["Geophysics & Geology", "Professor", "Academia & Research", "Climate Science"],
+      "description": "Northeastern seeks an Assistant Teaching Professor in Marine & Environmental Sciences with expertise in terrestrial geosciences, geomorphology, soil science, or paleontology. The role involves teaching, mentoring, and offering experiential learning opportunities, including GIS and science communication.",
+      "requirements": [
+        "PhD in Earth/Environmental Sciences or closely related field",
+        "Experience teaching undergraduate and graduate geoscience courses",
+        "Strong communication and leadership skills"
+      ],
+      "skills": ["Geoscience Teaching", "Marine Sciences", "Environmental Sciences", "GIS", "Science Communication"],
+      "posted": "August 2025",
+      "remote": false,
+      "contact": null,
+      "applicationLink": "https://northeastern.wd1.myworkdayjobs.com/en-US/careers/job/Boston-MA-Main-Campus/Assistant-Teaching-Professor--Marine-and-Environmental-Sciences_R133705"
+    },
+    {
+      "id": "224",
+      "title": "Visiting Assistant Instructor/Assistant Professor of Instruction – Geosciences",
+      "company": "University of South Florida – School of Geosciences",
+      "location": "Tampa, FL, USA",
+      "type": "Full-time, Visiting (9-month)",
+      "salary": "$50,000",
+      "categories": ["Geophysics & Geology", "Professor", "Academia & Research"],
+      "description": "USF seeks a Visiting Assistant Instructor or Visiting Assistant Professor of Instruction for the 2025–26 academic year. Responsibilities include teaching undergraduate courses in Structural Geology and Geocomputation.",
+      "requirements": [
+        "M.S. in Geology or closely related field (PhD preferred)",
+        "Ability to teach undergraduate geoscience effectively",
+        "Commitment to inclusive teaching practices"
+      ],
+      "skills": ["Structural Geology", "Geocomputation", "Geoscience Education"],
+      "posted": "May 19, 2025",
+      "remote": false,
+      "contact": "cbconnor@usf.edu",
+      "applicationLink": "https://fa-ewkd-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/USF/job/40644"
+    },
+          {
+      "id": "225",
+      "title": "Geophysics Postdoctoral Research Associate",
+      "company": "Los Alamos National Laboratory (LANL)",
+      "location": "Los Alamos, NM, USA",
+      "type": "Full-time, Postdoctoral (2-year, extendable to 3 years)",
+      "salary": "Starting at $97,000 annually",
+      "categories": ["Geophysics & Geology", "Post-doc", "Academia & Research"],
+      "description": "The Earth and Environmental Sciences Division at LANL seeks a postdoctoral research associate in geophysics to analyze seafloor seismic signals and hydroacoustic propagation. Research will focus on thermohaline effects on marine sound, seabed scattering, T-phase conversion, and sea ice impacts on hydroacoustic propagation.",
+      "requirements": [
+        "PhD in geophysics, seismology, oceanography, or related field (within 5 years of degree)",
+        "Experience in seismic and hydroacoustic data analysis",
+        "Proficiency in Python or similar programming languages",
+        "Strong publication and presentation record"
+      ],
+      "skills": ["Seismic Data Analysis", "Hydroacoustic Propagation", "Signal Processing", "Python", "Geophysical Modeling"],
+      "posted": "September 2025",
+      "remote": false,
+      "contact": "char@lanl.gov",
+      "applicationLink": "https://lanl.jobs/search/jobdetails/geophysics-postdoctoral-research-associate/58236fec-4ddf-41c6-add8-4a7775501009"
+    },
+    {
+      "id": "226",
+      "title": "Geophysicist",
+      "company": "ENSCO",
+      "location": "Reston, VA, USA",
+      "type": "Full-time",
+      "salary": "$90,001 – $158,113 annually",
+      "categories": ["Geophysics & Geology", "Tech (Data Science & ML)"],
+      "description": "ENSCO seeks a Geophysicist to support national security projects related to geophysical data collection, modeling, and underground facility characterization. Work includes seismic, GPR, EM surveys, algorithm development, subsurface modeling, and integration with DoD/IC missions.",
+      "requirements": [
+        "Bachelor’s degree in Geophysics, Physics, or related field",
+        "5+ years of geophysics experience",
+        "Active TS/SCI clearance",
+        "Proficiency in seismic, EM, radar survey techniques",
+        "Experience with algorithm development and ML for geophysical data"
+      ],
+      "skills": ["Seismic Surveys", "Electromagnetic Surveys", "Ground-Penetrating Radar", "Machine Learning", "3D Geophysical Modeling"],
+      "posted": "September 2025",
+      "remote": false,
+      "contact": "Undisclosed",
+      "applicationLink": "https://job-boards.greenhouse.io/ensco/jobs/4895991008"
+    },
+    {
+      "id": "227",
+      "title": "Earth & Environmental Sciences Postdoctoral Research Associate",
+      "company": "Los Alamos National Laboratory (LANL)",
+      "location": "Los Alamos, NM, USA",
+      "type": "Full-time, Postdoctoral",
+      "salary": "Starting at $94,500 annually",
+      "categories": ["Geophysics & Geology", "Post-doc", "Academia & Research"],
+      "description": "LANL seeks two postdoctoral research associates in geophysics within the Earth & Environmental Sciences Division (EES-17). Work includes nonlinear acoustics, seismology, geodynamics, geomechanics, and machine learning applications to subsurface detection and seismic imaging.",
+      "requirements": [
+        "PhD in STEM (science, technology, engineering, or mathematics)",
+        "Experience in continuum mechanics, shock physics, geomechanics, or seismic modeling",
+        "Strong publication record in peer-reviewed journals"
+      ],
+      "skills": ["Geomechanics", "Seismology", "Numerical Modeling", "Machine Learning", "Constitutive Modeling"],
+      "posted": "September 2025",
+      "remote": false,
+      "contact": "Undisclosed",
+      "applicationLink": "https://lanl.jobs/search/jobdetails/earth--environmental-sciences-postdoctoral-research-associate/da456c61-689a-489c-8316-908a432e90f9"
+    },
+    {
+      "id": "228",
+      "title": "Post Doctoral Research Associate – Solar-Terrestrial Physics",
+      "company": "New Jersey Institute of Technology (NJIT)",
+      "location": "Newark, NJ, USA",
+      "type": "Full-time, Postdoctoral",
+      "salary": "Commensurate with experience",
+      "categories": ["Climate Science", "Geophysics & Geology", "Post-doc", "Academia & Research", "Space Weather"],
+      "description": "The NJIT Center for Solar-Terrestrial Research seeks a Postdoctoral Associate in solar-terrestrial physics. Research will involve spacecraft and ground-based instrument data (radars, magnetometers, GNSS) to investigate magnetosphere–ionosphere–aeronomy interactions.",
+      "requirements": [
+        "PhD in space physics, plasma physics, geophysics, or related fields",
+        "Experience with solar-terrestrial research",
+        "Strong research publication record"
+      ],
+      "skills": ["Solar-Terrestrial Physics", "Magnetosphere & Ionosphere Research", "Space Physics Instrumentation", "Data Analysis"],
+      "posted": "May 6, 2025",
+      "remote": false,
+      "contact": "lindsay.v.goodwin@njit.edu",
+      "applicationLink": "https://njit.csod.com/ux/ats/careersite/1/home/requisition/7912"
+    }
   ]
 }
