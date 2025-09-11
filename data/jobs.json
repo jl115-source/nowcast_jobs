@@ -4309,6 +4309,504 @@
       "remote": false,
       "contact": "lindsay.v.goodwin@njit.edu",
       "applicationLink": "https://njit.csod.com/ux/ats/careersite/1/home/requisition/7912"
-    }
+    },
+    {
+    "id": "289",
+    "title": "Senior Research Scientist",
+    "company": "Technology Service Corporation (TSC)",
+    "location": "Washington, DC – Naval Research Laboratory",
+    "type": "Full-time",
+    "salary": "Undisclosed",
+    "categories": ["Weather & Meteorology", "Climate Science", "Tech (Data Science & ML)", "Academia & Research"],
+    "description": "TSC seeks a Senior Research Scientist to support the Naval Research Laboratory, advancing global and space weather prediction capabilities. The role involves GNSS-RO assimilation, forward operator development, and work within JEDI, GSI, and WRFDA data assimilation frameworks.",
+    "requirements": [
+      "PhD in Atmospheric Science, Meteorology, Space Physics, or related field with 10+ years of experience",
+      "Expertise in satellite assimilation (GNSS-RO, radiances)",
+      "Experience with Fortran, C++, and Python in HPC workflows",
+      "Active US security clearance with SCI eligibility"
+    ],
+    "skills": ["GNSS Radio Occultation", "Data Assimilation", "JEDI", "GSI", "WRFDA", "Fortran", "Python", "C++"],
+    "posted": "September 2025",
+    "remote": false,
+    "contact": "Undisclosed",
+    "applicationLink": "https://tsc.wd12.myworkdayjobs.com/en-US/TSC-Careers/job/Washington-DC---Naval-Research-Laboratory/Senior-Research-Scientist_JR2174"
+  },
+  {
+    "id": "290",
+    "title": "Research Fellow (Biodiversity Credits)",
+    "company": "University of Nottingham",
+    "location": "Nottingham, UK",
+    "type": "Full-time, Fixed-term (until January 2026)",
+    "salary": "£35,116 – £46,735 per annum",
+    "categories": ["Climate Science", "Academia & Research", "Geospatial & GIS", "Post-doc"],
+    "description": "Two post-doctoral scientists will join a NERC-funded project to develop decision-support tools for biodiversity credits and investment. Work involves biodiversity credit methodologies, coding workflows, GIS-based analyses, and interdisciplinary collaboration.",
+    "requirements": [
+      "PhD in ecology, geography, or related field",
+      "Experience with biodiversity methodologies and statistical coding",
+      "Track record of publications in relevant journals"
+    ],
+    "skills": ["Biodiversity Credits", "GIS", "Statistical Modeling", "Data Simulation", "Python or R"],
+    "posted": "September 2025",
+    "remote": false,
+    "contact": "richard.field@nottingham.ac.uk",
+    "applicationLink": "https://jobs.nottingham.ac.uk/vacancy.aspx?ref=SOC231525"
+  },
+  {
+    "id": "291",
+    "title": "Research Scientist – AI for Climate & Weather Simulation",
+    "company": "NVIDIA",
+    "location": "Santa Clara, CA (Remote eligible in US)",
+    "type": "Full-time",
+    "salary": "$160,000 – $258,750 annually + equity + benefits",
+    "categories": ["Tech (Data Science & ML)", "Climate Science", "Weather & Meteorology", "Academia & Research"],
+    "description": "NVIDIA Research’s Climate & Weather Simulation Team seeks a research scientist to develop AI approaches for Earth System Modeling. Topics include convection-permitting AI atmosphere, autoregressive prediction, and climate state sampling. Role involves publishing, prototyping, and scaling models on NVIDIA GPUs.",
+    "requirements": [
+      "PhD in geophysical sciences, computer science, applied math, or related field",
+      "Strong publication record in AI or climate science",
+      "Proficiency in deep learning (PyTorch preferred)",
+      "Experience with distributed training and high-compute scaling"
+    ],
+    "skills": ["Deep Learning", "Climate Modeling", "PyTorch", "CUDA", "Generative AI", "Earth System Prediction"],
+    "posted": "September 2025",
+    "remote": true,
+    "contact": "Undisclosed",
+    "applicationLink": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Research-Scientist--AI-for-Climate-and-Weather-Simulation----New-College-Grad-2025_JR2003216"
+  },
+  {
+    "id": "292",
+    "title": "Catastrophe Modeller",
+    "company": "Augment Risk",
+    "location": "East Coast, USA (Remote possible)",
+    "type": "Full-time",
+    "salary": "Undisclosed (equity offered)",
+    "categories": ["Insurance & Reinsurance", "Banking & Finance", "Tech (Data Science & ML)", "Weather & Meteorology"],
+    "description": "Augment Risk seeks a Catastrophe Modeller to lead analytics across MGA, reinsurance, ILS, and parametric products. Responsibilities include catastrophe model execution, parametric product innovation, and programming-driven automation for risk analysis.",
+    "requirements": [
+      "Bachelor’s degree in Finance, Business, Economics, or related field",
+      "5+ years in catastrophe modeling (RMS & AIR required)",
+      "Programming skills (Python, R, SQL)",
+      "Strong knowledge of reinsurance and risk transfer structures"
+    ],
+    "skills": ["Catastrophe Modeling", "AIR", "RMS", "Python", "SQL", "Reinsurance Structures"],
+    "posted": "September 2025",
+    "remote": true,
+    "contact": "Undisclosed",
+    "applicationLink": "https://ats.rippling.com/en-GB/augment-risk-services-llc/jobs/2c44f202-ca08-4906-b0d8-8fe8d430fc6d"
+  },
+  {
+    "id": "293",
+    "title": "Energy & Climate Analytics Modeler (Associate)",
+    "company": "BlackRock",
+    "location": "New York, NY",
+    "type": "Full-time",
+    "salary": "$132,500 – $162,000 annually + bonus + benefits",
+    "categories": ["Banking & Finance", "Climate Science", "Geospatial & GIS", "Tech (Data Science & ML)"],
+    "description": "BlackRock’s Energy and Climate Analytics team develops models quantifying financial impacts of energy policy, natural hazards, and climate risks. The role involves geospatial data analysis, financial modeling, and integration into Aladdin’s risk management platform.",
+    "requirements": [
+      "Bachelor’s, Master’s, or PhD in quantitative fields (e.g., environmental engineering, geospatial data science, financial engineering)",
+      "Experience with geospatial and climate datasets",
+      "Strong Python skills (pandas, geopandas, xarray)",
+      "Knowledge of financial modeling concepts"
+    ],
+    "skills": ["Geospatial Data Science", "Climate Risk Modeling", "Python", "xarray", "Financial Modeling"],
+    "posted": "July 2025",
+    "remote": false,
+    "contact": "Undisclosed",
+    "applicationLink": "https://careers.blackrock.com/job/-/-/45831/85960458384"
+  },
+     {
+    "id": "294",
+    "title": "Catastrophe Modeling Specialist",
+    "company": "MSIG USA",
+    "location": "Warren, NJ / New York, NY (Hybrid)",
+    "type": "Full-time",
+    "salary": "$95,000 – $125,000 annually",
+    "categories": ["Insurance & Reinsurance", "Banking & Finance", "Weather & Meteorology"],
+    "description": "MSIG USA seeks a Catastrophe Modeling Specialist to run AIR Touchstone models, oversee outsourced modeling operations, manage exposure data, and support underwriting risk analyses. The role requires hands-on modeling execution and coordination with BPO vendors.",
+    "requirements": [
+      "Bachelor’s degree in Mathematics, Risk Management, Engineering, Computer Science, or related field",
+      "3+ years of catastrophe modeling experience",
+      "Hands-on AIR Touchstone experience (RMS a plus)",
+      "Knowledge of catastrophe perils (hurricane, earthquake, wildfire)"
+    ],
+    "skills": ["AIR Touchstone", "RMS", "SQL", "Geospatial Analysis", "Portfolio Risk Management"],
+    "posted": "August 2025",
+    "remote": false,
+    "contact": "Undisclosed",
+    "applicationLink": "https://msigna.wd5.myworkdayjobs.com/gbl/job/NY-NYC-Ave-of-Americas/Catastrophe-Modeling-Specialist_JR-000430"
+  },
+  {
+    "id": "295",
+    "title": "Sustainable Biomass Scientist",
+    "company": "Carbon Direct",
+    "location": "Remote (United States)",
+    "type": "Full-time",
+    "salary": "$133,000 – $163,000 annually",
+    "categories": ["Climate Science", "Energy & Renewables", "Academia & Research"],
+    "description": "Carbon Direct seeks a Sustainable Biomass Scientist to evaluate biomass feedstocks, analyze supply chains, ensure compliance with sustainability frameworks, and advise clients on biomass-based climate solutions. The role includes research, regulatory analysis, and client engagement.",
+    "requirements": [
+      "Bachelor’s degree in environmental science, forestry, agriculture, or related field (advanced degree preferred)",
+      "Experience in biomass sustainability, supply chains, or carbon removal",
+      "Knowledge of regulatory frameworks and sustainability certifications"
+    ],
+    "skills": ["Biomass Sustainability", "Carbon Removal", "Supply Chain Analysis", "LCA", "Policy & Regulation"],
+    "posted": "September 2025",
+    "remote": true,
+    "contact": "Undisclosed",
+    "applicationLink": "https://job-boards.greenhouse.io/carbondirect/jobs/4865662007"
+  },
+  {
+    "id": "296",
+    "title": "Manager, Sustainability Data & Reporting",
+    "company": "BDO USA",
+    "location": "Dallas, TX (multiple US locations available)",
+    "type": "Full-time",
+    "salary": "$115,000 – $135,000 annually",
+    "categories": ["Banking & Finance", "Climate Science", "Tech (Data Science & ML)"],
+    "description": "BDO seeks a Sustainability Data & Reporting Manager to oversee GHG accounting, ESG data management, reporting frameworks (GRI, SASB, TCFD, CDP, CSRD), and annual disclosures. The role involves project management, data governance, and stakeholder engagement.",
+    "requirements": [
+      "Bachelor’s degree in Finance, Data Science, Environmental Science, or related field",
+      "5+ years sustainability reporting and GHG accounting experience",
+      "Knowledge of ESG frameworks (GRI, SASB, TCFD, CDP, SBTi, CSRD)",
+      "Advanced Excel and Power BI proficiency"
+    ],
+    "skills": ["GHG Accounting", "Sustainability Reporting", "Power BI", "Envizi/Watershed/Persefoni", "Project Management"],
+    "posted": "July 2025",
+    "remote": true,
+    "contact": "Undisclosed",
+    "applicationLink": "https://ebqb.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/BDOExperiencedCareers/job/9348"
+  },
+  {
+    "id": "297",
+    "title": "Lead Research Engineer, Earth System",
+    "company": "Allen Institute for AI (AI2)",
+    "location": "Seattle, WA (Hybrid, Greater Seattle area)",
+    "type": "Full-time",
+    "salary": "$200,800 – $301,320 annually + bonus",
+    "categories": ["Tech (Data Science & ML)", "Geospatial & GIS", "Climate Science", "Academia & Research"],
+    "description": "The Allen Institute for AI seeks a Lead Research Engineer for its Earth-System platform, focused on planetary intelligence using geospatial foundation models. Work includes scaling ML for geospatial data, climate and environmental analysis, and AI-first tools for decision-makers.",
+    "requirements": [
+      "Bachelor’s degree in Computer Science, AI/ML, or related technical field",
+      "5+ years in machine learning research and engineering",
+      "Expertise in geospatial AI (remote sensing, geospatial trajectories)",
+      "Experience coding in Python, C/C++, and scaling ML systems"
+    ],
+    "skills": ["Geospatial AI", "Machine Learning", "Remote Sensing", "Foundation Models", "Python", "Cloud Infrastructure"],
+    "posted": "September 2025",
+    "remote": false,
+    "contact": "Undisclosed",
+    "applicationLink": "https://job-boards.greenhouse.io/thealleninstitute/jobs/6884878"
+  },
+  {
+    "id": "298",
+    "title": "Senior Geological Advisor – Digital Transformation",
+    "company": "Viridien (CGG)",
+    "location": "Houston, TX",
+    "type": "Full-time",
+    "salary": "Undisclosed",
+    "categories": ["Geophysics & Geology", "Energy & Renewables"],
+    "description": "Viridien seeks a Senior Geological Advisor to support digital transformation initiatives, integrating advanced geoscience workflows, data-driven solutions, and innovation in exploration and reservoir management.",
+    "requirements": [
+      "Advanced degree in Geosciences or related field",
+      "Experience in geological advisory roles within energy sector",
+      "Knowledge of digital transformation in geosciences"
+    ],
+    "skills": ["Geoscience Advisory", "Digital Transformation", "Exploration Workflows", "Reservoir Management"],
+    "posted": "September 2025",
+    "remote": false,
+    "contact": "Undisclosed",
+    "applicationLink": "https://cgg.wd103.myworkdayjobs.com/en-US/viridiencareers/job/Houston-United-States-of-America/Senior-Geological-Advisor---Digital-Transformation_JR100859"
+  },
+  {
+    "id": "299",
+    "title": "Energy Modeller",
+    "company": "Confidential (via Hays Recruitment)",
+    "location": "Greater Toronto Area, Canada (Hybrid)",
+    "type": "Full-time",
+    "salary": "CA$70,000 – CA$90,000 annually",
+    "categories": ["Energy & Renewables", "Climate Science"],
+    "description": "An engineering consultancy seeks an Energy Modeller to apply advanced simulation tools for building energy performance analysis. Responsibilities include HVAC and lighting modeling, energy audits, compliance assessments, and energy incentive applications.",
+    "requirements": [
+      "Post-secondary education in engineering, building science, or related field",
+      "3+ years relevant experience",
+      "Proficiency with simulation tools (eQuest, IES-VE, EnergyPlus, Trace, HAP)"
+    ],
+    "skills": ["Energy Modeling", "HVAC Design", "Energy Audits", "EnergyPlus", "eQuest"],
+    "posted": "September 2025",
+    "remote": false,
+    "contact": "alice.dibley@hays.com",
+    "applicationLink": "https://www.linkedin.com/jobs/view/4296968866/"
+  },
+  {
+    "id": "300",
+    "title": "Senior Geospatial Machine Learning Engineer",
+    "company": "Overstory",
+    "location": "Remote (US, Canada, Europe eligible locations)",
+    "type": "Full-time",
+    "salary": "Competitive + equity",
+    "categories": ["Tech (Data Science & ML)", "Geospatial & GIS", "Climate Science", "Energy & Renewables"],
+    "description": "Overstory seeks a Senior Geospatial ML Engineer to develop vegetation intelligence products for grid resilience. Work involves geospatial datasets, deep learning algorithms, wildfire risk assessment, and vegetation management modeling.",
+    "requirements": [
+      "8+ years as Data Scientist/ML Engineer",
+      "Advanced Python (numpy, pandas, scikit-learn, PyTorch/TensorFlow)",
+      "Experience with geospatial/satellite data (GDAL, rasterio, QGIS, geopandas)",
+      "Experience leading small teams"
+    ],
+    "skills": ["Geospatial ML", "Remote Sensing", "Wildfire Risk", "Python", "PyTorch", "QGIS"],
+    "posted": "September 2025",
+    "remote": true,
+    "contact": "Undisclosed",
+    "applicationLink": "https://job-boards.eu.greenhouse.io/overstory/jobs/4411330101"
+  },
+    [
+  {
+    "id": "301",
+    "title": "Senior Atmospheric Scientist - Convection",
+    "company": "Rainmaker Technology Corporation",
+    "location": "Boulder, CO",
+    "type": "Full-time, On-site",
+    "salary": "$90,000 – $200,000",
+    "categories": ["Weather & Meteorology", "Climate Science", "Academia & Research"],
+    "description": "Rainmaker is pioneering cloud seeding systems to address water scarcity and weather challenges. The role focuses on convective cloud seeding research, aerosol-cloud interactions, and numerical weather prediction modeling for precipitation enhancement.",
+    "requirements": [
+      "Master’s or Ph.D. in meteorology, atmospheric science, physics, or related field",
+      "Experience with convective storm system modeling or observational studies",
+      "Proficiency with Fortran, Python, MATLAB, R, or C++",
+      "Experience with AWS cloud computing and large dataset analysis"
+    ],
+    "skills": ["Numerical Weather Prediction", "Convective Modeling", "Cloud Microphysics", "Aerosol-Cloud Interactions", "AWS Cloud"],
+    "posted": "September 2025",
+    "remote": false,
+    "contact": "Undisclosed",
+    "applicationLink": "https://www.linkedin.com/jobs/view/4289988688/"
+  },
+  {
+    "id": "302",
+    "title": "Research Scientist - Weather and Climate Risks / Machine Learning & AI",
+    "company": "FM Global",
+    "location": "Norwood, MA",
+    "type": "Full-time, On-site",
+    "salary": "$90,720 – $130,400",
+    "categories": ["Insurance & Reinsurance", "Weather & Meteorology", "Tech (Data Science & ML)", "Climate Science"],
+    "description": "FM seeks a Research Scientist to advance climate risk research, focusing on extreme weather such as tropical cyclones, convective storms, and extreme rainfall. The role emphasizes machine learning, statistical downscaling, and climate model analysis.",
+    "requirements": [
+      "MS with 3+ years experience or PhD in meteorology, data science, or related field",
+      "Experience with climate models and downscaling techniques",
+      "Proficiency in Python, R, Fortran, and/or MATLAB",
+      "Experience with ML/AI applied to climate or geospatial data"
+    ],
+    "skills": ["Extreme Weather Modeling", "Climate Risk Analysis", "Machine Learning", "Statistical Downscaling", "HPC/Cloud Computing"],
+    "posted": "September 2025",
+    "remote": false,
+    "contact": "Undisclosed",
+    "applicationLink": "https://www.careersatfm.com/job/-/-/474/82067480096"
+  },
+  {
+    "id": "303",
+    "title": "Climate Risk Modeling Senior Manager",
+    "company": "EY (Climate Change and Sustainability Services)",
+    "location": "Chicago, Dallas, Denver, Houston, Washington, DC",
+    "type": "Full-time, On-site",
+    "salary": "$150,400 – $343,600 (higher in NY, CA, WA)",
+    "categories": ["Banking & Finance", "Climate Science", "Tech (Data Science & ML)", "Insurance & Reinsurance"],
+    "description": "EY seeks a Senior Manager in Climate Risk Modeling to lead client engagements on decarbonization, climate risk assessments, scenario analysis, and disclosure frameworks. The role combines consulting, modeling, and climate adaptation strategies.",
+    "requirements": [
+      "Bachelor’s or Master’s in Climate Science, Physics, Environmental Economics, or related field",
+      "8+ years of relevant experience",
+      "Experience with climate risk modeling, GHG inventories, and TCFD reporting",
+      "External consulting experience at a major firm"
+    ],
+    "skills": ["Climate Risk Modeling", "Scenario Analysis", "Decarbonization Strategies", "ESG Reporting", "Python", "SQL", "Tableau/Power BI"],
+    "posted": "September 2025",
+    "remote": false,
+    "contact": "Undisclosed",
+    "applicationLink": "https://www.linkedin.com/jobs/view/4284306794/"
+  },
+  {
+    "id": "304",
+    "title": "Weather Data Engineer",
+    "company": "Confidential (via Acquire Me recruiting)",
+    "location": "Greenwich, CT (with roles in NY, Chicago, TX)",
+    "type": "Full-time, On-site",
+    "salary": "$150,000 – $300,000",
+    "categories": ["Trading (Commodities, Weather, Energy)", "Weather & Meteorology", "Tech (Data Science & ML)"],
+    "description": "A leading global trading firm is hiring a Python Data Engineer to build scalable pipelines supporting weather forecasting and trading. Work includes ETL workflows, validation, and integration of weather/climate datasets with trading models.",
+    "requirements": [
+      "3+ years in data engineering",
+      "Strong Python (Pandas, NumPy, FastAPI)",
+      "Experience with weather/climate data (Copernicus, Xarray, Zarr, NetCDF)",
+      "Proficiency with ETL frameworks and SQL",
+      "Cloud experience (AWS, GCP, Azure)"
+    ],
+    "skills": ["Python", "Data Engineering", "Weather/Climate Data", "ETL Frameworks", "AWS/GCP/Azure", "SQL"],
+    "posted": "September 2025",
+    "remote": false,
+    "contact": "Sanj Mahendran (Acquire Me recruiter)",
+    "applicationLink": "https://www.linkedin.com/jobs/view/4284306794/"
+  },
+  {
+    "id": "305",
+    "title": "Catastrophe Risk Analyst - Property Analytics, Reinsurance",
+    "company": "Aon",
+    "location": "London, United Kingdom (Hybrid)",
+    "type": "Full-time",
+    "salary": "Undisclosed",
+    "categories": ["Insurance & Reinsurance", "Banking & Finance", "Geospatial & GIS", "Tech (Data Science & ML)"],
+    "description": "Aon’s Catastrophe Analytics team seeks a Cat Risk Analyst to apply ML and spatial analysis for proprietary modeling, run vendor models (RMS, Verisk, JBA), and support UK reinsurance clients with property catastrophe analytics.",
+    "requirements": [
+      "MSc or higher in Data Science, Machine Learning, Geography, or related field",
+      "Knowledge of catastrophe modeling (RMS, Verisk, CoreLogic, etc.)",
+      "Strong programming in Python, SQL, R",
+      "Experience with GIS and visualization tools (ArcGIS, Tableau, Power BI)"
+    ],
+    "skills": ["Catastrophe Modeling", "Machine Learning", "Geospatial Analysis", "Python", "GIS", "RMS/Verisk"],
+    "posted": "September 2025",
+    "remote": true,
+    "contact": "Undisclosed",
+    "applicationLink": "https://jobs.aon.com/jobs/92621"
+  },
+  {
+    "id": "306",
+    "title": "Director, Sustainability Risk and Traceability",
+    "company": "LEGO Group",
+    "location": "Billund, Denmark or London, UK",
+    "type": "Full-time, Hybrid",
+    "salary": "Undisclosed",
+    "categories": ["Climate Science", "Energy & Renewables", "Banking & Finance"],
+    "description": "LEGO seeks a Director to lead sustainability risk and supply chain traceability initiatives, integrating ESG into supplier risk assessment, regulatory compliance, and digital supply chain visibility systems.",
+    "requirements": [
+      "BSc/BA, MSc/MBA in Sustainability, Business, or related field",
+      "10+ years in sustainability, supply chain, or risk management",
+      "Experience with traceability systems and enterprise risk frameworks",
+      "Proven leadership in multinational organizations"
+    ],
+    "skills": ["Sustainability Risk", "Supply Chain Traceability", "ESG Strategy", "Risk Management", "Leadership"],
+    "posted": "September 2025",
+    "remote": false,
+    "contact": "Undisclosed",
+    "applicationLink": "https://www.lego.com/en-dk/careers/job/director-sustainability-risk-and-traceability-c4949372457110011f7ffe0068440000"
+  },
+  {
+    "id": "307",
+    "title": "Technical Program Manager, Sustainability",
+    "company": "Google DeepMind",
+    "location": "London, UK",
+    "type": "Full-time",
+    "salary": "Undisclosed",
+    "categories": ["Tech (Data Science & ML)", "Climate Science", "Energy & Renewables", "Weather & Meteorology"],
+    "description": "DeepMind seeks a Technical Program Manager for its Sustainability Program, applying AI to challenges in renewable energy, weather modeling, biodiversity, and agriculture. The role manages research projects, partnerships, and operations.",
+    "requirements": [
+      "Technical degree in CS, AI, Data Science, Energy, Weather, Climate, or related field",
+      "Experience with research project management",
+      "Strong communication and stakeholder management skills",
+      "Knowledge of AI and sustainability applications"
+    ],
+    "skills": ["Program Management", "AI for Sustainability", "Weather Modeling", "Renewables", "Stakeholder Engagement"],
+    "posted": "September 2025",
+    "remote": false,
+    "contact": "Undisclosed",
+    "applicationLink": "https://job-boards.greenhouse.io/deepmind/jobs/7217897"
+  },
+    [
+  {
+    "id": "308",
+    "title": "Assistant Teaching Professor, Marine and Environmental Sciences",
+    "company": "Northeastern University",
+    "location": "Boston, MA",
+    "type": "Full-time, Non-tenure Track",
+    "salary": "$76,000 – $93,000",
+    "categories": ["Academia & Research", "Geophysics & Geology", "Climate Science", "Geospatial & GIS", "Professor"],
+    "description": "The Department of Marine & Environmental Sciences invites applications for a non-tenure track Assistant Teaching Professor starting January 2026. The position involves teaching undergraduate and graduate courses in terrestrial geosciences, GIS, and science communication, and mentoring capstone projects.",
+    "requirements": [
+      "Ph.D. in earth and/or environmental sciences or related discipline (by start date)",
+      "Experience teaching undergraduate and graduate geoscience courses",
+      "Strong communication, collaboration, and leadership skills"
+    ],
+    "skills": ["Teaching", "Geoscience", "GIS", "Science Communication", "Mentorship"],
+    "posted": "August 2025",
+    "remote": false,
+    "contact": "Undisclosed",
+    "applicationLink": "https://northeastern.wd1.myworkdayjobs.com/en-US/careers/job/Boston-MA-Main-Campus/Assistant-Teaching-Professor--Marine-and-Environmental-Sciences_R133705"
+  },
+  {
+    "id": "309",
+    "title": "Open-Rank Faculty Positions, Laboratory for Atmospheric and Space Physics",
+    "company": "University of Colorado Boulder (LASP)",
+    "location": "Boulder, CO",
+    "type": "Full-time, Tenure-track/Tenured",
+    "salary": "Assistant: $110,000 – $118,000; Associate: $118,000 – $140,000; Professor: $140,000 – $160,000",
+    "categories": ["Academia & Research", "Climate Science", "Weather & Meteorology", "Professor"],
+    "description": "LASP invites applications for up to two faculty positions in atmospheric science. Research areas may include atmospheric dynamics, climate physics, aerosol/cloud physics, chemistry, planetary atmospheres, and space-based observations.",
+    "requirements": [
+      "Ph.D. in Atmospheric Science, Planetary Science, Physics, Chemistry, or related field",
+      "Strong research record in atmospheric or planetary sciences",
+      "Commitment to undergraduate and graduate teaching and mentoring"
+    ],
+    "skills": ["Atmospheric Science", "Planetary Science", "Climate Physics", "Space-based Observations", "Teaching"],
+    "posted": "September 2025",
+    "remote": false,
+    "contact": "peter.pilewskie@lasp.colorado.edu",
+    "applicationLink": "https://jobs.colorado.edu/jobs/JobDetail/Open-Rank-Faculty-Positions-Laboratory-for-Atmospheric-and-Space-Physics/67174"
+  },
+  {
+    "id": "310",
+    "title": "Hydrologic and Hydraulic Modeling Postdoctoral Research Fellow",
+    "company": "Central Michigan University",
+    "location": "Mount Pleasant, MI",
+    "type": "Full-time, Postdoctoral (12-month appointment)",
+    "salary": "Competitive, commensurate with experience",
+    "categories": ["Post-doc", "Academia & Research", "Climate Science", "Geophysics & Geology"],
+    "description": "The Department of Earth and Atmospheric Sciences seeks a postdoctoral fellow for hydrologic and hydraulic modeling of flood impacts in Michigan. The project will support resilience planning in the Chippewa, Grand, and Rouge River watersheds.",
+    "requirements": [
+      "Ph.D. in Civil/Environmental Engineering, Watershed Hydrology, or related field (within last 6 years)",
+      "Experience with hydrologic and/or hydraulic modeling",
+      "Proficiency with scripting languages (Python, R, etc.)"
+    ],
+    "skills": ["WRF-Hydro", "HEC-RAS", "SWMM", "ATS", "Hydrologic Modeling", "Python", "R"],
+    "posted": "September 2025",
+    "remote": false,
+    "contact": "Undisclosed",
+    "applicationLink": "https://www.jobs.cmich.edu/postings/43634"
+  },
+  {
+    "id": "311",
+    "title": "Postdoctoral Research Associate I - Coral Reef Ecology",
+    "company": "University of Arizona (Biosphere 2)",
+    "location": "Oracle, AZ",
+    "type": "Full-time, Postdoctoral (12-month appointment, renewable)",
+    "salary": "NIH salary guidelines, DOE",
+    "categories": ["Post-doc", "Academia & Research", "Climate Science"],
+    "description": "Biosphere 2 seeks a postdoctoral researcher in coral reef ecology to study benthic communities, microbial ecology, genomics, symbiosis, and reef resilience using the 2.6-million-liter Biosphere 2 Ocean mesocosm.",
+    "requirements": [
+      "Ph.D. in marine biology, biological oceanography, or related field",
+      "Experience with corals, reef organisms, or microbial ecology",
+      "Strong programming abilities (R, Python, or Matlab)"
+    ],
+    "skills": ["Coral Reef Ecology", "Genomics", "Community Ecology", "Experimental Design", "Programming"],
+    "posted": "September 2025",
+    "remote": false,
+    "contact": "Diane Thompson (thompsod@arizona.edu)",
+    "applicationLink": "https://arizona.csod.com/ux/ats/careersite/4/home/requisition/23824?c=arizona"
+  },
+  {
+    "id": "312",
+    "title": "Associate Professor in Sustainable Earth Energy",
+    "company": "Durham University",
+    "location": "Durham, United Kingdom",
+    "type": "Full-time, Tenured",
+    "salary": "£59,966 – £67,468 per annum",
+    "categories": ["Professor", "Academia & Research", "Energy & Renewables", "Geophysics & Geology"],
+    "description": "Durham’s Department of Earth Sciences invites applications for an Associate Professor in Sustainable Earth Energy. Focus areas include low-carbon geoenergy, energy storage, sequestration, and transition resource sustainability.",
+    "requirements": [
+      "Ph.D. in Geoscience or closely related subject",
+      "Strong research and teaching record in geoenergy/energy transition",
+      "Evidence of leadership and successful funding proposals"
+    ],
+    "skills": ["Geoenergy", "Energy Transition", "Geoscience Research", "Teaching", "Leadership"],
+    "posted": "September 2025",
+    "remote": true,
+    "contact": "earthsci.hod@durham.ac.uk",
+    "applicationLink": "https://durham.taleo.net/careersection/du_ext/jobdetail.ftl?job=25001213"
+  }
   ]
 }
