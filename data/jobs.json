@@ -4805,6 +4805,485 @@
     "remote": true,
     "contact": "earthsci.hod@durham.ac.uk",
     "applicationLink": "https://durham.taleo.net/careersection/du_ext/jobdetail.ftl?job=25001213"
+  },
+      {
+    "id": "314",
+    "title": "Wurster Postdoctoral Science Fellow",
+    "company": "Environmental Defense Fund (EDF)",
+    "location": "Multiple US locations (Austin, Boulder, Boston, Washington DC, Raleigh, New York, San Francisco) or Remote",
+    "type": "Full-time, Postdoctoral (2-year fixed-term)",
+    "salary": "$72,000",
+    "categories": ["Post-doc", "Climate Science", "Academia & Research"],
+    "description": "EDF seeks a postdoctoral fellow to analyze the role of empirical greenhouse gas data in driving climate mitigation. The position will focus on developing actionable emissions inventories using satellite, atmospheric, and other observational datasets, producing both academic and policy-relevant outputs.",
+    "requirements": [
+      "Ph.D. in atmospheric science, earth system science, environmental studies, or related field",
+      "Strong quantitative/statistical skills (R, Python, SQL)",
+      "Experience with spatial data analysis and remote sensing desirable",
+      "Track record of publications or manuscripts under review"
+    ],
+    "skills": ["Python", "R", "SQL", "Remote Sensing", "Climate Data Analysis"],
+    "dateAdded": "2025-09-17",
+    "remote": true,
+    "contact": "Undisclosed",
+    "applicationLink": "https://osv-edf.wd5.myworkdayjobs.com/EDF_External_Careers/job/Austin/Wurster-Postdoctoral-Science-Fellow_REQ-002063-1"
+  },
+  {
+    "id": "315",
+    "title": "Senior Earthquake Engineer (Geotechnical Practice Leader)",
+    "company": "Metric Geo (Client Partnership)",
+    "location": "Santa Barbara, CA (Hybrid, with options in Portland OR or Seattle WA)",
+    "type": "Full-time, Senior Leadership",
+    "salary": "Industry leading with bonus + full benefits",
+    "categories": ["Geophysics & Geology", "Professor", "Energy & Renewables"],
+    "description": "Metric Geo seeks a senior earthquake engineer with leadership in geotechnical practice. The role involves leading seismic and earthquake engineering projects, managing high-profile infrastructure projects, and providing technical expertise in geotechnical risk.",
+    "requirements": [
+      "10+ years industry experience",
+      "PE license",
+      "Strong seismic/earthquake engineering knowledge"
+    ],
+    "skills": ["Geotechnical Engineering", "Seismic Risk", "Leadership", "Project Management"],
+    "dateAdded": "2025-09-17",
+    "remote": false,
+    "contact": "harry.brewin@metric-search.com",
+    "applicationLink": "https://www.linkedin.com/jobs/view/4302282859/"
+  },
+  {
+    "id": "316",
+    "title": "Senior Geophysicist",
+    "company": "ENSCO, Inc.",
+    "location": "Reston, VA, United States",
+    "type": "Full-time",
+    "salary": "$108,825 – $195,248",
+    "categories": ["Geophysics & Geology", "Climate Science", "Academia & Research"],
+    "description": "ENSCO seeks a Senior Geophysicist to lead advanced projects in geophysics for national security applications. The role requires expertise in seismic, radar, and electromagnetic methods, as well as algorithm and model development for underground facility characterization and WMD vulnerability analysis.",
+    "requirements": [
+      "Bachelor’s degree in Geophysics or related field",
+      "7+ years experience in advanced modeling, inversion, and seismic/electromagnetic analysis",
+      "Active Secret clearance with ability to obtain TS/SCI",
+      "Proficiency in Python, MATLAB, C/C++"
+    ],
+    "skills": ["Seismology", "Electromagnetic Surveys", "3D Imaging", "Machine Learning", "Python", "C++"],
+    "dateAdded": "2025-09-17",
+    "remote": false,
+    "contact": "Undisclosed",
+    "applicationLink": "https://job-boards.greenhouse.io/ensco/jobs/4895968008"
+  },
+  {
+    "id": "317",
+    "title": "Researcher – Data Science",
+    "company": "International Water Management Institute (IWMI)",
+    "location": "Colombo, Sri Lanka",
+    "type": "Full-time, International Research Role",
+    "salary": "Competitive international package (with relocation & benefits)",
+    "categories": ["Tech (Data Science & ML)", "Geospatial & GIS", "Climate Science", "Academia & Research"],
+    "description": "IWMI seeks a Researcher in Data Science to develop and deploy AI/ML models for water management and sustainability. The role involves building AI workflows with hydrological and remote sensing data, deploying cloud-based models, and integrating tools into IWMI’s open data platforms.",
+    "requirements": [
+      "PhD in AI, Data Science, Machine Learning or related field with 5+ years experience (or MSc +10 years)",
+      "Proficiency in Python and AI frameworks (PyTorch, TensorFlow)",
+      "Experience with cloud computing and MLOps",
+      "Strong research and publication record"
+    ],
+    "skills": ["Python", "TensorFlow", "PyTorch", "MLOps", "Remote Sensing", "Cloud Computing"],
+    "dateAdded": "2025-09-17",
+    "remote": false,
+    "contact": "Undisclosed",
+    "applicationLink": "https://www.iwmi.org/jobs"
+  },
+  {
+    "id": "318",
+    "title": "Senior Research Scientist – Computational Wind Engineering",
+    "company": "FM Global",
+    "location": "Norwood, MA",
+    "type": "Full-time, On-site",
+    "salary": "$117,280 – $168,600",
+    "categories": ["Climate Science", "Weather & Meteorology", "Insurance & Reinsurance", "Academia & Research"],
+    "description": "FM Global is hiring a Senior Research Scientist in Computational Wind Engineering. The role focuses on developing CFD models, analyzing wind-structure interactions, conducting simulations, and supporting resilience strategies against wind hazards.",
+    "requirements": [
+      "PhD in Mechanical, Civil, or Aerospace Engineering (or related)",
+      "Experience with CFD tools (OpenFOAM, ANSYS Fluent)",
+      "Strong HPC and programming skills (C++, Python, MATLAB)",
+      "Wind tunnel testing experience desirable"
+    ],
+    "skills": ["CFD", "Wind Engineering", "HPC", "OpenFOAM", "ANSYS", "Python", "C++"],
+    "dateAdded": "2025-09-17",
+    "remote": false,
+    "contact": "Undisclosed",
+    "applicationLink": "https://www.careersatfm.com/job/norwood/senior-research-scientist-computational-wind-engineering/474/84109243504"
+  },
+  {
+    "id": "319",
+    "title": "Senior Machine Learning Platform Engineer",
+    "company": "Strava",
+    "location": "San Francisco, CA (Hybrid, 3 days/week on-site)",
+    "type": "Full-time",
+    "salary": "$180,000 – $210,000",
+    "categories": ["Tech (Data Science & ML)", "Geospatial & GIS"],
+    "description": "Strava is seeking a Senior ML Platform Engineer to develop and scale machine learning infrastructure. The role supports personalization, recommendations, and athlete data-driven insights while ensuring stability, reliability, and monitoring of ML systems.",
+    "requirements": [
+      "Experience building ML platforms and services at scale",
+      "Proficiency in ML frameworks and MLOps tools (MLflow, Kubeflow, FastAPI)",
+      "Strong backend/cloud engineering skills (AWS, Python, Terraform)",
+      "Experience deploying and supporting production ML models"
+    ],
+    "skills": ["Python", "AWS", "MLflow", "Kubeflow", "Terraform", "Spark", "Pytorch"],
+    "dateAdded": "2025-09-17",
+    "remote": false,
+    "contact": "Undisclosed",
+    "applicationLink": "https://job-boards.greenhouse.io/strava/jobs/7129221"
+  },
+  {
+    "id": "320",
+    "title": "Senior Geospatial Product Manager",
+    "company": "CoreLogic (Cotality)",
+    "location": "Remote US / Dallas, TX / Irvine, CA",
+    "type": "Full-time, Hybrid-Remote",
+    "salary": "$93,800 – $140,000",
+    "categories": ["Geospatial & GIS", "Tech (Data Science & ML)", "Energy & Renewables"],
+    "description": "Cotality seeks a Senior Geospatial Product Manager to lead its Location Intelligence product line. The role oversees product strategy, roadmap execution, and revenue planning for geospatial data and SaaS delivery models.",
+    "requirements": [
+      "5+ years product management experience",
+      "Experience with geospatial technologies and data licensing",
+      "Understanding of cloud computing and AI applications",
+      "Bachelor’s degree in technical or scientific field"
+    ],
+    "skills": ["Product Management", "Geospatial Data", "SaaS", "Cloud Computing", "AI"],
+    "dateAdded": "2025-09-17",
+    "remote": true,
+    "contact": "Undisclosed",
+    "applicationLink": "https://corelogic.wd5.myworkdayjobs.com/en-GB/Global/job/Dallas-TX/Senior-Product-Manager_REQ17052"
+  },
+  {
+    "id": "321",
+    "title": "Research Data Scientist",
+    "company": "Texas A&M University – Institute for a Disaster Resilient Texas",
+    "location": "Houston, TX",
+    "type": "Full-time, Staff",
+    "salary": "Commensurate",
+    "categories": ["Tech (Data Science & ML)", "Climate Science", "Geospatial & GIS", "Academia & Research"],
+    "description": "Texas A&M seeks a Research Data Scientist to lead development of statistical and ML models for disaster risk and resilience. The role involves working with geospatial and temporal data, supporting hazard research, and developing decision support tools.",
+    "requirements": [
+      "Bachelor’s degree in statistics, computer science, or related field (advanced degree preferred)",
+      "8+ years related experience",
+      "Proficiency in R, Python, SQL",
+      "Experience with cloud platforms (Azure, AWS, Databricks)",
+      "Background in hazard/disaster resilience research preferred"
+    ],
+    "skills": ["Python", "R", "SQL", "GIS", "Machine Learning", "Azure", "AWS", "Databricks"],
+    "dateAdded": "2025-09-17",
+    "remote": false,
+    "contact": "Undisclosed",
+    "applicationLink": "https://tamus.wd1.myworkdayjobs.com/en-US/TAMU_External/details/Research-Data-Scientist_R-087106-2"
+  },
+    {
+    "id": "322",
+    "title": "SAR Scientist",
+    "company": "ICEYE",
+    "location": "Valencia, Spain (preferred) | Espoo, Finland | Athens, Greece | Warsaw, Poland",
+    "type": "Full-time, Permanent, Hybrid",
+    "salary": "Undisclosed",
+    "categories": ["Tech (Data Science & ML)", "Geospatial & GIS", "Climate Science"],
+    "description": "ICEYE seeks a SAR Scientist to join its SAR Analytics Team. The role focuses on designing and prototyping advanced machine learning models for SAR data, including interferometry, polarimetry, coherence, and change detection. Collaboration with ML and remote sensing teams to create operational solutions is expected.",
+    "requirements": [
+      "PhD (preferred) or Master's in Computer Science, Electrical Engineering, Remote Sensing, or related field",
+      "Proven experience applying ML to geospatial/remote sensing data",
+      "Deep understanding of SAR phenomenology",
+      "Strong programming in Python and ML frameworks (PyTorch, TensorFlow)"
+    ],
+    "skills": ["Python", "PyTorch", "TensorFlow", "SAR Data Analysis", "Remote Sensing", "Machine Learning", "Signal Processing"],
+    "dateAdded": "2025-09-18",
+    "remote": false,
+    "contact": "Undisclosed",
+    "applicationLink": "https://apply.workable.com/iceye/j/39AE94F296/"
+  },
+  {
+    "id": "323",
+    "title": "Assistant Professor of Atmospheric Sciences",
+    "company": "The Ohio State University – Department of Geography",
+    "location": "Columbus, OH, United States",
+    "type": "Full-time, Tenure-track",
+    "salary": "Undisclosed",
+    "categories": ["Professor", "Weather & Meteorology", "Academia & Research"],
+    "description": "OSU’s Department of Geography seeks an Assistant Professor in Atmospheric Sciences. The position emphasizes research and teaching expertise in meteorology and atmospheric science, with collaboration opportunities across campus centers such as the Byrd Polar and Climate Research Center.",
+    "requirements": [
+      "PhD in Geography, Atmospheric Science, Meteorology, or related field",
+      "Research expertise in polar, tropical, synoptic, mesoscale, or radar meteorology",
+      "Demonstrated teaching and mentorship potential"
+    ],
+    "skills": ["Meteorology", "Radar Meteorology", "Atmospheric Dynamics", "Teaching", "Research"],
+    "dateAdded": "2025-09-18",
+    "remote": false,
+    "contact": "Undisclosed",
+    "applicationLink": "https://osu.wd1.myworkdayjobs.com/OSUCareers/job/Columbus-Campus/Assistant-Professor_R137459-1"
+  },
+  {
+    "id": "324",
+    "title": "Associate Director – Catastrophe Analytics R&D",
+    "company": "Howden Re",
+    "location": "Edina, MN, United States",
+    "type": "Full-time, On-site",
+    "salary": "$140,000/year",
+    "categories": ["Insurance & Reinsurance", "Climate Science", "Weather & Meteorology"],
+    "description": "Howden Re seeks an Associate Director for its Catastrophe Analytics R&D team. The role includes client servicing (25–50%) and R&D (50–75%) to manage catastrophe risk. Responsibilities include catastrophe modeling, data validation, portfolio analysis, and model validation.",
+    "requirements": [
+      "4+ years of experience in catastrophe modeling and risk management",
+      "Proficiency in SQL, Python, R, Power BI, ArcGIS",
+      "Experience with RMS or Verisk cat modeling software",
+      "Knowledge of property insurance/reinsurance"
+    ],
+    "skills": ["Catastrophe Modeling", "SQL", "Python", "R", "ArcGIS", "Risk Analysis"],
+    "dateAdded": "2025-09-18",
+    "remote": false,
+    "contact": "Undisclosed",
+    "applicationLink": "https://www.linkedin.com/jobs/view/4301388163/"
+  },
+  {
+    "id": "325",
+    "title": "Product Manager – Climate, Nature and Sustainability Regulations",
+    "company": "Bloomberg",
+    "location": "London, United Kingdom",
+    "type": "Full-time",
+    "salary": "Undisclosed",
+    "categories": ["Banking & Finance", "Climate Science", "Tech (Data Science & ML)"],
+    "description": "Bloomberg is hiring a Product Manager to lead solutions for clients managing financial risks related to climate, biodiversity, and sustainability regulations. The role includes product strategy, methodology development, cross-team collaboration, and go-to-market strategy.",
+    "requirements": [
+      "8+ years of product management experience",
+      "Strong knowledge of climate/nature regulatory frameworks",
+      "Experience leading cross-functional product implementation"
+    ],
+    "skills": ["Product Management", "Climate Risk", "Sustainability Regulations", "Python", "Data Modelling"],
+    "dateAdded": "2025-09-18",
+    "remote": false,
+    "contact": "Undisclosed",
+    "applicationLink": "https://bloomberg.avature.net/careers/JobDetail/14507"
+  },
+  {
+    "id": "326",
+    "title": "Senior Climate Manager",
+    "company": "Lloyds Banking Group",
+    "location": "Bristol, Edinburgh, or Leeds, United Kingdom (Hybrid)",
+    "type": "Full-time",
+    "salary": "£76,194–£89,640",
+    "categories": ["Banking & Finance", "Climate Science"],
+    "description": "Lloyds Banking Group seeks a Senior Climate Manager to lead technical climate-related initiatives, translating science, regulatory requirements, and sustainability metrics into actionable strategies. The role advises across business units, risk functions, and external partners.",
+    "requirements": [
+      "Expertise in climate risk, disclosures, carbon accounting, net zero strategies",
+      "Experience in scenario analysis and climate finance",
+      "Strong leadership and cross-team collaboration skills"
+    ],
+    "skills": ["Climate Risk", "Carbon Accounting", "Scenario Analysis", "Sustainable Finance"],
+    "dateAdded": "2025-09-18",
+    "remote": true,
+    "contact": "Undisclosed",
+    "applicationLink": "https://www.linkedin.com/jobs/view/4300877390/"
+  },
+  {
+    "id": "327",
+    "title": "Postdoctoral Research Scientist – Crop Modeling",
+    "company": "Columbia Climate School (CCSR) / NASA GISS",
+    "location": "New York, NY, United States (Morningside Campus)",
+    "type": "Full-time, Postdoctoral",
+    "salary": "$74,000",
+    "categories": ["Post-doc", "Climate Science", "Academia & Research"],
+    "description": "Columbia Climate School seeks a Postdoctoral Research Scientist to work on crop modeling and climate change assessment. The role involves parameterizing maize cultivars under climate change scenarios, leveraging Corteva’s datasets, and contributing to the AgMIP Global Gridded Crop Modeling Initiative.",
+    "requirements": [
+      "PhD in agronomy, earth-system sciences, geography, computer science, or related",
+      "Experience in crop modeling and large-scale impact analyses",
+      "Strong coding skills (R, Python, Fortran, shell script)"
+    ],
+    "skills": ["Crop Modeling", "R", "Python", "Fortran", "Climate Impact Analysis"],
+    "dateAdded": "2025-09-18",
+    "remote": false,
+    "contact": "Undisclosed",
+    "applicationLink": "https://academic.careers.columbia.edu/#!/168193"
+  },
+  {
+    "id": "328",
+    "title": "Assistant Professor of Geosciences (Geomorphology/Earth Surface Processes)",
+    "company": "University of Arkansas – Department of Geosciences",
+    "location": "Fayetteville, AR, United States",
+    "type": "Full-time, Tenure-track",
+    "salary": "Undisclosed",
+    "categories": ["Professor", "Geophysics & Geology", "Academia & Research"],
+    "description": "The University of Arkansas seeks a tenure-track Assistant Professor specializing in geomorphology and/or Earth surface processes. The role includes research, teaching geomorphology, natural hazards, and field courses, plus mentoring and service.",
+    "requirements": [
+      "PhD in geosciences or related field by start date",
+      "Record of teaching/mentoring experience",
+      "Evidence of active or emerging research agenda"
+    ],
+    "skills": ["Geomorphology", "Earth Surface Processes", "Teaching", "Research"],
+    "dateAdded": "2025-09-18",
+    "remote": false,
+    "contact": "Undisclosed",
+    "applicationLink": "https://uasys.wd5.myworkdayjobs.com/en-US/UASYS/job/Assistant-Professor-of-Geosciences_R0076590-1"
+  },
+  {
+    "id": "329",
+    "title": "Assistant Professor – Physics of the Ocean and/or Atmosphere",
+    "company": "Columbia University – Department of Earth and Environmental Sciences",
+    "location": "Palisades, NY (Lamont-Doherty Earth Observatory)",
+    "type": "Full-time, Tenure-track",
+    "salary": "$120,000 – $130,000",
+    "categories": ["Professor", "Climate Science", "Weather & Meteorology", "Academia & Research"],
+    "description": "Columbia’s Department of Earth and Environmental Sciences seeks a tenure-track Assistant Professor in physical oceanography and/or atmospheric physics. Research focus is on global-scale computational modeling, theory, and data analysis relevant to atmosphere/ocean dynamics.",
+    "requirements": [
+      "PhD in relevant field",
+      "Strong record of scholarship and publications",
+      "Demonstrated promise for continued research excellence",
+      "Ability to teach undergraduate and graduate courses"
+    ],
+    "skills": ["Physical Oceanography", "Atmospheric Dynamics", "Modeling", "Data Assimilation", "Machine Learning"],
+    "dateAdded": "2025-09-18",
+    "remote": false,
+    "contact": "Undisclosed",
+    "applicationLink": "https://apply.interfolio.com/173819"
+  },
+    [
+  {
+    "id": "330",
+    "title": "Data Scientist – Wildfire Risk Modeling",
+    "company": "Xcel Energy",
+    "location": "Denver, CO, United States",
+    "type": "Full-time",
+    "salary": "$95,200 – $135,200 per year",
+    "categories": ["Energy & Renewables", "Tech (Data Science & ML)", "Climate Science"],
+    "description": "Xcel Energy seeks a Data Scientist specializing in wildfire risk modeling. The role involves developing machine learning and statistical models to predict wildfire risks, integrating geospatial and climate datasets, and producing actionable insights for energy infrastructure safety and planning.",
+    "requirements": [
+      "Bachelor’s degree in Computer Science, Data Science, Statistics, or related field",
+      "3+ years’ experience as a Data Scientist (2+ years with MS/PhD)",
+      "Proficiency with Python, R, SQL",
+      "Experience in geospatial analytics and machine learning"
+    ],
+    "skills": ["Python", "R", "SQL", "Machine Learning", "Geospatial Analytics", "Data Visualization"],
+    "dateAdded": "2025-09-18",
+    "remote": false,
+    "contact": "recruiting@xcelenergy.com",
+    "applicationLink": "https://www.linkedin.com/jobs/view/4301208798/"
+  },
+  {
+    "id": "331",
+    "title": "Senior Associate – Climate Risk Scientist",
+    "company": "PwC Canada",
+    "location": "Toronto or Montreal, Canada (Hybrid)",
+    "type": "Full-time",
+    "salary": "Undisclosed",
+    "categories": ["Climate Science", "Banking & Finance", "Tech (Data Science & ML)"],
+    "description": "PwC seeks a Senior Associate to support climate risk analytics and adaptation planning projects. The role focuses on hazard modeling (floods, drought, wildfire, storms), scenario analysis, and applying earth observation data to support financial services, infrastructure, and energy clients.",
+    "requirements": [
+      "MSc or PhD in Climate Science, Meteorology, Data Science, or Geoinformatics",
+      "2+ years’ experience in climate hazard modeling",
+      "Proficiency in Python, GIS, Xarray, and climate datasets",
+      "Strong analytical and communication skills"
+    ],
+    "skills": ["Python", "GIS", "Xarray", "Climate Modeling", "Extreme Value Analysis", "Scenario Analysis"],
+    "dateAdded": "2025-09-18",
+    "remote": true,
+    "contact": "Undisclosed",
+    "applicationLink": "https://jobs-ca.pwc.com/ca/en/job/595596WD/Senior-Associate-Climate-Risk-Scientist"
+  },
+  {
+    "id": "332",
+    "title": "VP/SVP – Catastrophe Risk Management",
+    "company": "Guy Carpenter (Marsh McLennan)",
+    "location": "Boston, MA or multiple US offices (Hybrid)",
+    "type": "Full-time, Senior-level",
+    "salary": "Undisclosed",
+    "categories": ["Insurance & Reinsurance", "Climate Science", "Weather & Meteorology"],
+    "description": "Guy Carpenter seeks a VP/SVP to lead catastrophe risk analytics supporting reinsurance placement and client advisory. The role includes risk modeling, underwriting support, portfolio analysis, and client-facing advisory on catastrophe risk management.",
+    "requirements": [
+      "8+ years of experience with catastrophe models",
+      "Strong knowledge of insurance and reinsurance segments",
+      "Proficiency in SQL, Python, R, Alteryx",
+      "Ability to lead catastrophe analytics as part of account teams"
+    ],
+    "skills": ["Catastrophe Modeling", "SQL", "Python", "R", "Reinsurance Advisory"],
+    "dateAdded": "2025-09-18",
+    "remote": false,
+    "contact": "reasonableaccommodations@mmc.com",
+    "applicationLink": "https://careers.marshmclennan.com/global/en/job/R_298279/VP-SVP-Catastrophe-Risk-Management"
+  },
+  {
+    "id": "333",
+    "title": "Data Scientist II – Weather & Lightning Systems",
+    "company": "AccuWeather",
+    "location": "United States (location undisclosed)",
+    "type": "Full-time",
+    "salary": "Undisclosed",
+    "categories": ["Weather & Meteorology", "Tech (Data Science & ML)", "Climate Science"],
+    "description": "AccuWeather seeks a Data Scientist II to enhance the AccuWeather Lightning Network™ and other weather intelligence systems. Responsibilities include algorithm development, lightning detection model improvements, and integration of meteorological expertise into operational pipelines.",
+    "requirements": [
+      "2–5 years’ experience in meteorological modeling or research",
+      "Proficiency with Python, SQL, or C++",
+      "Experience with remote sensing and big data technologies (Spark, Hadoop)",
+      "Strong communication and cross-disciplinary collaboration skills"
+    ],
+    "skills": ["Python", "SQL", "C++", "Meteorology", "Remote Sensing", "Machine Learning"],
+    "dateAdded": "2025-09-18",
+    "remote": false,
+    "contact": "human.resources@accuweather.com",
+    "applicationLink": "https://www.linkedin.com/jobs/view/4299701638/"
+  },
+  {
+    "id": "334",
+    "title": "Natural Catastrophe Analyst – Hurricane or Earthquake Specialist",
+    "company": "WTW (Willis Towers Watson)",
+    "location": "London, United Kingdom",
+    "type": "Full-time",
+    "salary": "Undisclosed",
+    "categories": ["Insurance & Reinsurance", "Climate Science", "Geophysics & Geology"],
+    "description": "WTW seeks Natural Catastrophe Analysts with expertise in either tropical cyclones/atmospheric perils or earthquakes. The role focuses on model evaluation, Willis View of Risk development, scenario analysis, and client advisory on catastrophe models.",
+    "requirements": [
+      "PhD/MSc in Meteorology, Seismology, or related fields",
+      "Programming experience with Python, R, SQL",
+      "Experience with catastrophe modeling systems (RMS, Verisk preferred)",
+      "Strong presentation and communication skills"
+    ],
+    "skills": ["Catastrophe Modeling", "Python", "R", "SQL", "GIS", "Model Evaluation"],
+    "dateAdded": "2025-09-18",
+    "remote": false,
+    "contact": "candidate.helpdesk@willistowerswatson.com",
+    "applicationLink": "https://careers.wtwco.com/jobs/natural-catastrophe-analyst-hurricane-or-earthquake-specialist-london-england-united-kingdom"
+  },
+  {
+    "id": "335",
+    "title": "Assistant or Associate Professor – Sustainable Coastal Systems",
+    "company": "University of Central Florida – National Center for Integrated Coastal Research",
+    "location": "Orlando, FL, United States",
+    "type": "Full-time, Tenure-track",
+    "salary": "Negotiable",
+    "categories": ["Professor", "Climate Science", "Geophysics & Geology", "Academia & Research"],
+    "description": "UCF seeks two faculty members (Assistant and Associate Professors) in Sustainable Coastal Systems. The roles will integrate ecological, physical, and socioeconomic dimensions of coastal resilience and sustainability, with cross-college appointments in Sciences, Engineering, or Hospitality Management.",
+    "requirements": [
+      "PhD in a relevant discipline (e.g., Geosciences, Engineering, Biology, Political Science)",
+      "Record of high-impact research and publication",
+      "Evidence of securing or potential to secure external funding",
+      "Commitment to interdisciplinary collaboration and teaching"
+    ],
+    "skills": ["Coastal Resilience", "Climate Adaptation", "Interdisciplinary Research", "Teaching", "Funding Acquisition"],
+    "dateAdded": "2025-09-18",
+    "remote": false,
+    "contact": "Christopher.emrich@ucf.edu",
+    "applicationLink": "https://jobs.ucf.edu/jobs/assistant-or-associate-professor-national-center-for-integrated-coastal-research-orlando-florida-united-states"
+  },
+  {
+    "id": "336",
+    "title": "Program Scientist – Carbon Cycle",
+    "company": "Schmidt Sciences",
+    "location": "New York, NY, United States",
+    "type": "Full-time",
+    "salary": "$155,000 – $185,000",
+    "categories": ["Climate Science", "Academia & Research"],
+    "description": "Schmidt Sciences seeks a Program Scientist for its Climate Institute to lead the carbon portfolio, including the Virtual Institute for the Carbon Cycle (VICC). The role involves strategic grantmaking, advancing carbon cycle research, reducing uncertainty in global carbon budgets, and fostering interdisciplinary collaborations.",
+    "requirements": [
+      "PhD in climate science or related discipline",
+      "7+ years post-PhD experience, including grantmaking or program leadership",
+      "Track record of scientific accomplishments and peer-reviewed publications",
+      "Expertise in carbon cycle science and modeling"
+    ],
+    "skills": ["Carbon Cycle Modeling", "Grantmaking", "Scientific Program Leadership", "Climate Policy"],
+    "dateAdded": "2025-09-18",
+    "remote": false,
+    "contact": "Undisclosed",
+    "applicationLink": "https://www.linkedin.com/jobs/view/4289386071/"
   }
   ]
 }
