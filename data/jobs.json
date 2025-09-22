@@ -5283,6 +5283,314 @@
     "remote": false,
     "contact": "Undisclosed",
     "applicationLink": "https://www.linkedin.com/jobs/view/4289386071/"
+  },
+    {
+    "id": "337",
+    "title": "PhD Students Seeking Full-Time Employment",
+    "company": "ExxonMobil",
+    "location": "Houston, TX, United States",
+    "type": "Full-time",
+    "salary": "Undisclosed",
+    "categories": ["Energy & Renewables", "Geophysics & Geology", "Tech (Data Science & ML)"],
+    "description": "ExxonMobil invites PhD graduates in Chemical Engineering, Chemistry, Data Science, or Geosciences to join full-time engineering and research roles. The program seeks recent or upcoming graduates passionate about energy innovation, sustainability, and lower-emissions technologies.",
+    "requirements": [
+      "PhD in Chemical Engineering, Chemistry, Data Science, or Geosciences",
+      "Strong academic performance and leadership skills",
+      "Excellent communication and collaboration abilities"
+    ],
+    "skills": ["Research", "Data Science", "Geoscience", "Engineering"],
+    "dateAdded": "2025-09-18",
+    "remote": false,
+    "contact": "Undisclosed",
+    "applicationLink": "https://jobs.exxonmobil.com/ExxonMobil/job/Houston-PhD-Students-Seeking-Full-Time-Employment-TX-77001/1314976300/"
+  },
+  {
+    "id": "338",
+    "title": "Manager Portfolio Analytics",
+    "company": "Pacific Gas and Electric Company (PG&E)",
+    "location": "Oakland, CA, United States (Hybrid)",
+    "type": "Full-time, Manager",
+    "salary": "$147,000 – $218,900 per year",
+    "categories": ["Energy & Renewables", "Banking & Finance", "Trading (Commodities, Weather, Energy)"],
+    "description": "PG&E seeks a Manager of Portfolio Analytics to lead quantitative analysis, risk management, and strategy for energy procurement. The role involves overseeing econometric and predictive modeling, Monte Carlo simulations, optimization, and financial evaluations supporting regulatory and market activities.",
+    "requirements": [
+      "Master’s degree in a quantitative field (Science, Engineering, Math, Operations Research, etc.)",
+      "3+ years leadership experience",
+      "7+ years risk analytics and modeling experience",
+      "Experience in wholesale energy markets and utility-scale development"
+    ],
+    "skills": ["Quantitative Modeling", "Python", "Matlab", "Risk Analytics", "Energy Markets"],
+    "dateAdded": "2025-09-18",
+    "remote": true,
+    "contact": "Undisclosed",
+    "applicationLink": "https://jobs.pge.com/job/-/-/29673/86341011664"
+  },
+  {
+    "id": "339",
+    "title": "Research Scientist – Weather and Climate Risks / Machine Learning & AI",
+    "company": "FM Global",
+    "location": "Norwood, MA, United States",
+    "type": "Full-time, On-site",
+    "salary": "$90,720 – $130,400 per year",
+    "categories": ["Insurance & Reinsurance", "Weather & Meteorology", "Tech (Data Science & ML)", "Climate Science"],
+    "description": "FM Global seeks a Research Scientist to study weather and climate risks, focusing on extreme events such as hurricanes, severe storms, and precipitation. The role applies AI/ML techniques to geospatial and climate data for improved catastrophe modeling and risk analytics.",
+    "requirements": [
+      "MS with 3+ years experience or PhD in Meteorology, Data Science, or related field",
+      "Expertise in statistical/dynamical downscaling",
+      "Proficiency with Python, R, Fortran, Matlab",
+      "Experience analyzing CMIP6 climate model outputs"
+    ],
+    "skills": ["Machine Learning", "Climate Modeling", "Python", "R", "Remote Sensing", "Extreme Value Analysis"],
+    "dateAdded": "2025-09-18",
+    "remote": false,
+    "contact": "Undisclosed",
+    "applicationLink": "https://www.careersatfm.com/job/-/-/474/82067480096"
+  },
+  {
+    "id": "340",
+    "title": "Catastrophe Modeling Analyst – Early Careers",
+    "company": "Aon",
+    "location": "Chicago, IL or Bloomington, MN, United States",
+    "type": "Full-time, Early Career",
+    "salary": "$79,500 per year",
+    "categories": ["Insurance & Reinsurance", "Weather & Meteorology", "Climate Science"],
+    "description": "Aon’s Early Careers program offers training in catastrophe modeling and analytics. Analysts will run catastrophe models, analyze risk portfolios, prepare insurance policy data, and support client risk management for perils such as hurricanes, earthquakes, and severe storms.",
+    "requirements": [
+      "Bachelor’s degree in Economics, Finance, Math, or related field",
+      "Graduating between Spring 2025 and Spring 2026",
+      "Minimum GPA of 3.0",
+      "Experience with SQL, Python, or R is a plus"
+    ],
+    "skills": ["Catastrophe Modeling", "SQL", "Python", "R", "Risk Analysis"],
+    "dateAdded": "2025-09-18",
+    "remote": false,
+    "contact": "ReasonableAccommodations@Aon.com",
+    "applicationLink": "https://jobs.aon.com/jobs/92620"
+  },
+  {
+    "id": "341",
+    "title": "UX Designer, Geospatial Visualization, Geo",
+    "company": "Google",
+    "location": "New York, NY, United States",
+    "type": "Full-time",
+    "salary": "$129,000 – $185,000 per year + bonus + equity",
+    "categories": ["Tech (Data Science & ML)", "Geospatial & GIS"],
+    "description": "Google seeks a UX Designer for geospatial visualization on the Geo team. The role involves designing user experiences for 2D/3D geospatial data in products like Google Maps and Earth, focusing on intuitive data visualization and immersive design.",
+    "requirements": [
+      "Bachelor’s degree in Design, HCI, CS, or related field",
+      "4+ years of interaction/UX design experience",
+      "Experience with geospatial platforms and visualization",
+      "Portfolio required"
+    ],
+    "skills": ["UX Design", "Geospatial Visualization", "Prototyping", "Cartography"],
+    "dateAdded": "2025-09-18",
+    "remote": false,
+    "contact": "Undisclosed",
+    "applicationLink": "https://www.google.com/about/careers/applications/jobs/results/136583064556839622/"
+  },
+  {
+    "id": "342",
+    "title": "Senior Geotechnical Engineer",
+    "company": "Metric Geo",
+    "location": "New York City Metropolitan Area (Hybrid)",
+    "type": "Full-time",
+    "salary": "Undisclosed",
+    "categories": ["Geophysics & Geology", "Energy & Renewables"],
+    "description": "Metric Geo seeks a Senior Geotechnical Engineer to support infrastructure and geotechnical projects. The role involves applied engineering design, subsurface investigations, and interdisciplinary collaboration with geologists and data scientists.",
+    "requirements": [
+      "Degree in Geotechnical or Civil Engineering",
+      "Experience with large-scale infrastructure projects",
+      "Knowledge of soil mechanics and foundation design"
+    ],
+    "skills": ["Geotechnical Engineering", "Geology", "Soil Mechanics"],
+    "dateAdded": "2025-09-18",
+    "remote": false,
+    "contact": "Undisclosed",
+    "applicationLink": "https://www.linkedin.com/jobs/search/?currentJobId=4302531215"
+  },
+    {
+    "id": "343",
+    "title": "Senior Geophysicist",
+    "company": "ENSCO",
+    "location": "Reston, VA, United States",
+    "type": "Full-time",
+    "salary": "$108,825 – $195,249 per year",
+    "categories": ["Geophysics & Geology", "Academia & Research"],
+    "description": "ENSCO seeks a Senior Geophysicist to lead advanced geophysical projects supporting DoD and Intelligence Community missions. The role involves seismic, electromagnetic, and radar-based methods, advanced modeling, inversion, and algorithm development.",
+    "requirements": [
+      "Bachelor’s degree in Geophysics, Geological Sciences, or related field",
+      "7+ years geophysics experience with advanced modeling",
+      "US citizenship and active Secret clearance",
+      "Proficiency with MATLAB, Python, ArcGIS"
+    ],
+    "skills": ["Geophysics", "Seismic Imaging", "Radar", "Python", "MATLAB", "SAR"],
+    "dateAdded": "2025-09-18",
+    "remote": false,
+    "contact": "Undisclosed",
+    "applicationLink": "https://job-boards.greenhouse.io/ensco/jobs/4895968008"
+  },
+  {
+    "id": "344",
+    "title": "Assistant Professor of Earth and Environmental Sciences (Data Science)",
+    "company": "Lehigh University",
+    "location": "Bethlehem, PA, United States",
+    "type": "Full-time, Tenure-track",
+    "salary": "Undisclosed",
+    "categories": ["Professor", "Geophysics & Geology", "Academia & Research", "Tech (Data Science & ML)"],
+    "description": "Lehigh’s Department of Earth and Environmental Sciences invites applications for a tenure-track Assistant Professor specializing in data science applied to Earth and environmental sciences, starting July 2026.",
+    "requirements": [
+      "PhD in Earth and Environmental Sciences or closely related field (by start date)",
+      "Ability to teach undergraduate and graduate data science courses",
+      "Demonstrated potential for internationally recognized, funded research"
+    ],
+    "skills": ["Data Science", "Earth Sciences", "Teaching", "Research Leadership"],
+    "dateAdded": "2025-09-18",
+    "remote": false,
+    "contact": "ramage@lehigh.edu",
+    "applicationLink": "https://facultyjobs.lehigh.edu/node/1180"
+  },
+  {
+    "id": "345",
+    "title": "Postdoctoral Research Associate – AI-driven Coastal Modeling",
+    "company": "Oak Ridge National Laboratory (ORNL)",
+    "location": "Oak Ridge, TN, United States",
+    "type": "Full-time, Postdoctoral",
+    "salary": "Undisclosed",
+    "categories": ["Post-doc", "Climate Science", "Geospatial & GIS", "Tech (Data Science & ML)"],
+    "description": "ORNL seeks a Postdoctoral Associate to develop AI-driven models for coastal wetland ecosystems, integrating remote sensing and high-performance computing. The role involves multi-modal AI modeling and collaboration with Earth scientists.",
+    "requirements": [
+      "PhD in Civil/Environmental Engineering, Earth Sciences, Geospatial Science, or Computer Science (completed within last 5 years)",
+      "Experience with AI/deep learning and remote sensing",
+      "Ability to work in collaborative research teams"
+    ],
+    "skills": ["AI Modeling", "Remote Sensing", "High-Performance Computing", "Python"],
+    "dateAdded": "2025-09-18",
+    "remote": false,
+    "contact": "lepv@ornl.gov",
+    "applicationLink": "https://jobs.ornl.gov/job/Oak-Ridge-Postdoctoral-Research-Associate-AI-driven-Coastal-Modeling-TN-37830/1327405700/"
+  },
+  {
+    "id": "346",
+    "title": "Remote Sensing Scientist – Machine Learning & Commodities Research",
+    "company": "Undisclosed (Private Client)",
+    "location": "St. Louis, MO, United States",
+    "type": "Full-time",
+    "salary": "Undisclosed",
+    "categories": ["PhD", "Geospatial & GIS", "Climate Science", "Tech (Data Science & ML)"],
+    "description": "Seeking a PhD-level Remote Sensing Scientist to apply machine learning for commodity crop monitoring and forecasting using satellite data. The role emphasizes publishing research and operationalizing large-scale geospatial ML pipelines.",
+    "requirements": [
+      "PhD in Remote Sensing, Geospatial Science, Computer Science, or related field",
+      "Strong programming in Python and C++",
+      "Experience with ML frameworks (PyTorch, TensorFlow)",
+      "Publication record in geospatial journals"
+    ],
+    "skills": ["Remote Sensing", "Machine Learning", "Python", "C++", "Geospatial Data"],
+    "dateAdded": "2025-09-18",
+    "remote": false,
+    "contact": "Undisclosed",
+    "applicationLink": "https://www.linkedin.com/jobs/collections/recommended/?currentJobId=4300773395"
+  },
+  {
+    "id": "347",
+    "title": "P&C Catastrophe Modeler – PR12961",
+    "company": "Pryor Associates Executive Search",
+    "location": "Philadelphia, PA, United States (Hybrid)",
+    "type": "Full-time or Part-time",
+    "salary": "Undisclosed",
+    "categories": ["Insurance & Reinsurance", "Weather & Meteorology", "Geospatial & GIS"],
+    "description": "Pryor Associates seeks a Catastrophe Modeler to produce and analyze cat modeling output using AIR, RMS, and GIS systems. Role includes custom analytics for reinsurance clients, process improvement, and data integration.",
+    "requirements": [
+      "4–10 years catastrophe modeling experience",
+      "Experience with RMS, AIR, SQL, Python, or R",
+      "Ability to manipulate meteorological and spatial datasets"
+    ],
+    "skills": ["Catastrophe Modeling", "SQL", "Python", "R", "AIR", "RMS"],
+    "dateAdded": "2025-09-18",
+    "remote": true,
+    "contact": "Undisclosed",
+    "applicationLink": "https://www.linkedin.com/jobs/collections/recommended/?currentJobId=4302798939"
+  },
+  {
+    "id": "348",
+    "title": "Data Scientist (VPI) – Power Trading",
+    "company": "Vitol / VPI",
+    "location": "London, UK",
+    "type": "Full-time",
+    "salary": "Undisclosed",
+    "categories": ["Trading (Commodities, Weather, Energy)", "Energy & Renewables", "Tech (Data Science & ML)"],
+    "description": "VPI seeks a Data Scientist to work closely with its power trading desk. Responsibilities include developing optimization and valuation models for power assets, automated trading strategies, and integrating AI into trading workflows.",
+    "requirements": [
+      "Master’s degree in Computer Science, Machine Learning, or related field (PhD preferred)",
+      "5+ years deploying ML models in production",
+      "Experience in power markets and trading concepts",
+      "Fluency in Python and cloud-based systems (AWS)"
+    ],
+    "skills": ["Python", "Machine Learning", "Power Trading", "MLOps", "Time Series Modeling"],
+    "dateAdded": "2025-09-18",
+    "remote": false,
+    "contact": "Undisclosed",
+    "applicationLink": "https://www.linkedin.com/jobs/view/4267693877"
+  },
+  {
+    "id": "349",
+    "title": "Quantitative Research Lead – Sustainability",
+    "company": "Aviva Investors",
+    "location": "London, UK",
+    "type": "Full-time",
+    "salary": "Undisclosed",
+    "categories": ["Banking & Finance", "Climate Science", "Tech (Data Science & ML)"],
+    "description": "Aviva Investors seeks a Quantitative Research Lead to design and implement models and sustainability technology solutions within listed equity and fixed income portfolios. Role includes leveraging sustainability data, risk analytics, and quantitative R&D.",
+    "requirements": [
+      "Master’s in Finance, Sustainability, or Data Science (PhD preferred)",
+      "Strong modeling and coding capabilities",
+      "Deep knowledge of sustainability data and regulatory frameworks"
+    ],
+    "skills": ["Quantitative Research", "Sustainability Analytics", "Portfolio Modeling", "Python"],
+    "dateAdded": "2025-09-18",
+    "remote": true,
+    "contact": "GlobalRecruitment@avivainvestors.com",
+    "applicationLink": "https://www.linkedin.com/jobs/view/4302730733"
+  },
+  {
+    "id": "350",
+    "title": "Sustainability Data Advisor",
+    "company": "Watershed",
+    "location": "London, UK",
+    "type": "Full-time, Hybrid",
+    "salary": "Undisclosed",
+    "categories": ["Climate Science", "Banking & Finance", "Energy & Renewables"],
+    "description": "Watershed seeks a Sustainability Data Advisor to guide enterprise clients in managing climate and ESG data, supporting reporting frameworks (e.g., CSRD) and emissions verification. Role combines customer advisory with technical measurement expertise.",
+    "requirements": [
+      "1–3 years in consulting, sustainability, or customer-facing roles",
+      "Experience in greenhouse gas accounting or ESG reporting",
+      "Excellent communication and data analysis skills"
+    ],
+    "skills": ["Sustainability Data", "Carbon Accounting", "ESG Reporting", "Advisory"],
+    "dateAdded": "2025-09-18",
+    "remote": false,
+    "contact": "Undisclosed",
+    "applicationLink": "https://www.linkedin.com/jobs/view/4257963664"
+  },
+  {
+    "id": "351",
+    "title": "Geospatial Climate Scientist",
+    "company": "Stand",
+    "location": "San Francisco, CA, United States",
+    "type": "Full-time, On-site",
+    "salary": "$160,000 – $200,000 per year + equity",
+    "categories": ["Climate Science", "Geospatial & GIS", "Insurance & Reinsurance"],
+    "description": "Stand seeks a Geospatial Climate Scientist to develop large-scale wildfire and climate models, integrating AI, geospatial datasets, and physics-based simulations for insurance and resilience applications.",
+    "requirements": [
+      "Advanced degree (MS/PhD) in Fire Science, Geospatial Modeling, or related field",
+      "Expertise in wildfire and hazard modeling",
+      "Strong geospatial and remote sensing data skills",
+      "Python proficiency and experience with cloud deployment"
+    ],
+    "skills": ["Wildfire Modeling", "Geospatial Intelligence", "Python", "Remote Sensing", "Cloud Computing"],
+    "dateAdded": "2025-09-18",
+    "remote": false,
+    "contact": "hiring@getstand.com",
+    "applicationLink": "https://www.linkedin.com/jobs/view/4301941870"
   }
   ]
 }
