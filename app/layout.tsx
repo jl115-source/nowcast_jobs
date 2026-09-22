@@ -5,8 +5,8 @@ import ClientLayout from "./ClientLayout"
 
 export const metadata: Metadata = {
   title: "Nowcast Jobs",
-  description: "Specialized job board for climate, weather, energy, academia, geospatial, and insurance professionals",
-  generator: "v0.app",
+  description:
+    "Open-source career discovery for climate, weather, energy, geospatial, insurance, data science, and research professionals.",
 }
 
 export default function RootLayout({

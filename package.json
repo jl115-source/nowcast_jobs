@@ -1,12 +1,13 @@
 {
-  "name": "my-v0-project",
+  "name": "nowcast-jobs",
   "version": "0.1.0",
   "private": true,
+  "description": "Open-source career discovery platform for climate, weather, energy, geospatial, insurance, data science, and research professionals.",
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "lint": "next lint",
-    "start": "next start"
+    "start": "next start",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@ai-sdk/groq": "latest",

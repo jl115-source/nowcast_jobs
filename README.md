@@ -1,30 +1,90 @@
-# Job board with CV analysis
+# Nowcast Jobs
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+An open-source career discovery platform for professionals working across climate, weather, energy, geospatial, insurance, data science, and research.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/joe-lockwoods-projects-fc60fe36/v0-job-board-with-cv-analysis)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/projects/TLDIaeOtJRp)
+Nowcast Jobs brings together a curated job board, AI-assisted CV analysis, job matching, career resources, conferences, company discovery, notifications, and mentoring workflows in one modern web application.
 
-## Overview
+## Features
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+- Curated jobs across weather, climate, energy, geospatial, insurance, finance, research, and data science
+- CV parsing and structured profile extraction
+- AI-assisted CV improvement suggestions
+- Candidate-to-role matching with structured scoring
+- Job alerts and subscription workflows
+- Company, certification, conference, and career-resource directories
+- Mentor matching and off-market opportunity workflows
+- Responsive interface with light/dark theme support
 
-## Deployment
+## Tech stack
 
-Your project is live at:
+- **Framework:** Next.js 14 + React + TypeScript
+- **UI:** Tailwind CSS, Radix UI, shadcn-style components
+- **AI:** Vercel AI SDK + Groq
+- **Backend / auth:** Supabase
+- **Validation:** Zod
+- **Package manager:** pnpm
 
-**[https://vercel.com/joe-lockwoods-projects-fc60fe36/v0-job-board-with-cv-analysis](https://vercel.com/joe-lockwoods-projects-fc60fe36/v0-job-board-with-cv-analysis)**
+## Getting started
 
-## Build your app
+### Prerequisites
 
-Continue building your app on:
+- Node.js 20+
+- pnpm 9+
+- A Groq API key for AI-powered features
+- A Supabase project for authentication and persistence features
 
-**[https://v0.app/chat/projects/TLDIaeOtJRp](https://v0.app/chat/projects/TLDIaeOtJRp)**
+### Installation
 
-## How It Works
+```bash
+pnpm install
+cp .env.example .env.local
+pnpm dev
+```
 
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+Then open `http://localhost:3000`.
+
+### Environment variables
+
+```env
+GROQ_API_KEY=
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_ANON_KEY=
+```
+
+See `.env.example` for details. Never commit real credentials.
+
+## Development
+
+```bash
+pnpm dev        # start the development server
+pnpm typecheck  # run TypeScript checks
+pnpm build      # create a production build
+pnpm start      # run the production build
+```
+
+## Project structure
+
+```text
+app/          Next.js application routes and API handlers
+components/   Application and UI components
+data/         Curated job and conference datasets
+lib/          Shared utilities and Supabase clients
+public/       Static assets and public reference datasets
+scripts/      Supabase schema and migration SQL
+```
+
+## Data and AI notes
+
+The repository contains curated/example datasets intended for development and demonstration. Job listings, salaries, contact details, conference information, and external links can become stale and should be independently verified before use.
+
+AI-generated CV analysis and matching outputs are decision-support features, not guarantees of hiring outcomes. Contributors should avoid introducing fabricated fallback scores or presenting generated assessments as objective facts.
+
+## Contributing
+
+Contributions are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request.
+
+For security issues, follow [SECURITY.md](SECURITY.md) rather than posting sensitive details publicly.
+
+## License
+
+Released under the [MIT License](LICENSE).
